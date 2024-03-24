@@ -11,18 +11,18 @@ const GPTResearcher = (() => {
       document.getElementById("output").innerHTML = "";
       document.getElementById("reportContainer").innerHTML = "";
       updateState("in_progress")
-  
+
       addAgentResponse({ output: "🤔 Thinking about research questions for the task..." });
-  
+
       listenToSockEvents();
     };
-  
+
     const listenToSockEvents = () => {
       const { protocol, host, pathname } = window.location;
       const ws_uri = `${protocol === 'https:' ? 'wss:' : 'ws:'}//${host}${pathname}ws`;
       const converter = new showdown.Converter();
       const socket = new WebSocket(ws_uri);
-  
+
       socket.onmessage = (event) => {
         const data = JSON.parse(event.data);
         if (data.type === 'logs') {
@@ -35,22 +35,22 @@ const GPTResearcher = (() => {
 
         }
       };
-  
+
       socket.onopen = (event) => {
         const task = document.querySelector('input[name="task"]').value;
         const report_type = document.querySelector('select[name="report_type"]').value;
         const agent = document.querySelector('input[name="agent"]:checked').value;
-  
+
         const requestData = {
           task: task,
           report_type: report_type,
           agent: agent,
         };
-  
+
         socket.send(`start ${JSON.stringify(requestData)}`);
       };
     };
-  
+
     const addAgentResponse = (data) => {
       const output = document.getElementById("output");
       output.innerHTML += '<div class="agent_response">' + data.output + '</div>';
@@ -58,23 +58,23 @@ const GPTResearcher = (() => {
       output.style.display = "block";
       updateScroll();
     };
-  
+
     const writeReport = (data, converter) => {
       const reportContainer = document.getElementById("reportContainer");
       const markdownOutput = converter.makeHtml(data.output);
       reportContainer.innerHTML += markdownOutput;
       updateScroll();
     };
-  
+
     const updateDownloadLink = (data) => {
       const path = data.output;
       document.getElementById("downloadLink").setAttribute("href", path);
     };
-  
+
     const updateScroll = () => {
       window.scrollTo(0, document.body.scrollHeight);
     };
-  
+
     const copyToClipboard = () => {
       const textarea = document.createElement('textarea');
       textarea.id = 'temp_element';
@@ -142,9 +142,39 @@ const GPTResearcher = (() => {
       }
     }
 
-    document.addEventListener("DOMContentLoaded", init);
-    return {
-      startResearch,
-      copyToClipboard,
-    };
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("loginForm").addEventListener("submit", async (event) => {
+          console.log("Форма отправлена"); // Для отладки
+          event.preventDefault();
+          console.log("Стандартное поведение предотвращено"); // Для отладки
+
+          event.preventDefault();
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          try {
+              const response = await fetch("/login", {
+                  method: "POST",
+                  headers: {
+                      "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({ username, password }),
+              });
+
+              if (response.ok) {
+                  // Если авторизация успешна, скрываем форму и показываем основной контент
+                  document.getElementById("loginSection").style.display = "none";
+                  document.getElementById("mainContent").style.display = "block";
+                  // Опционально: сохранение токена авторизации или других данных пользователя
+              } else {
+                  // Обработка ошибки авторизации
+                  const errorData = await response.json();
+                  alert("Ошибка авторизации: " + errorData.message);
+              }
+          } catch (error) {
+              console.error('Ошибка:', error);
+              alert("Ошибка авторизации. Пожалуйста, попробуйте позже.");
+          }
+      });
+  });
   })();

@@ -1,7 +1,8 @@
-from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, HTTPException, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
+from datetime import datetime, timezone
 import json
 import os
 from gpt_researcher.utils.websocket_manager import WebSocketManager
@@ -13,6 +14,9 @@ class ResearchRequest(BaseModel):
     report_type: str
     agent: str
 
+class LoginData(BaseModel):
+    username: str
+    password: str
 
 app = FastAPI()
 
@@ -56,3 +60,32 @@ async def websocket_endpoint(websocket: WebSocket):
     except WebSocketDisconnect:
         await manager.disconnect(websocket)
 
+# Определение абсолютного пути к директории текущего скрипта
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Создание пути к файлу users.json, используя BASE_DIR
+users_file_path = os.path.join(BASE_DIR, "users.json")
+
+
+@app.post("/login")
+async def login(login_data: LoginData, response: Response):
+    # Путь к файлу users.json относительно местоположения текущего скрипта
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    users_file_path = os.path.join(BASE_DIR, "users.json")
+
+    with open(users_file_path, "r") as file:
+        users = json.load(file)
+
+    # Поиск пользователя в списке
+    user = next((u for u in users if u["username"] == login_data.username and u["password"] == login_data.password), None)
+    if not user:
+        raise HTTPException(status_code=401, detail="Неверное имя пользователя или пароль")
+
+    # Проверка срока действия
+    user_expiry = datetime.fromisoformat(user["expiry"].replace("Z", "+00:00"))
+    now = datetime.now(timezone.utc)
+    if now > user_expiry:
+        raise HTTPException(status_code=403, detail="Срок предоставленного доступа истек, обратитесь по адресу для продления")
+
+    # Установка cookie
+    response.set_cookie(key="username", value=login_data.username, expires=14*24*60*60)  # Cookie на 14 дней
+    return {"message": "Успешная авторизация"}

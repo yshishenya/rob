@@ -1,0 +1,12 @@
+[
+  {
+    "username": "user1",
+    "password": "password1",
+    "expiry": "2025-05-01T00:00:00Z"
+  },
+  {
+    "username": "user2",
+    "password": "password2",
+    "expiry": "2023-05-15T00:00:00Z"
+  }
+]
