@@ -11,121 +11,98 @@ body {
     background-size: 200% 200%;
     background-image: linear-gradient(45deg, #151A2D, #2D284D, #151A2D);
     animation: gradientBG 10s ease infinite;
+    padding-top: 80px; /* Добавьте отступ сверху, чтобы компенсировать высоту фиксированного header */
 }
 
-.landing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+header {
+    background: rgba(21, 26, 45, 0.85);
+    padding: 20px 0;
+    position: fixed;
+    top: 0; /* Убедитесь, что header прикреплен к верху страницы */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.5s; /* Добавлено для плавного перехода фона */
 }
 
+/* Убедитесь, что стили Bootstrap не конфликтуют с вашими собственными */
+.navbar-collapse {
+    justify-content: flex-end; /* Если вы хотите, чтобы элементы меню были выровнены по правому краю */
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background: rgba(21, 26, 45, 0.85); /* Добавьте фон для выпадающего меню на мобильных устройствах */
+    }
+}
+
+/* Дополнительные стили */
 .landing h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2rem;
+    background-image: linear-gradient(to right, #9867F0, #ED4E50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .landing p {
     font-size: 1.5rem;
-    font-weight: 400;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     margin-bottom: 2rem;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
-    transition: all .3s ease-in-out;
-    margin-bottom: 180px;
-}
-
-.container:hover {
-    transform: scale(1.01);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-input, select, #output, #reportContainer {
-    background-color: rgba(255,255,255,0.1);
-    border: none;
-    color: #fff;
-    transition: all .3s ease-in-out;
-}
-
-input:hover, input:focus, select:hover, select:focus {
-    background-color: #dfe4ea;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
 }
 
 .btn-primary {
     background: linear-gradient(to right, #0062cc, #007bff);
     border: none;
-    transition: all .3s ease-in-out;
-}
-
-.btn-secondary {
-    background: linear-gradient(to right, #6c757d, #6c757d);
-    border: none;
-    transition: all .3s ease-in-out;
-}
-
-.btn:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.agent_question {
+    padding: 15px 30px;
     font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.benefit-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease-in-out;
+}
+
+.benefit-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background: linear-gradient(to right, #151A2D, #111827);
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.margin-div {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.agent_response {
-    background-color: #747d8c;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 12px;
-}
-
-#output {
-    height: 300px;
-    overflow: auto;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-#reportContainer {
-    background-color: rgba(255,255,255,0.1);
-    border: none;
-    color: #fff;
-    transition: all .3s ease-in-out;
-    padding: 10px;
-    border-radius: 12px;
+@media (max-width: 768px) {
+    .landing h1 {
+        font-size: 2.5rem;
+    }
 }

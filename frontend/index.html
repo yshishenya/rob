@@ -43,26 +43,24 @@
 <section class="landing">
     <div class="max-w-5xl mx-auto text-center">
         <h1 class="text-4xl font-extrabold mx-auto lg:text-7xl">
-            Прощайте <br>
+            Привет!<br>
             <span
-                    style="background-image:linear-gradient(to right, #9867F0, #ED4E50); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">часы
-                    исследований</span>
+                    style="background-image:linear-gradient(to right, #9867F0, #ED4E50); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Меня зовут Робинзон)</span>
         </h1>
         <p class="max-w-5xl mx-auto text-gray-600 mt-8" style="font-size:20px">
-            Привет! Меня зовут Робинзон, ваш AI помощник, но не тот, что с острова, а тот, что бродит по безграничным просторам информации.
-            Моя задача — делать вашу жизнь легче, пока вы вроде бы занимаетесь чем-то очень важным.
-            Забудьте о тяжелом труде по сбору и анализу данных, ведь теперь это моя забота.
-        </p>
-        <a href="#form" class="btn btn-primary">Начать</a>
-    </div>
+            Я найду для вас самую актуальную информацию по любой теме в открытых источниках и подготовлю в формате структурированного отчета, который удобно читать и понимать. <br><br>
+            За 1 минуту, с умной адаптацией под поисковые системы и сохранением ссылок на источники. <br><br>
+            Забудьте о выматывающем поиске по бесконечным ссылкам и верстке документа - теперь это моя забота.<br><br>
+ <!--            <a href="#form" class="btn btn-primary">Начать</a> -->
 </section>
 
 <main class="container" id="form">
-    <div class="agent-item"><img src="/static/Professionals4.0Logo.png" class="avatar"
-                                                alt="Авто Агент"></div>
+ <!--    <div class="agent-item"><img src="/static/Professionals4.0Logo.png" class="avatar"
+                                                alt="Авто Агент"></div> -->
     <form method="POST" class="mt-3" onsubmit="GPTResearcher.startResearch(); return false;">
         <div class="form-group">
-            <label for="task" class="agent-question">Что бы вы хотели, чтобы я исследовал дальше?</label>
+            <label for="task" class="agent-question">Что будем исследовать?</label>
+            <p class="mt-2 text-left" style="font-size: 0.8rem;">Наример, Управление человеческим капиталом в корпорациях с использованием генеративного ИИ</p>
             <input type="text" id="task" name="task" class="form-control" required>
             <input type="radio" name="agent" id="autoAgent" value="Авто Агент" checked hidden>
         </div>
@@ -74,16 +72,16 @@
             <button type="button" id="btnShowAuto" class="btn btn-secondary mt-3 btn-show">Авто Агент</button>
         </div>
         <div class="form-group">
-            <label for="report_type" class="agent-question">Какой тип отчета вы хотели бы, чтобы я сгенерировал?</label>
+            <label for="report_type" class="agent-question">Какой тип отчета использовать?</label>
             <select name="report_type" class="form-control" required>
                 <option value="research_report">Исследовательский отчет</option>
                 <option value="resource_report">Отчет о веб-ресурсах</option>
-                <option value="outline_report">План-контур отчет</option>
+                <option value="outline_report">Отчет - содержание</option>
             </select>
         </div>
         <input type="submit" value="Исследовать" class="btn btn-primary button-padding">
     </form>
-
+<br>
     <div class="margin-div">
         <h2>Вывод агента</h2>
         <p class="mt-2 text-left" style="font-size: 0.8rem;">Агент, специально созданный для вашей задачи,
