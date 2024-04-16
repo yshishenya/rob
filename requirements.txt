@@ -25,3 +25,4 @@ aiofiles
 newspaper3k
 langchain_community
 SQLAlchemy
+lxml_html_clean
