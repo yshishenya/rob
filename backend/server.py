@@ -7,6 +7,9 @@ import os
 from backend.websocket_manager import WebSocketManager
 from backend.utils import write_md_to_pdf, write_md_to_word
 
+#from backend.auth import init_app as init_auth_app, token_required  # Импорт функций для аутентификации
+
+#from flask import Flask, request, jsonify, Blueprint  # Основные компоненты Flask
 
 class ResearchRequest(BaseModel):
     task: str
@@ -23,6 +26,7 @@ templates = Jinja2Templates(directory="./frontend")
 
 manager = WebSocketManager()
 
+#api_bp = Blueprint('api', __name__, url_prefix='/api')
 
 # Dynamic directory for outputs once first research is run
 @app.on_event("startup")
@@ -60,3 +64,5 @@ async def websocket_endpoint(websocket: WebSocket):
     except WebSocketDisconnect:
         await manager.disconnect(websocket)
 
+#app.register_blueprint(api_bp, url_prefix='/api')  # Регистрация Blueprint в приложении
+#init_auth_app(app)  # Инициализация модуля аутентификации

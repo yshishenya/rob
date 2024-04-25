@@ -30,3 +30,6 @@ python-docx
 htmldocx
 langchain-google-genai
 lxml[html_clean]
+
+
+SQLAlchemy
