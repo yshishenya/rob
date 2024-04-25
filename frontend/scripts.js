@@ -2,44 +2,50 @@ const GPTResearcher = (() => {
   const init = () => {
     // Not sure, but I think it would be better to add event handlers here instead of in the HTML
     //document.getElementById("startResearch").addEventListener("click", startResearch);
-    document.getElementById("copyToClipboard").addEventListener("click", copyToClipboard);
+    document
+      .getElementById("copyToClipboard")
+      .addEventListener("click", copyToClipboard);
 
     updateState("initial");
-  }
+  };
 
   const startResearch = () => {
     document.getElementById("output").innerHTML = "";
     document.getElementById("reportContainer").innerHTML = "";
-    updateState("in_progress")
+    updateState("in_progress");
 
-    addAgentResponse({ output: "🤔 Thinking about research questions for the task..." });
+    addAgentResponse({
+      output: "🤔 Thinking about research questions for the task...",
+    });
 
     listenToSockEvents();
   };
 
   const listenToSockEvents = () => {
     const { protocol, host, pathname } = window.location;
-    const ws_uri = `${protocol === 'https:' ? 'wss:' : 'ws:'}//${host}${pathname}ws`;
-    console.log(ws_uri);
+    const ws_uri = `${
+      protocol === "https:" ? "wss:" : "ws:"
+    }//${host}${pathname}ws`;
     const converter = new showdown.Converter();
     const socket = new WebSocket(ws_uri);
 
     socket.onmessage = (event) => {
       const data = JSON.parse(event.data);
-      if (data.type === 'logs') {
+      if (data.type === "logs") {
         addAgentResponse(data);
-      } else if (data.type === 'report') {
+      } else if (data.type === "report") {
         writeReport(data, converter);
-      } else if (data.type === 'path') {
-        updateState("finished")
+      } else if (data.type === "path") {
+        updateState("finished");
         updateDownloadLink(data);
-
       }
     };
 
     socket.onopen = (event) => {
       const task = document.querySelector('input[name="task"]').value;
-      const report_type = 'research_report';
+      const report_type = document.querySelector(
+        'select[name="report_type"]'
+      ).value;
       const agent = document.querySelector('input[name="agent"]:checked').value;
 
       const requestData = {
@@ -54,7 +60,7 @@ const GPTResearcher = (() => {
 
   const addAgentResponse = (data) => {
     const output = document.getElementById("output");
-    output.innerHTML += '<div class="agent_response">' + data.output + '</div>';
+    output.innerHTML += '<div class="agent_response">' + data.output + "</div>";
     output.scrollTop = output.scrollHeight;
     output.style.display = "block";
     updateScroll();
@@ -68,8 +74,10 @@ const GPTResearcher = (() => {
   };
 
   const updateDownloadLink = (data) => {
-    const path = data.output;
-    document.getElementById("downloadLink").setAttribute("href", path);
+    const pdf_path = data.output.pdf;
+    const docx_path = data.output.docx;
+    document.getElementById("downloadLink").setAttribute("href", pdf_path);
+    document.getElementById("downloadLinkWord").setAttribute("href", docx_path);
   };
 
   const updateScroll = () => {
@@ -77,14 +85,14 @@ const GPTResearcher = (() => {
   };
 
   const copyToClipboard = () => {
-    const textarea = document.createElement('textarea');
-    textarea.id = 'temp_element';
+    const textarea = document.createElement("textarea");
+    textarea.id = "temp_element";
     textarea.style.height = 0;
     document.body.appendChild(textarea);
-    textarea.value = document.getElementById('reportContainer').innerText;
-    const selector = document.querySelector('#temp_element');
+    textarea.value = document.getElementById("reportContainer").innerText;
+    const selector = document.querySelector("#temp_element");
     selector.select();
-    document.execCommand('copy');
+    document.execCommand("copy");
     document.body.removeChild(textarea);
   };
 
@@ -92,19 +100,19 @@ const GPTResearcher = (() => {
     var status = "";
     switch (state) {
       case "in_progress":
-        status = "Research in progress..."
+        status = "Research in progress...";
         setReportActionsStatus("disabled");
         break;
       case "finished":
-        status = "Research finished!"
+        status = "Research finished!";
         setReportActionsStatus("enabled");
         break;
       case "error":
-        status = "Research failed!"
+        status = "Research failed!";
         setReportActionsStatus("disabled");
         break;
       case "initial":
-        status = ""
+        status = "";
         setReportActionsStatus("hidden");
         break;
       default:
@@ -116,7 +124,7 @@ const GPTResearcher = (() => {
     } else {
       document.getElementById("status").style.display = "block";
     }
-  }
+  };
 
   /**
    * Shows or hides the download and copy buttons
@@ -129,19 +137,19 @@ const GPTResearcher = (() => {
     if (status == "enabled") {
       reportActions.querySelectorAll("a").forEach((link) => {
         link.classList.remove("disabled");
-        link.removeAttribute('onclick');
+        link.removeAttribute("onclick");
         reportActions.style.display = "block";
       });
     } else {
       reportActions.querySelectorAll("a").forEach((link) => {
         link.classList.add("disabled");
-        link.setAttribute('onclick', "return false;");
+        link.setAttribute("onclick", "return false;");
       });
       if (status == "hidden") {
         reportActions.style.display = "none";
       }
     }
-  }
+  };
 
   document.addEventListener("DOMContentLoaded", init);
   return {
