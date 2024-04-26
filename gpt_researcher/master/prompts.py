@@ -22,7 +22,8 @@ def generate_search_queries_prompt(question: str, parent_query: str, report_type
     return f'Write {max_iterations} google search queries to search online that form an objective opinion from the following task: "{task}"' \
            f'Use the current date if needed: {datetime.now().strftime("%B %d, %Y")}.\n' \
            f'Also include in the queries specified task details such as locations, names, etc.\n' \
-           f'You must respond with a list of strings in the following format: ["query 1", "query 2", "query 3"].'
+           f'You must respond with a list of strings in the following format: ["query 1", "query 2", "query 3"].\n' \
+           f'You must write 2 queries in Russian and 2 queries in English.'
 
 
 def generate_report_prompt(question, context, report_format="apa", total_words=1000):
@@ -166,6 +167,7 @@ def generate_subtopics_prompt() -> str:
                 - Every subtopic MUST be relevant to the main topic and provided research data ONLY!
 
                 {format_instructions}
+                Reply in Russian only.
             """
 
 
@@ -212,6 +214,7 @@ def generate_subtopic_report_prompt(
     "IMPORTANT!":
     - The focus MUST be on the main topic! You MUST Leave out any information un-related to it!
     - Must NOT have any introduction, conclusion, summary or reference section.
+    Reply in Russian only.
     """
 
 
@@ -223,6 +226,7 @@ def generate_report_introduction(question: str, research_summary: str = "") -> s
         - The introduction should be preceded by an H1 heading with a suitable topic for the entire report.
         - You must include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
         Assume that the current date is {datetime.now(timezone.utc).strftime('%B %d, %Y')} if required.
+        Reply in Russian only.
     """
 
 
