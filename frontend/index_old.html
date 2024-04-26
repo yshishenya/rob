@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Робинзон, можно просто Роб )</title>
+    <meta
+      name="description"
+      content="Ассистент по исследованиям, работающий на GPT-4"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./static/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/site/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background: rgba(21, 26, 45, 0.85)"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#hero">Робинзон</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#benefits">Преимущества</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how-it-works">Как это работает</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#request-form">Начать исследование</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Отзывы</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero" class="landing">
+      <div class="container text-center">
+        <h1
+          class="text-4xl font-extrabold mx-auto lg:text-7xl"
+          style="
+            background-image: linear-gradient(to right, #9867f0, #ed4e50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          Привет! Меня зовут Робинзон)
+        </h1>
+        <p class="mx-auto text-gray-600 mt-8" style="font-size: 20px">
+          [Плейсхолдер для вводного текста]
+        </p>
+        <a href="#request-form" class="btn btn-primary">Начать</a>
+      </div>
+    </section>
+
+    <section id="benefits" class="my-5">
+      <div class="container">
+        <h2 class="text-center">Наши преимущества</h2>
+        <div class="row">
+          <!-- Плейсхолдеры для преимуществ -->
+          <div class="col-md-4 text-center">
+            <h3>Быстро</h3>
+            <p>[Плейсхолдер для описания]</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>Релевантно</h3>
+            <p>[Плейсхолдер для описания]</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>Надежно</h3>
+            <p>[Плейсхолдер для описания]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="my-5">
+      <div class="container">
+        <h2 class="text-center">Как это работает</h2>
+        <p>[Плейсхолдер для детального описания процесса работы]</p>
+      </div>
+    </section>
+
+    <section id="request-form" class="my-5">
+      <div class="container">
+        <h2 class="text-center">Начать исследование</h2>
+        <form>
+          <div class="form-group">
+            <label for="task">Что бы вы хотели исследовать?</label>
+            <input
+              type="text"
+              id="task"
+              name="task"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="report_type"
+              >Какой тип отчета вы хотели бы получить?</label
+            >
+            <select
+              id="report_type"
+              name="report_type"
+              class="form-control"
+              required
+            >
+              <option value="research_report">Исследовательский отчет</option>
+              <option value="resource_report">Отчет о веб-ресурсах</option>
+              <option value="outline_report">План-контур отчет</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Исследовать</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="testimonials" class="my-5">
+      <div class="container">
+        <h2 class="text-center">Отзывы</h2>
+        <p>[Плейсхолдер для отзывов клиентов]</p>
+      </div>
+    </section>
+
+    <section id="faq" class="my-5">
+      <div class="container">
+        <h2 class="text-center">Часто задаваемые вопросы</h2>
+        <p><strong>Вопрос:</strong> [Плейсхолдер для вопроса]</p>
+        <p><strong>Ответ:</strong> [Плейсхолдер для ответа]</p>
+        <!-- Повторите для других вопросов и ответов -->
+      </div>
+    </section>
+
+    <footer class="text-center py-4">
+      <p>Робинзон &copy; 2024 | Все права защищены</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="/site/scripts.js"></script>
+  </body>
+</html>

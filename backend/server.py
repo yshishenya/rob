@@ -1,4 +1,3 @@
-# Базовые импорты Python
 import json
 import os
 import logging
@@ -27,6 +26,9 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # Настройка уровня логирования для отладки
 logging.basicConfig(level=logging.DEBUG)
+
+# Создание экземпляра логгера
+logger = logging.getLogger(__name__)
 
 # Определение модели данных для запроса исследования
 class ResearchRequest(BaseModel):
@@ -57,7 +59,10 @@ manager = WebSocketManager()
 # Создание планировщика задач
 scheduler = AsyncIOScheduler()
 
+# Включение маршрутизатора аутентификации
+app.include_router(auth_router)
 
+# Декоратор для работы с сессией базы данных
 def with_db_session(job_func):
     @wraps(job_func)
     def wrapper_job(*args, **kwargs):
@@ -73,7 +78,6 @@ def with_db_session(job_func):
             except StopIteration:
                 pass
     return wrapper_job
-
 
 # Функция для очистки устаревших токенов
 @with_db_session
@@ -103,12 +107,6 @@ def shutdown_scheduler():
 @app.get("/")
 async def read_root(request: Request):
     return templates.TemplateResponse('index.html', {"request": request, "report": None})
-
-# Включение маршрутизатора аутентификации
-app.include_router(auth_router)
-
-# Создание экземпляра логгера
-logger = logging.getLogger(__name__)
 
 # Определение WebSocket эндпоинта
 @app.websocket("/ws")
@@ -150,3 +148,4 @@ async def websocket_endpoint(websocket: WebSocket, token: str = Depends(token_re
     except Exception as e:
         logger.error(f"Unhandled error in websocket_endpoint: {e}")
         await websocket.close(code=1011)  # Неожиданное условие, которое помешало выполнить запрос
+
