@@ -95,7 +95,7 @@ def startup_event():
         os.makedirs("outputs")
     app.mount("/outputs", StaticFiles(directory="outputs"), name="outputs")
     # Добавление задачи в планировщик
-    scheduler.add_job(cleanup_tokens, 'interval', minutes=1)
+    scheduler.add_job(cleanup_tokens, 'interval', days=1)
     # Запуск планировщика
     scheduler.start()
 
