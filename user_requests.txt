@@ -1,2 +1,2 @@
-start {"task":"продажи ии инстументов","report_type":"research_report","agent":"Авто Агент"}
-start {"task":"Аналитическое исследование структуры рынка труда в странах БРИКС","report_type":"research_report","agent":"Авто Агент"}
+2024-04-27 00:06:54 - start {"task":"dsdsd","report_type":"research_report","agent":"Авто Агент"}
+2024-04-27 00:09:07 МСК - start {"task":"dsdsd","report_type":"research_report","agent":"Авто Агент"}

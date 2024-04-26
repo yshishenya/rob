@@ -1,7 +1,7 @@
 import json
 import os
 import logging
-
+from datetime import datetime, timezone, timedelta
 
 # Импорты FastAPI
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, Depends
@@ -58,25 +58,22 @@ manager = WebSocketManager()
 # Включение маршрутизатора аутентификации
 app.include_router(auth_router)
 
-# Настройка событий при запуске и завершении работы приложения
+# Dynamic directory for outputs once first research is run
 @app.on_event("startup")
 def startup_event():
     if not os.path.isdir("outputs"):
         os.makedirs("outputs")
     app.mount("/outputs", StaticFiles(directory="outputs"), name="outputs")
 
-@app.on_event("shutdown")
-def shutdown_scheduler():
-    scheduler.shutdown()
-
-# Определение корневого маршрута
 @app.get("/")
 async def read_root(request: Request):
     return templates.TemplateResponse('index.html', {"request": request, "report": None})
 
 def save_request_to_file(data):
+    moscow_time = datetime.now(timezone(timedelta(hours=3)))  # Московское время UTC+3
+    timestamp = moscow_time.strftime("%Y-%m-%d %H:%M:%S")
     with open("user_requests.txt", "a") as file:
-        file.write(data + "\n")
+        file.write(f"{timestamp} МСК - {data}\n")
 
 # Определение WebSocket эндпоинта
 @app.websocket("/ws")

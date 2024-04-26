@@ -23,7 +23,7 @@ const GPTResearcher = (() => {
 
   const listenToSockEvents = () => {
     const { protocol, host, pathname } = window.location;
-    const token = "81b8d8f114c4fd011f54fa7e4bd6309bd4f948cbd7c9275f";
+    const token = "d07c7fc37a93fb070829521f0da475332cecd760833067f7";
     // Ensure pathname ends with a slash before appending 'ws'
     const correctedPathname = pathname.endsWith("/")
       ? pathname
