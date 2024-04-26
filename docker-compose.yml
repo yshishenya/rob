@@ -1,10 +1,13 @@
-version: '3'
+version: "3"
 services:
   gpt-researcher:
     image: assafelovic/gpt-researcher
     build: ./
+    volumes:
+      - ./config.json:/app/config.json
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       TAVILY_API_KEY: ${TAVILY_API_KEY}
+      CONFIG_FILE: /app/config.json
     ports:
-      - 8033:8033
+      - 8034:8034

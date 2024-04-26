@@ -30,6 +30,6 @@ USER gpt-researcher
 
 COPY --chown=gpt-researcher:gpt-researcher ./ ./
 
-EXPOSE 8000
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8033"]
+EXPOSE 8034
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8034", "--log-level", "debug"]
 

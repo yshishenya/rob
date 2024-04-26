@@ -23,9 +23,10 @@ const GPTResearcher = (() => {
 
   const listenToSockEvents = () => {
     const { protocol, host, pathname } = window.location;
+    const token = "375631e7f4be285439a7f09f76b5f63bd5305e602652b56c";
     const ws_uri = `${
       protocol === "https:" ? "wss:" : "ws:"
-    }//${host}${pathname}ws`;
+    }//${host}${pathname}ws?token=${encodeURIComponent(token)}`;
     const converter = new showdown.Converter();
     const socket = new WebSocket(ws_uri);
 
@@ -48,9 +49,9 @@ const GPTResearcher = (() => {
       //   'select[name="report_type"]'
       // ).value;
 
-      //const report_type = "research_report";
+      const report_type = "research_report";
       //const report_type = "resource_report";
-      const report_type = "detailed_report";
+      //const report_type = "detailed_report";
       const agent = document.querySelector('input[name="agent"]:checked').value;
 
       const requestData = {

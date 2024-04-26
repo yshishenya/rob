@@ -1,15 +1,20 @@
-from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, Depends
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from fastapi.middleware.cors import CORSMiddleware
+
 from pydantic import BaseModel
 import json
 import os
+from typing import Optional
 from backend.websocket_manager import WebSocketManager
 from backend.utils import write_md_to_pdf, write_md_to_word
+from backend.auth import auth_router, token_required
+import logging
 
-#from backend.auth import init_app as init_auth_app, token_required  # Импорт функций для аутентификации
 
-#from flask import Flask, request, jsonify, Blueprint  # Основные компоненты Flask
+
+logging.basicConfig(level=logging.DEBUG)
 
 class ResearchRequest(BaseModel):
     task: str
@@ -19,6 +24,14 @@ class ResearchRequest(BaseModel):
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Разрешить все источники
+    allow_credentials=True,
+    allow_methods=["*"],  # Разрешить все методы
+    allow_headers=["*"],  # Разрешить все заголовки
+)
+
 app.mount("/site", StaticFiles(directory="./frontend"), name="site")
 app.mount("/static", StaticFiles(directory="./frontend/static"), name="static")
 
@@ -26,7 +39,6 @@ templates = Jinja2Templates(directory="./frontend")
 
 manager = WebSocketManager()
 
-#api_bp = Blueprint('api', __name__, url_prefix='/api')
 
 # Dynamic directory for outputs once first research is run
 @app.on_event("startup")
@@ -39,10 +51,22 @@ def startup_event():
 async def read_root(request: Request):
     return templates.TemplateResponse('index.html', {"request": request, "report": None})
 
+app.include_router(auth_router)
+
+logger = logging.getLogger(__name__)
 
 @app.websocket("/ws")
-async def websocket_endpoint(websocket: WebSocket):
-    await manager.connect(websocket)
+async def websocket_endpoint(websocket: WebSocket, token: str = Depends(token_required)):
+    try:
+        logger.debug("Attempting to connect to WebSocket.")
+        await websocket.accept()
+        logger.debug("WebSocket connection accepted.")
+        ...
+    except Exception as e:
+        logger.error(f"Error in websocket_endpoint: {e}")
+
+
+    #await manager.connect(websocket)
     try:
         while True:
             data = await websocket.receive_text()
@@ -63,6 +87,3 @@ async def websocket_endpoint(websocket: WebSocket):
 
     except WebSocketDisconnect:
         await manager.disconnect(websocket)
-
-#app.register_blueprint(api_bp, url_prefix='/api')  # Регистрация Blueprint в приложении
-#init_auth_app(app)  # Инициализация модуля аутентификации
