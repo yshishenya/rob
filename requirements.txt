@@ -35,3 +35,4 @@ lxml[html_clean]
 SQLAlchemy
 werkzeug
 psycopg2-binary
+apscheduler

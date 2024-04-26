@@ -24,9 +24,13 @@ const GPTResearcher = (() => {
   const listenToSockEvents = () => {
     const { protocol, host, pathname } = window.location;
     const token = "375631e7f4be285439a7f09f76b5f63bd5305e602652b56c";
+    // Ensure pathname ends with a slash before appending 'ws'
+    const correctedPathname = pathname.endsWith("/")
+      ? pathname
+      : `${pathname}/`;
     const ws_uri = `${
       protocol === "https:" ? "wss:" : "ws:"
-    }//${host}${pathname}ws?token=${encodeURIComponent(token)}`;
+    }//${host}${correctedPathname}ws?token=${encodeURIComponent(token)}`;
     const converter = new showdown.Converter();
     const socket = new WebSocket(ws_uri);
 

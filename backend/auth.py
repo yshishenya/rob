@@ -25,7 +25,8 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
 # Настройка логирования
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Модели Pydantic для запросов и ответов
 class LoginRequest(BaseModel):
@@ -65,12 +66,17 @@ api_key_header = APIKeyHeader(name="token", auto_error=False)
 # Загрузка переменных окружения
 load_dotenv()
 
-# Получение переменных окружения для подключения к базе данных
-POSTGRES_USER = os.getenv("POSTGRES_USER")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
-POSTGRES_DB = os.getenv("POSTGRES_DB")
-POSTGRES_HOST = os.getenv("POSTGRES_HOST")
-POSTGRES_PORT = os.getenv("POSTGRES_PORT")
+# Получение переменных окружения для подключения к базе данных с заданием значений по умолчанию
+POSTGRES_USER = os.getenv("POSTGRES_USER", "default_user")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "default_password")
+POSTGRES_DB = os.getenv("POSTGRES_DB", "default_db")
+POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
+POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")
+
+# Проверка, что все переменные окружения установлены
+if not all([POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB, POSTGRES_HOST, POSTGRES_PORT]):
+    logger.error("Одна или несколько переменных окружения для подключения к базе данных не установлены.")
+    raise ValueError("Необходимые переменные окружения для подключения к базе данных отсутствуют.")
 
 # Строка подключения к базе данных
 DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
@@ -158,7 +164,10 @@ async def login(login_request: LoginRequest, db: Session = Depends(get_db)):
             'refresh_token_expires_at': refresh_token.expires_at.isoformat()
         }, status_code=200)
     else:
-        raise HTTPException(status_code=401, detail='Invalid username or password')
+        # Явное возвращение ошибки с деталями
+        return JSONResponse(content={
+            'detail': 'Invalid username or password'
+        }, status_code=401)
 
 @auth_router.post('/refresh', response_model=RefreshResponse, summary="Обновление токена доступа", description="Позволяет обновить токен доступа пользователя, используя действующий токен обновления.")
 async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
@@ -181,29 +190,35 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
 
 async def token_required(websocket: WebSocket, db: Session = Depends(get_db)):
     token = websocket.query_params.get('token')
-    print(f"Received headers: {websocket.headers}")  # Вывод всех заголовков
+    logger.debug(f"Received headers: {websocket.headers}")  # Вывод всех заголовков
     if token and token.startswith('Bearer '):
-     token = token.split(' ')[1]  # Удаляем префикс "Bearer"
-    print(f"Received token: {token}")
+        parts = token.split(' ')
+        if len(parts) == 2:
+            token = parts[1]  # Используем токен после 'Bearer'
+        else:
+            logger.warning("Token format is incorrect")
+            await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
+            raise HTTPException(status_code=403, detail='Token format is incorrect')
+
     if not token:
-        print("Authorization header is missing")
+        logger.warning("Authorization header is missing or does not start with 'Bearer '")
         await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
         raise HTTPException(status_code=403, detail='Token is required')
 
     access_token = db.query(Token).filter_by(token=token).first()
     if not access_token:
         error_message = 'Token not found'
-        print(f"Error: {error_message}")
+        logger.error(f"Error: {error_message}")
         await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
         raise HTTPException(status_code=401, detail=error_message)
 
     if access_token.expires_at <= datetime.utcnow():
         error_message = 'Token is expired'
-        print(f"Error: {error_message}")
+        logger.error(f"Error: {error_message}")
         await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
         raise HTTPException(status_code=401, detail=error_message)
 
-    print(f"Token {token} is valid and expires at {access_token.expires_at}")
+    logger.info(f"Token {token} is valid and expires at {access_token.expires_at}")
     return access_token
 
 async def get_current_user_admin(db: Session = Depends(get_db), token: str = Depends(api_key_header)):
@@ -239,7 +254,7 @@ async def change_user_password(user_id: int, password_request: PasswordChangeReq
     if user:
         user.set_password(password_request.new_password)
         db.commit()
-        return Response(status_code=status.HTTP_200_OK, content="Password updated successfully")
+        return Response(status_code=status.OK, content="Password updated successfully")
     else:
         raise HTTPException(status_code=404, detail="User not found")
 
@@ -247,4 +262,3 @@ def init_app(app):
     app.include_router(auth_router)
     Base.metadata.create_all(bind=engine)
     Base.metadata.bind = engine
-
