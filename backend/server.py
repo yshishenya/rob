@@ -1,8 +1,7 @@
 import json
 import os
 import logging
-from datetime import datetime
-from functools import wraps
+
 
 # Импорты FastAPI
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect, Depends
@@ -21,14 +20,13 @@ from backend.websocket_manager import WebSocketManager
 from backend.utils import write_md_to_pdf, write_md_to_word
 from backend.auth import auth_router, token_required, Token, RefreshToken, get_db
 
-# Импорты сторонних библиотек
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 # Настройка уровня логирования для отладки
 logging.basicConfig(level=logging.DEBUG)
 
 # Создание экземпляра логгера
 logger = logging.getLogger(__name__)
+
 
 # Определение модели данных для запроса исследования
 class ResearchRequest(BaseModel):
@@ -56,37 +54,9 @@ templates = Jinja2Templates(directory="./frontend")
 # Создание менеджера WebSocket
 manager = WebSocketManager()
 
-# Создание планировщика задач
-scheduler = AsyncIOScheduler()
 
 # Включение маршрутизатора аутентификации
 app.include_router(auth_router)
-
-# Декоратор для работы с сессией базы данных
-def with_db_session(job_func):
-    @wraps(job_func)
-    def wrapper_job(*args, **kwargs):
-        # Создание сессии из генератора
-        db_generator = get_db()
-        db = next(db_generator)  # Получение сессии
-        try:
-            return job_func(db, *args, **kwargs)
-        finally:
-            db.close()  # Закрытие сессии после выполнения функции
-            try:
-                next(db_generator)  # Завершение генератора
-            except StopIteration:
-                pass
-    return wrapper_job
-
-# Функция для очистки устаревших токенов
-@with_db_session
-def cleanup_tokens(db: Session):
-    current_time = datetime.utcnow()
-    num_deleted_tokens = db.query(Token).filter(Token.expires_at <= current_time).delete()
-    num_deleted_refresh_tokens = db.query(RefreshToken).filter(RefreshToken.expires_at <= current_time).delete()
-    db.commit()
-    logger.info(f"Очистка токенов: Удалено {num_deleted_tokens} устаревших токенов и {num_deleted_refresh_tokens} устаревших обновлений токенов.")
 
 # Настройка событий при запуске и завершении работы приложения
 @app.on_event("startup")
@@ -94,10 +64,6 @@ def startup_event():
     if not os.path.isdir("outputs"):
         os.makedirs("outputs")
     app.mount("/outputs", StaticFiles(directory="outputs"), name="outputs")
-    # Добавление задачи в планировщик
-    scheduler.add_job(cleanup_tokens, 'interval', days=1)
-    # Запуск планировщика
-    scheduler.start()
 
 @app.on_event("shutdown")
 def shutdown_scheduler():
@@ -107,6 +73,10 @@ def shutdown_scheduler():
 @app.get("/")
 async def read_root(request: Request):
     return templates.TemplateResponse('index.html', {"request": request, "report": None})
+
+def save_request_to_file(data):
+    with open("user_requests.txt", "a") as file:
+        file.write(data + "\n")
 
 # Определение WebSocket эндпоинта
 @app.websocket("/ws")
@@ -123,6 +93,7 @@ async def websocket_endpoint(websocket: WebSocket, token: str = Depends(token_re
     try:
         while True:
             data = await websocket.receive_text()
+            save_request_to_file(data)  # Сохраняем текст запроса
             if data.startswith("start"):
                 try:
                     json_data = json.loads(data[6:])
@@ -148,4 +119,5 @@ async def websocket_endpoint(websocket: WebSocket, token: str = Depends(token_re
     except Exception as e:
         logger.error(f"Unhandled error in websocket_endpoint: {e}")
         await websocket.close(code=1011)  # Неожиданное условие, которое помешало выполнить запрос
+
 

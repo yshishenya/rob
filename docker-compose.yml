@@ -4,10 +4,10 @@ services:
     image: assafelovic/gpt-researcher
     build: ./
     volumes:
-      - ./config.json:/app/config.json
+      - ./:/usr/src/app/ # Монтирование всей директории проекта
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       TAVILY_API_KEY: ${TAVILY_API_KEY}
-      CONFIG_FILE: /app/config.json
+      CONFIG_FILE: ./config.json
     ports:
       - 8034:8034

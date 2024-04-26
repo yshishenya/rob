@@ -1,0 +1,2 @@
+start {"task":"продажи ии инстументов","report_type":"research_report","agent":"Авто Агент"}
+start {"task":"Аналитическое исследование структуры рынка труда в странах БРИКС","report_type":"research_report","agent":"Авто Агент"}

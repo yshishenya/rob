@@ -1,22 +1,21 @@
 # Импорт стандартных библиотек
-from datetime import datetime, timedelta
 import binascii
-import os
 import logging
+import os
+from datetime import datetime, timedelta
 
 # Импорт библиотек для работы с FastAPI
-from fastapi import APIRouter, Depends, HTTPException, status, WebSocket, Response
+from fastapi import APIRouter, Depends, HTTPException, Response, status, WebSocket
 from fastapi.responses import JSONResponse
 from fastapi.security import APIKeyHeader
 
 # Импорт библиотек для работы с SQLAlchemy
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, Boolean, Column, ForeignKey, Integer, String, DateTime
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship, backref
+from sqlalchemy.orm import Session, backref, relationship, sessionmaker
 
 # Импорт библиотек для работы с паролями
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import check_password_hash, generate_password_hash
 
 # Импорт библиотек для работы с переменными окружения
 from dotenv import load_dotenv
@@ -27,6 +26,29 @@ from pydantic import BaseModel, Field
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Загрузка переменных окружения
+load_dotenv()
+
+# Получение переменных окружения для подключения к базе данных с заданием значений по умолчанию
+POSTGRES_USER = os.getenv("POSTGRES_USER", "default_user")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "default_password")
+POSTGRES_DB = os.getenv("POSTGRES_DB", "default_db")
+POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
+POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")
+
+# Проверка, что все переменные окружения установлены
+# if not all([POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB, POSTGRES_HOST, POSTGRES_PORT]):
+#     logger.error("Одна или несколько переменных окружения для подключения к базе данных не установлены.")
+#     raise ValueError("Необходимые переменные окружения для подключения к базе данных отсутствуют.")
+
+# Строка подключения к базе данных
+DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
+
+# Настройка подключения к базе данных
+engine = create_engine(DATABASE_URL)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+Base = declarative_base()
 
 # Модели Pydantic для запросов и ответов
 class LoginRequest(BaseModel):
@@ -58,33 +80,6 @@ class UserResponse(BaseModel):
 
 class PasswordChangeRequest(BaseModel):
     new_password: str
-
-# Создаем экземпляр APIRouter
-auth_router = APIRouter()
-api_key_header = APIKeyHeader(name="token", auto_error=False)
-
-# Загрузка переменных окружения
-load_dotenv()
-
-# Получение переменных окружения для подключения к базе данных с заданием значений по умолчанию
-POSTGRES_USER = os.getenv("POSTGRES_USER", "default_user")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "default_password")
-POSTGRES_DB = os.getenv("POSTGRES_DB", "default_db")
-POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
-POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")
-
-# Проверка, что все переменные окружения установлены
-if not all([POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB, POSTGRES_HOST, POSTGRES_PORT]):
-    logger.error("Одна или несколько переменных окружения для подключения к базе данных не установлены.")
-    raise ValueError("Необходимые переменные окружения для подключения к базе данных отсутствуют.")
-
-# Строка подключения к базе данных
-DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
-
-# Настройка подключения к базе данных
-engine = create_engine(DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
 
 # Функция для получения сессии базы данных
 def get_db():
@@ -128,46 +123,50 @@ class RefreshToken(Base):
     user = relationship('User', backref=backref('refresh_tokens', lazy=True))
     expires_at = Column(DateTime, nullable=False)
 
+# Создаем экземпляр APIRouter
+auth_router = APIRouter()
+api_key_header = APIKeyHeader(name="token", auto_error=False)
+
+MAX_ACTIVE_TOKENS_PER_USER = 5  # Максимальное количество одновременных сессий
+
 # Маршруты API
 @auth_router.post('/login', response_model=LoginResponse, summary="Авторизация пользователя", description="Позволяет пользователю войти в систему, используя имя пользователя и пароль.")
 async def login(login_request: LoginRequest, db: Session = Depends(get_db)):
     user = db.query(User).filter_by(username=login_request.username).first()
     if user and user.check_password(login_request.password):
-        # Удаляем старые токены доступа
+        # Удаляем старые токены доступа и обновления
         db.query(Token).filter(Token.user_id == user.id, Token.expires_at <= datetime.utcnow()).delete()
-        # Удаляем старые токены обновления
         db.query(RefreshToken).filter(RefreshToken.user_id == user.id, RefreshToken.expires_at <= datetime.utcnow()).delete()
 
-        # Проверяем и обновляем (при необходимости) токен доступа
-        access_token = db.query(Token).filter_by(user_id=user.id).first()
-        if not access_token or access_token.expires_at <= datetime.utcnow():
-            new_access_token = binascii.hexlify(os.urandom(24)).decode()
-            access_token_expires_at = datetime.utcnow() + timedelta(days=1)  # Токен доступа на 1 день
-            access_token = Token(token=new_access_token, user_id=user.id, expires_at=access_token_expires_at)
-            db.add(access_token)
+        # Проверяем количество активных токенов
+        active_tokens = db.query(Token).filter(Token.user_id == user.id, Token.expires_at > datetime.utcnow()).all()
+        if len(active_tokens) >= MAX_ACTIVE_TOKENS_PER_USER:
+            # Удаляем самый старый токен
+            oldest_token = min(active_tokens, key=lambda x: x.expires_at)
+            db.delete(oldest_token)
 
-        # Проверяем и обновляем (при необходимости) токен обновления
-        refresh_token = db.query(RefreshToken).filter_by(user_id=user.id).first()
-        if not refresh_token or refresh_token.expires_at <= datetime.utcnow():
-            new_refresh_token = binascii.hexlify(os.urandom(24)).decode()
-            refresh_token_expires_at = datetime.utcnow() + timedelta(days=30)  # Токен обновления на 30 дней
-            refresh_token = RefreshToken(refresh_token=new_refresh_token, user_id=user.id, expires_at=refresh_token_expires_at)
-            db.add(refresh_token)
+        # Создаем новые токены
+        access_token = binascii.hexlify(os.urandom(24)).decode()
+        access_token_expires_at = datetime.utcnow() + timedelta(days=1)  # Токен доступа на 1 день
+        refresh_token = binascii.hexlify(os.urandom(24)).decode()
+        refresh_token_expires_at = datetime.utcnow() + timedelta(days=30)  # Токен обновления на 30 дней
 
+        new_access_token = Token(token=access_token, user_id=user.id, expires_at=access_token_expires_at)
+        new_refresh_token = RefreshToken(refresh_token=refresh_token, user_id=user.id, expires_at=refresh_token_expires_at)
+
+        db.add(new_access_token)
+        db.add(new_refresh_token)
         db.commit()
 
         # Возвращаем оба токена пользователю
         return JSONResponse(content={
-            'access_token': access_token.token,
-            'expires_at': access_token.expires_at.isoformat(),
-            'refresh_token': refresh_token.refresh_token,
-            'refresh_token_expires_at': refresh_token.expires_at.isoformat()
+            'access_token': access_token,
+            'expires_at': access_token_expires_at.isoformat(),
+            'refresh_token': refresh_token,
+            'refresh_token_expires_at': refresh_token_expires_at.isoformat()
         }, status_code=200)
     else:
-        # Явное возвращение ошибки с деталями
-        return JSONResponse(content={
-            'detail': 'Invalid username or password'
-        }, status_code=401)
+        return JSONResponse(content={'detail': 'Invalid username or password'}, status_code=401)
 
 @auth_router.post('/refresh', response_model=RefreshResponse, summary="Обновление токена доступа", description="Позволяет обновить токен доступа пользователя, используя действующий токен обновления.")
 async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
@@ -182,11 +181,13 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
             access_token.token = new_access_token
             access_token.expires_at = access_token_expires_at
         else:
-            access_token = Token(token=new_access_token, user_id=refresh_token.user_id, expires_at=access_token_expires_at)
-            db.add(access_token)
+            new_token = Token(token=new_access_token, user_id=refresh_token.user_id, expires_at=access_token_expires_at)
+            db.add(new_token)
+
         db.commit()
         return JSONResponse(content={'access_token': new_access_token, 'expires_at': access_token_expires_at.isoformat()}, status_code=200)
-    raise HTTPException(status_code=401, detail='Invalid or expired refresh token')
+    else:
+        raise HTTPException(status_code=401, detail='Invalid or expired refresh token')
 
 async def token_required(websocket: WebSocket, db: Session = Depends(get_db)):
     token = websocket.query_params.get('token')
