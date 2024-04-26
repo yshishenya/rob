@@ -1,2 +1,12 @@
 start {"task":"продажи ии инстументов","report_type":"research_report","agent":"Авто Агент"}
 start {"task":"Аналитическое исследование структуры рынка труда в странах БРИКС","report_type":"research_report","agent":"Авто Агент"}
+start {"task":"продажи ии инстументов","report_type":"research_report","agent":"Авто Агент"}
+start {"task":"Иследуй для меня вред табака на русском языке","report_type":"detailed_report","agent":true}
+start {"task":"Исследование о том о сём","report_type":"detailed_report","agent":true}
+start {"task":"продажи ии инстументов","report_type":"research_report","agent":"Авто Агент"}
+start {"task":"продажи ии инстументов","report_type":"research_report","agent":"Авто Агент"}
+start {"task":"о жизно в африке","report_type":"detailed_report","agent":true}
+start {"task":"отчёт об исседовании слонов","report_type":"detailed_report","agent":true}
+start {"task":"Отчёт о зп","report_type":"detailed_report","agent":true}
+start {"task":"отчёт о жизни на горе","report_type":"detailed_report","agent":true}
+start {"task":"Давай ещё один вариант","report_type":"detailed_report","agent":true}
