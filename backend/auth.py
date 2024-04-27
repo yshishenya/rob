@@ -147,7 +147,7 @@ async def login(login_request: LoginRequest, db: Session = Depends(get_db)):
 
         # Создаем новые токены
         access_token = binascii.hexlify(os.urandom(24)).decode()
-        access_token_expires_at = datetime.utcnow() + timedelta(days=10)  # Токен доступа на 10 дней
+        access_token_expires_at = datetime.utcnow() + timedelta(hours=1)  # Токен доступа на 1 час
         refresh_token = binascii.hexlify(os.urandom(24)).decode()
         refresh_token_expires_at = datetime.utcnow() + timedelta(days=30)  # Токен обновления на 30 дней
 
@@ -174,7 +174,7 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
     if refresh_token and refresh_token.expires_at > datetime.utcnow():
         # Токен обновления действителен, создаем новый токен доступа
         new_access_token = binascii.hexlify(os.urandom(24)).decode()
-        access_token_expires_at = datetime.utcnow() + timedelta(days=10)  # Новый токен доступа на 10 дней
+        access_token_expires_at = datetime.utcnow() + timedelta(hours=1)  # Новый токен доступа на 1 час
         # Обновляем или создаем новый токен доступа для пользователя
         access_token = db.query(Token).filter_by(user_id=refresh_token.user_id).first()
         if access_token:
