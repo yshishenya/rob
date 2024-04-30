@@ -20,3 +20,7 @@
 2024-04-27 17:07:38 МСК - start {"task":"почему люди становятся злыми и не всегда воспринимают действительность адекватно","report_type":"detailed_report","agent":true}
 2024-04-27 17:22:54 МСК - start {"task":"почему люди злые","report_type":"detailed_report","agent":true}
 2024-04-27 17:29:26 МСК - start {"task":"исследование причин злости и искажения восприятия реальности у людей","report_type":"detailed_report","agent":true}
+2024-04-27 19:50:06 МСК - start {"task":"что лучше flusk или fastAPI","report_type":"detailed_report","agent":true}
+2024-04-28 10:47:04 МСК - start {"task":"Кот","report_type":"detailed_report","agent":true}
+2024-04-28 11:32:56 МСК - start {"task":"как влияет развитие LLM на HR. Какие изменится HR в ближайшие году","report_type":"detailed_report","agent":true}
+2024-04-28 11:43:52 МСК - start {"task":"Как GenAl и LLM изменить подходы в подборе персонала в ближайшие годы","report_type":"detailed_report","agent":true}
