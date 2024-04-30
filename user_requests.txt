@@ -1,0 +1,26 @@
+2024-04-27 01:15:36 МСК - start {"task":"dsdsd","report_type":"research_report","agent":"Авто Агент"}
+2024-04-27 01:46:13 МСК - start {"task":"современные тренды в автоматизации бизнесс процессов","report_type":"research_report","agent":"Авто Агент"}
+2024-04-27 01:49:01 МСК - start {"task":"современные тренды в автоматизации бизнесс процессов","report_type":"research_report","agent":"Авто Агент"}
+2024-04-27 13:26:40 МСК - start {"task":"Отчёт о жизни на эльбрусе","report_type":"detailed_report","agent":true}
+2024-04-27 13:29:53 МСК - start {"task":"jnx`njnx`n j еудупкфьь","report_type":"detailed_report","agent":true}
+2024-04-27 13:30:10 МСК - start {"task":"отчёт о работе telegramm","report_type":"detailed_report","agent":true}
+2024-04-27 13:30:54 МСК - start {"task":"Отчёт о жизни на луне","report_type":"detailed_report","agent":true}
+2024-04-27 13:32:16 МСК - start {"task":"тест","report_type":"detailed_report","agent":true}
+2024-04-27 13:32:16 МСК - start {"task":"отчёт о жизни на луне","report_type":"detailed_report","agent":true}
+2024-04-27 13:33:27 МСК - start {"task":"как захватить вексь мир ?","report_type":"detailed_report","agent":true}
+2024-04-27 13:41:34 МСК - start {"task":"Какбзахватитьмир","report_type":"detailed_report","agent":true}
+2024-04-27 14:06:22 МСК - start {"task":"О чате гпт","report_type":"detailed_report","agent":true}
+2024-04-27 14:09:26 МСК - start {"task":"Напиши о чём нибудь","report_type":"detailed_report","agent":true}
+2024-04-27 14:18:23 МСК - start {"task":"Отчёт о жизни на луне","report_type":"detailed_report","agent":true}
+2024-04-27 14:47:24 МСК - start {"task":"анализ рынка фриланс платформ","report_type":"detailed_report","agent":true}
+2024-04-27 14:55:37 МСК - start {"task":"пыль на луне","report_type":"detailed_report","agent":true}
+2024-04-27 15:00:09 МСК - start {"task":"фффф","report_type":"detailed_report","agent":true}
+2024-04-27 15:21:32 МСК - start {"task":"Создай отчёт о популярности vue в веб разработке","report_type":"detailed_report","agent":true}
+2024-04-27 15:42:49 МСК - start {"task":"почему люди злые ?","report_type":"detailed_report","agent":true}
+2024-04-27 17:07:38 МСК - start {"task":"почему люди становятся злыми и не всегда воспринимают действительность адекватно","report_type":"detailed_report","agent":true}
+2024-04-27 17:22:54 МСК - start {"task":"почему люди злые","report_type":"detailed_report","agent":true}
+2024-04-27 17:29:26 МСК - start {"task":"исследование причин злости и искажения восприятия реальности у людей","report_type":"detailed_report","agent":true}
+2024-04-27 19:50:06 МСК - start {"task":"что лучше flusk или fastAPI","report_type":"detailed_report","agent":true}
+2024-04-28 10:47:04 МСК - start {"task":"Кот","report_type":"detailed_report","agent":true}
+2024-04-28 11:32:56 МСК - start {"task":"как влияет развитие LLM на HR. Какие изменится HR в ближайшие году","report_type":"detailed_report","agent":true}
+2024-04-28 11:43:52 МСК - start {"task":"Как GenAl и LLM изменить подходы в подборе персонала в ближайшие годы","report_type":"detailed_report","agent":true}

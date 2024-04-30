@@ -282,13 +282,13 @@ async def get_report_introduction(query, context, role, config, websocket=None):
             websocket=websocket,
             max_tokens=config.smart_token_limit
         )
-        
+
         return introduction
     except Exception as e:
         print(f"{Fore.RED}Error in generating report introduction: {e}{Style.RESET_ALL}")
 
     return ""
-    
+
 def extract_headers(markdown_text: str):
     # Function to extract headers from markdown text
 
@@ -342,7 +342,7 @@ def table_of_contents(markdown_text: str):
 
         # Extract headers from markdown text
         headers = extract_headers(markdown_text)
-        toc = "## Table of Contents\n\n" + generate_table_of_contents(
+        toc = "## Содержание\n\n" + generate_table_of_contents(
             headers
         )  # Generate table of contents
 
@@ -355,7 +355,7 @@ def table_of_contents(markdown_text: str):
 def add_source_urls(report_markdown: str, visited_urls: set):
     """
     This function takes a Markdown report and a set of visited URLs as input parameters.
-    
+
     Args:
       report_markdown (str): The `add_source_urls` function takes in two parameters:
       visited_urls (set): Visited_urls is a set that contains URLs that have already been visited. This
@@ -363,7 +363,7 @@ def add_source_urls(report_markdown: str, visited_urls: set):
     avoid duplication.
     """
     try:
-        url_markdown = "\n\n\n## References\n\n"
+        url_markdown = "\n\n\n## Ссылки\n\n"
 
         url_markdown += "".join(f"- [{url}]({url})\n" for url in visited_urls)
 
