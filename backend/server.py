@@ -17,7 +17,7 @@ from sqlalchemy.orm import Session
 
 # Импорты из локальных модулей
 from backend.websocket_manager import WebSocketManager
-from backend.utils import write_md_to_pdf, write_md_to_word
+from backend.utils import write_md_to_pdf, write_md_to_word, write_text_to_md
 from backend.auth import auth_router, token_required, Token, RefreshToken, get_db
 
 
