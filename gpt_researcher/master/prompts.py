@@ -14,8 +14,8 @@ def generate_search_queries_prompt(question: str, parent_query: str, report_type
     Returns: str: The search queries prompt for the given question
     """
 
-    if report_type == ReportType.DetailedReport.value:
-        task = f"{parent_query} : {question}"
+    if report_type == ReportType.DetailedReport.value or report_type == ReportType.SubtopicReport.value:
+        task = f"{parent_query} - {question}"
     else:
         task = question
 
@@ -178,6 +178,7 @@ def generate_subtopic_report_prompt(
     context,
     report_format="apa",
     total_words=1000,
+    max_subsections=5,
 ) -> str:
 
     return f"""
@@ -186,16 +187,16 @@ def generate_subtopic_report_prompt(
 
     "Main Topic and Subtopic":
     Using the latest information available, construct a detailed report on the subtopic: {current_subtopic} under the main topic: {main_topic}.
-    You must limit the number of subsections to a maximum of 5.
+    You must limit the number of subsections to a maximum of {max_subsections}.
 
     "Content Focus":
     - The report should focus on answering the question, be well-structured, informative, in-depth, and include facts and numbers if available.
     - Use markdown syntax and follow the {report_format.upper()} format.
 
     "Structure and Formatting":
-    - As this sub-report will be part of a larger report, include only the main body divided into suitable subtopics without any introduction, conclusion, or reference section.
+    - As this sub-report will be part of a larger report, include only the main body divided into suitable subtopics without any introduction or conclusion section.
 
-    - Include hyperlinks to relevant URLs wherever referenced in the report, for example:
+    - You MUST include markdown hyperlinks to relevant source URLs wherever referenced in the report, for example:
 
         # Report Header
 
@@ -214,7 +215,8 @@ def generate_subtopic_report_prompt(
     "IMPORTANT!":
     - The focus MUST be on the main topic! You MUST Leave out any information un-related to it!
     - Must NOT have any introduction, conclusion, summary or reference section.
-    Reply in Russian only.
+    - You MUST include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
+    - Reply in Russian only.
     """
 
 
