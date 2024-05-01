@@ -8,6 +8,8 @@ openai
 python-dotenv
 pyyaml
 uvicorn
+selenium
+webdriver-manager
 pydantic
 fastapi
 python-multipart

@@ -24,3 +24,4 @@
 2024-04-28 10:47:04 МСК - start {"task":"Кот","report_type":"detailed_report","agent":true}
 2024-04-28 11:32:56 МСК - start {"task":"как влияет развитие LLM на HR. Какие изменится HR в ближайшие году","report_type":"detailed_report","agent":true}
 2024-04-28 11:43:52 МСК - start {"task":"Как GenAl и LLM изменить подходы в подборе персонала в ближайшие годы","report_type":"detailed_report","agent":true}
+2024-05-01 15:16:27 МСК - start {"task":"gfdvdfg","report_type":"detailed_report","agent":true}

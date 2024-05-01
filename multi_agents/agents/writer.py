@@ -1,7 +1,7 @@
 from datetime import datetime
 from langchain.adapters.openai import convert_openai_messages
 from langchain_openai import ChatOpenAI
-import json5 as json
+import json as json
 from .utils.views import print_agent_output
 
 sample_json = """
