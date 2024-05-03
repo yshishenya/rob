@@ -5,7 +5,7 @@ from md2pdf.core import md2pdf
 import mistune
 from docx import Document
 from htmldocx import HtmlToDocx
-
+import os
 import datetime
 import re
 from unidecode import unidecode
@@ -24,7 +24,10 @@ def format_filename(text):
     # Добавление даты и уникального идентификатора
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     task = uuid.uuid4().hex
-    file_path = f"outputs/{current_date}_{report_name_translit}_{task}"
+    # Создание уникальной папки для каждого запроса
+    unique_folder_path = f"outputs/{current_date}_{report_name_translit}_{task}"
+    os.makedirs(unique_folder_path, exist_ok=True)
+    file_path = f"{unique_folder_path}/{report_name_translit}"
     return file_path
 
 async def write_to_file(filename: str, text: str) -> None:
@@ -49,8 +52,8 @@ async def write_text_to_md(text: str, filename: str = "") -> str:
     Returns:
         str: The file path of the generated Markdown file.
     """
-    file_path = format_filename(text)
-    await write_to_file(file_path + ".md", text)
+    file_path = format_filename(text) + ".md"
+    await write_to_file(file_path, text)
     return file_path
 
 async def write_md_to_pdf(text: str, filename: str = "") -> str:
@@ -62,11 +65,11 @@ async def write_md_to_pdf(text: str, filename: str = "") -> str:
     Returns:
         str: The encoded file path of the generated PDF.
     """
-    file_path = f"format_filename(text).pdf"
+    file_path = format_filename(text) + ".pdf"
 
 
     try:
-        md2pdf(file_path + ".pdf",
+        md2pdf(file_path,
                md_content=text,
                css_file_path="./frontend/assets/pdf_styles.css",
                base_url=None)
