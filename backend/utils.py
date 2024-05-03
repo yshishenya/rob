@@ -50,7 +50,7 @@ async def write_text_to_md(text: str, filename: str = "") -> str:
         str: The file path of the generated Markdown file.
     """
     file_path = format_filename(text)
-    await write_to_file(file_path, text)
+    await write_to_file(file_path + ".md", text)
     return file_path
 
 async def write_md_to_pdf(text: str, filename: str = "") -> str:
@@ -66,7 +66,7 @@ async def write_md_to_pdf(text: str, filename: str = "") -> str:
 
 
     try:
-        md2pdf(file_path,
+        md2pdf(file_path + ".pdf",
                md_content=text,
                css_file_path="./frontend/assets/pdf_styles.css",
                base_url=None)
