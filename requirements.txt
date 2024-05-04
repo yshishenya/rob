@@ -36,3 +36,4 @@ SQLAlchemy
 werkzeug
 psycopg2-binary
 unidecode
+websockets

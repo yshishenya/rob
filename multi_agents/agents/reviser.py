@@ -8,7 +8,7 @@ You have been tasked by your editor with revising the following draft, which was
 You may follow the editor's notes or not, as you see fit. You must write in Russian.
 Draft:\n\n{draft}" + "Editor's notes:\n\n{notes}"""
 
-class RevisorAgent:
+class ReviserAgent:
     def __init__(self):
         pass
 

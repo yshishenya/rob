@@ -61,7 +61,7 @@ def generate_report_prompt(question, context, report_format="apa", total_words=1
             f"Assume that the  my current date is {datetime.now().strftime('%B %d, %Y')}"
 
 
-def generate_resource_report_prompt(question, context, report_format="apa", total_words=1000):
+def generate_resource_report_prompt(question, context, report_format="apa", total_words=700):
     """Generates the resource report prompt for the given question and research summary.
 
     Args:
@@ -87,7 +87,7 @@ def generate_custom_report_prompt(query_prompt, context, report_format="apa", to
     return f'"{context}"\n\n{query_prompt}'
 
 
-def generate_outline_report_prompt(question, context, report_format="apa", total_words=1000):
+def generate_outline_report_prompt(question, context, report_format="apa", total_words=1200):
     """ Generates the outline report prompt for the given question and research summary.
     Args: question (str): The question to generate the outline report prompt for
             research_summary (str): The research summary to generate the outline report prompt for
@@ -216,7 +216,6 @@ def generate_subtopic_report_prompt(
     - The focus MUST be on the main topic! You MUST Leave out any information un-related to it!
     - Must NOT have any introduction, conclusion, summary or reference section.
     - You MUST include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
-    - Reply in Russian only.
     """
 
 
