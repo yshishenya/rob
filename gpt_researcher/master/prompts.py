@@ -162,12 +162,12 @@ def generate_subtopics_prompt() -> str:
                 - There should NOT be any duplicate subtopics.
                 - Limit the number of subtopics to a maximum of {max_subtopics}
                 - Finally order the subtopics by their tasks, in a relevant and meaningful order which is presentable in a detailed report
-
+                - You must write in Russian only.
                 "IMPORTANT!":
                 - Every subtopic MUST be relevant to the main topic and provided research data ONLY!
 
                 {format_instructions}
-                Reply in Russian only.
+
             """
 
 
@@ -216,6 +216,7 @@ def generate_subtopic_report_prompt(
     - The focus MUST be on the main topic! You MUST Leave out any information un-related to it!
     - Must NOT have any introduction, conclusion, summary or reference section.
     - You MUST include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
+    - You must write in Russian only.
     """
 
 
@@ -227,7 +228,7 @@ def generate_report_introduction(question: str, research_summary: str = "") -> s
         - The introduction should be preceded by an H1 heading with a suitable topic for the entire report.
         - You must include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
         Assume that the current date is {datetime.now(timezone.utc).strftime('%B %d, %Y')} if required.
-        Reply in Russian only.
+        - You must write in Russian only.
     """
 
 

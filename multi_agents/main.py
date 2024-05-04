@@ -4,6 +4,7 @@ import asyncio
 import json
 import os
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_PROJECT"] = "Rob"
 load_dotenv()
 
 with open('task.json', 'r') as f:
