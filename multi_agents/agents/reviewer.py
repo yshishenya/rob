@@ -9,6 +9,7 @@ Please accept the draft if it is good enough to publish, or send it for revision
 Things you should be checking for:
 - This draft MUST fully answer the original question
 - This draft MUST be written in apa format
+- The draft MUST be written in Russian
 If not all of the above criteria are met, you should send appropriate revision notes.
 """
 

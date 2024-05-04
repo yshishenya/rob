@@ -41,6 +41,7 @@ class WriterAgent:
                        f"For example: 'This is a sample text. ([url website](url))'\n"
                        f"You MUST return nothing but a JSON in the following format:\n"
                        f"{sample_json}\n\n"
+                       f" You must write in Russian."
 
         }]
 

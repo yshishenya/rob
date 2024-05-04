@@ -1,34 +1,11 @@
 import aiofiles
 import urllib
-import uuid
 from md2pdf.core import md2pdf
 import mistune
 from docx import Document
 from htmldocx import HtmlToDocx
-import os
-import datetime
-import re
-from unidecode import unidecode
 
-def format_filename(text):
-    # Извлечение первой строки
-    report_name = text.split('\n', 1)[0]
-    # Удаление спецсимволов
-    report_name = re.sub(r'[^\w\s]', '', report_name)
-    # Замена пробелов на подчеркивания и удаление лишних подчеркиваний
-    report_name = re.sub(r'\s+', '_', report_name).strip('_')
-    # Ограничение названия первыми четырьмя словами
-    report_name = '_'.join(report_name.split('_')[:5])
-    # Транслитерация с использованием unidecode
-    report_name_translit = unidecode(report_name)
-    # Добавление даты и уникального идентификатора
-    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
-    task = uuid.uuid4().hex
-    # Создание уникальной папки для каждого запроса
-    unique_folder_path = f"outputs/{current_date}_{report_name_translit}_{task}"
-    os.makedirs(unique_folder_path, exist_ok=True)
-    file_path = f"{unique_folder_path}/{report_name_translit}"
-    return file_path
+
 
 async def write_to_file(filename: str, text: str) -> None:
     """Asynchronously write text to a file in UTF-8 encoding.
@@ -52,9 +29,14 @@ async def write_text_to_md(text: str, filename: str = "") -> str:
     Returns:
         str: The file path of the generated Markdown file.
     """
-    file_path = format_filename(text) + ".md"
-    await write_to_file(file_path, text)
-    return file_path
+    try:
+        #file_path = format_filename(text) + ".md"
+        await write_to_file(filename+".md", text)
+        encoded_file_path = urllib.parse.quote(filename)
+        return encoded_file_path
+    except Exception as e:
+        print(f"Ошибка при записи в Markdown файл: {e}")
+        return ""
 
 async def write_md_to_pdf(text: str, filename: str = "") -> str:
     """Converts Markdown text to a PDF file and returns the file path.
@@ -65,20 +47,20 @@ async def write_md_to_pdf(text: str, filename: str = "") -> str:
     Returns:
         str: The encoded file path of the generated PDF.
     """
-    file_path = format_filename(text) + ".pdf"
+    #file_path = format_filename(text) + ".pdf"
 
 
     try:
-        md2pdf(file_path,
+        md2pdf(filename+".pdf",
                md_content=text,
                css_file_path="./frontend/assets/pdf_styles.css",
                base_url=None)
-        print(f"Report written to {file_path}.pdf")
+        print(f"Report written to {filename}.pdf")
     except Exception as e:
         print(f"Error in converting Markdown to PDF: {e}")
         return ""
 
-    encoded_file_path = urllib.parse.quote(file_path)
+    encoded_file_path = urllib.parse.quote(filename+".pdf")
     return encoded_file_path
 
 async def write_md_to_word(text: str, filename: str = "") -> str:
@@ -90,7 +72,7 @@ async def write_md_to_word(text: str, filename: str = "") -> str:
     Returns:
         str: The encoded file path of the generated DOCX.
     """
-    file_path = format_filename(text)
+    #file_path = format_filename(text)
     try:
         # Convert report markdown to HTML
         html = mistune.html(text)
@@ -99,10 +81,10 @@ async def write_md_to_word(text: str, filename: str = "") -> str:
         # Convert the html generated from the report to document format
         HtmlToDocx().add_html_to_document(html, doc)
         # Save the docx document to file_path
-        doc.save(f"{file_path}.docx")
-        print(f"Report written to {file_path}.docx")
+        doc.save(f"{filename}.docx")
+        print(f"Report written to {filename}.docx")
 
-        encoded_file_path = urllib.parse.quote(f"{file_path}.docx")
+        encoded_file_path = urllib.parse.quote(f"{filename}.docx")
         return encoded_file_path
 
     except Exception as e:

@@ -33,6 +33,7 @@ class EditorAgent:
                        f"'subheaders' (maximum {self.max_subheaders} subheaders) with the following structure: "
                        f"'{{title: string research title, "
                        f"subheaders: ['subheader1', 'subheader2', 'subheader3' ...]}}.\n "
+                       f" You must write the report in Russian"
         }]
 
         lc_messages = convert_openai_messages(prompt)
