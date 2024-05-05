@@ -75,11 +75,22 @@ class UserResponse(BaseModel):
     is_admin: bool = Field(..., description="Признак того, является ли пользователь администратором.")
 
 class PasswordChangeRequest(BaseModel):
+    user_id: int = Field(..., description="Идентификатор пользователя, для которого нужно изменить пароль.")
     new_password: str = Field(..., description="Новый пароль пользователя. Должен быть надежным и содержать минимум 6 символов.")
 
-class form_data(BaseModel):
-    username: str
-    password: str
+class PasswordChangeResponse(BaseModel):
+    user_id: int = Field(..., description="Идентификатор пользователя, для которого был изменен пароль.")
+    message: str = Field(..., description="Сообщение об успешной смене пароля.")
+
+class DeleteUserRequest(BaseModel):
+    user_id: int = Field(..., description="Идентификатор пользователя, которого нужно удалить.")
+
+class DeleteUserResponse(BaseModel):
+    message: str = Field(..., description="Сообщение об успешном удалении пользователя.")
+
+
+
+
 
 #API ключ
 #api_key_header = APIKeyHeader(name="token", auto_error=False)
@@ -92,11 +103,10 @@ MAX_ACTIVE_TOKENS_PER_USER = 5
 token_storage = RedisTokenStorage()
 
 # Создаем экземпляр APIRouter
-auth_router = APIRouter(
-    dependencies=[Depends(oauth2_scheme)]
-)
+auth_router = APIRouter()
+
 # Проверка токена
-async def token_required(websocket: WebSocket, db: Session = Depends(get_db)):
+async def token_required(websocket: WebSocket):
     token = websocket.query_params.get('token')
     logger.info(f"Token received for validation: {token}")
     if token:
@@ -113,7 +123,7 @@ async def token_required(websocket: WebSocket, db: Session = Depends(get_db)):
         await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
         raise HTTPException(status_code=403, detail='Token is required')
 
-async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
+async def get_current_user_admin(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     logger.info(f"Retrieving user details for token: {token}")
     user_id = token_storage.retrieve_token(token)
     if not user_id:
@@ -132,20 +142,20 @@ async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = De
     logger.info(f"User {user.username} authenticated as admin")
     return user
 
-async def get_current_user_admin(request: Request, db: Session = Depends(get_db)):
-    token = request.headers.get('token')
-    if not token:
-        raise HTTPException(status_code=403, detail="Token is required")
+# async def get_current_user_admin(request: Request, db: Session = Depends(get_db)):
+#     token = request.headers.get('token')
+#     if not token:
+#         raise HTTPException(status_code=403, detail="Token is required")
 
-    user_id = token_storage.retrieve_user_id_by_token(token)
-    if not user_id:
-        raise HTTPException(status_code=401, detail="Invalid or expired token")
+#     user_id = token_storage.retrieve_user_id_by_token(token)
+#     if not user_id:
+#         raise HTTPException(status_code=401, detail="Invalid or expired token")
 
-    user = db.query(User).filter_by(id=user_id).first()
-    if not user or not user.is_admin:
-        raise HTTPException(status_code=403, detail="Admin privileges required")
+#     user = db.query(User).filter_by(id=user_id).first()
+#     if not user or not user.is_admin:
+#         raise HTTPException(status_code=403, detail="Admin privileges required")
 
-    return user
+#     return user
 
 # Функция для создания токенов доступа и обновления
 async def create_tokens(user_id):
@@ -191,7 +201,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = 
                         token_storage.delete_token(token['token'])
 
                 # Создаем новые токены
-                new_access_token, new_refresh_token = create_tokens(user.id)
+                new_access_token, new_refresh_token = await create_tokens(user.id)
                 return JSONResponse(content={
                     'access_token': new_access_token['token'],
                     'expires_in': new_access_token['expires_in'],  # Время жизни токена доступа в секундах
@@ -232,7 +242,7 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
             logger.warning(f"DB error, failed to find user for user_id: {user_id}")
             raise HTTPException(status_code=404, detail='User not found')
         # Создаем новый токен доступа и refresh_token
-        new_access_token, new_refresh_token = create_tokens(user.id)
+        new_access_token, new_refresh_token = await create_tokens(user.id)
         return JSONResponse(content={
             'access_token': new_access_token['token'],
             'expires_in': new_access_token['expires_in'],
@@ -265,17 +275,17 @@ async def create_user(user_request: UserCreateRequest, db: Session = Depends(get
         raise HTTPException(status_code=500, detail="Internal server error")
     return new_user
 
-@auth_router.delete("/users/{user_id}/delete", status_code=204, summary="Удаление пользователя", description="Удаляет пользователя по идентификатору.")
-async def delete_user(user_id: int, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+@auth_router.delete("/users/delete", status_code=204, summary="Удаление пользователя", description="Удаляет пользователя по идентификатору.", dependencies=[Depends(oauth2_scheme)])
+async def delete_user(user_request: DeleteUserRequest, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
     if not admin.is_admin:
         raise HTTPException(status_code=403, detail="Admin privileges required")
-    user = db.query(User).filter_by(id=user_id).first()
+    user = db.query(User).filter_by(id=user_request.user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
 
     # Начало транзакции
     try:
-        tokens = token_storage.retrieve_token(user_id)
+        tokens = token_storage.retrieve_token(user_request.user_id)
         if tokens:
             for token in tokens:
                 token_storage.delete_token(token['token'])
@@ -284,16 +294,16 @@ async def delete_user(user_id: int, db: Session = Depends(get_db), admin: User =
         db.commit()
     except SQLAlchemyError as e:
         db.rollback()
-        logger.error(f"Failed to delete user {user_id}: {str(e)}")
+        logger.error(f"Failed to delete user {user_request.user_id}: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal server error")
-    return Response(status_code=status.HTTP_204_NO_CONTENT)
+    return Response(status_code=204)
 
-@auth_router.put("/users/{user_id}/password", status_code=200, summary="Смена пароля пользователя", description="Позволяет изменить пароль пользователя.")
-async def change_user_password(user_id: int, password_request: PasswordChangeRequest, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+@auth_router.put("/users/password", response_model=PasswordChangeResponse, status_code=200, summary="Смена пароля пользователя", description="Позволяет изменить пароль пользователя.", dependencies=[Depends(oauth2_scheme)])
+async def change_user_password(password_request: PasswordChangeRequest, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
     if not admin.is_admin:
         raise HTTPException(status_code=403, detail="Admin privileges required")
     try:
-        user = db.query(User).filter_by(id=user_id).first()
+        user = db.query(User).filter_by(id=password_request.user_id).first()
         if user:
             user.set_password(password_request.new_password)
             db.commit()
@@ -305,13 +315,13 @@ async def change_user_password(user_id: int, password_request: PasswordChangeReq
         logger.error(f"Failed to change user password: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal server error")
 
-@auth_router.put("/users/modify", response_model=UserResponse, status_code=200, summary="Изменение пользователя", description="Изменяет пользователя по идентификатору.")
-async def modify_user(user_id: int, user_request: UserCreateRequest, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+@auth_router.put("/users/modify", response_model=UserResponse, status_code=200, summary="Изменение пользователя", description="Изменяет пользователя по идентификатору.", dependencies=[Depends(oauth2_scheme)])
+async def modify_user(user_request: UserCreateRequest, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
     logger.info("Полученные данные:", user_request.model_dump())  # Добавьте эту строку для отладки
     if not admin.is_admin:
         raise HTTPException(status_code=403, detail="Admin privileges required")
     try:
-        user = db.query(User).filter_by(id=user_id).first()
+        user = db.query(User).filter_by(id=user_request.user_id).first()
         if user:
             user.username = user_request.username
             user.email = user_request.email
@@ -327,7 +337,7 @@ async def modify_user(user_id: int, user_request: UserCreateRequest, db: Session
             raise HTTPException(status_code=500, detail="Internal server error")
 
 
-@auth_router.get("/users", response_model=List[UserResponse], summary="Получение списка пользователей", description="Возвращает список всех пользователей.")
+@auth_router.get("/users", response_model=List[UserResponse], summary="Получение списка пользователей", description="Возвращает список всех пользователей.", dependencies=[Depends(oauth2_scheme)])
 async def get_users(db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
     if not admin.is_admin:
         raise HTTPException(status_code=403, detail="Admin privileges required")
