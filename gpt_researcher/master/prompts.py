@@ -14,8 +14,8 @@ def generate_search_queries_prompt(question: str, parent_query: str, report_type
     Returns: str: The search queries prompt for the given question
     """
 
-    if report_type == ReportType.DetailedReport.value:
-        task = f"{parent_query} : {question}"
+    if report_type == ReportType.DetailedReport.value or report_type == ReportType.SubtopicReport.value:
+        task = f"{parent_query} - {question}"
     else:
         task = question
 
@@ -61,7 +61,7 @@ def generate_report_prompt(question, context, report_format="apa", total_words=1
             f"Assume that the  my current date is {datetime.now().strftime('%B %d, %Y')}"
 
 
-def generate_resource_report_prompt(question, context, report_format="apa", total_words=1000):
+def generate_resource_report_prompt(question, context, report_format="apa", total_words=700):
     """Generates the resource report prompt for the given question and research summary.
 
     Args:
@@ -87,7 +87,7 @@ def generate_custom_report_prompt(query_prompt, context, report_format="apa", to
     return f'"{context}"\n\n{query_prompt}'
 
 
-def generate_outline_report_prompt(question, context, report_format="apa", total_words=1000):
+def generate_outline_report_prompt(question, context, report_format="apa", total_words=1200):
     """ Generates the outline report prompt for the given question and research summary.
     Args: question (str): The question to generate the outline report prompt for
             research_summary (str): The research summary to generate the outline report prompt for
@@ -162,12 +162,12 @@ def generate_subtopics_prompt() -> str:
                 - There should NOT be any duplicate subtopics.
                 - Limit the number of subtopics to a maximum of {max_subtopics}
                 - Finally order the subtopics by their tasks, in a relevant and meaningful order which is presentable in a detailed report
-
+                - You must write in Russian only.
                 "IMPORTANT!":
                 - Every subtopic MUST be relevant to the main topic and provided research data ONLY!
 
                 {format_instructions}
-                Reply in Russian only.
+
             """
 
 
@@ -178,6 +178,7 @@ def generate_subtopic_report_prompt(
     context,
     report_format="apa",
     total_words=1000,
+    max_subsections=5,
 ) -> str:
 
     return f"""
@@ -186,16 +187,16 @@ def generate_subtopic_report_prompt(
 
     "Main Topic and Subtopic":
     Using the latest information available, construct a detailed report on the subtopic: {current_subtopic} under the main topic: {main_topic}.
-    You must limit the number of subsections to a maximum of 5.
+    You must limit the number of subsections to a maximum of {max_subsections}.
 
     "Content Focus":
     - The report should focus on answering the question, be well-structured, informative, in-depth, and include facts and numbers if available.
     - Use markdown syntax and follow the {report_format.upper()} format.
 
     "Structure and Formatting":
-    - As this sub-report will be part of a larger report, include only the main body divided into suitable subtopics without any introduction, conclusion, or reference section.
+    - As this sub-report will be part of a larger report, include only the main body divided into suitable subtopics without any introduction or conclusion section.
 
-    - Include hyperlinks to relevant URLs wherever referenced in the report, for example:
+    - You MUST include markdown hyperlinks to relevant source URLs wherever referenced in the report, for example:
 
         # Report Header
 
@@ -214,7 +215,8 @@ def generate_subtopic_report_prompt(
     "IMPORTANT!":
     - The focus MUST be on the main topic! You MUST Leave out any information un-related to it!
     - Must NOT have any introduction, conclusion, summary or reference section.
-    Reply in Russian only.
+    - You MUST include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
+    - You must write in Russian only.
     """
 
 
@@ -226,7 +228,7 @@ def generate_report_introduction(question: str, research_summary: str = "") -> s
         - The introduction should be preceded by an H1 heading with a suitable topic for the entire report.
         - You must include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
         Assume that the current date is {datetime.now(timezone.utc).strftime('%B %d, %Y')} if required.
-        Reply in Russian only.
+        - You must write in Russian only.
     """
 
 
