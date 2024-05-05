@@ -3,15 +3,18 @@ from agents import MasterAgent
 import asyncio
 import json
 import os
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
+
+# Run with LangSmith if API key is set
+if os.environ.get("LANGCHAIN_API_KEY"):
+    os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "Rob"
 load_dotenv()
 
-with open('task.json', 'r') as f:
-    task = json.load(f)
-
 
 async def main():
+    with open('task.json', 'r') as f:
+        task = json.load(f)
+
     master_agent = MasterAgent(task)
     research_report = await master_agent.run()
     print(research_report)
