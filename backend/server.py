@@ -19,7 +19,7 @@ from pydantic import BaseModel
 # Импорты из локальных модулей
 from backend.websocket_manager import WebSocketManager
 from backend.utils import write_md_to_pdf, write_md_to_word, write_text_to_md
-from backend.auth import auth_router, token_required
+from backend.auth.auth import auth_router, token_required
 
 
 # Настройка уровня логирования для отладки
@@ -72,14 +72,8 @@ def format_filename(task):
     report_name_translit = unidecode(report_name)
     # Добавление даты и уникального идентификатора
     current_date = datetime.now().strftime("%Y-%m-%d")
-    #task = random.randint(1000, 9999)
-    # Создание уникальной папки для каждого запроса
-    unique_folder_path = f"outputs/{current_date}_{report_name_translit}"
-    folder_counter = 1
-    original_unique_folder_path = unique_folder_path
-    while os.path.exists(unique_folder_path):
-        unique_folder_path = f"{original_unique_folder_path}_{folder_counter}"
-        folder_counter += 1
+    current_time_ms = datetime.now().strftime("%H-%M-%S-%f")
+    unique_folder_path = f"outputs/{current_date}_{report_name_translit}_{current_time_ms}"
     os.makedirs(unique_folder_path, exist_ok=True)
     file_path = f"{unique_folder_path}/{report_name_translit}"
     return file_path

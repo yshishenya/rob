@@ -30,9 +30,10 @@ async def write_text_to_md(text: str, filename: str = "") -> str:
         str: The file path of the generated Markdown file.
     """
     try:
-        #file_path = format_filename(text) + ".md"
+        if filename == "":
+            raise ValueError("Filename cannot be empty.")
         await write_to_file(filename+".md", text)
-        encoded_file_path = urllib.parse.quote(filename)
+        encoded_file_path = urllib.parse.quote(filename+".md")
         return encoded_file_path
     except Exception as e:
         print(f"Ошибка при записи в Markdown файл: {e}")
@@ -47,6 +48,10 @@ async def write_md_to_pdf(text: str, filename: str = "") -> str:
     Returns:
         str: The encoded file path of the generated PDF.
     """
+    # Check if filename is provided
+    if not filename:
+        raise ValueError("Filename cannot be empty")
+
     #file_path = format_filename(text) + ".pdf"
 
 
@@ -62,8 +67,7 @@ async def write_md_to_pdf(text: str, filename: str = "") -> str:
 
     encoded_file_path = urllib.parse.quote(filename+".pdf")
     return encoded_file_path
-
-async def write_md_to_word(text: str, filename: str = "") -> str:
+async def write_md_to_word(text: str, filename: str) -> str:
     """Converts Markdown text to a DOCX file and returns the file path.
 
     Args:
@@ -72,7 +76,10 @@ async def write_md_to_word(text: str, filename: str = "") -> str:
     Returns:
         str: The encoded file path of the generated DOCX.
     """
-    #file_path = format_filename(text)
+    # Check if filename is provided
+    if not filename:
+        raise ValueError("Filename cannot be empty")
+
     try:
         # Convert report markdown to HTML
         html = mistune.html(text)

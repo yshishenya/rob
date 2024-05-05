@@ -40,3 +40,4 @@
 2024-05-02 14:59:48 МСК - start {"task":"О жизни в мексике","report_type":"detailed_report","agent":true}
 2024-05-02 16:17:24 МСК - start {"task":"о жизни на луне","report_type":"detailed_report","agent":true}
 2024-05-03 09:13:09 МСК - start {"task":"jndtn","report_type":"detailed_report","agent":true}
+2024-05-05 21:35:16 МСК - start {"task":"тест","report_type":"detailed_report","agent":true}

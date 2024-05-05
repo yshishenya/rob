@@ -42,21 +42,21 @@ class User(Base):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
-class Token(Base):
-    __tablename__ = "token"
-    id = Column(Integer, primary_key=True, index=True)
-    token = Column(String, unique=True, index=True)
-    user_id = Column(Integer, ForeignKey('user.id'), index=True)
-    user = relationship('User', backref=backref('tokens', lazy=True))
-    expires_at = Column(DateTime, nullable=False)
+# class Token(Base):
+#     __tablename__ = "token"
+#     id = Column(Integer, primary_key=True, index=True)
+#     token = Column(String, unique=True, index=True)
+#     user_id = Column(Integer, ForeignKey('user.id'), index=True)
+#     user = relationship('User', backref=backref('tokens', lazy=True))
+#     expires_at = Column(DateTime, nullable=False)
 
-class RefreshToken(Base):
-    __tablename__ = "refresh_token"
-    id = Column(Integer, primary_key=True, index=True)
-    refresh_token = Column(String, unique=True, index=True)
-    user_id = Column(Integer, ForeignKey('user.id'), index=True)
-    user = relationship('User', backref=backref('refresh_tokens', lazy=True))
-    expires_at = Column(DateTime, nullable=False)
+# class RefreshToken(Base):
+#     __tablename__ = "refresh_token"
+#     id = Column(Integer, primary_key=True, index=True)
+#     refresh_token = Column(String, unique=True, index=True)
+#     user_id = Column(Integer, ForeignKey('user.id'), index=True)
+#     user = relationship('User', backref=backref('refresh_tokens', lazy=True))
+#     expires_at = Column(DateTime, nullable=False)
 
 def get_db():
     db = SessionLocal()

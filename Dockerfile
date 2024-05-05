@@ -15,7 +15,7 @@ RUN apt-get update \
 FROM install-browser as gpt-researcher-install
 
 ENV PIP_ROOT_USER_ACTION=ignore
-ENV APP_PORT=$APP_PORT
+
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
@@ -32,6 +32,6 @@ USER gpt-researcher
 
 COPY --chown=gpt-researcher:gpt-researcher ./ ./
 
-ARG APP_PORT
+RUN echo "APP_PORT: $APP_PORT"
 EXPOSE $APP_PORT
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "$APP_PORT", "--log-level", "debug"]
+CMD uvicorn main:app --host 0.0.0.0 --port $APP_PORT --log-level debug
