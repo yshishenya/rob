@@ -1,7 +1,9 @@
 # config file
 import json
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class Config:
     """Config class for GPT Researcher."""
@@ -9,7 +11,7 @@ class Config:
     def __init__(self, config_file: str = None):
         """Initialize the config class."""
         self.config_file = config_file if config_file else os.getenv('CONFIG_FILE')
-        self.retriever = os.getenv('SEARCH_RETRIEVER', "tavily")
+        self.retriever = os.getenv('SEARCH_RETRIEVER', "duckduckgo")
         self.embedding_provider = os.getenv('EMBEDDING_PROVIDER', 'openai')
         self.llm_provider = os.getenv('LLM_PROVIDER', "openai")
         self.fast_llm_model = os.getenv('FAST_LLM_MODEL', "gpt-3.5-turbo-16k")

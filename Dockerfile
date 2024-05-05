@@ -16,6 +16,7 @@ FROM install-browser as gpt-researcher-install
 
 ENV PIP_ROOT_USER_ACTION=ignore
 
+
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
@@ -31,6 +32,6 @@ USER gpt-researcher
 
 COPY --chown=gpt-researcher:gpt-researcher ./ ./
 
-EXPOSE 8033
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8033", "--log-level", "debug"]
-
+RUN echo "APP_PORT: $APP_PORT"
+EXPOSE $APP_PORT
+CMD uvicorn main:app --host 0.0.0.0 --port $APP_PORT --log-level debug

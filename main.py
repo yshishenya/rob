@@ -1,8 +1,38 @@
 from backend.server import app
 from dotenv import load_dotenv
-load_dotenv()
+import os
+import uvicorn
+
+load_dotenv()  # Loads environment variables from .env file
+
+#временныое включение логов
+
+LOGGING_CONFIG = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "default": {
+            "class": "logging.StreamHandler",
+            "formatter": "default",
+            "stream": "ext://sys.stdout"  # Use standard output
+        }
+    },
+    "formatters": {
+        "default": {
+            "()": "logging.Formatter",
+            "fmt": "%(levelname)s %(name)s@%(lineno)d %(message)s",
+        },
+    },
+    "loggers": {
+        "": {  # root logger
+            "handlers": ["default"],
+            "level": "DEBUG"
+        }
+    }
+}
+
 
 if __name__ == "__main__":
-    import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8033)
+    port = int(os.getenv('APP_PORT', 8034))  # Gets the port from the environment variable or uses 8034 as default
+    uvicorn.run(app, host="0.0.0.0", port=port, log_config=LOGGING_CONFIG)

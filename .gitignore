@@ -29,4 +29,6 @@ build
 docs/build
 .env.local
 user_requests.txt
+
+#Redis
 dump.rdb
