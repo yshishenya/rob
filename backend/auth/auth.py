@@ -6,9 +6,9 @@ from datetime import datetime, timedelta
 from typing import List
 
 # Импорт библиотек для работы с FastAPI
-from fastapi import APIRouter, Depends, HTTPException, Response, status, WebSocket
+from fastapi import APIRouter, Depends, HTTPException, Response, status, WebSocket, Request
 from fastapi.responses import JSONResponse
-from fastapi.security import APIKeyHeader, OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 # Импорт библиотек для работы с переменными окружения
 from dotenv import load_dotenv
@@ -26,16 +26,16 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 #Импорт лок
 from ..db import User, get_db, init_db
+# Импорт реализации хранилища токенов Redis
+from .redis_token_storage import RedisTokenStorage
+
 
 # Загрузка переменных окружения
 load_dotenv()
 
-# Импорт реализации хранилища токенов Redis
-from .redis_token_storage import RedisTokenStorage
-
-class RoleEnum(str, Enum):
-    admin = 'admin'  # Роль администратора, обладающая расширенными правами доступа.
-    user = 'user'  # Обычная пользовательская роль с базовым уровнем доступа.
+# class RoleEnum(str, Enum):
+#     admin = 'admin'  # Роль администратора, обладающая расширенными правами доступа.
+#     user = 'user'  # Обычная пользовательская роль с базовым уровнем доступа.
 
 # Модели Pydantic для запросов и ответов
 class LoginRequest(BaseModel):
@@ -77,17 +77,78 @@ class UserResponse(BaseModel):
 class PasswordChangeRequest(BaseModel):
     new_password: str = Field(..., description="Новый пароль пользователя. Должен быть надежным и содержать минимум 6 символов.")
 
-# Создаем экземпляр APIRouter
-auth_router = APIRouter()
-api_key_header = APIKeyHeader(name="token", auto_error=False)
+class form_data(BaseModel):
+    username: str
+    password: str
 
-MAX_ACTIVE_TOKENS_PER_USER = 5  # Максимальное количество одновременных сессий
+#API ключ
+#api_key_header = APIKeyHeader(name="token", auto_error=False)
+#Схема аутентификации
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
+#Максимальное количество одновременных сессий
+MAX_ACTIVE_TOKENS_PER_USER = 5
 
 # Создаем экземпляр хранилища токенов Redis
 token_storage = RedisTokenStorage()
 
+# Создаем экземпляр APIRouter
+auth_router = APIRouter(
+    dependencies=[Depends(oauth2_scheme)]
+)
+# Проверка токена
+async def token_required(websocket: WebSocket, db: Session = Depends(get_db)):
+    token = websocket.query_params.get('token')
+    logger.info(f"Token received for validation: {token}")
+    if token:
+        user_id = token_storage.retrieve_token(token)
+        if user_id:
+            logger.info(f"Token is valid for user_id: {user_id}")
+            return True  # Token is valid
+        else:
+            logger.error(f"Token not found or expired")
+            await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
+            raise HTTPException(status_code=401, detail="Invalid or expired token")
+    else:
+        logger.warning("Token is required for access")
+        await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
+        raise HTTPException(status_code=403, detail='Token is required')
+
+async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
+    logger.info(f"Retrieving user details for token: {token}")
+    user_id = token_storage.retrieve_token(token)
+    if not user_id:
+        logger.error("Token not found or expired")
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+    try:
+        user = db.query(User).filter_by(id=user_id).first()
+    except SQLAlchemyError as e:
+        logger.error(f"DB error, failed to find user: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+    if not user.is_admin:
+        logger.error("User is not admin")
+        raise HTTPException(status_code=403, detail="Admin privileges required")
+
+    logger.info(f"User {user.username} authenticated as admin")
+    return user
+
+async def get_current_user_admin(request: Request, db: Session = Depends(get_db)):
+    token = request.headers.get('token')
+    if not token:
+        raise HTTPException(status_code=403, detail="Token is required")
+
+    user_id = token_storage.retrieve_user_id_by_token(token)
+    if not user_id:
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+
+    user = db.query(User).filter_by(id=user_id).first()
+    if not user or not user.is_admin:
+        raise HTTPException(status_code=403, detail="Admin privileges required")
+
+    return user
+
 # Функция для создания токенов доступа и обновления
-def create_tokens(user_id):
+async def create_tokens(user_id):
     # Генерируем токен доступа и токен обновления
     access_token = binascii.hexlify(os.urandom(24)).decode()
     access_token_expires_in = 3600  # 1 час в секундах
@@ -113,35 +174,42 @@ def create_tokens(user_id):
 # Маршруты API
 @auth_router.post('/login', response_model=LoginResponse, summary="Авторизация пользователя", description="Позволяет пользователю войти в систему, используя имя пользователя и пароль.")
 async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
+    logger.debug(f"Username: {form_data.username}, Password: {form_data.password}")
     try:
         user = db.query(User).filter_by(username=form_data.username).first()
+        if user:
+            logger.debug(f"Checking password for user {user.username}")
+            if user.check_password(form_data.password):
+                logger.debug("Password is correct.")
+                # Получаем список всех токенов пользователя
+                tokens = token_storage.retrieve_token(user.id)
+                if tokens is None:
+                    tokens = []  # Обеспечиваем, что tokens будет списком для последующей обработки
+                if len(tokens) > MAX_ACTIVE_TOKENS_PER_USER:
+                    tokens_to_delete = sorted(tokens, key=lambda x: x['expires_at'])[:len(tokens) - MAX_ACTIVE_TOKENS_PER_USER]
+                    for token in tokens_to_delete:
+                        token_storage.delete_token(token['token'])
+
+                # Создаем новые токены
+                new_access_token, new_refresh_token = create_tokens(user.id)
+                return JSONResponse(content={
+                    'access_token': new_access_token['token'],
+                    'expires_in': new_access_token['expires_in'],  # Время жизни токена доступа в секундах
+                    'expires_at': new_access_token['expires_at'],
+                    'refresh_token': new_refresh_token['token'],
+                    'refresh_expires_in': new_refresh_token['expires_in'],  # Время жизни токена обновления в секундах
+                    'refresh_token_expires_at': new_refresh_token['expires_at'],
+                    'is_admin': user.is_admin
+                }, status_code=200)
+            else:
+                logger.debug("Password is incorrect.")
+                return JSONResponse(content={'detail': 'Invalid username or password'}, status_code=401)
+        else:
+            logger.debug("User not found.")
+            return JSONResponse(content={'detail': 'Invalid username or password'}, status_code=401)
     except SQLAlchemyError as e:
         logger.error(f"DB error, failed to find user: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal server error")
-    if user and user.check_password(form_data.password):
-        # Получаем список всех токенов пользователя
-        tokens = token_storage.retrieve_token(user.id)
-        if tokens is None:
-            tokens = []  # Обеспечиваем, что tokens будет списком для последующей обработки
-        if len(tokens) > MAX_ACTIVE_TOKENS_PER_USER:
-            tokens_to_delete = sorted(tokens, key=lambda x: x['expires_at'])[:len(tokens) - MAX_ACTIVE_TOKENS_PER_USER]
-            for token in tokens_to_delete:
-                token_storage.delete_token(token['token'])
-
-        # Создаем новые токены
-        new_access_token, new_refresh_token = create_tokens(user.id)
-        return JSONResponse(content={
-            'access_token': new_access_token['token'],
-            'expires_in': new_access_token['expires_in'],  # Время жизни токена доступа в секундах
-            'expires_at': new_access_token['expires_at'],
-            'refresh_token': new_refresh_token['token'],
-            'refresh_expires_in': new_refresh_token['expires_in'],  # Время жизни токена обновления в секундах
-            'refresh_token_expires_at': new_refresh_token['expires_at'],
-            'is_admin': user.is_admin
-        }, status_code=200)
-    else:
-        logger.warning(f"Invalid username or password for user: {form_data.username}")
-        return JSONResponse(content={'detail': 'Invalid username or password'}, status_code=401)
 
 @auth_router.post('/refresh', response_model=RefreshResponse, summary="Обновление токена доступа", description="Позволяет обновить токен доступа пользователя, используя действующий токен обновления.")
 async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
@@ -180,46 +248,12 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
         logger.error(f"Unexpected error: {str(e)}")
         raise HTTPException(status_code=500, detail='Internal server error')
 
-async def token_required(websocket: WebSocket, db: Session = Depends(get_db)):
-    token = websocket.query_params.get('token')
-    logger.info(f"Token received for validation: {token}")
-    if token:
-        user_id = token_storage.retrieve_token(token)
-        if user_id:
-            logger.info(f"Token is valid for user_id: {user_id}")
-            return True  # Token is valid
-        else:
-            logger.error(f"Token not found or expired")
-            await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
-            raise HTTPException(status_code=401, detail="Invalid or expired token")
-    else:
-        logger.warning("Token is required for access")
-        await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
-        raise HTTPException(status_code=403, detail='Token is required')
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
 
-async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
-    logger.info(f"Retrieving user details for token: {token}")
-    user_id = token_storage.retrieve_token(token)
-    if not user_id:
-        logger.error("Token not found or expired")
-        raise HTTPException(status_code=401, detail="Invalid or expired token")
-    try:
-        user = db.query(User).filter_by(id=user_id).first()
-    except SQLAlchemyError as e:
-        logger.error(f"DB error, failed to find user: {str(e)}")
-        raise HTTPException(status_code=500, detail="Internal server error")
-
-    if not user.is_admin:
-        logger.error("User is not admin")
-        raise HTTPException(status_code=403, detail="Admin privileges required")
-
-    logger.info(f"User {user.username} authenticated as admin")
-    return user
-
-@auth_router.post("/users/create", response_model=UserResponse, summary="Добавление нового пользователя", description="Создает нового пользователя с указанными данными.")
+@auth_router.post("/users/create", response_model=UserResponse, summary="Добавление нового пользователя", description="Создает нового пользователя с указанными данными.", dependencies=[Depends(oauth2_scheme)])
 async def create_user(user_request: UserCreateRequest, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+    if not admin.is_admin:
+        raise HTTPException(status_code=403, detail="Admin privileges required")
     try:
         new_user = User(username=user_request.username, email=user_request.email, is_admin=user_request.is_admin)
         new_user.set_password(user_request.password)
@@ -233,6 +267,8 @@ async def create_user(user_request: UserCreateRequest, db: Session = Depends(get
 
 @auth_router.delete("/users/{user_id}/delete", status_code=204, summary="Удаление пользователя", description="Удаляет пользователя по идентификатору.")
 async def delete_user(user_id: int, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+    if not admin.is_admin:
+        raise HTTPException(status_code=403, detail="Admin privileges required")
     user = db.query(User).filter_by(id=user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
@@ -254,6 +290,8 @@ async def delete_user(user_id: int, db: Session = Depends(get_db), admin: User =
 
 @auth_router.put("/users/{user_id}/password", status_code=200, summary="Смена пароля пользователя", description="Позволяет изменить пароль пользователя.")
 async def change_user_password(user_id: int, password_request: PasswordChangeRequest, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+    if not admin.is_admin:
+        raise HTTPException(status_code=403, detail="Admin privileges required")
     try:
         user = db.query(User).filter_by(id=user_id).first()
         if user:
@@ -270,6 +308,8 @@ async def change_user_password(user_id: int, password_request: PasswordChangeReq
 @auth_router.put("/users/modify", response_model=UserResponse, status_code=200, summary="Изменение пользователя", description="Изменяет пользователя по идентификатору.")
 async def modify_user(user_id: int, user_request: UserCreateRequest, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
     logger.info("Полученные данные:", user_request.model_dump())  # Добавьте эту строку для отладки
+    if not admin.is_admin:
+        raise HTTPException(status_code=403, detail="Admin privileges required")
     try:
         user = db.query(User).filter_by(id=user_id).first()
         if user:
@@ -288,7 +328,9 @@ async def modify_user(user_id: int, user_request: UserCreateRequest, db: Session
 
 
 @auth_router.get("/users", response_model=List[UserResponse], summary="Получение списка пользователей", description="Возвращает список всех пользователей.")
-async def get_users(db: Session = Depends(get_db), _: User = Depends(get_current_user_admin)):
+async def get_users(db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+    if not admin.is_admin:
+        raise HTTPException(status_code=403, detail="Admin privileges required")
     users = db.query(User).all()
     return users
 
