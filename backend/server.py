@@ -12,13 +12,10 @@ from fastapi.middleware.cors import CORSMiddleware
 # Импорты Pydantic
 from pydantic import BaseModel
 
-# Импорты SQLAlchemy
-from sqlalchemy.orm import Session
-
 # Импорты из локальных модулей
 from backend.websocket_manager import WebSocketManager
 from backend.utils import write_md_to_pdf, write_md_to_word
-from backend.auth import auth_router, token_required, Token, RefreshToken, get_db
+from backend.auth.auth import auth_router, token_required
 
 
 # Настройка уровня логирования для отладки

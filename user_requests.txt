@@ -24,3 +24,19 @@
 2024-04-28 10:47:04 МСК - start {"task":"Кот","report_type":"detailed_report","agent":true}
 2024-04-28 11:32:56 МСК - start {"task":"как влияет развитие LLM на HR. Какие изменится HR в ближайшие году","report_type":"detailed_report","agent":true}
 2024-04-28 11:43:52 МСК - start {"task":"Как GenAl и LLM изменить подходы в подборе персонала в ближайшие годы","report_type":"detailed_report","agent":true}
+2024-05-01 16:50:22 МСК - start {"task":"тест","report_type":"detailed_report","agent":true}
+2024-05-01 16:56:03 МСК - start {"task":"EFEFREF","report_type":"detailed_report","agent":true}
+2024-05-01 16:59:51 МСК - start {"task":"e3e3e3e","report_type":"detailed_report","agent":true}
+2024-05-01 17:10:41 МСК - start {"task":"dwdwdw","report_type":"detailed_report","agent":true}
+2024-05-01 17:12:28 МСК - start {"task":"анализ рнынка недвижимости","report_type":"detailed_report","agent":true}
+2024-05-01 17:14:28 МСК - start {"task":"dwdwdw","report_type":"detailed_report","agent":true}
+2024-05-01 17:15:41 МСК - start {"task":"fdfdfdf","report_type":"detailed_report","agent":true}
+2024-05-01 23:53:05 МСК - start {"task":"ddwedwd","report_type":"detailed_report","agent":true}
+2024-05-01 23:54:13 МСК - start {"task":"dsdjosdsojdjsop","report_type":"detailed_report","agent":true}
+2024-05-01 23:55:50 МСК - start {"task":"dsdsdsds","report_type":"detailed_report","agent":true}
+2024-05-02 10:47:37 МСК - start {"task":"Меня интересует тема строительтва загородного дома","report_type":"detailed_report","agent":true}
+2024-05-02 10:53:25 МСК - start {"task":"Давай теперь про вояджер1","report_type":"detailed_report","agent":true}
+2024-05-02 11:05:33 МСК - start {"task":"Отчёт о жизни на марсе","report_type":"detailed_report","agent":true}
+2024-05-02 14:59:48 МСК - start {"task":"О жизни в мексике","report_type":"detailed_report","agent":true}
+2024-05-02 16:17:24 МСК - start {"task":"о жизни на луне","report_type":"detailed_report","agent":true}
+2024-05-03 09:13:09 МСК - start {"task":"jndtn","report_type":"detailed_report","agent":true}

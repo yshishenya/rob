@@ -36,3 +36,7 @@ SQLAlchemy
 werkzeug
 psycopg2-binary
 unidecode
+
+
+#frontend
+streamlit

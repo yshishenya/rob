@@ -67,7 +67,7 @@ class GPTResearcher:
         Runs the GPT Researcher to conduct research
         """
         print(f"🔎 Running research for '{self.query}'...")
-        
+
         # Generate Agent
         if not (self.agent and self.role):
             self.agent, self.role = await choose_agent(self.query, self.cfg)

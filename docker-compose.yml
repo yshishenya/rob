@@ -1,15 +1,16 @@
 version: "3"
 services:
   gpt-researcher:
-    image: assafelovic/gpt-researcher:rob_dev
+    image: assafelovic/gpt-researcher:rob_yan
     restart: always
-    container_name: rob_dev
+    container_name: rob_yan
     build: ./
     volumes:
       - ./:/usr/src/app/ # Монтирование всей директории проекта
     environment:
-      OPENAI_API_KEY: ${OPENAI_API_KEY}
-      TAVILY_API_KEY: ${TAVILY_API_KEY}
-      CONFIG_FILE: ./config.json
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TAVILY_API_KEY=${TAVILY_API_KEY}
+      - APP_PORT=${APP_PORT}
+      - CONFIG_FILE=./config.json
     ports:
-      - 8033:8033
+      - ${APP_PORT}:${APP_PORT}
