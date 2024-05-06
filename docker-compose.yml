@@ -18,22 +18,12 @@ services:
       - .env
     ports:
       - ${APP_PORT}:${APP_PORT}
-    depends_on:
-      - redis # Указывает, что gpt-researcher зависит от сервиса redis
+    # depends_on:
+    #   - redis_rob # Указывает, что gpt-researcher зависит от сервиса redis
+    networks:
+      - redis_app-network
 
-  redis:
-    image: redis:latest
-    restart: always
-    command: /bin/sh -c "redis-server --requirepass $$REDIS_PASSWORD --save 60 1"
-    container_name: redis_server
-    ports:
-      - "6379:6379"
-    volumes:
-      - ./redis_data:/data
-    environment:
-      - REDIS_PASSWORD=${REDIS_PASSWORD}
-    env_file:
-      - .env
-
-volumes:
-  redis_data:
+networks:
+  redis_app-network:
+    #driver: bridge
+    external: true
