@@ -41,6 +41,13 @@
 2024-05-02 16:17:24 МСК - start {"task":"о жизни на луне","report_type":"detailed_report","agent":true}
 2024-05-03 09:13:09 МСК - start {"task":"jndtn","report_type":"detailed_report","agent":true}
 2024-05-05 21:35:16 МСК - start {"task":"тест","report_type":"detailed_report","agent":true}
+2024-05-06 10:21:34 МСК - start {"task":"О жизни на марсе","report_type":"detailed_report","agent":true}
+2024-05-06 10:30:18 МСК - start {"task":"О жизни на луне","report_type":"detailed_report","agent":true}
+2024-05-06 10:31:03 МСК - start {"task":"Л жизни на луне","report_type":"detailed_report","agent":true}
+2024-05-06 10:31:14 МСК - start {"task":"О жизни на луне","report_type":"detailed_report","agent":true}
+2024-05-06 11:29:16 МСК - start {"task":"asdasd","report_type":"detailed_report","agent":true}
+2024-05-06 11:30:37 МСК - start {"task":"о чём нибудь","report_type":"detailed_report","agent":true}
+2024-05-06 12:09:02 МСК - start {"task":"О скорости света","report_type":"detailed_report","agent":true}
 2024-05-07 12:18:43 МСК - start {"task":"опиши бизнес кейс использования RAG для работы с корпоративной базой знаний","report_type":"detailed_report","agent":true}
 2024-05-07 12:23:36 МСК - start {"task":"О чём нибудь","report_type":"detailed_report","agent":true}
 2024-05-07 13:28:43 МСК - start {"task":"какие бренды используют киберспорт в качестве инструмента продвижения в России","report_type":"detailed_report","agent":true}

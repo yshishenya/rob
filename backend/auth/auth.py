@@ -223,26 +223,43 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = 
 
 @auth_router.post('/refresh', response_model=RefreshResponse, summary="Обновление токена доступа", description="Позволяет обновить токен доступа пользователя, используя действующий токен обновления.")
 async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
+    refresh_token = request.refresh_token
+    logger.info(f"Attempting to refresh token for token: {refresh_token}")
+
     try:
-        refresh_token = request.refresh_token
-        print(refresh_token)
-        logger.info(f"Attempting to refresh token for token: {refresh_token}")
         # Получаем user_id по токену обновления
         user_id = token_storage.retrieve_user_id_by_refresh_token(refresh_token)
-        if not user_id:
-            logger.info(f"Invalid or expired refresh token: {refresh_token}")
-            raise HTTPException(status_code=401, detail=f'Invalid or expired refresh token {refresh_token}')
 
+    except UnicodeDecodeError:
+        logger.error(f"Redis error, failed to decode user_id for refresh token: {refresh_token}")
+        raise HTTPException(status_code=500, detail='Internal server error 10')
+    
+    except Exception as e:
+        logger.error(f"Unexpected error during token retrieval: {str(e)}")
+        raise HTTPException(status_code=500, detail='Internal server error 20')
+    
+    if not user_id:
+        logger.info(f"Invalid or expired refresh token: {refresh_token}")
+        raise HTTPException(status_code=401, detail=f'Invalid or expired refresh token')
+
+    try:
         # Удаляем старый refresh_token перед созданием нового
         token_storage.delete_refresh_token(refresh_token)
+    except Exception as e:
+        logger.error(f"Error during refresh token deletion: {str(e)}")
+        raise HTTPException(status_code=500, detail='Internal server error 30')
 
+    try:
         logger.info(f"Refresh token is valid for user_id: {user_id}")
         user = db.query(User).filter_by(id=int(user_id)).first()
+
         if not user:
             logger.warning(f"DB error, failed to find user for user_id: {user_id}")
             raise HTTPException(status_code=404, detail='User not found')
+
         # Создаем новый токен доступа и refresh_token
         new_access_token, new_refresh_token = await create_tokens(user.id)
+
         return JSONResponse(content={
             'access_token': new_access_token['token'],
             'expires_in': new_access_token['expires_in'],
@@ -251,12 +268,10 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
             'refresh_expires_in': new_refresh_token['expires_in'],
             'refresh_expires_at': new_refresh_token['expires_at']
         }, status_code=200)
-    except UnicodeDecodeError:
-        logger.error(f"Redis error, failed to decode user_id for refresh token: {refresh_token}")
-        raise HTTPException(status_code=500, detail='Internal server error')
+    
     except Exception as e:
-        logger.error(f"Unexpected error: {str(e)}")
-        raise HTTPException(status_code=500, detail='Internal server error')
+        logger.error(f"Unexpected error while creating new tokens: {str(e)}")
+        raise HTTPException(status_code=500, detail='Internal server error 40')
 
 
 
