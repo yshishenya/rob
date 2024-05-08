@@ -41,3 +41,11 @@
 2024-05-02 16:17:24 МСК - start {"task":"о жизни на луне","report_type":"detailed_report","agent":true}
 2024-05-03 09:13:09 МСК - start {"task":"jndtn","report_type":"detailed_report","agent":true}
 2024-05-05 21:35:16 МСК - start {"task":"тест","report_type":"detailed_report","agent":true}
+2024-05-07 12:18:43 МСК - start {"task":"опиши бизнес кейс использования RAG для работы с корпоративной базой знаний","report_type":"detailed_report","agent":true}
+2024-05-07 12:23:36 МСК - start {"task":"О чём нибудь","report_type":"detailed_report","agent":true}
+2024-05-07 13:28:43 МСК - start {"task":"какие бренды используют киберспорт в качестве инструмента продвижения в России","report_type":"detailed_report","agent":true}
+2024-05-07 13:43:17 МСК - start {"task":"Напиши отчёт о жизни на марсе","report_type":"detailed_report","agent":true}
+2024-05-07 13:50:39 МСК - start {"task":"Давай про слонов","report_type":"detailed_report","agent":true}
+2024-05-07 13:58:50 МСК - start {"task":"Отчёт о выбросах со2","report_type":"detailed_report","agent":true}
+2024-05-07 15:00:41 МСК - start {"task":"Какой JS фреймворк будет актуален в ближайшие годы ?","report_type":"detailed_report","agent":true}
+2024-05-07 15:04:29 МСК - start {"task":"дай инфу о JS","report_type":"detailed_report","agent":true}

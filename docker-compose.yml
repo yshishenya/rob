@@ -1,9 +1,9 @@
 version: "3"
 services:
   gpt-researcher:
-    image: assafelovic/gpt-researcher:rob_yan
+    image: assafelovic/gpt-researcher:rob_dev
     restart: always
-    container_name: rob_yan
+    container_name: rob_dev
     build: ./
     volumes:
       - ./:/usr/src/app/ # Монтирование всей директории проекта
@@ -12,28 +12,18 @@ services:
       - REDIS_PASSWORD=${REDIS_PASSWORD}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - TAVILY_API_KEY=${TAVILY_API_KEY}
-      - APP_PORT=${APP_PORT}
+      #- APP_PORT=${APP_PORT}
       - CONFIG_FILE=./config.json
     env_file:
       - .env
     ports:
       - ${APP_PORT}:${APP_PORT}
-    depends_on:
-      - redis # Указывает, что gpt-researcher зависит от сервиса redis
+    # depends_on:
+    #   - redis_rob # Указывает, что gpt-researcher зависит от сервиса redis
+    networks:
+      - redis_app-network
 
-  redis:
-    image: redis:latest
-    restart: always
-    command: /bin/sh -c "redis-server --requirepass $$REDIS_PASSWORD --save 60 1"
-    container_name: redis_server
-    ports:
-      - "6379:6379"
-    volumes:
-      - ./redis_data:/data
-    environment:
-      - REDIS_PASSWORD=${REDIS_PASSWORD}
-    env_file:
-      - .env
-
-volumes:
-  redis_data:
+networks:
+  redis_app-network:
+    #driver: bridge
+    external: true
