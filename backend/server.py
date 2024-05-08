@@ -89,20 +89,19 @@ def startup_event():
 async def read_root(request: Request):
     return templates.TemplateResponse('index.html', {"request": request, "report": None})
 
-def save_request_to_file(data):
+def save_request_to_file(data, username):
     moscow_time = datetime.now(timezone(timedelta(hours=3)))  # Московское время UTC+3
     timestamp = moscow_time.strftime("%Y-%m-%d %H:%M:%S")
     with open("user_requests.txt", "a") as file:
-        file.write(f"{timestamp} МСК - {data}\n")
+        file.write(f"{timestamp} МСК - User:{username} - Request:{data}\n")
 
 # Определение WebSocket эндпоинта
 @app.websocket("/ws")
-async def websocket_endpoint(websocket: WebSocket, token: str = Depends(token_required)):
+async def websocket_endpoint(websocket: WebSocket, username: str = Depends(token_required)):
     try:
         logger.debug("Attempting to connect to WebSocket.")
         await websocket.accept()
         logger.debug("WebSocket connection accepted.")
-        ...
     except Exception as e:
         logger.error(f"Error in websocket_endpoint: {e}")
 
@@ -110,7 +109,7 @@ async def websocket_endpoint(websocket: WebSocket, token: str = Depends(token_re
     try:
         while True:
             data = await websocket.receive_text()
-            save_request_to_file(data)  # Сохраняем текст запроса
+            save_request_to_file(data, username)  # Сохраняем текст запроса
             if data.startswith("start"):
                 try:
                     json_data = json.loads(data[6:])

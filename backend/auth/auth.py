@@ -106,14 +106,15 @@ token_storage = RedisTokenStorage()
 auth_router = APIRouter()
 
 # Проверка токена
-async def token_required(websocket: WebSocket):
+async def token_required(websocket: WebSocket, db: Session = Depends(get_db)):
     token = websocket.query_params.get('token')
     logger.info(f"Token received for validation: {token}")
     if token:
         user_id = token_storage.retrieve_token(token)
         if user_id:
             logger.info(f"Token is valid for user_id: {user_id}")
-            return True  # Token is valid
+            user = db.query(User).filter(User.id == user_id).first()
+            return user.username # Token is valid and username is returned
         else:
             logger.error(f"Token not found or expired")
             await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
@@ -233,11 +234,11 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
     except UnicodeDecodeError:
         logger.error(f"Redis error, failed to decode user_id for refresh token: {refresh_token}")
         raise HTTPException(status_code=500, detail='Internal server error 10')
-    
+
     except Exception as e:
         logger.error(f"Unexpected error during token retrieval: {str(e)}")
         raise HTTPException(status_code=500, detail='Internal server error 20')
-    
+
     if not user_id:
         logger.info(f"Invalid or expired refresh token: {refresh_token}")
         raise HTTPException(status_code=401, detail=f'Invalid or expired refresh token')
@@ -268,7 +269,7 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
             'refresh_expires_in': new_refresh_token['expires_in'],
             'refresh_expires_at': new_refresh_token['expires_at']
         }, status_code=200)
-    
+
     except Exception as e:
         logger.error(f"Unexpected error while creating new tokens: {str(e)}")
         raise HTTPException(status_code=500, detail='Internal server error 40')

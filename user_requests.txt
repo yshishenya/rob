@@ -56,3 +56,6 @@
 2024-05-07 13:58:50 МСК - start {"task":"Отчёт о выбросах со2","report_type":"detailed_report","agent":true}
 2024-05-07 15:00:41 МСК - start {"task":"Какой JS фреймворк будет актуален в ближайшие годы ?","report_type":"detailed_report","agent":true}
 2024-05-07 15:04:29 МСК - start {"task":"дай инфу о JS","report_type":"detailed_report","agent":true}
+2024-05-08 06:45:51 МСК - (True, <backend.db.User object at 0x7fc5d871ff90>) - start {"task":"swswsw","report_type":"detailed_report","agent":true}
+2024-05-08 06:49:13 МСК - <backend.db.User object at 0x7ff1ea666b10> - start {"task":"wwdwdwwdwdwd","report_type":"detailed_report","agent":true}
+2024-05-08 06:53:04 МСК - yan - start {"task":"счысысы","report_type":"detailed_report","agent":true}
