@@ -15,7 +15,7 @@ API_URL = f"http://{HOST}:{APP_PORT}"
 
 def login(username, password):
     """ Авторизация пользователя и получение токена """
-    response = requests.post(f"{API_URL}/login", json={"username": username, "password": password})
+    response = requests.post(f"{API_URL}/login", data={"username": username, "password": password})
     if response.status_code == 200:
         auth_data = response.json()
         # Сохраняем время истечения токена и refresh_token
@@ -179,19 +179,15 @@ else:
 
     # Кнопка для создания нового пользователя в сайдбаре
     with st.sidebar:
-        if st.button("Создать пользователя"):
-            with st.sidebar:
-                # Используем session_state для сохранения введенных данных
-                new_username = st.text_input("Имя пользователя", value=st.session_state.get('new_username', ''), key='new_username')
-                new_email = st.text_input("Email", value=st.session_state.get('new_email', ''), key='new_email')
-                new_password = st.text_input("Пароль", type="password", value=st.session_state.get('new_password', ''), key='new_password')
-                new_is_admin = st.checkbox("Администратор", value=st.session_state.get('new_is_admin', False), key='new_is_admin')
-                if st.button("Подтвердить создание"):
-                    create_user(st.session_state['auth_data']['access_token'], new_username, new_email, new_password, new_is_admin)
-                    # Очистка session_state после создания пользователя
-                    for key in ['new_username', 'new_email', 'new_password', 'new_is_admin']:
-                        if key in st.session_state:
-                            del st.session_state[key]
+        with st.form(key='user_creation_form'):
+            new_username = st.text_input("Имя пользователя", key='new_username')
+            new_email = st.text_input("Email", key='new_email')
+            new_password = st.text_input("Пароль", type="password", key='new_password')
+            new_is_admin = st.checkbox("Администратор", key='new_is_admin')
+            submit_button = st.form_submit_button("Создать пользователя")
+
+            if submit_button:
+                create_user(st.session_state['auth_data']['access_token'], new_username, new_email, new_password, new_is_admin)
 
     # Удаление пользователя
     delete_user_id = st.text_input("ID пользователя для удаления")

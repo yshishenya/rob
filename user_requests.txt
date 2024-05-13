@@ -59,3 +59,31 @@
 2024-05-08 06:45:51 МСК - (True, <backend.db.User object at 0x7fc5d871ff90>) - start {"task":"swswsw","report_type":"detailed_report","agent":true}
 2024-05-08 06:49:13 МСК - <backend.db.User object at 0x7ff1ea666b10> - start {"task":"wwdwdwwdwdwd","report_type":"detailed_report","agent":true}
 2024-05-08 06:53:04 МСК - yan - start {"task":"счысысы","report_type":"detailed_report","agent":true}
+2024-05-08 07:17:41 МСК - yan - start {"task":"для чего нужна кафка","report_type":"detailed_report","agent":true}
+2024-05-08 08:41:01 МСК - Samuilova.AS@gazprom-neft.ru - start {"task":"Тест","report_type":"detailed_report","agent":true}
+
+______
+
+#Раздал доступы кортим
+
+_____
+2024-05-08 09:04:47 МСК - yan - start {"task":"Мы рассматриваем создание совместного предприятия с компанией ВК для продвижения нашей фриланс-платформы на рынках стран БРИКС. Необходима детальная информация об условиях и требованиях для потенциальных партнеров, а также успешных кейсах взаимодействия.","report_type":"detailed_report","agent":true}
+2024-05-08 09:17:52 МСК - STEPANOVA.NG@gazprom-neft.ru - start {"task":"Существовали ли  динозавры-коты?","report_type":"detailed_report","agent":true}
+2024-05-08 09:27:43 МСК - STEPANOVA.NG@gazprom-neft.ru - start {"task":"Существовали ли  динозавры-коты?","report_type":"detailed_report","agent":true}
+2024-05-08 09:41:04 МСК - STEPANOVA.NG@gazprom-neft.ru - start {"task":"Планируем нанять Макарейкина Маргарита Романовна на должность Руководитель внутреннего аудита. Необходима обширная информация о ее профессиональном пути, достижениях, сильных и слабых сторонах, а также любые доступные данные о ее влиянии на предыдущие места работы.","report_type":"detailed_report","agent":true}
+2024-05-08 09:52:41 МСК - STEPANOVA.NG@gazprom-neft.ru - start {"task":"Планируем нанять Степанову Наталью Григорьевну на должность Руководителя внутреннего аудита. Необходима обширная информация о ее профессиональном пути, достижениях, сильных и слабых сторонах, а также любые доступные данные о ее влиянии на предыдущие места работы.","report_type":"detailed_report","agent":true}
+2024-05-08 10:11:20 МСК - STEPANOVA.NG@gazprom-neft.ru - start {"task":"какая средняя зарплата внутреннего аудита в России?","report_type":"detailed_report","agent":true}
+2024-05-08 10:20:22 МСК - STEPANOVA.NG@gazprom-neft.ru - start {"task":"Какие разновидности рецептов блинов существуют в мире?","report_type":"detailed_report","agent":true}
+2024-05-08 10:39:47 МСК - STEPANOVA.NG@gazprom-neft.ru - start {"task":"Какой минимально необходимый запас слов на аглийском для путешествий по разным странам?","report_type":"detailed_report","agent":true}
+2024-05-08 11:48:39 МСК - duduc.a@professionals4-0.ru - start {"task":"какие кроссовки самые удобные?","report_type":"detailed_report","agent":true}
+2024-05-08 12:14:00 МСК - Karpuk.NV@gazprom-neft.ru - start {"task":"напиши требования к руководителю продаж новых b2b ит-продуктов, который в условиях неопределенности организовывает  продажи mvp новых продуктов","report_type":"detailed_report","agent":true}
+2024-05-13 10:28:39 МСК - yan - start {"task":"Давай отчёт о компании xiaomi","report_type":"detailed_report","agent":true}
+2024-05-13 10:29:26 МСК - yan - start {"task":"Давай отчёт о компании xiaomi","report_type":"detailed_report","agent":true}
+2024-05-13 10:30:19 МСК - yan - start {"task":"Отчёт о компании xiaomi","report_type":"detailed_report","agent":true}
+2024-05-13 10:31:40 МСК - yan - start {"task":"О жизни на луне","report_type":"detailed_report","agent":true}
+2024-05-13 12:07:47 МСК - yan - start {"task":"Как искуственный интеллект изменит сферу HR","report_type":"detailed_report","agent":true}
+2024-05-13 12:09:35 МСК - yan - start {"task":"как искуственный интеллект изменит сферу HR ?","report_type":"detailed_report","agent":true}
+2024-05-13 12:19:21 МСК - yan - start {"task":"Какова средняя зарплата фулстэк разработчика в России в 2024 году? Проведи сравнительный анализ в зависимости от опыта работы и навыков","report_type":"detailed_report","agent":true}
+2024-05-13 12:37:59 МСК - yan - start {"task":"Отчёт о жизни на марсе","report_type":"detailed_report","agent":true}
+2024-05-13 13:48:54 МСК - yan - start {"task":"тест","report_type":"detailed_report","agent":true}
+2024-05-13 13:57:04 МСК - yan - start {"task":"Тестовый запрос","report_type":"detailed_report","agent":true}
