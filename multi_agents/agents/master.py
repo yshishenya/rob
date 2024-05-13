@@ -12,10 +12,10 @@ from . import \
     ResearchAgent
 
 
-class MasterAgent:
+class ChiefEditorAgent:
     def __init__(self, task: dict):
-        query_shortened = ' '.join(task.get('query', '').split()[:5])
-        self.output_dir = f"./outputs/run_{int(time.time())}_{query_shortened}"
+        self.task_id = int(time.time()) # Currently time based, but can be any unique identifier
+        self.output_dir = f"./outputs/run_{self.task_id}_{task.get('query')[0:40]}"
         self.task = task
         os.makedirs(self.output_dir, exist_ok=True)
 
@@ -47,7 +47,7 @@ class MasterAgent:
 
         return workflow
 
-    async def run(self):
+    async def run_research_task(self):
         research_team = self.init_research_team()
 
         # compile the graph
