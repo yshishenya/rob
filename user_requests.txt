@@ -109,3 +109,4 @@ _____
 2024-05-14 20:47:51 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"обоснование вывода функционального подразделения в самостоятельный бизнес","report_type":"detailed_report","agent":true}
 2024-05-14 20:53:38 МСК - User:DOLGOV.NYU@gazprom-neft.ru - Request:start {"task":"светлана мачина, чирлидинг, биографическая справка","report_type":"detailed_report","agent":true}
 2024-05-14 20:58:11 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"Риски непрофильного вида деятельности","report_type":"detailed_report","agent":true}
+2024-05-14 22:01:09 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"AI в HR: настоящее и будущее","report_type":"detailed_report","agent":true}
