@@ -1,6 +1,6 @@
 {
   "openai_api_key": null,
-  "debug_mode": false,
+  "debug_mode": true,
   "allow_downloads": true,
   "selenium_web_browser": "chrome",
   "search_api": "duckduckgo",

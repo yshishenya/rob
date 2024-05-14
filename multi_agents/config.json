@@ -3,7 +3,7 @@
   "debug_mode": true,
   "allow_downloads": true,
   "selenium_web_browser": "chrome",
-  "search_api": "tavily",
+  "search_api": "duckduckgo",
   "embedding_provider": "openai",
   "LLM_PROVIDER": "openai",
   "fast_llm_model": "gpt-3.5-turbo-16k",
@@ -20,7 +20,7 @@
   "MAX_SUBTOPICS": 5,
   "TOTAL_WORDS": 1000,
   "MAX_ITERATIONS": 5,
-  "SEARCH_RETRIEVER": "tavily",
+  "SEARCH_RETRIEVER": "duckduckgo",
   "REPORT_FORMAT": "APA",
   "AGENT_ROLE": null
 }

@@ -87,3 +87,25 @@ _____
 2024-05-13 12:37:59 МСК - yan - start {"task":"Отчёт о жизни на марсе","report_type":"detailed_report","agent":true}
 2024-05-13 13:48:54 МСК - yan - start {"task":"тест","report_type":"detailed_report","agent":true}
 2024-05-13 13:57:04 МСК - yan - start {"task":"Тестовый запрос","report_type":"detailed_report","agent":true}
+2024-05-13 14:12:28 МСК - User:yan - Request:start {"task":"тестовый запрос","report_type":"detailed_report","agent":true}
+2024-05-13 14:19:45 МСК - User:yan - Request:start {"task":"тест","report_type":"detailed_report","agent":true}
+2024-05-13 14:30:14 МСК - User:yan - Request:start {"task":"тестовый запрос","report_type":"detailed_report","agent":true}
+2024-05-13 14:37:10 МСК - User:yan - Request:start {"task":"Отчёт о спутниках юпитера","report_type":"detailed_report","agent":true}
+2024-05-13 14:55:14 МСК - User:yan - Request:start {"task":"Анализ решений для проверки соответствия кандидата вакансии на основе ИИ","report_type":"detailed_report","agent":true}
+2024-05-13 15:15:15 МСК - User:yan - Request:start {"task":"Анализ HR решений для проверки соответствия кандидата вакансии на основе генеративного ИИ (LLM)","report_type":"detailed_report","agent":true}
+2024-05-13 16:38:57 МСК - User:yan - Request:start {"task":"провер очка","report_type":"detailed_report","agent":true}
+2024-05-13 16:40:01 МСК - User:yan - Request:start {"task":"провер очка","report_type":"detailed_report","agent":true}
+2024-05-13 16:40:40 МСК - User:yan - Request:start {"task":"провер очка","report_type":"detailed_report","agent":true}
+2024-05-13 16:45:27 МСК - User:yan - Request:start {"task":"ntcnddkfkfkd","report_type":"detailed_report","agent":true}
+2024-05-13 16:52:41 МСК - User:yan - Request:start {"task":"fddfgfdcfres","report_type":"detailed_report","agent":true}
+2024-05-13 16:53:25 МСК - User:yan - Request:start {"task":"жизнь на марсе","report_type":"detailed_report","agent":true}
+2024-05-14 11:34:17 МСК - User:DOLGOV.NYU@gazprom-neft.ru - Request:start {"task":"Составь биографическую справку про Андрея Белевцева, работает в Сбербанке","report_type":"detailed_report","agent":true}
+2024-05-14 12:58:26 МСК - User:Karpuk.NV@gazprom-neft.ru - Request:start {"task":"сделай анализ школ программирования для детей в Красногорске, и сформируй утп для новой школы программирования для детей, которое будет выделяться от этих конкурентов","report_type":"detailed_report","agent":true}
+2024-05-14 13:06:51 МСК - User:Karpuk.NV@gazprom-neft.ru - Request:start {"task":"дальше","report_type":"detailed_report","agent":true}
+2024-05-14 13:25:50 МСК - User:yan - Request:start {"task":"Какая средняя зарплата python разрзаботчика в россии","report_type":"detailed_report","agent":true}
+2024-05-14 16:42:42 МСК - User:Karpuk.NV@gazprom-neft.ru - Request:start {"task":"исследуй рынок фриланс платформ в России в 2024 году и сформируй утп для платформы Профессионалы 4.0","report_type":"detailed_report","agent":true}
+2024-05-14 19:52:51 МСК - User:yan - Request:start {"task":"AI в HR: настоящее и будущее","report_type":"detailed_report","agent":true}
+2024-05-14 20:01:41 МСК - User:yan - Request:start {"task":"Генеративный искуственный интеллект  в HR: настоящее и будущее. Анализ ситуации и прогнозы на 3 года вперед","report_type":"detailed_report","agent":true}
+2024-05-14 20:47:51 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"обоснование вывода функционального подразделения в самостоятельный бизнес","report_type":"detailed_report","agent":true}
+2024-05-14 20:53:38 МСК - User:DOLGOV.NYU@gazprom-neft.ru - Request:start {"task":"светлана мачина, чирлидинг, биографическая справка","report_type":"detailed_report","agent":true}
+2024-05-14 20:58:11 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"Риски непрофильного вида деятельности","report_type":"detailed_report","agent":true}
