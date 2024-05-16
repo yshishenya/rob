@@ -160,6 +160,12 @@ async def get_current_user_admin(token: str = Depends(oauth2_scheme), db: Sessio
 
 # Функция для создания токенов доступа и обновления
 async def create_tokens(user_id):
+    # Удаляем все предыдущие токены пользователя
+    tokens = token_storage.retrieve_token(user_id)
+    if tokens:
+        for token in tokens:
+            token_storage.delete_token(token['token'])
+
     # Генерируем токен доступа и токен обновления
     access_token = binascii.hexlify(os.urandom(24)).decode()
     access_token_expires_in = 3600  # 1 час в секундах
@@ -182,7 +188,6 @@ async def create_tokens(user_id):
         'expires_at': refresh_token_expires_at.isoformat()
     }
 
-# Маршруты API
 @auth_router.post('/login', response_model=LoginResponse, summary="Авторизация пользователя", description="Позволяет пользователю войти в систему, используя имя пользователя и пароль.")
 async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
     logger.debug(f"Username: {form_data.username}, Password: {form_data.password}")
@@ -192,16 +197,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = 
             logger.debug(f"Checking password for user {user.username}")
             if user.check_password(form_data.password):
                 logger.debug("Password is correct.")
-                # Получаем список всех токенов пользователя
-                tokens = token_storage.retrieve_token(user.id)
-                if tokens is None:
-                    tokens = []  # Обеспечиваем, что tokens будет списком для последующей обработки
-                if len(tokens) > MAX_ACTIVE_TOKENS_PER_USER:
-                    tokens_to_delete = sorted(tokens, key=lambda x: x['expires_at'])[:len(tokens) - MAX_ACTIVE_TOKENS_PER_USER]
-                    for token in tokens_to_delete:
-                        token_storage.delete_token(token['token'])
-
-                # Создаем новые токены
+                # Создаем новые токены, удаляя старые
                 new_access_token, new_refresh_token = await create_tokens(user.id)
                 return JSONResponse(content={
                     'access_token': new_access_token['token'],
@@ -220,6 +216,25 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = 
             return JSONResponse(content={'detail': 'Invalid username or password'}, status_code=401)
     except SQLAlchemyError as e:
         logger.error(f"DB error, failed to find user: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+@auth_router.post('/logout', summary="Выход пользователя из системы", description="Позволяет пользователю выйти из системы, удаляя его токены.")
+async def logout(token: str = Depends(oauth2_scheme)):
+    logger.info(f"Logging out user with access token: {token}")
+
+    user_id = token_storage.retrieve_token(token)
+    if not user_id:
+        logger.error("Access token not found or expired")
+        raise HTTPException(status_code=401, detail="Invalid or expired access token")
+
+    try:
+        # Удаляем все токены пользователя
+        token_storage.delete_tokens_by_user_id(user_id)
+        token_storage.delete_all_refresh_tokens_by_user_id(user_id)
+        logger.info(f"User {user_id} logged out successfully")
+        return JSONResponse(content={'detail': 'Logged out successfully'}, status_code=200)
+    except Exception as e:
+        logger.error(f"Failed to log out user: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal server error")
 
 @auth_router.post('/refresh', response_model=RefreshResponse, summary="Обновление токена доступа", description="Позволяет обновить токен доступа пользователя, используя действующий токен обновления.")

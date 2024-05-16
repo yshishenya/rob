@@ -110,3 +110,19 @@ _____
 2024-05-14 20:53:38 МСК - User:DOLGOV.NYU@gazprom-neft.ru - Request:start {"task":"светлана мачина, чирлидинг, биографическая справка","report_type":"detailed_report","agent":true}
 2024-05-14 20:58:11 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"Риски непрофильного вида деятельности","report_type":"detailed_report","agent":true}
 2024-05-14 22:01:09 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"AI в HR: настоящее и будущее","report_type":"detailed_report","agent":true}
+2024-05-15 11:02:34 МСК - User:tech.rec - Request:start {"task":"Применение AI в построении бренда работодателя","report_type":"detailed_report","agent":true}
+2024-05-15 11:08:56 МСК - User:tech.rec - Request:start {"task":"Генеративный искусственный интеллект в HR: настоящее и будущее","report_type":"detailed_report","agent":true}
+2024-05-15 11:22:28 МСК - User:tech.rec - Request:start {"task":"Генеративный искусственный интеллект в HR: настоящее и будущее","report_type":"detailed_report","agent":true}
+2024-05-15 14:37:31 МСК - User:yan - Request:start {"task":"asdasd asd asd asd asd asd asd asd asd","report_type":"detailed_report","agent":true}
+2024-05-15 14:38:33 МСК - User:yan - Request:start {"task":"О цуиыщслув","report_type":"detailed_report","agent":true}
+2024-05-15 14:39:35 МСК - User:yan - Request:start {"task":"о жизни на луне","report_type":"detailed_report","agent":true}
+2024-05-16 09:02:12 МСК - User:yan - Request:start {"task":"Мне нужна информация о том, как обрабатывать ошибки websocket на стороне браузера","report_type":"detailed_report","agent":true}
+2024-05-16 09:31:24 МСК - User:tech.rec - Request:start {"task":"Генеративный искусственный интеллект в HR: настоящее и будущее","report_type":"research_report","agent":true}
+2024-05-16 11:48:12 МСК - User:tech.rec - Request:start {"task":"российские исследования про онбординг за 2023-2024 годы","report_type":"research_report","agent":true}
+2024-05-16 11:51:22 МСК - User:tech.rec - Request:start {"task":"найди исследования и статистику за 2023-2024 годы, которые касаются онбординга в российских компаниях,","report_type":"research_report","agent":true}
+2024-05-16 11:58:59 МСК - User:tech.rec - Request:start {"task":"найди статистику про онбординг в российских компаниях","report_type":"research_report","agent":true}
+2024-05-16 12:03:45 МСК - User:tech.rec - Request:start {"task":"Применение AI в построении бренда работодателя","report_type":"research_report","agent":true}
+2024-05-16 12:15:10 МСК - User:tech.rec - Request:start {"task":"найди статистику о применении искусственного интеллекта в онбординге за 2023-2024 годы","report_type":"research_report","agent":true}
+2024-05-16 12:17:14 МСК - User:tech.rec - Request:start {"task":"найди статистику о применении искусственного интеллекта в процессах построения бренда работодателя за 2023-2024 годы","report_type":"research_report","agent":true}
+2024-05-16 14:27:18 МСК - User:Nedelina.ES@gazprom-neft.ru - Request:start {"task":"Пикселицазия труда и как она влияет на управление человеческим капиталом","report_type":"research_report","agent":true}
+2024-05-16 14:47:58 МСК - User:Nedelina.ES@gazprom-neft.ru - Request:start {"task":"Что такое gig-экономика и как она влияет на рынок труда","report_type":"research_report","agent":true}
