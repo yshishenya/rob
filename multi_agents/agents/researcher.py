@@ -1,4 +1,8 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 from gpt_researcher import GPTResearcher
+
 from colorama import Fore, Style
 from .utils.views import print_agent_output
 

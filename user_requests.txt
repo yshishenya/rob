@@ -126,3 +126,6 @@ _____
 2024-05-16 12:17:14 МСК - User:tech.rec - Request:start {"task":"найди статистику о применении искусственного интеллекта в процессах построения бренда работодателя за 2023-2024 годы","report_type":"research_report","agent":true}
 2024-05-16 14:27:18 МСК - User:Nedelina.ES@gazprom-neft.ru - Request:start {"task":"Пикселицазия труда и как она влияет на управление человеческим капиталом","report_type":"research_report","agent":true}
 2024-05-16 14:47:58 МСК - User:Nedelina.ES@gazprom-neft.ru - Request:start {"task":"Что такое gig-экономика и как она влияет на рынок труда","report_type":"research_report","agent":true}
+2024-05-16 18:27:53 МСК - User:tech.rec - Request:start {"task":"Выстраивание процесса онбординга разработчиков в продуктовой компании","report_type":"research_report","agent":true}
+2024-05-16 18:31:31 МСК - User:tech.rec - Request:start {"task":"Адаптация онбординга разработчиков к удаленному и гибридному формату работы.","report_type":"research_report","agent":true}
+2024-05-16 18:43:11 МСК - User:tech.rec - Request:start {"task":"Адаптация онбординга разработчиков к удаленному и гибридному формату работы.","report_type":"research_report","agent":true}

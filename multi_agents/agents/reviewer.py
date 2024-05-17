@@ -29,6 +29,7 @@ If you think the article is sufficient or that non critical revisions are requir
 Please accept the draft if it is good enough to publish, or send it for revision, along with your notes to guide the revision.
 If not all of the guideline criteria are met, you should send appropriate revision notes.
 If the draft meets all the guidelines, please return None.
+Reply in Russian.
 {revise_prompt if revision_notes else ""}
 
 Guidelines: {guidelines}\nDraft: {draft_state.get("draft")}\n

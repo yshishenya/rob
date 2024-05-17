@@ -5,10 +5,10 @@ from .utils.llms import call_model
 
 sample_json = """
 {
-  "table_of_contents": A table of contents in markdown syntax (using '-') based on the research headers and subheaders,
-  "introduction": An indepth introduction to the topic in markdown syntax and hyperlink references to relevant sources,
-  "conclusion": A conclusion to the entire research based on all research data in markdown syntax and hyperlink references to relevant sources,
-  "sources": A list with strings of all used source links in the entire research data in markdown syntax and apa citation format. For example: ['-  Title, year, Author [source url](source)', ...]
+  "Содержание": A table of contents in markdown syntax (using '-') based on the research headers and subheaders,
+  "Введение": An indepth introduction to the topic in markdown syntax and hyperlink references to relevant sources,
+  "Заключение": A conclusion to the entire research based on all research data in markdown syntax and hyperlink references to relevant sources,
+  "Источники": A list with strings of all used source links in the entire research data in markdown syntax and apa citation format. For example: ['-  Title, year, Author [source url](source)', ...]
 }
 """
 
@@ -20,11 +20,11 @@ class WriterAgent:
     def get_headers(self, research_state: dict):
         return {
             "title": research_state.get("title"),
-            "date": "Date",
-            "introduction": "Introduction",
-            "table_of_contents": "Table of Contents",
-            "conclusion": "Conclusion",
-            "references": "References"
+            "date": "Дата",
+            "introduction": "Введение",
+            "table_of_contents": "Содержание",
+            "conclusion": "Заключение",
+            "references": "Список источников"
         }
 
     def write_sections(self, research_state: dict):
