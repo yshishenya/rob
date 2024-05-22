@@ -126,6 +126,7 @@ async def websocket_endpoint(websocket: WebSocket, username: str = Depends(token
                     task = json_data.get("task")
                     report_type = json_data.get("report_type")
                     file_path = format_filename(task)
+                    report_source = json_data.get("report_source")
                     if task and report_type:
                         task_params = open_task()
                         task_params["query"] = task

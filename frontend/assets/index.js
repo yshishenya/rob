@@ -12957,7 +12957,7 @@ const ko = JSON.parse(
             });
           const z = {
             task: d.value,
-            report_type: "research_report",
+            report_type: "detailed_report",
             agent: !0,
           };
           h.send(`start ${JSON.stringify(z)}`),

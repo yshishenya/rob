@@ -56,13 +56,13 @@ class WebSocketManager:
             del self.sender_tasks[websocket]
             del self.message_queues[websocket]
 
-    async def start_streaming(self, task, report_type, websocket):
+    async def start_streaming(self, task, report_type, report_source, websocket):
         """Start streaming the output."""
-        report = await run_agent(task, report_type, websocket)
+        report = await run_agent(task, report_type, report_source, websocket)
         return report
 
 
-async def run_agent(task, report_type, websocket):
+async def run_agent(task, report_type, report_source, websocket):
     """Run the agent."""
     try:
         # Измеряем время начала
