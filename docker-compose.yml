@@ -1,9 +1,9 @@
 version: "3"
 services:
   gpt-researcher:
-    image: assafelovic/gpt-researcher:rob_dev
+    image: assafelovic/gpt-researcher:rob_prod
     restart: always
-    container_name: rob_dev
+    container_name: rob_prod
     build: ./
     volumes:
       - ./:/usr/src/app/ # Монтирование всей директории проекта
