@@ -1,10 +1,6 @@
 import aiofiles
 import urllib
-from md2pdf.core import md2pdf
 import mistune
-from docx import Document
-from htmldocx import HtmlToDocx
-
 
 
 async def write_to_file(filename: str, text: str) -> None:
@@ -19,6 +15,7 @@ async def write_to_file(filename: str, text: str) -> None:
 
     async with aiofiles.open(filename, "w", encoding='utf-8') as file:
         await file.write(text_utf8)
+
 
 async def write_text_to_md(text: str, filename: str = "") -> str:
     """Writes text to a Markdown file and returns the file path.
@@ -39,6 +36,7 @@ async def write_text_to_md(text: str, filename: str = "") -> str:
         print(f"Ошибка при записи в Markdown файл: {e}")
         return ""
 
+
 async def write_md_to_pdf(text: str, filename: str = "") -> str:
     """Converts Markdown text to a PDF file and returns the file path.
 
@@ -56,7 +54,8 @@ async def write_md_to_pdf(text: str, filename: str = "") -> str:
 
 
     try:
-        md2pdf(filename+".pdf",
+        from md2pdf.core import md2pdf
+        md2pdf(file_path,
                md_content=text,
                css_file_path="./frontend/assets/pdf_styles.css",
                base_url=None)
@@ -67,7 +66,9 @@ async def write_md_to_pdf(text: str, filename: str = "") -> str:
 
     encoded_file_path = urllib.parse.quote(filename+".pdf")
     return encoded_file_path
-async def write_md_to_word(text: str, filename: str) -> str:
+
+
+async def write_md_to_word(text: str, filename: str = "") -> str:
     """Converts Markdown text to a DOCX file and returns the file path.
 
     Args:
@@ -81,6 +82,8 @@ async def write_md_to_word(text: str, filename: str) -> str:
         raise ValueError("Filename cannot be empty")
 
     try:
+        from docx import Document
+        from htmldocx import HtmlToDocx
         # Convert report markdown to HTML
         html = mistune.html(text)
         # Create a document object

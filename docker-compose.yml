@@ -1,7 +1,7 @@
 version: "3"
 services:
   gpt-researcher:
-    image: assafelovic/gpt-researcher:rob_dev
+    image: kramer1346/gpt-researcher:rob_dev
     restart: always
     container_name: rob_dev
     build: ./
@@ -12,6 +12,7 @@ services:
       - REDIS_PASSWORD=${REDIS_PASSWORD}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - TAVILY_API_KEY=${TAVILY_API_KEY}
+      - LANGCHAIN_API_KEY=${LANGCHAIN_API_KEY}
       #- APP_PORT=${APP_PORT}
       - CONFIG_FILE=./config.json
     env_file:
