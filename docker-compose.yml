@@ -1,7 +1,8 @@
 version: "3"
 services:
   gpt-researcher:
-    image: kramer1346/gpt-researcher:rob_dev
+    image: kramer1346/gpt-researcher
+    platform: linux/amd64
     restart: always
     container_name: rob_dev
     build: ./

@@ -55,7 +55,7 @@ async def write_md_to_pdf(text: str, filename: str = "") -> str:
 
     try:
         from md2pdf.core import md2pdf
-        md2pdf(file_path,
+        md2pdf(filename+".pdf",
                md_content=text,
                css_file_path="./frontend/assets/pdf_styles.css",
                base_url=None)

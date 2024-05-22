@@ -129,3 +129,10 @@ _____
 2024-05-16 18:27:53 МСК - User:tech.rec - Request:start {"task":"Выстраивание процесса онбординга разработчиков в продуктовой компании","report_type":"research_report","agent":true}
 2024-05-16 18:31:31 МСК - User:tech.rec - Request:start {"task":"Адаптация онбординга разработчиков к удаленному и гибридному формату работы.","report_type":"research_report","agent":true}
 2024-05-16 18:43:11 МСК - User:tech.rec - Request:start {"task":"Адаптация онбординга разработчиков к удаленному и гибридному формату работы.","report_type":"research_report","agent":true}
+2024-05-22 23:16:04 МСК - User:yan - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-05-22 23:25:20 МСК - User:yan - Request:start {"task":"какое будущее у ИИ агентов :","report_type":"research_report","agent":true}
+2024-05-22 23:42:28 МСК - User:yan - Request:start {"task":"будущее ИИ агентов","report_type":"research_report","agent":true}
+2024-05-22 23:53:20 МСК - User:yan - Request:start {"task":"погоду в бишкеке","report_type":"research_report","agent":true}
+2024-05-23 00:02:11 МСК - User:yan - Request:start {"task":"климат бишкека","report_type":"research_report","agent":true}
+2024-05-23 00:18:12 МСК - User:yan - Request:start {"task":"климат бишкека","report_type":"detailed_report","agent":true}
+2024-05-23 00:23:12 МСК - User:yan - Request:start {"task":"климат бишкека","report_type":"detailed_report","agent":true}
