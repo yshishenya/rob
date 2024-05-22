@@ -48,3 +48,17 @@
 2024-05-06 11:29:16 МСК - start {"task":"asdasd","report_type":"detailed_report","agent":true}
 2024-05-06 11:30:37 МСК - start {"task":"о чём нибудь","report_type":"detailed_report","agent":true}
 2024-05-06 12:09:02 МСК - start {"task":"О скорости света","report_type":"detailed_report","agent":true}
+2024-05-07 09:23:57 МСК - start {"task":"О жизни на луне","report_type":"detailed_report","agent":true}
+2024-05-07 09:36:03 МСК - start {"task":"А теперь о жизни в сахаре","report_type":"detailed_report","agent":true}
+2024-05-07 09:44:22 МСК - start {"task":"Очень коротко о воде","report_type":"detailed_report","agent":true}
+2024-05-07 09:54:43 МСК - start {"task":"Ещё вариант","report_type":"detailed_report","agent":true}
+2024-05-07 09:57:25 МСК - start {"task":"жизнь на марсе","report_type":"detailed_report","agent":true}
+2024-05-07 10:01:10 МСК - start {"task":"Выдай самое короткое исследование","report_type":"detailed_report","agent":true}
+2024-05-07 10:06:42 МСК - start {"task":"Напиши о вреде курения","report_type":"detailed_report","agent":true}
+2024-05-07 10:15:57 МСК - start {"task":"Отчёт о вреде ГБО","report_type":"detailed_report","agent":true}
+2024-05-07 10:24:58 МСК - start {"task":"О жизни на луне","report_type":"detailed_report","agent":true}
+2024-05-07 15:05:12 МСК - start {"task":"Напиши про js","report_type":"detailed_report","agent":true}
+2024-05-07 15:12:44 МСК - start {"task":"О чате гпт","report_type":"detailed_report","agent":true}
+2024-05-13 13:41:49 МСК - start {"task":"Отчёт о жизни на марсе","report_type":"detailed_report","agent":true}
+2024-05-13 14:48:12 МСК - start {"task":"Отчёт о макаронах","report_type":"detailed_report","agent":true}
+2024-05-14 15:12:38 МСК - start {"task":"asdasdasdad","report_type":"detailed_report","agent":true}

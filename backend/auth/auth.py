@@ -106,14 +106,15 @@ token_storage = RedisTokenStorage()
 auth_router = APIRouter()
 
 # Проверка токена
-async def token_required(websocket: WebSocket):
+async def token_required(websocket: WebSocket, db: Session = Depends(get_db)):
     token = websocket.query_params.get('token')
     logger.info(f"Token received for validation: {token}")
     if token:
         user_id = token_storage.retrieve_token(token)
         if user_id:
             logger.info(f"Token is valid for user_id: {user_id}")
-            return True  # Token is valid
+            user = db.query(User).filter(User.id == user_id).first()
+            return user.username # Token is valid and username is returned
         else:
             logger.error(f"Token not found or expired")
             await websocket.close(code=status.WS_1008_POLICY_VIOLATION)
@@ -159,6 +160,12 @@ async def get_current_user_admin(token: str = Depends(oauth2_scheme), db: Sessio
 
 # Функция для создания токенов доступа и обновления
 async def create_tokens(user_id):
+    # Удаляем все предыдущие токены пользователя
+    tokens = token_storage.retrieve_token(user_id)
+    if tokens:
+        for token in tokens:
+            token_storage.delete_token(token['token'])
+
     # Генерируем токен доступа и токен обновления
     access_token = binascii.hexlify(os.urandom(24)).decode()
     access_token_expires_in = 3600  # 1 час в секундах
@@ -181,7 +188,6 @@ async def create_tokens(user_id):
         'expires_at': refresh_token_expires_at.isoformat()
     }
 
-# Маршруты API
 @auth_router.post('/login', response_model=LoginResponse, summary="Авторизация пользователя", description="Позволяет пользователю войти в систему, используя имя пользователя и пароль.")
 async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
     logger.debug(f"Username: {form_data.username}, Password: {form_data.password}")
@@ -191,16 +197,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = 
             logger.debug(f"Checking password for user {user.username}")
             if user.check_password(form_data.password):
                 logger.debug("Password is correct.")
-                # Получаем список всех токенов пользователя
-                tokens = token_storage.retrieve_token(user.id)
-                if tokens is None:
-                    tokens = []  # Обеспечиваем, что tokens будет списком для последующей обработки
-                if len(tokens) > MAX_ACTIVE_TOKENS_PER_USER:
-                    tokens_to_delete = sorted(tokens, key=lambda x: x['expires_at'])[:len(tokens) - MAX_ACTIVE_TOKENS_PER_USER]
-                    for token in tokens_to_delete:
-                        token_storage.delete_token(token['token'])
-
-                # Создаем новые токены
+                # Создаем новые токены, удаляя старые
                 new_access_token, new_refresh_token = await create_tokens(user.id)
                 return JSONResponse(content={
                     'access_token': new_access_token['token'],
@@ -221,6 +218,25 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = 
         logger.error(f"DB error, failed to find user: {str(e)}")
         raise HTTPException(status_code=500, detail="Internal server error")
 
+@auth_router.post('/logout', summary="Выход пользователя из системы", description="Позволяет пользователю выйти из системы, удаляя его токены.")
+async def logout(token: str = Depends(oauth2_scheme)):
+    logger.info(f"Logging out user with access token: {token}")
+
+    user_id = token_storage.retrieve_token(token)
+    if not user_id:
+        logger.error("Access token not found or expired")
+        raise HTTPException(status_code=401, detail="Invalid or expired access token")
+
+    try:
+        # Удаляем все токены пользователя
+        token_storage.delete_tokens_by_user_id(user_id)
+        token_storage.delete_all_refresh_tokens_by_user_id(user_id)
+        logger.info(f"User {user_id} logged out successfully")
+        return JSONResponse(content={'detail': 'Logged out successfully'}, status_code=200)
+    except Exception as e:
+        logger.error(f"Failed to log out user: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal server error")
+
 @auth_router.post('/refresh', response_model=RefreshResponse, summary="Обновление токена доступа", description="Позволяет обновить токен доступа пользователя, используя действующий токен обновления.")
 async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
     refresh_token = request.refresh_token
@@ -233,11 +249,11 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
     except UnicodeDecodeError:
         logger.error(f"Redis error, failed to decode user_id for refresh token: {refresh_token}")
         raise HTTPException(status_code=500, detail='Internal server error 10')
-    
+
     except Exception as e:
         logger.error(f"Unexpected error during token retrieval: {str(e)}")
         raise HTTPException(status_code=500, detail='Internal server error 20')
-    
+
     if not user_id:
         logger.info(f"Invalid or expired refresh token: {refresh_token}")
         raise HTTPException(status_code=401, detail=f'Invalid or expired refresh token')
@@ -268,7 +284,7 @@ async def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
             'refresh_expires_in': new_refresh_token['expires_in'],
             'refresh_expires_at': new_refresh_token['expires_at']
         }, status_code=200)
-    
+
     except Exception as e:
         logger.error(f"Unexpected error while creating new tokens: {str(e)}")
         raise HTTPException(status_code=500, detail='Internal server error 40')
@@ -351,7 +367,7 @@ async def modify_user(user_request: UserCreateRequest, db: Session = Depends(get
             logger.error(f"Failed to modify user: {str(e)}")
             raise HTTPException(status_code=500, detail="Internal server error")
 
-
+а
 @auth_router.get("/users", response_model=List[UserResponse], summary="Получение списка пользователей", description="Возвращает список всех пользователей.", dependencies=[Depends(oauth2_scheme)])
 async def get_users(db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
     if not admin.is_admin:
