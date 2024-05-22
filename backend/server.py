@@ -78,6 +78,15 @@ def format_filename(task):
     file_path = f"{unique_folder_path}/{report_name_translit}"
     return file_path
 
+def open_task():
+    with open('task.json', 'r') as f:
+        task = json.load(f)
+
+    if not task:
+        raise Exception("No task provided. Please include a task.json file in the root directory.")
+
+    return task
+
 # Dynamic directory for outputs once first research is run
 @app.on_event("startup")
 def startup_event():
@@ -113,10 +122,14 @@ async def websocket_endpoint(websocket: WebSocket, username: str = Depends(token
             if data.startswith("start"):
                 try:
                     json_data = json.loads(data[6:])
+                    logger.debug(f"JSON data: {json_data}")
                     task = json_data.get("task")
                     report_type = json_data.get("report_type")
                     file_path = format_filename(task)
                     if task and report_type:
+                        task_params = open_task()
+                        task_params["query"] = task
+                        logger.debug(f"Task params: {task_params}")
                         report = await manager.start_streaming(task, report_type, websocket)
                         # Сохранение отчета в формате MD
                         md_path = await write_text_to_md(report, file_path)

@@ -129,3 +129,39 @@ _____
 2024-05-16 18:27:53 МСК - User:tech.rec - Request:start {"task":"Выстраивание процесса онбординга разработчиков в продуктовой компании","report_type":"research_report","agent":true}
 2024-05-16 18:31:31 МСК - User:tech.rec - Request:start {"task":"Адаптация онбординга разработчиков к удаленному и гибридному формату работы.","report_type":"research_report","agent":true}
 2024-05-16 18:43:11 МСК - User:tech.rec - Request:start {"task":"Адаптация онбординга разработчиков к удаленному и гибридному формату работы.","report_type":"research_report","agent":true}
+2024-05-18 15:00:06 МСК - User:tech.rec - Request:start {"task":"Бытовые сценарии взаимодействия с домофоном через смартфон, чтобы их можно было использовать в проектировании мобильного приложения.","report_type":"research_report","agent":true}
+2024-05-20 18:09:27 МСК - User:tech.rec - Request:start {"task":"преимущества и недостатки работы в ритейл и e-commers для специалистов Middle и топ уровня, которые хотят перейти в ритейл и e-commers из других сфер","report_type":"research_report","agent":true}
+2024-05-21 19:57:16 МСК - User:tech.rec - Request:start {"task":"как крупные компании используют ИИ для анализа данных","report_type":"research_report","agent":true}
+2024-05-21 19:59:24 МСК - User:tech.rec - Request:start {"task":"статистика при анализе данных с использованием ИИ в крупных компаниях","report_type":"research_report","agent":true}
+2024-05-21 20:16:01 МСК - User:tech.rec - Request:start {"task":"исследования о применении ИИ в HR","report_type":"research_report","agent":true}
+2024-05-22 11:29:30 МСК - User:tech.rec - Request:start {"task":"Как HR-у не из сферы IT стать IT-рекрутером?","report_type":"research_report","agent":true}
+2024-05-22 15:46:18 МСК - User:tech.rec - Request:start {"task":"тест","report_type":"research_report","agent":true}
+2024-05-22 15:53:19 МСК - User:tech.rec - Request:start {"task":"dcfdsf","report_type":"research_report","agent":true}
+2024-05-22 15:56:48 МСК - User:tech.rec - Request:start {"task":"test","report_type":"research_report","agent":true}
+2024-05-22 16:05:08 МСК - User:tech.rec - Request:start {"task":"nest","report_type":"research_report","agent":true}
+2024-05-22 16:08:00 МСК - User:tech.rec - Request:start {"task":"тест","report_type":"research_report","agent":true}
+2024-05-22 16:23:26 МСК - User:tech.rec - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-05-22 16:37:16 МСК - User:tech.rec - Request:start {"task":"dfededweded","report_type":"research_report","agent":true}
+2024-05-22 17:44:07 МСК - User:tech.rec - Request:start {"task":"цйыцйцыйц","report_type":"research_report","agent":true}
+2024-05-22 17:45:07 МСК - User:tech.rec - Request:start {"task":"авуавуауау","report_type":"research_report","agent":true}
+2024-05-22 17:45:29 МСК - User:tech.rec - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-05-22 17:47:19 МСК - User:tech.rec - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-05-22 18:10:32 МСК - User:tech.rec - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-05-22 18:11:53 МСК - User:tech.rec - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-05-22 18:15:18 МСК - User:tech.rec - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-05-22 18:18:56 МСК - User:tech.rec - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-05-22 20:05:35 МСК - User:tech.rec - Request:start {"task":"frfererfe gfefrf","report_type":"research_report","agent":true}
+2024-05-22 20:06:59 МСК - User:tech.rec - Request:start {"task":"dfavsdfgbhdgfhngnh","report_type":"research_report","agent":true}
+2024-05-22 20:21:56 МСК - User:tech.rec - Request:start {"task":"dsvdfgfgdfg","report_type":"research_report","agent":true}
+2024-05-22 20:23:42 МСК - User:tech.rec - Request:start {"task":"dvsdvdfvf","report_type":"research_report","agent":true}
+2024-05-22 20:26:33 МСК - User:tech.rec - Request:start {"task":"edeedede","report_type":"research_report","agent":true}
+2024-05-22 20:28:44 МСК - User:tech.rec - Request:start {"task":"deededed","report_type":"research_report","agent":true}
+2024-05-22 20:31:25 МСК - User:tech.rec - Request:start {"task":"e323e32e","report_type":"research_report","agent":true}
+2024-05-22 20:42:03 МСК - User:tech.rec - Request:start {"task":"вуцвуцвуцв","report_type":"research_report","agent":true}
+2024-05-22 20:48:28 МСК - User:tech.rec - Request:start {"task":"ываауа","report_type":"research_report","agent":true}
+2024-05-22 21:06:48 МСК - User:tech.rec - Request:start {"task":"анализ климических изменений","report_type":"research_report","agent":true}
+2024-05-22 21:17:34 МСК - User:tech.rec - Request:start {"task":"проверка работыэ","report_type":"research_report","agent":true}
+2024-05-22 21:31:12 МСК - User:tech.rec - Request:start {"task":"проверка мирофона","report_type":"research_report","agent":true}
+2024-05-22 21:35:51 МСК - User:tech.rec - Request:start {"task":"проверочка","report_type":"research_report","agent":true}
+2024-05-22 21:38:23 МСК - User:tech.rec - Request:start {"task":"вуувувув","report_type":"research_report","agent":true}
+2024-05-22 21:53:22 МСК - User:tech.rec - Request:start {"task":"вуцвувцувцу","report_type":"research_report","agent":true}

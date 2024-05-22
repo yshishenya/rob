@@ -41,3 +41,10 @@ redis
 #frontend
 streamlit
 websockets
+
+
+#multi_agents
+langgraph==0.0.40
+python-dotenv
+weasyprint
+json5

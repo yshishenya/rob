@@ -1,22 +1,23 @@
 from .utils.views import print_agent_output
 from .utils.llms import call_model
+from fastapi import WebSocket
 
 TEMPLATE = """You are an expert research article reviewer. \
 Your goal is to review research drafts and provide feedback to the reviser only based on specific guidelines. \
 """
 
 class ReviewerAgent:
-    def __init__(self):
-        pass
+    def __init__(self, websocket: WebSocket):
+        self.websocket = websocket
 
-    def review_draft(self, draft_state: dict):
+    async def review_draft(self, draft_state: dict):
         """
         Review a draft article
         :param draft_state:
         :return:
         """
         task = draft_state.get("task")
-        guidelines = '- '.join(guideline for guideline in task.get("guidelines"))
+        guidelines = '- '.join(guideline for guideline in draft_state.get("guidelines"))
         revision_notes = draft_state.get("revision_notes")
 
         revise_prompt = f"""The reviser has already revised the draft based on your previous review notes with the following feedback:
@@ -42,27 +43,27 @@ Guidelines: {guidelines}\nDraft: {draft_state.get("draft")}\n
             "content": review_prompt
         }]
 
-        response = call_model(prompt, model=task.get("model"))
+        response = await call_model(prompt, model=draft_state.get("model"))
 
-        if task.get("verbose"):
-            print_agent_output(f"Review feedback is: {response}...", agent="REVIEWER")
+        if draft_state.get("verbose"):
+            await self.websocket.send_json({"type": "logs", "output": f"Review feedback is: {response}...", "agent": "REVIEWER"})
 
         if 'None' in response:
             return None
         return response
 
-    def run(self, draft_state: dict):
+    async def run(self, draft_state: dict):
         task = draft_state.get("task")
-        guidelines = task.get("guidelines")
-        to_follow_guidelines = task.get("follow_guidelines")
+        guidelines = draft_state.get("guidelines")
+        to_follow_guidelines = draft_state.get("follow_guidelines")
         review = None
         if to_follow_guidelines:
-            print_agent_output(f"Reviewing draft...", agent="REVIEWER")
+            await self.websocket.send_json({"type": "logs", "output": "Reviewing draft...", "agent": "REVIEWER"})
 
-            if task.get("verbose"):
-                print_agent_output(f"Following guidelines {guidelines}...", agent="REVIEWER")
+            if draft_state.get("verbose"):
+                await self.websocket.send_json({"type": "logs", "output": f"Following guidelines {guidelines}...", "agent": "REVIEWER"})
 
-            review = self.review_draft(draft_state)
+            review = await self.review_draft(draft_state)
         else:
-            print_agent_output(f"Ignoring guidelines...", agent="REVIEWER")
+            await self.websocket.send_json({"type": "logs", "output": "Ignoring guidelines..."})
         return {"review": review}

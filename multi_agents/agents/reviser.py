@@ -1,6 +1,7 @@
 from .utils.views import print_agent_output
 from .utils.llms import call_model
 import json
+from fastapi import WebSocket
 
 sample_revision_notes = """
 {
@@ -12,10 +13,10 @@ sample_revision_notes = """
 """
 
 class ReviserAgent:
-    def __init__(self):
-        pass
+    def __init__(self, websocket: WebSocket):
+        self.websocket = websocket
 
-    def revise_draft(self, draft_state: dict):
+    async def revise_draft(self, draft_state: dict):
         """
         Review a draft article
         :param draft_state:
@@ -24,9 +25,14 @@ class ReviserAgent:
         review = draft_state.get("review")
         task = draft_state.get("task")
         draft_report = draft_state.get("draft")
+        model = draft_state.get("model")
+
+        # Логирование значения модели
+        await self.websocket.send_json({"type": "logs", "output": f"Model being used: {model}"})
+
         prompt = [{
             "role": "system",
-            "content": "You are an expert writer. Your goal is to revise drafts based on reviewer notes."
+            "content": "You are a research reviser. Your sole purpose is to revise the research draft based on the reviewer's feedback."
         }, {
             "role": "user",
             "content": f"""Draft:\n{draft_report}" + "Reviewer's notes:\n{review}\n\n
@@ -35,18 +41,22 @@ If you decide to follow the reviewer's notes, please write a new draft and make 
 Please keep all other aspects of the draft the same.
 You MUST return nothing but a JSON in the following format:
 {sample_revision_notes}
+Draft: {draft_state.get("draft")}
+Reviewer's feedback: {draft_state.get("reviewer_feedback")}
 """
         }]
 
-        response = call_model(prompt, model=task.get("model"), response_format='json')
+        await self.websocket.send_json({"type": "logs", "output": "Calling model to revise draft..."})
+        response = call_model(prompt, model=model, response_format='json')
+        await self.websocket.send_json({"type": "logs", "output": "Model response received for revision."})
         return json.loads(response)
 
-    def run(self, draft_state: dict):
-        print_agent_output(f"Rewriting draft based on feedback...", agent="REVISOR")
-        revision = self.revise_draft(draft_state)
+    async def run(self, draft_state: dict):
+        await self.websocket.send_json({"type": "logs", "output": "Rewriting draft based on feedback..."})
+        revision = await self.revise_draft(draft_state)
 
         if draft_state.get("task").get("verbose"):
-            print_agent_output(f"Revision notes: {revision.get('revision_notes')}", agent="REVISOR")
+            await self.websocket.send_json({"type": "logs", "output": f"Revision notes: {revision.get('revision_notes')}", "agent": "REVISOR"})
 
         return {"draft": revision.get("draft"),
                 "revision_notes": revision.get("revision_notes")}

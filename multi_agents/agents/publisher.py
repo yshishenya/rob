@@ -4,15 +4,18 @@ from .utils.file_formats import \
     write_text_to_md
 
 from .utils.views import print_agent_output
-
+from fastapi import WebSocket
 
 class PublisherAgent:
-    def __init__(self, output_dir: str):
+    def __init__(self, output_dir: str, websocket: WebSocket):
         self.output_dir = output_dir
+        self.websocket = websocket
 
     async def publish_research_report(self, research_state: dict, publish_formats: dict):
         layout = self.generate_layout(research_state)
+        await self.websocket.send_json({"type": "logs", "output": "Generated layout for the research report."})
         await self.write_report_by_formats(layout, publish_formats)
+        await self.websocket.send_json({"type": "logs", "output": "Finished writing report in specified formats."})
 
         return layout
 
@@ -25,33 +28,36 @@ class PublisherAgent:
         layout = f"""# {headers.get('title')}
 #### {headers.get("date")}: {research_state.get('date')}
 
-## {headers.get("introduction")}
-{research_state.get('introduction')}
+## {headers.get("Введение")}
+{research_state.get('Введение')}
 
-## {headers.get("table_of_contents")}
-{research_state.get('table_of_contents')}
+## {headers.get("Содержание")}
+{research_state.get('Содержание')}
 
 {sections}
 
-## {headers.get("conclusion")}
-{research_state.get('conclusion')}
+## {headers.get("Заключение")}
+{research_state.get('Заключение')}
 
-## {headers.get("references")}
+## {headers.get("Источники")}
 {references}
 """
         return layout
 
-    async def write_report_by_formats(self, layout:str, publish_formats: dict):
+    async def write_report_by_formats(self, layout: str, publish_formats: dict):
         if publish_formats.get("pdf"):
+            await self.websocket.send_json({"type": "logs", "output": "Writing report to PDF format."})
             await write_md_to_pdf(layout, self.output_dir)
         if publish_formats.get("docx"):
+            await self.websocket.send_json({"type": "logs", "output": "Writing report to Word format."})
             await write_md_to_word(layout, self.output_dir)
         if publish_formats.get("markdown"):
+            await self.websocket.send_json({"type": "logs", "output": "Writing report to Markdown format."})
             await write_text_to_md(layout, self.output_dir)
 
     async def run(self, research_state: dict):
         task = research_state.get("task")
-        publish_formats = task.get("publish_formats")
-        print_agent_output(output="Publishing final research report based on retrieved data...", agent="PUBLISHER")
+        publish_formats = research_state.get("publish_formats")
+        await self.websocket.send_json({"type": "logs", "output": "Publishing final research report based on retrieved data..."})
         final_research_report = await self.publish_research_report(research_state, publish_formats)
         return {"report": final_research_report}

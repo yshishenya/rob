@@ -4,8 +4,8 @@ from .utils.llms import call_model
 from langgraph.graph import StateGraph, END
 import asyncio
 import json
-
-from memory.draft import DraftState
+from fastapi import WebSocket
+from multi_agents.memory.draft import DraftState
 from . import \
     ResearchAgent, \
     ReviewerAgent, \
@@ -13,10 +13,10 @@ from . import \
 
 
 class EditorAgent:
-    def __init__(self):
-        pass
+    def __init__(self, websocket: WebSocket):
+        self.websocket = websocket
 
-    def plan_research(self, research_state: dict):
+    async def plan_research(self, research_state: dict):
         """
         Curate relevant sources for a query
         :param summary_report:
@@ -27,7 +27,7 @@ class EditorAgent:
 
         initial_research = research_state.get("initial_research")
         task = research_state.get("task")
-        max_sections = task.get("max_sections")
+        max_sections = research_state.get("max_sections")
         prompt = [{
             "role": "system",
             "content": "You are a research director. Your goal is to oversee the research project"
@@ -47,8 +47,13 @@ class EditorAgent:
                        f" You must write the report in Russian"
         }]
 
-        print_agent_output(f"Planning an outline layout based on initial research...", agent="EDITOR")
-        response = call_model(prompt=prompt, model=task.get("model"), response_format="json")
+        await self.websocket.send_json({"type": "logs", "output": f"Planning an outline layout based on initial research...", "agent": "EDITOR"})
+        model = research_state.get("model")
+        if model is None:
+            await self.websocket.send_json({"type": "error", "output": "Model is not specified in the task.", "agent": "EDITOR"})
+            return
+
+        response = call_model(prompt=prompt, model=model, response_format="json")
         plan = json.loads(response)
 
         return {
@@ -58,11 +63,25 @@ class EditorAgent:
         }
 
     async def run_parallel_research(self, research_state: dict):
-        research_agent = ResearchAgent()
-        reviewer_agent = ReviewerAgent()
-        reviser_agent = ReviserAgent()
+        research_agent = ResearchAgent(self.websocket)
+        reviewer_agent = ReviewerAgent(self.websocket)
+        reviser_agent = ReviserAgent(self.websocket)
         queries = research_state.get("sections")
         title = research_state.get("title")
+        model = research_state.get("model")
+
+        if queries is None:
+            await self.websocket.send_json({"type": "error", "output": "No sections found in research state.", "agent": "EDITOR"})
+            return
+
+        if title is None:
+            await self.websocket.send_json({"type": "error", "output": "No title found in research state.", "agent": "EDITOR"})
+            return
+
+        if model is None:
+            await self.websocket.send_json({"type": "error", "output": "Model is not specified in research state.", "agent": "EDITOR"})
+            return
+
         workflow = StateGraph(DraftState)
 
         workflow.add_node("researcher", research_agent.run_depth_research)
@@ -80,7 +99,7 @@ class EditorAgent:
         chain = workflow.compile()
 
         # Execute the graph for each query in parallel
-        print_agent_output(f"Running the following research tasks in parallel: {queries}...", agent="EDITOR")
+        await self.websocket.send_json({"type": "logs", "output": f"Running the following research tasks in parallel: {queries}...", "agent": "EDITOR"})
         final_drafts = [chain.ainvoke({"task": research_state.get("task"), "topic": query, "title": title})
                         for query in queries]
         research_results = [result['draft'] for result in await asyncio.gather(*final_drafts)]

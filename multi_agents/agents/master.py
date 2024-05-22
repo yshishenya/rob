@@ -2,7 +2,8 @@ import os
 import time
 from langgraph.graph import StateGraph, END
 from .utils.views import print_agent_output
-from memory.research import ResearchState
+from multi_agents.memory.research import ResearchState
+from fastapi import WebSocket
 
 # Import agent classes
 from . import \
@@ -13,18 +14,22 @@ from . import \
 
 
 class ChiefEditorAgent:
-    def __init__(self, task: dict):
+    def __init__(self, task: dict, websocket: WebSocket):
         self.task_id = int(time.time()) # Currently time based, but can be any unique identifier
-        self.output_dir = f"./outputs/run_{self.task_id}_{task.get('query')[0:60]}"
         self.task = task
+        query = self.task.get('query', '')
+        if not isinstance(query, str):
+            raise ValueError("The 'query' field must be a string")
+        self.output_dir = f"./outputs/run_{self.task_id}_{query[0:60]}"
+        self.websocket = websocket
         os.makedirs(self.output_dir, exist_ok=True)
-
+        self.publisher_agent = PublisherAgent(self.output_dir, self.websocket)
     def init_research_team(self):
         # Initialize agents
-        writer_agent = WriterAgent()
-        editor_agent = EditorAgent()
-        research_agent = ResearchAgent()
-        publisher_agent = PublisherAgent(self.output_dir)
+        writer_agent = WriterAgent(self.websocket)
+        editor_agent = EditorAgent(self.websocket)
+        research_agent = ResearchAgent(self.websocket)
+        publisher_agent = PublisherAgent(self.output_dir, self.websocket)
 
         # Define a Langchain StateGraph with the ResearchState
         workflow = StateGraph(ResearchState)
@@ -53,7 +58,9 @@ class ChiefEditorAgent:
         # compile the graph
         chain = research_team.compile()
 
-        print_agent_output(f"Starting the research process for query '{self.task.get('query')}'...", "MASTER")
-        result = await chain.ainvoke({"task": self.task})
+        print_agent_output(f"Starting the research process for query '{self.task}'...", "MASTER")
+        await self.websocket.send_json({"type": "logs", "output": f"Starting the research process for query '{self.task}'..."})
+        result = await chain.ainvoke({"task": self.task, "websocket": self.websocket})
 
+        await self.websocket.send_json({"type": "result", "output": result})
         return result

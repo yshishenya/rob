@@ -9,6 +9,10 @@ from backend.report_type import BasicReport, DetailedReport
 
 from gpt_researcher.utils.enum import ReportType
 
+# Импортируем ChiefEditorAgent из multi_agents
+from multi_agents.agents.master import ChiefEditorAgent
+from multi_agents.agents.publisher import PublisherAgent
+
 
 class WebSocketManager:
     """Manage websockets"""
@@ -60,20 +64,28 @@ class WebSocketManager:
 
 async def run_agent(task, report_type, websocket):
     """Run the agent."""
-    # measure time
-    start_time = datetime.datetime.now()
-    # add customized JSON config file path here
-    config_path = ""
-    # Instead of running the agent directly run it through the different report type classes
-    if report_type == ReportType.DetailedReport.value:
-        researcher = DetailedReport(query=task, source_urls=None, config_path=config_path, websocket=websocket)
-    else:
-        researcher = BasicReport(query=task, report_type=report_type,
-                                 source_urls=None, config_path=config_path, websocket=websocket)
+    try:
+        # Измеряем время начала
+        start_time = datetime.datetime.now()
+        await websocket.send_json({"type": "logs", "output": "Starting ChiefEditorAgent"})
 
-    report = await researcher.run()
-    # measure time
-    end_time = datetime.datetime.now()
-    await websocket.send_json({"type": "logs", "output": f"\nTotal run time: {end_time - start_time}\n"})
+        # Инициализируем ChiefEditorAgent с задачей и WebSocket
+        chief_editor = ChiefEditorAgent({"query": task}, websocket)
+        report = await chief_editor.run_research_task()
 
-    return report
+        await websocket.send_json({"type": "logs", "output": "ChiefEditorAgent completed"})
+        await websocket.send_json({"type": "logs", "output": "Starting PublisherAgent"})
+
+        # Инициализируем PublisherAgent с WebSocket
+        publisher = PublisherAgent(output_dir="outputs", websocket=websocket)
+        await publisher.publish_research_report(report, {"pdf": True, "docx": True, "markdown": True})
+
+        # Измеряем время окончания
+        end_time = datetime.datetime.now()
+        await websocket.send_json({"type": "logs", "output": f"\nTotal run time: {end_time - start_time}\n"})
+
+        return report
+    except Exception as e:
+        await websocket.send_json({"type": "error", "message": str(e)})
+        raise
+

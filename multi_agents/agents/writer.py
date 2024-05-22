@@ -1,5 +1,6 @@
 from datetime import datetime
 import json5 as json
+from fastapi import WebSocket
 from .utils.views import print_agent_output
 from .utils.llms import call_model
 
@@ -14,8 +15,8 @@ sample_json = """
 
 
 class WriterAgent:
-    def __init__(self):
-        pass
+    def __init__(self, websocket: WebSocket):
+        self.websocket = websocket
 
     def get_headers(self, research_state: dict):
         return {
@@ -27,12 +28,16 @@ class WriterAgent:
             "references": "Список источников"
         }
 
-    def write_sections(self, research_state: dict):
+    async def write_sections(self, research_state: dict):
         query = research_state.get("title")
         data = research_state.get("research_data")
         task = research_state.get("task")
-        follow_guidelines = task.get("follow_guidelines")
-        guidelines = task.get("guidelines")
+        follow_guidelines = research_state.get("follow_guidelines")
+        guidelines = research_state.get("guidelines")
+        model = research_state.get("model")
+
+        # Логирование значения модели
+        await self.websocket.send_json({"type": "logs", "output": f"Model being used: {model}"})
 
         prompt = [{
             "role": "system",
@@ -56,10 +61,12 @@ class WriterAgent:
 
         }]
 
-        response = call_model(prompt, task.get("model"), max_retries=2, response_format='json')
+        await self.websocket.send_json({"type": "logs", "output": "Calling model to write sections..."})
+        response = call_model(prompt, model, max_retries=2, response_format='json')
+        await self.websocket.send_json({"type": "logs", "output": "Model response received."})
         return json.loads(response)
 
-    def revise_headers(self, task: dict, headers: dict):
+    async def revise_headers(self, research_state: dict, headers: dict):
         prompt = [{
             "role": "system",
             "content": """You are a research writer.
@@ -69,25 +76,35 @@ Your sole purpose is to revise the headers data based on the given guidelines.""
             "content": f"""Your task is to revise the given headers JSON based on the guidelines given.
 You are to follow the guidelines but the values should be in simple strings, ignoring all markdown syntax.
 You must return nothing but a JSON in the same format as given in headers data.
-Guidelines: {task.get("guidelines")}\n
+Guidelines: {research_state.get("guidelines")}\n
 Headers Data: {headers}\n
 """
 
         }]
 
-        response = call_model(prompt, task.get("model"), response_format='json')
+        await self.websocket.send_json({"type": "logs", "output": "Calling model to revise headers..."})
+        response = call_model(prompt, research_state.get("model"), response_format='json')
+
+        # Логирование типа ответа
+        await self.websocket.send_json({"type": "logs", "output": f"Model response type: {type(response)}"})
+
+        # Преобразование ответа в строку, если это dict
+        if isinstance(response, dict):
+            response = json.dumps(response)
+
+        await self.websocket.send_json({"type": "logs", "output": "Model response received for headers."})
         return {"headers": json.loads(response)}
 
-    def run(self, research_state: dict):
-        print_agent_output(f"Writing final research report based on research data...", agent="WRITER")
-        research_layout_content = self.write_sections(research_state)
+    async def run(self, research_state: dict):
+        await self.websocket.send_json({"type": "logs", "output": "Writing final research report based on research data...", "agent": "WRITER"})
+        research_layout_content = await self.write_sections(research_state)
 
         if research_state.get("task").get("verbose"):
-            print_agent_output(research_layout_content, agent="WRITER")
+            await self.websocket.send_json({"type": "result", "output": research_layout_content}, agent="WRITER")
 
         headers = self.get_headers(research_state)
         if research_state.get("task").get("follow_guidelines"):
-            print_agent_output("Rewriting layout based on guidelines...", agent="WRITER")
-            headers = self.revise_headers(task=research_state.get("task"), headers=headers).get("headers")
+            await self.websocket.send_json({"type": "logs", "output": "Rewriting layout based on guidelines...", "agent": "WRITER"})
+            headers = await self.revise_headers(research_state, headers).get("headers")
 
-        return {**research_layout_content, "headers": headers}
+        await self.websocket.send_json({"type": "result", "output": {**research_layout_content, "headers": headers}})
