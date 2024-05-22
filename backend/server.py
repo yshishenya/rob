@@ -116,8 +116,9 @@ async def websocket_endpoint(websocket: WebSocket, username: str = Depends(token
                     task = json_data.get("task")
                     report_type = json_data.get("report_type")
                     file_path = format_filename(task)
+                    report_source = json_data.get("report_source")
                     if task and report_type:
-                        report = await manager.start_streaming(task, report_type, websocket)
+                        report = await manager.start_streaming(task, report_type, report_source, websocket)
                         # Сохранение отчета в формате MD
                         md_path = await write_text_to_md(report, file_path)
                         # Сохранение отчета в формате PDF
