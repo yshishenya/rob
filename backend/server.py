@@ -138,5 +138,3 @@ async def websocket_endpoint(websocket: WebSocket, username: str = Depends(token
     except Exception as e:
         logger.error(f"Unhandled error in websocket_endpoint: {e}")
         await websocket.close(code=1011)  # Неожиданное условие, которое помешало выполнить запрос
-
-
