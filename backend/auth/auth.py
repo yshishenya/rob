@@ -219,13 +219,14 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = 
         raise HTTPException(status_code=500, detail="Internal server error")
 
 @auth_router.post('/logout', summary="Выход пользователя из системы", description="Позволяет пользователю выйти из системы, удаляя его токены.")
-async def logout(token: str = Depends(oauth2_scheme)):
-    logger.info(f"Logging out user with access token: {token}")
+async def logout(request: RefreshRequest):
+    refresh_token = request.refresh_token
+    logger.info(f"Logging out user with refresh token: {refresh_token}")
 
-    user_id = token_storage.retrieve_token(token)
+    user_id = token_storage.retrieve_user_id_by_refresh_token(refresh_token)
     if not user_id:
-        logger.error("Access token not found or expired")
-        raise HTTPException(status_code=401, detail="Invalid or expired access token")
+        logger.error("Refresh token not found or expired")
+        raise HTTPException(status_code=401, detail="Invalid or expired refresh token")
 
     try:
         # Удаляем все токены пользователя
