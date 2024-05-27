@@ -134,6 +134,7 @@ curl -X POST https://dev.volter.pro-4.ru/api/refresh \
 **1. 401 Unauthorized:** Ошибка аутентификации. Возникает, если предоставленный токен недействителен или истек.
 
 **Причины**:
+
 - Неверный `access_token` или `refresh_token`.
 - Токен истек.
 
@@ -164,6 +165,7 @@ curl -X POST https://dev.volter.pro-4.ru/api/refresh \
 Этот модуль содержит маршруты и логику для авторизации пользователей. Основные функции включают:
 
 - **/login**: Позволяет пользователю войти в систему, используя имя пользователя и пароль. Возвращает токены доступа и обновления.
+- **/logout**: Позволяет пользователю выйти из системы, используя refresh_token. Очищает токены доступа и обновления.
 - **/refresh**: Обновляет токен доступа, используя токен обновления.
 - **/users/create**: Создает нового пользователя (только для администраторов).
 - **/users/delete**: Удаляет пользователя по идентификатору (только для администраторов).
@@ -355,8 +357,111 @@ app = FastAPI()
 init_app(app)
 ```
 
+###Инструкция по реализации логаута
+
+1. Отправка запроса на логаут
+   Когда пользователь нажимает кнопку "Выйти" (Logout), фронтенд должен отправить POST-запрос на эндпоинт /logout. В запросе необходимо передать access_token в заголовке авторизации.
+   Пример запроса с использованием curl:
+
+```bash
+curl -X POST https://dev.rob.pro-4.ru/logout \
+-H "accept: application/json" \
+-H "Authorization: Bearer <access_token>" \
+-d ''
+
+```
+
+2. Очистка токенов
+   После успешного ответа от сервера, необходимо выполнить следующие действия на фронтенде:
+1. Удалить access_token и refresh_token из локального хранилища (например, localStorage).
+1. Перенаправить пользователя на страницу входа или главную страницу.
+   Пример кода на JavaScript:
+
+```javascript
+fetch("https://dev.rob.pro-4.ru/logout", {
+  method: "POST",
+  headers: {
+    accept: "application/json",
+    Authorization: `Bearer ${localStorage.getItem("access_token")}`,
+  },
+})
+  .then((response) => {
+    if (response.ok) {
+      // Удаляем токены из локального хранилища
+      localStorage.removeItem("access_token");
+      localStorage.removeItem("refresh_token");
+      // Перенаправляем пользователя на страницу входа
+      window.location.href = "/login";
+    } else {
+      // Обработка ошибок
+      console.error("Ошибка при логауте:", response.statusText);
+    }
+  })
+  .catch((error) => {
+    console.error("Ошибка сети:", error);
+  });
+```
+
+3. Обработка ошибок
+   Если сервер вернул ошибку (например, токен недействителен или истек), необходимо запросить новый токен с использованием refresh_token и повторить логаут.
+   Пример кода на JavaScript:
+
+```javascript
+function logout() {
+  fetch("https://dev.rob.pro-4.ru/logout", {
+    method: "POST",
+    headers: {
+      accept: "application/json",
+      Authorization: `Bearer ${localStorage.getItem("access_token")}`,
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        localStorage.removeItem("access_token");
+        localStorage.removeItem("refresh_token");
+        window.location.href = "/login";
+      } else if (response.status === 401) {
+        // Токен недействителен или истек, обновляем токен
+        refreshTokenAndRetryLogout();
+      } else {
+        console.error("Ошибка при логауте:", response.statusText);
+      }
+    })
+    .catch((error) => {
+      console.error("Ошибка сети:", error);
+    });
+}
+
+function refreshTokenAndRetryLogout() {
+  fetch("https://dev.rob.pro-4.ru/api/refresh", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      refresh_token: localStorage.getItem("refresh_token"),
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      localStorage.setItem("access_token", data.access_token);
+      localStorage.setItem("refresh_token", data.refresh_token);
+      // Повторяем логаут
+      logout();
+    })
+    .catch((error) => {
+      console.error("Ошибка при обновлении токена:", error);
+    });
+}
+
+// Вызов функции логаута
+logout();
+```
+
 ---
 
 ## Заключение
 
 Эта система авторизации обеспечивает безопасное управление пользователями и токенами, используя FastAPI, SQLAlchemy и Redis. Для добавления новых функций или изменения существующих, следуйте структуре и принципам, описанным выше.
+
+![Еще одна иструкция](auth_man.png)
