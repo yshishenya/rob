@@ -4,7 +4,7 @@ services:
     image: kramer1346/gpt-researcher
     platform: linux/amd64
     restart: always
-    container_name: rob_prod
+    container_name: ${CONTAINER_NAME}
     build: ./
     volumes:
       - ./:/usr/src/app/ # Монтирование всей директории проекта

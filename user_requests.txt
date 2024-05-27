@@ -144,3 +144,24 @@ _____
 2024-05-22 22:50:43 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"Доля рынка ИП и самозанятых в РФ","report_type":"detailed_report","agent":true}
 2024-05-22 22:59:22 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"количество самозанятых и ИП в РФ","report_type":"detailed_report","agent":true}
 2024-05-23 00:05:03 МСК - User:yan - Request:start {"task":"климат бишкека","report_type":"detailed_report","agent":true}
+2024-05-24 13:57:09 МСК - User:yan - Request:start {"task":"askdasd asd","report_type":"detailed_report","agent":true}
+2024-05-24 14:01:32 МСК - User:yan - Request:start {"task":"123 123 12312 3123aSD","report_type":"detailed_report","agent":true}
+2024-05-24 14:55:51 МСК - User:yan - Request:start {"task":"123 123 1231d1wd1 23","report_type":"detailed_report","agent":true}
+2024-05-24 15:07:16 МСК - User:yan - Request:start {"task":"Давай об ошибках ws","report_type":"detailed_report","agent":true}
+2024-05-24 15:12:23 МСК - User:yan - Request:start {"task":"Коротко о производстве стекла","report_type":"detailed_report","agent":true}
+2024-05-24 15:17:13 МСК - User:yan - Request:start {"task":"Коротко о производстве  стекла","report_type":"detailed_report","agent":true}
+2024-05-24 15:21:12 МСК - User:yan - Request:start {"task":"Коротко о самом важном","report_type":"detailed_report","agent":true}
+2024-05-24 15:24:52 МСК - User:yan - Request:start {"task":"Коротко о песке","report_type":"detailed_report","agent":true}
+2024-05-24 15:30:53 МСК - User:yan - Request:start {"task":"Коротко о важном","report_type":"detailed_report","agent":true}
+2024-05-24 15:44:53 МСК - User:yan - Request:start {"task":"Как жить ?","report_type":"detailed_report","agent":true}
+2024-05-27 09:24:59 МСК - User:yan - Request:start {"task":"Коротки о типах пластика","report_type":"detailed_report","agent":true}
+2024-05-27 09:36:52 МСК - User:yan - Request:start {"task":"Коротко о том как взломать любой сайт","report_type":"detailed_report","agent":true}
+2024-05-27 09:43:44 МСК - User:yan - Request:start {"task":"Коротко о производстве урана","report_type":"detailed_report","agent":true}
+2024-05-27 09:49:30 МСК - User:yan - Request:start {"task":"Коротко о муке","report_type":"detailed_report","agent":true}
+2024-05-27 10:00:32 МСК - User:yan - Request:start {"task":"Двай о ....","report_type":"detailed_report","agent":true}
+2024-05-27 10:09:48 МСК - User:yan - Request:start {"task":"Давай про небо","report_type":"detailed_report","agent":true}
+2024-05-27 10:26:53 МСК - User:yan - Request:start {"task":"fdgjh;ker rt h5=0- 6q3=5634","report_type":"detailed_report","agent":true}
+2024-05-27 10:44:08 МСК - User:yan - Request:start {"task":"wrgh sfgh dfgh dsfgh","report_type":"detailed_report","agent":true}
+2024-05-27 12:54:49 МСК - User:yan - Request:start {"task":"фыв","report_type":"detailed_report","agent":true}
+2024-05-27 15:15:13 МСК - User:yan - Request:start {"task":"тест","report_type":"detailed_report","agent":true}
+2024-05-27 15:21:17 МСК - User:yan - Request:start {"task":"тест","report_type":"detailed_report","agent":true}
