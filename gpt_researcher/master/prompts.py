@@ -22,7 +22,8 @@ def generate_search_queries_prompt(question: str, parent_query: str, report_type
            f'Use the current date if needed: {datetime.now().strftime("%B %d, %Y")}.\n' \
            f'Also include in the queries specified task details such as locations, names, etc.\n' \
            f'You must respond with a list of strings in the following format: ["query 1", "query 2", "query 3"].\n' \
-           f'You must write 2 queries in Russian and 2 queries in English.'
+           f'You must write 2 queries in Russian and 2 queries in English.\n' \
+           f'The response should contain ONLY the list.'
 
 
 def generate_report_prompt(question: str, context, report_source: str, report_format="apa", total_words=1000):

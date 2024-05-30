@@ -35,3 +35,6 @@ user_requests.txt
 
 #Redis
 dump.rdb
+
+#Langgraph
+multi_agents/.langgraph-data/
