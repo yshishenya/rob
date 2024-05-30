@@ -370,7 +370,7 @@ def add_source_urls(report_markdown: str, visited_urls: set):
     avoid duplication.
     """
     try:
-        url_markdown = "\n\n\n## Ссылки\n\n"
+        url_markdown = "\n\n\n## Проанализированные источники\n\n"
 
         url_markdown += "".join(f"- [{url}]({url})\n" for url in visited_urls)
 
