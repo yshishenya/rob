@@ -144,6 +144,30 @@ _____
 2024-05-22 22:50:43 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"Доля рынка ИП и самозанятых в РФ","report_type":"detailed_report","agent":true}
 2024-05-22 22:59:22 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"количество самозанятых и ИП в РФ","report_type":"detailed_report","agent":true}
 2024-05-23 00:05:03 МСК - User:yan - Request:start {"task":"климат бишкека","report_type":"detailed_report","agent":true}
+2024-05-23 00:15:28 МСК - User:yan - Request:start {"task":"климат бишкека","report_type":"detailed_report","agent":true}
+2024-05-23 07:18:35 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"ПЛАТФОРМЕННЫЙ БИЗНЕС СРАВНЕНИЕ","report_type":"detailed_report","agent":true}
+2024-05-24 17:32:36 МСК - User:yan - Request:start {"task":"Действительно ли возможно ускорить процесс рекрутинга с помощью ИИ? И как это происходит?","report_type":"research_report","agent":true}
+2024-05-24 17:45:32 МСК - User:yan - Request:start {"task":"Действительно ли возможно ускорить процесс рекрутинга с помощью ИИ? И как это происходит?","report_type":"research_report","agent":true}
+2024-05-24 17:46:44 МСК - User:yan - Request:start {"task":"Действительно ли возможно ускорить процесс рекрутинга с помощью ИИ? И как это происходит?","report_type":"detailed_report","agent":true}
+2024-05-24 17:51:02 МСК - User:yan - Request:start {"task":"Возможно ли ускорить процесс рекрутинга с помощью больших языковых моделей(LLM)? Напиши самые передовые мировые кейсы. Напиши метрики улучшений в цифрах","report_type":"detailed_report","agent":true}
+2024-05-24 17:57:50 МСК - User:yan - Request:start {"task":"Как искусственный интеллект меняет подходы к HR? Детально опиши примеры.","report_type":"detailed_report","agent":true}
+2024-05-24 18:05:07 МСК - User:yan - Request:start {"task":"Как большие языковые модели(LLM) меняет подходы в основных этапах и функциях HR.  HR-функция обычно разделяется на несколько ключевых областей.  Детально опиши влияние LLM на каждую функцию.","report_type":"detailed_report","agent":true}
+2024-05-24 18:15:40 МСК - User:yan - Request:start {"task":"Как большие языковые модели(LLM) меняет подходы в HR.  Детально опиши влияние LLM на каждую функцию: Подбор, Адаптация, Развитие и обучение, CnB, корпоративная культура, делопроизводство, мотивация и удержание","report_type":"detailed_report","agent":true}
+2024-05-24 18:21:45 МСК - User:yan - Request:start {"task":"Детально опиши как большие языковые модели(LLM) меняет подходы в каждой функциональной области HR.","report_type":"detailed_report","agent":true}
+2024-05-27 18:16:35 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"объем штрафов и доначислений налогов в РФ по причине признания деятельност трудовой с договорам ГПХ","report_type":"detailed_report","agent":true}
+2024-05-28 10:20:30 МСК - User:dima.nnk - Request:start {"task":"Технологии","report_type":"detailed_report","agent":true}
+2024-05-28 10:23:28 МСК - User:dima.nnk - Request:start {"task":"Мюонная томография в геологоразведке","report_type":"detailed_report","agent":true}
+2024-05-28 11:41:02 МСК - User:dima.nnk - Request:start {"task":"Muon tomography","report_type":"detailed_report","agent":true}
+2024-05-29 14:01:53 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"критерии признания деятельности трудовой","report_type":"detailed_report","agent":true}
+2024-05-29 14:06:04 МСК - User:STEPANOVA.NG@gazprom-neft.ru - Request:start {"task":"признаки трудовой деятельности","report_type":"detailed_report","agent":true}
+2024-05-29 17:17:33 МСК - User:yan - Request:start {"task":"какие тенденции в использовании генеративного ИИ в HR-сфере являются наиболее перспективными на данный момент и почему.","report_type":"detailed_report","agent":true}
+2024-05-29 17:22:03 МСК - User:yan - Request:start {"task":"Напиши конкретне примерами того, как компании успешно интегрировали ИИ в свои HR-процессы, таких как рекрутинг, адаптация новых сотрудников или управление талантами, и каких результатов им удалось достичь","report_type":"detailed_report","agent":true}
+2024-05-29 17:23:37 МСК - User:yan - Request:start {"task":"Напиши контретные примерами того, как компании успешно интегрировали большие языковые модели(LLM) в свои HR-процессы, таких как рекрутинг, адаптация новых сотрудников или управление талантами, и каких результатов им удалось достичь","report_type":"detailed_report","agent":true}
+2024-05-29 17:34:23 МСК - User:yan - Request:start {"task":"Напиши конкретные примеры того, ккомпании успешно интегрировали большие языковые модели(LLM) в свои HR-процессы. Какие результаты им удалось достичь в цифрах","report_type":"detailed_report","agent":true}
+2024-05-29 17:52:03 МСК - User:yan - Request:start {"task":"каковы основные направления развития технологий ИИ в HR, которые могут существенно изменить подходы к управлению персоналом в ближайшие пять лет?","report_type":"detailed_report","agent":true}
+2024-05-29 17:52:43 МСК - User:yan - Request:start {"task":"каковы основные направления развития технологий больших языковых моделей(LLM) в HR, которые могут существенно изменить подходы к управлению персоналом в ближайшие пять лет?","report_type":"detailed_report","agent":true}
+2024-05-29 18:03:59 МСК - User:yan - Request:start {"task":"какие практические шаги компании могут предпринять для успешного внедрения Больших языковых моделей(LLM) в HR, чтобы максимально быстро увидеть результаты и минимизировать потенциальные риски?","report_type":"detailed_report","agent":true}
+2024-05-29 19:21:41 МСК - User:yan - Request:start {"task":"какие мероприятия будут включены в нацпроект семья в России","report_type":"detailed_report","agent":true}
 2024-05-24 13:57:09 МСК - User:yan - Request:start {"task":"askdasd asd","report_type":"detailed_report","agent":true}
 2024-05-24 14:01:32 МСК - User:yan - Request:start {"task":"123 123 12312 3123aSD","report_type":"detailed_report","agent":true}
 2024-05-24 14:55:51 МСК - User:yan - Request:start {"task":"123 123 1231d1wd1 23","report_type":"detailed_report","agent":true}
