@@ -38,3 +38,6 @@ dump.rdb
 
 #Langgraph
 multi_agents/.langgraph-data/
+
+#User requests
+user_requests.txt
