@@ -50,7 +50,6 @@ def generate_report_prompt(question: str, context, report_source: str, report_fo
             You MUST write all used source document names at the end of the report as references, and make sure to not add duplicated sources, but only one reference for each."
         """
 
-
     return f'Information: """{context}"""\n\n' \
            f'Using the above information, answer the following' \
            f' query or task: "{question}" in a detailed report --' \
@@ -65,9 +64,9 @@ def generate_report_prompt(question: str, context, report_source: str, report_fo
             f"Cite search results using inline notations. Only cite the most \
             relevant results that answer the query accurately. Place these citations at the end \
             of the sentence or paragraph that reference them.\n"\
-            f"Please do your best, this is very important tocareer. " \
+            f"Please do your best, this is very important to my career. " \
             f"Reply in Russian only. " \
-            f"Assume that the  my current date is {datetime.now().strftime('%B %d, %Y')}"
+            f"Assume that the current date is {datetime.now().strftime('%B %d, %Y')}"
 
 
 def generate_resource_report_prompt(question, context, report_source: str, report_format="apa", total_words=1000):
@@ -80,7 +79,6 @@ def generate_resource_report_prompt(question, context, report_source: str, repor
     Returns:
         str: The resource report prompt for the given question and research summary.
     """
-
     reference_prompt = ""
     if report_source == ReportSource.Web.value:
         reference_prompt = f"""

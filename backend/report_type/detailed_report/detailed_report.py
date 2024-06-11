@@ -16,13 +16,13 @@ class DetailedReport():
         self.config_path = config_path
         self.websocket = websocket
         self.subtopics = subtopics
-        
+
         # A parent task assistant. Adding research_report as default
         self.main_task_assistant = GPTResearcher(self.query, "research_report", self.report_source, self.source_urls, self.config_path, self.websocket)
         self.existing_headers = []
         # This is a global variable to store the entire context accumulated at any point through searching and scraping
         self.global_context = []
-    
+
         # This is a global variable to store the entire url list accumulated at any point through searching and scraping
         if self.source_urls:
             self.global_urls = set(self.source_urls)
@@ -34,7 +34,7 @@ class DetailedReport():
 
         # Get list of all subtopics
         subtopics = await self._get_all_subtopics()
-        
+
         # Generate report introduction
         report_introduction = await self.main_task_assistant.write_introduction()
 
@@ -138,8 +138,8 @@ class DetailedReport():
     async def _construct_detailed_report(self, introduction: str, report_body: str):
         # Generating a table of contents from report headers
         toc = table_of_contents(report_body)
-        
+
         # Concatenating all source urls at the end of the report
         report_with_references = add_source_urls(report_body, self.main_task_assistant.visited_urls)
-        
+
         return f"{introduction}\n\n{toc}\n\n{report_with_references}"

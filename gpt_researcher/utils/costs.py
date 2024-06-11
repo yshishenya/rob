@@ -5,7 +5,7 @@ ENCODING_MODEL = "o200k_base"
 INPUT_COST_PER_TOKEN = 0.000005
 OUTPUT_COST_PER_TOKEN = 0.000015
 IMAGE_INFERENCE_COST = 0.003825
-EMBEDDING_COST = 0.02 / 1000000 # Assumes new ada-3-small
+EMBEDDING_COST = 0.13  / 1000000 # Assumes new ada-3-small
 
 
 # Cost estimation is via OpenAI libraries and models. May vary for other models
