@@ -29,7 +29,6 @@ langchain_fireworks
 langchain_aws
 tiktoken
 tavily-python
-gpt_researcher
 arxiv
 PyMuPDF
 requests
