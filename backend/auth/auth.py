@@ -190,9 +190,10 @@ async def create_tokens(user_id):
 
 @auth_router.post('/login', response_model=LoginResponse, summary="Авторизация пользователя", description="Позволяет пользователю войти в систему, используя имя пользователя и пароль.")
 async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    logger.debug(f"Username: {form_data.username}, Password: {form_data.password}")
+    username_lower = form_data.username.lower()  # Преобразование имени пользователя в нижний регистр
+    logger.debug(f"Username: {username_lower}, Password: {form_data.password}")
     try:
-        user = db.query(User).filter_by(username=form_data.username).first()
+        user = db.query(User).filter_by(username=username_lower).first()
         if user:
             logger.debug(f"Checking password for user {user.username}")
             if user.check_password(form_data.password):
@@ -297,7 +298,8 @@ async def create_user(user_request: UserCreateRequest, db: Session = Depends(get
     if not admin.is_admin:
         raise HTTPException(status_code=403, detail="Admin privileges required")
     try:
-        new_user = User(username=user_request.username, email=user_request.email, is_admin=user_request.is_admin)
+        username_lower = user_request.username.lower()  # Преобразование имени пользователя в нижний регистр
+        new_user = User(username=username_lower, email=user_request.email, is_admin=user_request.is_admin)
         new_user.set_password(user_request.password)
         db.add(new_user)
         db.commit()
