@@ -17,7 +17,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/gpt-researcher?logo=pypi&logoColor=white&style=flat)](https://badge.fury.io/py/gpt-researcher)
 ![GitHub Release](https://img.shields.io/github/v/release/assafelovic/gpt-researcher?style=flat&logo=github)
 [![Open In Colab](https://img.shields.io/static/v1?message=Open%20in%20Colab&logo=googlecolab&labelColor=grey&color=yellow&label=%20&style=flat&logoSize=40)](https://colab.research.google.com/github/assafelovic/gpt-researcher/blob/master/examples/pip-run.ipynb)
-![Docker Image Version)](https://img.shields.io/docker/v/elestio/gpt-researcher/latest?arch=amd64&style=flat&logo=docker&logoColor=white&color=1D63ED)
+[![Docker Image Version](https://img.shields.io/docker/v/elestio/gpt-researcher/latest?arch=amd64&style=flat&logo=docker&logoColor=white&color=1D63ED)](https://hub.docker.com/r/elestio/gpt-researcher)
 [![Twitter Follow](https://img.shields.io/twitter/follow/assaf_elovic?style=social)](https://twitter.com/assaf_elovic)
 <!--[![Twitter](https://img.shields.io/badge/Twitter-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/assaf_elovic)-->
 
@@ -99,12 +99,13 @@ For Linux/Windows temporary setup, use the export method:
 
 ```bash
 export OPENAI_API_KEY={Your OpenAI API Key here}
+export TAVILY_API_KEY={Your Tavily API Key here}
 ```
 
 For a more permanent setup, create a `.env` file in the current `gpt-researcher` directory and input the env vars (without `export`).
 
-- **For LLM, we recommend [OpenAI GPT](https://platform.openai.com/docs/guides/gpt)**, but you can use any other LLM model (including open sources). To learn how to change the LLM model, please refer to the [documentation](https://docs.gptr.dev/docs/gpt-researcher/llms) page. 
-- **For web search API, the default is `duckduckgo`** (no signup required), but you can also refer to other web search APIs of your choice by adding env `RETRIEVER` to `google`, `bing`, `tavily`, `googleSerp`, `serpapi`, `searx` and more.
+- For LLM provider, we recommend **[OpenAI GPT](https://platform.openai.com/docs/guides/gpt)**, but you can use any other LLM model (including open sources). To learn how to change the LLM model, please refer to the [documentation](https://docs.gptr.dev/docs/gpt-researcher/llms) page. 
+- For web search API, we recommend **[Tavily Search API](https://app.tavily.com)**, but you can also refer to other search APIs of your choice by changing the search provider in config/config.py to `duckduckgo`, `google`, `bing`, `serper`, `searx` and more. Then add the corresponding env API key.
 
 ### Quickstart
 
@@ -176,7 +177,7 @@ Check it out [here](https://github.com/assafelovic/gpt-researcher/tree/master/mu
 ## 🚀 Contributing
 We highly welcome contributions! Please check out [contributing](https://github.com/assafelovic/gpt-researcher/blob/master/CONTRIBUTING.md) if you're interested.
 
-Please check out our [roadmap](https://trello.com/b/3O7KBePw/gpt-researcher-roadmap) page and reach out to us via our [Discord community](https://discord.gg/2pFkc83fRq) if you're interested in joining our mission.
+Please check out our [roadmap](https://trello.com/b/3O7KBePw/gpt-researcher-roadmap) page and reach out to us via our [Discord community](https://discord.gg/QgZXvJAccX) if you're interested in joining our mission.
 <a href="https://github.com/assafelovic/gpt-researcher/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=assafelovic/gpt-researcher" />
 </a>

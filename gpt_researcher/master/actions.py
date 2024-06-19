@@ -7,6 +7,7 @@ from gpt_researcher.master.prompts import *
 from gpt_researcher.scraper.scraper import Scraper
 from gpt_researcher.utils.llm import *
 
+import json_repair
 
 def get_retriever(retriever):
     """
@@ -40,6 +41,9 @@ def get_retriever(retriever):
         case "tavily":
             from gpt_researcher.retrievers import TavilySearch
             retriever = TavilySearch
+        case "custom":
+            from gpt_researcher.retrievers import CustomRetriever
+            retriever = CustomRetriever
 
         case _:
             raise Exception("Retriever not found.")
@@ -108,9 +112,8 @@ async def get_sub_queries(query: str, agent_role_prompt: str, cfg, parent_query:
         cost_callback=cost_callback
     )
 
-    print("response : ", response)
+    sub_queries = json_repair.loads(response)
 
-    sub_queries = json.loads(response)
     return sub_queries
 
 
