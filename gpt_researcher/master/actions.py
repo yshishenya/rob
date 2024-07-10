@@ -371,7 +371,7 @@ def table_of_contents(markdown_text: str):
 
         # Extract headers from markdown text
         headers = extract_headers(markdown_text)
-        toc = "## Содержание\n\n" + generate_table_of_contents(
+        toc = "## Table of Contents\n\n" + generate_table_of_contents(
             headers
         )  # Generate table of contents
 
@@ -393,7 +393,7 @@ def add_source_urls(report_markdown: str, visited_urls: set):
     avoid duplication.
     """
     try:
-        url_markdown = "\n\n\n## Проанализированные источники\n\n"
+        url_markdown = "\n\n\n## References\n\n"
 
         url_markdown += "".join(f"- [{url}]({url})\n" for url in visited_urls)
 

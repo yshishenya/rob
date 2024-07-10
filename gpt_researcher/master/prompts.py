@@ -21,8 +21,8 @@ def generate_search_queries_prompt(question: str, parent_query: str, report_type
     return f'Write {max_iterations} google search queries to search online that form an objective opinion from the following task: "{task}"' \
            f'Use the current date if needed: {datetime.now().strftime("%B %d, %Y")}.\n' \
            f'Also include in the queries specified task details such as locations, names, etc.\n' \
+           f'You must write half of queries in the task language, half in english.\n' \
            f'You must respond with a list of strings in the following format: ["query 1", "query 2", "query 3"].\n' \
-           f'You must write 2 queries in Russian and 2 queries in English.\n' \
            f'The response should contain ONLY the list.'
 
 
@@ -50,11 +50,12 @@ def generate_report_prompt(question: str, context, report_source: str, report_fo
             You MUST write all used source document names at the end of the report as references, and make sure to not add duplicated sources, but only one reference for each."
         """
 
+
     return f'Information: """{context}"""\n\n' \
            f'Using the above information, answer the following' \
            f' query or task: "{question}" in a detailed report --' \
            " The report should focus on the answer to the query, should be well structured, informative," \
-           f" in depth and comprehensive, with facts and numbers if available and a minimum of {total_words} words.\n" \
+           f" in depth and comprehensive, with facts and numbers if available and a minimum of {total_words} words in Russian.\n" \
            "You should strive to write the report as long as you can using all relevant and necessary information provided.\n" \
            "You must write the report with markdown syntax.\n " \
            f"Use an unbiased and journalistic tone. \n" \
@@ -65,7 +66,6 @@ def generate_report_prompt(question: str, context, report_source: str, report_fo
             relevant results that answer the query accurately. Place these citations at the end \
             of the sentence or paragraph that reference them.\n"\
             f"Please do your best, this is very important to my career. " \
-            f"Reply in Russian only. " \
             f"Assume that the current date is {datetime.now().strftime('%B %d, %Y')}"
 
 
@@ -79,6 +79,7 @@ def generate_resource_report_prompt(question, context, report_source: str, repor
     Returns:
         str: The resource report prompt for the given question and research summary.
     """
+
     reference_prompt = ""
     if report_source == ReportSource.Web.value:
         reference_prompt = f"""
@@ -96,11 +97,10 @@ def generate_resource_report_prompt(question, context, report_source: str, repor
            'Focus on the relevance, reliability, and significance of each source.\n' \
            'Ensure that the report is well-structured, informative, in-depth, and follows Markdown syntax.\n' \
            'Include relevant facts, figures, and numbers whenever available.\n' \
-           f'The report should have a minimum length of {total_words} words.\n' \
+           f'The report should have a minimum length of {total_words} words in Russian.\n' \
            'You MUST include all relevant source urls.'\
            'Every url should be hyperlinked: [url website](url)'\
            f'{reference_prompt}'
-
 
 def generate_custom_report_prompt(query_prompt, context, report_source: str, report_format="apa", total_words=1000):
     return f'"{context}"\n\n{query_prompt}'
@@ -116,8 +116,7 @@ def generate_outline_report_prompt(question, context, report_source: str, report
     return f'"""{context}""" Using the above information, generate an outline for a research report in Markdown syntax' \
            f' for the following question or topic: "{question}". The outline should provide a well-structured framework' \
            ' for the research report, including the main sections, subsections, and key points to be covered.' \
-           ' The research report should be detailed, informative, in-depth, and a minimum of 1,200 words.' \
-           ' Reply in Russian only. ' \
+           f' The research report should be detailed, informative, in-depth, and a minimum of {total_words} words in Russian.' \
            ' Use appropriate Markdown syntax to format the outline and ensure readability.'
 
 
@@ -169,8 +168,7 @@ def generate_summary_prompt(query, data):
 
     return f'{data}\n Using the above text, summarize it based on the following task or query: "{query}".\n If the ' \
            f'query cannot be answered using the text, YOU MUST summarize the text in short.\n Include all factual ' \
-           f"Reply in Russian only. " \
-           f'information such as numbers, stats, quotes, etc if available. '
+           f'information such as numbers, stats, quotes, etc if available. Reply in Russian.'
 
 
 ################################################################################################
@@ -187,17 +185,16 @@ def generate_subtopics_prompt() -> str:
 
                 {data}
 
-                - Construct a list of subtopics which indicate the headers of a report document to be generated on the task.
+                - Construct a list of subtopics in Russian which indicate the headers of a report document to be generated on the task.
                 - These are a possible list of subtopics : {subtopics}.
                 - There should NOT be any duplicate subtopics.
                 - Limit the number of subtopics to a maximum of {max_subtopics}
                 - Finally order the subtopics by their tasks, in a relevant and meaningful order which is presentable in a detailed report
-                - You must write in Russian only.
+
                 "IMPORTANT!":
                 - Every subtopic MUST be relevant to the main topic and provided research data ONLY!
 
                 {format_instructions}
-
             """
 
 
@@ -216,7 +213,7 @@ def generate_subtopic_report_prompt(
     "{context}"
 
     "Main Topic and Subtopic":
-    Using the latest information available, construct a detailed report on the subtopic: {current_subtopic} under the main topic: {main_topic}.
+    Using the latest information available, construct a detailed report in Russian on the subtopic: {current_subtopic} under the main topic: {main_topic}.
     You must limit the number of subsections to a maximum of {max_subsections}.
 
     "Content Focus":
@@ -246,7 +243,7 @@ def generate_subtopic_report_prompt(
     - The focus MUST be on the main topic! You MUST Leave out any information un-related to it!
     - Must NOT have any introduction, conclusion, summary or reference section.
     - You MUST include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
-    - You must write in Russian only.
+    - The report should have a minimum length of {total_words} words.
     """
 
 
@@ -258,7 +255,6 @@ def generate_report_introduction(question: str, research_summary: str = "") -> s
         - The introduction should be preceded by an H1 heading with a suitable topic for the entire report.
         - You must include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
         Assume that the current date is {datetime.now(timezone.utc).strftime('%B %d, %Y')} if required.
-        - You must write in Russian only.
     """
 
 

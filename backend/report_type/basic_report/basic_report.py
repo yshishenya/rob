@@ -9,15 +9,15 @@ class BasicReport():
         self.source_urls = source_urls
         self.config_path = config_path
         self.websocket = websocket
-        
+
     async def run(self):
         # Initialize researcher
         researcher = GPTResearcher(self.query, self.report_type, self.report_source, self.source_urls, self.config_path, self.websocket)
-        
+
         # Run research
         await researcher.conduct_research()
-        
-        # and generate report        
+
+        # and generate report
         report = await researcher.write_report()
-        
+
         return report

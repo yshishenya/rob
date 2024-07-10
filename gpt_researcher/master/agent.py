@@ -75,6 +75,7 @@ class GPTResearcher:
         """
         if self.verbose:
             await stream_output("logs", f"🔎 Starting the research task for '{self.query}'...", self.websocket)
+        
         # Generate Agent
         if not (self.agent and self.role):
             self.agent, self.role = await choose_agent(query=self.query, cfg=self.cfg,
@@ -85,24 +86,15 @@ class GPTResearcher:
 
         # If specified, the researcher will use the given urls as the context for the research.
         if self.source_urls:
-            context = await self.__get_context_by_urls(self.source_urls)
-
             self.context = await self.__get_context_by_urls(self.source_urls)
-
+            
         elif self.report_source == ReportSource.Local.value:
             document_data = await DocumentLoader(self.cfg.doc_path).load()
-            context = await self.__get_context_by_search(self.query, document_data)
-
             self.context = await self.__get_context_by_search(self.query, document_data)
         # Default web based research
         else:
-            context = await self.__get_context_by_search(self.query)
-
-        # Extending the global context (This is useful instead of setting the context directly above to avoid over-writing input context)
-        self.context.extend(context)
-
             self.context = await self.__get_context_by_search(self.query)
-
+        
         time.sleep(2)
         if self.verbose:
             await stream_output("logs", f"Finalized research step.\n💸 Total Research Costs: ${self.get_costs()}", self.websocket)
@@ -120,7 +112,7 @@ class GPTResearcher:
 
         if self.verbose:
             await stream_output("logs", f"✍️ Writing summary for research task: {self.query}...", self.websocket)
-
+            
         if self.report_type == "custom_report":
             self.role = self.cfg.agent_role if self.cfg.agent_role else self.role
             report = await generate_report(

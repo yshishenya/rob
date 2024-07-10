@@ -7,6 +7,7 @@ from typing import Optional, Any, Dict
 
 from colorama import Fore, Style
 from langchain.output_parsers import PydanticOutputParser
+
 from langchain.prompts import PromptTemplate
 
 from gpt_researcher.master.prompts import generate_subtopics_prompt

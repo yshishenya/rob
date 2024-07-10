@@ -100,7 +100,7 @@ def save_request_to_file(data, username):
 async def websocket_endpoint(websocket: WebSocket, username: str = Depends(token_required)):
     try:
         logger.debug("Attempting to connect to WebSocket.")
-        await websocket.accept()
+        await manager.connect(websocket)
         logger.debug("WebSocket connection accepted.")
     except Exception as e:
         logger.error(f"Error in websocket_endpoint: {e}")

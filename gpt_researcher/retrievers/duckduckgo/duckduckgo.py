@@ -10,7 +10,7 @@ class Duckduckgo:
         self.ddg = DDGS()
         self.query = query
 
-    def search(self, max_results=10):
+    def search(self, max_results=5):
         """
         Performs the search
         :param query:

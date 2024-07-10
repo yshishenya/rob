@@ -27,7 +27,7 @@ class Config:
         self.memory_backend = os.getenv('MEMORY_BACKEND', "local")
         self.total_words = int(os.getenv('TOTAL_WORDS', 800))
         self.report_format = os.getenv('REPORT_FORMAT', "APA")
-        self.max_iterations = int(os.getenv('MAX_ITERATIONS', 4))
+        self.max_iterations = int(os.getenv('MAX_ITERATIONS', 3))
         self.agent_role = os.getenv('AGENT_ROLE', None)
         self.scraper = os.getenv("SCRAPER", "bs")
         self.max_subtopics = os.getenv("MAX_SUBTOPICS", 3)
@@ -39,7 +39,7 @@ class Config:
 
         if self.doc_path:
             self.validate_doc_path()
-
+        
     def validate_doc_path(self):
         """Ensure that the folder exists at the doc path"""
         os.makedirs(self.doc_path, exist_ok=True)
