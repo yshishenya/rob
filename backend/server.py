@@ -1,8 +1,16 @@
 import json
 import os
 import logging
+
+# Настройка логгера
+logger = logging.getLogger("backend")
+logger.setLevel(logging.DEBUG)
+handler = logging.StreamHandler()
+handler.setFormatter(logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s"))
+logger.addHandler(handler)
+
 from datetime import datetime, timezone, timedelta
-import re
+
 
 
 from unidecode import unidecode
@@ -19,17 +27,12 @@ from pydantic import BaseModel
 # Импорты из локальных модулей
 from backend.websocket_manager import WebSocketManager
 from backend.utils import write_md_to_pdf, write_md_to_word, write_text_to_md
-from backend.auth.auth import auth_router, token_required
+import time
+import json
+import os
+import re
 
 
-# Настройка уровня логирования для отладки
-logging.basicConfig(level=logging.DEBUG)
-
-# Создание экземпляра логгера
-logger = logging.getLogger(__name__)
-
-
-# Определение модели данных для запроса исследования
 class ResearchRequest(BaseModel):
     task: str
     report_type: str
@@ -47,7 +50,7 @@ app.add_middleware(
     allow_headers=["*"],  # Разрешить все заголовки
 )
 
-# Монтирование статических файлов и шаблонов
+# Монтирование статических файлов и шабл��нов
 app.mount("/site", StaticFiles(directory="./frontend"), name="site")
 app.mount("/static", StaticFiles(directory="./frontend/static"), name="static")
 templates = Jinja2Templates(directory="./frontend")
