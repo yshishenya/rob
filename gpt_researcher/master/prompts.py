@@ -1,8 +1,10 @@
 from datetime import datetime, timezone
 import warnings
 from gpt_researcher.utils.enum import ReportType, ReportSource
+from datetime import date
 
-def generate_search_queries_prompt(question: str, parent_query: str, report_type: str, max_iterations: int=3,):
+
+def generate_search_queries_prompt(question: str, parent_query: str, report_type: str, max_iterations: int = 3, ):
     """ Generates the search queries prompt for the given question.
     Args:
         question (str): The question to generate the search queries prompt for
@@ -37,13 +39,10 @@ def generate_report_prompt(question: str, context, report_source: str, report_fo
     if report_source == ReportSource.Web.value:
         reference_prompt = f"""
             You MUST write all used source urls at the end of the report as references, and make sure to not add duplicated sources, but only one reference for each.
-            Every url should be hyperlinked: [url website](url)
-            Additionally, you MUST include hyperlinks to the relevant URLs wherever they are referenced in the report :
+            Every url should be hyperlinked: [url website](url
+            Additionally, you MUST include hyperlinks to the relevant URLs wherever they are referenced in the report:
 
-            eg:
-                # Report Header
-
-                This is a sample text. ([url website](url))
+            eg: Author, A. A. (Year, Month Date). Title of web page. Website Name. [url website](url)
             """
     else:
         reference_prompt = f"""
@@ -51,22 +50,25 @@ def generate_report_prompt(question: str, context, report_source: str, report_fo
         """
 
 
-    return f'Information: """{context}"""\n\n' \
-           f'Using the above information, answer the following' \
-           f' query or task: "{question}" in a detailed report --' \
-           " The report should focus on the answer to the query, should be well structured, informative," \
-           f" in depth and comprehensive, with facts and numbers if available and a minimum of {total_words} words in Russian.\n" \
-           "You should strive to write the report as long as you can using all relevant and necessary information provided.\n" \
-           "You must write the report with markdown syntax.\n " \
-           f"Use an unbiased and journalistic tone. \n" \
-           "You MUST determine your own concrete and valid opinion based on the given information. Do NOT deter to general and meaningless conclusions.\n" \
-           f"{reference_prompt}"\
-            f"You MUST write the report in {report_format} format.\n " \
-            f"Cite search results using inline notations. Only cite the most \
-            relevant results that answer the query accurately. Place these citations at the end \
-            of the sentence or paragraph that reference them.\n"\
-            f"Please do your best, this is very important to my career. " \
-            f"Assume that the current date is {datetime.now().strftime('%B %d, %Y')}"
+    return f"""
+Information: "{context}"
+---
+Using the above information, answer the following query or task: "{question}" in a detailed report --
+The report should focus on the answer to the query, should be well structured, informative,
+in-depth, and comprehensive, with facts and numbers if available and a minimum of {total_words} words.
+You should strive to write the report as long as you can using all relevant and necessary information provided.
+
+Please follow all of the following guidelines in your report:
+- You MUST determine your own concrete and valid opinion based on the given information. Do NOT defer to general and meaningless conclusions.
+- You MUST write the report with markdown syntax and {report_format} format.
+- Use an unbiased and journalistic tone.
+- Use in-text citation references in {report_format} format and make it with markdown hyperlink placed at the end of the sentence or paragraph that references them like this: ([in-text citation](url)).
+- Don't forget to add a reference list at the end of the report in {report_format} format and full url links without hyperlinks.
+- {reference_prompt}
+
+Please do your best, this is very important to my career.
+Assume that the current date is {date.today()}.
+"""
 
 
 def generate_resource_report_prompt(question, context, report_source: str, report_format="apa", total_words=1000):
@@ -101,6 +103,7 @@ def generate_resource_report_prompt(question, context, report_source: str, repor
            'You MUST include all relevant source urls.'\
            'Every url should be hyperlinked: [url website](url)'\
            f'{reference_prompt}'
+
 
 def generate_custom_report_prompt(query_prompt, context, report_source: str, report_format="apa", total_words=1000):
     return f'"{context}"\n\n{query_prompt}'
@@ -176,8 +179,7 @@ def generate_summary_prompt(query, data):
 # DETAILED REPORT PROMPTS
 
 def generate_subtopics_prompt() -> str:
-    return """
-                Provided the main topic:
+    return """                Provided the main topic:
 
                 {task}
 
@@ -199,15 +201,14 @@ def generate_subtopics_prompt() -> str:
 
 
 def generate_subtopic_report_prompt(
-    current_subtopic,
-    existing_headers: list,
-    main_topic: str,
-    context,
-    report_format: str = "apa",
-    max_subsections=5,
-    total_words=800
+        current_subtopic,
+        existing_headers: list,
+        main_topic: str,
+        context,
+        report_format: str = "apa",
+        max_subsections=5,
+        total_words=800
 ) -> str:
-
     return f"""
     "Context":
     "{context}"
@@ -272,8 +273,8 @@ def get_prompt_by_report_type(report_type):
     default_report_type = ReportType.ResearchReport.value
     if not prompt_by_type:
         warnings.warn(f"Invalid report type: {report_type}.\n"
-                        f"Please use one of the following: {', '.join([enum_value for enum_value in report_type_mapping.keys()])}\n"
-                        f"Using default report type: {default_report_type} prompt.",
-                        UserWarning)
+                      f"Please use one of the following: {', '.join([enum_value for enum_value in report_type_mapping.keys()])}\n"
+                      f"Using default report type: {default_report_type} prompt.",
+                      UserWarning)
         prompt_by_type = report_type_mapping.get(default_report_type)
     return prompt_by_type

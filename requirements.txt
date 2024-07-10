@@ -1,7 +1,7 @@
 # dependencies
 beautifulsoup4
 colorama
-duckduckgo_search>=6.1.5
+duckduckgo_search
 md2pdf
 playwright
 openai
@@ -55,3 +55,4 @@ websockets
 unstructured
 pandas
 json_repair
+exa_py

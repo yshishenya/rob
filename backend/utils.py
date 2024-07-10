@@ -97,6 +97,7 @@ async def write_md_to_word(text: str, filename: str = "") -> str:
         encoded_file_path = urllib.parse.quote(f"{filename}.docx")
         return encoded_file_path
 
+
     except Exception as e:
         print(f"Error in converting Markdown to DOCX: {e}")
         return ""
