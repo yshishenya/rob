@@ -41,3 +41,4 @@ COPY --chown=gpt-researcher:gpt-researcher ./ ./
 RUN echo "APP_PORT: $APP_PORT"
 EXPOSE $APP_PORT
 CMD uvicorn main:app --host 0.0.0.0 --port $APP_PORT --log-level debug
+

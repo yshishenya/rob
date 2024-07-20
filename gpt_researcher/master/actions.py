@@ -7,6 +7,7 @@ import markdown
 
 from gpt_researcher.master.prompts import *
 from gpt_researcher.scraper.scraper import Scraper
+from gpt_researcher.utils.enum import Tone
 from gpt_researcher.utils.llm import *
 
 
@@ -47,6 +48,7 @@ def get_retriever(retriever):
             retriever = BingSearch
         case "arxiv":
             from gpt_researcher.retrievers import ArxivSearch
+
             retriever = ArxivSearch
         case "tavily":
             from gpt_researcher.retrievers import TavilySearch
@@ -62,12 +64,16 @@ def get_retriever(retriever):
             retriever = CustomRetriever
 
         case _:
-            raise Exception("Retriever not found.")
+            retriever = None
 
     return retriever
 
+def get_default_retriever(retriever):
+    from gpt_researcher.retrievers import TavilySearch
+    return TavilySearch
 
-async def choose_agent(query, cfg, parent_query=None, cost_callback: callable = None):
+
+async def choose_agent(query, cfg, parent_query=None, cost_callback: callable = None, headers=None):
     """
     Chooses the agent automatically
     Args:
@@ -82,6 +88,8 @@ async def choose_agent(query, cfg, parent_query=None, cost_callback: callable = 
         agent_role_prompt: Agent role prompt
     """
     query = f"{parent_query} - {query}" if parent_query else f"{query}"
+    response = None  # Initialize response to ensure it's defined
+
     try:
         response = await create_chat_completion(
             model=cfg.smart_llm_model,
@@ -93,6 +101,7 @@ async def choose_agent(query, cfg, parent_query=None, cost_callback: callable = 
             llm_provider=cfg.llm_provider,
             llm_kwargs=cfg.llm_kwargs,
             cost_callback=cost_callback,
+            openai_api_key=headers.get("openai_api_key")
         )
 
         agent_dict = json.loads(response)
@@ -140,6 +149,7 @@ async def get_sub_queries(
     parent_query: str,
     report_type: str,
     cost_callback: callable = None,
+    openai_api_key=None
 ):
     """
     Gets the sub queries
@@ -174,6 +184,7 @@ async def get_sub_queries(
         llm_provider=cfg.llm_provider,
         llm_kwargs=cfg.llm_kwargs,
         cost_callback=cost_callback,
+        openai_api_key=openai_api_key
     )
 
     sub_queries = json_repair.loads(response)
@@ -234,8 +245,8 @@ async def summarize(
             query, chunk, agent_role_prompt, cfg, cost_callback
         )
         if summary:
-            await stream_output("logs", f"🌐 Summarizing url: {url}", websocket)
-            await stream_output("logs", f"📃 {summary}", websocket)
+            await stream_output("logs", "url_summary_coming_up", f"🌐 Summarizing url: {url}", websocket)
+            await stream_output("logs", "url_summary", f"📃 {summary}", websocket)
         return url, summary
 
     # Function to split raw content into chunks of 10,000 words
@@ -306,12 +317,14 @@ async def generate_report(
     context,
     agent_role_prompt: str,
     report_type: str,
+    tone: Tone,
     report_source: str,
     websocket,
     cfg,
     main_topic: str = "",
     existing_headers: list = [],
     cost_callback: callable = None,
+    headers=None
 ):
     """
     generates the final report
@@ -321,6 +334,7 @@ async def generate_report(
         agent_role_prompt:
         report_type:
         websocket:
+        tone:
         cfg:
         main_topic:
         existing_headers:
@@ -332,12 +346,37 @@ async def generate_report(
     """
     generate_prompt = get_prompt_by_report_type(report_type)
     report = ""
-
+    
     if report_type == "subtopic_report":
-        content = f"{generate_prompt(query, existing_headers, main_topic, context, cfg.report_format, cfg.total_words)}"
+        content = f"{generate_prompt(query, existing_headers, main_topic, context, report_format=cfg.report_format, total_words=cfg.total_words)}"
+        if tone:
+            content += f", tone={tone}"
+        summary = await create_chat_completion(
+            model=cfg.fast_llm_model,
+            messages=[
+                {"role": "system", "content": agent_role_prompt},
+                {"role": "user", "content": content}
+            ],
+            temperature=0,
+            llm_provider=cfg.llm_provider,
+            llm_kwargs=cfg.llm_kwargs,
+            cost_callback=cost_callback,
+        )
     else:
-        content = f"{generate_prompt(query, context, report_source, cfg.report_format, cfg.total_words)}"
-
+        content = f"{generate_prompt(query, context, report_source, report_format=cfg.report_format, total_words=cfg.total_words)}"
+        if tone:
+            content += f", tone={tone}"
+        summary = await create_chat_completion(
+            model=cfg.fast_llm_model,
+            messages=[
+                {"role": "system", "content": agent_role_prompt},
+                {"role": "user", "content": content}
+            ],
+            temperature=0,
+            llm_provider=cfg.llm_provider,
+            llm_kwargs=cfg.llm_kwargs,
+            cost_callback=cost_callback,
+        )
     try:
         report = await create_chat_completion(
             model=cfg.smart_llm_model,
@@ -352,6 +391,7 @@ async def generate_report(
             max_tokens=cfg.smart_token_limit,
             llm_kwargs=cfg.llm_kwargs,
             cost_callback=cost_callback,
+            openai_api_key=headers.get("openai_api_key")
         )
     except Exception as e:
         print(f"{Fore.RED}Error in generate_report: {e}{Style.RESET_ALL}")
@@ -359,11 +399,12 @@ async def generate_report(
     return report
 
 
-async def stream_output(type, output, websocket=None, logging=True):
+async def stream_output(type, content, output, websocket=None, logging=True, metadata=None):
     """
     Streams output to the websocket
     Args:
         type:
+        content:
         output:
 
     Returns:
@@ -373,7 +414,7 @@ async def stream_output(type, output, websocket=None, logging=True):
         print(output)
 
     if websocket:
-        await websocket.send_json({"type": type, "output": output})
+        await websocket.send_json({"type": type, "content": content, "output": output, "metadata": metadata})
 
 
 async def get_report_introduction(

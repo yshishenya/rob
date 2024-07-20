@@ -1,7 +1,8 @@
 version: "3"
 services:
   gpt-researcher:
-    image: kramer1346/gpt-researcher
+    pull_policy: build
+    image: gptresearcher/gpt-researcher
     platform: linux/amd64
     restart: always
     container_name: ${CONTAINER_NAME}
@@ -18,6 +19,7 @@ services:
       - CONFIG_FILE=./config.json
     env_file:
       - .env
+    restart: always
     ports:
       - ${APP_PORT}:${APP_PORT}
     # depends_on:
@@ -29,3 +31,19 @@ networks:
   redis_app-network:
     #driver: bridge
     external: true
+
+  gptr-nextjs:
+    pull_policy: build
+    image: gptresearcher/gptr-nextjs
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile.dev
+      context: multi_agents/frontend
+    volumes:
+      - /app/node_modules
+      - ./multi_agents/frontend:/app
+    restart: always
+    ports:
+      - 3000:3000

@@ -37,8 +37,13 @@ user_requests.txt
 dump.rdb
 
 #Langgraph
-multi_agents/.langgraph-data/
+
+.vscode/launch.json
+.langgraph-data/
 
 #Исходники
 Sources/
 
+
+.next/
+package-lock.json

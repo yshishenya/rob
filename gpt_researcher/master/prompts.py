@@ -1,11 +1,16 @@
-from datetime import datetime, timezone
 import warnings
-from gpt_researcher.utils.enum import ReportType, ReportSource
-from datetime import date
+from datetime import date, datetime, timezone
+
+from gpt_researcher.utils.enum import ReportSource, ReportType, Tone
 
 
-def generate_search_queries_prompt(question: str, parent_query: str, report_type: str, max_iterations: int = 3, ):
-    """ Generates the search queries prompt for the given question.
+def generate_search_queries_prompt(
+    question: str,
+    parent_query: str,
+    report_type: str,
+    max_iterations: int = 3,
+):
+    """Generates the search queries prompt for the given question.
     Args:
         question (str): The question to generate the search queries prompt for
         parent_query (str): The main question (only relevant for detailed reports)
@@ -15,7 +20,10 @@ def generate_search_queries_prompt(question: str, parent_query: str, report_type
     Returns: str: The search queries prompt for the given question
     """
 
-    if report_type == ReportType.DetailedReport.value or report_type == ReportType.SubtopicReport.value:
+    if (
+        report_type == ReportType.DetailedReport.value
+        or report_type == ReportType.SubtopicReport.value
+    ):
         task = f"{parent_query} - {question}"
     else:
         task = question
@@ -28,8 +36,15 @@ def generate_search_queries_prompt(question: str, parent_query: str, report_type
            f'The response should contain ONLY the list.'
 
 
-def generate_report_prompt(question: str, context, report_source: str, report_format="apa", total_words=1000):
-    """ Generates the report prompt for the given question and research summary.
+def generate_report_prompt(
+    question: str,
+    context,
+    report_source: str,
+    report_format="apa",
+    total_words=1000,
+    tone=None,
+):
+    """Generates the report prompt for the given question and research summary.
     Args: question (str): The question to generate the report prompt for
             research_summary (str): The research summary to generate the report prompt for
     Returns: str: The report prompt for the given question and research summary
@@ -49,6 +64,7 @@ def generate_report_prompt(question: str, context, report_source: str, report_fo
             You MUST write all used source document names at the end of the report as references, and make sure to not add duplicated sources, but only one reference for each."
         """
 
+    tone_prompt = f"Write the report in a {tone.value} tone." if tone else ""
 
     return f"""
 Information: "{context}"
@@ -65,13 +81,16 @@ Please follow all of the following guidelines in your report:
 - Use in-text citation references in {report_format} format and make it with markdown hyperlink placed at the end of the sentence or paragraph that references them like this: ([in-text citation](url)).
 - Don't forget to add a reference list at the end of the report in {report_format} format and full url links without hyperlinks.
 - {reference_prompt}
+- {tone_prompt}
 
 Please do your best, this is very important to my career.
 Assume that the current date is {date.today()}.
 """
 
 
-def generate_resource_report_prompt(question, context, report_source: str, report_format="apa", total_words=1000):
+def generate_resource_report_prompt(
+    question, context, report_source: str, report_format="apa", total_words=1000
+):
     """Generates the resource report prompt for the given question and research summary.
 
     Args:
@@ -105,12 +124,16 @@ def generate_resource_report_prompt(question, context, report_source: str, repor
            f'{reference_prompt}'
 
 
-def generate_custom_report_prompt(query_prompt, context, report_source: str, report_format="apa", total_words=1000):
+def generate_custom_report_prompt(
+    query_prompt, context, report_source: str, report_format="apa", total_words=1000
+):
     return f'"{context}"\n\n{query_prompt}'
 
 
-def generate_outline_report_prompt(question, context, report_source: str, report_format="apa", total_words=1000):
-    """ Generates the outline report prompt for the given question and research summary.
+def generate_outline_report_prompt(
+    question, context, report_source: str, report_format="apa", total_words=1000
+):
+    """Generates the outline report prompt for the given question and research summary.
     Args: question (str): The question to generate the outline report prompt for
             research_summary (str): The research summary to generate the outline report prompt for
     Returns: str: The outline report prompt for the given question and research summary
@@ -129,7 +152,7 @@ def get_report_by_type(report_type: str):
         ReportType.ResourceReport.value: generate_resource_report_prompt,
         ReportType.OutlineReport.value: generate_outline_report_prompt,
         ReportType.CustomReport.value: generate_custom_report_prompt,
-        ReportType.SubtopicReport.value: generate_subtopic_report_prompt
+        ReportType.SubtopicReport.value: generate_subtopic_report_prompt,
     }
     return report_type_mapping[report_type]
 
@@ -163,7 +186,7 @@ def auto_agent_instructions():
 
 
 def generate_summary_prompt(query, data):
-    """ Generates the summary prompt for the given question and text.
+    """Generates the summary prompt for the given question and text.
     Args: question (str): The question to generate the summary prompt for
             text (str): The text to generate the summary prompt for
     Returns: str: The summary prompt for the given question and text
@@ -177,6 +200,7 @@ def generate_summary_prompt(query, data):
 ################################################################################################
 
 # DETAILED REPORT PROMPTS
+
 
 def generate_subtopics_prompt() -> str:
     return """                Provided the main topic:
@@ -201,13 +225,14 @@ def generate_subtopics_prompt() -> str:
 
 
 def generate_subtopic_report_prompt(
-        current_subtopic,
-        existing_headers: list,
-        main_topic: str,
-        context,
-        report_format: str = "apa",
-        max_subsections=5,
-        total_words=800
+    current_subtopic,
+    existing_headers: list,
+    main_topic: str,
+    context,
+    report_format: str = "apa",
+    max_subsections=5,
+    total_words=800,
+    tone: Tone = Tone.Objective,
 ) -> str:
     return f"""
     "Context":
@@ -240,12 +265,13 @@ def generate_subtopic_report_prompt(
     "Date":
     Assume the current date is {datetime.now(timezone.utc).strftime('%B %d, %Y')} if required.
 
-    "IMPORTANT!":
-    - The focus MUST be on the main topic! You MUST Leave out any information un-related to it!
-    - Must NOT have any introduction, conclusion, summary or reference section.
-    - You MUST include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
-    - The report should have a minimum length of {total_words} words.
-    """
+"IMPORTANT!":
+- The focus MUST be on the main topic! You MUST Leave out any information un-related to it!
+- Must NOT have any introduction, conclusion, summary or reference section.
+- You MUST include hyperlinks with markdown syntax ([url website](url)) related to the sentences wherever necessary.
+- The report should have a minimum length of {total_words} words.
+- Use an {tone.value} tone throughout the report.
+"""
 
 
 def generate_report_introduction(question: str, research_summary: str = "") -> str:
@@ -264,7 +290,7 @@ report_type_mapping = {
     ReportType.ResourceReport.value: generate_resource_report_prompt,
     ReportType.OutlineReport.value: generate_outline_report_prompt,
     ReportType.CustomReport.value: generate_custom_report_prompt,
-    ReportType.SubtopicReport.value: generate_subtopic_report_prompt
+    ReportType.SubtopicReport.value: generate_subtopic_report_prompt,
 }
 
 
@@ -272,9 +298,11 @@ def get_prompt_by_report_type(report_type):
     prompt_by_type = report_type_mapping.get(report_type)
     default_report_type = ReportType.ResearchReport.value
     if not prompt_by_type:
-        warnings.warn(f"Invalid report type: {report_type}.\n"
-                      f"Please use one of the following: {', '.join([enum_value for enum_value in report_type_mapping.keys()])}\n"
-                      f"Using default report type: {default_report_type} prompt.",
-                      UserWarning)
+        warnings.warn(
+            f"Invalid report type: {report_type}.\n"
+            f"Please use one of the following: {', '.join([enum_value for enum_value in report_type_mapping.keys()])}\n"
+            f"Using default report type: {default_report_type} prompt.",
+            UserWarning,
+        )
         prompt_by_type = report_type_mapping.get(default_report_type)
     return prompt_by_type
