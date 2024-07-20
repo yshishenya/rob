@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 class RedisTokenStorage(TokenStorage):
     def __init__(self):
-        REDIS_HOST = 'localhost' #'redis'  # Use 'localhost' if connecting locally
+        REDIS_HOST = 'redis' #'redis'  # Use 'localhost' if connecting locally
         REDIS_PORT = os.environ.get('REDIS_PORT', 6379)
         REDIS_PASSWORD = os.environ.get('REDIS_PASSWORD')
         logger.debug(f"Connecting to Redis at {REDIS_HOST}:{REDIS_PORT} with password set: {'yes' if REDIS_PASSWORD else 'no'}")

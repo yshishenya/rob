@@ -236,3 +236,12 @@ _____
 2024-06-19 22:10:47 МСК - User:yan - Request:start {"task":"опиши архитектуру системы вывода и публикации результатов для спортивных мероприятий. Из чего она должна состоять, какие компоненты должны быть ?","report_type":"detailed_report","agent":true}
 2024-07-01 11:26:29 МСК - User:yan - Request:start {"task":"Перспективы добычи сланцевой нефти в мире и ее влияние на экономику Российской Федерации","report_type":"research_report","agent":true}
 2024-07-01 14:30:16 МСК - User:yan - Request:start {"task":"перспективы доллара расширенный отчет","report_type":"research_report","agent":true}
+2024-07-10 06:32:14 МСК - User:yan - Request:start {"task":"тест","report_type":"research_report","agent":true}
+2024-07-10 06:49:13 МСК - User:yan - Request:start {"task":"тест","report_type":"research_report","agent":true}
+2024-07-10 06:59:53 МСК - User:yan - Request:start {"task":"вапавпвап","report_type":"research_report","agent":true}
+2024-07-10 07:03:03 МСК - User:yan - Request:start {"task":"Я найду для вас самую актуальную информацию по любой теме в открытых источниках и подготовлю в формате структурированного отчета, который удобно читать и понимать.","report_type":"research_report","agent":true}
+2024-07-10 07:13:58 МСК - User:yan - Request:start {"task":"Я хочу нанять Шишеня Яна на роль технического директора в ИИ стартап. Оцени наколько он подходит","report_type":"research_report","agent":true}
+2024-07-10 07:14:26 МСК - User:yan - Request:start {"task":"Я хочу нанять Шишеня Яна на роль технического директора в ИИ стартап. Оцени наколько он подходит","report_type":"research_report","agent":true}
+2024-07-10 07:16:49 МСК - User:yan - Request:start {"task":"Я хочу нанять Шишеня Яна на роль технического директора в ИИ стартап. Оцени наколько он подходит","report_type":"research_report","agent":true}
+2024-07-10 07:43:38 МСК - User:yan - Request:start {"task":"Я хочу нанять Шишеня Яна на роль технического директора в ИИ стартап. Оцени наколько он подходит","report_type":"research_report","agent":true}
+2024-07-10 07:44:23 МСК - User:yan - Request:start {"task":"Я хочу нанять Шишеня Яна на роль технического директора в ИИ стартап. Оцени наколько он подходит","report_type":"research_report","agent":true}
