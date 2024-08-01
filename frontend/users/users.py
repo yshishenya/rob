@@ -126,7 +126,7 @@ def create_user(token, username, email, password, is_admin):
 def delete_user(token, user_id):
     """ Удаление пользователя """
     headers = {"Authorization": f"Bearer {token}"}
-    response = requests.delete(f"{API_URL}/users/{user_id}/delete", headers=headers)
+    response = requests.delete(f"{API_URL}/users/delete", json={"user_id": user_id}, headers=headers)
     if response.status_code == 204:
         st.success("Пользователь удален")
         st.rerun()

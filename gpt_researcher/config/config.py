@@ -9,12 +9,13 @@ class Config:
     def __init__(self, config_file: str = None):
         """Initialize the config class."""
         self.config_file = os.path.expanduser(config_file) if config_file else os.getenv('CONFIG_FILE')
-        self.retriever = os.getenv('RETRIEVER', "duckduckgo")
+        #self.retriever = os.getenv('RETRIEVER', "duckduckgo")
+        self.retriever = os.getenv('RETRIEVER', "tavily")
         self.embedding_provider = os.getenv('EMBEDDING_PROVIDER', 'openai')
         self.llm_provider = os.getenv('LLM_PROVIDER', "openai")
         self.ollama_base_url = os.getenv('OLLAMA_BASE_URL', None)
-        self.fast_llm_model = os.getenv('FAST_LLM_MODEL', "gpt-3.5-turbo-16k")
-        self.smart_llm_model = os.getenv('SMART_LLM_MODEL', "gpt-4o")
+        self.fast_llm_model = os.getenv('FAST_LLM_MODEL', "gpt-4o-mini")
+        self.smart_llm_model = os.getenv('SMART_LLM_MODEL', "gpt-4o-mini")
         self.fast_token_limit = int(os.getenv('FAST_TOKEN_LIMIT', 2000))
         self.smart_token_limit = int(os.getenv('SMART_TOKEN_LIMIT', 4000))
         self.browse_chunk_max_length = int(os.getenv('BROWSE_CHUNK_MAX_LENGTH', 8192))

@@ -193,7 +193,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = 
     username_lower = form_data.username.lower()  # Преобразование имени пользователя в нижний регистр
     logger.debug(f"Username: {username_lower}, Password: {form_data.password}")
     try:
-        user = db.query(User).filter_by(username=username_lower).first()
+        user = db.query(User).filter(User.username.ilike(username_lower)).first()
         if user:
             logger.debug(f"Checking password for user {user.username}")
             if user.check_password(form_data.password):

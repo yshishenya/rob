@@ -1,0 +1,8 @@
+2024-05-28 10:20:30 МСК - User:dima.nnk - Request:start {"task":"Технологии","report_type":"detailed_report","agent":true}
+2024-05-28 10:23:28 МСК - User:dima.nnk - Request:start {"task":"Мюонная томография в геологоразведке","report_type":"detailed_report","agent":true}
+2024-05-28 11:41:02 МСК - User:dima.nnk - Request:start {"task":"Muon tomography","report_type":"detailed_report","agent":true}
+2024-06-07 16:12:05 МСК - User:nina.nnk - Request:start {"task":"примеры влияния качества оборотной воды на флотацию","report_type":"detailed_report","agent":true}
+2024-06-07 16:16:19 МСК - User:nina.nnk - Request:start {"task":"исследования влияния качества оборотной воды на флотацию на обогатительных фабриках в мире","report_type":"detailed_report","agent":true}
+2024-06-07 16:22:06 МСК - User:nina.nnk - Request:start {"task":"кейсы увеличения извлечения на флотации благодаря изменению качества или типа оборотной воды","report_type":"detailed_report","agent":true}
+2024-06-07 16:28:14 МСК - User:nina.nnk - Request:start {"task":"как компания VALE контролирует состав оборотной воды на обогатительной фабрике","report_type":"detailed_report","agent":true}
+2024-06-10 16:58:16 МСК - User:nina.nnk - Request:start {"task":"какие инновационные технологии применяет компания VALE для обогащения руды","report_type":"detailed_report","agent":true}
