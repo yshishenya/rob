@@ -93,6 +93,7 @@ def modify_user(token, user_data):
         new_username = st.text_input("Имя пользователя", user_data['username'], key=f"username_{user_data['id']}")
         new_email = st.text_input("Email", user_data['email'], key=f"email_{user_data['id']}")
         new_is_admin = st.checkbox("Администратор", user_data['is_admin'], key=f"is_admin_{user_data['id']}")
+        new_password = st.text_input("Новый пароль (оставьте пустым, если не хотите менять)", type="password", key=f"password_{user_data['id']}")
         submit_button = st.form_submit_button("Сохранить изменения")
 
         if submit_button:
@@ -105,9 +106,24 @@ def modify_user(token, user_data):
             print("Отправляемые данные изменения пользователя:", user_update_data)  # Добавьте эту строку для отладки
             # Отправка запроса на сервер
             headers = {"Authorization": f"Bearer {token}"}
+
+            # Отправка запроса на обновление основных данных пользователя
             response = requests.put(f"{API_URL}/users/modify", json=user_update_data, headers=headers)
             if response.status_code == 200:
                 st.success("Данные пользователя успешно обновлены")
+
+                # Если введен новый пароль, отправляем отдельный запрос на изменение пароля
+                if new_password:
+                    password_change_data = {
+                        "user_id": user_data['id'],
+                        "new_password": new_password
+                    }
+                    password_response = requests.put(f"{API_URL}/users/password", json=password_change_data, headers=headers)
+                    if password_response.status_code == 200:
+                        st.success("Пароль пользователя успешно обновлен")
+                    else:
+                        st.error("Ошибка при обновлении пароля пользователя")
+
                 st.rerun()
             else:
                 st.error("Ошибка при обновлении данных пользователя")

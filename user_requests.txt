@@ -336,3 +336,48 @@ _____
 2024-07-31 11:47:41 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"Freelancing Meets Gen Z Modern Work Needs","report_type":"research_report","agent":true}
 2024-07-31 12:45:46 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"gen Z fiverr research freelancing","report_type":"research_report","agent":true}
 2024-08-01 11:21:28 МСК - User:yan - Request:start {"task":"тестовый запрос","report_type":"research_report","agent":true}
+2024-08-01 12:01:32 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"Gen AI talent","report_type":"research_report","agent":true}
+2024-08-01 12:23:10 МСК - User:yan - Request:start {"task":"Каков объем ежегодных расходов сервиса www.deel.com и по каким основным статьям расходов ?","report_type":"research_report","agent":true}
+2024-08-01 12:26:37 МСК - User:yan - Request:start {"task":"Каков объем ежегодных расходов сервиса www.deel.com и по каким основным статьям расходов ?","report_type":"research_report","agent":true}
+2024-08-01 19:27:12 МСК - User:yan - Request:start {"task":"Каков объем ежегодных расходов сервиса www.deel.com и по каким основным статьям расходов ?","report_type":"research_report","agent":true}
+2024-08-01 19:27:40 МСК - User:yan - Request:start {"task":"Каков объем ежегодных расходов сервиса www.deel.com и по каким основным статьям расходов?","report_type":"research_report","agent":true}
+2024-08-01 19:57:23 МСК - User:yan - Request:start {"task":"попопро","report_type":"research_report","agent":true}
+2024-08-01 20:08:04 МСК - User:yan - Request:start {"task":"Каков объем ежегодных расходов сервиса www.deel.com и по каким основным статьям расходов ?","report_type":"detailed_report","agent":true}
+2024-08-02 06:24:54 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"how to attract AI talent, keep them engaged, and motivate them to stay put","report_type":"detailed_report","agent":true}
+2024-08-02 06:51:12 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"как работать с поколением Z и почему они любят проекты, а не full time","report_type":"detailed_report","agent":true}
+2024-08-02 07:14:07 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"The Rise of Fractional Work: The Future of the Gig Economy","report_type":"detailed_report","agent":true}
+2024-08-02 13:00:47 МСК - User:ipissarenko@gmail.com - Request:start {"task":"исследования по бренду работодателя. Россия 2023 год","report_type":"detailed_report","agent":true}
+2024-08-04 15:00:22 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Рынок электрозаправок в России","report_type":"detailed_report","agent":true}
+2024-08-04 15:01:39 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Рынок электрозаправок в России","report_type":"detailed_report","agent":true}
+2024-08-04 15:36:59 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Рынок электрозаправок России","report_type":"detailed_report","agent":true}
+2024-08-04 15:38:56 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Рынок электрозаправок России","report_type":"detailed_report","agent":true}
+2024-08-04 21:02:56 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Рынок электрозаправок России","report_type":"detailed_report","agent":true}
+2024-08-04 21:07:36 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Бизнес план открытия сети электрозаправок в России","report_type":"detailed_report","agent":true}
+2024-08-04 21:09:53 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Бизнес план открытия сети электрозаправок в России","report_type":"detailed_report","agent":true}
+2024-08-04 21:10:58 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Бизнес план открытия сети электрозаправок в России","report_type":"detailed_report","agent":true}
+2024-08-04 21:11:43 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Бизнес план сети электрозаправок в России","report_type":"detailed_report","agent":true}
+2024-08-04 21:15:48 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Финансовый план электрозаправки","report_type":"detailed_report","agent":true}
+2024-08-04 21:17:21 МСК - User:duduc.a@professionals4-0.ru - Request:start {"task":"Финансовый план электрозаправки","report_type":"detailed_report","agent":true}
+2024-08-05 08:11:09 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Как организовано контрактование между заказчиками и исполнителями из множества правовых юрисдикций на платформах типа Upwork?","report_type":"detailed_report","agent":true}
+2024-08-05 08:22:19 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Какие закрывающие документы оформляются сторонами при приемке работ на международных фриланс-платформах типа Upwork, Deel и других?","report_type":"detailed_report","agent":true}
+2024-08-05 08:37:49 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Как международные фриланс-платформы типа Upwork учитывают множественность правовых требований к закрывающим документам в юрисдикциях заказчиков и исполнителей?","report_type":"detailed_report","agent":true}
+2024-08-05 08:46:35 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Какие платежные механизмы используют международные фриланс-платформы, чтобы передавать платежи от заказчика исполнителю?","report_type":"detailed_report","agent":true}
+2024-08-05 08:49:34 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Какие платежные механизмы используют международные фриланс-платформы, чтобы передавать платежи от заказчика исполнителю?","report_type":"detailed_report","agent":true}
+2024-08-05 09:21:15 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Какие платежные механизмы используют международные фриланс-платформы, чтобы передавать платежи от заказчика исполнителю?","report_type":"detailed_report","agent":true}
+2024-08-05 10:03:28 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Какие платежные механизмы используют международные фриланс-платформы, чтобы передавать платежи от заказчика исполнителю?","report_type":"detailed_report","agent":true}
+2024-08-05 11:53:33 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Как международные фриланс-платформы используют платежные механизмы, чтобы передавать платежи от заказчика исполнителю с учетом множественных правовых и валютных юрисдикций?","report_type":"detailed_report","agent":true}
+2024-08-05 13:33:16 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Как работает доступ по оферте для крупных компаний в международные онлайн-сервисы типа Miro, Notion и тому подобных: какие документы оформляются, как выполняются платежи и оформляются закрывающие документы?","report_type":"detailed_report","agent":true}
+2024-08-05 17:59:50 МСК - User:grankin.alexander@gmail.com - Request:start {"task":"Как работает на фриланс-платформах страхование ответственности исполнителя?","report_type":"detailed_report","agent":true}
+2024-08-07 17:48:09 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"farshoring/overseas talents","report_type":"detailed_report","agent":true}
+2024-08-07 17:52:04 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"farshoring/overseas talents","report_type":"detailed_report","agent":true}
+2024-08-07 17:54:24 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"Как справиться с выгоранием","report_type":"detailed_report","agent":true}
+2024-08-08 08:22:01 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"farshoring/overseas talents","report_type":"detailed_report","agent":true}
+2024-08-08 09:37:58 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"farshoring/overseas talents","report_type":"detailed_report","agent":true}
+2024-08-08 11:11:43 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"farshoring/overseas talents","report_type":"detailed_report","agent":true}
+2024-08-08 11:18:39 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"глобальные команды","report_type":"detailed_report","agent":true}
+2024-08-12 10:13:05 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"farshoring talents","report_type":"detailed_report","agent":true}
+2024-08-12 10:28:46 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"farshoring talents","report_type":"detailed_report","agent":true}
+2024-08-14 11:49:53 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"что такое farshoring","report_type":"detailed_report","agent":true}
+2024-08-14 12:19:15 МСК - User:kuznetsova.sa@professionals4-0.ru - Request:start {"task":"Робинзон","report_type":"detailed_report","agent":true}
+2024-08-14 12:41:55 МСК - User:podobed.mk@professionals4-0.ru - Request:start {"task":"как выстроить командообразование в территориально-распределенных командах с гибридным форматом работы","report_type":"detailed_report","agent":true}
+2024-08-14 14:52:06 МСК - User:ipissarenko@gmail.com - Request:start {"task":"тетс","report_type":"detailed_report","agent":true}
