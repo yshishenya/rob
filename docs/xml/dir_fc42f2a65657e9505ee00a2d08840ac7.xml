@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_fc42f2a65657e9505ee00a2d08840ac7" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference</compoundname>
+    <innerdir refid="dir_b5dacab0c5d3e7f7ed4bc35b03c1c031">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/config</innerdir>
+    <innerdir refid="dir_1069adbdfaa10711bba5d33705991641">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/processing</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/"/>
+  </compounddef>
+</doxygen>

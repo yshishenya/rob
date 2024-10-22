@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_09580389954d9e7ad63c583562062cbc" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context Directory Reference</primary></indexterm>
+Directory dependency graph for context:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_09580389954d9e7ad63c583562062cbc_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2context_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_compression_8py">compression.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_retriever_8py">retriever.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

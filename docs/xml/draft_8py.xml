@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="draft_8py" kind="file" language="Python">
+    <compoundname>draft.py</compoundname>
+    <innerclass refid="classmemory_1_1draft_1_1DraftState" prot="public">memory::draft::DraftState</innerclass>
+    <innernamespace refid="namespacememory">memory</innernamespace>
+    <innernamespace refid="namespacememory_1_1draft">memory::draft</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacememory" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TypedDict,<sp/>List,<sp/>Annotated</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>operator</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classmemory_1_1draft_1_1DraftState" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmemory_1_1draft_1_1DraftState" kindref="compound">DraftState</ref>(TypedDict):</highlight></codeline>
+<codeline lineno="6" refid="classmemory_1_1draft_1_1DraftState_1a250fbcc1aa37c36a6c5be184d3957048" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>task:<sp/>dict</highlight></codeline>
+<codeline lineno="7" refid="classmemory_1_1draft_1_1DraftState_1a7a1419f6463612981b61bfd42e08e1e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>topic:<sp/>str</highlight></codeline>
+<codeline lineno="8" refid="classmemory_1_1draft_1_1DraftState_1a2ff087066da05f32a690858b7830b1cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>draft:<sp/>dict</highlight></codeline>
+<codeline lineno="9" refid="classmemory_1_1draft_1_1DraftState_1a98d9f0c97a9068937de25af7fd8400c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>review:<sp/>str</highlight></codeline>
+<codeline lineno="10" refid="classmemory_1_1draft_1_1DraftState_1a84634ee06bf0565241efaff29efa71db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>revision_notes:<sp/>str</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classbackend_1_1websocket__manager_1_1WebSocketManager" kind="class" language="Python" prot="public">
+    <compoundname>backend::websocket_manager::WebSocketManager</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbackend_1_1websocket__manager_1_1WebSocketManager_1abe026167abfef517ade843c9c7686e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.websocket_manager.WebSocketManager.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>backend.websocket_manager.WebSocketManager.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize the WebSocketManager class.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.websocket_manager.WebSocketManager.start_sender</definition>
+        <argsstring>(self, WebSocket websocket)</argsstring>
+        <name>start_sender</name>
+        <qualifiedname>backend.websocket_manager.WebSocketManager.start_sender</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>WebSocket</type>
+          <declname>websocket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start the sender task.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" bodystart="22" bodyend="37"/>
+        <referencedby refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1af91d24f74593c8730180989c3bd3e6af" compoundref="websocket__manager_8py" startline="38" endline="45">backend.websocket_manager.WebSocketManager.connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1websocket__manager_1_1WebSocketManager_1af91d24f74593c8730180989c3bd3e6af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.websocket_manager.WebSocketManager.connect</definition>
+        <argsstring>(self, WebSocket websocket)</argsstring>
+        <name>connect</name>
+        <qualifiedname>backend.websocket_manager.WebSocketManager.connect</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>WebSocket</type>
+          <declname>websocket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Connect a websocket.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" bodystart="38" bodyend="45"/>
+        <references refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea" compoundref="websocket__manager_8py" startline="22" endline="37">backend.websocket_manager.WebSocketManager.start_sender</references>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1websocket__manager_1_1WebSocketManager_1a2e59a99e26eae2043d78dc1bbd6cb3b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.websocket_manager.WebSocketManager.disconnect</definition>
+        <argsstring>(self, WebSocket websocket)</argsstring>
+        <name>disconnect</name>
+        <qualifiedname>backend.websocket_manager.WebSocketManager.disconnect</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>WebSocket</type>
+          <declname>websocket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Disconnect a websocket.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1websocket__manager_1_1WebSocketManager_1ae59b7735cdfb361b4e5817f2539f2fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.websocket_manager.WebSocketManager.start_streaming</definition>
+        <argsstring>(self, task, report_type, report_source, websocket)</argsstring>
+        <name>start_streaming</name>
+        <qualifiedname>backend.websocket_manager.WebSocketManager.start_streaming</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>task</type>
+          <defname>task</defname>
+        </param>
+        <param>
+          <type>report_type</type>
+          <defname>report_type</defname>
+        </param>
+        <param>
+          <type>report_source</type>
+          <defname>report_source</defname>
+        </param>
+        <param>
+          <type>websocket</type>
+          <defname>websocket</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start streaming the output.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" line="55" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" bodystart="55" bodyend="60"/>
+        <references refid="namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870" compoundref="websocket__manager_8py" startline="61" endline="81">backend.websocket_manager.run_agent</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Manage websockets</verbatim> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>backend.websocket_manager.WebSocketManager</label>
+        <link refid="classbackend_1_1websocket__manager_1_1WebSocketManager"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" bodystart="13" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1abe026167abfef517ade843c9c7686e6b" prot="public" virt="non-virtual"><scope>backend::websocket_manager::WebSocketManager</scope><name>__init__</name></member>
+      <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1af91d24f74593c8730180989c3bd3e6af" prot="public" virt="non-virtual"><scope>backend::websocket_manager::WebSocketManager</scope><name>connect</name></member>
+      <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1a2e59a99e26eae2043d78dc1bbd6cb3b7" prot="public" virt="non-virtual"><scope>backend::websocket_manager::WebSocketManager</scope><name>disconnect</name></member>
+      <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea" prot="public" virt="non-virtual"><scope>backend::websocket_manager::WebSocketManager</scope><name>start_sender</name></member>
+      <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1ae59b7735cdfb361b4e5817f2539f2fc0" prot="public" virt="non-virtual"><scope>backend::websocket_manager::WebSocketManager</scope><name>start_streaming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

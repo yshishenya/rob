@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacescrape__skills" kind="namespace" language="Python">
+    <compoundname>scrape_skills</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacescrape__skills_1a1a5398a51f4da8236daecf9fe86ecf27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str scrape_skills.scrape_pdf_with_pymupdf</definition>
+        <argsstring>(url)</argsstring>
+        <name>scrape_pdf_with_pymupdf</name>
+        <qualifiedname>scrape_skills.scrape_pdf_with_pymupdf</qualifiedname>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scrape a pdf with pymupdf
+
+Args:
+    url (str): The url of the pdf to scrape
+
+Returns:
+    str: The text scraped from the pdf
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/scrape_skills.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/scrape_skills.py" bodystart="5" bodyend="18"/>
+        <referencedby refid="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" compoundref="web__scrape_8py" startline="121" endline="189">web_scrape.scrape_text_with_selenium</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacescrape__skills_1a834d3a6a7957c6c45ea14406a6f6a754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str scrape_skills.scrape_pdf_with_arxiv</definition>
+        <argsstring>(query)</argsstring>
+        <name>scrape_pdf_with_arxiv</name>
+        <qualifiedname>scrape_skills.scrape_pdf_with_arxiv</qualifiedname>
+        <param>
+          <type>query</type>
+          <defname>query</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scrape a pdf with arxiv
+default document length of 70000 about ~15 pages or None for no limit
+
+Args:
+    query (str): The query to search for
+
+Returns:
+    str: The text scraped from the pdf
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/scrape_skills.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/scrape_skills.py" bodystart="19" bodyend="32"/>
+        <referencedby refid="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" compoundref="web__scrape_8py" startline="121" endline="189">web_scrape.scrape_text_with_selenium</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/scrape_skills.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

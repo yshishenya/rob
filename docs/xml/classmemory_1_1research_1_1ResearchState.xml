@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmemory_1_1research_1_1ResearchState" kind="class" language="Python" prot="public">
+    <compoundname>memory::research::ResearchState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TypedDict</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1acedf89dea8cb3ee08bb6a27f9cd1d025" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict memory.research.ResearchState::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <qualifiedname>memory.research.ResearchState.task</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="6" bodyend="-1"/>
+        <referencedby refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" compoundref="master_8py" startline="50" endline="60">agents.master.ChiefEditorAgent.run_research_task</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1a94e4514b47b0aa002a0b1c734f01d6c2" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.research.ResearchState::initial_research</definition>
+        <argsstring></argsstring>
+        <name>initial_research</name>
+        <qualifiedname>memory.research.ResearchState.initial_research</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1ac53039dd2510977fc1423f0b3e144485" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List memory.research.ResearchState::sections</definition>
+        <argsstring></argsstring>
+        <name>sections</name>
+        <qualifiedname>memory.research.ResearchState.sections</qualifiedname>
+        <initializer>[str]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1a404b7186673b918e1cc6f6d38bfe3c3e" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List memory.research.ResearchState::research_data</definition>
+        <argsstring></argsstring>
+        <name>research_data</name>
+        <qualifiedname>memory.research.ResearchState.research_data</qualifiedname>
+        <initializer>[dict]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1a38e85bd09ffa6cfd92f5fcff8bef6339" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.research.ResearchState::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>memory.research.ResearchState.title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1aeb458454fc0c5e18c6106d0e486efded" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict memory.research.ResearchState::headers</definition>
+        <argsstring></argsstring>
+        <name>headers</name>
+        <qualifiedname>memory.research.ResearchState.headers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1a295d210773dc95caea1e0fe3bd458025" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.research.ResearchState::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <qualifiedname>memory.research.ResearchState.date</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1a80757af80d3837305c4c97d588d241a7" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.research.ResearchState::table_of_contents</definition>
+        <argsstring></argsstring>
+        <name>table_of_contents</name>
+        <qualifiedname>memory.research.ResearchState.table_of_contents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1a5e83df6137888112475b2fca57f7315d" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.research.ResearchState::introduction</definition>
+        <argsstring></argsstring>
+        <name>introduction</name>
+        <qualifiedname>memory.research.ResearchState.introduction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1aed34aa52f6a45b13953be9d50bc8c6c4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.research.ResearchState::conclusion</definition>
+        <argsstring></argsstring>
+        <name>conclusion</name>
+        <qualifiedname>memory.research.ResearchState.conclusion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1a764d40daa4a6c4e898b0f0ebb9aa0689" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List memory.research.ResearchState::sources</definition>
+        <argsstring></argsstring>
+        <name>sources</name>
+        <qualifiedname>memory.research.ResearchState.sources</qualifiedname>
+        <initializer>[str]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1research_1_1ResearchState_1a743c15bd385c00ee42bb6067bd5e8327" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.research.ResearchState::report</definition>
+        <argsstring></argsstring>
+        <name>report</name>
+        <qualifiedname>memory.research.ResearchState.report</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>memory.research.ResearchState</label>
+        <link refid="classmemory_1_1research_1_1ResearchState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TypedDict</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>dict</label>
+      </node>
+      <node id="1">
+        <label>memory.research.ResearchState</label>
+        <link refid="classmemory_1_1research_1_1ResearchState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+headers</edgelabel>
+          <edgelabel>+task</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+conclusion</edgelabel>
+          <edgelabel>+date</edgelabel>
+          <edgelabel>+initial_research</edgelabel>
+          <edgelabel>+introduction</edgelabel>
+          <edgelabel>+report</edgelabel>
+          <edgelabel>+table_of_contents</edgelabel>
+          <edgelabel>+title</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+research_data</edgelabel>
+          <edgelabel>+sections</edgelabel>
+          <edgelabel>+sources</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+      <node id="5">
+        <label>List</label>
+      </node>
+      <node id="2">
+        <label>TypedDict</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py" bodystart="5" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classmemory_1_1research_1_1ResearchState_1aed34aa52f6a45b13953be9d50bc8c6c4" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>conclusion</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1a295d210773dc95caea1e0fe3bd458025" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>date</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1aeb458454fc0c5e18c6106d0e486efded" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>headers</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1a94e4514b47b0aa002a0b1c734f01d6c2" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>initial_research</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1a5e83df6137888112475b2fca57f7315d" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>introduction</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1a743c15bd385c00ee42bb6067bd5e8327" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>report</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1a404b7186673b918e1cc6f6d38bfe3c3e" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>research_data</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1ac53039dd2510977fc1423f0b3e144485" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>sections</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1a764d40daa4a6c4e898b0f0ebb9aa0689" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>sources</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1a80757af80d3837305c4c97d588d241a7" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>table_of_contents</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1acedf89dea8cb3ee08bb6a27f9cd1d025" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>task</name></member>
+      <member refid="classmemory_1_1research_1_1ResearchState_1a38e85bd09ffa6cfd92f5fcff8bef6339" prot="public" virt="non-virtual"><scope>memory::research::ResearchState</scope><name>title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

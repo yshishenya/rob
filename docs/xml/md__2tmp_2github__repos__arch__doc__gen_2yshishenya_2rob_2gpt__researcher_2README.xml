@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README</compoundname>
+    <title>🔎 GPT Researcher</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README_1autotoc_md181"/><ulink url="https://tavily.com"><image type="html" name="https://img.shields.io/badge/Official%20Website-tavily.com-blue?style=for-the-badge&amp;logo=world&amp;logoColor=white" alt="Official Website" inline="yes"></image>
+</ulink> <ulink url="https://discord.com/invite/2pFkc83fRq"><image type="html" name="https://dcbadge.vercel.app/api/server/2pFkc83fRq?style=for-the-badge" alt="Discord Follow" inline="yes"></image>
+</ulink></para>
+<para><ulink url="https://github.com/assafelovic/gpt-researcher"><image type="html" name="https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=social" alt="GitHub Repo stars" inline="yes"></image>
+</ulink> <ulink url="https://twitter.com/tavilyai"><image type="html" name="https://img.shields.io/twitter/follow/tavilyai?style=social" alt="Twitter Follow" inline="yes"></image>
+</ulink> <ulink url="https://badge.fury.io/py/gpt-researcher"><image type="html" name="https://badge.fury.io/py/gpt-researcher.svg" alt="PyPI version" inline="yes"></image>
+</ulink></para>
+<para><bold>GPT Researcher is an autonomous agent designed for comprehensive online research on a variety of tasks.</bold></para>
+<para>The agent can produce detailed, factual and unbiased research reports, with customization options for focusing on relevant resources, outlines, and lessons. Inspired by the recent <ulink url="https://arxiv.org/abs/2305.04091">Plan-and-Solve</ulink> and <ulink url="https://arxiv.org/abs/2005.11401">RAG</ulink> papers, GPT Researcher addresses issues of speed, determinism and reliability, offering a more stable performance and increased speed through parallelized agent work, as opposed to synchronous operations.</para>
+<para><bold>Our mission is to empower individuals and organizations with accurate, unbiased, and factual information by leveraging the power of AI.</bold></para>
+<sect3 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README_1autotoc_md182">
+<title>PIP Package</title><para><blockquote><para><zwj/><bold>Step 0</bold> - Install Python 3.11 or later. <ulink url="https://www.tutorialsteacher.com/python/install-python">See here</ulink> for a step-by-step guide. <bold>Step 1</bold> - install GPT Researcher package <ulink url="https://pypi.org/project/gpt-researcher/">PyPI page</ulink> </para>
+</blockquote><programlisting filename=".bash"><codeline><highlight class="normal">$<sp/>pip<sp/>install<sp/>gpt-researcher</highlight></codeline>
+</programlisting> <blockquote><para><zwj/><bold>Step 2</bold> - Create .env file with your OpenAI Key and Tavily API key or simply export it </para>
+</blockquote><programlisting filename=".bash"><codeline><highlight class="normal">$<sp/>export<sp/>OPENAI_API_KEY={Your<sp/>OpenAI<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+</programlisting> <programlisting filename=".bash"><codeline><highlight class="normal">$<sp/>export<sp/>TAVILY_API_KEY={Your<sp/>Tavily<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+</programlisting> <blockquote><para><zwj/><bold>Step 3</bold> - Start Coding using GPT Researcher in your own code, example: </para>
+</blockquote><programlisting filename=".py"><codeline><highlight class="keyword">from</highlight><highlight class="normal"><sp/>gpt_researcher<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>asyncio</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal">get_report(query:<sp/>str,<sp/>report_type:<sp/>str)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query,<sp/>report_type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.run()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>report</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;what<sp/>team<sp/>may<sp/>win<sp/>the<sp/>NBA<sp/>finals?&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report_type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;research_report&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>asyncio.run(get_report(query,<sp/>report_type))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(report)</highlight></codeline>
+</programlisting> </para>
+</sect3>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/README.md"/>
+  </compounddef>
+</doxygen>

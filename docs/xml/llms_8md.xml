@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="llms_8md" kind="file" language="Markdown">
+    <compoundname>llms.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Configure<sp/>LLM</highlight></codeline>
+<codeline><highlight class="normal">As<sp/>described<sp/>in<sp/>the<sp/>[introduction](/docs/gpt-researcher/config),<sp/>the<sp/>default<sp/>LLM<sp/>is<sp/>OpenAI<sp/>due<sp/>to<sp/>its<sp/>superior<sp/>performance<sp/>and<sp/>speed.<sp/></highlight></codeline>
+<codeline><highlight class="normal">With<sp/>that<sp/>said,<sp/>GPT<sp/>Researcher<sp/>supports<sp/>various<sp/>open/closed<sp/>source<sp/>LLMs,<sp/>and<sp/>you<sp/>can<sp/>easily<sp/>switch<sp/>between<sp/>them<sp/>by<sp/>adding<sp/>the<sp/>`LLM_PROVIDER`<sp/>env<sp/>variable<sp/>and<sp/>corresponding<sp/>configuration<sp/>params.</highlight></codeline>
+<codeline><highlight class="normal">Current<sp/>supported<sp/>LLMs<sp/>are<sp/>`openai`,<sp/>`google`<sp/>(gemini),<sp/>`azureopenai`,<sp/>`ollama`,<sp/>`anthropic`,<sp/>`mistral`,<sp/>`huggingface`<sp/>and<sp/>`groq`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Using<sp/>any<sp/>model<sp/>will<sp/>require<sp/>at<sp/>least<sp/>updating<sp/>the<sp/>`LLM_PROVIDER`<sp/>param<sp/>and<sp/>passing<sp/>the<sp/>LLM<sp/>provider<sp/>API<sp/>Key.<sp/>You<sp/>might<sp/>also<sp/>need<sp/>to<sp/>update<sp/>the<sp/>`SMART_LLM_MODEL`<sp/>and<sp/>`FAST_LLM_MODEL`<sp/>env<sp/>vars.</highlight></codeline>
+<codeline><highlight class="normal">To<sp/>learn<sp/>more<sp/>about<sp/>support<sp/>customization<sp/>options<sp/>see<sp/>[here](/gpt-researcher/config).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Please<sp/>note**:<sp/>GPT<sp/>Researcher<sp/>is<sp/>optimized<sp/>and<sp/>heavily<sp/>tested<sp/>on<sp/>GPT<sp/>models.<sp/>Some<sp/>other<sp/>models<sp/>might<sp/>run<sp/>intro<sp/>context<sp/>limit<sp/>errors,<sp/>and<sp/>unexpected<sp/>responses.</highlight></codeline>
+<codeline><highlight class="normal">Please<sp/>provide<sp/>any<sp/>feedback<sp/>in<sp/>our<sp/>[Discord<sp/>community](https://discord.gg/DUmbTebB)<sp/>channel,<sp/>so<sp/>we<sp/>can<sp/>better<sp/>improve<sp/>the<sp/>experience<sp/>and<sp/>performance.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Below<sp/>you<sp/>can<sp/>find<sp/>examples<sp/>for<sp/>how<sp/>to<sp/>configure<sp/>the<sp/>various<sp/>supported<sp/>LLMs.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Custom<sp/>OpenAI</highlight></codeline>
+<codeline><highlight class="normal">Create<sp/>a<sp/>local<sp/>OpenAI<sp/>API<sp/>using<sp/>[llama.cpp<sp/>Server](https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md#quick-start).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Custom<sp/>OpenAI<sp/>API<sp/>LLM</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>use<sp/>a<sp/>custom<sp/>OpenAI<sp/>API<sp/>LLM<sp/>provider</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=&quot;openai&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>url</highlight></codeline>
+<codeline><highlight class="normal">OPENAI_BASE_URL=&quot;http://localhost:1234/v1&quot;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>key</highlight></codeline>
+<codeline><highlight class="normal">OPENAI_API_KEY=&quot;Your<sp/>Key&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>specify<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>llm<sp/>model<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=&quot;gpt-3.5-turbo-16k&quot;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>specify<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>llm<sp/>model<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=&quot;gpt-4o&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Custom<sp/>OpenAI<sp/>API<sp/>Embedding</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>use<sp/>a<sp/>custom<sp/>OpenAI<sp/>API<sp/>EMBEDDING<sp/>provider</highlight></codeline>
+<codeline><highlight class="normal">EMBEDDING_PROVIDER=&quot;custom&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>url</highlight></codeline>
+<codeline><highlight class="normal">OPENAI_BASE_URL=&quot;http://localhost:1234/v1&quot;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>key</highlight></codeline>
+<codeline><highlight class="normal">OPENAI_API_KEY=&quot;Your<sp/>Key&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>specify<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>embedding<sp/>model<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">OPENAI_EMBEDDING_MODEL=&quot;custom_model&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Azure<sp/>OpenAI</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">EMBEDDING_PROVIDER=&quot;azureopenai&quot;</highlight></codeline>
+<codeline><highlight class="normal">AZURE_OPENAI_API_KEY=&quot;Your<sp/>key&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Ollama</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GPT<sp/>Researcher<sp/>supports<sp/>both<sp/>Ollama<sp/>LLMs<sp/>and<sp/>embeddings.<sp/>You<sp/>can<sp/>choose<sp/>each<sp/>or<sp/>both.</highlight></codeline>
+<codeline><highlight class="normal">To<sp/>use<sp/>[Ollama](http://www.ollama.com)<sp/>you<sp/>can<sp/>set<sp/>the<sp/>following<sp/>environment<sp/>variables</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Use<sp/>ollama<sp/>for<sp/>both,<sp/>LLM<sp/>and<sp/>EMBEDDING<sp/>provider</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=ollama</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Ollama<sp/>endpoint<sp/>to<sp/>use</highlight></codeline>
+<codeline><highlight class="normal">OLLAMA_BASE_URL=http://localhost:11434</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Specify<sp/>one<sp/>of<sp/>the<sp/>LLM<sp/>models<sp/>supported<sp/>by<sp/>Ollama</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=llama3</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Specify<sp/>one<sp/>of<sp/>the<sp/>LLM<sp/>models<sp/>supported<sp/>by<sp/>Ollama<sp/></highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=llama3<sp/></highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>temperature<sp/>to<sp/>use,<sp/>defaults<sp/>to<sp/>0.55</highlight></codeline>
+<codeline><highlight class="normal">TEMPERATURE=0.55</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Optional**<sp/>-<sp/>You<sp/>can<sp/>also<sp/>use<sp/>ollama<sp/>for<sp/>embeddings</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">EMBEDDING_PROVIDER=ollama</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Specify<sp/>one<sp/>of<sp/>the<sp/>embedding<sp/>models<sp/>supported<sp/>by<sp/>Ollama<sp/></highlight></codeline>
+<codeline><highlight class="normal">OLLAMA_EMBEDDING_MODEL=nomic-embed-text</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Groq</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GroqCloud<sp/>provides<sp/>advanced<sp/>AI<sp/>hardware<sp/>and<sp/>software<sp/>solutions<sp/>designed<sp/>to<sp/>deliver<sp/>amazingly<sp/>fast<sp/>AI<sp/>inference<sp/>performance.</highlight></codeline>
+<codeline><highlight class="normal">To<sp/>leverage<sp/>Groq<sp/>in<sp/>GPT-Researcher,<sp/>you<sp/>will<sp/>need<sp/>a<sp/>GroqCloud<sp/>account<sp/>and<sp/>an<sp/>API<sp/>Key.<sp/>(__NOTE:__<sp/>Groq<sp/>has<sp/>a<sp/>very<sp/>_generous<sp/>free<sp/>tier_.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Sign<sp/>up</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>You<sp/>can<sp/>signup<sp/>here:<sp/>[https://console.groq.com/login](https://console.groq.com/login)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Once<sp/>you<sp/>are<sp/>logged<sp/>in,<sp/>you<sp/>can<sp/>get<sp/>an<sp/>API<sp/>Key<sp/>here:<sp/>[https://console.groq.com/keys](https://console.groq.com/keys)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Once<sp/>you<sp/>have<sp/>an<sp/>API<sp/>key,<sp/>you<sp/>will<sp/>need<sp/>to<sp/>add<sp/>it<sp/>to<sp/>your<sp/>`systems<sp/>environment`<sp/>using<sp/>the<sp/>variable<sp/>name:</highlight></codeline>
+<codeline><highlight class="normal">`GROQ_API_KEY=&quot;*********************&quot;`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Update<sp/>env<sp/>vars</highlight></codeline>
+<codeline><highlight class="normal">And<sp/>finally,<sp/>you<sp/>will<sp/>need<sp/>to<sp/>configure<sp/>the<sp/>GPT-Researcher<sp/>Provider<sp/>and<sp/>Model<sp/>variables:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>To<sp/>use<sp/>Groq<sp/>set<sp/>the<sp/>llm<sp/>provider<sp/>to<sp/>groq</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=groq</highlight></codeline>
+<codeline><highlight class="normal">GROQ_API_KEY=[Your<sp/>Key]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>one<sp/>of<sp/>the<sp/>LLM<sp/>models<sp/>supported<sp/>by<sp/>Groq</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=Mixtral-8x7b-32768</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>one<sp/>of<sp/>the<sp/>LLM<sp/>models<sp/>supported<sp/>by<sp/>Groq</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=Mixtral-8x7b-32768<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>temperature<sp/>to<sp/>use<sp/>defaults<sp/>to<sp/>0.55</highlight></codeline>
+<codeline><highlight class="normal">TEMPERATURE=0.55</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">__NOTE:__<sp/>As<sp/>of<sp/>the<sp/>writing<sp/>of<sp/>this<sp/>Doc<sp/>(May<sp/>2024),<sp/>the<sp/>available<sp/>Language<sp/>Models<sp/>from<sp/>Groq<sp/>are:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Llama3-70b-8192</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Llama3-8b-8192</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Mixtral-8x7b-32768</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Gemma-7b-it</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Anthropic</highlight></codeline>
+<codeline><highlight class="normal">[Anthropic](https://www.anthropic.com/)<sp/>is<sp/>an<sp/>AI<sp/>safety<sp/>and<sp/>research<sp/>company,<sp/>and<sp/>is<sp/>the<sp/>creator<sp/>of<sp/>Claude.<sp/>This<sp/>page<sp/>covers<sp/>all<sp/>integrations<sp/>between<sp/>Anthropic<sp/>models<sp/>and<sp/>LangChain.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=anthropic</highlight></codeline>
+<codeline><highlight class="normal">ANTHROPIC_API_KEY=[Your<sp/>key]</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>then<sp/>define<sp/>the<sp/>fast<sp/>and<sp/>smart<sp/>LLM<sp/>models<sp/>for<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=claude-2.1</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=claude-3-opus-20240229</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>then<sp/>define<sp/>the<sp/>fast<sp/>and<sp/>smart<sp/>LLM<sp/>models<sp/>for<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=claude-2.1</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=claude-3-opus-20240229</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Mistral</highlight></codeline>
+<codeline><highlight class="normal">Sign<sp/>up<sp/>for<sp/>a<sp/>[Mistral<sp/>API<sp/>key](https://console.mistral.ai/users/api-keys/).<sp/></highlight></codeline>
+<codeline><highlight class="normal">Then<sp/>update<sp/>the<sp/>corresponding<sp/>env<sp/>vars,<sp/>for<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=mistral</highlight></codeline>
+<codeline><highlight class="normal">ANTHROPIC_API_KEY=[Your<sp/>key]</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=open-mistral-7b</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=mistral-large-latest</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Together<sp/>AI</highlight></codeline>
+<codeline><highlight class="normal">[Together<sp/>AI](https://www.together.ai/)<sp/>offers<sp/>an<sp/>API<sp/>to<sp/>query<sp/>[50+<sp/>leading<sp/>open-source<sp/>models](https://docs.together.ai/docs/inference-models)<sp/>in<sp/>a<sp/>couple<sp/>lines<sp/>of<sp/>code.</highlight></codeline>
+<codeline><highlight class="normal">Then<sp/>update<sp/>corresponding<sp/>env<sp/>vars,<sp/>for<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=together</highlight></codeline>
+<codeline><highlight class="normal">TOGETHER_API_KEY=[Your<sp/>key]</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=meta-llama/Llama-3-8b-chat-hf</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=meta-llama/Llama-3-70b-chat-hf</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>HuggingFace</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>integration<sp/>requires<sp/>a<sp/>bit<sp/>of<sp/>extra<sp/>work.<sp/>Follow<sp/>[this<sp/>guide](https://python.langchain.com/v0.1/docs/integrations/chat/huggingface/)<sp/>to<sp/>learn<sp/>more.</highlight></codeline>
+<codeline><highlight class="normal">After<sp/>you&apos;ve<sp/>followed<sp/>the<sp/>tutorial<sp/>above,<sp/>update<sp/>the<sp/>env<sp/>vars:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=huggingface</highlight></codeline>
+<codeline><highlight class="normal">HUGGINGFACE_API_KEY=[Your<sp/>key]</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=HuggingFaceH4/zephyr-7b-beta</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=HuggingFaceH4/zephyr-7b-beta</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Google<sp/>Gemini</highlight></codeline>
+<codeline><highlight class="normal">Sign<sp/>up<sp/>[here](https://ai.google.dev/gemini-api/docs/api-key)<sp/>for<sp/>obtaining<sp/>a<sp/>Google<sp/>Gemini<sp/>API<sp/>Key<sp/>and<sp/>update<sp/>the<sp/>following<sp/>env<sp/>vars:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>make<sp/>sure<sp/>to<sp/>update<sp/>fast<sp/>and<sp/>smart<sp/>models<sp/>to<sp/>corresponding<sp/>valid<sp/>Gemini<sp/>models.</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=google</highlight></codeline>
+<codeline><highlight class="normal">GEMINI_API_KEY=[Your<sp/>key]</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/llms.md"/>
+  </compounddef>
+</doxygen>

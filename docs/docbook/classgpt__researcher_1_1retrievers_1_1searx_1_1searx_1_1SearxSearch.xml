@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch" xml:lang="en-US">
+<title>gpt_researcher.retrievers.searx.searx.SearxSearch Class Reference</title>
+<indexterm><primary>gpt_researcher.retrievers.searx.searx.SearxSearch</primary></indexterm>
+Collaboration diagram for gpt_researcher.retrievers.searx.searx.SearxSearch:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a24953d5c57b8eca56cdadd4d125cb888">__init__</link> (self, <link linkend="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1ac6692ba6397af22fb1559c92d3bee003">query</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a9e125e0c8510e52837e4cbd9cfba4c06">get_api_key</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a778ed2bf6f8f22252fceee56d613ec5a">search</link> (self, max_results=7)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1ac6692ba6397af22fb1559c92d3bee003">query</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a99e7c093235d706ca95b13b15eb5edbf">api_key</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a6181b9b1d2cca03751489821ea8bfd9b">client</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Tavily API Retriever
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a24953d5c57b8eca56cdadd4d125cb888"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.retrievers.searx.searx.SearxSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.searx.searx.SearxSearch</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.searx.searx.SearxSearch.__init__ ( self,  query)</computeroutput></para>
+<para><literallayout><computeroutput>Initializes the TavilySearch object
+Args:
+    query:
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a9e125e0c8510e52837e4cbd9cfba4c06"/><section>
+    <title>get_api_key()</title>
+<indexterm><primary>get_api_key</primary><secondary>gpt_researcher.retrievers.searx.searx.SearxSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.searx.searx.SearxSearch</primary><secondary>get_api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.searx.searx.SearxSearch.get_api_key ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the Tavily API key
+Returns:</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a778ed2bf6f8f22252fceee56d613ec5a"/><section>
+    <title>search()</title>
+<indexterm><primary>search</primary><secondary>gpt_researcher.retrievers.searx.searx.SearxSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.searx.searx.SearxSearch</primary><secondary>search</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.searx.searx.SearxSearch.search ( self,  max_results = <computeroutput>7</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Searches the query
+Returns:</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a99e7c093235d706ca95b13b15eb5edbf"/><section>
+    <title>api_key</title>
+<indexterm><primary>api_key</primary><secondary>gpt_researcher.retrievers.searx.searx.SearxSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.searx.searx.SearxSearch</primary><secondary>api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.searx.searx.SearxSearch.api_key</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a6181b9b1d2cca03751489821ea8bfd9b"/><section>
+    <title>client</title>
+<indexterm><primary>client</primary><secondary>gpt_researcher.retrievers.searx.searx.SearxSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.searx.searx.SearxSearch</primary><secondary>client</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.searx.searx.SearxSearch.client</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1ac6692ba6397af22fb1559c92d3bee003"/><section>
+    <title>query</title>
+<indexterm><primary>query</primary><secondary>gpt_researcher.retrievers.searx.searx.SearxSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.searx.searx.SearxSearch</primary><secondary>query</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.searx.searx.SearxSearch.query</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/searx/<link linkend="_searx_8py">searx.py</link></section>
+</section>

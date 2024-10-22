@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceagents_1_1utils_1_1views" kind="namespace" language="Python">
+    <compoundname>agents::utils::views</compoundname>
+    <innerclass refid="classagents_1_1utils_1_1views_1_1AgentColor" prot="public">agents::utils::views::AgentColor</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceagents_1_1utils_1_1views_1aa0db7100917087f4c57e0aae1358f5a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.utils.views.print_agent_output</definition>
+        <argsstring>(str output, str agent=&quot;RESEARCHER&quot;)</argsstring>
+        <name>print_agent_output</name>
+        <qualifiedname>agents.utils.views.print_agent_output</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>agent</declname>
+          <defval>&quot;RESEARCHER&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="15" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

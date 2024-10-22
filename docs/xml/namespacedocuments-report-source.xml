@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacedocuments-report-source" kind="namespace" language="Python">
+    <compoundname>documents-report-source</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedocuments-report-source_1abe193fbaff482c0f4acb6195464e2bd2" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list documents-report-source.report_types</definition>
+        <argsstring></argsstring>
+        <name>report_types</name>
+        <qualifiedname>documents-report-source.report_types</qualifiedname>
+        <initializer>=  [
+    &quot;research_report&quot;,
+    &quot;custom_report&quot;,
+    &quot;subtopic_report&quot;,
+    &quot;summary_report&quot;,
+    &quot;detailed_report&quot;,
+    &quot;quick_report&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedocuments-report-source_1adde104a314af0f4c17bc4c902abf5857" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str documents-report-source.query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <qualifiedname>documents-report-source.query</qualifiedname>
+        <initializer>=  &quot;What can you tell me about myself based on my documents?&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedocuments-report-source_1af938f99fc526afa847916a04f53f20e7" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str documents-report-source.output_dir</definition>
+        <argsstring></argsstring>
+        <name>output_dir</name>
+        <qualifiedname>documents-report-source.output_dir</qualifiedname>
+        <initializer>=  &quot;./outputs&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedocuments-report-source_1ad12a9b38a596a55ac62431fe1116e367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>documents-report-source.test_gpt_researcher</definition>
+        <argsstring>(report_type)</argsstring>
+        <name>test_gpt_researcher</name>
+        <qualifiedname>documents-report-source.test_gpt_researcher</qualifiedname>
+        <param>
+          <type>report_type</type>
+          <defname>report_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" bodystart="26" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

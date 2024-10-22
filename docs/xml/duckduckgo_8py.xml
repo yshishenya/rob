@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="duckduckgo_8py" kind="file" language="Python">
+    <compoundname>duckduckgo.py</compoundname>
+    <innerclass refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo" prot="public">gpt_researcher::retrievers::duckduckgo::duckduckgo::Duckduckgo</innerclass>
+    <innernamespace refid="namespacegpt__researcher">gpt_researcher</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1retrievers">gpt_researcher::retrievers</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1retrievers_1_1duckduckgo">gpt_researcher::retrievers::duckduckgo</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo">gpt_researcher::retrievers::duckduckgo::duckduckgo</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegpt__researcher_1_1retrievers_1_1duckduckgo" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>itertools<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>islice</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>duckduckgo_search<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DDGS</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo" kindref="compound">Duckduckgo</ref>:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Duckduckgo<sp/>API<sp/>Retriever</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1a4f281e7f15a5b19b874aed6ebc6255c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1a4f281e7f15a5b19b874aed6ebc6255c2" kindref="member">__init__</ref>(self,<sp/>query):</highlight></codeline>
+<codeline lineno="10" refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1aab65e85d83c2adb5d8b3796f3dd421fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1aab65e85d83c2adb5d8b3796f3dd421fb" kindref="member">ddg</ref><sp/>=<sp/>DDGS()</highlight></codeline>
+<codeline lineno="11" refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1adc8d2faf8e34e22a9332fbb1456bf607" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1adc8d2faf8e34e22a9332fbb1456bf607" kindref="member">query</ref><sp/>=<sp/>query</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1ad0bb732b805ce6b818f85959539e0806" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1ad0bb732b805ce6b818f85959539e0806" kindref="member">search</ref>(self,<sp/>max_results=10):</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Performs<sp/>the<sp/>search</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>query:</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>max_results:</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:return:</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ddgs_gen<sp/>=<sp/>self.<ref refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1aab65e85d83c2adb5d8b3796f3dd421fb" kindref="member">ddg</ref>.text(self.<ref refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1adc8d2faf8e34e22a9332fbb1456bf607" kindref="member">query</ref>,<sp/>region=</highlight><highlight class="stringliteral">&apos;wt-wt&apos;</highlight><highlight class="normal">,<sp/>max_results=max_results)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ddgs_gen</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/duckduckgo/duckduckgo.py"/>
+  </compounddef>
+</doxygen>

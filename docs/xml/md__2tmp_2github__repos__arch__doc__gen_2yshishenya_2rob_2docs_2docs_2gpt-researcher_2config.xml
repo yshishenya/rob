@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2config" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2config</compoundname>
+    <title>Introduction</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2config_1autotoc_md80"/> The <ref refid="config_8py" kindref="compound">config.py</ref> enables you to customize GPT Researcher to your specific needs and preferences.</para>
+<para>Thanks to our amazing community and contributions, GPT Researcher supports multiple LLMs and Retrievers. In addition, GPT Researcher can be tailored to various report formats (such as APA), word count, research iterations depth, etc.</para>
+<para>GPT Researcher defaults to our recommended suite of integrations: <ulink url="https://platform.openai.com/docs/overview">OpenAI</ulink> for LLM calls and <ulink url="https://app.tavily.com">Tavily API</ulink> for retrieving realtime online information.</para>
+<para>As seen below, OpenAI still stands as the superior LLM. We assume it will stay this way for some time, and that prices will only continue to decrease, while performance and speed increase over time.</para>
+<para>&lt;div style={{ marginBottom: &apos;10px&apos; }}&gt; <image type="html" name="/img/leaderboard.png" inline="yes"></image>
+ </para>
+<para>The default <ref refid="config_8py" kindref="compound">config.py</ref> file can be found in <computeroutput>/gpt_researcher/config/</computeroutput>. It supports various options for customizing GPT Researcher to your needs. You can also include your own external JSON file <computeroutput>config.json</computeroutput> by adding the path in the <computeroutput>config_file</computeroutput> param. <bold>Please follow the <ref refid="config_8py" kindref="compound">config.py</ref> file for additional future support</bold>.</para>
+<para>Below is a list of current supported options:</para>
+<para><itemizedlist>
+<listitem><para>**<computeroutput>RETRIEVER</computeroutput>**: Web search engine used for retrieving sources. Defaults to <computeroutput>tavily</computeroutput>. Options: <computeroutput>duckduckgo</computeroutput>, <computeroutput>bing</computeroutput>, <computeroutput>google</computeroutput>, <computeroutput>serper</computeroutput>, <computeroutput>searx</computeroutput>. <ulink url="https://github.com/assafelovic/gpt-researcher/tree/master/gpt_researcher/retrievers">Check here</ulink> for supported retrievers</para>
+</listitem><listitem><para>**<computeroutput>EMBEDDING_PROVIDER</computeroutput>**: Provider for embedding model. Defaults to <computeroutput>openai</computeroutput>. Options: <computeroutput>ollama</computeroutput>, <computeroutput>huggingface</computeroutput>, <computeroutput>azureopenai</computeroutput>, <computeroutput>custom</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>LLM_PROVIDER</computeroutput>**: LLM provider. Defaults to <computeroutput>openai</computeroutput>. Options: <computeroutput>google</computeroutput>, <computeroutput>ollama</computeroutput>, <computeroutput>groq</computeroutput> and much more!</para>
+</listitem><listitem><para>**<computeroutput>FAST_LLM_MODEL</computeroutput>**: Model name for fast LLM operations such summaries. Defaults to <computeroutput>gpt-3.5-turbo-16k</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>SMART_LLM_MODEL</computeroutput>**: Model name for smart operations like generating research reports and reasoning. Defaults to <computeroutput>gpt-4o</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>FAST_TOKEN_LIMIT</computeroutput>**: Maximum token limit for fast LLM responses. Defaults to <computeroutput>2000</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>SMART_TOKEN_LIMIT</computeroutput>**: Maximum token limit for smart LLM responses. Defaults to <computeroutput>4000</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>BROWSE_CHUNK_MAX_LENGTH</computeroutput>**: Maximum length of text chunks to browse in web sources. Defaults to <computeroutput>8192</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>SUMMARY_TOKEN_LIMIT</computeroutput>**: Maximum token limit for generating summaries. Defaults to <computeroutput>700</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>TEMPERATURE</computeroutput>**: Sampling temperature for LLM responses, typically between 0 and 1. A higher value results in more randomness and creativity, while a lower value results in more focused and deterministic responses. Defaults to <computeroutput>0.55</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>TOTAL_WORDS</computeroutput>**: Total word count limit for document generation or processing tasks. Defaults to <computeroutput>800</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>REPORT_FORMAT</computeroutput>**: Preferred format for report generation. Defaults to <computeroutput>APA</computeroutput>. Consider formats like <computeroutput>MLA</computeroutput>, <computeroutput>CMS</computeroutput>, <computeroutput>Harvard style</computeroutput>, <computeroutput>IEEE</computeroutput>, etc.</para>
+</listitem><listitem><para>**<computeroutput>MAX_ITERATIONS</computeroutput>**: Maximum number of iterations for processes like query expansion or search refinement. Defaults to <computeroutput>3</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>AGENT_ROLE</computeroutput>**: Role of the agent. This might be used to customize the behavior of the agent based on its assigned roles. No default value.</para>
+</listitem><listitem><para>**<computeroutput>MAX_SUBTOPICS</computeroutput>**: Maximum number of subtopics to generate or consider. Defaults to <computeroutput>3</computeroutput>.</para>
+</listitem><listitem><para>**<computeroutput>SCRAPER</computeroutput>**: Web scraper to use for gathering information. Defaults to <computeroutput>bs</computeroutput> (BeautifulSoup). You can also use <ulink url="https://github.com/codelucas/newspaper">newspaper</ulink>.</para>
+</listitem><listitem><para>**<computeroutput>DOC_PATH</computeroutput>**: Path to read and research local documents. Defaults to an empty string indicating no path specified.</para>
+</listitem><listitem><para>**<computeroutput>USER_AGENT</computeroutput>**: Custom User-Agent string for web crawling and web requests.</para>
+</listitem><listitem><para>**<computeroutput>MEMORY_BACKEND</computeroutput>**: Backend used for memory operations, such as local storage of temporary data. Defaults to <computeroutput>local</computeroutput>.</para>
+</listitem></itemizedlist>
+</para>
+<para>To change the default configurations, you can simply add env variables to your <computeroutput>.env</computeroutput> file as named above or export manually in your local project directory.</para>
+<para>For example, to manually change the search engine and report format: <programlisting filename=".bash"><codeline><highlight class="normal">export<sp/>RETRIEVER=bing</highlight></codeline>
+<codeline><highlight class="normal">export<sp/>REPORT_FORMAT=IEEE</highlight></codeline>
+</programlisting> Please note that you might need to export additional env vars and obtain API keys for other supported search retrievers and LLM providers. Please follow your console logs for further assistance. To learn more about additional LLM support you can check out the docs <ulink url="/docs/gpt-researcher/llms">here</ulink>.</para>
+<para>You can also include your own external JSON file <computeroutput>config.json</computeroutput> by adding the path in the <computeroutput>config_file</computeroutput> param. </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/config.md"/>
+  </compounddef>
+</doxygen>

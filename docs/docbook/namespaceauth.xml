@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceauth" xml:lang="en-US">
+<title>auth Namespace Reference</title>
+<indexterm><primary>auth</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classauth_1_1DeleteUserRequest">DeleteUserRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1DeleteUserResponse">DeleteUserResponse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1LoginRequest">LoginRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1LoginResponse">LoginResponse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1PasswordChangeRequest">PasswordChangeRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1PasswordChangeResponse">PasswordChangeResponse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1RefreshRequest">RefreshRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1RefreshResponse">RefreshResponse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1UserCreateRequest">UserCreateRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1UserResponse">UserResponse</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceauth_1a70d915b763db8a2e3530d2b9287522ca">token_required</link> (WebSocket websocket, Session db=Depends(get_db))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link> (str token=Depends(<link linkend="_namespaceauth_1af3c79770bc28a778b1b63717c336cd9f">oauth2_scheme</link>), Session db=Depends(get_db))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a52b18e20d7cd7aa87cddc90e819c293c">create_tokens</link> (user_id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a70e6da45c7251d2296a1db1d56f5e359">login</link> (OAuth2PasswordRequestForm form_data=Depends(), Session db=Depends(get_db))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1af95c0810d88230a4edd324a6d0c1f376">logout</link> (<link linkend="_classauth_1_1RefreshRequest">RefreshRequest</link> request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a71394ac4b1319dfb9517cb819f761128">refresh_token</link> (<link linkend="_classauth_1_1RefreshRequest">RefreshRequest</link> request, Session db=Depends(get_db))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a3a0f4542a8021c943517d9ef7f7207cb">create_user</link> (<link linkend="_classauth_1_1UserCreateRequest">UserCreateRequest</link> user_request, Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a1255c2b2d79877783d9ac9c59b9cba0f">delete_user</link> (<link linkend="_classauth_1_1DeleteUserRequest">DeleteUserRequest</link> user_request, Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a1c21095f56d293d884bf37f46582accc">change_user_password</link> (<link linkend="_classauth_1_1PasswordChangeRequest">PasswordChangeRequest</link> password_request, Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1aefa7a593395931644be08041ce109591">modify_user</link> (<link linkend="_classauth_1_1UserCreateRequest">UserCreateRequest</link> user_request, Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a9242c3c841da8f428f532e8f827844a5">get_users</link> (Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a0576ac38388513ffb14572026ff67e2a">init_app</link> (app)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceauth_1a4d6f41e6ca1555ecb54695492ed9aeab">level</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a62ab3e5094f88012c1aa974d724cd41f">logger</link> = logging.getLogger(__name__)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1af3c79770bc28a778b1b63717c336cd9f">oauth2_scheme</link> = OAuth2PasswordBearer(tokenUrl=&quot;/login&quot;)</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespaceauth_1ac305efe1aa5d2925562d0017531e8994">MAX_ACTIVE_TOKENS_PER_USER</link> = 5</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a17782a3fbe24b750bc69d23132af156d">token_storage</link> = <link linkend="_classredis__token__storage_1_1RedisTokenStorage">RedisTokenStorage</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1ac9f9e08195c81445beb8356975041a8e">auth_router</link> = APIRouter()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceauth_1a1c21095f56d293d884bf37f46582accc"/><section>
+    <title>change_user_password()</title>
+<indexterm><primary>change_user_password</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>change_user_password</secondary></indexterm>
+<para><computeroutput>auth.change_user_password (<link linkend="_classauth_1_1PasswordChangeRequest">PasswordChangeRequest</link> password_request, Session  db = <computeroutput>Depends(get_db)</computeroutput>
+, User  admin = <computeroutput>Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>)</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a52b18e20d7cd7aa87cddc90e819c293c"/><section>
+    <title>create_tokens()</title>
+<indexterm><primary>create_tokens</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>create_tokens</secondary></indexterm>
+<para><computeroutput>auth.create_tokens ( user_id)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceauth_a52b18e20d7cd7aa87cddc90e819c293c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceauth_1a3a0f4542a8021c943517d9ef7f7207cb"/><section>
+    <title>create_user()</title>
+<indexterm><primary>create_user</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>create_user</secondary></indexterm>
+<para><computeroutput>auth.create_user (<link linkend="_classauth_1_1UserCreateRequest">UserCreateRequest</link> user_request, Session  db = <computeroutput>Depends(get_db)</computeroutput>
+, User  admin = <computeroutput>Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>)</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a1255c2b2d79877783d9ac9c59b9cba0f"/><section>
+    <title>delete_user()</title>
+<indexterm><primary>delete_user</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>delete_user</secondary></indexterm>
+<para><computeroutput>auth.delete_user (<link linkend="_classauth_1_1DeleteUserRequest">DeleteUserRequest</link> user_request, Session  db = <computeroutput>Depends(get_db)</computeroutput>
+, User  admin = <computeroutput>Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>)</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c"/><section>
+    <title>get_current_user_admin()</title>
+<indexterm><primary>get_current_user_admin</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>get_current_user_admin</secondary></indexterm>
+<para><computeroutput>auth.get_current_user_admin (str  token = <computeroutput>Depends(<link linkend="_namespaceauth_1af3c79770bc28a778b1b63717c336cd9f">oauth2_scheme</link>)</computeroutput>
+, Session  db = <computeroutput>Depends(get_db)</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a9242c3c841da8f428f532e8f827844a5"/><section>
+    <title>get_users()</title>
+<indexterm><primary>get_users</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>get_users</secondary></indexterm>
+<para><computeroutput>auth.get_users (Session  db = <computeroutput>Depends(get_db)</computeroutput>
+, User  admin = <computeroutput>Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>)</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a0576ac38388513ffb14572026ff67e2a"/><section>
+    <title>init_app()</title>
+<indexterm><primary>init_app</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>init_app</secondary></indexterm>
+<para><computeroutput>auth.init_app ( app)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a70e6da45c7251d2296a1db1d56f5e359"/><section>
+    <title>login()</title>
+<indexterm><primary>login</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>login</secondary></indexterm>
+<para><computeroutput>auth.login (OAuth2PasswordRequestForm  form_data = <computeroutput>Depends()</computeroutput>
+, Session  db = <computeroutput>Depends(get_db)</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceauth_a70e6da45c7251d2296a1db1d56f5e359_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceauth_1af95c0810d88230a4edd324a6d0c1f376"/><section>
+    <title>logout()</title>
+<indexterm><primary>logout</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>logout</secondary></indexterm>
+<para><computeroutput>auth.logout (<link linkend="_classauth_1_1RefreshRequest">RefreshRequest</link> request)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1aefa7a593395931644be08041ce109591"/><section>
+    <title>modify_user()</title>
+<indexterm><primary>modify_user</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>modify_user</secondary></indexterm>
+<para><computeroutput>auth.modify_user (<link linkend="_classauth_1_1UserCreateRequest">UserCreateRequest</link> user_request, Session  db = <computeroutput>Depends(get_db)</computeroutput>
+, User  admin = <computeroutput>Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>)</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a71394ac4b1319dfb9517cb819f761128"/><section>
+    <title>refresh_token()</title>
+<indexterm><primary>refresh_token</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>refresh_token</secondary></indexterm>
+<para><computeroutput>auth.refresh_token (<link linkend="_classauth_1_1RefreshRequest">RefreshRequest</link> request, Session  db = <computeroutput>Depends(get_db)</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceauth_a71394ac4b1319dfb9517cb819f761128_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceauth_1a70d915b763db8a2e3530d2b9287522ca"/><section>
+    <title>token_required()</title>
+<indexterm><primary>token_required</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>token_required</secondary></indexterm>
+<para><computeroutput>auth.token_required (WebSocket websocket, Session  db = <computeroutput>Depends(get_db)</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceauth_1ac9f9e08195c81445beb8356975041a8e"/><section>
+    <title>auth_router</title>
+<indexterm><primary>auth_router</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>auth_router</secondary></indexterm>
+<para><computeroutput>auth.auth_router = APIRouter()</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a4d6f41e6ca1555ecb54695492ed9aeab"/><section>
+    <title>level</title>
+<indexterm><primary>level</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>level</secondary></indexterm>
+<para><computeroutput>auth.level</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a62ab3e5094f88012c1aa974d724cd41f"/><section>
+    <title>logger</title>
+<indexterm><primary>logger</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>logger</secondary></indexterm>
+<para><computeroutput>auth.logger = logging.getLogger(__name__)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1ac305efe1aa5d2925562d0017531e8994"/><section>
+    <title>MAX_ACTIVE_TOKENS_PER_USER</title>
+<indexterm><primary>MAX_ACTIVE_TOKENS_PER_USER</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>MAX_ACTIVE_TOKENS_PER_USER</secondary></indexterm>
+<para><computeroutput>int auth.MAX_ACTIVE_TOKENS_PER_USER = 5</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1af3c79770bc28a778b1b63717c336cd9f"/><section>
+    <title>oauth2_scheme</title>
+<indexterm><primary>oauth2_scheme</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>oauth2_scheme</secondary></indexterm>
+<para><computeroutput>auth.oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;/login&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespaceauth_1a17782a3fbe24b750bc69d23132af156d"/><section>
+    <title>token_storage</title>
+<indexterm><primary>token_storage</primary><secondary>auth</secondary></indexterm>
+<indexterm><primary>auth</primary><secondary>token_storage</secondary></indexterm>
+<para><computeroutput>auth.token_storage = <link linkend="_classredis__token__storage_1_1RedisTokenStorage">RedisTokenStorage</link>()</computeroutput></para></section>
+</section>
+</section>

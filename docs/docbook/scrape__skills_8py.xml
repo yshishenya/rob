@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_scrape__skills_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/scrape_skills.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/scrape_skills.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacescrape__skills">scrape_skills</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespacescrape__skills_1a1a5398a51f4da8236daecf9fe86ecf27">scrape_skills.scrape_pdf_with_pymupdf</link> (url)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacescrape__skills_1a834d3a6a7957c6c45ea14406a6f6a754">scrape_skills.scrape_pdf_with_arxiv</link> (query)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

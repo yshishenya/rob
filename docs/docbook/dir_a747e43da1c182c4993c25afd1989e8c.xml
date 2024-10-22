@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_a747e43da1c182c4993c25afd1989e8c" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider Directory Reference</primary></indexterm>
+Directory dependency graph for llm_provider:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_a747e43da1c182c4993c25afd1989e8c_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_20e11079e1b0fa73e6b27e5721e8fd41">anthropic</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_6d3af79848e10b5bed2428cc0bb78928">azureopenai</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_e796a5521d8af8ff4dda60fd5b075078">generic</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_73aba95ff0129f7e1d8dcc5e5f831f78">google</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_6472a882810021121e0921fa0d62aaae">groq</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_fa70a3e284ed11c7aecfabc4d07ffecb">huggingface</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_17870a2ffaeed3872d466c7c8a08cd13">mistral</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_cd3a634799b777485adf2de054ab014d">ollama</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_af4289b741e146665dba5feecafa62f5">openai</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_beb445fafb0fdc9476d965a6735a1029">together</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2llm__provider_2____init_____8py">__init__.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

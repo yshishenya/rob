@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacesample__report" kind="namespace" language="Python">
+    <compoundname>sample_report</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesample__report_1ac5d0f2408113608aa029cca5c6fdab0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sample_report.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <qualifiedname>sample_report.main</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This is a sample script that shows how to run a research report.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/examples/sample_report.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/examples/sample_report.py" bodystart="5" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/examples/sample_report.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

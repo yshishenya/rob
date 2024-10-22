@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_278f3058075d2df0ac3aab9d51495056" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents Directory Reference</primary></indexterm>
+Directory dependency graph for multi_agents:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_278f3058075d2df0ac3aab9d51495056_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_434b0703019d58bbb57650e33eaa1ef4">agents</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_c452203ab90700a398fc4225a9ca3c2e">memory</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_multi__agents_2agent_8py">agent.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_multi__agents_2main_8py">main.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

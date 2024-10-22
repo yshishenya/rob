@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacescrape__skills" xml:lang="en-US">
+<title>scrape_skills Namespace Reference</title>
+<indexterm><primary>scrape_skills</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespacescrape__skills_1a1a5398a51f4da8236daecf9fe86ecf27">scrape_pdf_with_pymupdf</link> (url)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacescrape__skills_1a834d3a6a7957c6c45ea14406a6f6a754">scrape_pdf_with_arxiv</link> (query)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacescrape__skills_1a834d3a6a7957c6c45ea14406a6f6a754"/><section>
+    <title>scrape_pdf_with_arxiv()</title>
+<indexterm><primary>scrape_pdf_with_arxiv</primary><secondary>scrape_skills</secondary></indexterm>
+<indexterm><primary>scrape_skills</primary><secondary>scrape_pdf_with_arxiv</secondary></indexterm>
+<para><computeroutput> str scrape_skills.scrape_pdf_with_arxiv ( query)</computeroutput></para>
+<para><literallayout><computeroutput>Scrape a pdf with arxiv
+default document length of 70000 about ~15 pages or None for no limit
+
+Args:
+    query (str): The query to search for
+
+Returns:
+    str: The text scraped from the pdf
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacescrape__skills_a834d3a6a7957c6c45ea14406a6f6a754_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacescrape__skills_1a1a5398a51f4da8236daecf9fe86ecf27"/><section>
+    <title>scrape_pdf_with_pymupdf()</title>
+<indexterm><primary>scrape_pdf_with_pymupdf</primary><secondary>scrape_skills</secondary></indexterm>
+<indexterm><primary>scrape_skills</primary><secondary>scrape_pdf_with_pymupdf</secondary></indexterm>
+<para><computeroutput> str scrape_skills.scrape_pdf_with_pymupdf ( url)</computeroutput></para>
+<para><literallayout><computeroutput>Scrape a pdf with pymupdf
+
+Args:
+    url (str): The url of the pdf to scrape
+
+Returns:
+    str: The text scraped from the pdf
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacescrape__skills_a1a5398a51f4da8236daecf9fe86ecf27_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

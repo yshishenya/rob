@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,77,64,102"/>
+<area shape="rect" id="Node000001" href="$classagents_1_1utils_1_1views_1_1AgentColor.html" title=" " alt="" coords="118,5,301,45"/>
+<area shape="poly" id="edge19_Node000000_Node000001" title=" " alt="" coords="76,69,111,55,144,43,146,48,113,60,78,74"/>
+<area shape="rect" id="Node000002" href="$classgpt__researcher_1_1utils_1_1enum_1_1ReportSource.html" title=" " alt="" coords="112,69,307,109"/>
+<area shape="poly" id="edge20_Node000000_Node000002" title=" " alt="" coords="78,87,112,87,112,92,78,92"/>
+<area shape="rect" id="Node000003" href="$classgpt__researcher_1_1utils_1_1enum_1_1ReportType.html" title=" " alt="" coords="112,133,307,173"/>
+<area shape="poly" id="edge21_Node000000_Node000003" title=" " alt="" coords="78,105,113,119,146,131,144,136,111,124,76,110"/>
+</map>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="examples_8md" kind="file" language="Markdown">
+    <compoundname>examples.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Examples</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Run<sp/>PIP<sp/>Package</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>asyncio</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>main():</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>This<sp/>is<sp/>a<sp/>sample<sp/>script<sp/>that<sp/>shows<sp/>how<sp/>to<sp/>run<sp/>a<sp/>research<sp/>report.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Query</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>query<sp/>=<sp/>&quot;What<sp/>happened<sp/>in<sp/>the<sp/>latest<sp/>burning<sp/>man<sp/>floods?&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Report<sp/>Type</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report_type<sp/>=<sp/>&quot;research_report&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Initialize<sp/>the<sp/>researcher</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query=query,<sp/>report_type=report_type,<sp/>config_path=None)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Conduct<sp/>research<sp/>on<sp/>the<sp/>given<sp/>query</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Write<sp/>the<sp/>report</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>report</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">if<sp/>__name__<sp/>==<sp/>&quot;__main__&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>asyncio.run(main())</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/examples/examples.md"/>
+  </compounddef>
+</doxygen>

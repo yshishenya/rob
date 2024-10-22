@@ -1,0 +1,25 @@
+var users_8py =
+[
+    [ "create_user", "users_8py.html#af946d51443a44b65f044cbd071fa4133", null ],
+    [ "delete_user", "users_8py.html#abe93ce193b17b4e895eab26ae2806aaa", null ],
+    [ "display_users", "users_8py.html#a22767a039fbf019d609ba4ae7ee70199", null ],
+    [ "fetch_users", "users_8py.html#a9053a1292a9bb75e476207697da5bcc6", null ],
+    [ "get_valid_access_token", "users_8py.html#aa1996995f5442274830bef5c28e4e859", null ],
+    [ "login", "users_8py.html#a330f67af4576d3e1ee542d613d069139", null ],
+    [ "main", "users_8py.html#a32e0f5669895a84e77af6d7d40658d6f", null ],
+    [ "modify_user", "users_8py.html#aee9ead2895deb372a9320b932418df2c", null ],
+    [ "on_login_clicked", "users_8py.html#ae68a82800a1d784a4aa0d4e663382aad", null ],
+    [ "refresh_access_token", "users_8py.html#a932657c601af16b61216fe6fe33a7c1f", null ],
+    [ "API_URL", "users_8py.html#a3198b2c7eab49324f2d10f40c2ba7edb", null ],
+    [ "APP_PORT", "users_8py.html#aec5824f6ce66973e8819ca68002938dd", null ],
+    [ "delete_user_id", "users_8py.html#a02db70f5ffcf3f872bc01e4506d3422d", null ],
+    [ "HOST", "users_8py.html#a9ffdadfc43420470d41e4610bebd67da", null ],
+    [ "key", "users_8py.html#a0892fa7aa00b79f967d99cb3fcee680c", null ],
+    [ "new_email", "users_8py.html#adb6ed530fb591bdf2dd5a09908bc97eb", null ],
+    [ "new_is_admin", "users_8py.html#a53863681969ca2b2e0533e124c471496", null ],
+    [ "new_password", "users_8py.html#aa59caae95017910a2fbe7af45268fca7", null ],
+    [ "new_username", "users_8py.html#afa220ad80467e63b9810fca0dc23dadb", null ],
+    [ "on_click", "users_8py.html#a8eb777600faec9762baa63c66a2f65d3", null ],
+    [ "submit_button", "users_8py.html#a03fb62cfda9d9a2a6070d6abb3643788", null ],
+    [ "type", "users_8py.html#aa67a5489339ad4f831ec91109898eb53", null ]
+];

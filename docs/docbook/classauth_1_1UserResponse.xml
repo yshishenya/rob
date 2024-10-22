@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classauth_1_1UserResponse" xml:lang="en-US">
+<title>auth.UserResponse Class Reference</title>
+<indexterm><primary>auth.UserResponse</primary></indexterm>
+Inheritance diagram for auth.UserResponse:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1UserResponse__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for auth.UserResponse:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1UserResponse__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classauth_1_1UserResponse_1af9fd52a7408c354b99991e09b0d863e2">id</link> = Field(..., description=&quot;Уникальный идентификатор пользователя в системе.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1UserResponse_1a5fec159fbf046e775dcad7c04fcd94de">username</link> = Field(..., description=&quot;Имя пользователя.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1UserResponse_1a72ba5840d1b9752c57c5ff5466eae326">email</link> = Field(..., description=&quot;Электронная почта пользователя.&quot;)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classauth_1_1UserResponse_1a780132dbabc283770316c7c036aab878">is_admin</link> = Field(..., description=&quot;Признак того, является ли пользователь администратором.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classauth_1_1UserResponse_1a72ba5840d1b9752c57c5ff5466eae326"/><section>
+    <title>email</title>
+<indexterm><primary>email</primary><secondary>auth.UserResponse</secondary></indexterm>
+<indexterm><primary>auth.UserResponse</primary><secondary>email</secondary></indexterm>
+<para><computeroutput>str auth.UserResponse.email = Field(..., description=&quot;Электронная почта пользователя.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1UserResponse_1af9fd52a7408c354b99991e09b0d863e2"/><section>
+    <title>id</title>
+<indexterm><primary>id</primary><secondary>auth.UserResponse</secondary></indexterm>
+<indexterm><primary>auth.UserResponse</primary><secondary>id</secondary></indexterm>
+<para><computeroutput>int auth.UserResponse.id = Field(..., description=&quot;Уникальный идентификатор пользователя в системе.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1UserResponse_1a780132dbabc283770316c7c036aab878"/><section>
+    <title>is_admin</title>
+<indexterm><primary>is_admin</primary><secondary>auth.UserResponse</secondary></indexterm>
+<indexterm><primary>auth.UserResponse</primary><secondary>is_admin</secondary></indexterm>
+<para><computeroutput>bool auth.UserResponse.is_admin = Field(..., description=&quot;Признак того, является ли пользователь администратором.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1UserResponse_1a5fec159fbf046e775dcad7c04fcd94de"/><section>
+    <title>username</title>
+<indexterm><primary>username</primary><secondary>auth.UserResponse</secondary></indexterm>
+<indexterm><primary>auth.UserResponse</primary><secondary>username</secondary></indexterm>
+<para><computeroutput>str auth.UserResponse.username = Field(..., description=&quot;Имя пользователя.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_auth_8py">auth.py</link></section>
+</section>

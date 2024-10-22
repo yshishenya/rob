@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="troubleshooting_8md" kind="file" language="Markdown">
+    <compoundname>troubleshooting.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Troubleshooting</highlight></codeline>
+<codeline><highlight class="normal">We&apos;re<sp/>constantly<sp/>working<sp/>to<sp/>provide<sp/>a<sp/>more<sp/>stable<sp/>version.<sp/>If<sp/>you&apos;re<sp/>running<sp/>into<sp/>any<sp/>issues,<sp/>please<sp/>first<sp/>check<sp/>out<sp/>the<sp/>resolved<sp/>issues<sp/>or<sp/>ask<sp/>us<sp/>via<sp/>our<sp/>[Discord<sp/>community](https://discord.gg/2pFkc83fRq).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>model:<sp/>gpt-4<sp/>does<sp/>not<sp/>exist</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>relates<sp/>to<sp/>not<sp/>having<sp/>permission<sp/>to<sp/>use<sp/>gpt-4<sp/>yet.<sp/>Based<sp/>on<sp/>OpenAI,<sp/>it<sp/>will<sp/>be<sp/>[widely<sp/>available<sp/>for<sp/>all<sp/>by<sp/>end<sp/>of<sp/>July](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>cannot<sp/>load<sp/>library<sp/>&apos;gobject-2.0-0&apos;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>issue<sp/>relates<sp/>to<sp/>the<sp/>library<sp/>WeasyPrint<sp/>(which<sp/>is<sp/>used<sp/>to<sp/>generate<sp/>PDFs<sp/>from<sp/>the<sp/>research<sp/>report).<sp/>Please<sp/>follow<sp/>this<sp/>guide<sp/>to<sp/>resolve<sp/>it:<sp/>https://doc.courtbouillon.org/weasyprint/stable/first_steps.html</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Or<sp/>you<sp/>can<sp/>install<sp/>this<sp/>package<sp/>manually</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>case<sp/>of<sp/>MacOS<sp/>you<sp/>can<sp/>install<sp/>this<sp/>lib<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">`brew<sp/>install<sp/>glib<sp/>gobject-introspection`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>case<sp/>of<sp/>Linux<sp/>you<sp/>can<sp/>install<sp/>this<sp/>lib<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">`sudo<sp/>apt<sp/>install<sp/>libglib2.0-dev`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**cannot<sp/>load<sp/>library<sp/>&apos;pango&apos;**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>case<sp/>of<sp/>MacOS<sp/>you<sp/>can<sp/>install<sp/>this<sp/>lib<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">`brew<sp/>install<sp/>pango`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>case<sp/>of<sp/>Linux<sp/>you<sp/>can<sp/>install<sp/>this<sp/>lib<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">`sudo<sp/>apt<sp/>install<sp/>libpango-1.0-0`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Workaround<sp/>for<sp/>Mac<sp/>M<sp/>chip<sp/>users**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>above<sp/>solutions<sp/>don&apos;t<sp/>work,<sp/>you<sp/>can<sp/>try<sp/>the<sp/>following:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Install<sp/>a<sp/>fresh<sp/>version<sp/>of<sp/>Python<sp/>3.11<sp/>pointed<sp/>to<sp/>brew:</highlight></codeline>
+<codeline><highlight class="normal">`brew<sp/>install<sp/>python@3.11`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Install<sp/>the<sp/>required<sp/>libraries:</highlight></codeline>
+<codeline><highlight class="normal">`brew<sp/>install<sp/>pango<sp/>glib<sp/>gobject-introspection`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Install<sp/>the<sp/>required<sp/>GPT<sp/>Researcher<sp/>Python<sp/>packages:</highlight></codeline>
+<codeline><highlight class="normal">`pip3.11<sp/>install<sp/>-r<sp/>requirements.txt`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Run<sp/>the<sp/>app<sp/>with<sp/>Python<sp/>3.11<sp/>(using<sp/>brew):</highlight></codeline>
+<codeline><highlight class="normal">`python3.11<sp/>-m<sp/>uvicorn<sp/>main:app<sp/>--reload`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Error<sp/>processing<sp/>the<sp/>url**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We&apos;re<sp/>using<sp/>[Selenium](https://www.selenium.dev)<sp/>for<sp/>site<sp/>scraping.<sp/>Some<sp/>sites<sp/>fail<sp/>to<sp/>be<sp/>scraped.<sp/>In<sp/>these<sp/>cases,<sp/>restart<sp/>and<sp/>try<sp/>running<sp/>again.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Chrome<sp/>version<sp/>issues**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Many<sp/>users<sp/>have<sp/>an<sp/>issue<sp/>with<sp/>their<sp/>chromedriver<sp/>because<sp/>the<sp/>latest<sp/>chrome<sp/>browser<sp/>version<sp/>doesn&apos;t<sp/>have<sp/>a<sp/>compatible<sp/>chrome<sp/>driver<sp/>yet.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>downgrade<sp/>your<sp/>Chrome<sp/>web<sp/>browser<sp/>using<sp/>[slimjet](https://www.slimjet.com/chrome/google-chrome-old-version.php),<sp/>follow<sp/>these<sp/>steps.<sp/>First,<sp/>visit<sp/>the<sp/>website<sp/>and<sp/>scroll<sp/>down<sp/>to<sp/>find<sp/>the<sp/>list<sp/>of<sp/>available<sp/>older<sp/>Chrome<sp/>versions.<sp/>Choose<sp/>the<sp/>version<sp/>you<sp/>wish<sp/>to<sp/>install</highlight></codeline>
+<codeline><highlight class="normal">making<sp/>sure<sp/>it&apos;s<sp/>compatible<sp/>with<sp/>your<sp/>operating<sp/>system.</highlight></codeline>
+<codeline><highlight class="normal">Once<sp/>you&apos;ve<sp/>selected<sp/>the<sp/>desired<sp/>version,<sp/>click<sp/>on<sp/>the<sp/>corresponding<sp/>link<sp/>to<sp/>download<sp/>the<sp/>installer.<sp/>Before<sp/>proceeding<sp/>with<sp/>the<sp/>installation,<sp/>it&apos;s<sp/>crucial<sp/>to<sp/>uninstall<sp/>your<sp/>current<sp/>version<sp/>of<sp/>Chrome<sp/>to<sp/>avoid<sp/>conflicts.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It&apos;s<sp/>important<sp/>to<sp/>check<sp/>if<sp/>the<sp/>version<sp/>you<sp/>downgrade<sp/>to,<sp/>has<sp/>a<sp/>chromedriver<sp/>available<sp/>in<sp/>the<sp/>official<sp/>[chrome<sp/>driver<sp/>website](https://chromedriver.chromium.org/downloads)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**If<sp/>none<sp/>of<sp/>the<sp/>above<sp/>work,<sp/>you<sp/>can<sp/>[try<sp/>out<sp/>our<sp/>hosted<sp/>beta](https://app.tavily.com)**</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/troubleshooting.md"/>
+  </compounddef>
+</doxygen>

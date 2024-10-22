@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_multi__agents_2agents_2____init_____8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/__init__.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/__init__.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceagents">agents</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespaceagents_1a81c46b0f706b9874f61e90dde4d4bf12">agents.__all__</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

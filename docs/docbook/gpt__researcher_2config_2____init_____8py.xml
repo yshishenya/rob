@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_gpt__researcher_2config_2____init_____8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/__init__.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/__init__.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher">gpt_researcher</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1config">gpt_researcher.config</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacegpt__researcher_1_1config_1a5f9ab6471cf15d9522a761d757d13aa5">gpt_researcher.config.__all__</link> = [&apos;<link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config">Config</link>&apos;]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

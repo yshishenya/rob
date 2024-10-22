@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classauth_1_1RefreshResponse" xml:lang="en-US">
+<title>auth.RefreshResponse Class Reference</title>
+<indexterm><primary>auth.RefreshResponse</primary></indexterm>
+Inheritance diagram for auth.RefreshResponse:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1RefreshResponse__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for auth.RefreshResponse:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1RefreshResponse__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classauth_1_1RefreshResponse_1a2e0559e6e143ba074e5d97054a3320a4">access_token</link> = Field(..., description=&quot;Новый токен доступа, выданный пользователю.&quot;)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classauth_1_1RefreshResponse_1a93052658662af67f60bb7a7b5a9a4ecf">expires_in</link> = Field(..., description=&quot;Время жизни нового токена доступа в секундах.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1RefreshResponse_1a73c28d76c73a15de38a10d204c986af2">expires_at</link> = Field(..., description=&quot;Время истечения нового токена доступа в формате ISO 8601.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1RefreshResponse_1aefa5cac00d633a146927da0977721f0d">refresh_token</link> = Field(..., description=&quot;Новый токен обновления, выданный пользователю.&quot;)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classauth_1_1RefreshResponse_1acfcf05c744c9f1f94f2f72d0ff7bc877">refresh_expires_in</link> = Field(..., description=&quot;Время жизни нового токена обновления в секундах.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1RefreshResponse_1aacfc95ed22d7373509d029288086fcd9">refresh_expires_at</link> = Field(..., description=&quot;Время истечения нового токена обновления в формате ISO 8601.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classauth_1_1RefreshResponse_1a2e0559e6e143ba074e5d97054a3320a4"/><section>
+    <title>access_token</title>
+<indexterm><primary>access_token</primary><secondary>auth.RefreshResponse</secondary></indexterm>
+<indexterm><primary>auth.RefreshResponse</primary><secondary>access_token</secondary></indexterm>
+<para><computeroutput>str auth.RefreshResponse.access_token = Field(..., description=&quot;Новый токен доступа, выданный пользователю.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1RefreshResponse_1a73c28d76c73a15de38a10d204c986af2"/><section>
+    <title>expires_at</title>
+<indexterm><primary>expires_at</primary><secondary>auth.RefreshResponse</secondary></indexterm>
+<indexterm><primary>auth.RefreshResponse</primary><secondary>expires_at</secondary></indexterm>
+<para><computeroutput>str auth.RefreshResponse.expires_at = Field(..., description=&quot;Время истечения нового токена доступа в формате ISO 8601.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1RefreshResponse_1a93052658662af67f60bb7a7b5a9a4ecf"/><section>
+    <title>expires_in</title>
+<indexterm><primary>expires_in</primary><secondary>auth.RefreshResponse</secondary></indexterm>
+<indexterm><primary>auth.RefreshResponse</primary><secondary>expires_in</secondary></indexterm>
+<para><computeroutput>int auth.RefreshResponse.expires_in = Field(..., description=&quot;Время жизни нового токена доступа в секундах.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1RefreshResponse_1aacfc95ed22d7373509d029288086fcd9"/><section>
+    <title>refresh_expires_at</title>
+<indexterm><primary>refresh_expires_at</primary><secondary>auth.RefreshResponse</secondary></indexterm>
+<indexterm><primary>auth.RefreshResponse</primary><secondary>refresh_expires_at</secondary></indexterm>
+<para><computeroutput>str auth.RefreshResponse.refresh_expires_at = Field(..., description=&quot;Время истечения нового токена обновления в формате ISO 8601.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1RefreshResponse_1acfcf05c744c9f1f94f2f72d0ff7bc877"/><section>
+    <title>refresh_expires_in</title>
+<indexterm><primary>refresh_expires_in</primary><secondary>auth.RefreshResponse</secondary></indexterm>
+<indexterm><primary>auth.RefreshResponse</primary><secondary>refresh_expires_in</secondary></indexterm>
+<para><computeroutput>int auth.RefreshResponse.refresh_expires_in = Field(..., description=&quot;Время жизни нового токена обновления в секундах.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1RefreshResponse_1aefa5cac00d633a146927da0977721f0d"/><section>
+    <title>refresh_token</title>
+<indexterm><primary>refresh_token</primary><secondary>auth.RefreshResponse</secondary></indexterm>
+<indexterm><primary>auth.RefreshResponse</primary><secondary>refresh_token</secondary></indexterm>
+<para><computeroutput>str auth.RefreshResponse.refresh_token = Field(..., description=&quot;Новый токен обновления, выданный пользователю.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_auth_8py">auth.py</link></section>
+</section>

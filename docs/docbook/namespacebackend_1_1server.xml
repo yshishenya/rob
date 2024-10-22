@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebackend_1_1server" xml:lang="en-US">
+<title>backend.server Namespace Reference</title>
+<indexterm><primary>backend.server</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbackend_1_1server_1_1ResearchRequest">ResearchRequest</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a9c30cd96e9e80accf2505265058bb685">format_filename</link> (task)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1aa20a85ade2f14a7b9746f098733052a9">startup_event</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1aaf74caa59bfb354fc9376ff64b5b0450">read_root</link> (Request request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1ad4dad2e900f405ce89832734ae7a4b80">save_request_to_file</link> (data, username)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1add4a342eaeb04b916c8e3ca8ee280129">websocket_endpoint</link> (WebSocket websocket, str username=Depends(token_required))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a791304efa6d9abc2d7224777155f4ce3">level</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1ac7ba92e1518c9942f9b2628e59284036">logger</link> = logging.getLogger(__name__)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a7b499ff940ba3d60a6a446047dc0e793">app</link> = FastAPI()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1afd315579b9669e0ddf3c7380195c2c9f">allow_origins</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a02a6dbac09a1e44d53dac146b4b7995e">allow_credentials</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a31453585c4b681dd455b119aad8df27f">allow_methods</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1ac0adc8d19eae0c9e8eaa11d97e60657b">allow_headers</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a3fb990b8f65eceb426d3046cca41f3be">name</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a08ea44cc61f6d390978edd06e68867b2">templates</link> = Jinja2Templates(directory=&quot;./frontend&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a967b877415aecb102a7fc379ce5041b1">manager</link> = <link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager">WebSocketManager</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacebackend_1_1server_1a9c30cd96e9e80accf2505265058bb685"/><section>
+    <title>format_filename()</title>
+<indexterm><primary>format_filename</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>format_filename</secondary></indexterm>
+<para><computeroutput>backend.server.format_filename ( task)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacebackend_1_1server_a9c30cd96e9e80accf2505265058bb685_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacebackend_1_1server_1aaf74caa59bfb354fc9376ff64b5b0450"/><section>
+    <title>read_root()</title>
+<indexterm><primary>read_root</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>read_root</secondary></indexterm>
+<para><computeroutput>backend.server.read_root (Request request)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1ad4dad2e900f405ce89832734ae7a4b80"/><section>
+    <title>save_request_to_file()</title>
+<indexterm><primary>save_request_to_file</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>save_request_to_file</secondary></indexterm>
+<para><computeroutput>backend.server.save_request_to_file ( data,  username)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacebackend_1_1server_ad4dad2e900f405ce89832734ae7a4b80_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacebackend_1_1server_1aa20a85ade2f14a7b9746f098733052a9"/><section>
+    <title>startup_event()</title>
+<indexterm><primary>startup_event</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>startup_event</secondary></indexterm>
+<para><computeroutput>backend.server.startup_event ( )</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1add4a342eaeb04b916c8e3ca8ee280129"/><section>
+    <title>websocket_endpoint()</title>
+<indexterm><primary>websocket_endpoint</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>websocket_endpoint</secondary></indexterm>
+<para><computeroutput>backend.server.websocket_endpoint (WebSocket websocket, str  username = <computeroutput>Depends(token_required)</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacebackend_1_1server_add4a342eaeb04b916c8e3ca8ee280129_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacebackend_1_1server_1a02a6dbac09a1e44d53dac146b4b7995e"/><section>
+    <title>allow_credentials</title>
+<indexterm><primary>allow_credentials</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>allow_credentials</secondary></indexterm>
+<para><computeroutput>backend.server.allow_credentials</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1ac0adc8d19eae0c9e8eaa11d97e60657b"/><section>
+    <title>allow_headers</title>
+<indexterm><primary>allow_headers</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>allow_headers</secondary></indexterm>
+<para><computeroutput>backend.server.allow_headers</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1a31453585c4b681dd455b119aad8df27f"/><section>
+    <title>allow_methods</title>
+<indexterm><primary>allow_methods</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>allow_methods</secondary></indexterm>
+<para><computeroutput>backend.server.allow_methods</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1afd315579b9669e0ddf3c7380195c2c9f"/><section>
+    <title>allow_origins</title>
+<indexterm><primary>allow_origins</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>allow_origins</secondary></indexterm>
+<para><computeroutput>backend.server.allow_origins</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1a7b499ff940ba3d60a6a446047dc0e793"/><section>
+    <title>app</title>
+<indexterm><primary>app</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>app</secondary></indexterm>
+<para><computeroutput>backend.server.app = FastAPI()</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1a791304efa6d9abc2d7224777155f4ce3"/><section>
+    <title>level</title>
+<indexterm><primary>level</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>level</secondary></indexterm>
+<para><computeroutput>backend.server.level</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1ac7ba92e1518c9942f9b2628e59284036"/><section>
+    <title>logger</title>
+<indexterm><primary>logger</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>logger</secondary></indexterm>
+<para><computeroutput>backend.server.logger = logging.getLogger(__name__)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1a967b877415aecb102a7fc379ce5041b1"/><section>
+    <title>manager</title>
+<indexterm><primary>manager</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>manager</secondary></indexterm>
+<para><computeroutput>backend.server.manager = <link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager">WebSocketManager</link>()</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1a3fb990b8f65eceb426d3046cca41f3be"/><section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>backend.server.name</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1server_1a08ea44cc61f6d390978edd06e68867b2"/><section>
+    <title>templates</title>
+<indexterm><primary>templates</primary><secondary>backend.server</secondary></indexterm>
+<indexterm><primary>backend.server</primary><secondary>templates</secondary></indexterm>
+<para><computeroutput>backend.server.templates = Jinja2Templates(directory=&quot;./frontend&quot;)</computeroutput></para></section>
+</section>
+</section>

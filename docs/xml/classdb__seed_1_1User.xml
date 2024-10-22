@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classdb__seed_1_1User" kind="class" language="Python" prot="public">
+    <compoundname>db_seed::User</compoundname>
+    <basecompoundref refid="classBase" prot="public" virt="non-virtual">Base</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdb__seed_1_1User_1abcee60dd5842490186a3863073a6ec07" prot="private" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str db_seed.User::__tablename__</definition>
+        <argsstring></argsstring>
+        <name>__tablename__</name>
+        <qualifiedname>db_seed.User.__tablename__</qualifiedname>
+        <initializer>=  &apos;user&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="56" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdb__seed_1_1User_1abeb46fb39632dc8bda94d363dd548020" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>db_seed.User::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>db_seed.User.id</qualifiedname>
+        <initializer>=  Column(Integer, primary_key=True, index=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="57" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__seed_1_1User_1a9a2abda82b590c041243e511a3b96a45" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>db_seed.User::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>db_seed.User.username</qualifiedname>
+        <initializer>=  Column(String(50), unique=True, nullable=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="58" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__seed_1_1User_1a96e4068c56e8e61afa622d936996b068" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>db_seed.User::password_hash</definition>
+        <argsstring></argsstring>
+        <name>password_hash</name>
+        <qualifiedname>db_seed.User.password_hash</qualifiedname>
+        <initializer>=  Column(String(255), nullable=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="59" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classbackend_1_1db_1_1User_1a2b26b10e4cef8e28529000b96380ed65" compoundref="db_8py" startline="42" endline="60">backend.db.User.check_password</referencedby>
+        <referencedby refid="classbackend_1_1db_1_1User_1a398a54bc53a26938573dfca506a13c5c" compoundref="db_8py" startline="39" endline="41">backend.db.User.set_password</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__seed_1_1User_1a86e63e222f85c4abcc0ba35286280b7d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>db_seed.User::email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <qualifiedname>db_seed.User.email</qualifiedname>
+        <initializer>=  Column(String(255), unique=True, nullable=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="60" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdb__seed_1_1User_1a6a4ee499ff49c8c5f0ae6a2bbf72e16d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>db_seed.User::is_admin</definition>
+        <argsstring></argsstring>
+        <name>is_admin</name>
+        <qualifiedname>db_seed.User.is_admin</qualifiedname>
+        <initializer>=  Column(Boolean, default=False, nullable=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="61" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Модель пользователя.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Base</label>
+        <link refid="classBase"/>
+      </node>
+      <node id="1">
+        <label>db_seed.User</label>
+        <link refid="classdb__seed_1_1User"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Base</label>
+        <link refid="classBase"/>
+      </node>
+      <node id="1">
+        <label>db_seed.User</label>
+        <link refid="classdb__seed_1_1User"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-__tablename__</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="54" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="54" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classdb__seed_1_1User_1abcee60dd5842490186a3863073a6ec07" prot="private" virt="non-virtual"><scope>db_seed::User</scope><name>__tablename__</name></member>
+      <member refid="classdb__seed_1_1User_1a86e63e222f85c4abcc0ba35286280b7d" prot="public" virt="non-virtual"><scope>db_seed::User</scope><name>email</name></member>
+      <member refid="classdb__seed_1_1User_1abeb46fb39632dc8bda94d363dd548020" prot="public" virt="non-virtual"><scope>db_seed::User</scope><name>id</name></member>
+      <member refid="classdb__seed_1_1User_1a6a4ee499ff49c8c5f0ae6a2bbf72e16d" prot="public" virt="non-virtual"><scope>db_seed::User</scope><name>is_admin</name></member>
+      <member refid="classdb__seed_1_1User_1a96e4068c56e8e61afa622d936996b068" prot="public" virt="non-virtual"><scope>db_seed::User</scope><name>password_hash</name></member>
+      <member refid="classdb__seed_1_1User_1a9a2abda82b590c041243e511a3b96a45" prot="public" virt="non-virtual"><scope>db_seed::User</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

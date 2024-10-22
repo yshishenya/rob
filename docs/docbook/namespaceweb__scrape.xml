@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceweb__scrape" xml:lang="en-US">
+<title>web_scrape Namespace Reference</title>
+<indexterm><primary>web_scrape</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespaceweb__scrape_1aae251defc7a9fb4c5b8085b5a75a7a35">async_browse</link> (str selenium_web_browser, str user_agent, str fast_llm_model, str summary_token_limit, str llm_provider, str url, str question, WebSocket websocket)</para>
+</listitem>
+            <listitem><para>tuple[str, WebDriver] <link linkend="_namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d">browse_website</link> (str url, str question)</para>
+</listitem>
+            <listitem><para>tuple[WebDriver, str] <link linkend="_namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5">scrape_text_with_selenium</link> (str selenium_web_browser, str user_agent, str url)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451">get_text</link> (soup)</para>
+</listitem>
+            <listitem><para>list[str] <link linkend="_namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e">scrape_links_with_selenium</link> (WebDriver driver, str url)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf">close_browser</link> (WebDriver driver)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a">add_header</link> (WebDriver driver)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceweb__scrape_1aa2ff2c1078cc7ae3378f810fdea2765a">executor</link> = ThreadPoolExecutor()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceweb__scrape_1a0117379fc90094ab4626beaca918dc49">FILE_DIR</link> = Path(__file__).parent.parent</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Selenium web scraping module.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a"/><section>
+    <title>add_header()</title>
+<indexterm><primary>add_header</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>add_header</secondary></indexterm>
+<para><computeroutput> None web_scrape.add_header (WebDriver driver)</computeroutput></para>
+<para><literallayout><computeroutput>Add a header to the website
+
+Args:
+    driver (WebDriver): The webdriver to use to add the header
+
+Returns:
+    None
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceweb__scrape_a4ca49a63b7463a7b860ea919a026a80a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceweb__scrape_1aae251defc7a9fb4c5b8085b5a75a7a35"/><section>
+    <title>async_browse()</title>
+<indexterm><primary>async_browse</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>async_browse</secondary></indexterm>
+<para><computeroutput> str web_scrape.async_browse (str selenium_web_browser, str user_agent, str fast_llm_model, str summary_token_limit, str llm_provider, str url, str question, WebSocket
+ websocket)</computeroutput></para>
+<para><literallayout><computeroutput>Browse a website and return the answer and links to the user
+
+Args:
+    selenium_web_browser (str): The web browser used for scraping
+    user_agent (str): The user agent used when scraping
+    url (str): The url of the website to browse
+    question (str): The question asked by the user
+    websocket (WebSocketManager): The websocket manager
+
+Returns:
+    str: The answer and links to the user
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d"/><section>
+    <title>browse_website()</title>
+<indexterm><primary>browse_website</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>browse_website</secondary></indexterm>
+<para><computeroutput> tuple[str, WebDriver] web_scrape.browse_website (str url, str question)</computeroutput></para>
+<para><literallayout><computeroutput>Browse a website and return the answer and links to the user
+
+Args:
+    url (str): The url of the website to browse
+    question (str): The question asked by the user
+
+Returns:
+    Tuple[str, WebDriver]: The answer and links to the user and the webdriver
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceweb__scrape_a11e568eae6f4fcc57b34729e906cfe1d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf"/><section>
+    <title>close_browser()</title>
+<indexterm><primary>close_browser</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>close_browser</secondary></indexterm>
+<para><computeroutput> None web_scrape.close_browser (WebDriver driver)</computeroutput></para>
+<para><literallayout><computeroutput>Close the browser
+
+Args:
+    driver (WebDriver): The webdriver to close
+
+Returns:
+    None
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceweb__scrape_aa1548c065f8f535d2422353c35a0f8bf_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451"/><section>
+    <title>get_text()</title>
+<indexterm><primary>get_text</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>get_text</secondary></indexterm>
+<para><computeroutput>web_scrape.get_text ( soup)</computeroutput></para>
+<para><literallayout><computeroutput>Get the text from the soup
+
+Args:
+    soup (BeautifulSoup): The soup to get the text from
+
+Returns:
+    str: The text from the soup
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceweb__scrape_af8e21857763f45f8dd875e3a80c1b451_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e"/><section>
+    <title>scrape_links_with_selenium()</title>
+<indexterm><primary>scrape_links_with_selenium</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>scrape_links_with_selenium</secondary></indexterm>
+<para><computeroutput> list[str] web_scrape.scrape_links_with_selenium (WebDriver driver, str url)</computeroutput></para>
+<para><literallayout><computeroutput>Scrape links from a website using selenium
+
+Args:
+    driver (WebDriver): The webdriver to use to scrape the links
+
+Returns:
+    List[str]: The links scraped from the website
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceweb__scrape_a5866c2091ff9973cf334835bf009981e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5"/><section>
+    <title>scrape_text_with_selenium()</title>
+<indexterm><primary>scrape_text_with_selenium</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>scrape_text_with_selenium</secondary></indexterm>
+<para><computeroutput> tuple[WebDriver, str] web_scrape.scrape_text_with_selenium (str selenium_web_browser, str user_agent, str url)</computeroutput></para>
+<para><literallayout><computeroutput>Scrape text from a website using selenium
+
+Args:
+    url (str): The url of the website to scrape
+    selenium_web_browser (str): The web browser used to scrape
+    user_agent (str): The user agent used when scraping
+
+Returns:
+    Tuple[WebDriver, str]: The webdriver and the text scraped from the website
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceweb__scrape_a14d5ccdaf877accf6ecc7030486728e5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceweb__scrape_a14d5ccdaf877accf6ecc7030486728e5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceweb__scrape_1aa2ff2c1078cc7ae3378f810fdea2765a"/><section>
+    <title>executor</title>
+<indexterm><primary>executor</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>executor</secondary></indexterm>
+<para><computeroutput>web_scrape.executor = ThreadPoolExecutor()</computeroutput></para></section>
+<anchor xml:id="_namespaceweb__scrape_1a0117379fc90094ab4626beaca918dc49"/><section>
+    <title>FILE_DIR</title>
+<indexterm><primary>FILE_DIR</primary><secondary>web_scrape</secondary></indexterm>
+<indexterm><primary>web_scrape</primary><secondary>FILE_DIR</secondary></indexterm>
+<para><computeroutput>web_scrape.FILE_DIR = Path(__file__).parent.parent</computeroutput></para></section>
+</section>
+</section>

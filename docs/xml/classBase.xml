@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classBase" kind="class" language="Python" prot="public">
+    <compoundname>Base</compoundname>
+    <derivedcompoundref refid="classbackend_1_1db_1_1User" prot="public" virt="non-virtual">backend.db.User</derivedcompoundref>
+    <derivedcompoundref refid="classdb__seed_1_1User" prot="public" virt="non-virtual">db_seed.User</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Base</label>
+        <link refid="classBase"/>
+      </node>
+      <node id="2">
+        <label>backend.db.User</label>
+        <link refid="classbackend_1_1db_1_1User"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>db_seed.User</label>
+        <link refid="classdb__seed_1_1User"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Base</label>
+        <link refid="classBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="31" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

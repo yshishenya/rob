@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="web__base__loader_8py" kind="file" language="Python">
+    <compoundname>web_base_loader.py</compoundname>
+    <innerclass refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper" prot="public">gpt_researcher::scraper::web_base_loader::web_base_loader::WebBaseLoaderScraper</innerclass>
+    <innernamespace refid="namespacegpt__researcher">gpt_researcher</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper">gpt_researcher::scraper</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1web__base__loader">gpt_researcher::scraper::web_base_loader</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader">gpt_researcher::scraper::web_base_loader::web_base_loader</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegpt__researcher_1_1scraper_1_1web__base__loader" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>langchain_community.document_loaders<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>WebBaseLoader</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper" kindref="compound">WebBaseLoaderScraper</ref>:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a75c8e0c8ea89adb5e1ccec61985f184e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a75c8e0c8ea89adb5e1ccec61985f184e" kindref="member">__init__</ref>(self,<sp/>link,<sp/>session=None):</highlight></codeline>
+<codeline lineno="7" refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a93fb660d87d4ad9aaa185e56624b8f65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a93fb660d87d4ad9aaa185e56624b8f65" kindref="member">link</ref><sp/>=<sp/>link</highlight></codeline>
+<codeline lineno="8" refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a95306fb278fea8f96720e4a5d282a87f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a95306fb278fea8f96720e4a5d282a87f" kindref="member">session</ref><sp/>=<sp/>session</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a6de5174548419f9a7391167a61afda89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a6de5174548419f9a7391167a61afda89" kindref="member">scrape</ref>(self)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>Python<sp/>function<sp/>scrapes<sp/>content<sp/>from<sp/>a<sp/>webpage<sp/>using<sp/>a<sp/>WebBaseLoader<sp/>object<sp/>and<sp/>returns<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>concatenated<sp/>page<sp/>content.</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>`scrape`<sp/>method<sp/>is<sp/>returning<sp/>a<sp/>string<sp/>variable<sp/>named<sp/>`content`<sp/>which<sp/>contains<sp/>the</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>concatenated<sp/>page<sp/>content<sp/>from<sp/>the<sp/>documents<sp/>loaded<sp/>by<sp/>the<sp/>`WebBaseLoader`.<sp/>If<sp/>an<sp/>exception</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>occurs<sp/>during<sp/>the<sp/>process,<sp/>an<sp/>error<sp/>message<sp/>is<sp/>printed<sp/>and<sp/>an<sp/>empty<sp/>string<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loader<sp/>=<sp/>WebBaseLoader(self.<ref refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a93fb660d87d4ad9aaa185e56624b8f65" kindref="member">link</ref>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loader.requests_kwargs<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;verify&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>docs<sp/>=<sp/>loader.load()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>doc<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>docs:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content<sp/>+=<sp/>doc.page_content</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>content</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>Exception<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>e:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Error!<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>str(e))</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/web_base_loader/web_base_loader.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbackend_1_1db_1_1User" xml:lang="en-US">
+<title>backend.db.User Class Reference</title>
+<indexterm><primary>backend.db.User</primary></indexterm>
+Inheritance diagram for backend.db.User:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1db_1_1User__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for backend.db.User:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1db_1_1User__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbackend_1_1db_1_1User_1a398a54bc53a26938573dfca506a13c5c">set_password</link> (self, password)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1db_1_1User_1a2b26b10e4cef8e28529000b96380ed65">check_password</link> (self, password)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbackend_1_1db_1_1User_1a0961dd5989b805b2326170f1db7ddfbb">id</link> = Column(Integer, primary_key=True, index=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1db_1_1User_1a5023fa9e4da1d4253434a7fce002ba10">username</link> = Column(String, unique=True, index=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1db_1_1User_1a8a4108d863222635a597c841ce7bedd6">password_hash</link> = Column(String, nullable=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1db_1_1User_1ac9dbd0a9355fb699399f49e4854775f1">email</link> = Column(String, unique=True, index=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1db_1_1User_1a5c3f597a861c93d59cd756e5ecb214a9">is_admin</link> = Column(Boolean, default=False, nullable=False)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classbackend_1_1db_1_1User_1a2a7afdccbdd98ce80ba9445eda2eddf8">__tablename__</link> = &quot;user&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbackend_1_1db_1_1User_1a2b26b10e4cef8e28529000b96380ed65"/><section>
+    <title>check_password()</title>
+<indexterm><primary>check_password</primary><secondary>backend.db.User</secondary></indexterm>
+<indexterm><primary>backend.db.User</primary><secondary>check_password</secondary></indexterm>
+<para><computeroutput>backend.db.User.check_password ( self,  password)</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1db_1_1User_1a398a54bc53a26938573dfca506a13c5c"/><section>
+    <title>set_password()</title>
+<indexterm><primary>set_password</primary><secondary>backend.db.User</secondary></indexterm>
+<indexterm><primary>backend.db.User</primary><secondary>set_password</secondary></indexterm>
+<para><computeroutput>backend.db.User.set_password ( self,  password)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbackend_1_1db_1_1User_1a2a7afdccbdd98ce80ba9445eda2eddf8"/><section>
+    <title>__tablename__</title>
+<indexterm><primary>__tablename__</primary><secondary>backend.db.User</secondary></indexterm>
+<indexterm><primary>backend.db.User</primary><secondary>__tablename__</secondary></indexterm>
+<para><computeroutput>str backend.db.User.__tablename__ = &quot;user&quot;<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1db_1_1User_1ac9dbd0a9355fb699399f49e4854775f1"/><section>
+    <title>email</title>
+<indexterm><primary>email</primary><secondary>backend.db.User</secondary></indexterm>
+<indexterm><primary>backend.db.User</primary><secondary>email</secondary></indexterm>
+<para><computeroutput>backend.db.User.email = Column(String, unique=True, index=True)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1db_1_1User_1a0961dd5989b805b2326170f1db7ddfbb"/><section>
+    <title>id</title>
+<indexterm><primary>id</primary><secondary>backend.db.User</secondary></indexterm>
+<indexterm><primary>backend.db.User</primary><secondary>id</secondary></indexterm>
+<para><computeroutput>backend.db.User.id = Column(Integer, primary_key=True, index=True)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1db_1_1User_1a5c3f597a861c93d59cd756e5ecb214a9"/><section>
+    <title>is_admin</title>
+<indexterm><primary>is_admin</primary><secondary>backend.db.User</secondary></indexterm>
+<indexterm><primary>backend.db.User</primary><secondary>is_admin</secondary></indexterm>
+<para><computeroutput>backend.db.User.is_admin = Column(Boolean, default=False, nullable=False)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1db_1_1User_1a8a4108d863222635a597c841ce7bedd6"/><section>
+    <title>password_hash</title>
+<indexterm><primary>password_hash</primary><secondary>backend.db.User</secondary></indexterm>
+<indexterm><primary>backend.db.User</primary><secondary>password_hash</secondary></indexterm>
+<para><computeroutput>backend.db.User.password_hash = Column(String, nullable=False)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1db_1_1User_1a5023fa9e4da1d4253434a7fce002ba10"/><section>
+    <title>username</title>
+<indexterm><primary>username</primary><secondary>backend.db.User</secondary></indexterm>
+<indexterm><primary>backend.db.User</primary><secondary>username</secondary></indexterm>
+<para><computeroutput>backend.db.User.username = Column(String, unique=True, index=True)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/<link linkend="_db_8py">db.py</link></section>
+</section>

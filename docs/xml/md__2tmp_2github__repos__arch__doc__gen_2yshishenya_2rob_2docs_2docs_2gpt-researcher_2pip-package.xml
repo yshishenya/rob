@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package</compoundname>
+    <title>PIP Package</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md124"/><ulink url="https://badge.fury.io/py/gpt-researcher"><image type="html" name="https://badge.fury.io/py/gpt-researcher.svg" alt="PyPI version" inline="yes"></image>
+</ulink> <ulink url="https://colab.research.google.com/github/assafelovic/gpt-researcher/blob/master/examples/pip-run.ipynb"><image type="html" name="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" inline="yes"></image>
+</ulink></para>
+<para>🌟 <bold>Exciting News!</bold> Now, you can integrate <computeroutput>gpt-researcher</computeroutput> with your apps seamlessly!</para>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md125">
+<title>Steps to Install GPT Researcher 🛠️</title><para>Follow these easy steps to get started:</para>
+<para>0. <bold>Pre-requisite</bold>: Ensure Python 3.10+ is installed on your machine 💻<orderedlist>
+<listitem><para><bold>Install gpt-researcher</bold>: Grab the official package from <ulink url="https://pypi.org/project/gpt-researcher/">PyPi</ulink>.</para>
+</listitem></orderedlist>
+</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">pip<sp/>install<sp/>gpt-researcher</highlight></codeline>
+</programlisting></para>
+<para><orderedlist>
+<listitem><para><bold>Environment Variables:</bold> Create a .env file with your OpenAI API key or simply export it</para>
+</listitem></orderedlist>
+</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">export<sp/>OPENAI_API_KEY={Your<sp/>OpenAI<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+</programlisting></para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">export<sp/>TAVILY_API_KEY={Your<sp/>Tavily<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+</programlisting></para>
+<para><orderedlist>
+<listitem><para><bold>Start using GPT Researcher in your own codebase</bold></para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md126">
+<title>Example Usage 📝</title><para><programlisting filename=".py"><codeline><highlight class="keyword">from</highlight><highlight class="normal"><sp/>gpt_researcher<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>asyncio</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>gpt_researcher<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>asyncio</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal">get_report(query:<sp/>str,<sp/>report_type:<sp/>str)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query,<sp/>report_type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>research_result<sp/>=<sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>report</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;what<sp/>team<sp/>may<sp/>win<sp/>the<sp/>NBA<sp/>finals?&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report_type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;research_report&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>asyncio.run(get_report(query,<sp/>report_type))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(report)</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md127">
+<title>Specific Examples 🌐</title><sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md128">
+<title>Example 1: Research Report 📚</title><para><programlisting filename=".py"><codeline><highlight class="normal">query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Latest<sp/>developments<sp/>in<sp/>renewable<sp/>energy<sp/>technologies&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">report_type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;research_report&quot;</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md129">
+<title>Example 2: Resource Report 📋</title><para><programlisting filename=".py"><codeline><highlight class="normal">query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;List<sp/>of<sp/>top<sp/>AI<sp/>conferences<sp/>in<sp/>2023&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">report_type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;resource_report&quot;</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md130">
+<title>Example 3: Outline Report 📝</title><para><programlisting filename=".py"><codeline><highlight class="normal">query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Outline<sp/>for<sp/>an<sp/>article<sp/>on<sp/>the<sp/>impact<sp/>of<sp/>AI<sp/>in<sp/>education&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">report_type<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;outline_report&quot;</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md131">
+<title>Integration with Web Frameworks 🌍</title><sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md132">
+<title>FastAPI Example</title><para><programlisting filename=".py"><codeline><highlight class="keyword">from</highlight><highlight class="normal"><sp/>fastapi<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>FastAPI</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>gpt_researcher<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>asyncio</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">app<sp/>=<sp/>FastAPI()</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">@app.get(&quot;/report/{report_type}&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal">get_report(query:<sp/>str,<sp/>report_type:<sp/>str)<sp/>-&gt;<sp/>dict:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query,<sp/>report_type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>research_result<sp/>=<sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight><highlight class="stringliteral">&quot;report&quot;</highlight><highlight class="normal">:<sp/>report}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Run<sp/>the<sp/>server</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>uvicorn<sp/>main:app<sp/>--reload</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md133">
+<title>Flask Example</title><para><bold>Pre-requisite</bold>: Install flask with the async extra.</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">pip<sp/>install<sp/>&apos;flask[async]&apos;</highlight></codeline>
+</programlisting></para>
+<para><programlisting filename=".py"><codeline><highlight class="keyword">from</highlight><highlight class="normal"><sp/>flask<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Flask,<sp/>request</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>gpt_researcher<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">app<sp/>=<sp/>Flask(__name__)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">@app.route(&apos;/report/&lt;report_type&gt;&apos;,<sp/>methods=[&apos;GET&apos;])</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal">get_report(report_type):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>query<sp/>=<sp/>request.args.get(</highlight><highlight class="stringliteral">&apos;query&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query,<sp/>report_type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>research_result<sp/>=<sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>report</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>Run<sp/>the<sp/>server</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>flask<sp/>run</highlight></codeline>
+</programlisting> <bold>Run the server</bold></para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">flask<sp/>run</highlight></codeline>
+</programlisting></para>
+<para><bold>Example Request</bold></para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">curl<sp/>-X<sp/>GET<sp/>&quot;http://localhost:5000/report/research_report?query=what<sp/>team<sp/>may<sp/>win<sp/>the<sp/>nba<sp/>finals?&quot;</highlight></codeline>
+</programlisting></para>
+<para><bold>Note</bold>: The above code snippets are just examples. You can customize them as per your requirements. </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/pip-package.md"/>
+  </compounddef>
+</doxygen>

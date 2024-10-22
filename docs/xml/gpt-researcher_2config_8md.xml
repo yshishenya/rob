@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="gpt-researcher_2config_8md" kind="file" language="Markdown">
+    <compoundname>config.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Introduction</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>config.py<sp/>enables<sp/>you<sp/>to<sp/>customize<sp/>GPT<sp/>Researcher<sp/>to<sp/>your<sp/>specific<sp/>needs<sp/>and<sp/>preferences.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Thanks<sp/>to<sp/>our<sp/>amazing<sp/>community<sp/>and<sp/>contributions,<sp/>GPT<sp/>Researcher<sp/>supports<sp/>multiple<sp/>LLMs<sp/>and<sp/>Retrievers.</highlight></codeline>
+<codeline><highlight class="normal">In<sp/>addition,<sp/>GPT<sp/>Researcher<sp/>can<sp/>be<sp/>tailored<sp/>to<sp/>various<sp/>report<sp/>formats<sp/>(such<sp/>as<sp/>APA),<sp/>word<sp/>count,<sp/>research<sp/>iterations<sp/>depth,<sp/>etc.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GPT<sp/>Researcher<sp/>defaults<sp/>to<sp/>our<sp/>recommended<sp/>suite<sp/>of<sp/>integrations:<sp/>[OpenAI](https://platform.openai.com/docs/overview)<sp/>for<sp/>LLM<sp/>calls<sp/>and<sp/>[Tavily<sp/>API](https://app.tavily.com)<sp/>for<sp/>retrieving<sp/>realtime<sp/>online<sp/>information.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>seen<sp/>below,<sp/>OpenAI<sp/>still<sp/>stands<sp/>as<sp/>the<sp/>superior<sp/>LLM.<sp/>We<sp/>assume<sp/>it<sp/>will<sp/>stay<sp/>this<sp/>way<sp/>for<sp/>some<sp/>time,<sp/>and<sp/>that<sp/>prices<sp/>will<sp/>only<sp/>continue<sp/>to<sp/>decrease,<sp/>while<sp/>performance<sp/>and<sp/>speed<sp/>increase<sp/>over<sp/>time.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>style={{<sp/>marginBottom:<sp/>&apos;10px&apos;<sp/>}}&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>align=&quot;center&quot;<sp/>height=&quot;350&quot;<sp/>src=&quot;/img/leaderboard.png&quot;<sp/>/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>default<sp/>config.py<sp/>file<sp/>can<sp/>be<sp/>found<sp/>in<sp/>`/gpt_researcher/config/`.<sp/>It<sp/>supports<sp/>various<sp/>options<sp/>for<sp/>customizing<sp/>GPT<sp/>Researcher<sp/>to<sp/>your<sp/>needs.</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>also<sp/>include<sp/>your<sp/>own<sp/>external<sp/>JSON<sp/>file<sp/>`config.json`<sp/>by<sp/>adding<sp/>the<sp/>path<sp/>in<sp/>the<sp/>`config_file`<sp/>param.<sp/>**Please<sp/>follow<sp/>the<sp/>config.py<sp/>file<sp/>for<sp/>additional<sp/>future<sp/>support**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Below<sp/>is<sp/>a<sp/>list<sp/>of<sp/>current<sp/>supported<sp/>options:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**`RETRIEVER`**:<sp/>Web<sp/>search<sp/>engine<sp/>used<sp/>for<sp/>retrieving<sp/>sources.<sp/>Defaults<sp/>to<sp/>`tavily`.<sp/>Options:<sp/>`duckduckgo`,<sp/>`bing`,<sp/>`google`,<sp/>`serper`,<sp/>`searx`.<sp/>[Check<sp/>here](https://github.com/assafelovic/gpt-researcher/tree/master/gpt_researcher/retrievers)<sp/>for<sp/>supported<sp/>retrievers</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`EMBEDDING_PROVIDER`**:<sp/>Provider<sp/>for<sp/>embedding<sp/>model.<sp/>Defaults<sp/>to<sp/>`openai`.<sp/>Options:<sp/>`ollama`,<sp/>`huggingface`,<sp/>`azureopenai`,<sp/>`custom`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`LLM_PROVIDER`**:<sp/>LLM<sp/>provider.<sp/>Defaults<sp/>to<sp/>`openai`.<sp/>Options:<sp/>`google`,<sp/>`ollama`,<sp/>`groq`<sp/>and<sp/>much<sp/>more!</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`FAST_LLM_MODEL`**:<sp/>Model<sp/>name<sp/>for<sp/>fast<sp/>LLM<sp/>operations<sp/>such<sp/>summaries.<sp/>Defaults<sp/>to<sp/>`gpt-3.5-turbo-16k`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`SMART_LLM_MODEL`**:<sp/>Model<sp/>name<sp/>for<sp/>smart<sp/>operations<sp/>like<sp/>generating<sp/>research<sp/>reports<sp/>and<sp/>reasoning.<sp/>Defaults<sp/>to<sp/>`gpt-4o`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`FAST_TOKEN_LIMIT`**:<sp/>Maximum<sp/>token<sp/>limit<sp/>for<sp/>fast<sp/>LLM<sp/>responses.<sp/>Defaults<sp/>to<sp/>`2000`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`SMART_TOKEN_LIMIT`**:<sp/>Maximum<sp/>token<sp/>limit<sp/>for<sp/>smart<sp/>LLM<sp/>responses.<sp/>Defaults<sp/>to<sp/>`4000`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`BROWSE_CHUNK_MAX_LENGTH`**:<sp/>Maximum<sp/>length<sp/>of<sp/>text<sp/>chunks<sp/>to<sp/>browse<sp/>in<sp/>web<sp/>sources.<sp/>Defaults<sp/>to<sp/>`8192`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`SUMMARY_TOKEN_LIMIT`**:<sp/>Maximum<sp/>token<sp/>limit<sp/>for<sp/>generating<sp/>summaries.<sp/>Defaults<sp/>to<sp/>`700`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`TEMPERATURE`**:<sp/>Sampling<sp/>temperature<sp/>for<sp/>LLM<sp/>responses,<sp/>typically<sp/>between<sp/>0<sp/>and<sp/>1.<sp/>A<sp/>higher<sp/>value<sp/>results<sp/>in<sp/>more<sp/>randomness<sp/>and<sp/>creativity,<sp/>while<sp/>a<sp/>lower<sp/>value<sp/>results<sp/>in<sp/>more<sp/>focused<sp/>and<sp/>deterministic<sp/>responses.<sp/>Defaults<sp/>to<sp/>`0.55`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`TOTAL_WORDS`**:<sp/>Total<sp/>word<sp/>count<sp/>limit<sp/>for<sp/>document<sp/>generation<sp/>or<sp/>processing<sp/>tasks.<sp/>Defaults<sp/>to<sp/>`800`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`REPORT_FORMAT`**:<sp/>Preferred<sp/>format<sp/>for<sp/>report<sp/>generation.<sp/>Defaults<sp/>to<sp/>`APA`.<sp/>Consider<sp/>formats<sp/>like<sp/>`MLA`,<sp/>`CMS`,<sp/>`Harvard<sp/>style`,<sp/>`IEEE`,<sp/>etc.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`MAX_ITERATIONS`**:<sp/>Maximum<sp/>number<sp/>of<sp/>iterations<sp/>for<sp/>processes<sp/>like<sp/>query<sp/>expansion<sp/>or<sp/>search<sp/>refinement.<sp/>Defaults<sp/>to<sp/>`3`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`AGENT_ROLE`**:<sp/>Role<sp/>of<sp/>the<sp/>agent.<sp/>This<sp/>might<sp/>be<sp/>used<sp/>to<sp/>customize<sp/>the<sp/>behavior<sp/>of<sp/>the<sp/>agent<sp/>based<sp/>on<sp/>its<sp/>assigned<sp/>roles.<sp/>No<sp/>default<sp/>value.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`MAX_SUBTOPICS`**:<sp/>Maximum<sp/>number<sp/>of<sp/>subtopics<sp/>to<sp/>generate<sp/>or<sp/>consider.<sp/>Defaults<sp/>to<sp/>`3`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`SCRAPER`**:<sp/>Web<sp/>scraper<sp/>to<sp/>use<sp/>for<sp/>gathering<sp/>information.<sp/>Defaults<sp/>to<sp/>`bs`<sp/>(BeautifulSoup).<sp/>You<sp/>can<sp/>also<sp/>use<sp/>[newspaper](https://github.com/codelucas/newspaper).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`DOC_PATH`**:<sp/>Path<sp/>to<sp/>read<sp/>and<sp/>research<sp/>local<sp/>documents.<sp/>Defaults<sp/>to<sp/>an<sp/>empty<sp/>string<sp/>indicating<sp/>no<sp/>path<sp/>specified.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`USER_AGENT`**:<sp/>Custom<sp/>User-Agent<sp/>string<sp/>for<sp/>web<sp/>crawling<sp/>and<sp/>web<sp/>requests.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**`MEMORY_BACKEND`**:<sp/>Backend<sp/>used<sp/>for<sp/>memory<sp/>operations,<sp/>such<sp/>as<sp/>local<sp/>storage<sp/>of<sp/>temporary<sp/>data.<sp/>Defaults<sp/>to<sp/>`local`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>change<sp/>the<sp/>default<sp/>configurations,<sp/>you<sp/>can<sp/>simply<sp/>add<sp/>env<sp/>variables<sp/>to<sp/>your<sp/>`.env`<sp/>file<sp/>as<sp/>named<sp/>above<sp/>or<sp/>export<sp/>manually<sp/>in<sp/>your<sp/>local<sp/>project<sp/>directory.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>example,<sp/>to<sp/>manually<sp/>change<sp/>the<sp/>search<sp/>engine<sp/>and<sp/>report<sp/>format:</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">export<sp/>RETRIEVER=bing</highlight></codeline>
+<codeline><highlight class="normal">export<sp/>REPORT_FORMAT=IEEE</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Please<sp/>note<sp/>that<sp/>you<sp/>might<sp/>need<sp/>to<sp/>export<sp/>additional<sp/>env<sp/>vars<sp/>and<sp/>obtain<sp/>API<sp/>keys<sp/>for<sp/>other<sp/>supported<sp/>search<sp/>retrievers<sp/>and<sp/>LLM<sp/>providers.<sp/>Please<sp/>follow<sp/>your<sp/>console<sp/>logs<sp/>for<sp/>further<sp/>assistance.</highlight></codeline>
+<codeline><highlight class="normal">To<sp/>learn<sp/>more<sp/>about<sp/>additional<sp/>LLM<sp/>support<sp/>you<sp/>can<sp/>check<sp/>out<sp/>the<sp/>docs<sp/>[here](/docs/gpt-researcher/llms).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>also<sp/>include<sp/>your<sp/>own<sp/>external<sp/>JSON<sp/>file<sp/>`config.json`<sp/>by<sp/>adding<sp/>the<sp/>path<sp/>in<sp/>the<sp/>`config_file`<sp/>param.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/config.md"/>
+  </compounddef>
+</doxygen>

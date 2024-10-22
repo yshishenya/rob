@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome</compoundname>
+    <title>Welcome</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome_1autotoc_md175"/> Hey there! 👋</para>
+<para>We&apos;re a team of AI researchers and developers who are passionate about building the next generation of AI assistants. Our mission is to empower individuals and organizations with accurate, unbiased, and factual information.</para>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome_1autotoc_md176">
+<title>GPT Researcher</title><para>Quickly accessing relevant and trustworthy information is more crucial than ever. However, we&apos;ve learned that none of today&apos;s search engines provide a suitable tool that provides factual, explicit and objective answers without the need to continuously click and explore multiple sites for a given research task.</para>
+<para>This is why we&apos;ve built the trending open source <bold><ulink url="https://github.com/assafelovic/gpt-researcher">GPT Researcher</ulink></bold>. GPT Researcher is an autonomous agent that takes care of the tedious task of research for you, by scraping, filtering and aggregating over 20+ web sources per a single research task.</para>
+<para>To learn more about GPT Researcher, check out the <ulink url="/docs/gpt-researcher/introduction">documentation page</ulink>. </para>
+</sect2>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/welcome.md"/>
+  </compounddef>
+</doxygen>

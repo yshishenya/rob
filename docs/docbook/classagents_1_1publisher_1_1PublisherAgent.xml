@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagents_1_1publisher_1_1PublisherAgent" xml:lang="en-US">
+<title>agents.publisher.PublisherAgent Class Reference</title>
+<indexterm><primary>agents.publisher.PublisherAgent</primary></indexterm>
+Collaboration diagram for agents.publisher.PublisherAgent:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1publisher_1_1PublisherAgent__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1publisher_1_1PublisherAgent_1a7c8c6016bb253e081f2fcbd07d30551c">__init__</link> (self, str <link linkend="_classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4">output_dir</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85">publish_research_report</link> (self, dict research_state, dict publish_formats)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a">generate_layout</link> (self, dict research_state)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58">write_report_by_formats</link> (self, str layout, dict publish_formats)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1publisher_1_1PublisherAgent_1a826775413630c1f1d81baeaf33070275">run</link> (self, dict research_state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4">output_dir</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classagents_1_1publisher_1_1PublisherAgent_1a7c8c6016bb253e081f2fcbd07d30551c"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>agents.publisher.PublisherAgent</secondary></indexterm>
+<indexterm><primary>agents.publisher.PublisherAgent</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>agents.publisher.PublisherAgent.__init__ ( self, str output_dir)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a"/><section>
+    <title>generate_layout()</title>
+<indexterm><primary>generate_layout</primary><secondary>agents.publisher.PublisherAgent</secondary></indexterm>
+<indexterm><primary>agents.publisher.PublisherAgent</primary><secondary>generate_layout</secondary></indexterm>
+<para><computeroutput>agents.publisher.PublisherAgent.generate_layout ( self, dict research_state)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1publisher_1_1PublisherAgent_a6bb256166cbaaaad93c78e5800cebf2a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85"/><section>
+    <title>publish_research_report()</title>
+<indexterm><primary>publish_research_report</primary><secondary>agents.publisher.PublisherAgent</secondary></indexterm>
+<indexterm><primary>agents.publisher.PublisherAgent</primary><secondary>publish_research_report</secondary></indexterm>
+<para><computeroutput>agents.publisher.PublisherAgent.publish_research_report ( self, dict research_state, dict publish_formats)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1publisher_1_1PublisherAgent_ac889c123c6786081aa4be0ca19fc6e85_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1publisher_1_1PublisherAgent_ac889c123c6786081aa4be0ca19fc6e85_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1publisher_1_1PublisherAgent_1a826775413630c1f1d81baeaf33070275"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>agents.publisher.PublisherAgent</secondary></indexterm>
+<indexterm><primary>agents.publisher.PublisherAgent</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>agents.publisher.PublisherAgent.run ( self, dict research_state)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1publisher_1_1PublisherAgent_a826775413630c1f1d81baeaf33070275_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58"/><section>
+    <title>write_report_by_formats()</title>
+<indexterm><primary>write_report_by_formats</primary><secondary>agents.publisher.PublisherAgent</secondary></indexterm>
+<indexterm><primary>agents.publisher.PublisherAgent</primary><secondary>write_report_by_formats</secondary></indexterm>
+<para><computeroutput>agents.publisher.PublisherAgent.write_report_by_formats ( self, str layout, dict publish_formats)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1publisher_1_1PublisherAgent_a492f1dd9a97d310bb9bc5b72919f8b58_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4"/><section>
+    <title>output_dir</title>
+<indexterm><primary>output_dir</primary><secondary>agents.publisher.PublisherAgent</secondary></indexterm>
+<indexterm><primary>agents.publisher.PublisherAgent</primary><secondary>output_dir</secondary></indexterm>
+<para><computeroutput>agents.publisher.PublisherAgent.output_dir</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/<link linkend="_publisher_8py">publisher.py</link></section>
+</section>

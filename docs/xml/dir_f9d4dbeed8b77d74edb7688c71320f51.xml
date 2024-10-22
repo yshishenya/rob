@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_f9d4dbeed8b77d74edb7688c71320f51" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher</compoundname>
+    <innerdir refid="dir_431d0ec26f526106759d5d518a79f6f3">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config</innerdir>
+    <innerdir refid="dir_09580389954d9e7ad63c583562062cbc">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context</innerdir>
+    <innerdir refid="dir_dec7b911a689e309b70b2bc1efd13d46">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document</innerdir>
+    <innerdir refid="dir_a747e43da1c182c4993c25afd1989e8c">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider</innerdir>
+    <innerdir refid="dir_035a7765b0207637c8376308a0060cd0">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master</innerdir>
+    <innerdir refid="dir_db5414299402b161d480e272cebbbcde">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory</innerdir>
+    <innerdir refid="dir_ab5df70614ec1cd999b2cb5c8f079671">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers</innerdir>
+    <innerdir refid="dir_20a3dd4fa931084554e397067fac6117">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper</innerdir>
+    <innerdir refid="dir_37b41fe1379ad84b234a5f46dea35229">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils</innerdir>
+    <innerfile refid="gpt__researcher_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/"/>
+  </compounddef>
+</doxygen>

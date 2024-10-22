@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="backend_2report__type_2detailed__report_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Detailed<sp/>Reports</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Introducing<sp/>long<sp/>and<sp/>detailed<sp/>reports,<sp/>with<sp/>a<sp/>completely<sp/>new<sp/>architecture<sp/>inspired<sp/>by<sp/>the<sp/>latest<sp/>[STORM](https://arxiv.org/abs/2402.14207)<sp/>paper.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>method<sp/>we<sp/>do<sp/>the<sp/>following:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Trigger<sp/>Initial<sp/>GPT<sp/>Researcher<sp/>report<sp/>based<sp/>on<sp/>task</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Generate<sp/>subtopics<sp/>from<sp/>research<sp/>summary</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>For<sp/>each<sp/>subtopic<sp/>the<sp/>headers<sp/>of<sp/>the<sp/>subtopic<sp/>report<sp/>are<sp/>extracted<sp/>and<sp/>accumulated</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>For<sp/>each<sp/>subtopic<sp/>a<sp/>report<sp/>is<sp/>generated<sp/>making<sp/>sure<sp/>that<sp/>any<sp/>information<sp/>about<sp/>the<sp/>headers<sp/>accumulated<sp/>until<sp/>now<sp/>are<sp/>not<sp/>re-generated.</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>An<sp/>additional<sp/>introduction<sp/>section<sp/>is<sp/>written<sp/>along<sp/>with<sp/>a<sp/>table<sp/>of<sp/>contents<sp/>constructed<sp/>from<sp/>the<sp/>entire<sp/>report.</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>The<sp/>final<sp/>report<sp/>is<sp/>constructed<sp/>by<sp/>appending<sp/>these<sp/>:<sp/>Intro<sp/>+<sp/>Table<sp/>of<sp/>contents<sp/>+<sp/>Subsection<sp/>reports</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/detailed_report/README.md"/>
+  </compounddef>
+</doxygen>

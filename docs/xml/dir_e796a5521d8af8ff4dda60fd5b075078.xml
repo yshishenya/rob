@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_e796a5521d8af8ff4dda60fd5b075078" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic</compoundname>
+    <innerfile refid="gpt__researcher_2llm__provider_2generic_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="base_8py">base.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classauth_1_1LoginResponse" kind="class" language="Python" prot="public">
+    <compoundname>auth::LoginResponse</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classauth_1_1LoginResponse_1a5592f669f1add7a37fa6ac7ae20f9a5a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str auth.LoginResponse::access_token</definition>
+        <argsstring></argsstring>
+        <name>access_token</name>
+        <qualifiedname>auth.LoginResponse.access_token</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Токен доступа, который используется для аутентификации пользователя в системе.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1LoginResponse_1a8f0ebb9afaa06895f6f43136546f5144" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int auth.LoginResponse::expires_in</definition>
+        <argsstring></argsstring>
+        <name>expires_in</name>
+        <qualifiedname>auth.LoginResponse.expires_in</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Время жизни токена доступа в секундах, после которого токен становится недействительным.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="47" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1LoginResponse_1af5bb1bc803d0dfa5221f102b90864529" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str auth.LoginResponse::expires_at</definition>
+        <argsstring></argsstring>
+        <name>expires_at</name>
+        <qualifiedname>auth.LoginResponse.expires_at</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Точная дата и время истечения токена доступа в формате ISO 8601.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="48" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1LoginResponse_1a57f09907080088273eb5c97eb63eec5e" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str auth.LoginResponse::refresh_token</definition>
+        <argsstring></argsstring>
+        <name>refresh_token</name>
+        <qualifiedname>auth.LoginResponse.refresh_token</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Токен для обновления доступа, который можно использовать для получения нового токена доступа после истечения текущего.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="49" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1LoginResponse_1a742f540112b817b4c5814bc9ad6873aa" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int auth.LoginResponse::refresh_expires_in</definition>
+        <argsstring></argsstring>
+        <name>refresh_expires_in</name>
+        <qualifiedname>auth.LoginResponse.refresh_expires_in</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Время жизни токена для обновления в секундах, после которого токен становится недействительным.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="50" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1LoginResponse_1a64c3eb6c643b86162df46ecf1bde5d1f" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str auth.LoginResponse::refresh_token_expires_at</definition>
+        <argsstring></argsstring>
+        <name>refresh_token_expires_at</name>
+        <qualifiedname>auth.LoginResponse.refresh_token_expires_at</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Точная дата и время истечения токена обновления в формате ISO 8601.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="51" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1LoginResponse_1a078d99d8cc7858e5e20e4f234381aa44" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool auth.LoginResponse::is_admin</definition>
+        <argsstring></argsstring>
+        <name>is_admin</name>
+        <qualifiedname>auth.LoginResponse.is_admin</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Флаг, указывающий, является ли пользователь администратором. True, если пользователь имеет права администратора.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="52" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>auth.LoginResponse</label>
+        <link refid="classauth_1_1LoginResponse"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>auth.LoginResponse</label>
+        <link refid="classauth_1_1LoginResponse"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+access_token</edgelabel>
+          <edgelabel>+expires_at</edgelabel>
+          <edgelabel>+refresh_token</edgelabel>
+          <edgelabel>+refresh_token_expires_at</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+expires_in</edgelabel>
+          <edgelabel>+refresh_expires_in</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+is_admin</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>bool</label>
+      </node>
+      <node id="4">
+        <label>int</label>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="45" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="45" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classauth_1_1LoginResponse_1a5592f669f1add7a37fa6ac7ae20f9a5a" prot="public" virt="non-virtual"><scope>auth::LoginResponse</scope><name>access_token</name></member>
+      <member refid="classauth_1_1LoginResponse_1af5bb1bc803d0dfa5221f102b90864529" prot="public" virt="non-virtual"><scope>auth::LoginResponse</scope><name>expires_at</name></member>
+      <member refid="classauth_1_1LoginResponse_1a8f0ebb9afaa06895f6f43136546f5144" prot="public" virt="non-virtual"><scope>auth::LoginResponse</scope><name>expires_in</name></member>
+      <member refid="classauth_1_1LoginResponse_1a078d99d8cc7858e5e20e4f234381aa44" prot="public" virt="non-virtual"><scope>auth::LoginResponse</scope><name>is_admin</name></member>
+      <member refid="classauth_1_1LoginResponse_1a742f540112b817b4c5814bc9ad6873aa" prot="public" virt="non-virtual"><scope>auth::LoginResponse</scope><name>refresh_expires_in</name></member>
+      <member refid="classauth_1_1LoginResponse_1a57f09907080088273eb5c97eb63eec5e" prot="public" virt="non-virtual"><scope>auth::LoginResponse</scope><name>refresh_token</name></member>
+      <member refid="classauth_1_1LoginResponse_1a64c3eb6c643b86162df46ecf1bde5d1f" prot="public" virt="non-virtual"><scope>auth::LoginResponse</scope><name>refresh_token_expires_at</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

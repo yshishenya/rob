@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cli_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacecli">cli</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecli_1a1575f9306adb5b73910ad4fc9253676c">cli.main</link> (<link linkend="_namespacecli_1aded26a9cf4c656ae51d8492a2bcea4f8">args</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecli_1acaca8ac2bee7e16ecd95cc31d0bb9c64">cli.cli</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecli_1a22e8d05830b557d4bad23cff231d0a3e">cli.type</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecli_1a4d57fcfd67bfdd5bf1bb5ef353ad3d04">cli.help</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacecli_1a65f014f9d134c9c500c920de65e2ad02">cli.choices</link> = [report_type.value for report_type in <link linkend="_classgpt__researcher_1_1utils_1_1enum_1_1ReportType">ReportType</link>]</para>
+</listitem>
+            <listitem><para>dict <link linkend="_namespacecli_1a775ffc6e10fa19dd31519ee6d29a01f3">cli.report_type_descriptions</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecli_1a83d9ca1ff34a81c6ccd03f84f79d9d53">cli.required</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecli_1aded26a9cf4c656ae51d8492a2bcea4f8">cli.args</link> = cli.parse_args()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

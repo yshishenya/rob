@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_a747e43da1c182c4993c25afd1989e8c" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider</compoundname>
+    <innerdir refid="dir_20e11079e1b0fa73e6b27e5721e8fd41">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/anthropic</innerdir>
+    <innerdir refid="dir_6d3af79848e10b5bed2428cc0bb78928">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/azureopenai</innerdir>
+    <innerdir refid="dir_e796a5521d8af8ff4dda60fd5b075078">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic</innerdir>
+    <innerdir refid="dir_73aba95ff0129f7e1d8dcc5e5f831f78">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google</innerdir>
+    <innerdir refid="dir_6472a882810021121e0921fa0d62aaae">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/groq</innerdir>
+    <innerdir refid="dir_fa70a3e284ed11c7aecfabc4d07ffecb">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/huggingface</innerdir>
+    <innerdir refid="dir_17870a2ffaeed3872d466c7c8a08cd13">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/mistral</innerdir>
+    <innerdir refid="dir_cd3a634799b777485adf2de054ab014d">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/ollama</innerdir>
+    <innerdir refid="dir_af4289b741e146665dba5feecafa62f5">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/openai</innerdir>
+    <innerdir refid="dir_beb445fafb0fdc9476d965a6735a1029">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/together</innerdir>
+    <innerfile refid="gpt__researcher_2llm__provider_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_db__seed_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classdb__seed_1_1User">db_seed.User</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacedb__seed">db_seed</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacedb__seed_1a70e5b0071a23a918022b1042bd19543d">db_seed.execute_query</link> (query, params=None, autocommit=False, use_default_db=False)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacedb__seed_1a6208bff4be72cd3a39474b32e919b20e">db_seed.reset_database</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacedb__seed_1a6c0a83c2690000b1ebe0151f2df7abbb">db_seed.create_admin</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespacedb__seed_1a117e9500c3cfbce3c47a78dce5d3387a">db_seed.DATABASE_URL</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedb__seed_1a3a13123e1feae6f94734cb4ce2458a4a">db_seed.DEFAULT_DATABASE_URL</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacedb__seed_1a0b4a141c01c3ca0e89d388886fa22e64">db_seed.engine</link> = create_engine(<link linkend="_namespacedb__seed_1a117e9500c3cfbce3c47a78dce5d3387a">DATABASE_URL</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacedb__seed_1a52ec56261a6019cbf3d0a865706088e7">db_seed.default_engine</link> = create_engine(<link linkend="_namespacedb__seed_1a3a13123e1feae6f94734cb4ce2458a4a">DEFAULT_DATABASE_URL</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacedb__seed_1ae13a878e1ef07e9587b3260140e80eef">db_seed.SessionLocal</link> = sessionmaker(autocommit=False, autoflush=False, <link linkend="_namespacedb__seed_1ab87b17b414c85510bede32dbaedd38c9">bind</link>=<link linkend="_namespacedb__seed_1a0b4a141c01c3ca0e89d388886fa22e64">engine</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacedb__seed_1a0e93e718046a1c51c798a58b993e93ba">db_seed.Base</link> = declarative_base()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacedb__seed_1ab87b17b414c85510bede32dbaedd38c9">db_seed.bind</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

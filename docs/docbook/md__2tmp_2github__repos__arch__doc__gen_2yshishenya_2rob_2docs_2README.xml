@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README" xml:lang="en-US">
+<title>Website</title>
+<indexterm><primary>Website</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README_1autotoc_md177"/> This website is built using <link xlink:href="https://docusaurus.io/">Docusaurus 2</link>, a modern static website generator.</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README_1autotoc_md178">
+<title><title>Prerequisites</title></title>
+
+<para>To build and test documentation locally, begin by downloading and installing <link xlink:href="https://nodejs.org/en/download/">Node.js</link>, and then installing <link xlink:href="https://classic.yarnpkg.com/en/">Yarn</link>. On Windows, you can install via the npm package manager (npm) which comes bundled with Node.js:</para>
+
+<para><literallayout><computeroutput>npm&#32;install&#32;--global&#32;yarn
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README_1autotoc_md179">
+<title><title>Installation</title></title>
+
+<para><literallayout><computeroutput>pip&#32;install&#32;pydoc-markdown
+cd&#32;website
+yarn&#32;install
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README_1autotoc_md180">
+<title><title>Local Development</title></title>
+
+<para>Navigate to the website folder and run:</para>
+
+<para><literallayout><computeroutput>pydoc-markdown
+yarn&#32;start
+</computeroutput></literallayout></para>
+
+<para>This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. </para>
+</section>
+</section>

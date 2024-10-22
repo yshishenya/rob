@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_f29e94e6e5621143471d2f522ece5576" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog Directory Reference</primary></indexterm>
+Directory dependency graph for blog:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_f29e94e6e5621143471d2f522ece5576_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_272079b82ab852f477ff6e61ff538a4b">2023-09-22-gpt-researcher</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_69c17eae910d071de5965501a80b28a0">2023-11-12-openai-assistant</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_7f010a5330323b73b54b7b0ce04f1ea3">2024-05-19-gptr-langgraph</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

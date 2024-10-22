@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="html_8py" kind="file" language="Python">
+    <compoundname>html.py</compoundname>
+    <innernamespace refid="namespaceprocessing">processing</innernamespace>
+    <innernamespace refid="namespaceprocessing_1_1html">processing::html</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceprocessing" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;HTML<sp/>processing<sp/>functions&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>annotations</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>bs4<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BeautifulSoup</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>requests.compat<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>urljoin</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespaceprocessing_1_1html_1a8a84862c80f9f7abf29623100cdf59a1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1html_1a8a84862c80f9f7abf29623100cdf59a1" kindref="member">extract_hyperlinks</ref>(soup:<sp/>BeautifulSoup,<sp/>base_url:<sp/>str)<sp/>-&gt;<sp/>list[tuple[str,<sp/>str]]:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Extract<sp/>hyperlinks<sp/>from<sp/>a<sp/>BeautifulSoup<sp/>object</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soup<sp/>(BeautifulSoup):<sp/>The<sp/>BeautifulSoup<sp/>object</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_url<sp/>(str):<sp/>The<sp/>base<sp/>URL</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[Tuple[str,<sp/>str]]:<sp/>The<sp/>extracted<sp/>hyperlinks</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(link.text,<sp/>urljoin(base_url,<sp/>link[</highlight><highlight class="stringliteral">&quot;href&quot;</highlight><highlight class="normal">]))</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>link<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>soup.find_all(</highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">,<sp/>href=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespaceprocessing_1_1html_1a1ae4a545f1c830d0cd2d9da6291ff50d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1html_1a1ae4a545f1c830d0cd2d9da6291ff50d" kindref="member">format_hyperlinks</ref>(hyperlinks:<sp/>list[tuple[str,<sp/>str]])<sp/>-&gt;<sp/>list[str]:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Format<sp/>hyperlinks<sp/>to<sp/>be<sp/>displayed<sp/>to<sp/>the<sp/>user</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hyperlinks<sp/>(List[Tuple[str,<sp/>str]]):<sp/>The<sp/>hyperlinks<sp/>to<sp/>format</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[str]:<sp/>The<sp/>formatted<sp/>hyperlinks</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>[f</highlight><highlight class="stringliteral">&quot;{link_text}<sp/>({link_url})&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>link_text,<sp/>link_url<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>hyperlinks]</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/html.py"/>
+  </compounddef>
+</doxygen>

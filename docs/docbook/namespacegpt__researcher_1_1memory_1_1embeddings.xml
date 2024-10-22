@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher_1_1memory_1_1embeddings" xml:lang="en-US">
+<title>gpt_researcher.memory.embeddings Namespace Reference</title>
+<indexterm><primary>gpt_researcher.memory.embeddings</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classgpt__researcher_1_1memory_1_1embeddings_1_1Memory">Memory</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1memory_1_1embeddings_1acba50864a73b23ad689f762c7805e8cd">OPENAI_EMBEDDING_MODEL</link> = &quot;text-embedding-3-large&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1memory_1_1embeddings_1acba50864a73b23ad689f762c7805e8cd"/><section>
+    <title>OPENAI_EMBEDDING_MODEL</title>
+<indexterm><primary>OPENAI_EMBEDDING_MODEL</primary><secondary>gpt_researcher.memory.embeddings</secondary></indexterm>
+<indexterm><primary>gpt_researcher.memory.embeddings</primary><secondary>OPENAI_EMBEDDING_MODEL</secondary></indexterm>
+<para><computeroutput>str gpt_researcher.memory.embeddings.OPENAI_EMBEDDING_MODEL = &quot;text-embedding-3-large&quot;</computeroutput></para></section>
+</section>
+</section>

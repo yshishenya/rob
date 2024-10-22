@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_a9499db4338a32c38b4cdeeb0d839d88" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth Directory Reference</primary></indexterm>
+Directory dependency graph for auth:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_a9499db4338a32c38b4cdeeb0d839d88_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_auth_8py">auth.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_redis__token__storage_8py">redis_token_storage.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_token__storage_8py">token_storage.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

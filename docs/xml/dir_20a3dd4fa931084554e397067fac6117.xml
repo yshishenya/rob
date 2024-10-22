@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_20a3dd4fa931084554e397067fac6117" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper</compoundname>
+    <innerdir refid="dir_c2322bc8ce27c479ab1e70b3921bfaa8">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/arxiv</innerdir>
+    <innerdir refid="dir_93c3e6444ead30d4602574fa7e788534">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup</innerdir>
+    <innerdir refid="dir_6cc4a516d36966cf3b002e9417ad9c20">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/newspaper</innerdir>
+    <innerdir refid="dir_f226f89b749fe429606d1d77bcfbafe2">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf</innerdir>
+    <innerdir refid="dir_cf8b1aeaeeffac060219f334b3e4f4a5">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/web_base_loader</innerdir>
+    <innerfile refid="gpt__researcher_2scraper_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="scraper_8py">scraper.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/"/>
+  </compounddef>
+</doxygen>

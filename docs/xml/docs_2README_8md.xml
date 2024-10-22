@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="docs_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Website</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>website<sp/>is<sp/>built<sp/>using<sp/>[Docusaurus<sp/>2](https://docusaurus.io/),<sp/>a<sp/>modern<sp/>static<sp/>website<sp/>generator.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Prerequisites</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>build<sp/>and<sp/>test<sp/>documentation<sp/>locally,<sp/>begin<sp/>by<sp/>downloading<sp/>and<sp/>installing<sp/>[Node.js](https://nodejs.org/en/download/),<sp/>and<sp/>then<sp/>installing<sp/>[Yarn](https://classic.yarnpkg.com/en/).</highlight></codeline>
+<codeline><highlight class="normal">On<sp/>Windows,<sp/>you<sp/>can<sp/>install<sp/>via<sp/>the<sp/>npm<sp/>package<sp/>manager<sp/>(npm)<sp/>which<sp/>comes<sp/>bundled<sp/>with<sp/>Node.js:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```console</highlight></codeline>
+<codeline><highlight class="normal">npm<sp/>install<sp/>--global<sp/>yarn</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Installation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```console</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>pydoc-markdown</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>website</highlight></codeline>
+<codeline><highlight class="normal">yarn<sp/>install</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Local<sp/>Development</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Navigate<sp/>to<sp/>the<sp/>website<sp/>folder<sp/>and<sp/>run:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```console</highlight></codeline>
+<codeline><highlight class="normal">pydoc-markdown</highlight></codeline>
+<codeline><highlight class="normal">yarn<sp/>start</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>command<sp/>starts<sp/>a<sp/>local<sp/>development<sp/>server<sp/>and<sp/>opens<sp/>up<sp/>a<sp/>browser<sp/>window.<sp/>Most<sp/>changes<sp/>are<sp/>reflected<sp/>live<sp/>without<sp/>having<sp/>to<sp/>restart<sp/>the<sp/>server.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/README.md"/>
+  </compounddef>
+</doxygen>

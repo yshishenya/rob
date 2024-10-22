@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="websocket__manager_8py" kind="file" language="Python">
+    <compoundname>websocket_manager.py</compoundname>
+    <innerclass refid="classbackend_1_1websocket__manager_1_1WebSocketManager" prot="public">backend::websocket_manager::WebSocketManager</innerclass>
+    <innernamespace refid="namespacebackend">backend</innernamespace>
+    <innernamespace refid="namespacebackend_1_1websocket__manager">backend::websocket_manager</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacebackend_1_1websocket__manager" refkind="compound"><highlight class="comment">#<sp/>connect<sp/>any<sp/>client<sp/>to<sp/>gpt-researcher<sp/>using<sp/>websocket</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>asyncio</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>datetime</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Dict,<sp/>List</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>fastapi<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>WebSocket</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacebackend_1_1report__type" kindref="compound">backend.report_type</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BasicReport,<sp/>DetailedReport</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacegpt__researcher_1_1utils_1_1enum" kindref="compound">gpt_researcher.utils.enum</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ReportType</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classbackend_1_1websocket__manager_1_1WebSocketManager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classbackend_1_1websocket__manager_1_1WebSocketManager" kindref="compound">WebSocketManager</ref>:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Manage<sp/>websockets&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1abe026167abfef517ade843c9c7686e6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1abe026167abfef517ade843c9c7686e6b" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Initialize<sp/>the<sp/>WebSocketManager<sp/>class.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.active_connections:<sp/>List[WebSocket]<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.sender_tasks:<sp/>Dict[WebSocket,<sp/>asyncio.Task]<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.message_queues:<sp/>Dict[WebSocket,<sp/>asyncio.Queue]<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea" kindref="member">start_sender</ref>(self,<sp/>websocket:<sp/>WebSocket):</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Start<sp/>the<sp/>sender<sp/>task.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>queue<sp/>=<sp/>self.message_queues.get(websocket)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>queue:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>=<sp/>await<sp/>queue.get()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>websocket<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.active_connections:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>websocket.send_text(message)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1af91d24f74593c8730180989c3bd3e6af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1af91d24f74593c8730180989c3bd3e6af" kindref="member">connect</ref>(self,<sp/>websocket:<sp/>WebSocket):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Connect<sp/>a<sp/>websocket.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>websocket.accept()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.active_connections.append(websocket)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.message_queues[websocket]<sp/>=<sp/>asyncio.Queue()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.sender_tasks[websocket]<sp/>=<sp/>asyncio.create_task(</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea" kindref="member">start_sender</ref>(websocket))</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1a2e59a99e26eae2043d78dc1bbd6cb3b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1a2e59a99e26eae2043d78dc1bbd6cb3b7" kindref="member">disconnect</ref>(self,<sp/>websocket:<sp/>WebSocket):</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Disconnect<sp/>a<sp/>websocket.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>websocket<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.active_connections:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.active_connections.remove(websocket)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.sender_tasks[websocket].cancel()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>self.message_queues[websocket].put(</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del<sp/>self.sender_tasks[websocket]</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del<sp/>self.message_queues[websocket]</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1ae59b7735cdfb361b4e5817f2539f2fc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1ae59b7735cdfb361b4e5817f2539f2fc0" kindref="member">start_streaming</ref>(self,<sp/>task,<sp/>report_type,<sp/>report_source,<sp/>websocket):</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Start<sp/>streaming<sp/>the<sp/>output.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/><ref refid="namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870" kindref="member">run_agent</ref>(task,<sp/>report_type,<sp/>report_source,<sp/>websocket)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>report</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870" kindref="member">run_agent</ref>(task,<sp/>report_type,<sp/>report_source,<sp/>websocket):</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Run<sp/>the<sp/>agent.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>measure<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>start_time<sp/>=<sp/>datetime.datetime.now()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>add<sp/>customized<sp/>JSON<sp/>config<sp/>file<sp/>path<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>config_path<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Instead<sp/>of<sp/>running<sp/>the<sp/>agent<sp/>directly<sp/>run<sp/>it<sp/>through<sp/>the<sp/>different<sp/>report<sp/>type<sp/>classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>report_type<sp/>==<sp/>ReportType.DetailedReport.value:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/><ref refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport" kindref="compound">DetailedReport</ref>(query=task,<sp/>report_type=report_type,<sp/>report_source=report_source,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>source_urls=</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>config_path=config_path,<sp/>websocket=websocket)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/><ref refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport" kindref="compound">BasicReport</ref>(query=task,<sp/>report_type=report_type,<sp/>report_source=report_source,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>source_urls=</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>config_path=config_path,<sp/>websocket=websocket)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.run()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>measure<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>end_time<sp/>=<sp/>datetime.datetime.now()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>await<sp/>websocket.send_json({</highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;logs&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;output&quot;</highlight><highlight class="normal">:<sp/>f</highlight><highlight class="stringliteral">&quot;\nTotal<sp/>run<sp/>time:<sp/>{end_time<sp/>-<sp/>start_time}\n&quot;</highlight><highlight class="normal">})</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>report</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py"/>
+  </compounddef>
+</doxygen>

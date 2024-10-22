@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classagents_1_1researcher_1_1ResearchAgent" kind="class" language="Python" prot="public">
+    <compoundname>agents::researcher::ResearchAgent</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagents_1_1researcher_1_1ResearchAgent_1ac21649c2369981f9a85b9502d0280ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.researcher.ResearchAgent.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>agents.researcher.ResearchAgent.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1researcher_1_1ResearchAgent_1a573ebcc81dc8441d33467111de27673e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.researcher.ResearchAgent.research</definition>
+        <argsstring>(self, str query, str research_report=&quot;research_report&quot;, str parent_query=&quot;&quot;, verbose=True, source=&quot;web&quot;)</argsstring>
+        <name>research</name>
+        <qualifiedname>agents.researcher.ResearchAgent.research</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>research_report</declname>
+          <defval>&quot;research_report&quot;</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>parent_query</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>source</type>
+          <defname>source</defname>
+          <defval>&quot;web&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" bodystart="15" bodyend="25"/>
+        <referencedby refid="classagents_1_1researcher_1_1ResearchAgent_1aeb527602b750a8e7895ae1cbee59fc25" compoundref="researcher_8py" startline="35" endline="42">agents.researcher.ResearchAgent.run_initial_research</referencedby>
+        <referencedby refid="classagents_1_1researcher_1_1ResearchAgent_1ae1c64522521fdd4af4951a7cfbd6a6d4" compoundref="researcher_8py" startline="26" endline="34">agents.researcher.ResearchAgent.run_subtopic_research</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1researcher_1_1ResearchAgent_1ae1c64522521fdd4af4951a7cfbd6a6d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.researcher.ResearchAgent.run_subtopic_research</definition>
+        <argsstring>(self, str parent_query, str subtopic, bool verbose=True, source=&quot;web&quot;)</argsstring>
+        <name>run_subtopic_research</name>
+        <qualifiedname>agents.researcher.ResearchAgent.run_subtopic_research</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>parent_query</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>subtopic</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>verbose</declname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>source</type>
+          <defname>source</defname>
+          <defval>&quot;web&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" bodystart="26" bodyend="34"/>
+        <references refid="classagents_1_1researcher_1_1ResearchAgent_1a573ebcc81dc8441d33467111de27673e" compoundref="researcher_8py" startline="15" endline="25">agents.researcher.ResearchAgent.research</references>
+        <referencedby refid="classagents_1_1researcher_1_1ResearchAgent_1ae3de3a9abfe5ecb5126c89560c14fa92" compoundref="researcher_8py" startline="43" endline="53">agents.researcher.ResearchAgent.run_depth_research</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1researcher_1_1ResearchAgent_1aeb527602b750a8e7895ae1cbee59fc25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.researcher.ResearchAgent.run_initial_research</definition>
+        <argsstring>(self, dict research_state)</argsstring>
+        <name>run_initial_research</name>
+        <qualifiedname>agents.researcher.ResearchAgent.run_initial_research</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" line="35" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" bodystart="35" bodyend="42"/>
+        <references refid="classagents_1_1researcher_1_1ResearchAgent_1a573ebcc81dc8441d33467111de27673e" compoundref="researcher_8py" startline="15" endline="25">agents.researcher.ResearchAgent.research</references>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1researcher_1_1ResearchAgent_1ae3de3a9abfe5ecb5126c89560c14fa92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.researcher.ResearchAgent.run_depth_research</definition>
+        <argsstring>(self, dict draft_state)</argsstring>
+        <name>run_depth_research</name>
+        <qualifiedname>agents.researcher.ResearchAgent.run_depth_research</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>draft_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" line="43" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" bodystart="43" bodyend="53"/>
+        <references refid="classagents_1_1researcher_1_1ResearchAgent_1ae1c64522521fdd4af4951a7cfbd6a6d4" compoundref="researcher_8py" startline="26" endline="34">agents.researcher.ResearchAgent.run_subtopic_research</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>agents.researcher.ResearchAgent</label>
+        <link refid="classagents_1_1researcher_1_1ResearchAgent"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/researcher.py" bodystart="10" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classagents_1_1researcher_1_1ResearchAgent_1ac21649c2369981f9a85b9502d0280ea4" prot="public" virt="non-virtual"><scope>agents::researcher::ResearchAgent</scope><name>__init__</name></member>
+      <member refid="classagents_1_1researcher_1_1ResearchAgent_1a573ebcc81dc8441d33467111de27673e" prot="public" virt="non-virtual"><scope>agents::researcher::ResearchAgent</scope><name>research</name></member>
+      <member refid="classagents_1_1researcher_1_1ResearchAgent_1ae3de3a9abfe5ecb5126c89560c14fa92" prot="public" virt="non-virtual"><scope>agents::researcher::ResearchAgent</scope><name>run_depth_research</name></member>
+      <member refid="classagents_1_1researcher_1_1ResearchAgent_1aeb527602b750a8e7895ae1cbee59fc25" prot="public" virt="non-virtual"><scope>agents::researcher::ResearchAgent</scope><name>run_initial_research</name></member>
+      <member refid="classagents_1_1researcher_1_1ResearchAgent_1ae1c64522521fdd4af4951a7cfbd6a6d4" prot="public" virt="non-virtual"><scope>agents::researcher::ResearchAgent</scope><name>run_subtopic_research</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

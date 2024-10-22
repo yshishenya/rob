@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_a24b43acf419029ff7cae0fd96806de7" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils Directory Reference</primary></indexterm>
+Directory dependency graph for utils:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_a24b43acf419029ff7cae0fd96806de7_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_multi__agents_2agents_2utils_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_file__formats_8py">file_formats.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_llms_8py">llms.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_views_8py">views.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

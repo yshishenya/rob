@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="pip-package_8md" kind="file" language="Markdown">
+    <compoundname>pip-package.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>PIP<sp/>Package</highlight></codeline>
+<codeline><highlight class="normal">[![PyPI<sp/>version](https://badge.fury.io/py/gpt-researcher.svg)](https://badge.fury.io/py/gpt-researcher)</highlight></codeline>
+<codeline><highlight class="normal">[![Open<sp/>In<sp/>Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/assafelovic/gpt-researcher/blob/master/examples/pip-run.ipynb)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">🌟<sp/>**Exciting<sp/>News!**<sp/>Now,<sp/>you<sp/>can<sp/>integrate<sp/>`gpt-researcher`<sp/>with<sp/>your<sp/>apps<sp/>seamlessly!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Steps<sp/>to<sp/>Install<sp/>GPT<sp/>Researcher<sp/>🛠️</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Follow<sp/>these<sp/>easy<sp/>steps<sp/>to<sp/>get<sp/>started:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">0.<sp/>**Pre-requisite**:<sp/>Ensure<sp/>Python<sp/>3.10+<sp/>is<sp/>installed<sp/>on<sp/>your<sp/>machine<sp/>💻</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>**Install<sp/>gpt-researcher**:<sp/>Grab<sp/>the<sp/>official<sp/>package<sp/>from<sp/>[PyPi](https://pypi.org/project/gpt-researcher/).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>gpt-researcher</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.<sp/>**Environment<sp/>Variables:**<sp/>Create<sp/>a<sp/>.env<sp/>file<sp/>with<sp/>your<sp/>OpenAI<sp/>API<sp/>key<sp/>or<sp/>simply<sp/>export<sp/>it</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">export<sp/>OPENAI_API_KEY={Your<sp/>OpenAI<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">export<sp/>TAVILY_API_KEY={Your<sp/>Tavily<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">3.<sp/>**Start<sp/>using<sp/>GPT<sp/>Researcher<sp/>in<sp/>your<sp/>own<sp/>codebase**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Example<sp/>Usage<sp/>📝</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>asyncio</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>asyncio</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>get_report(query:<sp/>str,<sp/>report_type:<sp/>str)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query,<sp/>report_type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>research_result<sp/>=<sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>report</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">if<sp/>__name__<sp/>==<sp/>&quot;__main__&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>query<sp/>=<sp/>&quot;what<sp/>team<sp/>may<sp/>win<sp/>the<sp/>NBA<sp/>finals?&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report_type<sp/>=<sp/>&quot;research_report&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>asyncio.run(get_report(query,<sp/>report_type))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(report)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Specific<sp/>Examples<sp/>🌐</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example<sp/>1:<sp/>Research<sp/>Report<sp/>📚</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">query<sp/>=<sp/>&quot;Latest<sp/>developments<sp/>in<sp/>renewable<sp/>energy<sp/>technologies&quot;</highlight></codeline>
+<codeline><highlight class="normal">report_type<sp/>=<sp/>&quot;research_report&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example<sp/>2:<sp/>Resource<sp/>Report<sp/>📋</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">query<sp/>=<sp/>&quot;List<sp/>of<sp/>top<sp/>AI<sp/>conferences<sp/>in<sp/>2023&quot;</highlight></codeline>
+<codeline><highlight class="normal">report_type<sp/>=<sp/>&quot;resource_report&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example<sp/>3:<sp/>Outline<sp/>Report<sp/>📝</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">query<sp/>=<sp/>&quot;Outline<sp/>for<sp/>an<sp/>article<sp/>on<sp/>the<sp/>impact<sp/>of<sp/>AI<sp/>in<sp/>education&quot;</highlight></codeline>
+<codeline><highlight class="normal">report_type<sp/>=<sp/>&quot;outline_report&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Integration<sp/>with<sp/>Web<sp/>Frameworks<sp/>🌍</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>FastAPI<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>fastapi<sp/>import<sp/>FastAPI</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>asyncio</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">app<sp/>=<sp/>FastAPI()</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@app.get(&quot;/report/{report_type}&quot;)</highlight></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>get_report(query:<sp/>str,<sp/>report_type:<sp/>str)<sp/>-&gt;<sp/>dict:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query,<sp/>report_type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>research_result<sp/>=<sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>{&quot;report&quot;:<sp/>report}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Run<sp/>the<sp/>server</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>uvicorn<sp/>main:app<sp/>--reload</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Flask<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Pre-requisite**:<sp/>Install<sp/>flask<sp/>with<sp/>the<sp/>async<sp/>extra.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>&apos;flask[async]&apos;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>flask<sp/>import<sp/>Flask,<sp/>request</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">app<sp/>=<sp/>Flask(__name__)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">@app.route(&apos;/report/&lt;report_type&gt;&apos;,<sp/>methods=[&apos;GET&apos;])</highlight></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>get_report(report_type):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>query<sp/>=<sp/>request.args.get(&apos;query&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query,<sp/>report_type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>research_result<sp/>=<sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>report</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Run<sp/>the<sp/>server</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>flask<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">**Run<sp/>the<sp/>server**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">flask<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Example<sp/>Request**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-X<sp/>GET<sp/>&quot;http://localhost:5000/report/research_report?query=what<sp/>team<sp/>may<sp/>win<sp/>the<sp/>nba<sp/>finals?&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Note**:<sp/>The<sp/>above<sp/>code<sp/>snippets<sp/>are<sp/>just<sp/>examples.<sp/>You<sp/>can<sp/>customize<sp/>them<sp/>as<sp/>per<sp/>your<sp/>requirements.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/pip-package.md"/>
+  </compounddef>
+</doxygen>

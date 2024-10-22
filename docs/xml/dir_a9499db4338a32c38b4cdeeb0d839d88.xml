@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_a9499db4338a32c38b4cdeeb0d839d88" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth</compoundname>
+    <innerfile refid="auth_8py">auth.py</innerfile>
+    <innerfile refid="redis__token__storage_8py">redis_token_storage.py</innerfile>
+    <innerfile refid="token__storage_8py">token_storage.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/"/>
+  </compounddef>
+</doxygen>

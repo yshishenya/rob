@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="2023-11-12-openai-assistant_2index_8md" kind="file" language="Markdown">
+    <compoundname>index.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">slug:<sp/>building-openai-assistant</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>How<sp/>to<sp/>build<sp/>an<sp/>OpenAI<sp/>Assistant<sp/>with<sp/>Internet<sp/>access</highlight></codeline>
+<codeline><highlight class="normal">authors:<sp/>[assafe]</highlight></codeline>
+<codeline><highlight class="normal">tags:<sp/>[tavily,<sp/>search-api,<sp/>openai,<sp/>assistant-api]</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OpenAI<sp/>has<sp/>done<sp/>it<sp/>again<sp/>with<sp/>a<sp/>[groundbreaking<sp/>DevDay](https://openai.com/blog/new-models-and-developer-products-announced-at-devday)<sp/>showcasing<sp/>some<sp/>of<sp/>the<sp/>latest<sp/>improvements<sp/>to<sp/>the<sp/>OpenAI<sp/>suite<sp/>of<sp/>tools,<sp/>products<sp/>and<sp/>services.<sp/>One<sp/>major<sp/>release<sp/>was<sp/>the<sp/>new<sp/>[Assistants<sp/>API](https://platform.openai.com/docs/assistants/overview)<sp/>that<sp/>makes<sp/>it<sp/>easier<sp/>for<sp/>developers<sp/>to<sp/>build<sp/>their<sp/>own<sp/>assistive<sp/>AI<sp/>apps<sp/>that<sp/>have<sp/>goals<sp/>and<sp/>can<sp/>call<sp/>models<sp/>and<sp/>tools.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>new<sp/>Assistants<sp/>API<sp/>currently<sp/>supports<sp/>three<sp/>types<sp/>of<sp/>tools:<sp/>Code<sp/>Interpreter,<sp/>Retrieval,<sp/>and<sp/>Function<sp/>calling.<sp/>Although<sp/>you<sp/>might<sp/>expect<sp/>the<sp/>Retrieval<sp/>tool<sp/>to<sp/>support<sp/>online<sp/>information<sp/>retrieval<sp/>(such<sp/>as<sp/>search<sp/>APIs<sp/>or<sp/>as<sp/>ChatGPT<sp/>plugins),<sp/>it<sp/>only<sp/>supports<sp/>raw<sp/>data<sp/>for<sp/>now<sp/>such<sp/>as<sp/>text<sp/>or<sp/>CSV<sp/>files.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>blog<sp/>will<sp/>demonstrate<sp/>how<sp/>to<sp/>leverage<sp/>the<sp/>latest<sp/>Assistants<sp/>API<sp/>with<sp/>online<sp/>information<sp/>using<sp/>the<sp/>function<sp/>calling<sp/>tool.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>skip<sp/>the<sp/>tutorial<sp/>below,<sp/>feel<sp/>free<sp/>to<sp/>check<sp/>out<sp/>the<sp/>full<sp/>[Github<sp/>Gist<sp/>here](https://gist.github.com/assafelovic/579822cd42d52d80db1e1c1ff82ffffd).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">At<sp/>a<sp/>high<sp/>level,<sp/>a<sp/>typical<sp/>integration<sp/>of<sp/>the<sp/>Assistants<sp/>API<sp/>has<sp/>the<sp/>following<sp/>steps:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Create<sp/>an<sp/>[Assistant](https://platform.openai.com/docs/api-reference/assistants/createAssistant)<sp/>in<sp/>the<sp/>API<sp/>by<sp/>defining<sp/>its<sp/>custom<sp/>instructions<sp/>and<sp/>picking<sp/>a<sp/>model.<sp/>If<sp/>helpful,<sp/>enable<sp/>tools<sp/>like<sp/>Code<sp/>Interpreter,<sp/>Retrieval,<sp/>and<sp/>Function<sp/>calling.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Create<sp/>a<sp/>[Thread](https://platform.openai.com/docs/api-reference/threads)<sp/>when<sp/>a<sp/>user<sp/>starts<sp/>a<sp/>conversation.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Add<sp/>[Messages](https://platform.openai.com/docs/api-reference/messages)<sp/>to<sp/>the<sp/>Thread<sp/>as<sp/>the<sp/>user<sp/>ask<sp/>questions.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Run](https://platform.openai.com/docs/api-reference/runs)<sp/>the<sp/>Assistant<sp/>on<sp/>the<sp/>Thread<sp/>to<sp/>trigger<sp/>responses.<sp/>This<sp/>automatically<sp/>calls<sp/>the<sp/>relevant<sp/>tools.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>you<sp/>can<sp/>see<sp/>below,<sp/>an<sp/>Assistant<sp/>object<sp/>includes<sp/>Threads<sp/>for<sp/>storing<sp/>and<sp/>handling<sp/>conversation<sp/>sessions<sp/>between<sp/>the<sp/>assistant<sp/>and<sp/>users,<sp/>and<sp/>Run<sp/>for<sp/>invocation<sp/>of<sp/>an<sp/>Assistant<sp/>on<sp/>a<sp/>Thread.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![OpenAI<sp/>Assistant<sp/>Object](./diagram-assistant.jpeg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Let’s<sp/>go<sp/>ahead<sp/>and<sp/>implement<sp/>these<sp/>steps<sp/>one<sp/>by<sp/>one!<sp/>For<sp/>the<sp/>example,<sp/>we<sp/>will<sp/>build<sp/>a<sp/>finance<sp/>GPT<sp/>that<sp/>can<sp/>provide<sp/>insights<sp/>about<sp/>financial<sp/>questions.<sp/>We<sp/>will<sp/>use<sp/>the<sp/>[OpenAI<sp/>Python<sp/>SDK<sp/>v1.2](https://github.com/openai/openai-python/tree/main#installation)<sp/>and<sp/>[Tavily<sp/>Search<sp/>API](https://tavily.com).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First<sp/>things<sp/>first,<sp/>let’s<sp/>define<sp/>the<sp/>assistant’s<sp/>instructions:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">assistant_prompt_instruction<sp/>=<sp/>&quot;&quot;&quot;You<sp/>are<sp/>a<sp/>finance<sp/>expert.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Your<sp/>goal<sp/>is<sp/>to<sp/>provide<sp/>answers<sp/>based<sp/>on<sp/>information<sp/>from<sp/>the<sp/>internet.<sp/></highlight></codeline>
+<codeline><highlight class="normal">You<sp/>must<sp/>use<sp/>the<sp/>provided<sp/>Tavily<sp/>search<sp/>API<sp/>function<sp/>to<sp/>find<sp/>relevant<sp/>online<sp/>information.<sp/></highlight></codeline>
+<codeline><highlight class="normal">You<sp/>should<sp/>never<sp/>use<sp/>your<sp/>own<sp/>knowledge<sp/>to<sp/>answer<sp/>questions.</highlight></codeline>
+<codeline><highlight class="normal">Please<sp/>include<sp/>relevant<sp/>url<sp/>sources<sp/>in<sp/>the<sp/>end<sp/>of<sp/>your<sp/>answers.</highlight></codeline>
+<codeline><highlight class="normal">&quot;&quot;&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Next,<sp/>let’s<sp/>finalize<sp/>step<sp/>1<sp/>and<sp/>create<sp/>an<sp/>assistant<sp/>using<sp/>the<sp/>latest<sp/>[GPT-4<sp/>Turbo<sp/>model](https://github.com/openai/openai-python/tree/main#installation)<sp/>(128K<sp/>context),<sp/>and<sp/>the<sp/>call<sp/>function<sp/>using<sp/>the<sp/>[Tavily<sp/>web<sp/>search<sp/>API](https://tavily.com/):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Create<sp/>an<sp/>assistant</highlight></codeline>
+<codeline><highlight class="normal">assistant<sp/>=<sp/>client.beta.assistants.create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>instructions=assistant_prompt_instruction,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>model=&quot;gpt-4-1106-preview&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tools=[{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;type&quot;:<sp/>&quot;function&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;function&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;name&quot;:<sp/>&quot;tavily_search&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;description&quot;:<sp/>&quot;Get<sp/>information<sp/>on<sp/>recent<sp/>events<sp/>from<sp/>the<sp/>web.&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;parameters&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;type&quot;:<sp/>&quot;object&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;properties&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;query&quot;:<sp/>{&quot;type&quot;:<sp/>&quot;string&quot;,<sp/>&quot;description&quot;:<sp/>&quot;The<sp/>search<sp/>query<sp/>to<sp/>use.<sp/>For<sp/>example:<sp/>&apos;Latest<sp/>news<sp/>on<sp/>Nvidia<sp/>stock<sp/>performance&apos;&quot;},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;required&quot;:<sp/>[&quot;query&quot;]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}]</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Step<sp/>2+3<sp/>are<sp/>quite<sp/>straight<sp/>forward,<sp/>we’ll<sp/>initiate<sp/>a<sp/>new<sp/>thread<sp/>and<sp/>update<sp/>it<sp/>with<sp/>a<sp/>user<sp/>message:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">thread<sp/>=<sp/>client.beta.threads.create()</highlight></codeline>
+<codeline><highlight class="normal">user_input<sp/>=<sp/>input(&quot;You:<sp/>&quot;)</highlight></codeline>
+<codeline><highlight class="normal">message<sp/>=<sp/>client.beta.threads.messages.create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>thread_id=thread.id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>role=&quot;user&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>content=user_input,</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Finally,<sp/>we’ll<sp/>run<sp/>the<sp/>assistant<sp/>on<sp/>the<sp/>thread<sp/>to<sp/>trigger<sp/>the<sp/>function<sp/>call<sp/>and<sp/>get<sp/>the<sp/>response:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">run<sp/>=<sp/>client.beta.threads.runs.create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>thread_id=thread.id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assistant_id=assistant_id,</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">So<sp/>far<sp/>so<sp/>good!<sp/>But<sp/>this<sp/>is<sp/>where<sp/>it<sp/>gets<sp/>a<sp/>bit<sp/>messy.<sp/>Unlike<sp/>with<sp/>the<sp/>regular<sp/>GPT<sp/>APIs,<sp/>the<sp/>Assistants<sp/>API<sp/>doesn’t<sp/>return<sp/>a<sp/>synchronous<sp/>response,<sp/>but<sp/>returns<sp/>a<sp/>status.<sp/>This<sp/>allows<sp/>for<sp/>asynchronous<sp/>operations<sp/>across<sp/>assistants,<sp/>but<sp/>requires<sp/>more<sp/>overhead<sp/>for<sp/>fetching<sp/>statuses<sp/>and<sp/>dealing<sp/>with<sp/>each<sp/>manually.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Status<sp/>Diagram](./diagram-1.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>manage<sp/>this<sp/>status<sp/>lifecycle,<sp/>let’s<sp/>build<sp/>a<sp/>function<sp/>that<sp/>can<sp/>be<sp/>reused<sp/>and<sp/>handles<sp/>waiting<sp/>for<sp/>various<sp/>statuses<sp/>(such<sp/>as<sp/>‘requires_action’):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Function<sp/>to<sp/>wait<sp/>for<sp/>a<sp/>run<sp/>to<sp/>complete</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>wait_for_run_completion(thread_id,<sp/>run_id):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>while<sp/>True:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time.sleep(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run<sp/>=<sp/>client.beta.threads.runs.retrieve(thread_id=thread_id,<sp/>run_id=run_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f&quot;Current<sp/>run<sp/>status:<sp/>{run.status}&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>run.status<sp/>in<sp/>[&apos;completed&apos;,<sp/>&apos;failed&apos;,<sp/>&apos;requires_action&apos;]:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>function<sp/>will<sp/>sleep<sp/>as<sp/>long<sp/>as<sp/>the<sp/>run<sp/>has<sp/>not<sp/>been<sp/>finalized<sp/>such<sp/>as<sp/>in<sp/>cases<sp/>where<sp/>it’s<sp/>completed<sp/>or<sp/>requires<sp/>an<sp/>action<sp/>from<sp/>a<sp/>function<sp/>call.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We’re<sp/>almost<sp/>there!<sp/>Lastly,<sp/>let’s<sp/>take<sp/>care<sp/>of<sp/>when<sp/>the<sp/>assistant<sp/>wants<sp/>to<sp/>call<sp/>the<sp/>web<sp/>search<sp/>API:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Function<sp/>to<sp/>handle<sp/>tool<sp/>output<sp/>submission</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>submit_tool_outputs(thread_id,<sp/>run_id,<sp/>tools_to_call):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tool_output_array<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>tool<sp/>in<sp/>tools_to_call:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output<sp/>=<sp/>None</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tool_call_id<sp/>=<sp/>tool.id</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>function_name<sp/>=<sp/>tool.function.name</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>function_args<sp/>=<sp/>tool.function.arguments</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>function_name<sp/>==<sp/>&quot;tavily_search&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output<sp/>=<sp/>tavily_search(query=json.loads(function_args)[&quot;query&quot;])</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>output:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tool_output_array.append({&quot;tool_call_id&quot;:<sp/>tool_call_id,<sp/>&quot;output&quot;:<sp/>output})</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>client.beta.threads.runs.submit_tool_outputs(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_id=thread_id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run_id=run_id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tool_outputs=tool_output_array</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>seen<sp/>above,<sp/>if<sp/>the<sp/>assistant<sp/>has<sp/>reasoned<sp/>that<sp/>a<sp/>function<sp/>call<sp/>should<sp/>trigger,<sp/>we<sp/>extract<sp/>the<sp/>given<sp/>required<sp/>function<sp/>params<sp/>and<sp/>pass<sp/>back<sp/>to<sp/>the<sp/>runnable<sp/>thread.<sp/>We<sp/>catch<sp/>this<sp/>status<sp/>and<sp/>call<sp/>our<sp/>functions<sp/>as<sp/>seen<sp/>below:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>run.status<sp/>==<sp/>&apos;requires_action&apos;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>run<sp/>=<sp/>submit_tool_outputs(thread.id,<sp/>run.id,<sp/>run.required_action.submit_tool_outputs.tool_calls)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>run<sp/>=<sp/>wait_for_run_completion(thread.id,<sp/>run.id)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">That’s<sp/>it!<sp/>We<sp/>now<sp/>have<sp/>a<sp/>working<sp/>OpenAI<sp/>Assistant<sp/>that<sp/>can<sp/>be<sp/>used<sp/>to<sp/>answer<sp/>financial<sp/>questions<sp/>using<sp/>real<sp/>time<sp/>online<sp/>information.<sp/>Below<sp/>is<sp/>the<sp/>full<sp/>runnable<sp/>code:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>os</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>json</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>openai<sp/>import<sp/>OpenAI</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>tavily<sp/>import<sp/>TavilyClient</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Initialize<sp/>clients<sp/>with<sp/>API<sp/>keys</highlight></codeline>
+<codeline><highlight class="normal">client<sp/>=<sp/>OpenAI(api_key=os.environ[&quot;OPENAI_API_KEY&quot;])</highlight></codeline>
+<codeline><highlight class="normal">tavily_client<sp/>=<sp/>TavilyClient(api_key=os.environ[&quot;TAVILY_API_KEY&quot;])</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">assistant_prompt_instruction<sp/>=<sp/>&quot;&quot;&quot;You<sp/>are<sp/>a<sp/>finance<sp/>expert.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Your<sp/>goal<sp/>is<sp/>to<sp/>provide<sp/>answers<sp/>based<sp/>on<sp/>information<sp/>from<sp/>the<sp/>internet.<sp/></highlight></codeline>
+<codeline><highlight class="normal">You<sp/>must<sp/>use<sp/>the<sp/>provided<sp/>Tavily<sp/>search<sp/>API<sp/>function<sp/>to<sp/>find<sp/>relevant<sp/>online<sp/>information.<sp/></highlight></codeline>
+<codeline><highlight class="normal">You<sp/>should<sp/>never<sp/>use<sp/>your<sp/>own<sp/>knowledge<sp/>to<sp/>answer<sp/>questions.</highlight></codeline>
+<codeline><highlight class="normal">Please<sp/>include<sp/>relevant<sp/>url<sp/>sources<sp/>in<sp/>the<sp/>end<sp/>of<sp/>your<sp/>answers.</highlight></codeline>
+<codeline><highlight class="normal">&quot;&quot;&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Function<sp/>to<sp/>perform<sp/>a<sp/>Tavily<sp/>search</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>tavily_search(query):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>search_result<sp/>=<sp/>tavily_client.get_search_context(query,<sp/>search_depth=&quot;advanced&quot;,<sp/>max_tokens=8000)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>search_result</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Function<sp/>to<sp/>wait<sp/>for<sp/>a<sp/>run<sp/>to<sp/>complete</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>wait_for_run_completion(thread_id,<sp/>run_id):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>while<sp/>True:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time.sleep(1)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run<sp/>=<sp/>client.beta.threads.runs.retrieve(thread_id=thread_id,<sp/>run_id=run_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f&quot;Current<sp/>run<sp/>status:<sp/>{run.status}&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>run.status<sp/>in<sp/>[&apos;completed&apos;,<sp/>&apos;failed&apos;,<sp/>&apos;requires_action&apos;]:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>run</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Function<sp/>to<sp/>handle<sp/>tool<sp/>output<sp/>submission</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>submit_tool_outputs(thread_id,<sp/>run_id,<sp/>tools_to_call):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tool_output_array<sp/>=<sp/>[]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>tool<sp/>in<sp/>tools_to_call:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output<sp/>=<sp/>None</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tool_call_id<sp/>=<sp/>tool.id</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>function_name<sp/>=<sp/>tool.function.name</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>function_args<sp/>=<sp/>tool.function.arguments</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>function_name<sp/>==<sp/>&quot;tavily_search&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output<sp/>=<sp/>tavily_search(query=json.loads(function_args)[&quot;query&quot;])</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>output:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tool_output_array.append({&quot;tool_call_id&quot;:<sp/>tool_call_id,<sp/>&quot;output&quot;:<sp/>output})</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>client.beta.threads.runs.submit_tool_outputs(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_id=thread_id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run_id=run_id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tool_outputs=tool_output_array</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Function<sp/>to<sp/>print<sp/>messages<sp/>from<sp/>a<sp/>thread</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>print_messages_from_thread(thread_id):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>messages<sp/>=<sp/>client.beta.threads.messages.list(thread_id=thread_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>msg<sp/>in<sp/>messages:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f&quot;{msg.role}:<sp/>{msg.content[0].text.value}&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Create<sp/>an<sp/>assistant</highlight></codeline>
+<codeline><highlight class="normal">assistant<sp/>=<sp/>client.beta.assistants.create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>instructions=assistant_prompt_instruction,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>model=&quot;gpt-4-1106-preview&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>tools=[{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;type&quot;:<sp/>&quot;function&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;function&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;name&quot;:<sp/>&quot;tavily_search&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;description&quot;:<sp/>&quot;Get<sp/>information<sp/>on<sp/>recent<sp/>events<sp/>from<sp/>the<sp/>web.&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;parameters&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;type&quot;:<sp/>&quot;object&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;properties&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;query&quot;:<sp/>{&quot;type&quot;:<sp/>&quot;string&quot;,<sp/>&quot;description&quot;:<sp/>&quot;The<sp/>search<sp/>query<sp/>to<sp/>use.<sp/>For<sp/>example:<sp/>&apos;Latest<sp/>news<sp/>on<sp/>Nvidia<sp/>stock<sp/>performance&apos;&quot;},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;required&quot;:<sp/>[&quot;query&quot;]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}]</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">assistant_id<sp/>=<sp/>assistant.id</highlight></codeline>
+<codeline><highlight class="normal">print(f&quot;Assistant<sp/>ID:<sp/>{assistant_id}&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Create<sp/>a<sp/>thread</highlight></codeline>
+<codeline><highlight class="normal">thread<sp/>=<sp/>client.beta.threads.create()</highlight></codeline>
+<codeline><highlight class="normal">print(f&quot;Thread:<sp/>{thread}&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Ongoing<sp/>conversation<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal">while<sp/>True:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>user_input<sp/>=<sp/>input(&quot;You:<sp/>&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>user_input.lower()<sp/>==<sp/>&apos;exit&apos;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>a<sp/>message</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>=<sp/>client.beta.threads.messages.create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_id=thread.id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>role=&quot;user&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content=user_input,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>a<sp/>run</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>run<sp/>=<sp/>client.beta.threads.runs.create(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_id=thread.id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assistant_id=assistant_id,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(f&quot;Run<sp/>ID:<sp/>{run.id}&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Wait<sp/>for<sp/>run<sp/>to<sp/>complete</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>run<sp/>=<sp/>wait_for_run_completion(thread.id,<sp/>run.id)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>run.status<sp/>==<sp/>&apos;failed&apos;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(run.error)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>continue</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>elif<sp/>run.status<sp/>==<sp/>&apos;requires_action&apos;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run<sp/>=<sp/>submit_tool_outputs(thread.id,<sp/>run.id,<sp/>run.required_action.submit_tool_outputs.tool_calls)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run<sp/>=<sp/>wait_for_run_completion(thread.id,<sp/>run.id)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Print<sp/>messages<sp/>from<sp/>the<sp/>thread</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print_messages_from_thread(thread.id)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>assistant<sp/>can<sp/>be<sp/>further<sp/>customized<sp/>and<sp/>improved<sp/>using<sp/>additional<sp/>retrieval<sp/>information,<sp/>OpenAI’s<sp/>coding<sp/>interpreter<sp/>and<sp/>more.<sp/>Also,<sp/>you<sp/>can<sp/>go<sp/>ahead<sp/>and<sp/>add<sp/>more<sp/>function<sp/>tools<sp/>to<sp/>make<sp/>the<sp/>assistant<sp/>even<sp/>smarter.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Feel<sp/>free<sp/>to<sp/>drop<sp/>a<sp/>comment<sp/>below<sp/>if<sp/>you<sp/>have<sp/>any<sp/>further<sp/>questions!</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2023-11-12-openai-assistant/index.md"/>
+  </compounddef>
+</doxygen>

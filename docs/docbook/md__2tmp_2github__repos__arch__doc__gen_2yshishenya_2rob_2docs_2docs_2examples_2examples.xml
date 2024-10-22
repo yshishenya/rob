@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2examples_2examples" xml:lang="en-US">
+<title>Examples</title>
+<indexterm><primary>Examples</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2examples_2examples_1autotoc_md72"/> </para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2examples_2examples_1autotoc_md73">
+<title><title>Run PIP Package</title></title>
+
+<para><literallayout><computeroutput>from&#32;gpt_researcher&#32;import&#32;GPTResearcher
+import&#32;asyncio
+
+
+async&#32;def&#32;main():
+&#32;&#32;&#32;&#32;&quot;&quot;&quot;
+&#32;&#32;&#32;&#32;This&#32;is&#32;a&#32;sample&#32;script&#32;that&#32;shows&#32;how&#32;to&#32;run&#32;a&#32;research&#32;report.
+&#32;&#32;&#32;&#32;&quot;&quot;&quot;
+&#32;&#32;&#32;&#32;#&#32;Query
+&#32;&#32;&#32;&#32;query&#32;=&#32;&quot;What&#32;happened&#32;in&#32;the&#32;latest&#32;burning&#32;man&#32;floods?&quot;
+
+&#32;&#32;&#32;&#32;#&#32;Report&#32;Type
+&#32;&#32;&#32;&#32;report_type&#32;=&#32;&quot;research_report&quot;
+
+&#32;&#32;&#32;&#32;#&#32;Initialize&#32;the&#32;researcher
+&#32;&#32;&#32;&#32;researcher&#32;=&#32;GPTResearcher(query=query,&#32;report_type=report_type,&#32;config_path=None)
+&#32;&#32;&#32;&#32;#&#32;Conduct&#32;research&#32;on&#32;the&#32;given&#32;query
+&#32;&#32;&#32;&#32;await&#32;researcher.conduct_research()
+&#32;&#32;&#32;&#32;#&#32;Write&#32;the&#32;report
+&#32;&#32;&#32;&#32;report&#32;=&#32;await&#32;researcher.write_report()
+&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;return&#32;report
+
+
+if&#32;__name__&#32;==&#32;&quot;__main__&quot;:
+&#32;&#32;&#32;&#32;asyncio.run(main())
+</computeroutput></literallayout> </para>
+</section>
+</section>

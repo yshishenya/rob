@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher_1_1utils_1_1costs" xml:lang="en-US">
+<title>gpt_researcher.utils.costs Namespace Reference</title>
+<indexterm><primary>gpt_researcher.utils.costs</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a3c3b6e46daf03a6c6eff6af6b7d581a1">estimate_llm_cost</link> (str input_content, str output_content)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a59fa6a66d1cc1d9a1bf6e72c6c933835">estimate_embedding_cost</link> (model, docs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a5ded738042198cd2363d7057fcebed3a">ENCODING_MODEL</link> = &quot;o200k_base&quot;</para>
+</listitem>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a7001ea5a3cfcc38b054e1f61532d615a">INPUT_COST_PER_TOKEN</link> = 0.000005</para>
+</listitem>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a1f613faeb26205430d23505d18591801">OUTPUT_COST_PER_TOKEN</link> = 0.000015</para>
+</listitem>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1aa6c6f6531263d9beca9c84e3c7290e57">IMAGE_INFERENCE_COST</link> = 0.003825</para>
+</listitem>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1ac851877e589fc31f44a8b28053f69cb3">EMBEDDING_COST</link> = 0.13 / 1000000</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1costs_1a59fa6a66d1cc1d9a1bf6e72c6c933835"/><section>
+    <title>estimate_embedding_cost()</title>
+<indexterm><primary>estimate_embedding_cost</primary><secondary>gpt_researcher.utils.costs</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.costs</primary><secondary>estimate_embedding_cost</secondary></indexterm>
+<para><computeroutput>gpt_researcher.utils.costs.estimate_embedding_cost ( model,  docs)</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1costs_1a3c3b6e46daf03a6c6eff6af6b7d581a1"/><section>
+    <title>estimate_llm_cost()</title>
+<indexterm><primary>estimate_llm_cost</primary><secondary>gpt_researcher.utils.costs</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.costs</primary><secondary>estimate_llm_cost</secondary></indexterm>
+<para><computeroutput> float gpt_researcher.utils.costs.estimate_llm_cost (str input_content, str output_content)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1costs_1ac851877e589fc31f44a8b28053f69cb3"/><section>
+    <title>EMBEDDING_COST</title>
+<indexterm><primary>EMBEDDING_COST</primary><secondary>gpt_researcher.utils.costs</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.costs</primary><secondary>EMBEDDING_COST</secondary></indexterm>
+<para><computeroutput>float gpt_researcher.utils.costs.EMBEDDING_COST = 0.13 / 1000000</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1costs_1a5ded738042198cd2363d7057fcebed3a"/><section>
+    <title>ENCODING_MODEL</title>
+<indexterm><primary>ENCODING_MODEL</primary><secondary>gpt_researcher.utils.costs</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.costs</primary><secondary>ENCODING_MODEL</secondary></indexterm>
+<para><computeroutput>str gpt_researcher.utils.costs.ENCODING_MODEL = &quot;o200k_base&quot;</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1costs_1aa6c6f6531263d9beca9c84e3c7290e57"/><section>
+    <title>IMAGE_INFERENCE_COST</title>
+<indexterm><primary>IMAGE_INFERENCE_COST</primary><secondary>gpt_researcher.utils.costs</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.costs</primary><secondary>IMAGE_INFERENCE_COST</secondary></indexterm>
+<para><computeroutput>float gpt_researcher.utils.costs.IMAGE_INFERENCE_COST = 0.003825</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1costs_1a7001ea5a3cfcc38b054e1f61532d615a"/><section>
+    <title>INPUT_COST_PER_TOKEN</title>
+<indexterm><primary>INPUT_COST_PER_TOKEN</primary><secondary>gpt_researcher.utils.costs</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.costs</primary><secondary>INPUT_COST_PER_TOKEN</secondary></indexterm>
+<para><computeroutput>float gpt_researcher.utils.costs.INPUT_COST_PER_TOKEN = 0.000005</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1costs_1a1f613faeb26205430d23505d18591801"/><section>
+    <title>OUTPUT_COST_PER_TOKEN</title>
+<indexterm><primary>OUTPUT_COST_PER_TOKEN</primary><secondary>gpt_researcher.utils.costs</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.costs</primary><secondary>OUTPUT_COST_PER_TOKEN</secondary></indexterm>
+<para><computeroutput>float gpt_researcher.utils.costs.OUTPUT_COST_PER_TOKEN = 0.000015</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="text_8py" kind="file" language="Python">
+    <compoundname>text.py</compoundname>
+    <innernamespace refid="namespaceprocessing">processing</innernamespace>
+    <innernamespace refid="namespaceprocessing_1_1text">processing::text</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceprocessing_1_1text" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;Text<sp/>processing<sp/>functions&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>urllib</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Dict,<sp/>Generator,<sp/>Optional</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.remote.webdriver<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>WebDriver</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>config<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Config</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>gpt_researcher_old.retriever.llm_utils<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>create_chat_completion</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>md2pdf.core<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>md2pdf</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f" kindref="member">split_text</ref>(text:<sp/>str,<sp/>max_length:<sp/>int<sp/>=<sp/>8192)<sp/>-&gt;<sp/>Generator[str,<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">]:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Split<sp/>text<sp/>into<sp/>chunks<sp/>of<sp/>a<sp/>maximum<sp/>length</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>(str):<sp/>The<sp/>text<sp/>to<sp/>split</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_length<sp/>(int,<sp/>optional):<sp/>The<sp/>maximum<sp/>length<sp/>of<sp/>each<sp/>chunk.<sp/>Defaults<sp/>to<sp/>8192.</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Yields:</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str:<sp/>The<sp/>next<sp/>chunk<sp/>of<sp/>text</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Raises:</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueError:<sp/>If<sp/>the<sp/>text<sp/>is<sp/>longer<sp/>than<sp/>the<sp/>maximum<sp/>length</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>paragraphs<sp/>=<sp/>text.split(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>current_length<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>current_chunk<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>paragraph<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>paragraphs:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>current_length<sp/>+<sp/>len(paragraph)<sp/>+<sp/>1<sp/>&lt;=<sp/>max_length:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_chunk.append(paragraph)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_length<sp/>+=<sp/>len(paragraph)<sp/>+<sp/>1</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">.join(current_chunk)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_chunk<sp/>=<sp/>[paragraph]</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_length<sp/>=<sp/>len(paragraph)<sp/>+<sp/>1</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>current_chunk:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">yield</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">.join(current_chunk)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963" kindref="member">summarize_text</ref>(</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>fast_llm_model:<sp/>str,<sp/>summary_token_limit:<sp/>int,<sp/>llm_provider:<sp/>str,<sp/>url:<sp/>str,<sp/>text:<sp/>str,<sp/>question:<sp/>str,<sp/>driver:<sp/>Optional[WebDriver]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Summarize<sp/>text<sp/>using<sp/>the<sp/>OpenAI<sp/>API</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fast_llm_model<sp/>(str):<sp/>The<sp/>fast<sp/>LLM<sp/>model<sp/>e.g<sp/>gpt3.5-turbo-16k</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summary_token_limit<sp/>(int):<sp/>The<sp/>summary<sp/>token<sp/>limit</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llm_provider<sp/>(str):<sp/>The<sp/>llm<sp/>provider</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url<sp/>(str):<sp/>The<sp/>url<sp/>of<sp/>the<sp/>text</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>(str):<sp/>The<sp/>text<sp/>to<sp/>summarize</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>question<sp/>(str):<sp/>The<sp/>question<sp/>to<sp/>ask<sp/>the<sp/>model</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>(WebDriver):<sp/>The<sp/>webdriver<sp/>to<sp/>use<sp/>to<sp/>scroll<sp/>the<sp/>page</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str:<sp/>The<sp/>summary<sp/>of<sp/>the<sp/>text</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>text:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>No<sp/>text<sp/>to<sp/>summarize&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>summaries<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>chunks<sp/>=<sp/>list(<ref refid="namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f" kindref="member">split_text</ref>(text))</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>scroll_ratio<sp/>=<sp/>1<sp/>/<sp/>len(chunks)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;Summarizing<sp/>url:<sp/>{url}<sp/>with<sp/>total<sp/>chunks:<sp/>{len(chunks)}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i,<sp/>chunk<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(chunks):</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>driver:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5" kindref="member">scroll_to_percentage</ref>(driver,<sp/>scroll_ratio<sp/>*<sp/>i)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#memory_to_add<sp/>=<sp/>f&quot;Source:<sp/>{url}\n&quot;<sp/>f&quot;Raw<sp/>content<sp/>part#{i<sp/>+<sp/>1}:<sp/>{chunk}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#MEMORY.add_documents([Document(page_content=memory_to_add)])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>messages<sp/>=<sp/>[<ref refid="namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1" kindref="member">create_message</ref>(chunk,<sp/>question)]</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summary<sp/>=<sp/>create_chat_completion(</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model=fast_llm_model,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>messages=messages,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_tokens=summary_token_limit,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llm_provider=llm_provider</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summaries.append(summary)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#memory_to_add<sp/>=<sp/>f&quot;Source:<sp/>{url}\n&quot;<sp/>f&quot;Content<sp/>summary<sp/>part#{i<sp/>+<sp/>1}:<sp/>{summary}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#MEMORY.add_documents([Document(page_content=memory_to_add)])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>combined_summary<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">.join(summaries)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>messages<sp/>=<sp/>[<ref refid="namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1" kindref="member">create_message</ref>(combined_summary,<sp/>question)]</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>final_summary<sp/>=<sp/>create_chat_completion(</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model=fast_llm_model,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>messages=messages,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_tokens=summary_token_limit,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llm_provider=llm_provider,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Final<sp/>summary<sp/>length:<sp/>&quot;</highlight><highlight class="normal">,<sp/>len(combined_summary))</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>print(final_summary)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>final_summary</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5" kindref="member">scroll_to_percentage</ref>(driver:<sp/>WebDriver,<sp/>ratio:<sp/>float)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Scroll<sp/>to<sp/>a<sp/>percentage<sp/>of<sp/>the<sp/>page</highlight></codeline>
+<codeline lineno="106"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="107"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="108"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>(WebDriver):<sp/>The<sp/>webdriver<sp/>to<sp/>use</highlight></codeline>
+<codeline lineno="109"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ratio<sp/>(float):<sp/>The<sp/>percentage<sp/>to<sp/>scroll<sp/>to</highlight></codeline>
+<codeline lineno="110"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="111"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Raises:</highlight></codeline>
+<codeline lineno="112"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueError:<sp/>If<sp/>the<sp/>ratio<sp/>is<sp/>not<sp/>between<sp/>0<sp/>and<sp/>1</highlight></codeline>
+<codeline lineno="113"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>ratio<sp/>&lt;<sp/>0<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>ratio<sp/>&gt;<sp/>1:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight><highlight class="stringliteral">&quot;Percentage<sp/>should<sp/>be<sp/>between<sp/>0<sp/>and<sp/>1&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>driver.execute_script(f</highlight><highlight class="stringliteral">&quot;window.scrollTo(0,<sp/>document.body.scrollHeight<sp/>*<sp/>{ratio});&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1" kindref="member">create_message</ref>(chunk:<sp/>str,<sp/>question:<sp/>str)<sp/>-&gt;<sp/>Dict[str,<sp/>str]:</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Create<sp/>a<sp/>message<sp/>for<sp/>the<sp/>chat<sp/>completion</highlight></codeline>
+<codeline lineno="121"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="122"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="123"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunk<sp/>(str):<sp/>The<sp/>chunk<sp/>of<sp/>text<sp/>to<sp/>summarize</highlight></codeline>
+<codeline lineno="124"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>question<sp/>(str):<sp/>The<sp/>question<sp/>to<sp/>answer</highlight></codeline>
+<codeline lineno="125"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="126"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="127"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Dict[str,<sp/>str]:<sp/>The<sp/>message<sp/>to<sp/>send<sp/>to<sp/>the<sp/>chat<sp/>completion</highlight></codeline>
+<codeline lineno="128"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;role&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;content&quot;</highlight><highlight class="normal">:<sp/>f</highlight><highlight class="stringliteral">&apos;&quot;&quot;&quot;{chunk}&quot;&quot;&quot;\n&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f</highlight><highlight class="stringliteral">&apos;Using<sp/>the<sp/>above<sp/>text,<sp/>summarize<sp/>it<sp/>based<sp/>on<sp/>the<sp/>following<sp/>task<sp/>or<sp/>query:<sp/>&quot;{question}&quot;.\n&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f</highlight><highlight class="stringliteral">&apos;If<sp/>the<sp/>query<sp/>cannot<sp/>be<sp/>answered<sp/>using<sp/>the<sp/>text,<sp/>YOU<sp/>MUST<sp/>summarize<sp/>the<sp/>text<sp/>in<sp/>short.\n&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f</highlight><highlight class="stringliteral">&apos;Include<sp/>all<sp/>factual<sp/>information<sp/>such<sp/>as<sp/>numbers,<sp/>stats,<sp/>quotes,<sp/>etc<sp/>if<sp/>available.&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f</highlight><highlight class="stringliteral">&apos;You<sp/>must<sp/>write<sp/>in<sp/>Russian<sp/>only.&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551" kindref="member">write_to_file</ref>(filename:<sp/>str,<sp/>text:<sp/>str)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Write<sp/>text<sp/>to<sp/>a<sp/>file</highlight></codeline>
+<codeline lineno="140"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="141"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="142"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>(str):<sp/>The<sp/>text<sp/>to<sp/>write</highlight></codeline>
+<codeline lineno="143"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filename<sp/>(str):<sp/>The<sp/>filename<sp/>to<sp/>write<sp/>to</highlight></codeline>
+<codeline lineno="144"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>open(filename,<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>file:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file.write(text)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce" kindref="member">write_md_to_pdf</ref>(task:<sp/>str,<sp/>path:<sp/>str,<sp/>text:<sp/>str)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>file_path<sp/>=<sp/>f</highlight><highlight class="stringliteral">&quot;{path}/{task}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551" kindref="member">write_to_file</ref>(f</highlight><highlight class="stringliteral">&quot;{file_path}.md&quot;</highlight><highlight class="normal">,<sp/>text)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5" kindref="member">md_to_pdf</ref>(f</highlight><highlight class="stringliteral">&quot;{file_path}.md&quot;</highlight><highlight class="normal">,<sp/>f</highlight><highlight class="stringliteral">&quot;{file_path}.pdf&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;{task}<sp/>written<sp/>to<sp/>{file_path}.pdf&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>encoded_file_path<sp/>=<sp/>urllib.parse.quote(f</highlight><highlight class="stringliteral">&quot;{file_path}.pdf&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>encoded_file_path</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="namespaceprocessing_1_1text_1aa07adc73b2ae754f349235bbdbc0e212" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1text_1aa07adc73b2ae754f349235bbdbc0e212" kindref="member">read_txt_files</ref>(directory):</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>all_text<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>filename<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>os.listdir(directory):</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>filename.endswith(</highlight><highlight class="stringliteral">&apos;.txt&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>open(os.path.join(directory,<sp/>filename),<sp/></highlight><highlight class="stringliteral">&apos;r&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>file:</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>all_text<sp/>+=<sp/>file.read()<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>all_text</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5" kindref="member">md_to_pdf</ref>(input_file,<sp/>output_file):</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>md2pdf(output_file,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>md_content=</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>md_file_path=input_file,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>css_file_path=</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_url=</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py"/>
+  </compounddef>
+</doxygen>

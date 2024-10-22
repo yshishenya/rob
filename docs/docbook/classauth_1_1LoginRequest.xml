@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classauth_1_1LoginRequest" xml:lang="en-US">
+<title>auth.LoginRequest Class Reference</title>
+<indexterm><primary>auth.LoginRequest</primary></indexterm>
+Inheritance diagram for auth.LoginRequest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1LoginRequest__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for auth.LoginRequest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1LoginRequest__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classauth_1_1LoginRequest_1a0e3f75a027dc97388ccfe3d12331a11b">username</link> = Field(..., description=&quot;Имя пользователя для входа в систему. Должно быть уникальным и не повторяться с другими пользователями.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1LoginRequest_1a00b163d66ed8d5c77407465fa62b1a44">password</link> = Field(..., description=&quot;Пароль пользователя. Должен быть надежным и содержать минимум 6 символов для обеспечения безопасности.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classauth_1_1LoginRequest_1a00b163d66ed8d5c77407465fa62b1a44"/><section>
+    <title>password</title>
+<indexterm><primary>password</primary><secondary>auth.LoginRequest</secondary></indexterm>
+<indexterm><primary>auth.LoginRequest</primary><secondary>password</secondary></indexterm>
+<para><computeroutput>str auth.LoginRequest.password = Field(..., description=&quot;Пароль пользователя. Должен быть надежным и содержать минимум 6 символов для обеспечения безопасности.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1LoginRequest_1a0e3f75a027dc97388ccfe3d12331a11b"/><section>
+    <title>username</title>
+<indexterm><primary>username</primary><secondary>auth.LoginRequest</secondary></indexterm>
+<indexterm><primary>auth.LoginRequest</primary><secondary>username</secondary></indexterm>
+<para><computeroutput>str auth.LoginRequest.username = Field(..., description=&quot;Имя пользователя для входа в систему. Должно быть уникальным и не повторяться с другими пользователями.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_auth_8py">auth.py</link></section>
+</section>

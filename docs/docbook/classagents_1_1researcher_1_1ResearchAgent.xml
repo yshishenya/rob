@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagents_1_1researcher_1_1ResearchAgent" xml:lang="en-US">
+<title>agents.researcher.ResearchAgent Class Reference</title>
+<indexterm><primary>agents.researcher.ResearchAgent</primary></indexterm>
+Collaboration diagram for agents.researcher.ResearchAgent:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1researcher_1_1ResearchAgent__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1researcher_1_1ResearchAgent_1ac21649c2369981f9a85b9502d0280ea4">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1researcher_1_1ResearchAgent_1a573ebcc81dc8441d33467111de27673e">research</link> (self, str query, str research_report=&quot;research_report&quot;, str parent_query=&quot;&quot;, verbose=True, source=&quot;web&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1researcher_1_1ResearchAgent_1ae1c64522521fdd4af4951a7cfbd6a6d4">run_subtopic_research</link> (self, str parent_query, str subtopic, bool verbose=True, source=&quot;web&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1researcher_1_1ResearchAgent_1aeb527602b750a8e7895ae1cbee59fc25">run_initial_research</link> (self, dict research_state)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1researcher_1_1ResearchAgent_1ae3de3a9abfe5ecb5126c89560c14fa92">run_depth_research</link> (self, dict draft_state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classagents_1_1researcher_1_1ResearchAgent_1ac21649c2369981f9a85b9502d0280ea4"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>agents.researcher.ResearchAgent</secondary></indexterm>
+<indexterm><primary>agents.researcher.ResearchAgent</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>agents.researcher.ResearchAgent.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classagents_1_1researcher_1_1ResearchAgent_1a573ebcc81dc8441d33467111de27673e"/><section>
+    <title>research()</title>
+<indexterm><primary>research</primary><secondary>agents.researcher.ResearchAgent</secondary></indexterm>
+<indexterm><primary>agents.researcher.ResearchAgent</primary><secondary>research</secondary></indexterm>
+<para><computeroutput>agents.researcher.ResearchAgent.research ( self, str query, str  research_report = <computeroutput>&quot;research_report&quot;</computeroutput>
+, str  parent_query = <computeroutput>&quot;&quot;</computeroutput>
+,  verbose = <computeroutput>True</computeroutput>
+,  source = <computeroutput>&quot;web&quot;</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1researcher_1_1ResearchAgent_a573ebcc81dc8441d33467111de27673e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1researcher_1_1ResearchAgent_1ae3de3a9abfe5ecb5126c89560c14fa92"/><section>
+    <title>run_depth_research()</title>
+<indexterm><primary>run_depth_research</primary><secondary>agents.researcher.ResearchAgent</secondary></indexterm>
+<indexterm><primary>agents.researcher.ResearchAgent</primary><secondary>run_depth_research</secondary></indexterm>
+<para><computeroutput>agents.researcher.ResearchAgent.run_depth_research ( self, dict draft_state)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1researcher_1_1ResearchAgent_ae3de3a9abfe5ecb5126c89560c14fa92_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1researcher_1_1ResearchAgent_1aeb527602b750a8e7895ae1cbee59fc25"/><section>
+    <title>run_initial_research()</title>
+<indexterm><primary>run_initial_research</primary><secondary>agents.researcher.ResearchAgent</secondary></indexterm>
+<indexterm><primary>agents.researcher.ResearchAgent</primary><secondary>run_initial_research</secondary></indexterm>
+<para><computeroutput>agents.researcher.ResearchAgent.run_initial_research ( self, dict research_state)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1researcher_1_1ResearchAgent_aeb527602b750a8e7895ae1cbee59fc25_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1researcher_1_1ResearchAgent_1ae1c64522521fdd4af4951a7cfbd6a6d4"/><section>
+    <title>run_subtopic_research()</title>
+<indexterm><primary>run_subtopic_research</primary><secondary>agents.researcher.ResearchAgent</secondary></indexterm>
+<indexterm><primary>agents.researcher.ResearchAgent</primary><secondary>run_subtopic_research</secondary></indexterm>
+<para><computeroutput>agents.researcher.ResearchAgent.run_subtopic_research ( self, str parent_query, str subtopic, bool  verbose = <computeroutput>True</computeroutput>
+,  source = <computeroutput>&quot;web&quot;</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1researcher_1_1ResearchAgent_ae1c64522521fdd4af4951a7cfbd6a6d4_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1researcher_1_1ResearchAgent_ae1c64522521fdd4af4951a7cfbd6a6d4_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/<link linkend="_researcher_8py">researcher.py</link></section>
+</section>

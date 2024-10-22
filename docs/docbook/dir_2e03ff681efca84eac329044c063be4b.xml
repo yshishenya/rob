@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_2e03ff681efca84eac329044c063be4b" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs Directory Reference</primary></indexterm>
+Directory dependency graph for docs:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_2e03ff681efca84eac329044c063be4b_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_178332e978826bb2aabccad43ff19b9f">examples</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_78f208ef8ac32d49726157fbd9dd6325">gpt-researcher</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_fc42f2a65657e9505ee00a2d08840ac7">reference</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

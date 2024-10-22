@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecli" xml:lang="en-US">
+<title>cli Namespace Reference</title>
+<indexterm><primary>cli</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecli_1a1575f9306adb5b73910ad4fc9253676c">main</link> (<link linkend="_namespacecli_1aded26a9cf4c656ae51d8492a2bcea4f8">args</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacecli_1acaca8ac2bee7e16ecd95cc31d0bb9c64">cli</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecli_1a22e8d05830b557d4bad23cff231d0a3e">type</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecli_1a4d57fcfd67bfdd5bf1bb5ef353ad3d04">help</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacecli_1a65f014f9d134c9c500c920de65e2ad02">choices</link> = [report_type.value for report_type in <link linkend="_classgpt__researcher_1_1utils_1_1enum_1_1ReportType">ReportType</link>]</para>
+</listitem>
+            <listitem><para>dict <link linkend="_namespacecli_1a775ffc6e10fa19dd31519ee6d29a01f3">report_type_descriptions</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecli_1a83d9ca1ff34a81c6ccd03f84f79d9d53">required</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacecli_1aded26a9cf4c656ae51d8492a2bcea4f8">args</link> = cli.parse_args()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Provides a command line interface for the GPTResearcher class.
+
+Usage:
+
+```shell
+python cli.py &quot;&lt;query&gt;&quot; --report_type &lt;report_type&gt;
+```</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacecli_1a1575f9306adb5b73910ad4fc9253676c"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>cli</secondary></indexterm>
+<indexterm><primary>cli</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>cli.main ( args)</computeroutput></para>
+<para><literallayout><computeroutput>Conduct research on the given query, generate the report, and write
+it as a markdown file to the output directory.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacecli_1aded26a9cf4c656ae51d8492a2bcea4f8"/><section>
+    <title>args</title>
+<indexterm><primary>args</primary><secondary>cli</secondary></indexterm>
+<indexterm><primary>cli</primary><secondary>args</secondary></indexterm>
+<para><computeroutput>cli.args = cli.parse_args()</computeroutput></para></section>
+<anchor xml:id="_namespacecli_1a65f014f9d134c9c500c920de65e2ad02"/><section>
+    <title>choices</title>
+<indexterm><primary>choices</primary><secondary>cli</secondary></indexterm>
+<indexterm><primary>cli</primary><secondary>choices</secondary></indexterm>
+<para><computeroutput>cli.choices = [report_type.value for report_type in <link linkend="_classgpt__researcher_1_1utils_1_1enum_1_1ReportType">ReportType</link>]</computeroutput></para></section>
+<anchor xml:id="_namespacecli_1acaca8ac2bee7e16ecd95cc31d0bb9c64"/><section>
+    <title>cli</title>
+<indexterm><primary>cli</primary><secondary>cli</secondary></indexterm>
+<indexterm><primary>cli</primary><secondary>cli</secondary></indexterm>
+<para><computeroutput>cli.cli</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;argparse.ArgumentParser(
+2 &#32;&#32;&#32;&#32;description=<emphasis role="stringliteral">&quot;Generate&#32;a&#32;research&#32;report.&quot;</emphasis>,
+3 &#32;&#32;&#32;&#32;<emphasis role="comment">#&#32;Enables&#32;the&#32;use&#32;of&#32;newlines&#32;in&#32;the&#32;help&#32;message</emphasis>
+4 &#32;&#32;&#32;&#32;formatter_class=RawTextHelpFormatter)
+</programlisting></section>
+<anchor xml:id="_namespacecli_1a4d57fcfd67bfdd5bf1bb5ef353ad3d04"/><section>
+    <title>help</title>
+<indexterm><primary>help</primary><secondary>cli</secondary></indexterm>
+<indexterm><primary>cli</primary><secondary>help</secondary></indexterm>
+<para><computeroutput>cli.help</computeroutput></para></section>
+<anchor xml:id="_namespacecli_1a775ffc6e10fa19dd31519ee6d29a01f3"/><section>
+    <title>report_type_descriptions</title>
+<indexterm><primary>report_type_descriptions</primary><secondary>cli</secondary></indexterm>
+<indexterm><primary>cli</primary><secondary>report_type_descriptions</secondary></indexterm>
+<para><computeroutput>dict cli.report_type_descriptions</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;{
+2 &#32;&#32;&#32;&#32;ReportType.ResearchReport.value:&#32;<emphasis role="stringliteral">&quot;Summary&#32;-&#32;Short&#32;and&#32;fast&#32;(~2&#32;min)&quot;</emphasis>,
+3 &#32;&#32;&#32;&#32;ReportType.DetailedReport.value:&#32;<emphasis role="stringliteral">&quot;Detailed&#32;-&#32;In&#32;depth&#32;and&#32;longer&#32;(~5&#32;min)&quot;</emphasis>,
+4 &#32;&#32;&#32;&#32;ReportType.ResourceReport.value:&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+5 &#32;&#32;&#32;&#32;ReportType.OutlineReport.value:&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+6 &#32;&#32;&#32;&#32;ReportType.CustomReport.value:&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>,
+7 &#32;&#32;&#32;&#32;ReportType.SubtopicReport.value:&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>
+8 }
+</programlisting></section>
+<anchor xml:id="_namespacecli_1a83d9ca1ff34a81c6ccd03f84f79d9d53"/><section>
+    <title>required</title>
+<indexterm><primary>required</primary><secondary>cli</secondary></indexterm>
+<indexterm><primary>cli</primary><secondary>required</secondary></indexterm>
+<para><computeroutput>cli.required</computeroutput></para></section>
+<anchor xml:id="_namespacecli_1a22e8d05830b557d4bad23cff231d0a3e"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>cli</secondary></indexterm>
+<indexterm><primary>cli</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>cli.type</computeroutput></para></section>
+</section>
+</section>

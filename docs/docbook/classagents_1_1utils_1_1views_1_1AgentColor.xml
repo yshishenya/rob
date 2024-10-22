@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagents_1_1utils_1_1views_1_1AgentColor" xml:lang="en-US">
+<title>agents.utils.views.AgentColor Class Reference</title>
+<indexterm><primary>agents.utils.views.AgentColor</primary></indexterm>
+Inheritance diagram for agents.utils.views.AgentColor:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1utils_1_1views_1_1AgentColor__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for agents.utils.views.AgentColor:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1utils_1_1views_1_1AgentColor__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1utils_1_1views_1_1AgentColor_1aad82b618de5affc17c7ed241978d4d29">RESEARCHER</link> = Fore.LIGHTBLUE_EX</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1utils_1_1views_1_1AgentColor_1a054652ba8e8cb50221b694148a08e16c">EDITOR</link> = Fore.YELLOW</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1utils_1_1views_1_1AgentColor_1a55c936b52836cd867677166ed7d0390b">WRITER</link> = Fore.LIGHTGREEN_EX</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1utils_1_1views_1_1AgentColor_1a31ef9e1a009fb8401e198482cf62af70">PUBLISHER</link> = Fore.MAGENTA</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1utils_1_1views_1_1AgentColor_1a397c2bb5e464ce713866d7f100f1ca4a">REVIEWER</link> = Fore.CYAN</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1utils_1_1views_1_1AgentColor_1a3d962b5a2e02afd4ff3cca70040a85e0">REVISOR</link> = Fore.LIGHTWHITE_EX</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1utils_1_1views_1_1AgentColor_1af51a03e79c5086c177807e347accc8a4">MASTER</link> = Fore.LIGHTYELLOW_EX</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classagents_1_1utils_1_1views_1_1AgentColor_1a054652ba8e8cb50221b694148a08e16c"/><section>
+    <title>EDITOR</title>
+<indexterm><primary>EDITOR</primary><secondary>agents.utils.views.AgentColor</secondary></indexterm>
+<indexterm><primary>agents.utils.views.AgentColor</primary><secondary>EDITOR</secondary></indexterm>
+<para><computeroutput>agents.utils.views.AgentColor.EDITOR = Fore.YELLOW<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classagents_1_1utils_1_1views_1_1AgentColor_1af51a03e79c5086c177807e347accc8a4"/><section>
+    <title>MASTER</title>
+<indexterm><primary>MASTER</primary><secondary>agents.utils.views.AgentColor</secondary></indexterm>
+<indexterm><primary>agents.utils.views.AgentColor</primary><secondary>MASTER</secondary></indexterm>
+<para><computeroutput>agents.utils.views.AgentColor.MASTER = Fore.LIGHTYELLOW_EX<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classagents_1_1utils_1_1views_1_1AgentColor_1a31ef9e1a009fb8401e198482cf62af70"/><section>
+    <title>PUBLISHER</title>
+<indexterm><primary>PUBLISHER</primary><secondary>agents.utils.views.AgentColor</secondary></indexterm>
+<indexterm><primary>agents.utils.views.AgentColor</primary><secondary>PUBLISHER</secondary></indexterm>
+<para><computeroutput>agents.utils.views.AgentColor.PUBLISHER = Fore.MAGENTA<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classagents_1_1utils_1_1views_1_1AgentColor_1aad82b618de5affc17c7ed241978d4d29"/><section>
+    <title>RESEARCHER</title>
+<indexterm><primary>RESEARCHER</primary><secondary>agents.utils.views.AgentColor</secondary></indexterm>
+<indexterm><primary>agents.utils.views.AgentColor</primary><secondary>RESEARCHER</secondary></indexterm>
+<para><computeroutput>agents.utils.views.AgentColor.RESEARCHER = Fore.LIGHTBLUE_EX<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classagents_1_1utils_1_1views_1_1AgentColor_1a397c2bb5e464ce713866d7f100f1ca4a"/><section>
+    <title>REVIEWER</title>
+<indexterm><primary>REVIEWER</primary><secondary>agents.utils.views.AgentColor</secondary></indexterm>
+<indexterm><primary>agents.utils.views.AgentColor</primary><secondary>REVIEWER</secondary></indexterm>
+<para><computeroutput>agents.utils.views.AgentColor.REVIEWER = Fore.CYAN<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classagents_1_1utils_1_1views_1_1AgentColor_1a3d962b5a2e02afd4ff3cca70040a85e0"/><section>
+    <title>REVISOR</title>
+<indexterm><primary>REVISOR</primary><secondary>agents.utils.views.AgentColor</secondary></indexterm>
+<indexterm><primary>agents.utils.views.AgentColor</primary><secondary>REVISOR</secondary></indexterm>
+<para><computeroutput>agents.utils.views.AgentColor.REVISOR = Fore.LIGHTWHITE_EX<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classagents_1_1utils_1_1views_1_1AgentColor_1a55c936b52836cd867677166ed7d0390b"/><section>
+    <title>WRITER</title>
+<indexterm><primary>WRITER</primary><secondary>agents.utils.views.AgentColor</secondary></indexterm>
+<indexterm><primary>agents.utils.views.AgentColor</primary><secondary>WRITER</secondary></indexterm>
+<para><computeroutput>agents.utils.views.AgentColor.WRITER = Fore.LIGHTGREEN_EX<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/<link linkend="_views_8py">views.py</link></section>
+</section>

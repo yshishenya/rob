@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebackend_1_1db" xml:lang="en-US">
+<title>backend.db Namespace Reference</title>
+<indexterm><primary>backend.db</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbackend_1_1db_1_1User">User</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a531d50d0e97c20ce2de9118403d355c8">get_db</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1aede5ea7cecfbb5e666435bbf5fad8735">init_db</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a12e4627d89ec45bd8387dec506627a0b">level</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a7bf12892f824b7a3da5c6cb6e4e30ce5">logger</link> = logging.getLogger(__name__)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b">POSTGRES_USER</link> = os.getenv(&quot;POSTGRES_USER&quot;, &quot;default_user&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c">POSTGRES_PASSWORD</link> = os.getenv(&quot;POSTGRES_PASSWORD&quot;, &quot;default_password&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18">POSTGRES_DB</link> = os.getenv(&quot;POSTGRES_DB&quot;, &quot;default_db&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290">POSTGRES_HOST</link> = os.getenv(&quot;POSTGRES_HOST&quot;, &quot;localhost&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885">POSTGRES_PORT</link> = os.getenv(&quot;POSTGRES_PORT&quot;, &quot;5432&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74">DATABASE_URL</link> = f&quot;postgresql://{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b">POSTGRES_USER</link>&apos;)}:{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c">POSTGRES_PASSWORD</link>&apos;)}@{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290">POSTGRES_HOST</link>&apos;)}:{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885">POSTGRES_PORT</link>&apos;)}/{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18">POSTGRES_DB</link>&apos;)}&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5">engine</link> = create_engine(<link linkend="_namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74">DATABASE_URL</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a0b318ee468d301d1808f4f6c49ada651">SessionLocal</link> = sessionmaker(autocommit=False, autoflush=False, bind=<link linkend="_namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5">engine</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a036b7ab6f207c3287b0668774b089dd0">Base</link> = declarative_base()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacebackend_1_1db_1a531d50d0e97c20ce2de9118403d355c8"/><section>
+    <title>get_db()</title>
+<indexterm><primary>get_db</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>get_db</secondary></indexterm>
+<para><computeroutput>backend.db.get_db ( )</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1aede5ea7cecfbb5e666435bbf5fad8735"/><section>
+    <title>init_db()</title>
+<indexterm><primary>init_db</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>init_db</secondary></indexterm>
+<para><computeroutput>backend.db.init_db ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacebackend_1_1db_1a036b7ab6f207c3287b0668774b089dd0"/><section>
+    <title>Base</title>
+<indexterm><primary>Base</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>Base</secondary></indexterm>
+<para><computeroutput>backend.db.Base = declarative_base()</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74"/><section>
+    <title>DATABASE_URL</title>
+<indexterm><primary>DATABASE_URL</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>DATABASE_URL</secondary></indexterm>
+<para><computeroutput>str backend.db.DATABASE_URL = f&quot;postgresql://{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b">POSTGRES_USER</link>&apos;)}:{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c">POSTGRES_PASSWORD</link>&apos;)}@{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290">POSTGRES_HOST</link>&apos;)}:{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885">POSTGRES_PORT</link>&apos;)}/{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18">POSTGRES_DB</link>&apos;)}&quot;</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5"/><section>
+    <title>engine</title>
+<indexterm><primary>engine</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>engine</secondary></indexterm>
+<para><computeroutput>backend.db.engine = create_engine(<link linkend="_namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74">DATABASE_URL</link>)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a12e4627d89ec45bd8387dec506627a0b"/><section>
+    <title>level</title>
+<indexterm><primary>level</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>level</secondary></indexterm>
+<para><computeroutput>backend.db.level</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a7bf12892f824b7a3da5c6cb6e4e30ce5"/><section>
+    <title>logger</title>
+<indexterm><primary>logger</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>logger</secondary></indexterm>
+<para><computeroutput>backend.db.logger = logging.getLogger(__name__)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18"/><section>
+    <title>POSTGRES_DB</title>
+<indexterm><primary>POSTGRES_DB</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>POSTGRES_DB</secondary></indexterm>
+<para><computeroutput>backend.db.POSTGRES_DB = os.getenv(&quot;POSTGRES_DB&quot;, &quot;default_db&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290"/><section>
+    <title>POSTGRES_HOST</title>
+<indexterm><primary>POSTGRES_HOST</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>POSTGRES_HOST</secondary></indexterm>
+<para><computeroutput>backend.db.POSTGRES_HOST = os.getenv(&quot;POSTGRES_HOST&quot;, &quot;localhost&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c"/><section>
+    <title>POSTGRES_PASSWORD</title>
+<indexterm><primary>POSTGRES_PASSWORD</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>POSTGRES_PASSWORD</secondary></indexterm>
+<para><computeroutput>backend.db.POSTGRES_PASSWORD = os.getenv(&quot;POSTGRES_PASSWORD&quot;, &quot;default_password&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885"/><section>
+    <title>POSTGRES_PORT</title>
+<indexterm><primary>POSTGRES_PORT</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>POSTGRES_PORT</secondary></indexterm>
+<para><computeroutput>backend.db.POSTGRES_PORT = os.getenv(&quot;POSTGRES_PORT&quot;, &quot;5432&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b"/><section>
+    <title>POSTGRES_USER</title>
+<indexterm><primary>POSTGRES_USER</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>POSTGRES_USER</secondary></indexterm>
+<para><computeroutput>backend.db.POSTGRES_USER = os.getenv(&quot;POSTGRES_USER&quot;, &quot;default_user&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespacebackend_1_1db_1a0b318ee468d301d1808f4f6c49ada651"/><section>
+    <title>SessionLocal</title>
+<indexterm><primary>SessionLocal</primary><secondary>backend.db</secondary></indexterm>
+<indexterm><primary>backend.db</primary><secondary>SessionLocal</secondary></indexterm>
+<para><computeroutput>backend.db.SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=<link linkend="_namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5">engine</link>)</computeroutput></para></section>
+</section>
+</section>

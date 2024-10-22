@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classagents_1_1master_1_1ChiefEditorAgent" kind="class" language="Python" prot="public">
+    <compoundname>agents::master::ChiefEditorAgent</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classagents_1_1master_1_1ChiefEditorAgent_1a411cb91ca016fb9026559fc9a08f6e65" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>agents.master.ChiefEditorAgent::task_id</definition>
+        <argsstring></argsstring>
+        <name>task_id</name>
+        <qualifiedname>agents.master.ChiefEditorAgent.task_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>agents.master.ChiefEditorAgent::output_dir</definition>
+        <argsstring></argsstring>
+        <name>output_dir</name>
+        <qualifiedname>agents.master.ChiefEditorAgent.output_dir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" compoundref="master_8py" startline="22" endline="49">agents.master.ChiefEditorAgent.init_research_team</referencedby>
+        <referencedby refid="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" compoundref="publisher_8py" startline="44" endline="51">agents.publisher.PublisherAgent.write_report_by_formats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>agents.master.ChiefEditorAgent::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <qualifiedname>agents.master.ChiefEditorAgent.task</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" compoundref="master_8py" startline="50" endline="60">agents.master.ChiefEditorAgent.run_research_task</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagents_1_1master_1_1ChiefEditorAgent_1a6322fb0f75b6d2893ea9bcd6e789b4b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.master.ChiefEditorAgent.__init__</definition>
+        <argsstring>(self, dict task)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>agents.master.ChiefEditorAgent.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.master.ChiefEditorAgent.init_research_team</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_research_team</name>
+        <qualifiedname>agents.master.ChiefEditorAgent.init_research_team</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" bodystart="22" bodyend="49"/>
+        <references refid="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" compoundref="master_8py" startline="18">agents.master.ChiefEditorAgent.output_dir</references>
+        <references refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" compoundref="publisher_8py" startline="11">agents.publisher.PublisherAgent.output_dir</references>
+        <referencedby refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" compoundref="master_8py" startline="50" endline="60">agents.master.ChiefEditorAgent.run_research_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.master.ChiefEditorAgent.run_research_task</definition>
+        <argsstring>(self)</argsstring>
+        <name>run_research_task</name>
+        <qualifiedname>agents.master.ChiefEditorAgent.run_research_task</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" line="50" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" bodystart="50" bodyend="60"/>
+        <references refid="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" compoundref="master_8py" startline="22" endline="49">agents.master.ChiefEditorAgent.init_research_team</references>
+        <references refid="classbackend_1_1server_1_1ResearchRequest_1a67fa07b5bff295d8cf39866f3703e3cd" compoundref="server_8py" startline="34">backend.server.ResearchRequest.task</references>
+        <references refid="classgpt__researcher_1_1utils_1_1validators_1_1Subtopic_1a35dd9a799352739b6b605801ae969094" compoundref="validators_8py" startline="6">gpt_researcher.utils.validators.Subtopic.task</references>
+        <references refid="classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e" compoundref="master_8py" startline="19">agents.master.ChiefEditorAgent.task</references>
+        <references refid="classmemory_1_1draft_1_1DraftState_1a250fbcc1aa37c36a6c5be184d3957048" compoundref="draft_8py" startline="6">memory.draft.DraftState.task</references>
+        <references refid="classmemory_1_1research_1_1ResearchState_1acedf89dea8cb3ee08bb6a27f9cd1d025" compoundref="research_8py" startline="6">memory.research.ResearchState.task</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>agents.master.ChiefEditorAgent</label>
+        <link refid="classagents_1_1master_1_1ChiefEditorAgent"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py" bodystart="15" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a6322fb0f75b6d2893ea9bcd6e789b4b2" prot="public" virt="non-virtual"><scope>agents::master::ChiefEditorAgent</scope><name>__init__</name></member>
+      <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" prot="public" virt="non-virtual"><scope>agents::master::ChiefEditorAgent</scope><name>init_research_team</name></member>
+      <member refid="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" prot="public" virt="non-virtual"><scope>agents::master::ChiefEditorAgent</scope><name>output_dir</name></member>
+      <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" prot="public" virt="non-virtual"><scope>agents::master::ChiefEditorAgent</scope><name>run_research_task</name></member>
+      <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e" prot="public" virt="non-virtual"><scope>agents::master::ChiefEditorAgent</scope><name>task</name></member>
+      <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a411cb91ca016fb9026559fc9a08f6e65" prot="public" virt="non-virtual"><scope>agents::master::ChiefEditorAgent</scope><name>task_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

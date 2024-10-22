@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtoken__storage_1_1TokenStorage" kind="class" language="Python" prot="public">
+    <compoundname>token_storage::TokenStorage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classredis__token__storage_1_1RedisTokenStorage" prot="public" virt="non-virtual">redis_token_storage.RedisTokenStorage</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtoken__storage_1_1TokenStorage_1a358bba89fb75c5e0d351413fe35dc177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>token_storage.TokenStorage.store_token</definition>
+        <argsstring>(self, token, user_id, expires_in)</argsstring>
+        <name>store_token</name>
+        <qualifiedname>token_storage.TokenStorage.store_token</qualifiedname>
+        <reimplementedby refid="classredis__token__storage_1_1RedisTokenStorage_1a229c35362e7af88b6096b2b5cb3048f0">store_token</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <param>
+          <type>expires_in</type>
+          <defname>expires_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/token_storage.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/token_storage.py" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classtoken__storage_1_1TokenStorage_1a7a995049b7f1a26b9a3b9310781d6052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>token_storage.TokenStorage.retrieve_token</definition>
+        <argsstring>(self, token)</argsstring>
+        <name>retrieve_token</name>
+        <qualifiedname>token_storage.TokenStorage.retrieve_token</qualifiedname>
+        <reimplementedby refid="classredis__token__storage_1_1RedisTokenStorage_1aae0f0d43778c74ad44f4ee381151e7d0">retrieve_token</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/token_storage.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/token_storage.py" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classtoken__storage_1_1TokenStorage_1a0993266db9e1a278fb77d46fc2ab9fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>token_storage.TokenStorage.delete_token</definition>
+        <argsstring>(self, token)</argsstring>
+        <name>delete_token</name>
+        <qualifiedname>token_storage.TokenStorage.delete_token</qualifiedname>
+        <reimplementedby refid="classredis__token__storage_1_1RedisTokenStorage_1aaefb2d86c8ecfcfc7b4d6fc668b0142f">delete_token</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/token_storage.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/token_storage.py" bodystart="13" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="3">
+        <label>redis_token_storage.RedisTokenStorage</label>
+        <link refid="classredis__token__storage_1_1RedisTokenStorage"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>token_storage.TokenStorage</label>
+        <link refid="classtoken__storage_1_1TokenStorage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>token_storage.TokenStorage</label>
+        <link refid="classtoken__storage_1_1TokenStorage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/token_storage.py" line="3" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/token_storage.py" bodystart="3" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classtoken__storage_1_1TokenStorage_1a0993266db9e1a278fb77d46fc2ab9fed" prot="public" virt="non-virtual"><scope>token_storage::TokenStorage</scope><name>delete_token</name></member>
+      <member refid="classtoken__storage_1_1TokenStorage_1a7a995049b7f1a26b9a3b9310781d6052" prot="public" virt="non-virtual"><scope>token_storage::TokenStorage</scope><name>retrieve_token</name></member>
+      <member refid="classtoken__storage_1_1TokenStorage_1a358bba89fb75c5e0d351413fe35dc177" prot="public" virt="non-virtual"><scope>token_storage::TokenStorage</scope><name>store_token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

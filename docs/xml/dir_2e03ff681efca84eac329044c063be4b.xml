@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_2e03ff681efca84eac329044c063be4b" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs</compoundname>
+    <innerdir refid="dir_178332e978826bb2aabccad43ff19b9f">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/examples</innerdir>
+    <innerdir refid="dir_78f208ef8ac32d49726157fbd9dd6325">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher</innerdir>
+    <innerdir refid="dir_fc42f2a65657e9505ee00a2d08840ac7">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/"/>
+  </compounddef>
+</doxygen>

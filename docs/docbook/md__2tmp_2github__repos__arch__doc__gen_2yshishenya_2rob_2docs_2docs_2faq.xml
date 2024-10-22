@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq" xml:lang="en-US">
+<title>Frequently Asked Questions</title>
+<indexterm><primary>Frequently Asked Questions</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq_1autotoc_md74"/> </para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq_1autotoc_md75">
+<title><title>How do I get started?</title></title>
+
+<para>It really depends on what you&apos;re aiming for.</para>
+
+<para>If you&apos;re looking to connect your AI application to the internet with Tavily tailored API, check out the <link xlink:href="https://docs.tavily.com/docs/tavily-api/introductionn">Tavily API</link> documentation. If you&apos;re looking to build and deploy our open source autonomous research agent GPT Researcher, please see <link xlink:href="/docs/gpt-researcher/introduction">GPT Researcher</link> documentation. You can also check out demos and examples for inspiration <link xlink:href="/docs/examples/examples">here</link>. </para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq_1autotoc_md76">
+<title><title>What is GPT Researcher?</title></title>
+
+<para>GPT Researcher is a popular open source autonomous research agent that takes care of the tedious task of research for you, by scraping, filtering and aggregating over 20+ web sources per a single research task.</para>
+
+<para>GPT Researcher is built with best practices for leveraging LLMs (prompt engineering, RAG, chains, embeddings, etc), and is optimized for quick and efficient research. It is also fully customizable and can be tailored to your specific needs.</para>
+
+<para>To learn more about GPT Researcher, check out the <link xlink:href="/docs/gpt-researcher/introduction">documentation page</link>. </para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq_1autotoc_md77">
+<title><title>How much does each research run cost?</title></title>
+
+<para>A research task using GPT Researcher costs around $0.01 per a single run (for GPT-4 usage). We&apos;re constantly optimizing LLM calls to reduce costs and improve performance. </para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq_1autotoc_md78">
+<title><title>How do you ensure the report is factual and accurate?</title></title>
+
+<para>we do our best to ensure that the information we provide is factual and accurate. We do this by using multiple sources, and by using proprietary AI to score and rank the most relevant and accurate information. We also use proprietary AI to filter out irrelevant information and sources.</para>
+
+<para>Lastly, by using RAG and other techniques, we ensure that the information is relevant to the context of the research task, leading to more accurate generative AI content and reduced hallucinations.</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq_1autotoc_md79">
+<title><title>What are your plans for the future?</title></title>
+
+<para>We&apos;re constantly working on improving our products and services. We&apos;re currently working on improving our search API together with design partners, and adding more data sources to our search engine. We&apos;re also working on improving our research agent GPT Researcher, and adding more features to it while growing our amazing open source community.</para>
+
+<para>If you&apos;re interested in our roadmap or looking to collaborate, check out our <link xlink:href="https://trello.com/b/3O7KBePw/gpt-researcher-roadmap">roadmap page</link>.</para>
+
+<para>Feel free to <link xlink:href="mailto:assafelovic@gmail.com">contact us</link> if you have any further questions or suggestions! </para>
+</section>
+</section>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1document" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::document</compoundname>
+    <innernamespace refid="namespacegpt__researcher_1_1document_1_1document">gpt_researcher::document::document</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1document_1ad6bcf4f7e55c386b6ec05a3e19eed34d" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gpt_researcher::document.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>gpt_researcher.document.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader" kindref="compound">DocumentLoader</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/__init__.py" line="3" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/__init__.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

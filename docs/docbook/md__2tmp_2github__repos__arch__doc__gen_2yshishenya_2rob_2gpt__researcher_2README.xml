@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README" xml:lang="en-US">
+<title>🔎 GPT Researcher</title>
+<indexterm><primary>🔎 GPT Researcher</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README_1autotoc_md181"/><link xlink:href="https://tavily.com"></link> <link xlink:href="https://discord.com/invite/2pFkc83fRq"></link></para>
+
+<para><link xlink:href="https://github.com/assafelovic/gpt-researcher"></link> <link xlink:href="https://twitter.com/tavilyai"></link> <link xlink:href="https://badge.fury.io/py/gpt-researcher"></link></para>
+
+<para><emphasis role="bold">GPT Researcher is an autonomous agent designed for comprehensive online research on a variety of tasks.</emphasis></para>
+
+<para>The agent can produce detailed, factual and unbiased research reports, with customization options for focusing on relevant resources, outlines, and lessons. Inspired by the recent <link xlink:href="https://arxiv.org/abs/2305.04091">Plan-and-Solve</link> and <link xlink:href="https://arxiv.org/abs/2005.11401">RAG</link> papers, GPT Researcher addresses issues of speed, determinism and reliability, offering a more stable performance and increased speed through parallelized agent work, as opposed to synchronous operations.</para>
+
+<para><emphasis role="bold">Our mission is to empower individuals and organizations with accurate, unbiased, and factual information by leveraging the power of AI.</emphasis></para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README_1autotoc_md182">
+<title><title>PIP Package</title></title>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 0</emphasis> - Install Python 3.11 or later. <link xlink:href="https://www.tutorialsteacher.com/python/install-python">See here</link> for a step-by-step guide. <emphasis role="bold">Step 1</emphasis> - install GPT Researcher package <link xlink:href="https://pypi.org/project/gpt-researcher/">PyPI page</link> </para>
+</blockquote><literallayout><computeroutput>$&#32;pip&#32;install&#32;gpt-researcher
+</computeroutput></literallayout> <blockquote>
+<para>&#8205;<emphasis role="bold">Step 2</emphasis> - Create .env file with your OpenAI Key and Tavily API key or simply export it </para>
+</blockquote><literallayout><computeroutput>$&#32;export&#32;OPENAI_API_KEY={Your&#32;OpenAI&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout> <literallayout><computeroutput>$&#32;export&#32;TAVILY_API_KEY={Your&#32;Tavily&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout> <blockquote>
+<para>&#8205;<emphasis role="bold">Step 3</emphasis> - Start Coding using GPT Researcher in your own code, example: </para>
+</blockquote><literallayout><computeroutput>from&#32;gpt_researcher&#32;import&#32;GPTResearcher
+import&#32;asyncio
+
+
+async&#32;def&#32;get_report(query:&#32;str,&#32;report_type:&#32;str)&#32;-&gt;&#32;str:
+&#32;&#32;&#32;&#32;researcher&#32;=&#32;GPTResearcher(query,&#32;report_type)
+&#32;&#32;&#32;&#32;report&#32;=&#32;await&#32;researcher.run()
+&#32;&#32;&#32;&#32;return&#32;report
+
+if&#32;__name__&#32;==&#32;&quot;__main__&quot;:
+&#32;&#32;&#32;&#32;query&#32;=&#32;&quot;what&#32;team&#32;may&#32;win&#32;the&#32;NBA&#32;finals?&quot;
+&#32;&#32;&#32;&#32;report_type&#32;=&#32;&quot;research_report&quot;
+
+&#32;&#32;&#32;&#32;report&#32;=&#32;asyncio.run(get_report(query,&#32;report_type))
+&#32;&#32;&#32;&#32;print(report)
+</computeroutput></literallayout> </para>
+</section>
+</section>

@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacebackend_1_1server" kind="namespace" language="Python">
+    <compoundname>backend::server</compoundname>
+    <innerclass refid="classbackend_1_1server_1_1ResearchRequest" prot="public">backend::server::ResearchRequest</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacebackend_1_1server_1a791304efa6d9abc2d7224777155f4ce3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>backend.server.level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1ac7ba92e1518c9942f9b2628e59284036" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>backend.server.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1a7b499ff940ba3d60a6a446047dc0e793" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <qualifiedname>backend.server.app</qualifiedname>
+        <initializer>=  FastAPI()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="39" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1afd315579b9669e0ddf3c7380195c2c9f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.allow_origins</definition>
+        <argsstring></argsstring>
+        <name>allow_origins</name>
+        <qualifiedname>backend.server.allow_origins</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="44" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1a02a6dbac09a1e44d53dac146b4b7995e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.allow_credentials</definition>
+        <argsstring></argsstring>
+        <name>allow_credentials</name>
+        <qualifiedname>backend.server.allow_credentials</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="45" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1a31453585c4b681dd455b119aad8df27f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.allow_methods</definition>
+        <argsstring></argsstring>
+        <name>allow_methods</name>
+        <qualifiedname>backend.server.allow_methods</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1ac0adc8d19eae0c9e8eaa11d97e60657b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.allow_headers</definition>
+        <argsstring></argsstring>
+        <name>allow_headers</name>
+        <qualifiedname>backend.server.allow_headers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="47" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1a3fb990b8f65eceb426d3046cca41f3be" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>backend.server.name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="51" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1a08ea44cc61f6d390978edd06e68867b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.templates</definition>
+        <argsstring></argsstring>
+        <name>templates</name>
+        <qualifiedname>backend.server.templates</qualifiedname>
+        <initializer>=  Jinja2Templates(directory=&quot;./frontend&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="53" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1server_1a967b877415aecb102a7fc379ce5041b1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::server.manager</definition>
+        <argsstring></argsstring>
+        <name>manager</name>
+        <qualifiedname>backend.server.manager</qualifiedname>
+        <initializer>=  <ref refid="classbackend_1_1websocket__manager_1_1WebSocketManager" kindref="compound">WebSocketManager</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="56" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebackend_1_1server_1a9c30cd96e9e80accf2505265058bb685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.server.format_filename</definition>
+        <argsstring>(task)</argsstring>
+        <name>format_filename</name>
+        <qualifiedname>backend.server.format_filename</qualifiedname>
+        <param>
+          <type>task</type>
+          <defname>task</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="62" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="62" bodyend="82"/>
+        <referencedby refid="namespacebackend_1_1server_1add4a342eaeb04b916c8e3ca8ee280129" compoundref="server_8py" startline="100" endline="142">backend.server.websocket_endpoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacebackend_1_1server_1aa20a85ade2f14a7b9746f098733052a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.server.startup_event</definition>
+        <argsstring>()</argsstring>
+        <name>startup_event</name>
+        <qualifiedname>backend.server.startup_event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="83" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="83" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebackend_1_1server_1aaf74caa59bfb354fc9376ff64b5b0450" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.server.read_root</definition>
+        <argsstring>(Request request)</argsstring>
+        <name>read_root</name>
+        <qualifiedname>backend.server.read_root</qualifiedname>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="89" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebackend_1_1server_1ad4dad2e900f405ce89832734ae7a4b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.server.save_request_to_file</definition>
+        <argsstring>(data, username)</argsstring>
+        <name>save_request_to_file</name>
+        <qualifiedname>backend.server.save_request_to_file</qualifiedname>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>username</type>
+          <defname>username</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="92" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="92" bodyend="99"/>
+        <referencedby refid="namespacebackend_1_1server_1add4a342eaeb04b916c8e3ca8ee280129" compoundref="server_8py" startline="100" endline="142">backend.server.websocket_endpoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacebackend_1_1server_1add4a342eaeb04b916c8e3ca8ee280129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.server.websocket_endpoint</definition>
+        <argsstring>(WebSocket websocket, str username=Depends(token_required))</argsstring>
+        <name>websocket_endpoint</name>
+        <qualifiedname>backend.server.websocket_endpoint</qualifiedname>
+        <param>
+          <type>WebSocket</type>
+          <declname>websocket</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>username</declname>
+          <defval>Depends(token_required)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="100" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="100" bodyend="142"/>
+        <references refid="namespacebackend_1_1server_1a9c30cd96e9e80accf2505265058bb685" compoundref="server_8py" startline="62" endline="82">backend.server.format_filename</references>
+        <references refid="namespacebackend_1_1server_1ad4dad2e900f405ce89832734ae7a4b80" compoundref="server_8py" startline="92" endline="99">backend.server.save_request_to_file</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_prompts_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher">gpt_researcher</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1master">gpt_researcher.master</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1master_1_1prompts">gpt_researcher.master.prompts</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a1515d26ed2febbb7bb2670723e9bc3c7">gpt_researcher.master.prompts.generate_search_queries_prompt</link> (str question, str parent_query, str report_type, int max_iterations=3)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1aa1acdb319226c2434745dd28ddc12a13">gpt_researcher.master.prompts.generate_report_prompt</link> (str question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a076ce149c880d13d4702ff92da83d7f5">gpt_researcher.master.prompts.generate_resource_report_prompt</link> (question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a32d1e3b87f76b16c6934959abc348ec0">gpt_researcher.master.prompts.generate_custom_report_prompt</link> (query_prompt, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a250d14916f8487c0a0a5959322e51b10">gpt_researcher.master.prompts.generate_outline_report_prompt</link> (question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1ab0519037b4c15adb99ff3dd89076c9e9">gpt_researcher.master.prompts.get_report_by_type</link> (str report_type)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a1b8b6bf3d2fe1f56795cf36c745c9545">gpt_researcher.master.prompts.auto_agent_instructions</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1aa624fb10f7c23dd338e53222a0de584c">gpt_researcher.master.prompts.generate_summary_prompt</link> (query, data)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1afa1a6e6fa275aa54ca3cf6f5030d5f8e">gpt_researcher.master.prompts.generate_subtopics_prompt</link> ()</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1afe484ac6f9c1a55a54a9b2add561ff4d">gpt_researcher.master.prompts.generate_subtopic_report_prompt</link> (current_subtopic, list existing_headers, str main_topic, context, str report_format=&quot;apa&quot;, max_subsections=5, total_words=800)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a5ab2bf457ff727dc200a27395b0b05c8">gpt_researcher.master.prompts.generate_report_introduction</link> (str question, str research_summary=&quot;&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1abb901630f113e1efe4c635c5f6e8229c">gpt_researcher.master.prompts.get_prompt_by_report_type</link> (report_type)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1aaffdcbce2b4c96cc4fc6f8bb4411bc23">gpt_researcher.master.prompts.report_type_mapping</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceagents_1_1utils_1_1views" xml:lang="en-US">
+<title>agents.utils.views Namespace Reference</title>
+<indexterm><primary>agents.utils.views</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classagents_1_1utils_1_1views_1_1AgentColor">AgentColor</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceagents_1_1utils_1_1views_1aa0db7100917087f4c57e0aae1358f5a9">print_agent_output</link> (str output, str agent=&quot;RESEARCHER&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceagents_1_1utils_1_1views_1aa0db7100917087f4c57e0aae1358f5a9"/><section>
+    <title>print_agent_output()</title>
+<indexterm><primary>print_agent_output</primary><secondary>agents.utils.views</secondary></indexterm>
+<indexterm><primary>agents.utils.views</primary><secondary>print_agent_output</secondary></indexterm>
+<para><computeroutput>agents.utils.views.print_agent_output (str output, str agent = <computeroutput>&quot;RESEARCHER&quot;</computeroutput>
+)</computeroutput></para></section>
+</section>
+</section>

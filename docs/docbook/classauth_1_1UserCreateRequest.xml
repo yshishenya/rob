@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classauth_1_1UserCreateRequest" xml:lang="en-US">
+<title>auth.UserCreateRequest Class Reference</title>
+<indexterm><primary>auth.UserCreateRequest</primary></indexterm>
+Inheritance diagram for auth.UserCreateRequest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1UserCreateRequest__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for auth.UserCreateRequest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1UserCreateRequest__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>constr <link linkend="_classauth_1_1UserCreateRequest_1a6aef431fda013a3efd4143ffd79370cb">username</link> = Field(..., description=&quot;Имя пользователя. Должно быть уникальным и содержать от 3 до 50 символов.&quot;)</para>
+</listitem>
+            <listitem><para>EmailStr <link linkend="_classauth_1_1UserCreateRequest_1a4fad3c521331dc7387067300ed513426">email</link> = Field(..., description=&quot;Электронная почта пользователя. Должна быть действительной и уникальной.&quot;)</para>
+</listitem>
+            <listitem><para>constr <link linkend="_classauth_1_1UserCreateRequest_1a1bf5a4130971972b43179fddc4a8043a">password</link> = Field(..., description=&quot;Пароль пользователя. Должен быть надежным и содержать от 6 до 50 символов.&quot;)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classauth_1_1UserCreateRequest_1a02b081786ef492c7e5c5004e629c1474">is_admin</link> = Field(..., description=&quot;Является ли пользователь администратором. True, если пользователь имеет права администратора.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classauth_1_1UserCreateRequest_1a4fad3c521331dc7387067300ed513426"/><section>
+    <title>email</title>
+<indexterm><primary>email</primary><secondary>auth.UserCreateRequest</secondary></indexterm>
+<indexterm><primary>auth.UserCreateRequest</primary><secondary>email</secondary></indexterm>
+<para><computeroutput>EmailStr auth.UserCreateRequest.email = Field(..., description=&quot;Электронная почта пользователя. Должна быть действительной и уникальной.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1UserCreateRequest_1a02b081786ef492c7e5c5004e629c1474"/><section>
+    <title>is_admin</title>
+<indexterm><primary>is_admin</primary><secondary>auth.UserCreateRequest</secondary></indexterm>
+<indexterm><primary>auth.UserCreateRequest</primary><secondary>is_admin</secondary></indexterm>
+<para><computeroutput>bool auth.UserCreateRequest.is_admin = Field(..., description=&quot;Является ли пользователь администратором. True, если пользователь имеет права администратора.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1UserCreateRequest_1a1bf5a4130971972b43179fddc4a8043a"/><section>
+    <title>password</title>
+<indexterm><primary>password</primary><secondary>auth.UserCreateRequest</secondary></indexterm>
+<indexterm><primary>auth.UserCreateRequest</primary><secondary>password</secondary></indexterm>
+<para><computeroutput>constr auth.UserCreateRequest.password = Field(..., description=&quot;Пароль пользователя. Должен быть надежным и содержать от 6 до 50 символов.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1UserCreateRequest_1a6aef431fda013a3efd4143ffd79370cb"/><section>
+    <title>username</title>
+<indexterm><primary>username</primary><secondary>auth.UserCreateRequest</secondary></indexterm>
+<indexterm><primary>auth.UserCreateRequest</primary><secondary>username</secondary></indexterm>
+<para><computeroutput>constr auth.UserCreateRequest.username = Field(..., description=&quot;Имя пользователя. Должно быть уникальным и содержать от 3 до 50 символов.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_auth_8py">auth.py</link></section>
+</section>

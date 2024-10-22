@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport" xml:lang="en-US">
+<title>backend.report_type.detailed_report.detailed_report.DetailedReport Class Reference</title>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary></indexterm>
+Collaboration diagram for backend.report_type.detailed_report.detailed_report.DetailedReport:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a7281c0a7387d041d3a1592a168632a44">__init__</link> (self, str <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a78f09ae4ef42c70ddf577150db317032">query</link>, str <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a1f44e3d7a0e1bda2669f398f865e6f81">report_type</link>, str <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a75f066b7b970c3f96cf6c1c68abda99a">report_source</link>, <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a7f9a088e282e79d553130237084ab3e0">source_urls</link>, str <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a221962d4df23d2476a24fcda876d037a">config_path</link>, WebSocket <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ac7fdf7619fee36a4feb5c8df6f712eb7">websocket</link>, <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a4ffab41ec91be1244e3ed7eb94b40f3f">subtopics</link>=[])</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a1ca617f8321dab09cda55a64ea5a289f">run</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a78f09ae4ef42c70ddf577150db317032">query</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a1f44e3d7a0e1bda2669f398f865e6f81">report_type</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a75f066b7b970c3f96cf6c1c68abda99a">report_source</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a7f9a088e282e79d553130237084ab3e0">source_urls</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a221962d4df23d2476a24fcda876d037a">config_path</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ac7fdf7619fee36a4feb5c8df6f712eb7">websocket</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a4ffab41ec91be1244e3ed7eb94b40f3f">subtopics</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a24bd934498e4ee5c27b336560bc21892">main_task_assistant</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a243d64db7407c3effaafc4ba4055dafb">existing_headers</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a2655bf073543019eefe8c1ae96168f73">global_context</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ad751ada9bed4490bb6dff1157ac6885c">global_urls</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1af6acd4a4ae8dcae11eddeb68fe1bd2f1">_initial_research</link> (self)</para>
+</listitem>
+            <listitem><para>list <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a0535b2e1a13765f0e684d4ac0dbb306f">_get_all_subtopics</link> (self)</para>
+</listitem>
+            <listitem><para>tuple <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a90f2f9d6cde4d8b8f35274937d281c94">_generate_subtopic_reports</link> (self, list <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a4ffab41ec91be1244e3ed7eb94b40f3f">subtopics</link>)</para>
+</listitem>
+            <listitem><para>tuple <link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ab4222f0b61a14a6c08c6765f3e337d89">_get_subtopic_report</link> (self, dict subtopic)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a34716fb7e8580c57a47ee5230c91d567">_construct_detailed_report</link> (self, str introduction, str report_body)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a7281c0a7387d041d3a1592a168632a44"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.__init__ ( self, str query, str report_type, str report_source,  source_urls, str config_path, WebSocket websocket,  subtopics = <computeroutput>[]</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a34716fb7e8580c57a47ee5230c91d567"/><section>
+    <title>_construct_detailed_report()</title>
+<indexterm><primary>_construct_detailed_report</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>_construct_detailed_report</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport._construct_detailed_report ( self, str introduction, str report_body)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_a34716fb7e8580c57a47ee5230c91d567_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a90f2f9d6cde4d8b8f35274937d281c94"/><section>
+    <title>_generate_subtopic_reports()</title>
+<indexterm><primary>_generate_subtopic_reports</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>_generate_subtopic_reports</secondary></indexterm>
+<para><computeroutput> tuple backend.report_type.detailed_report.detailed_report.DetailedReport._generate_subtopic_reports ( self, list subtopics)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_a90f2f9d6cde4d8b8f35274937d281c94_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_a90f2f9d6cde4d8b8f35274937d281c94_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a0535b2e1a13765f0e684d4ac0dbb306f"/><section>
+    <title>_get_all_subtopics()</title>
+<indexterm><primary>_get_all_subtopics</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>_get_all_subtopics</secondary></indexterm>
+<para><computeroutput> list backend.report_type.detailed_report.detailed_report.DetailedReport._get_all_subtopics ( self)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_a0535b2e1a13765f0e684d4ac0dbb306f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ab4222f0b61a14a6c08c6765f3e337d89"/><section>
+    <title>_get_subtopic_report()</title>
+<indexterm><primary>_get_subtopic_report</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>_get_subtopic_report</secondary></indexterm>
+<para><computeroutput> tuple backend.report_type.detailed_report.detailed_report.DetailedReport._get_subtopic_report ( self, dict subtopic)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_ab4222f0b61a14a6c08c6765f3e337d89_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1af6acd4a4ae8dcae11eddeb68fe1bd2f1"/><section>
+    <title>_initial_research()</title>
+<indexterm><primary>_initial_research</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>_initial_research</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport._initial_research ( self)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_af6acd4a4ae8dcae11eddeb68fe1bd2f1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a1ca617f8321dab09cda55a64ea5a289f"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.run ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_a1ca617f8321dab09cda55a64ea5a289f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a221962d4df23d2476a24fcda876d037a"/><section>
+    <title>config_path</title>
+<indexterm><primary>config_path</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>config_path</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.config_path</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a243d64db7407c3effaafc4ba4055dafb"/><section>
+    <title>existing_headers</title>
+<indexterm><primary>existing_headers</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>existing_headers</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.existing_headers</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a2655bf073543019eefe8c1ae96168f73"/><section>
+    <title>global_context</title>
+<indexterm><primary>global_context</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>global_context</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.global_context</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ad751ada9bed4490bb6dff1157ac6885c"/><section>
+    <title>global_urls</title>
+<indexterm><primary>global_urls</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>global_urls</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.global_urls</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a24bd934498e4ee5c27b336560bc21892"/><section>
+    <title>main_task_assistant</title>
+<indexterm><primary>main_task_assistant</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>main_task_assistant</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.main_task_assistant</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a78f09ae4ef42c70ddf577150db317032"/><section>
+    <title>query</title>
+<indexterm><primary>query</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>query</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.query</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a75f066b7b970c3f96cf6c1c68abda99a"/><section>
+    <title>report_source</title>
+<indexterm><primary>report_source</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>report_source</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.report_source</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a1f44e3d7a0e1bda2669f398f865e6f81"/><section>
+    <title>report_type</title>
+<indexterm><primary>report_type</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>report_type</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.report_type</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a7f9a088e282e79d553130237084ab3e0"/><section>
+    <title>source_urls</title>
+<indexterm><primary>source_urls</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>source_urls</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.source_urls</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a4ffab41ec91be1244e3ed7eb94b40f3f"/><section>
+    <title>subtopics</title>
+<indexterm><primary>subtopics</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>subtopics</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.subtopics</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ac7fdf7619fee36a4feb5c8df6f712eb7"/><section>
+    <title>websocket</title>
+<indexterm><primary>websocket</primary><secondary>backend.report_type.detailed_report.detailed_report.DetailedReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.detailed_report.detailed_report.DetailedReport</primary><secondary>websocket</secondary></indexterm>
+<para><computeroutput>backend.report_type.detailed_report.detailed_report.DetailedReport.websocket</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/detailed_report/<link linkend="_detailed__report_8py">detailed_report.py</link></section>
+</section>

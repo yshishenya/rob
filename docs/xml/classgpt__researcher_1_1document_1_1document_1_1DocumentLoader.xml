@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::document::document::DocumentLoader</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1ab948ce300525652105be5e32c93553d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.document.document.DocumentLoader::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <qualifiedname>gpt_researcher.document.document.DocumentLoader.path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a8b29c542ec0aa1012e197b24619eb9c1" compoundref="document_8py" startline="20" endline="42">gpt_researcher.document.document.DocumentLoader.load</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a347ef5773bfcea24970daa28fee74c97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.document.document.DocumentLoader.__init__</definition>
+        <argsstring>(self, path)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.document.document.DocumentLoader.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1ab948ce300525652105be5e32c93553d2" kindref="member">path</ref></type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a8b29c542ec0aa1012e197b24619eb9c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list</type>
+        <definition> list gpt_researcher.document.document.DocumentLoader.load</definition>
+        <argsstring>(self)</argsstring>
+        <name>load</name>
+        <qualifiedname>gpt_researcher.document.document.DocumentLoader.load</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" bodystart="20" bodyend="42"/>
+        <references refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a651f8685c5d5ae7dc0bd85ed482cfcb5" compoundref="document_8py" startline="43" endline="67">gpt_researcher.document.document.DocumentLoader._load_document</references>
+        <references refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1ab948ce300525652105be5e32c93553d2" compoundref="document_8py" startline="18">gpt_researcher.document.document.DocumentLoader.path</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a651f8685c5d5ae7dc0bd85ed482cfcb5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list</type>
+        <definition> list gpt_researcher.document.document.DocumentLoader._load_document</definition>
+        <argsstring>(self, str file_path, str file_extension)</argsstring>
+        <name>_load_document</name>
+        <qualifiedname>gpt_researcher.document.document.DocumentLoader._load_document</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_extension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" line="43" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" bodystart="43" bodyend="67"/>
+        <referencedby refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a8b29c542ec0aa1012e197b24619eb9c1" compoundref="document_8py" startline="20" endline="42">gpt_researcher.document.document.DocumentLoader.load</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.document.document.DocumentLoader</label>
+        <link refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/document.py" bodystart="15" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a347ef5773bfcea24970daa28fee74c97" prot="public" virt="non-virtual"><scope>gpt_researcher::document::document::DocumentLoader</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a651f8685c5d5ae7dc0bd85ed482cfcb5" prot="protected" virt="non-virtual"><scope>gpt_researcher::document::document::DocumentLoader</scope><name>_load_document</name></member>
+      <member refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a8b29c542ec0aa1012e197b24619eb9c1" prot="public" virt="non-virtual"><scope>gpt_researcher::document::document::DocumentLoader</scope><name>load</name></member>
+      <member refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1ab948ce300525652105be5e32c93553d2" prot="public" virt="non-virtual"><scope>gpt_researcher::document::document::DocumentLoader</scope><name>path</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

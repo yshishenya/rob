@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtoken__storage_1_1TokenStorage" xml:lang="en-US">
+<title>token_storage.TokenStorage Class Reference</title>
+<indexterm><primary>token_storage.TokenStorage</primary></indexterm>
+Inheritance diagram for token_storage.TokenStorage:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtoken__storage_1_1TokenStorage__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for token_storage.TokenStorage:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtoken__storage_1_1TokenStorage__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtoken__storage_1_1TokenStorage_1a358bba89fb75c5e0d351413fe35dc177">store_token</link> (self, token, user_id, expires_in)</para>
+</listitem>
+            <listitem><para><link linkend="_classtoken__storage_1_1TokenStorage_1a7a995049b7f1a26b9a3b9310781d6052">retrieve_token</link> (self, token)</para>
+</listitem>
+            <listitem><para><link linkend="_classtoken__storage_1_1TokenStorage_1a0993266db9e1a278fb77d46fc2ab9fed">delete_token</link> (self, token)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtoken__storage_1_1TokenStorage_1a0993266db9e1a278fb77d46fc2ab9fed"/><section>
+    <title>delete_token()</title>
+<indexterm><primary>delete_token</primary><secondary>token_storage.TokenStorage</secondary></indexterm>
+<indexterm><primary>token_storage.TokenStorage</primary><secondary>delete_token</secondary></indexterm>
+<para><computeroutput>token_storage.TokenStorage.delete_token ( self,  token)</computeroutput></para><para>
+Reimplemented in <link linkend="_classredis__token__storage_1_1RedisTokenStorage_1aaefb2d86c8ecfcfc7b4d6fc668b0142f">redis_token_storage.RedisTokenStorage</link>.</para>
+</section>
+<anchor xml:id="_classtoken__storage_1_1TokenStorage_1a7a995049b7f1a26b9a3b9310781d6052"/><section>
+    <title>retrieve_token()</title>
+<indexterm><primary>retrieve_token</primary><secondary>token_storage.TokenStorage</secondary></indexterm>
+<indexterm><primary>token_storage.TokenStorage</primary><secondary>retrieve_token</secondary></indexterm>
+<para><computeroutput>token_storage.TokenStorage.retrieve_token ( self,  token)</computeroutput></para><para>
+Reimplemented in <link linkend="_classredis__token__storage_1_1RedisTokenStorage_1aae0f0d43778c74ad44f4ee381151e7d0">redis_token_storage.RedisTokenStorage</link>.</para>
+</section>
+<anchor xml:id="_classtoken__storage_1_1TokenStorage_1a358bba89fb75c5e0d351413fe35dc177"/><section>
+    <title>store_token()</title>
+<indexterm><primary>store_token</primary><secondary>token_storage.TokenStorage</secondary></indexterm>
+<indexterm><primary>token_storage.TokenStorage</primary><secondary>store_token</secondary></indexterm>
+<para><computeroutput>token_storage.TokenStorage.store_token ( self,  token,  user_id,  expires_in)</computeroutput></para><para>
+Reimplemented in <link linkend="_classredis__token__storage_1_1RedisTokenStorage_1a229c35362e7af88b6096b2b5cb3048f0">redis_token_storage.RedisTokenStorage</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_token__storage_8py">token_storage.py</link></section>
+</section>

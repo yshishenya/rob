@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_434b0703019d58bbb57650e33eaa1ef4" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents</compoundname>
+    <innerdir refid="dir_a24b43acf419029ff7cae0fd96806de7">/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils</innerdir>
+    <innerfile refid="multi__agents_2agents_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="editor_8py">editor.py</innerfile>
+    <innerfile refid="master_8py">master.py</innerfile>
+    <innerfile refid="publisher_8py">publisher.py</innerfile>
+    <innerfile refid="researcher_8py">researcher.py</innerfile>
+    <innerfile refid="reviewer_8py">reviewer.py</innerfile>
+    <innerfile refid="reviser_8py">reviser.py</innerfile>
+    <innerfile refid="writer_8py">writer.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="welcome_8md" kind="file" language="Markdown">
+    <compoundname>welcome.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Welcome</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Hey<sp/>there!<sp/>👋</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We&apos;re<sp/>a<sp/>team<sp/>of<sp/>AI<sp/>researchers<sp/>and<sp/>developers<sp/>who<sp/>are<sp/>passionate<sp/>about<sp/>building<sp/>the<sp/>next<sp/>generation<sp/>of<sp/>AI<sp/>assistants.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Our<sp/>mission<sp/>is<sp/>to<sp/>empower<sp/>individuals<sp/>and<sp/>organizations<sp/>with<sp/>accurate,<sp/>unbiased,<sp/>and<sp/>factual<sp/>information.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>GPT<sp/>Researcher</highlight></codeline>
+<codeline><highlight class="normal">Quickly<sp/>accessing<sp/>relevant<sp/>and<sp/>trustworthy<sp/>information<sp/>is<sp/>more<sp/>crucial<sp/>than<sp/>ever.<sp/>However,<sp/>we&apos;ve<sp/>learned<sp/>that<sp/>none<sp/>of<sp/>today&apos;s<sp/>search<sp/>engines<sp/>provide<sp/>a<sp/>suitable<sp/>tool<sp/>that<sp/>provides<sp/>factual,<sp/>explicit<sp/>and<sp/>objective<sp/>answers<sp/>without<sp/>the<sp/>need<sp/>to<sp/>continuously<sp/>click<sp/>and<sp/>explore<sp/>multiple<sp/>sites<sp/>for<sp/>a<sp/>given<sp/>research<sp/>task.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>why<sp/>we&apos;ve<sp/>built<sp/>the<sp/>trending<sp/>open<sp/>source<sp/>**[GPT<sp/>Researcher](https://github.com/assafelovic/gpt-researcher)**.<sp/>GPT<sp/>Researcher<sp/>is<sp/>an<sp/>autonomous<sp/>agent<sp/>that<sp/>takes<sp/>care<sp/>of<sp/>the<sp/>tedious<sp/>task<sp/>of<sp/>research<sp/>for<sp/>you,<sp/>by<sp/>scraping,<sp/>filtering<sp/>and<sp/>aggregating<sp/>over<sp/>20+<sp/>web<sp/>sources<sp/>per<sp/>a<sp/>single<sp/>research<sp/>task.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>learn<sp/>more<sp/>about<sp/>GPT<sp/>Researcher,<sp/>check<sp/>out<sp/>the<sp/>[documentation<sp/>page](/docs/gpt-researcher/introduction).</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/welcome.md"/>
+  </compounddef>
+</doxygen>

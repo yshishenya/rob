@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="reviser_8py" kind="file" language="Python">
+    <compoundname>reviser.py</compoundname>
+    <innerclass refid="classagents_1_1reviser_1_1ReviserAgent" prot="public">agents::reviser::ReviserAgent</innerclass>
+    <innernamespace refid="namespaceagents">agents</innernamespace>
+    <innernamespace refid="namespaceagents_1_1reviser">agents::reviser</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceagents_1_1reviser" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.utils.views<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_agent_output</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.utils.llms<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>call_model</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>json</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespaceagents_1_1reviser_1adced1481093055f3bbb05ed5c543d1c4" refkind="member"><highlight class="normal">sample_revision_notes<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral">{</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/>&quot;draft&quot;:<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>draft<sp/>title:<sp/>The<sp/>revised<sp/>draft<sp/>that<sp/>you<sp/>are<sp/>submitting<sp/>for<sp/>review</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/>},</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/>&quot;revision_notes&quot;:<sp/>Your<sp/>message<sp/>to<sp/>the<sp/>reviewer<sp/>about<sp/>the<sp/>changes<sp/>you<sp/>made<sp/>to<sp/>the<sp/>draft<sp/>based<sp/>on<sp/>their<sp/>feedback</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral">}</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classagents_1_1reviser_1_1ReviserAgent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1reviser_1_1ReviserAgent" kindref="compound">ReviserAgent</ref>:</highlight></codeline>
+<codeline lineno="15" refid="classagents_1_1reviser_1_1ReviserAgent_1a72f2e05c9172082d048e04a8d2ca951b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1reviser_1_1ReviserAgent_1a72f2e05c9172082d048e04a8d2ca951b" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2" kindref="member">revise_draft</ref>(self,<sp/>draft_state:<sp/>dict):</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Review<sp/>a<sp/>draft<sp/>article</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>draft_state:</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:return:</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>review<sp/>=<sp/>draft_state.get(</highlight><highlight class="stringliteral">&quot;review&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>task<sp/>=<sp/>draft_state.get(</highlight><highlight class="stringliteral">&quot;task&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>draft_report<sp/>=<sp/>draft_state.get(</highlight><highlight class="stringliteral">&quot;draft&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prompt<sp/>=<sp/>[{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;role&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;system&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;content&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;You<sp/>are<sp/>an<sp/>expert<sp/>writer.<sp/>Your<sp/>goal<sp/>is<sp/>to<sp/>revise<sp/>drafts<sp/>based<sp/>on<sp/>reviewer<sp/>notes.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;role&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;user&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;content&quot;</highlight><highlight class="normal">:<sp/>f</highlight><highlight class="stringliteral">&quot;&quot;&quot;Draft:\n{draft_report}&quot;<sp/>+<sp/>&quot;Reviewer&apos;s<sp/>notes:\n{review}\n\n</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral">You<sp/>have<sp/>been<sp/>tasked<sp/>by<sp/>your<sp/>reviewer<sp/>with<sp/>revising<sp/>the<sp/>following<sp/>draft,<sp/>which<sp/>was<sp/>written<sp/>by<sp/>a<sp/>non-expert.</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral">If<sp/>you<sp/>decide<sp/>to<sp/>follow<sp/>the<sp/>reviewer&apos;s<sp/>notes,<sp/>please<sp/>write<sp/>a<sp/>new<sp/>draft<sp/>and<sp/>make<sp/>sure<sp/>to<sp/>address<sp/>all<sp/>of<sp/>the<sp/>points<sp/>they<sp/>raised.</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral">Please<sp/>keep<sp/>all<sp/>other<sp/>aspects<sp/>of<sp/>the<sp/>draft<sp/>the<sp/>same.</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral">You<sp/>MUST<sp/>return<sp/>nothing<sp/>but<sp/>a<sp/>JSON<sp/>in<sp/>the<sp/>following<sp/>format:</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral">{sample_revision_notes}</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}]</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>response<sp/>=<sp/>call_model(prompt,<sp/>model=task.get(</highlight><highlight class="stringliteral">&quot;model&quot;</highlight><highlight class="normal">),<sp/>response_format=</highlight><highlight class="stringliteral">&apos;json&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>json.loads(response)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classagents_1_1reviser_1_1ReviserAgent_1a87b9ffff687ab822ae8ce05aef90e405" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1reviser_1_1ReviserAgent_1a87b9ffff687ab822ae8ce05aef90e405" kindref="member">run</ref>(self,<sp/>draft_state:<sp/>dict):</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_agent_output(f</highlight><highlight class="stringliteral">&quot;Rewriting<sp/>draft<sp/>based<sp/>on<sp/>feedback...&quot;</highlight><highlight class="normal">,<sp/>agent=</highlight><highlight class="stringliteral">&quot;REVISOR&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>revision<sp/>=<sp/>self.<ref refid="classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2" kindref="member">revise_draft</ref>(draft_state)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>draft_state.get(</highlight><highlight class="stringliteral">&quot;task&quot;</highlight><highlight class="normal">).get(</highlight><highlight class="stringliteral">&quot;verbose&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_agent_output(f</highlight><highlight class="stringliteral">&quot;Revision<sp/>notes:<sp/>{revision.get(&apos;revision_notes&apos;)}&quot;</highlight><highlight class="normal">,<sp/>agent=</highlight><highlight class="stringliteral">&quot;REVISOR&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight><highlight class="stringliteral">&quot;draft&quot;</highlight><highlight class="normal">:<sp/>revision.get(</highlight><highlight class="stringliteral">&quot;draft&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;revision_notes&quot;</highlight><highlight class="normal">:<sp/>revision.get(</highlight><highlight class="stringliteral">&quot;revision_notes&quot;</highlight><highlight class="normal">)}</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classredis__token__storage_1_1RedisTokenStorage" xml:lang="en-US">
+<title>redis_token_storage.RedisTokenStorage Class Reference</title>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary></indexterm>
+Inheritance diagram for redis_token_storage.RedisTokenStorage:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classredis__token__storage_1_1RedisTokenStorage__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for redis_token_storage.RedisTokenStorage:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classredis__token__storage_1_1RedisTokenStorage__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1a3d45b35c6cf8b5919ac3fe21cfa69479">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1a229c35362e7af88b6096b2b5cb3048f0">store_token</link> (self, token, user_id, expires_in)</para>
+</listitem>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1aae0f0d43778c74ad44f4ee381151e7d0">retrieve_token</link> (self, token)</para>
+</listitem>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1aaefb2d86c8ecfcfc7b4d6fc668b0142f">delete_token</link> (self, token)</para>
+</listitem>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1a025c443b1f988143a8f3624a2457a08b">delete_tokens_by_user_id</link> (self, user_id)</para>
+</listitem>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1ad6e7f032c2664d750982ac60025c24f3">store_refresh_token</link> (self, refresh_token, user_id, expires_in)</para>
+</listitem>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1a03d7fa22c6b5371b7254205ae9038ca8">retrieve_user_id_by_refresh_token</link> (self, refresh_token)</para>
+</listitem>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1ad4043839e9087a9580f0cdb73e61ec0b">delete_refresh_token</link> (self, refresh_token)</para>
+</listitem>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1ae8dd99f867d56a7d22cc51abe948835c">delete_all_refresh_tokens_by_user_id</link> (self, user_id)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049">redis_client</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1a3d45b35c6cf8b5919ac3fe21cfa69479"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1ae8dd99f867d56a7d22cc51abe948835c"/><section>
+    <title>delete_all_refresh_tokens_by_user_id()</title>
+<indexterm><primary>delete_all_refresh_tokens_by_user_id</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>delete_all_refresh_tokens_by_user_id</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.delete_all_refresh_tokens_by_user_id ( self,  user_id)</computeroutput></para></section>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1ad4043839e9087a9580f0cdb73e61ec0b"/><section>
+    <title>delete_refresh_token()</title>
+<indexterm><primary>delete_refresh_token</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>delete_refresh_token</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.delete_refresh_token ( self,  refresh_token)</computeroutput></para></section>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1aaefb2d86c8ecfcfc7b4d6fc668b0142f"/><section>
+    <title>delete_token()</title>
+<indexterm><primary>delete_token</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>delete_token</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.delete_token ( self,  token)</computeroutput></para><para>
+Reimplemented from <link linkend="_classtoken__storage_1_1TokenStorage_1a0993266db9e1a278fb77d46fc2ab9fed">token_storage.TokenStorage</link>.</para>
+</section>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1a025c443b1f988143a8f3624a2457a08b"/><section>
+    <title>delete_tokens_by_user_id()</title>
+<indexterm><primary>delete_tokens_by_user_id</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>delete_tokens_by_user_id</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.delete_tokens_by_user_id ( self,  user_id)</computeroutput></para></section>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1aae0f0d43778c74ad44f4ee381151e7d0"/><section>
+    <title>retrieve_token()</title>
+<indexterm><primary>retrieve_token</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>retrieve_token</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.retrieve_token ( self,  token)</computeroutput></para><para>
+Reimplemented from <link linkend="_classtoken__storage_1_1TokenStorage_1a7a995049b7f1a26b9a3b9310781d6052">token_storage.TokenStorage</link>.</para>
+</section>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1a03d7fa22c6b5371b7254205ae9038ca8"/><section>
+    <title>retrieve_user_id_by_refresh_token()</title>
+<indexterm><primary>retrieve_user_id_by_refresh_token</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>retrieve_user_id_by_refresh_token</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.retrieve_user_id_by_refresh_token ( self,  refresh_token)</computeroutput></para></section>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1ad6e7f032c2664d750982ac60025c24f3"/><section>
+    <title>store_refresh_token()</title>
+<indexterm><primary>store_refresh_token</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>store_refresh_token</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.store_refresh_token ( self,  refresh_token,  user_id,  expires_in)</computeroutput></para></section>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1a229c35362e7af88b6096b2b5cb3048f0"/><section>
+    <title>store_token()</title>
+<indexterm><primary>store_token</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>store_token</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.store_token ( self,  token,  user_id,  expires_in)</computeroutput></para><para>
+Reimplemented from <link linkend="_classtoken__storage_1_1TokenStorage_1a358bba89fb75c5e0d351413fe35dc177">token_storage.TokenStorage</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049"/><section>
+    <title>redis_client</title>
+<indexterm><primary>redis_client</primary><secondary>redis_token_storage.RedisTokenStorage</secondary></indexterm>
+<indexterm><primary>redis_token_storage.RedisTokenStorage</primary><secondary>redis_client</secondary></indexterm>
+<para><computeroutput>redis_token_storage.RedisTokenStorage.redis_client</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_redis__token__storage_8py">redis_token_storage.py</link></section>
+</section>

@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README" xml:lang="en-US">
+<title>README</title>
+<indexterm><primary>README</primary></indexterm>
+
+<para></para>
+
+<para></para>
+
+<para></para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md206">
+<title><title>autotoc_md206</title></title>
+
+<para></para>
+
+<para><link xlink:href="https://gptr.dev"></link> <link xlink:href="https://docs.gptr.dev"></link> <link xlink:href="https://discord.gg/QgZXvJAccX"></link></para>
+
+<para><link xlink:href="https://badge.fury.io/py/gpt-researcher"></link>  <link xlink:href="https://colab.research.google.com/github/assafelovic/gpt-researcher/blob/master/examples/pip-run.ipynb"></link>  <link xlink:href="https://twitter.com/assaf_elovic"></link></para>
+
+<para><link xlink:href="https://github.com/assafelovic/gpt-researcher/blob/master/README.md">English</link> | <link xlink:href="https://github.com/assafelovic/gpt-researcher/blob/master/README-zh_CN.md">中文</link> </para>
+
+<para><emphasis role="bold">GPT Researcher is an autonomous agent designed for comprehensive online research on a variety of tasks.</emphasis></para>
+
+<para>The agent can produce detailed, factual and unbiased research reports, with customization options for focusing on relevant resources, outlines, and lessons. Inspired by the recent <link xlink:href="https://arxiv.org/abs/2305.04091">Plan-and-Solve</link> and <link xlink:href="https://arxiv.org/abs/2005.11401">RAG</link> papers, GPT Researcher addresses issues of speed, determinism and reliability, offering a more stable performance and increased speed through parallelized agent work, as opposed to synchronous operations.</para>
+
+<para><emphasis role="bold">Our mission is to empower individuals and organizations with accurate, unbiased, and factual information by leveraging the power of AI.</emphasis></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md207">
+<title><title>Why GPT Researcher?</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>To form objective conclusions for manual research tasks can take time, sometimes weeks to find the right resources and information.</para>
+</listitem><listitem>
+<para>Current LLMs are trained on past and outdated information, with heavy risks of hallucinations, making them almost irrelevant for research tasks.</para>
+</listitem><listitem>
+<para>Current LLMs are limited to short token outputs which are not sufficient for long detailed research reports (2k+ words).</para>
+</listitem><listitem>
+<para>Services that enable web search (such as ChatGPT + Web Plugin), only consider limited sources and content that in some cases result in superficial and biased answers.</para>
+</listitem><listitem>
+<para>Using only a selection of web sources can create bias in determining the right conclusions for research tasks.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md208">
+<title><title>Demo</title></title>
+
+<para><link xlink:href="https://github.com/assafelovic/gpt-researcher/assets/13554167/dd6cf08f-b31e-40c6-9907-1915f52a7110">https://github.com/assafelovic/gpt-researcher/assets/13554167/dd6cf08f-b31e-40c6-9907-1915f52a7110</link></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md209">
+<title><title>Architecture</title></title>
+
+<para>The main idea is to run &quot;planner&quot; and &quot;execution&quot; agents, whereas the planner generates questions to research, and the execution agents seek the most related information based on each generated research question. Finally, the planner filters and aggregates all related information and creates a research report. <?linebreak?> <?linebreak?> The agents leverage both <computeroutput>gpt3.5-turbo</computeroutput> and <computeroutput>gpt-4o</computeroutput> (128K context) to complete a research task. We optimize for costs using each only when necessary. <emphasis role="bold">The average research task takes around 3 minutes to complete, and costs ~$0.1.</emphasis></para>
+
+<para>  </para>
+
+<para>More specifically:<itemizedlist>
+<listitem>
+<para>Create a domain specific agent based on research query or task.</para>
+</listitem><listitem>
+<para>Generate a set of research questions that together form an objective opinion on any given task.</para>
+</listitem><listitem>
+<para>For each research question, trigger a crawler agent that scrapes online resources for information relevant to the given task.</para>
+</listitem><listitem>
+<para>For each scraped resources, summarize based on relevant information and keep track of its sources.</para>
+</listitem><listitem>
+<para>Finally, filter and aggregate all summarized sources and generate a final research report.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md210">
+<title><title>Tutorials</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><link xlink:href="https://docs.gptr.dev/blog/building-gpt-researcher">How it Works</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://www.loom.com/share/04ebffb6ed2a4520a27c3e3addcdde20?sid=da1848e8-b1f1-42d1-93c3-5b0b9c3b24ea">How to Install</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://www.loom.com/share/6a3385db4e8747a1913dd85a7834846f?sid=a740fd5b-2aa3-457e-8fb7-86976f59f9b8">Live Demo</link></para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md211">
+<title><title>Features</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para>📝 Generate research, outlines, resources and lessons reports with local documents and web sources</para>
+</listitem><listitem>
+<para>📜 Can generate long and detailed research reports (over 2K words)</para>
+</listitem><listitem>
+<para>🌐 Aggregates over 20 web sources per research to form objective and factual conclusions</para>
+</listitem><listitem>
+<para>🖥️ Includes an easy-to-use web interface (HTML/CSS/JS)</para>
+</listitem><listitem>
+<para>🔍 Scrapes web sources with javascript support</para>
+</listitem><listitem>
+<para>📂 Keeps track and context of visited and used web sources</para>
+</listitem><listitem>
+<para>📄 Export research reports to PDF, Word and more...</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md212">
+<title><title>📖 Documentation</title></title>
+
+<para>Please see <link xlink:href="https://docs.gptr.dev/docs/gpt-researcher/getting-started">here</link> for full documentation on:</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Getting started (installation, setting up the environment, simple examples)</para>
+</listitem><listitem>
+<para>Customization and configuration</para>
+</listitem><listitem>
+<para>How-To examples (demos, integrations, docker support)</para>
+</listitem><listitem>
+<para>Reference (full API docs)</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md213">
+<title><title>⚙️ Getting Started</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md214">
+<title><title>Installation</title></title>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 0</emphasis> - Install Python 3.11 or later. <link xlink:href="https://www.tutorialsteacher.com/python/install-python">See here</link> for a step-by-step guide. </para>
+</blockquote><blockquote>
+<para>&#8205;<emphasis role="bold">Step 1</emphasis> - Download the project and navigate to its directory </para>
+</blockquote><literallayout><computeroutput>git&#32;clone&#32;https://github.com/assafelovic/gpt-researcher.git
+cd&#32;gpt-researcher
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 3</emphasis> - Set up API keys using two methods: exporting them directly or storing them in a <computeroutput>.env</computeroutput> file. </para>
+</blockquote>For Linux/Windows temporary setup, use the export method:</para>
+
+<para><literallayout><computeroutput>export&#32;OPENAI_API_KEY={Your&#32;OpenAI&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout></para>
+
+<para>For a more permanent setup, create a <computeroutput>.env</computeroutput> file in the current <computeroutput>gpt-researcher</computeroutput> directory and input the env vars (without <computeroutput>export</computeroutput>).</para>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">For LLM, we recommend <link xlink:href="https://platform.openai.com/docs/guides/gpt">OpenAI GPT</link></emphasis>, but you can use any other LLM model (including open sources). To learn how to change the LLM model, please refer to the <link xlink:href="https://docs.gptr.dev/docs/gpt-researcher/llms">documentation</link> page.</para>
+</listitem><listitem>
+<para><emphasis role="bold">For web search API, the default is <computeroutput>duckduckgo</computeroutput></emphasis> (no signup required), but you can also refer to other web search APIs of your choice by adding env <computeroutput>RETRIEVER</computeroutput> to <computeroutput>google</computeroutput>, <computeroutput>bing</computeroutput>, <computeroutput>tavily</computeroutput>, <computeroutput>googleSerp</computeroutput>, <computeroutput>serpapi</computeroutput>, <computeroutput>searx</computeroutput> and more.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md215">
+<title><title>Quickstart</title></title>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 1</emphasis> - Install dependencies </para>
+</blockquote><literallayout><computeroutput>pip&#32;install&#32;-r&#32;requirements.txt
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 2</emphasis> - Run the agent with FastAPI </para>
+</blockquote><literallayout><computeroutput>python&#32;-m&#32;uvicorn&#32;main:app&#32;--reload
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 3</emphasis> - Go to <link xlink:href="http://localhost:8000">http://localhost:8000</link> on any browser and enjoy researching! </para>
+</blockquote><?linebreak?></para>
+
+<para><emphasis role="bold">To learn how to get started with <link xlink:href="https://docs.gptr.dev/docs/gpt-researcher/getting-started#try-it-with-docker">Docker</link>, <link xlink:href="https://docs.gptr.dev/docs/gpt-researcher/getting-started#poetry">Poetry</link> or a <link xlink:href="https://docs.gptr.dev/docs/gpt-researcher/getting-started#virtual-environment">virtual environment</link> check out the <link xlink:href="https://docs.gptr.dev/docs/gpt-researcher/getting-started">documentation</link> page.</emphasis></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md216">
+<title><title>Run as PIP package</title></title>
+
+<para><literallayout><computeroutput>pip&#32;install&#32;gpt-researcher
+</computeroutput></literallayout></para>
+
+<para><literallayout><computeroutput>...
+from&#32;gpt_researcher&#32;import&#32;GPTResearcher
+
+query&#32;=&#32;&quot;why&#32;is&#32;Nvidia&#32;stock&#32;going&#32;up?&quot;
+researcher&#32;=&#32;GPTResearcher(query=query,&#32;report_type=&quot;research_report&quot;)
+#&#32;Conduct&#32;research&#32;on&#32;the&#32;given&#32;query
+research_result&#32;=&#32;await&#32;researcher.conduct_research()
+#&#32;Write&#32;the&#32;report
+report&#32;=&#32;await&#32;researcher.write_report()
+...
+</computeroutput></literallayout></para>
+
+<para><emphasis role="bold">For more examples and configurations, please refer to the <link xlink:href="https://docs.gptr.dev/docs/gpt-researcher/pip-package">PIP documentation</link> page.</emphasis></para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md217">
+<title><title>📄 Research on Local Documents</title></title>
+
+<para>You can instruct the GPT Researcher to run research tasks based on your local documents. Currently supported file formats are: PDF, plain text, CSV, Excel, Markdown, PowerPoint, and Word documents.</para>
+
+<para>Step 1: Add the env variable <computeroutput>DOC_PATH</computeroutput> pointing to the folder where your documents are located.</para>
+
+<para><literallayout><computeroutput>export&#32;DOC_PATH=&quot;./my-docs&quot;
+</computeroutput></literallayout></para>
+
+<para>Step 2:<itemizedlist>
+<listitem>
+<para>If you&apos;re running the frontend app on localhost:8000, simply select &quot;My Documents&quot; from the the &quot;Report Source&quot; Dropdown Options.</para>
+</listitem><listitem>
+<para>If you&apos;re running GPT Researcher with the <link xlink:href="https://docs.tavily.com/docs/gpt-researcher/pip-package">PIP package</link>, pass the <computeroutput>report_source</computeroutput> argument as &quot;documents&quot; when you instantiate the <computeroutput>GPTResearcher</computeroutput> class <link xlink:href="https://docs.tavily.com/docs/gpt-researcher/tailored-research">code sample here</link>.</para>
+</listitem></itemizedlist>
+</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md218">
+<title><title>One-Click Deployment</title></title>
+
+<para><link xlink:href="https://repocloud.io/details/?app_id=274"></link></para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md219">
+<title><title>👪 Multi-Agent Assistant</title></title>
+
+<para>As AI evolves from prompt engineering and RAG to multi-agent systems, we&apos;re excited to introduce our new multi-agent assistant built with <link xlink:href="https://python.langchain.com/v0.1/docs/langgraph/">LangGraph</link>.</para>
+
+<para>By using LangGraph, the research process can be significantly improved in depth and quality by leveraging multiple agents with specialized skills. Inspired by the recent <link xlink:href="https://arxiv.org/abs/2402.14207">STORM</link> paper, this project showcases how a team of AI agents can work together to conduct research on a given topic, from planning to publication.</para>
+
+<para>An average run generates a 5-6 page research report in multiple formats such as PDF, Docx and Markdown.</para>
+
+<para>Check it out <link xlink:href="https://github.com/assafelovic/gpt-researcher/tree/master/multi_agents">here</link> or head over to our <link xlink:href="https://docs.gptr.dev/docs/gpt-researcher/langgraph">documentation</link> for more information.</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md220">
+<title><title>🚀 Contributing</title></title>
+
+<para>We highly welcome contributions! Please check out <link xlink:href="https://github.com/assafelovic/gpt-researcher/blob/master/CONTRIBUTING.md">contributing</link> if you&apos;re interested.</para>
+
+<para>Please check out our <link xlink:href="https://trello.com/b/3O7KBePw/gpt-researcher-roadmap">roadmap</link> page and reach out to us via our <link xlink:href="https://discord.gg/2pFkc83fRq">Discord community</link> if you&apos;re interested in joining our mission. <link xlink:href="https://github.com/assafelovic/gpt-researcher/graphs/contributors"> </link> </para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md221">
+<title><title>✉️ Support / Contact us</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><link xlink:href="https://discord.gg/spBgZmm3Xe">Community Discord</link></para>
+</listitem><listitem>
+<para>Author Email: <link xlink:href="mailto:assaf.elovic@gmail.com">assaf.elovic@gmail.com</link></para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README_1autotoc_md222">
+<title><title>🛡 Disclaimer</title></title>
+
+<para>This project, GPT Researcher, is an experimental application and is provided &quot;as-is&quot; without any warranty, express or implied. We are sharing codes for academic purposes under the MIT license. Nothing herein is academic advice, and NOT a recommendation to use in academic or research papers.</para>
+
+<para>Our view on unbiased research claims:<orderedlist>
+<listitem>
+<para>The main goal of GPT Researcher is to reduce incorrect and biased facts. How? We assume that the more sites we scrape the less chances of incorrect data. By scraping over 20 sites per research, and choosing the most frequent information, the chances that they are all wrong is extremely low.</para>
+</listitem><listitem>
+<para>We do not aim to eliminate biases; we aim to reduce it as much as possible. <emphasis role="bold">We are here as a community to figure out the most effective human/llm interactions.</emphasis></para>
+</listitem><listitem>
+<para>In research, people also tend towards biases as most have already opinions on the topics they research about. This tool scrapes many opinions and will evenly explain diverse views that a biased person would never have read.</para>
+</listitem></orderedlist>
+</para>
+
+<para><emphasis role="bold">Please note that the use of the GPT-4 language model can be expensive due to its token usage.</emphasis> By utilizing this project, you acknowledge that you are responsible for monitoring and managing your own token usage and the associated costs. It is highly recommended to check your OpenAI API usage regularly and set up any necessary limits or alerts to prevent unexpected charges.</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+
+<para><link xlink:href="https://star-history.com/#assafelovic/gpt-researcher">  </link> </para>
+</section>
+</section>

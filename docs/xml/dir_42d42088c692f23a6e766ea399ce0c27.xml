@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_42d42088c692f23a6e766ea399ce0c27" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend</compoundname>
+    <innerdir refid="dir_a9499db4338a32c38b4cdeeb0d839d88">/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth</innerdir>
+    <innerdir refid="dir_aab170fbc980b9f46c5ef36e78faa03a">/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type</innerdir>
+    <innerfile refid="backend_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="db_8py">db.py</innerfile>
+    <innerfile refid="server_8py">server.py</innerfile>
+    <innerfile refid="utils_8py">utils.py</innerfile>
+    <innerfile refid="websocket__manager_8py">websocket_manager.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/"/>
+  </compounddef>
+</doxygen>

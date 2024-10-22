@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classbackend_1_1db_1_1User" kind="class" language="Python" prot="public">
+    <compoundname>backend::db::User</compoundname>
+    <basecompoundref refid="classBase" prot="public" virt="non-virtual">Base</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classbackend_1_1db_1_1User_1a2a7afdccbdd98ce80ba9445eda2eddf8" prot="private" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str backend.db.User::__tablename__</definition>
+        <argsstring></argsstring>
+        <name>__tablename__</name>
+        <qualifiedname>backend.db.User.__tablename__</qualifiedname>
+        <initializer>=  &quot;user&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbackend_1_1db_1_1User_1a0961dd5989b805b2326170f1db7ddfbb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>backend.db.User::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>backend.db.User.id</qualifiedname>
+        <initializer>=  Column(Integer, primary_key=True, index=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbackend_1_1db_1_1User_1a5023fa9e4da1d4253434a7fce002ba10" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>backend.db.User::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>backend.db.User.username</qualifiedname>
+        <initializer>=  Column(String, unique=True, index=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="34" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbackend_1_1db_1_1User_1a8a4108d863222635a597c841ce7bedd6" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>backend.db.User::password_hash</definition>
+        <argsstring></argsstring>
+        <name>password_hash</name>
+        <qualifiedname>backend.db.User.password_hash</qualifiedname>
+        <initializer>=  Column(String, nullable=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="35" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classbackend_1_1db_1_1User_1a2b26b10e4cef8e28529000b96380ed65" compoundref="db_8py" startline="42" endline="60">backend.db.User.check_password</referencedby>
+        <referencedby refid="classbackend_1_1db_1_1User_1a398a54bc53a26938573dfca506a13c5c" compoundref="db_8py" startline="39" endline="41">backend.db.User.set_password</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbackend_1_1db_1_1User_1ac9dbd0a9355fb699399f49e4854775f1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>backend.db.User::email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <qualifiedname>backend.db.User.email</qualifiedname>
+        <initializer>=  Column(String, unique=True, index=True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbackend_1_1db_1_1User_1a5c3f597a861c93d59cd756e5ecb214a9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>backend.db.User::is_admin</definition>
+        <argsstring></argsstring>
+        <name>is_admin</name>
+        <qualifiedname>backend.db.User.is_admin</qualifiedname>
+        <initializer>=  Column(Boolean, default=False, nullable=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="37" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbackend_1_1db_1_1User_1a398a54bc53a26938573dfca506a13c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.db.User.set_password</definition>
+        <argsstring>(self, password)</argsstring>
+        <name>set_password</name>
+        <qualifiedname>backend.db.User.set_password</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>password</type>
+          <defname>password</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="39" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="39" bodyend="41"/>
+        <references refid="classbackend_1_1db_1_1User_1a8a4108d863222635a597c841ce7bedd6" compoundref="db_8py" startline="35">backend.db.User.password_hash</references>
+        <references refid="classdb__seed_1_1User_1a96e4068c56e8e61afa622d936996b068" compoundref="db__seed_8py" startline="59">db_seed.User.password_hash</references>
+      </memberdef>
+      <memberdef kind="function" id="classbackend_1_1db_1_1User_1a2b26b10e4cef8e28529000b96380ed65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.db.User.check_password</definition>
+        <argsstring>(self, password)</argsstring>
+        <name>check_password</name>
+        <qualifiedname>backend.db.User.check_password</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>password</type>
+          <defname>password</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="42" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="42" bodyend="60"/>
+        <references refid="classbackend_1_1db_1_1User_1a8a4108d863222635a597c841ce7bedd6" compoundref="db_8py" startline="35">backend.db.User.password_hash</references>
+        <references refid="classdb__seed_1_1User_1a96e4068c56e8e61afa622d936996b068" compoundref="db__seed_8py" startline="59">db_seed.User.password_hash</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Base</label>
+        <link refid="classBase"/>
+      </node>
+      <node id="1">
+        <label>backend.db.User</label>
+        <link refid="classbackend_1_1db_1_1User"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Base</label>
+        <link refid="classBase"/>
+      </node>
+      <node id="1">
+        <label>backend.db.User</label>
+        <link refid="classbackend_1_1db_1_1User"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-__tablename__</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="31" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classbackend_1_1db_1_1User_1a2a7afdccbdd98ce80ba9445eda2eddf8" prot="private" virt="non-virtual"><scope>backend::db::User</scope><name>__tablename__</name></member>
+      <member refid="classbackend_1_1db_1_1User_1a2b26b10e4cef8e28529000b96380ed65" prot="public" virt="non-virtual"><scope>backend::db::User</scope><name>check_password</name></member>
+      <member refid="classbackend_1_1db_1_1User_1ac9dbd0a9355fb699399f49e4854775f1" prot="public" virt="non-virtual"><scope>backend::db::User</scope><name>email</name></member>
+      <member refid="classbackend_1_1db_1_1User_1a0961dd5989b805b2326170f1db7ddfbb" prot="public" virt="non-virtual"><scope>backend::db::User</scope><name>id</name></member>
+      <member refid="classbackend_1_1db_1_1User_1a5c3f597a861c93d59cd756e5ecb214a9" prot="public" virt="non-virtual"><scope>backend::db::User</scope><name>is_admin</name></member>
+      <member refid="classbackend_1_1db_1_1User_1a8a4108d863222635a597c841ce7bedd6" prot="public" virt="non-virtual"><scope>backend::db::User</scope><name>password_hash</name></member>
+      <member refid="classbackend_1_1db_1_1User_1a398a54bc53a26938573dfca506a13c5c" prot="public" virt="non-virtual"><scope>backend::db::User</scope><name>set_password</name></member>
+      <member refid="classbackend_1_1db_1_1User_1a5023fa9e4da1d4253434a7fce002ba10" prot="public" virt="non-virtual"><scope>backend::db::User</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="web__scrape_8py" kind="file" language="Python">
+    <compoundname>web_scrape.py</compoundname>
+    <innernamespace refid="namespaceweb__scrape">web_scrape</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceweb__scrape" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;Selenium<sp/>web<sp/>scraping<sp/>module.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>annotations</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>asyncio</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pathlib<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Path</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>sys<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>platform</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>bs4<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BeautifulSoup</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>webdriver</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.chrome.options<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Options<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>ChromeOptions</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.common.by<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>By</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.firefox.options<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Options<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>FirefoxOptions</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.remote.webdriver<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>WebDriver</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.safari.options<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Options<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>SafariOptions</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.support<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>expected_conditions<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>EC</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.support.wait<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>WebDriverWait</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>fastapi<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>WebSocket</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>scraping<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>scrape_skills,<sp/>processing<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>summary</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>scraping.processing.html<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>extract_hyperlinks,<sp/>format_hyperlinks</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>concurrent.futures<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ThreadPoolExecutor</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>scraping.processing.text<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>summarize_text</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespaceweb__scrape_1aa2ff2c1078cc7ae3378f810fdea2765a" refkind="member"><highlight class="normal">executor<sp/>=<sp/>ThreadPoolExecutor()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="namespaceweb__scrape_1a0117379fc90094ab4626beaca918dc49" refkind="member"><highlight class="normal">FILE_DIR<sp/>=<sp/>Path(__file__).parent.parent</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="namespaceweb__scrape_1aae251defc7a9fb4c5b8085b5a75a7a35" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="namespaceweb__scrape_1aae251defc7a9fb4c5b8085b5a75a7a35" kindref="member">async_browse</ref>(</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selenium_web_browser:<sp/>str,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>user_agent:<sp/>str,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fast_llm_model:<sp/>str,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summary_token_limit:<sp/>str,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llm_provider:<sp/>str,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url:<sp/>str,<sp/>question:<sp/>str,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>websocket:<sp/>WebSocket</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Browse<sp/>a<sp/>website<sp/>and<sp/>return<sp/>the<sp/>answer<sp/>and<sp/>links<sp/>to<sp/>the<sp/>user</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selenium_web_browser<sp/>(str):<sp/>The<sp/>web<sp/>browser<sp/>used<sp/>for<sp/>scraping</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>user_agent<sp/>(str):<sp/>The<sp/>user<sp/>agent<sp/>used<sp/>when<sp/>scraping</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url<sp/>(str):<sp/>The<sp/>url<sp/>of<sp/>the<sp/>website<sp/>to<sp/>browse</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>question<sp/>(str):<sp/>The<sp/>question<sp/>asked<sp/>by<sp/>the<sp/>user</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>websocket<sp/>(WebSocketManager):<sp/>The<sp/>websocket<sp/>manager</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str:<sp/>The<sp/>answer<sp/>and<sp/>links<sp/>to<sp/>the<sp/>user</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>loop<sp/>=<sp/>asyncio.get_event_loop()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>executor<sp/>=<sp/>ThreadPoolExecutor(max_workers=8)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;Scraping<sp/>url<sp/>{url}<sp/>with<sp/>question<sp/>{question}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>websocket:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>websocket.send_json(</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;logs&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;output&quot;</highlight><highlight class="normal">:<sp/>f</highlight><highlight class="stringliteral">&quot;🔎<sp/>Browsing<sp/>the<sp/>{url}<sp/>for<sp/>relevant<sp/>about:<sp/>{question}...&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;🔎<sp/>Browsing<sp/>the<sp/>{url}<sp/>for<sp/>relevant<sp/>about:<sp/>{question}...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver,<sp/>text<sp/>=<sp/>await<sp/>loop.run_in_executor(</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>executor,<sp/>scrape_text_with_selenium,<sp/>selenium_web_browser,<sp/>user_agent,<sp/>url</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>loop.run_in_executor(executor,<sp/>add_header,<sp/>driver)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summary_text<sp/>=<sp/>await<sp/>loop.run_in_executor(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>executor,<sp/>summarize_text,<sp/>fast_llm_model,<sp/>summary_token_limit,<sp/>llm_provider,<sp/>url,<sp/>text,<sp/>question,<sp/>driver</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>websocket:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>websocket.send_json(</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;logs&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;output&quot;</highlight><highlight class="normal">:<sp/>f</highlight><highlight class="stringliteral">&quot;📝<sp/>Information<sp/>gathered<sp/>from<sp/>url<sp/>{url}:<sp/>{summary_text}&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;📝<sp/>Information<sp/>gathered<sp/>from<sp/>url<sp/>{url}:<sp/>{summary_text}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f</highlight><highlight class="stringliteral">&quot;Information<sp/>gathered<sp/>from<sp/>url<sp/>{url}:<sp/>{summary_text}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>Exception<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>e:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;An<sp/>error<sp/>occurred<sp/>while<sp/>processing<sp/>the<sp/>url<sp/>{url}:<sp/>{e}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f</highlight><highlight class="stringliteral">&quot;Error<sp/>processing<sp/>the<sp/>url<sp/>{url}:<sp/>{e}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d" kindref="member">browse_website</ref>(url:<sp/>str,<sp/>question:<sp/>str)<sp/>-&gt;<sp/>tuple[str,<sp/>WebDriver]:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Browse<sp/>a<sp/>website<sp/>and<sp/>return<sp/>the<sp/>answer<sp/>and<sp/>links<sp/>to<sp/>the<sp/>user</highlight></codeline>
+<codeline lineno="93"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="94"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="95"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url<sp/>(str):<sp/>The<sp/>url<sp/>of<sp/>the<sp/>website<sp/>to<sp/>browse</highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>question<sp/>(str):<sp/>The<sp/>question<sp/>asked<sp/>by<sp/>the<sp/>user</highlight></codeline>
+<codeline lineno="97"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="99"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tuple[str,<sp/>WebDriver]:<sp/>The<sp/>answer<sp/>and<sp/>links<sp/>to<sp/>the<sp/>user<sp/>and<sp/>the<sp/>webdriver</highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>url:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;A<sp/>URL<sp/>was<sp/>not<sp/>specified,<sp/>cancelling<sp/>request<sp/>to<sp/>browse<sp/>website.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>driver,<sp/>text<sp/>=<sp/><ref refid="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" kindref="member">scrape_text_with_selenium</ref>(url)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a" kindref="member">add_header</ref>(driver)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>summary_text<sp/>=<sp/>summary.summarize_text(url,<sp/>text,<sp/>question,<sp/>driver)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>links<sp/>=<sp/><ref refid="namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e" kindref="member">scrape_links_with_selenium</ref>(driver,<sp/>url)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Limit<sp/>links<sp/>to<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(links)<sp/>&gt;<sp/>5:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>links<sp/>=<sp/>links[:5]</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>write_to_file(&apos;research-{0}.txt&apos;.format(url),<sp/>summary_text<sp/>+<sp/>&quot;\nSource<sp/>Links:<sp/>{0}\n\n&quot;.format(links))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf" kindref="member">close_browser</ref>(driver)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f</highlight><highlight class="stringliteral">&quot;Answer<sp/>gathered<sp/>from<sp/>website:<sp/>{summary_text}<sp/>\n<sp/>\n<sp/>Links:<sp/>{links}&quot;</highlight><highlight class="normal">,<sp/>driver</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" kindref="member">scrape_text_with_selenium</ref>(selenium_web_browser:<sp/>str,<sp/>user_agent:<sp/>str,<sp/>url:<sp/>str)<sp/>-&gt;<sp/>tuple[WebDriver,<sp/>str]:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Scrape<sp/>text<sp/>from<sp/>a<sp/>website<sp/>using<sp/>selenium</highlight></codeline>
+<codeline lineno="123"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="124"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="125"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url<sp/>(str):<sp/>The<sp/>url<sp/>of<sp/>the<sp/>website<sp/>to<sp/>scrape</highlight></codeline>
+<codeline lineno="126"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selenium_web_browser<sp/>(str):<sp/>The<sp/>web<sp/>browser<sp/>used<sp/>to<sp/>scrape</highlight></codeline>
+<codeline lineno="127"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>user_agent<sp/>(str):<sp/>The<sp/>user<sp/>agent<sp/>used<sp/>when<sp/>scraping</highlight></codeline>
+<codeline lineno="128"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="129"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="130"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Tuple[WebDriver,<sp/>str]:<sp/>The<sp/>webdriver<sp/>and<sp/>the<sp/>text<sp/>scraped<sp/>from<sp/>the<sp/>website</highlight></codeline>
+<codeline lineno="131"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>logging.getLogger(</highlight><highlight class="stringliteral">&quot;selenium&quot;</highlight><highlight class="normal">).setLevel(logging.CRITICAL)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>options_available<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;chrome&quot;</highlight><highlight class="normal">:<sp/>ChromeOptions,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;safari&quot;</highlight><highlight class="normal">:<sp/>SafariOptions,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;firefox&quot;</highlight><highlight class="normal">:<sp/>FirefoxOptions,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>options<sp/>=<sp/>options_available[selenium_web_browser]()</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>options.add_argument(f</highlight><highlight class="stringliteral">&quot;user-agent={user_agent}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>options.add_argument(</highlight><highlight class="stringliteral">&quot;--headless&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>options.add_argument(</highlight><highlight class="stringliteral">&quot;--enable-javascript&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>selenium_web_browser<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;firefox&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>=<sp/>webdriver.Firefox(options=options)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>selenium_web_browser<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;safari&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Requires<sp/>a<sp/>bit<sp/>more<sp/>setup<sp/>on<sp/>the<sp/>users<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>See<sp/>https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>=<sp/>webdriver.Safari(options=options)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>platform<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;linux&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>platform<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;linux2&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options.add_argument(</highlight><highlight class="stringliteral">&quot;--disable-dev-shm-usage&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options.add_argument(</highlight><highlight class="stringliteral">&quot;--remote-debugging-port=9222&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options.add_argument(</highlight><highlight class="stringliteral">&quot;--no-sandbox&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options.add_experimental_option(</highlight><highlight class="stringliteral">&quot;prefs&quot;</highlight><highlight class="normal">,<sp/>{</highlight><highlight class="stringliteral">&quot;download_restrictions&quot;</highlight><highlight class="normal">:<sp/>3})</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>=<sp/>webdriver.Chrome(options=options)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;scraping<sp/>url<sp/>{url}...&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>driver.get(url)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>WebDriverWait(driver,<sp/>10).until(</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EC.presence_of_element_located((By.TAG_NAME,<sp/></highlight><highlight class="stringliteral">&quot;body&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>check<sp/>if<sp/>url<sp/>is<sp/>a<sp/>pdf<sp/>or<sp/>arxiv<sp/>link</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>url.endswith(</highlight><highlight class="stringliteral">&quot;.pdf&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>=<sp/><ref refid="namespacescrape__skills_1a1a5398a51f4da8236daecf9fe86ecf27" kindref="member">scrape_skills.scrape_pdf_with_pymupdf</ref>(url)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;arxiv&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>url:</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>parse<sp/>the<sp/>document<sp/>number<sp/>from<sp/>the<sp/>url</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc_num<sp/>=<sp/>url.split(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">)[-1]</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>=<sp/><ref refid="namespacescrape__skills_1a834d3a6a7957c6c45ea14406a6f6a754" kindref="member">scrape_skills.scrape_pdf_with_arxiv</ref>(doc_num)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Get<sp/>the<sp/>HTML<sp/>content<sp/>directly<sp/>from<sp/>the<sp/>browser&apos;s<sp/>DOM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>page_source<sp/>=<sp/>driver.execute_script(</highlight><highlight class="stringliteral">&quot;return<sp/>document.body.outerHTML;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soup<sp/>=<sp/>BeautifulSoup(page_source,<sp/></highlight><highlight class="stringliteral">&quot;html.parser&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>script<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>soup([</highlight><highlight class="stringliteral">&quot;script&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;style&quot;</highlight><highlight class="normal">]):</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>script.extract()</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>text<sp/>=<sp/>soup.get_text()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>=<sp/><ref refid="namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451" kindref="member">get_text</ref>(soup)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>lines<sp/>=<sp/>(line.strip()<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>text.splitlines())</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>chunks<sp/>=<sp/>(phrase.strip()<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>lines<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>phrase<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>line.split(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">.join(chunk<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>chunk<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>chunks<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>chunk)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>driver,<sp/>text</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451" kindref="member">get_text</ref>(soup):</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Get<sp/>the<sp/>text<sp/>from<sp/>the<sp/>soup</highlight></codeline>
+<codeline lineno="192"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="193"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="194"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>soup<sp/>(BeautifulSoup):<sp/>The<sp/>soup<sp/>to<sp/>get<sp/>the<sp/>text<sp/>from</highlight></codeline>
+<codeline lineno="195"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="196"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="197"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>str:<sp/>The<sp/>text<sp/>from<sp/>the<sp/>soup</highlight></codeline>
+<codeline lineno="198"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>tags<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;h1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;h2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;h3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;h4&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;h5&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;p&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>element<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>soup.find_all(tags):<sp/><sp/></highlight><highlight class="comment">#<sp/>Find<sp/>all<sp/>the<sp/>&lt;p&gt;<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>+=<sp/>element.text<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e" kindref="member">scrape_links_with_selenium</ref>(driver:<sp/>WebDriver,<sp/>url:<sp/>str)<sp/>-&gt;<sp/>list[str]:</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Scrape<sp/>links<sp/>from<sp/>a<sp/>website<sp/>using<sp/>selenium</highlight></codeline>
+<codeline lineno="208"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="209"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="210"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>(WebDriver):<sp/>The<sp/>webdriver<sp/>to<sp/>use<sp/>to<sp/>scrape<sp/>the<sp/>links</highlight></codeline>
+<codeline lineno="211"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="212"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="213"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List[str]:<sp/>The<sp/>links<sp/>scraped<sp/>from<sp/>the<sp/>website</highlight></codeline>
+<codeline lineno="214"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>page_source<sp/>=<sp/>driver.page_source</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>soup<sp/>=<sp/>BeautifulSoup(page_source,<sp/></highlight><highlight class="stringliteral">&quot;html.parser&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>script<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>soup([</highlight><highlight class="stringliteral">&quot;script&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;style&quot;</highlight><highlight class="normal">]):</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>script.extract()</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>hyperlinks<sp/>=<sp/>extract_hyperlinks(soup,<sp/>url)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>format_hyperlinks(hyperlinks)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf" kindref="member">close_browser</ref>(driver:<sp/>WebDriver)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Close<sp/>the<sp/>browser</highlight></codeline>
+<codeline lineno="228"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="229"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="230"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>(WebDriver):<sp/>The<sp/>webdriver<sp/>to<sp/>close</highlight></codeline>
+<codeline lineno="231"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="232"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="233"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>None</highlight></codeline>
+<codeline lineno="234"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>driver.quit()</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a" kindref="member">add_header</ref>(driver:<sp/>WebDriver)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Add<sp/>a<sp/>header<sp/>to<sp/>the<sp/>website</highlight></codeline>
+<codeline lineno="240"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="241"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="242"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver<sp/>(WebDriver):<sp/>The<sp/>webdriver<sp/>to<sp/>use<sp/>to<sp/>add<sp/>the<sp/>header</highlight></codeline>
+<codeline lineno="243"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="244"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="245"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>None</highlight></codeline>
+<codeline lineno="246"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>driver.execute_script(open(f</highlight><highlight class="stringliteral">&quot;{FILE_DIR}/js/overlay.js&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">).read())</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py"/>
+  </compounddef>
+</doxygen>

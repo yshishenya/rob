@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="gpt__researcher_2llm__provider_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacegpt__researcher">gpt_researcher</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider">gpt_researcher::llm_provider</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegpt__researcher_1_1llm__provider" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.google.google<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GoogleProvider</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.openai.openai<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>OpenAIProvider</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.azureopenai.azureopenai<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AzureOpenAIProvider</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.groq.groq<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GroqProvider</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.ollama.ollama<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>OllamaProvider</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.together.together<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TogetherProvider</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.anthropic.anthropic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AnthropicProvider</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.mistral.mistral<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MistralProvider</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.huggingface.huggingface<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>HugginFaceProvider</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.generic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GenericLLMProvider</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespacegpt__researcher_1_1llm__provider_1a91d2bd5c55978c07f716bbbaa0896684" refkind="member"><highlight class="normal">__all__<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;GoogleProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;OpenAIProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;AzureOpenAIProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;OllamaProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;GroqProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;TogetherProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;AnthropicProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MistralProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;HugginFaceProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;GenericLLMProvider&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/__init__.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,9 @@
+<map id="gpt_researcher.master.agent.GPTResearcher.get_subtopics" name="gpt_researcher.master.agent.GPTResearcher.get_subtopics">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,220,77"/>
+<area shape="rect" id="Node000002" href="$namespacegpt__researcher_1_1utils_1_1llm.html#a3125e642ba0eba1562845ff7d15ecb08" title=" " alt="" coords="283,5,521,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,43,269,37,269,43,221,48"/>
+<area shape="rect" id="Node000004" href="$namespacegpt__researcher_1_1master_1_1actions.html#abe8547773bf18846d57805ac145cf03e" title=" " alt="" coords="268,69,536,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,67,255,70,254,76,220,72"/>
+<area shape="rect" id="Node000003" href="$namespacegpt__researcher_1_1utils_1_1llm.html#a350bb4294397495c506426a2caad2b31" title=" " alt="" coords="584,13,812,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="521,23,570,23,570,28,521,28"/>
+</map>

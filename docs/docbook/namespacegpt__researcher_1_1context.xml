@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher_1_1context" xml:lang="en-US">
+<title>gpt_researcher.context Namespace Reference</title>
+<indexterm><primary>gpt_researcher.context</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1context_1_1compression">compression</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1context_1_1retriever">retriever</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacegpt__researcher_1_1context_1a4faa2b0c0c70150796b5a45732aa6dbf">__all__</link> = [&apos;<link linkend="_classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor">ContextCompressor</link>&apos;, &apos;<link linkend="_classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever">SearchAPIRetriever</link>&apos;]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1context_1a4faa2b0c0c70150796b5a45732aa6dbf"/><section>
+    <title>__all__</title>
+<indexterm><primary>__all__</primary><secondary>gpt_researcher.context</secondary></indexterm>
+<indexterm><primary>gpt_researcher.context</primary><secondary>__all__</secondary></indexterm>
+<para><computeroutput>list gpt_researcher.context.__all__ = [&apos;<link linkend="_classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor">ContextCompressor</link>&apos;, &apos;<link linkend="_classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever">SearchAPIRetriever</link>&apos;]<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+</section>

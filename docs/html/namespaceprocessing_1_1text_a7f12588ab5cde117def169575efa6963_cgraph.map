@@ -1,0 +1,9 @@
+<map id="processing.text.summarize_text" name="processing.text.summarize_text">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,237,102"/>
+<area shape="rect" id="Node000002" href="$namespaceprocessing_1_1text.html#aa7d92fd28b771aab747840808fba73a1" title=" " alt="" coords="295,5,462,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,74,284,46,285,51,174,79"/>
+<area shape="rect" id="Node000003" href="$namespaceprocessing_1_1text.html#a966f81211115765374e907b2ec2e7ea5" title=" " alt="" coords="298,69,459,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,87,284,87,284,92,237,92"/>
+<area shape="rect" id="Node000004" href="$namespaceprocessing_1_1text.html#aeb2b6f707ac167eb3f6a24edd853734f" title=" " alt="" coords="285,134,472,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,99,308,128,307,134,179,105"/>
+</map>

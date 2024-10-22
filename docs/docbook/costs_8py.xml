@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_costs_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher">gpt_researcher</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1utils">gpt_researcher.utils</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1utils_1_1costs">gpt_researcher.utils.costs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a3c3b6e46daf03a6c6eff6af6b7d581a1">gpt_researcher.utils.costs.estimate_llm_cost</link> (str input_content, str output_content)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a59fa6a66d1cc1d9a1bf6e72c6c933835">gpt_researcher.utils.costs.estimate_embedding_cost</link> (model, docs)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a5ded738042198cd2363d7057fcebed3a">gpt_researcher.utils.costs.ENCODING_MODEL</link> = &quot;o200k_base&quot;</para>
+</listitem>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a7001ea5a3cfcc38b054e1f61532d615a">gpt_researcher.utils.costs.INPUT_COST_PER_TOKEN</link> = 0.000005</para>
+</listitem>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1a1f613faeb26205430d23505d18591801">gpt_researcher.utils.costs.OUTPUT_COST_PER_TOKEN</link> = 0.000015</para>
+</listitem>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1aa6c6f6531263d9beca9c84e3c7290e57">gpt_researcher.utils.costs.IMAGE_INFERENCE_COST</link> = 0.003825</para>
+</listitem>
+            <listitem><para>float <link linkend="_namespacegpt__researcher_1_1utils_1_1costs_1ac851877e589fc31f44a8b28053f69cb3">gpt_researcher.utils.costs.EMBEDDING_COST</link> = 0.13 / 1000000</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

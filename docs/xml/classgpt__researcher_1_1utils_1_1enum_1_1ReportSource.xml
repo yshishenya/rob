@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::utils::enum::ReportSource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource_1a6da128c50580df465b9e34330783ce34" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher.utils.enum.ReportSource::Web</definition>
+        <argsstring></argsstring>
+        <name>Web</name>
+        <qualifiedname>gpt_researcher.utils.enum.ReportSource.Web</qualifiedname>
+        <initializer>=  &apos;web&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource_1a96184ad735ec8461ac2ca3b943799038" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher.utils.enum.ReportSource::Local</definition>
+        <argsstring></argsstring>
+        <name>Local</name>
+        <qualifiedname>gpt_researcher.utils.enum.ReportSource.Local</qualifiedname>
+        <initializer>=  &apos;local&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+      <node id="1">
+        <label>gpt_researcher.utils.enum.ReportSource</label>
+        <link refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+      <node id="1">
+        <label>gpt_researcher.utils.enum.ReportSource</label>
+        <link refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+Local</edgelabel>
+          <edgelabel>+Web</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="10" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource_1a96184ad735ec8461ac2ca3b943799038" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::enum::ReportSource</scope><name>Local</name></member>
+      <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource_1a6da128c50580df465b9e34330783ce34" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::enum::ReportSource</scope><name>Web</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

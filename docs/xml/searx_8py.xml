@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="searx_8py" kind="file" language="Python">
+    <compoundname>searx.py</compoundname>
+    <innerclass refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch" prot="public">gpt_researcher::retrievers::searx::searx::SearxSearch</innerclass>
+    <innernamespace refid="namespacegpt__researcher">gpt_researcher</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1retrievers">gpt_researcher::retrievers</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1retrievers_1_1searx">gpt_researcher::retrievers::searx</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1retrievers_1_1searx_1_1searx">gpt_researcher::retrievers::searx::searx</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegpt__researcher_1_1retrievers_1_1searx" refkind="compound"><highlight class="comment">#<sp/>Tavily<sp/>API<sp/>Retriever</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>libraries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>tavily<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TavilyClient</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>langchain_community.utilities<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>SearxSearchWrapper</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch" kindref="compound">SearxSearch</ref>():</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Tavily<sp/>API<sp/>Retriever</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a24953d5c57b8eca56cdadd4d125cb888" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a24953d5c57b8eca56cdadd4d125cb888" kindref="member">__init__</ref>(self,<sp/>query):</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Initializes<sp/>the<sp/>TavilySearch<sp/>object</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>query:</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1ac6692ba6397af22fb1559c92d3bee003" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1ac6692ba6397af22fb1559c92d3bee003" kindref="member">query</ref><sp/>=<sp/>query</highlight></codeline>
+<codeline lineno="20" refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a99e7c093235d706ca95b13b15eb5edbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a99e7c093235d706ca95b13b15eb5edbf" kindref="member">api_key</ref><sp/>=<sp/>self.<ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a9e125e0c8510e52837e4cbd9cfba4c06" kindref="member">get_api_key</ref>()</highlight></codeline>
+<codeline lineno="21" refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a6181b9b1d2cca03751489821ea8bfd9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a6181b9b1d2cca03751489821ea8bfd9b" kindref="member">client</ref><sp/>=<sp/>TavilyClient(self.<ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a99e7c093235d706ca95b13b15eb5edbf" kindref="member">api_key</ref>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a9e125e0c8510e52837e4cbd9cfba4c06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a9e125e0c8510e52837e4cbd9cfba4c06" kindref="member">get_api_key</ref>(self):</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gets<sp/>the<sp/>Tavily<sp/>API<sp/>key</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Get<sp/>the<sp/>API<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_key<sp/>=<sp/>os.environ[</highlight><highlight class="stringliteral">&quot;SEARX_URL&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>Exception(</highlight><highlight class="stringliteral">&quot;Searx<sp/>URL<sp/>key<sp/>not<sp/>found.<sp/>Please<sp/>set<sp/>the<sp/>SEARX_URL<sp/>environment<sp/>variable.<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;You<sp/>can<sp/>get<sp/>your<sp/>key<sp/>from<sp/>https://searx.space/&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>api_key</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a778ed2bf6f8f22252fceee56d613ec5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a778ed2bf6f8f22252fceee56d613ec5a" kindref="member">search</ref>(self,<sp/>max_results=7):</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Searches<sp/>the<sp/>query</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>searx<sp/>=<sp/>SearxSearchWrapper(searx_host=os.environ[</highlight><highlight class="stringliteral">&quot;SEARX_URL&quot;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>results<sp/>=<sp/>searx.results(self.<ref refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1ac6692ba6397af22fb1559c92d3bee003" kindref="member">query</ref>,<sp/>max_results)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Normalizing<sp/>results<sp/>to<sp/>match<sp/>the<sp/>format<sp/>of<sp/>the<sp/>other<sp/>search<sp/>APIs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>search_response<sp/>=<sp/>[{</highlight><highlight class="stringliteral">&quot;href&quot;</highlight><highlight class="normal">:<sp/>obj[</highlight><highlight class="stringliteral">&quot;link&quot;</highlight><highlight class="normal">],<sp/></highlight><highlight class="stringliteral">&quot;body&quot;</highlight><highlight class="normal">:<sp/>obj[</highlight><highlight class="stringliteral">&quot;snippet&quot;</highlight><highlight class="normal">]}<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>obj<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>results]</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>search_response</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/searx/searx.py"/>
+  </compounddef>
+</doxygen>

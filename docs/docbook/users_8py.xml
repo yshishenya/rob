@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_users_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceusers">users</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceusers_1a330f67af4576d3e1ee542d613d069139">users.login</link> (username, password)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a932657c601af16b61216fe6fe33a7c1f">users.refresh_access_token</link> (refresh_token)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a9053a1292a9bb75e476207697da5bcc6">users.fetch_users</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a22767a039fbf019d609ba4ae7ee70199">users.display_users</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aee9ead2895deb372a9320b932418df2c">users.modify_user</link> (token, user_data)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1af946d51443a44b65f044cbd071fa4133">users.create_user</link> (token, username, email, password, is_admin)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1abe93ce193b17b4e895eab26ae2806aaa">users.delete_user</link> (token, user_id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aa1996995f5442274830bef5c28e4e859">users.get_valid_access_token</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a32e0f5669895a84e77af6d7d40658d6f">users.main</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1ae68a82800a1d784a4aa0d4e663382aad">users.on_login_clicked</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceusers_1a9ffdadfc43420470d41e4610bebd67da">users.HOST</link> = os.getenv(&quot;HOST&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aec5824f6ce66973e8819ca68002938dd">users.APP_PORT</link> = os.getenv(&quot;APP_PORT&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceusers_1a3198b2c7eab49324f2d10f40c2ba7edb">users.API_URL</link> = f&quot;http://{<link linkend="_namespaceusers_1a9ffdadfc43420470d41e4610bebd67da">HOST</link>}:{<link linkend="_namespaceusers_1aec5824f6ce66973e8819ca68002938dd">APP_PORT</link>}&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">users.key</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aa67a5489339ad4f831ec91109898eb53">users.type</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a8eb777600faec9762baa63c66a2f65d3">users.on_click</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1afa220ad80467e63b9810fca0dc23dadb">users.new_username</link> = st.text_input(&quot;Имя пользователя&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_username&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1adb6ed530fb591bdf2dd5a09908bc97eb">users.new_email</link> = st.text_input(&quot;Email&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_email&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aa59caae95017910a2fbe7af45268fca7">users.new_password</link> = st.text_input(&quot;Пароль&quot;, <link linkend="_namespaceusers_1aa67a5489339ad4f831ec91109898eb53">type</link>=&quot;password&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_password&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a53863681969ca2b2e0533e124c471496">users.new_is_admin</link> = st.checkbox(&quot;Администратор&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_is_admin&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a03fb62cfda9d9a2a6070d6abb3643788">users.submit_button</link> = st.form_submit_button(&quot;Создать пользователя&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a02db70f5ffcf3f872bc01e4506d3422d">users.delete_user_id</link> = st.text_input(&quot;ID пользователя для удаления&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

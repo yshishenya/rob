@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classauth_1_1DeleteUserRequest" kind="class" language="Python" prot="public">
+    <compoundname>auth::DeleteUserRequest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classauth_1_1DeleteUserRequest_1a2ea3332762edec7208755cf6eeb544b1" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int auth.DeleteUserRequest::user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <qualifiedname>auth.DeleteUserRequest.user_id</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Идентификатор пользователя, которого нужно удалить.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="86" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>auth.DeleteUserRequest</label>
+        <link refid="classauth_1_1DeleteUserRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>auth.DeleteUserRequest</label>
+        <link refid="classauth_1_1DeleteUserRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+user_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>int</label>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="85" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="85" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classauth_1_1DeleteUserRequest_1a2ea3332762edec7208755cf6eeb544b1" prot="public" virt="non-virtual"><scope>auth::DeleteUserRequest</scope><name>user_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

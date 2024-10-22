@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="tailored-research_8md" kind="file" language="Markdown">
+    <compoundname>tailored-research.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Tailored<sp/>Research</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>GPT<sp/>Researcher<sp/>package<sp/>allows<sp/>you<sp/>to<sp/>tailor<sp/>the<sp/>research<sp/>to<sp/>your<sp/>needs<sp/>such<sp/>as<sp/>researching<sp/>on<sp/>specific<sp/>sources<sp/>or<sp/>local<sp/>documents,<sp/>and<sp/>even<sp/>specify<sp/>the<sp/>agent<sp/>prompt<sp/>instruction<sp/>upon<sp/>which<sp/>the<sp/>research<sp/>is<sp/>conducted.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Research<sp/>on<sp/>Specific<sp/>Sources<sp/>📚</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>specify<sp/>the<sp/>sources<sp/>you<sp/>want<sp/>the<sp/>GPT<sp/>Researcher<sp/>to<sp/>research<sp/>on<sp/>by<sp/>providing<sp/>a<sp/>list<sp/>of<sp/>URLs.<sp/>The<sp/>GPT<sp/>Researcher<sp/>will<sp/>then<sp/>conduct<sp/>research<sp/>on<sp/>the<sp/>provided<sp/>sources.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>asyncio</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>get_report(query:<sp/>str,<sp/>report_type:<sp/>str,<sp/>sources:<sp/>list)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query=query,<sp/>report_type=report_type,<sp/>source_urls=sources)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>report</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">if<sp/>__name__<sp/>==<sp/>&quot;__main__&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>query<sp/>=<sp/>&quot;What<sp/>are<sp/>the<sp/>latest<sp/>advancements<sp/>in<sp/>AI?&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report_type<sp/>=<sp/>&quot;research_report&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sources<sp/>=<sp/>[&quot;https://en.wikipedia.org/wiki/Artificial_intelligence&quot;,<sp/>&quot;https://www.ibm.com/watson/ai&quot;]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>asyncio.run(get_report(query,<sp/>report_type,<sp/>sources))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(report)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Specify<sp/>Agent<sp/>Prompt<sp/>📝</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>specify<sp/>the<sp/>agent<sp/>prompt<sp/>instruction<sp/>upon<sp/>which<sp/>the<sp/>research<sp/>is<sp/>conducted.<sp/>This<sp/>allows<sp/>you<sp/>to<sp/>guide<sp/>the<sp/>research<sp/>in<sp/>a<sp/>specific<sp/>direction<sp/>and<sp/>tailor<sp/>the<sp/>report<sp/>layout.</highlight></codeline>
+<codeline><highlight class="normal">Simply<sp/>pass<sp/>the<sp/>prompt<sp/>as<sp/>the<sp/>`query`<sp/>argument<sp/>to<sp/>the<sp/>`GPTResearcher`<sp/>class<sp/>and<sp/>the<sp/>&quot;custom_report&quot;<sp/>`report_type`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>asyncio</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>get_report(prompt:<sp/>str,<sp/>report_type:<sp/>str)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query=prompt,<sp/>report_type=report_type)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>report</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">if<sp/>__name__<sp/>==<sp/>&quot;__main__&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report_type<sp/>=<sp/>&quot;custom_report&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>prompt<sp/>=<sp/>&quot;Research<sp/>the<sp/>latest<sp/>advancements<sp/>in<sp/>AI<sp/>and<sp/>provide<sp/>a<sp/>detailed<sp/>report<sp/>in<sp/>APA<sp/>format<sp/>including<sp/>sources.&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>asyncio.run(get_report(prompt=prompt,<sp/>report_type=report_type))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(report)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Research<sp/>on<sp/>Local<sp/>Documents<sp/>📄</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>instruct<sp/>the<sp/>GPT<sp/>Researcher<sp/>to<sp/>research<sp/>on<sp/>local<sp/>documents<sp/>by<sp/>providing<sp/>the<sp/>path<sp/>to<sp/>those<sp/>documents.<sp/>Currently<sp/>supported<sp/>file<sp/>formats<sp/>are:<sp/>PDF,<sp/>plain<sp/>text,<sp/>CSV,<sp/>Excel,<sp/>Markdown,<sp/>PowerPoint,<sp/>and<sp/>Word<sp/>documents.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*Step<sp/>1*:<sp/>Add<sp/>the<sp/>env<sp/>variable<sp/>`DOC_PATH`<sp/>pointing<sp/>to<sp/>the<sp/>folder<sp/>where<sp/>your<sp/>documents<sp/>are<sp/>located.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>example:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">export<sp/>DOC_PATH=&quot;./my-docs&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*Step<sp/>2*:<sp/>When<sp/>you<sp/>create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>`GPTResearcher`<sp/>class,<sp/>pass<sp/>the<sp/>`report_source`<sp/>argument<sp/>as<sp/>`&quot;local&quot;`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GPT<sp/>Researcher<sp/>will<sp/>then<sp/>conduct<sp/>research<sp/>on<sp/>the<sp/>provided<sp/>documents.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>asyncio</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>get_report(query:<sp/>str,<sp/>report_type:<sp/>str,<sp/>report_source:<sp/>str)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query=query,<sp/>report_type=report_type,<sp/>report_source=report_source)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>report</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">if<sp/>__name__<sp/>==<sp/>&quot;__main__&quot;:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>query<sp/>=<sp/>&quot;What<sp/>can<sp/>you<sp/>tell<sp/>me<sp/>about<sp/>myself<sp/>based<sp/>on<sp/>my<sp/>documents?&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report_type<sp/>=<sp/>&quot;research_report&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report_source<sp/>=<sp/>&quot;local&quot;<sp/>#<sp/>&quot;local&quot;<sp/>or<sp/>&quot;web&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>asyncio.run(get_report(query=query,<sp/>report_type=report_type,<sp/>report_source=report_source))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(report)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/tailored-research.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,301,100,327"/>
+<area shape="rect" id="Node000001" href="$classauth_1_1DeleteUserRequest.html" title=" " alt="" coords="176,5,357,31"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="52,287,58,234,72,168,85,133,100,99,121,67,146,40,174,24,177,28,150,44,125,71,105,101,89,135,78,169,63,235,58,288"/>
+<area shape="rect" id="Node000002" href="$classauth_1_1DeleteUserResponse.html" title=" " alt="" coords="171,55,362,80"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="55,287,63,244,80,190,106,135,125,111,146,89,170,75,173,80,150,93,129,114,111,138,85,192,68,245,60,288"/>
+<area shape="rect" id="Node000003" href="$classauth_1_1LoginRequest.html" title=" " alt="" coords="195,104,338,129"/>
+<area shape="poly" id="edge7_Node000000_Node000003" title=" " alt="" coords="58,287,69,253,87,213,113,172,146,139,169,126,194,118,196,123,171,131,150,143,117,176,92,215,74,255,63,289"/>
+<area shape="rect" id="Node000004" href="$classauth_1_1LoginResponse.html" title=" " alt="" coords="190,153,343,179"/>
+<area shape="poly" id="edge8_Node000000_Node000004" title=" " alt="" coords="64,287,96,236,119,210,147,188,189,171,191,176,149,192,123,214,100,239,68,290"/>
+<area shape="rect" id="Node000005" href="$classauth_1_1PasswordChangeRequest.html" title=" " alt="" coords="157,203,376,228"/>
+<area shape="poly" id="edge9_Node000000_Node000005" title=" " alt="" coords="74,289,107,262,147,237,178,226,180,231,149,242,110,266,78,294"/>
+<area shape="rect" id="Node000006" href="$classauth_1_1PasswordChangeResponse.html" title=" " alt="" coords="153,252,381,277"/>
+<area shape="poly" id="edge10_Node000000_Node000006" title=" " alt="" coords="111,295,147,286,199,275,200,280,149,291,113,300"/>
+<area shape="rect" id="Node000007" href="$classauth_1_1RefreshRequest.html" title=" " alt="" coords="187,301,346,327"/>
+<area shape="poly" id="edge11_Node000000_Node000007" title=" " alt="" coords="114,311,187,311,187,317,114,317"/>
+<area shape="rect" id="Node000008" href="$classauth_1_1RefreshResponse.html" title=" " alt="" coords="183,351,351,376"/>
+<area shape="poly" id="edge12_Node000000_Node000008" title=" " alt="" coords="114,327,149,335,205,348,204,353,147,341,113,332"/>
+<area shape="rect" id="Node000009" href="$classauth_1_1UserCreateRequest.html" title=" " alt="" coords="176,400,357,425"/>
+<area shape="poly" id="edge13_Node000000_Node000009" title=" " alt="" coords="78,334,110,361,149,385,184,397,182,402,147,390,107,366,75,339"/>
+<area shape="rect" id="Node000010" href="$classauth_1_1UserResponse.html" title=" " alt="" coords="193,449,341,475"/>
+<area shape="poly" id="edge14_Node000000_Node000010" title=" " alt="" coords="68,337,101,388,123,413,149,434,170,445,193,452,191,457,168,450,147,439,119,417,96,391,64,340"/>
+<area shape="rect" id="Node000011" href="$classbackend_1_1server_1_1ResearchRequest.html" title=" " alt="" coords="148,499,385,524"/>
+<area shape="poly" id="edge15_Node000000_Node000011" title=" " alt="" coords="63,339,75,372,92,412,117,451,150,484,172,496,169,501,146,488,113,455,88,415,70,374,58,341"/>
+<area shape="rect" id="Node000012" href="$classgpt__researcher_1_1utils_1_1validators_1_1Subtopic.html" title=" " alt="" coords="155,549,378,589"/>
+<area shape="poly" id="edge16_Node000000_Node000012" title=" " alt="" coords="60,340,69,382,86,435,112,488,129,512,150,533,169,546,166,551,146,537,125,516,108,491,81,437,64,384,55,341"/>
+<area shape="rect" id="Node000013" href="$classgpt__researcher_1_1utils_1_1validators_1_1Subtopics.html" title=" " alt="" coords="155,613,378,653"/>
+<area shape="poly" id="edge17_Node000000_Node000013" title=" " alt="" coords="57,340,63,395,77,464,89,501,105,537,125,570,150,599,165,610,162,615,146,603,120,573,100,539,84,503,72,466,57,395,52,341"/>
+</map>

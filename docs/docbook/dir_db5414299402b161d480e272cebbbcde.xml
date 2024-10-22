@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_db5414299402b161d480e272cebbbcde" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory Directory Reference</primary></indexterm>
+Directory dependency graph for memory:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_db5414299402b161d480e272cebbbcde_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2memory_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_embeddings_8py">embeddings.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

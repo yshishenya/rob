@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_6d3af79848e10b5bed2428cc0bb78928" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/azureopenai Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/azureopenai Directory Reference</primary></indexterm>
+Directory dependency graph for azureopenai:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_6d3af79848e10b5bed2428cc0bb78928_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2llm__provider_2azureopenai_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_azureopenai_8py">azureopenai.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

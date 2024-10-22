@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="multi__agents_2agent_8py" kind="file" language="Python">
+    <compoundname>agent.py</compoundname>
+    <innernamespace refid="namespaceagent">agent</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceagent" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>agents<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ChiefEditorAgent</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespaceagent_1a95435a4e96e81f83e8c22bbf23d72864" refkind="member"><highlight class="normal">chief_editor<sp/>=<sp/><ref refid="classagents_1_1master_1_1ChiefEditorAgent" kindref="compound">ChiefEditorAgent</ref>({</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;query&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;Is<sp/>AI<sp/>in<sp/>a<sp/>hype<sp/>cycle?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;max_sections&quot;</highlight><highlight class="normal">:<sp/>3,</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;follow_guidelines&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;model&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;gpt-4o&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;guidelines&quot;</highlight><highlight class="normal">:<sp/>[</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;The<sp/>report<sp/>MUST<sp/>be<sp/>written<sp/>in<sp/>APA<sp/>format&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Each<sp/>sub<sp/>section<sp/>MUST<sp/>include<sp/>supporting<sp/>sources<sp/>using<sp/>hyperlinks.<sp/>If<sp/>none<sp/>exist,<sp/>erase<sp/>the<sp/>sub<sp/>section<sp/>or<sp/>rewrite<sp/>it<sp/>to<sp/>be<sp/>a<sp/>part<sp/>of<sp/>the<sp/>previous<sp/>section&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;The<sp/>report<sp/>MUST<sp/>be<sp/>written<sp/>in<sp/>spanish&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>],</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;verbose&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">})</highlight></codeline>
+<codeline lineno="15" refid="namespaceagent_1a506a8909f4cc88c2c31135a29dadbddb" refkind="member"><highlight class="normal">graph<sp/>=<sp/>chief_editor.init_research_team()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">graph<sp/>=<sp/>graph.compile()</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agent.py"/>
+  </compounddef>
+</doxygen>

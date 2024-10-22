@@ -1,0 +1,26 @@
+<map id="gpt_researcher.master.agent.GPTResearcher.__get_context_by_search" name="gpt_researcher.master.agent.GPTResearcher.__get_context_by_search">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,109,220,164"/>
+<area shape="rect" id="Node000002" href="$classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher.html#a320bb9bc8ff32f0bed79a0b2e4258e00" title=" " alt="" coords="283,181,495,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,161,271,175,270,180,218,167"/>
+<area shape="rect" id="Node000004" href="$classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher.html#a52fbcf367ccf81e1ba03858f60acc540" title=" " alt="" coords="935,74,1147,114"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="220,129,922,97,922,102,220,134"/>
+<area shape="rect" id="Node000005" href="$namespacegpt__researcher_1_1master_1_1actions.html#abe8547773bf18846d57805ac145cf03e" title=" " alt="" coords="1237,189,1505,229"/>
+<area shape="poly" id="edge14_Node000001_Node000005" title=" " alt="" coords="195,107,276,83,379,58,498,34,629,15,769,4,911,6,983,12,1054,23,1123,39,1190,59,1238,82,1281,113,1318,146,1347,176,1343,180,1314,150,1278,117,1235,87,1188,64,1121,44,1053,28,982,18,911,11,769,10,630,20,499,39,380,63,278,88,197,112"/>
+<area shape="rect" id="Node000009" href="$namespacegpt__researcher_1_1master_1_1actions.html#a5ec2fcb09935e7c20c484b43edd24cd6" title=" " alt="" coords="268,318,511,358"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="153,162,351,307,348,312,150,166"/>
+<area shape="rect" id="Node000003" href="$classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher.html#a3adeedb21d32c15fbbf10a7e9ce3a3e0" title=" " alt="" coords="596,132,808,187"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="495,189,582,175,583,181,496,195"/>
+<area shape="poly" id="edge10_Node000002_Node000005" title=" " alt="" coords="436,234,494,263,559,287,734,330,806,343,874,350,942,351,1014,344,1095,330,1189,307,1229,294,1267,275,1332,234,1335,239,1270,280,1231,298,1190,312,1096,335,1015,349,942,356,874,356,806,349,733,336,558,292,492,268,434,238"/>
+<area shape="rect" id="Node000006" href="$classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher.html#af49a21f87ec64106a6dc34c2fbaaef35" title=" " alt="" coords="593,224,811,279"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="496,220,580,232,579,237,495,226"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="808,136,923,114,924,119,809,142"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="808,156,987,160,1190,174,1259,184,1258,189,1189,179,987,165,808,161"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="811,275,894,289,989,299,1090,300,1140,295,1189,287,1261,264,1324,233,1326,238,1263,268,1190,293,1141,301,1090,305,989,304,893,294,810,280"/>
+<area shape="rect" id="Node000007" href="$classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher.html#a20e40a9b97069e59f8a6c07600463e54" title=" " alt="" coords="929,189,1153,229"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="810,235,915,222,916,227,811,240"/>
+<area shape="rect" id="Node000008" href="$namespacegpt__researcher_1_1master_1_1actions.html#a6df8ff25a470a78ca849b1b12bd7e043" title=" " alt="" coords="893,253,1189,279"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="811,253,880,256,879,262,811,259"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="1153,206,1223,206,1223,211,1153,211"/>
+<area shape="rect" id="Node000010" href="$namespacegpt__researcher_1_1master_1_1prompts.html#a1515d26ed2febbb7bb2670723e9bc3c7" title=" " alt="" coords="559,405,845,445"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="461,355,559,383,614,398,613,404,558,388,459,361"/>
+</map>

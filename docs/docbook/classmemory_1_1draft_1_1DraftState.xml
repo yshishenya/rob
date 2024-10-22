@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmemory_1_1draft_1_1DraftState" xml:lang="en-US">
+<title>memory.draft.DraftState Class Reference</title>
+<indexterm><primary>memory.draft.DraftState</primary></indexterm>
+Inheritance diagram for memory.draft.DraftState:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmemory_1_1draft_1_1DraftState__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for memory.draft.DraftState:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmemory_1_1draft_1_1DraftState__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_classmemory_1_1draft_1_1DraftState_1a250fbcc1aa37c36a6c5be184d3957048">task</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1draft_1_1DraftState_1a7a1419f6463612981b61bfd42e08e1e4">topic</link></para>
+</listitem>
+            <listitem><para>dict <link linkend="_classmemory_1_1draft_1_1DraftState_1a2ff087066da05f32a690858b7830b1cd">draft</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1draft_1_1DraftState_1a98d9f0c97a9068937de25af7fd8400c8">review</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1draft_1_1DraftState_1a84634ee06bf0565241efaff29efa71db">revision_notes</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmemory_1_1draft_1_1DraftState_1a2ff087066da05f32a690858b7830b1cd"/><section>
+    <title>draft</title>
+<indexterm><primary>draft</primary><secondary>memory.draft.DraftState</secondary></indexterm>
+<indexterm><primary>memory.draft.DraftState</primary><secondary>draft</secondary></indexterm>
+<para><computeroutput>dict memory.draft.DraftState.draft<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1draft_1_1DraftState_1a98d9f0c97a9068937de25af7fd8400c8"/><section>
+    <title>review</title>
+<indexterm><primary>review</primary><secondary>memory.draft.DraftState</secondary></indexterm>
+<indexterm><primary>memory.draft.DraftState</primary><secondary>review</secondary></indexterm>
+<para><computeroutput>str memory.draft.DraftState.review<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1draft_1_1DraftState_1a84634ee06bf0565241efaff29efa71db"/><section>
+    <title>revision_notes</title>
+<indexterm><primary>revision_notes</primary><secondary>memory.draft.DraftState</secondary></indexterm>
+<indexterm><primary>memory.draft.DraftState</primary><secondary>revision_notes</secondary></indexterm>
+<para><computeroutput>str memory.draft.DraftState.revision_notes<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1draft_1_1DraftState_1a250fbcc1aa37c36a6c5be184d3957048"/><section>
+    <title>task</title>
+<indexterm><primary>task</primary><secondary>memory.draft.DraftState</secondary></indexterm>
+<indexterm><primary>memory.draft.DraftState</primary><secondary>task</secondary></indexterm>
+<para><computeroutput>dict memory.draft.DraftState.task<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1draft_1_1DraftState_1a7a1419f6463612981b61bfd42e08e1e4"/><section>
+    <title>topic</title>
+<indexterm><primary>topic</primary><secondary>memory.draft.DraftState</secondary></indexterm>
+<indexterm><primary>memory.draft.DraftState</primary><secondary>topic</secondary></indexterm>
+<para><computeroutput>str memory.draft.DraftState.topic<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/<link linkend="_draft_8py">draft.py</link></section>
+</section>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmemory_1_1research_1_1ResearchState" xml:lang="en-US">
+<title>memory.research.ResearchState Class Reference</title>
+<indexterm><primary>memory.research.ResearchState</primary></indexterm>
+Inheritance diagram for memory.research.ResearchState:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmemory_1_1research_1_1ResearchState__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for memory.research.ResearchState:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmemory_1_1research_1_1ResearchState__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_classmemory_1_1research_1_1ResearchState_1acedf89dea8cb3ee08bb6a27f9cd1d025">task</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1research_1_1ResearchState_1a94e4514b47b0aa002a0b1c734f01d6c2">initial_research</link></para>
+</listitem>
+            <listitem><para>List <link linkend="_classmemory_1_1research_1_1ResearchState_1ac53039dd2510977fc1423f0b3e144485">sections</link> [str]</para>
+</listitem>
+            <listitem><para>List <link linkend="_classmemory_1_1research_1_1ResearchState_1a404b7186673b918e1cc6f6d38bfe3c3e">research_data</link> [dict]</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1research_1_1ResearchState_1a38e85bd09ffa6cfd92f5fcff8bef6339">title</link></para>
+</listitem>
+            <listitem><para>dict <link linkend="_classmemory_1_1research_1_1ResearchState_1aeb458454fc0c5e18c6106d0e486efded">headers</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1research_1_1ResearchState_1a295d210773dc95caea1e0fe3bd458025">date</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1research_1_1ResearchState_1a80757af80d3837305c4c97d588d241a7">table_of_contents</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1research_1_1ResearchState_1a5e83df6137888112475b2fca57f7315d">introduction</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1research_1_1ResearchState_1aed34aa52f6a45b13953be9d50bc8c6c4">conclusion</link></para>
+</listitem>
+            <listitem><para>List <link linkend="_classmemory_1_1research_1_1ResearchState_1a764d40daa4a6c4e898b0f0ebb9aa0689">sources</link> [str]</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmemory_1_1research_1_1ResearchState_1a743c15bd385c00ee42bb6067bd5e8327">report</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1aed34aa52f6a45b13953be9d50bc8c6c4"/><section>
+    <title>conclusion</title>
+<indexterm><primary>conclusion</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>conclusion</secondary></indexterm>
+<para><computeroutput>str memory.research.ResearchState.conclusion<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1a295d210773dc95caea1e0fe3bd458025"/><section>
+    <title>date</title>
+<indexterm><primary>date</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>date</secondary></indexterm>
+<para><computeroutput>str memory.research.ResearchState.date<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1aeb458454fc0c5e18c6106d0e486efded"/><section>
+    <title>headers</title>
+<indexterm><primary>headers</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>headers</secondary></indexterm>
+<para><computeroutput>dict memory.research.ResearchState.headers<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1a94e4514b47b0aa002a0b1c734f01d6c2"/><section>
+    <title>initial_research</title>
+<indexterm><primary>initial_research</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>initial_research</secondary></indexterm>
+<para><computeroutput>str memory.research.ResearchState.initial_research<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1a5e83df6137888112475b2fca57f7315d"/><section>
+    <title>introduction</title>
+<indexterm><primary>introduction</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>introduction</secondary></indexterm>
+<para><computeroutput>str memory.research.ResearchState.introduction<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1a743c15bd385c00ee42bb6067bd5e8327"/><section>
+    <title>report</title>
+<indexterm><primary>report</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>report</secondary></indexterm>
+<para><computeroutput>str memory.research.ResearchState.report<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1a404b7186673b918e1cc6f6d38bfe3c3e"/><section>
+    <title>research_data</title>
+<indexterm><primary>research_data</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>research_data</secondary></indexterm>
+<para><computeroutput>List memory.research.ResearchState.research_data [dict]<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1ac53039dd2510977fc1423f0b3e144485"/><section>
+    <title>sections</title>
+<indexterm><primary>sections</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>sections</secondary></indexterm>
+<para><computeroutput>List memory.research.ResearchState.sections [str]<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1a764d40daa4a6c4e898b0f0ebb9aa0689"/><section>
+    <title>sources</title>
+<indexterm><primary>sources</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>sources</secondary></indexterm>
+<para><computeroutput>List memory.research.ResearchState.sources [str]<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1a80757af80d3837305c4c97d588d241a7"/><section>
+    <title>table_of_contents</title>
+<indexterm><primary>table_of_contents</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>table_of_contents</secondary></indexterm>
+<para><computeroutput>str memory.research.ResearchState.table_of_contents<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1acedf89dea8cb3ee08bb6a27f9cd1d025"/><section>
+    <title>task</title>
+<indexterm><primary>task</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>task</secondary></indexterm>
+<para><computeroutput>dict memory.research.ResearchState.task<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmemory_1_1research_1_1ResearchState_1a38e85bd09ffa6cfd92f5fcff8bef6339"/><section>
+    <title>title</title>
+<indexterm><primary>title</primary><secondary>memory.research.ResearchState</secondary></indexterm>
+<indexterm><primary>memory.research.ResearchState</primary><secondary>title</secondary></indexterm>
+<para><computeroutput>str memory.research.ResearchState.title<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/<link linkend="_research_8py">research.py</link></section>
+</section>

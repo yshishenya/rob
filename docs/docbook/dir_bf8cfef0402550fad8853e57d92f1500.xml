@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_bf8cfef0402550fad8853e57d92f1500" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend Directory Reference</primary></indexterm>
+Directory dependency graph for frontend:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_bf8cfef0402550fad8853e57d92f1500_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_54134b9689b94af768889731e8d46319">users</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

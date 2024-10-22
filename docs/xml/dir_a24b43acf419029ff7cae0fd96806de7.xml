@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_a24b43acf419029ff7cae0fd96806de7" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils</compoundname>
+    <innerfile refid="multi__agents_2agents_2utils_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="file__formats_8py">file_formats.py</innerfile>
+    <innerfile refid="llms_8py">llms.py</innerfile>
+    <innerfile refid="views_8py">views.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="introduction_8md" kind="file" language="Markdown">
+    <compoundname>introduction.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Introduction</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![Official<sp/>Website](https://img.shields.io/badge/Official%20Website-gptr.dev-teal?style=for-the-badge&amp;logo=world&amp;logoColor=white)](https://gptr.dev)</highlight></codeline>
+<codeline><highlight class="normal">[![Discord<sp/>Follow](https://dcbadge.vercel.app/api/server/SK3KKuSD?style=for-the-badge)](https://discord.gg/SK3KKuSD)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![GitHub<sp/>Repo<sp/>stars](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=social)](https://github.com/assafelovic/gpt-researcher)</highlight></codeline>
+<codeline><highlight class="normal">[![Twitter<sp/>Follow](https://img.shields.io/twitter/follow/assaf_elovic?style=social)](https://twitter.com/assaf_elovic)</highlight></codeline>
+<codeline><highlight class="normal">[![PyPI<sp/>version](https://badge.fury.io/py/gpt-researcher.svg)](https://badge.fury.io/py/gpt-researcher)</highlight></codeline>
+<codeline><highlight class="normal">[![Open<sp/>In<sp/>Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/assafelovic/gpt-researcher/blob/master/examples/pip-run.ipynb)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**[GPT<sp/>Researcher](https://gptr.dev)<sp/>is<sp/>an<sp/>autonomous<sp/>agent<sp/>designed<sp/>for<sp/>comprehensive<sp/>online<sp/>research<sp/>on<sp/>a<sp/>variety<sp/>of<sp/>tasks.**<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>agent<sp/>can<sp/>produce<sp/>detailed,<sp/>factual<sp/>and<sp/>unbiased<sp/>research<sp/>reports,<sp/>with<sp/>customization<sp/>options<sp/>for<sp/>focusing<sp/>on<sp/>relevant<sp/>resources,<sp/>outlines,<sp/>and<sp/>lessons.<sp/>Inspired<sp/>by<sp/>the<sp/>recent<sp/>[Plan-and-Solve](https://arxiv.org/abs/2305.04091)<sp/>and<sp/>[RAG](https://arxiv.org/abs/2005.11401)<sp/>papers,<sp/>GPT<sp/>Researcher<sp/>addresses<sp/>issues<sp/>of<sp/>speed,<sp/>determinism<sp/>and<sp/>reliability,<sp/>offering<sp/>a<sp/>more<sp/>stable<sp/>performance<sp/>and<sp/>increased<sp/>speed<sp/>through<sp/>parallelized<sp/>agent<sp/>work,<sp/>as<sp/>opposed<sp/>to<sp/>synchronous<sp/>operations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Why<sp/>GPT<sp/>Researcher?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>To<sp/>form<sp/>objective<sp/>conclusions<sp/>for<sp/>manual<sp/>research<sp/>tasks<sp/>can<sp/>take<sp/>time,<sp/>sometimes<sp/>weeks<sp/>to<sp/>find<sp/>the<sp/>right<sp/>resources<sp/>and<sp/>information.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Current<sp/>LLMs<sp/>are<sp/>trained<sp/>on<sp/>past<sp/>and<sp/>outdated<sp/>information,<sp/>with<sp/>heavy<sp/>risks<sp/>of<sp/>hallucinations,<sp/>making<sp/>them<sp/>almost<sp/>irrelevant<sp/>for<sp/>research<sp/>tasks.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Current<sp/>LLMs<sp/>are<sp/>limited<sp/>to<sp/>short<sp/>token<sp/>outputs<sp/>which<sp/>are<sp/>not<sp/>sufficient<sp/>for<sp/>long<sp/>detailed<sp/>research<sp/>reports<sp/>(2k+<sp/>words).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Solutions<sp/>that<sp/>enable<sp/>web<sp/>search<sp/>(such<sp/>as<sp/>ChatGPT<sp/>+<sp/>Web<sp/>Plugin),<sp/>only<sp/>consider<sp/>limited<sp/>resources<sp/>and<sp/>content<sp/>that<sp/>in<sp/>some<sp/>cases<sp/>result<sp/>in<sp/>superficial<sp/>conclusions<sp/>or<sp/>biased<sp/>answers.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Using<sp/>only<sp/>a<sp/>selection<sp/>of<sp/>resources<sp/>can<sp/>create<sp/>bias<sp/>in<sp/>determining<sp/>the<sp/>right<sp/>conclusions<sp/>for<sp/>research<sp/>questions<sp/>or<sp/>tasks.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Architecture</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>main<sp/>idea<sp/>is<sp/>to<sp/>run<sp/>&quot;planner&quot;<sp/>and<sp/>&quot;execution&quot;<sp/>agents,<sp/>whereas<sp/>the<sp/>planner<sp/>generates<sp/>questions<sp/>to<sp/>research,<sp/>and<sp/>the<sp/>execution<sp/>agents<sp/>seek<sp/>the<sp/>most<sp/>related<sp/>information<sp/>based<sp/>on<sp/>each<sp/>generated<sp/>research<sp/>question.<sp/>Finally,<sp/>the<sp/>planner<sp/>filters<sp/>and<sp/>aggregates<sp/>all<sp/>related<sp/>information<sp/>and<sp/>creates<sp/>a<sp/>research<sp/>report.<sp/>&lt;br<sp/>/&gt;<sp/>&lt;br<sp/>/&gt;<sp/></highlight></codeline>
+<codeline><highlight class="normal">The<sp/>agents<sp/>leverage<sp/>both<sp/>gpt3.5-turbo<sp/>and<sp/>gpt-4-turbo<sp/>(128K<sp/>context)<sp/>to<sp/>complete<sp/>a<sp/>research<sp/>task.<sp/>We<sp/>optimize<sp/>for<sp/>costs<sp/>using<sp/>each<sp/>only<sp/>when<sp/>necessary.<sp/>**The<sp/>average<sp/>research<sp/>task<sp/>takes<sp/>around<sp/>3<sp/>minutes<sp/>to<sp/>complete,<sp/>and<sp/>costs<sp/>~$0.1.**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>align=&quot;center&quot;<sp/>height=&quot;600&quot;<sp/>src=&quot;https://github.com/assafelovic/gpt-researcher/assets/13554167/4ac896fd-63ab-4b77-9688-ff62aafcc527&quot;<sp/>/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">More<sp/>specifically:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Create<sp/>a<sp/>domain<sp/>specific<sp/>agent<sp/>based<sp/>on<sp/>research<sp/>query<sp/>or<sp/>task.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Generate<sp/>a<sp/>set<sp/>of<sp/>research<sp/>questions<sp/>that<sp/>together<sp/>form<sp/>an<sp/>objective<sp/>opinion<sp/>on<sp/>any<sp/>given<sp/>task.<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>For<sp/>each<sp/>research<sp/>question,<sp/>trigger<sp/>a<sp/>crawler<sp/>agent<sp/>that<sp/>scrapes<sp/>online<sp/>resources<sp/>for<sp/>information<sp/>relevant<sp/>to<sp/>the<sp/>given<sp/>task.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>For<sp/>each<sp/>scraped<sp/>resources,<sp/>summarize<sp/>based<sp/>on<sp/>relevant<sp/>information<sp/>and<sp/>keep<sp/>track<sp/>of<sp/>its<sp/>sources.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Finally,<sp/>filter<sp/>and<sp/>aggregate<sp/>all<sp/>summarized<sp/>sources<sp/>and<sp/>generate<sp/>a<sp/>final<sp/>research<sp/>report.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Demo</highlight></codeline>
+<codeline><highlight class="normal">&lt;iframe<sp/>height=&quot;400&quot;<sp/>width=&quot;700&quot;<sp/>src=&quot;https://github.com/assafelovic/gpt-researcher/assets/13554167/a00c89a6-a295-4dd0-b58d-098a31c40fda&quot;<sp/>frameborder=&quot;0&quot;<sp/>allow=&quot;autoplay;<sp/>encrypted-media&quot;<sp/>allowfullscreen&gt;&lt;/iframe&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Tutorials</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[How<sp/>it<sp/>Works](https://medium.com/better-programming/how-i-built-an-autonomous-ai-agent-for-online-research-93435a97c6c)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[How<sp/>to<sp/>Install](https://www.loom.com/share/04ebffb6ed2a4520a27c3e3addcdde20?sid=da1848e8-b1f1-42d1-93c3-5b0b9c3b24ea)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[Live<sp/>Demo](https://www.loom.com/share/6a3385db4e8747a1913dd85a7834846f?sid=a740fd5b-2aa3-457e-8fb7-86976f59f9b8)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[Homepage](https://gptr.dev)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Features</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>📝<sp/>Generate<sp/>research,<sp/>outlines,<sp/>resources<sp/>and<sp/>lessons<sp/>reports</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>📜<sp/>Can<sp/>generate<sp/>long<sp/>and<sp/>detailed<sp/>research<sp/>reports<sp/>(over<sp/>2K<sp/>words)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>🌐<sp/>Aggregates<sp/>over<sp/>20<sp/>web<sp/>sources<sp/>per<sp/>research<sp/>to<sp/>form<sp/>objective<sp/>and<sp/>factual<sp/>conclusions</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>🖥️<sp/>Includes<sp/>an<sp/>easy-to-use<sp/>web<sp/>interface<sp/>(HTML/CSS/JS)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>🔍<sp/>Scrapes<sp/>web<sp/>sources<sp/>with<sp/>javascript<sp/>support</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>📂<sp/>Keeps<sp/>track<sp/>and<sp/>context<sp/>of<sp/>visited<sp/>and<sp/>used<sp/>web<sp/>sources</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>📄<sp/>Export<sp/>research<sp/>reports<sp/>to<sp/>PDF,<sp/>Word<sp/>and<sp/>more...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Let&apos;s<sp/>get<sp/>started<sp/>[here](/gpt-researcher/getting-started/)!</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/introduction.md"/>
+  </compounddef>
+</doxygen>

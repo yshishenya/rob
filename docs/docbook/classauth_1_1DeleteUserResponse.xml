@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classauth_1_1DeleteUserResponse" xml:lang="en-US">
+<title>auth.DeleteUserResponse Class Reference</title>
+<indexterm><primary>auth.DeleteUserResponse</primary></indexterm>
+Inheritance diagram for auth.DeleteUserResponse:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1DeleteUserResponse__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for auth.DeleteUserResponse:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1DeleteUserResponse__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classauth_1_1DeleteUserResponse_1a017b75fda57dc9bb982c006b2682697f">message</link> = Field(..., description=&quot;Сообщение об успешном удалении пользователя.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classauth_1_1DeleteUserResponse_1a017b75fda57dc9bb982c006b2682697f"/><section>
+    <title>message</title>
+<indexterm><primary>message</primary><secondary>auth.DeleteUserResponse</secondary></indexterm>
+<indexterm><primary>auth.DeleteUserResponse</primary><secondary>message</secondary></indexterm>
+<para><computeroutput>str auth.DeleteUserResponse.message = Field(..., description=&quot;Сообщение об успешном удалении пользователя.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_auth_8py">auth.py</link></section>
+</section>

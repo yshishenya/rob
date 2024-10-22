@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagents_1_1reviser_1_1ReviserAgent" xml:lang="en-US">
+<title>agents.reviser.ReviserAgent Class Reference</title>
+<indexterm><primary>agents.reviser.ReviserAgent</primary></indexterm>
+Collaboration diagram for agents.reviser.ReviserAgent:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1reviser_1_1ReviserAgent__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1reviser_1_1ReviserAgent_1a72f2e05c9172082d048e04a8d2ca951b">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2">revise_draft</link> (self, dict draft_state)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1reviser_1_1ReviserAgent_1a87b9ffff687ab822ae8ce05aef90e405">run</link> (self, dict draft_state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classagents_1_1reviser_1_1ReviserAgent_1a72f2e05c9172082d048e04a8d2ca951b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>agents.reviser.ReviserAgent</secondary></indexterm>
+<indexterm><primary>agents.reviser.ReviserAgent</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>agents.reviser.ReviserAgent.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2"/><section>
+    <title>revise_draft()</title>
+<indexterm><primary>revise_draft</primary><secondary>agents.reviser.ReviserAgent</secondary></indexterm>
+<indexterm><primary>agents.reviser.ReviserAgent</primary><secondary>revise_draft</secondary></indexterm>
+<para><computeroutput>agents.reviser.ReviserAgent.revise_draft ( self, dict draft_state)</computeroutput></para>
+<para><literallayout><computeroutput>Review a draft article
+:param draft_state:
+:return:
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1reviser_1_1ReviserAgent_af952df9d9a6b49f5483663a069e8d6e2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1reviser_1_1ReviserAgent_1a87b9ffff687ab822ae8ce05aef90e405"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>agents.reviser.ReviserAgent</secondary></indexterm>
+<indexterm><primary>agents.reviser.ReviserAgent</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>agents.reviser.ReviserAgent.run ( self, dict draft_state)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1reviser_1_1ReviserAgent_a87b9ffff687ab822ae8ce05aef90e405_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/<link linkend="_reviser_8py">reviser.py</link></section>
+</section>

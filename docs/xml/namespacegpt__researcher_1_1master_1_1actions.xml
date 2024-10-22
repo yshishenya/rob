@@ -1,0 +1,494 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1master_1_1actions" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::master::actions</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1acfce0fe9e02f7246bcace8600279263f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.get_retriever</definition>
+        <argsstring>(retriever)</argsstring>
+        <name>get_retriever</name>
+        <qualifiedname>gpt_researcher.master.actions.get_retriever</qualifiedname>
+        <param>
+          <type>retriever</type>
+          <defname>retriever</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Gets the retriever
+Args:
+    retriever: retriever name
+
+Returns:
+    retriever: Retriever class</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="11" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1a5d28ace9f81401032833fb86c2707d98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.choose_agent</definition>
+        <argsstring>(query, cfg, parent_query=None, callable cost_callback=None)</argsstring>
+        <name>choose_agent</name>
+        <qualifiedname>gpt_researcher.master.actions.choose_agent</qualifiedname>
+        <param>
+          <type>query</type>
+          <defname>query</defname>
+        </param>
+        <param>
+          <type>cfg</type>
+          <defname>cfg</defname>
+        </param>
+        <param>
+          <type>parent_query</type>
+          <defname>parent_query</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>callable</type>
+          <declname>cost_callback</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Chooses the agent automatically
+Args:
+    parent_query: In some cases the research is conducted on a subtopic from the main query.
+    The parent query allows the agent to know the main context for better reasoning.
+    query: original query
+    cfg: Config
+    cost_callback: callback for calculating llm costs
+
+Returns:
+    agent: Agent name
+    agent_role_prompt: Agent role prompt
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="50" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="50" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1a5ec2fcb09935e7c20c484b43edd24cd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.get_sub_queries</definition>
+        <argsstring>(str query, str agent_role_prompt, cfg, str parent_query, str report_type, callable cost_callback=None)</argsstring>
+        <name>get_sub_queries</name>
+        <qualifiedname>gpt_researcher.master.actions.get_sub_queries</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>agent_role_prompt</declname>
+        </param>
+        <param>
+          <type>cfg</type>
+          <defname>cfg</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>parent_query</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_type</declname>
+        </param>
+        <param>
+          <type>callable</type>
+          <declname>cost_callback</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Gets the sub queries
+Args:
+    query: original query
+    agent_role_prompt: agent role prompt
+    cfg: Config
+    parent_query:
+    report_type:
+    cost_callback:
+
+Returns:
+    sub_queries: List of sub queries</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="83" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="84" bodyend="116"/>
+        <references refid="namespacegpt__researcher_1_1master_1_1prompts_1a1515d26ed2febbb7bb2670723e9bc3c7" compoundref="prompts_8py" startline="5" endline="28">gpt_researcher.master.prompts.generate_search_queries_prompt</references>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af18fcbb61ff491b7a18edfdd62515a80" compoundref="gpt__researcher_2master_2agent_8py" startline="168" endline="192">gpt_researcher.master.agent.GPTResearcher.__get_context_by_search</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1a6df8ff25a470a78ca849b1b12bd7e043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.scrape_urls</definition>
+        <argsstring>(urls, cfg=None)</argsstring>
+        <name>scrape_urls</name>
+        <qualifiedname>gpt_researcher.master.actions.scrape_urls</qualifiedname>
+        <param>
+          <type>urls</type>
+          <defname>urls</defname>
+        </param>
+        <param>
+          <type>cfg</type>
+          <defname>cfg</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scrapes the urls
+Args:
+    urls: List of urls
+    cfg: Config (optional)
+
+Returns:
+    text: str</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="117" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="117" bodyend="137"/>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a27db868cc7088c60d4d2b24739c204aa" compoundref="gpt__researcher_2master_2agent_8py" startline="156" endline="167">gpt_researcher.master.agent.GPTResearcher.__get_context_by_urls</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af49a21f87ec64106a6dc34c2fbaaef35" compoundref="gpt__researcher_2master_2agent_8py" startline="233" endline="255">gpt_researcher.master.agent.GPTResearcher.__scrape_data_by_query</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1a28ac426e24fade0611138b18e12b07d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.summarize</definition>
+        <argsstring>(query, content, agent_role_prompt, cfg, websocket=None, callable cost_callback=None)</argsstring>
+        <name>summarize</name>
+        <qualifiedname>gpt_researcher.master.actions.summarize</qualifiedname>
+        <param>
+          <type>query</type>
+          <defname>query</defname>
+        </param>
+        <param>
+          <type>content</type>
+          <defname>content</defname>
+        </param>
+        <param>
+          <type>agent_role_prompt</type>
+          <defname>agent_role_prompt</defname>
+        </param>
+        <param>
+          <type>cfg</type>
+          <defname>cfg</defname>
+        </param>
+        <param>
+          <type>websocket</type>
+          <defname>websocket</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>callable</type>
+          <declname>cost_callback</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Asynchronously summarizes a list of URLs.
+
+Args:
+    query (str): The search query.
+    content (list): List of dictionaries with &apos;url&apos; and &apos;raw_content&apos;.
+    agent_role_prompt (str): The role prompt for the agent.
+    cfg (object): Configuration object.
+
+Returns:
+    list: A list of dictionaries with &apos;url&apos; and &apos;summary&apos;.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="138" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="138" bodyend="187"/>
+        <references refid="namespacegpt__researcher_1_1master_1_1actions_1abe8547773bf18846d57805ac145cf03e" compoundref="actions_8py" startline="276" endline="292">gpt_researcher.master.actions.stream_output</references>
+        <references refid="namespacegpt__researcher_1_1master_1_1actions_1ac98e8d537910db157298a4f600214549" compoundref="actions_8py" startline="188" endline="218">gpt_researcher.master.actions.summarize_url</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1ac98e8d537910db157298a4f600214549" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.summarize_url</definition>
+        <argsstring>(query, raw_data, agent_role_prompt, cfg, callable cost_callback=None)</argsstring>
+        <name>summarize_url</name>
+        <qualifiedname>gpt_researcher.master.actions.summarize_url</qualifiedname>
+        <param>
+          <type>query</type>
+          <defname>query</defname>
+        </param>
+        <param>
+          <type>raw_data</type>
+          <defname>raw_data</defname>
+        </param>
+        <param>
+          <type>agent_role_prompt</type>
+          <defname>agent_role_prompt</defname>
+        </param>
+        <param>
+          <type>cfg</type>
+          <defname>cfg</defname>
+        </param>
+        <param>
+          <type>callable</type>
+          <declname>cost_callback</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Summarizes the text
+Args:
+    query:
+    raw_data:
+    agent_role_prompt:
+    cfg:
+    cost_callback
+
+Returns:
+    summary: str</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="188" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="188" bodyend="218"/>
+        <referencedby refid="namespacegpt__researcher_1_1master_1_1actions_1a28ac426e24fade0611138b18e12b07d0" compoundref="actions_8py" startline="138" endline="187">gpt_researcher.master.actions.summarize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1a9c7b3c1544156eb008fadfb06a415c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.generate_report</definition>
+        <argsstring>(str query, context, str agent_role_prompt, str report_type, str report_source, websocket, cfg, str main_topic=&quot;&quot;, list existing_headers=[], callable cost_callback=None)</argsstring>
+        <name>generate_report</name>
+        <qualifiedname>gpt_researcher.master.actions.generate_report</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>agent_role_prompt</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_type</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_source</declname>
+        </param>
+        <param>
+          <type>websocket</type>
+          <defname>websocket</defname>
+        </param>
+        <param>
+          <type>cfg</type>
+          <defname>cfg</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>main_topic</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>existing_headers</declname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <type>callable</type>
+          <declname>cost_callback</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>generates the final report
+Args:
+    query:
+    context:
+    agent_role_prompt:
+    report_type:
+    websocket:
+    cfg:
+    main_topic:
+    existing_headers:
+    cost_callback:
+
+Returns:
+    report:</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="219" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="230" bodyend="275"/>
+        <references refid="namespacegpt__researcher_1_1master_1_1prompts_1abb901630f113e1efe4c635c5f6e8229c" compoundref="prompts_8py" startline="274" endline="284">gpt_researcher.master.prompts.get_prompt_by_report_type</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1abe8547773bf18846d57805ac145cf03e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.stream_output</definition>
+        <argsstring>(type, output, websocket=None, logging=True)</argsstring>
+        <name>stream_output</name>
+        <qualifiedname>gpt_researcher.master.actions.stream_output</qualifiedname>
+        <param>
+          <type>type</type>
+          <defname>type</defname>
+        </param>
+        <param>
+          <type>output</type>
+          <defname>output</defname>
+        </param>
+        <param>
+          <type>websocket</type>
+          <defname>websocket</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>logging</type>
+          <defname>logging</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Streams output to the websocket
+Args:
+    type:
+    output:
+
+Returns:
+    None
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="276" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="276" bodyend="292"/>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af18fcbb61ff491b7a18edfdd62515a80" compoundref="gpt__researcher_2master_2agent_8py" startline="168" endline="192">gpt_researcher.master.agent.GPTResearcher.__get_context_by_search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a27db868cc7088c60d4d2b24739c204aa" compoundref="gpt__researcher_2master_2agent_8py" startline="156" endline="167">gpt_researcher.master.agent.GPTResearcher.__get_context_by_urls</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a20e40a9b97069e59f8a6c07600463e54" compoundref="gpt__researcher_2master_2agent_8py" startline="217" endline="232">gpt_researcher.master.agent.GPTResearcher.__get_new_urls</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a3adeedb21d32c15fbbf10a7e9ce3a3e0" compoundref="gpt__researcher_2master_2agent_8py" startline="256" endline="267">gpt_researcher.master.agent.GPTResearcher.__get_similar_content_by_query</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a320bb9bc8ff32f0bed79a0b2e4258e00" compoundref="gpt__researcher_2master_2agent_8py" startline="193" endline="216">gpt_researcher.master.agent.GPTResearcher.__process_sub_query</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af49a21f87ec64106a6dc34c2fbaaef35" compoundref="gpt__researcher_2master_2agent_8py" startline="233" endline="255">gpt_researcher.master.agent.GPTResearcher.__scrape_data_by_query</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a07ed6b2e71964970b22586029d360fe6" compoundref="gpt__researcher_2master_2agent_8py" startline="72" endline="105">gpt_researcher.master.agent.GPTResearcher.conduct_research</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a245afde9b9be308fd5ac526d4052fede" compoundref="gpt__researcher_2master_2agent_8py" startline="301" endline="324">gpt_researcher.master.agent.GPTResearcher.get_subtopics</referencedby>
+        <referencedby refid="namespacegpt__researcher_1_1master_1_1actions_1a28ac426e24fade0611138b18e12b07d0" compoundref="actions_8py" startline="138" endline="187">gpt_researcher.master.actions.summarize</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a2c2f031da0078748778e475217771d22" compoundref="gpt__researcher_2master_2agent_8py" startline="106" endline="155">gpt_researcher.master.agent.GPTResearcher.write_report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1aa1ac642119ea75be5ce8a9f6ad913550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.get_report_introduction</definition>
+        <argsstring>(query, context, role, config, websocket=None, callable cost_callback=None)</argsstring>
+        <name>get_report_introduction</name>
+        <qualifiedname>gpt_researcher.master.actions.get_report_introduction</qualifiedname>
+        <param>
+          <type>query</type>
+          <defname>query</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>role</type>
+          <defname>role</defname>
+        </param>
+        <param>
+          <type>config</type>
+          <defname>config</defname>
+        </param>
+        <param>
+          <type>websocket</type>
+          <defname>websocket</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>callable</type>
+          <declname>cost_callback</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="293" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="293" bodyend="316"/>
+        <references refid="namespacegpt__researcher_1_1master_1_1prompts_1a5ab2bf457ff727dc200a27395b0b05c8" compoundref="prompts_8py" startline="253" endline="264">gpt_researcher.master.prompts.generate_report_introduction</references>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ab58de4205648a8354754bd28604b51d1" compoundref="gpt__researcher_2master_2agent_8py" startline="294" endline="300">gpt_researcher.master.agent.GPTResearcher.write_introduction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1a68c6082998cf41e463530cb9f128c8be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.extract_headers</definition>
+        <argsstring>(str markdown_text)</argsstring>
+        <name>extract_headers</name>
+        <qualifiedname>gpt_researcher.master.actions.extract_headers</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>markdown_text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="317" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="317" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1a5ae5fa76d436f86a64149fe871e32515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.table_of_contents</definition>
+        <argsstring>(str markdown_text)</argsstring>
+        <name>table_of_contents</name>
+        <qualifiedname>gpt_researcher.master.actions.table_of_contents</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>markdown_text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="354" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="354" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1actions_1a630696213d37144e381817ac97f9f854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.actions.add_source_urls</definition>
+        <argsstring>(str report_markdown, set visited_urls)</argsstring>
+        <name>add_source_urls</name>
+        <qualifiedname>gpt_researcher.master.actions.add_source_urls</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>report_markdown</declname>
+        </param>
+        <param>
+          <type>set</type>
+          <declname>visited_urls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function takes a Markdown report and a set of visited URLs as input parameters.
+
+Args:
+  report_markdown (str): The `add_source_urls` function takes in two parameters:
+  visited_urls (set): Visited_urls is a set that contains URLs that have already been visited. This
+parameter is used to keep track of which URLs have already been included in the report_markdown to
+avoid duplication.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="382" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" bodystart="382" bodyend="404"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

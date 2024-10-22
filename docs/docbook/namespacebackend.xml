@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebackend" xml:lang="en-US">
+<title>backend Namespace Reference</title>
+<indexterm><primary>backend</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1db">db</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1report__type">report_type</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1server">server</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1utils">utils</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1websocket__manager">websocket_manager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

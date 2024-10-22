@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome" xml:lang="en-US">
+<title>Welcome</title>
+<indexterm><primary>Welcome</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome_1autotoc_md175"/> Hey there! 👋</para>
+
+<para>We&apos;re a team of AI researchers and developers who are passionate about building the next generation of AI assistants. Our mission is to empower individuals and organizations with accurate, unbiased, and factual information.</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome_1autotoc_md176">
+<title><title>GPT Researcher</title></title>
+
+<para>Quickly accessing relevant and trustworthy information is more crucial than ever. However, we&apos;ve learned that none of today&apos;s search engines provide a suitable tool that provides factual, explicit and objective answers without the need to continuously click and explore multiple sites for a given research task.</para>
+
+<para>This is why we&apos;ve built the trending open source <emphasis role="bold"><link xlink:href="https://github.com/assafelovic/gpt-researcher">GPT Researcher</link></emphasis>. GPT Researcher is an autonomous agent that takes care of the tedious task of research for you, by scraping, filtering and aggregating over 20+ web sources per a single research task.</para>
+
+<para>To learn more about GPT Researcher, check out the <link xlink:href="/docs/gpt-researcher/introduction">documentation page</link>. </para>
+</section>
+</section>

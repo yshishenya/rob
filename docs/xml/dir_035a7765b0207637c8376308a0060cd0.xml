@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_035a7765b0207637c8376308a0060cd0" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master</compoundname>
+    <innerfile refid="gpt__researcher_2master_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="actions_8py">actions.py</innerfile>
+    <innerfile refid="gpt__researcher_2master_2agent_8py">agent.py</innerfile>
+    <innerfile refid="prompts_8py">prompts.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/"/>
+  </compounddef>
+</doxygen>

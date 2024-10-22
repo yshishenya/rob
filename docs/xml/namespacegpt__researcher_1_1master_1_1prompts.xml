@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1master_1_1prompts" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::master::prompts</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1master_1_1prompts_1aaffdcbce2b4c96cc4fc6f8bb4411bc23" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict gpt_researcher::master::prompts.report_type_mapping</definition>
+        <argsstring></argsstring>
+        <name>report_type_mapping</name>
+        <qualifiedname>gpt_researcher.master.prompts.report_type_mapping</qualifiedname>
+        <initializer>=  {
+    ReportType.ResearchReport.value: <ref refid="namespacegpt__researcher_1_1master_1_1prompts_1aa1acdb319226c2434745dd28ddc12a13" kindref="member">generate_report_prompt</ref>,
+    ReportType.ResourceReport.value: <ref refid="namespacegpt__researcher_1_1master_1_1prompts_1a076ce149c880d13d4702ff92da83d7f5" kindref="member">generate_resource_report_prompt</ref>,
+    ReportType.OutlineReport.value: <ref refid="namespacegpt__researcher_1_1master_1_1prompts_1a250d14916f8487c0a0a5959322e51b10" kindref="member">generate_outline_report_prompt</ref>,
+    ReportType.CustomReport.value: <ref refid="namespacegpt__researcher_1_1master_1_1prompts_1a32d1e3b87f76b16c6934959abc348ec0" kindref="member">generate_custom_report_prompt</ref>,
+    ReportType.SubtopicReport.value: <ref refid="namespacegpt__researcher_1_1master_1_1prompts_1afe484ac6f9c1a55a54a9b2add561ff4d" kindref="member">generate_subtopic_report_prompt</ref>
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="265" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="265" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1a1515d26ed2febbb7bb2670723e9bc3c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.generate_search_queries_prompt</definition>
+        <argsstring>(str question, str parent_query, str report_type, int max_iterations=3)</argsstring>
+        <name>generate_search_queries_prompt</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_search_queries_prompt</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>question</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>parent_query</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iterations</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Generates the search queries prompt for the given question.
+Args:
+    question (str): The question to generate the search queries prompt for
+    parent_query (str): The main question (only relevant for detailed reports)
+    report_type (str): The report type
+    max_iterations (int): The maximum number of search queries to generate
+
+Returns: str: The search queries prompt for the given question
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="5" bodyend="28"/>
+        <referencedby refid="namespacegpt__researcher_1_1master_1_1actions_1a5ec2fcb09935e7c20c484b43edd24cd6" compoundref="actions_8py" startline="84" endline="116">gpt_researcher.master.actions.get_sub_queries</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1aa1acdb319226c2434745dd28ddc12a13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.generate_report_prompt</definition>
+        <argsstring>(str question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</argsstring>
+        <name>generate_report_prompt</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_report_prompt</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>question</declname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_source</declname>
+        </param>
+        <param>
+          <type>report_format</type>
+          <defname>report_format</defname>
+          <defval>&quot;apa&quot;</defval>
+        </param>
+        <param>
+          <type>total_words</type>
+          <defname>total_words</defname>
+          <defval>1000</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Generates the report prompt for the given question and research summary.
+Args: question (str): The question to generate the report prompt for
+        research_summary (str): The research summary to generate the report prompt for
+Returns: str: The report prompt for the given question and research summary
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="29" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1a076ce149c880d13d4702ff92da83d7f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.generate_resource_report_prompt</definition>
+        <argsstring>(question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</argsstring>
+        <name>generate_resource_report_prompt</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_resource_report_prompt</qualifiedname>
+        <param>
+          <type>question</type>
+          <defname>question</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_source</declname>
+        </param>
+        <param>
+          <type>report_format</type>
+          <defname>report_format</defname>
+          <defval>&quot;apa&quot;</defval>
+        </param>
+        <param>
+          <type>total_words</type>
+          <defname>total_words</defname>
+          <defval>1000</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generates the resource report prompt for the given question and research summary.
+
+Args:
+    question (str): The question to generate the resource report prompt for.
+    context (str): The research summary to generate the resource report prompt for.
+
+Returns:
+    str: The resource report prompt for the given question and research summary.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="72" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="72" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1a32d1e3b87f76b16c6934959abc348ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.generate_custom_report_prompt</definition>
+        <argsstring>(query_prompt, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</argsstring>
+        <name>generate_custom_report_prompt</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_custom_report_prompt</qualifiedname>
+        <param>
+          <type>query_prompt</type>
+          <defname>query_prompt</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_source</declname>
+        </param>
+        <param>
+          <type>report_format</type>
+          <defname>report_format</defname>
+          <defval>&quot;apa&quot;</defval>
+        </param>
+        <param>
+          <type>total_words</type>
+          <defname>total_words</defname>
+          <defval>1000</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="105" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1a250d14916f8487c0a0a5959322e51b10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.generate_outline_report_prompt</definition>
+        <argsstring>(question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</argsstring>
+        <name>generate_outline_report_prompt</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_outline_report_prompt</qualifiedname>
+        <param>
+          <type>question</type>
+          <defname>question</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_source</declname>
+        </param>
+        <param>
+          <type>report_format</type>
+          <defname>report_format</defname>
+          <defval>&quot;apa&quot;</defval>
+        </param>
+        <param>
+          <type>total_words</type>
+          <defname>total_words</defname>
+          <defval>1000</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Generates the outline report prompt for the given question and research summary.
+Args: question (str): The question to generate the outline report prompt for
+        research_summary (str): The research summary to generate the outline report prompt for
+Returns: str: The outline report prompt for the given question and research summary
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="109" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="109" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1ab0519037b4c15adb99ff3dd89076c9e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.get_report_by_type</definition>
+        <argsstring>(str report_type)</argsstring>
+        <name>get_report_by_type</name>
+        <qualifiedname>gpt_researcher.master.prompts.get_report_by_type</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>report_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="124" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="124" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1a1b8b6bf3d2fe1f56795cf36c745c9545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.auto_agent_instructions</definition>
+        <argsstring>()</argsstring>
+        <name>auto_agent_instructions</name>
+        <qualifiedname>gpt_researcher.master.prompts.auto_agent_instructions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="135" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="135" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1aa624fb10f7c23dd338e53222a0de584c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.generate_summary_prompt</definition>
+        <argsstring>(query, data)</argsstring>
+        <name>generate_summary_prompt</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_summary_prompt</qualifiedname>
+        <param>
+          <type>query</type>
+          <defname>query</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Generates the summary prompt for the given question and text.
+Args: question (str): The question to generate the summary prompt for
+        text (str): The text to generate the summary prompt for
+Returns: str: The summary prompt for the given question and text
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="163" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="163" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1afa1a6e6fa275aa54ca3cf6f5030d5f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str gpt_researcher.master.prompts.generate_subtopics_prompt</definition>
+        <argsstring>()</argsstring>
+        <name>generate_subtopics_prompt</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_subtopics_prompt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="180" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="180" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1afe484ac6f9c1a55a54a9b2add561ff4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str gpt_researcher.master.prompts.generate_subtopic_report_prompt</definition>
+        <argsstring>(current_subtopic, list existing_headers, str main_topic, context, str report_format=&quot;apa&quot;, max_subsections=5, total_words=800)</argsstring>
+        <name>generate_subtopic_report_prompt</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_subtopic_report_prompt</qualifiedname>
+        <param>
+          <type>current_subtopic</type>
+          <defname>current_subtopic</defname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>existing_headers</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>main_topic</declname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>report_format</declname>
+          <defval>&quot;apa&quot;</defval>
+        </param>
+        <param>
+          <type>max_subsections</type>
+          <defname>max_subsections</defname>
+          <defval>5</defval>
+        </param>
+        <param>
+          <type>total_words</type>
+          <defname>total_words</defname>
+          <defval>800</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="204" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="212" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1a5ab2bf457ff727dc200a27395b0b05c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str gpt_researcher.master.prompts.generate_report_introduction</definition>
+        <argsstring>(str question, str research_summary=&quot;&quot;)</argsstring>
+        <name>generate_report_introduction</name>
+        <qualifiedname>gpt_researcher.master.prompts.generate_report_introduction</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>question</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>research_summary</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="253" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="253" bodyend="264"/>
+        <referencedby refid="namespacegpt__researcher_1_1master_1_1actions_1aa1ac642119ea75be5ce8a9f6ad913550" compoundref="actions_8py" startline="293" endline="316">gpt_researcher.master.actions.get_report_introduction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1master_1_1prompts_1abb901630f113e1efe4c635c5f6e8229c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.master.prompts.get_prompt_by_report_type</definition>
+        <argsstring>(report_type)</argsstring>
+        <name>get_prompt_by_report_type</name>
+        <qualifiedname>gpt_researcher.master.prompts.get_prompt_by_report_type</qualifiedname>
+        <param>
+          <type>report_type</type>
+          <defname>report_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="274" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" bodystart="274" bodyend="284"/>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ad62ffa8e08f19b5e67eb3362f55fa855" compoundref="gpt__researcher_2master_2agent_8py" startline="32" endline="71">gpt_researcher.master.agent.GPTResearcher.__init__</referencedby>
+        <referencedby refid="namespacegpt__researcher_1_1master_1_1actions_1a9c7b3c1544156eb008fadfb06a415c20" compoundref="actions_8py" startline="230" endline="275">gpt_researcher.master.actions.generate_report</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/prompts.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_a9f52d2fa39e957fa11ad57c00bd6a49" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests Directory Reference</primary></indexterm>
+Directory dependency graph for tests:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_a9f52d2fa39e957fa11ad57c00bd6a49_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_all-6-report-types_8py">all-6-report-types.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_documents-report-source_8py">documents-report-source.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

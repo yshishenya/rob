@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="roadmap_8md" kind="file" language="Markdown">
+    <compoundname>roadmap.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Roadmap</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We&apos;re<sp/>constantly<sp/>working<sp/>on<sp/>additional<sp/>features<sp/>and<sp/>improvements<sp/>to<sp/>our<sp/>products<sp/>and<sp/>services.<sp/>We&apos;re<sp/>also<sp/>working<sp/>on<sp/>new<sp/>products<sp/>and<sp/>services<sp/>to<sp/>help<sp/>you<sp/>build<sp/>better<sp/>AI<sp/>applications<sp/>using<sp/>[GPT<sp/>Researcher](https://gptr.dev).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Our<sp/>vision<sp/>is<sp/>to<sp/>build<sp/>the<sp/>#1<sp/>autonomous<sp/>research<sp/>agent<sp/>for<sp/>AI<sp/>developers<sp/>and<sp/>researchers,<sp/>and<sp/>we&apos;re<sp/>excited<sp/>to<sp/>have<sp/>you<sp/>join<sp/>us<sp/>on<sp/>this<sp/>journey!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>roadmap<sp/>is<sp/>prioritized<sp/>based<sp/>on<sp/>the<sp/>following<sp/>goals:<sp/>Performance,<sp/>Quality,<sp/>Modularity<sp/>and<sp/>Conversational<sp/>flexibility.<sp/>The<sp/>roadmap<sp/>is<sp/>public<sp/>and<sp/>can<sp/>be<sp/>found<sp/>[here](https://trello.com/b/3O7KBePw/gpt-researcher-roadmap).<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Interested<sp/>in<sp/>collaborating<sp/>or<sp/>contributing?<sp/>Check<sp/>out<sp/>our<sp/>[contributing<sp/>page](/docs/contribute)<sp/>for<sp/>more<sp/>information.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/roadmap.md"/>
+  </compounddef>
+</doxygen>

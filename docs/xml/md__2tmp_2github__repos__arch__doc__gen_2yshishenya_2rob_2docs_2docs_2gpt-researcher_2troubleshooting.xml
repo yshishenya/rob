@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2troubleshooting" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2troubleshooting</compoundname>
+    <title>Troubleshooting</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2troubleshooting_1autotoc_md139"/>We&apos;re constantly working to provide a more stable version. If you&apos;re running into any issues, please first check out the resolved issues or ask us via our <ulink url="https://discord.gg/2pFkc83fRq">Discord community</ulink>.</para>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2troubleshooting_1autotoc_md140">
+<title>model: gpt-4 does not exist</title><para>This relates to not having permission to use gpt-4 yet. Based on OpenAI, it will be <ulink url="https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4">widely available for all by end of July</ulink>.</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2troubleshooting_1autotoc_md141">
+<title>cannot load library &apos;gobject-2.0-0&apos;</title><para>The issue relates to the library WeasyPrint (which is used to generate PDFs from the research report). Please follow this guide to resolve it: <ulink url="https://doc.courtbouillon.org/weasyprint/stable/first_steps.html">https://doc.courtbouillon.org/weasyprint/stable/first_steps.html</ulink></para>
+<para>Or you can install this package manually</para>
+<para>In case of MacOS you can install this lib using <computeroutput>brew install glib gobject-introspection</computeroutput></para>
+<para>In case of Linux you can install this lib using <computeroutput>sudo apt install libglib2.0-dev</computeroutput></para>
+<para><bold>cannot load library &apos;pango&apos;</bold></para>
+<para>In case of MacOS you can install this lib using <computeroutput>brew install pango</computeroutput></para>
+<para>In case of Linux you can install this lib using <computeroutput>sudo apt install libpango-1.0-0</computeroutput></para>
+<para><bold>Workaround for Mac M chip users</bold></para>
+<para>If the above solutions don&apos;t work, you can try the following:<itemizedlist>
+<listitem><para>Install a fresh version of Python 3.11 pointed to brew: <computeroutput>brew install python@3.11</computeroutput></para>
+</listitem><listitem><para>Install the required libraries: <computeroutput>brew install pango glib gobject-introspection</computeroutput></para>
+</listitem><listitem><para>Install the required GPT Researcher Python packages: <computeroutput>pip3.11 install -r requirements.txt</computeroutput></para>
+</listitem><listitem><para>Run the app with Python 3.11 (using brew): <computeroutput>python3.11 -m uvicorn main:app --reload</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Error processing the url</bold></para>
+<para>We&apos;re using <ulink url="https://www.selenium.dev">Selenium</ulink> for site scraping. Some sites fail to be scraped. In these cases, restart and try running again.</para>
+<para><bold>Chrome version issues</bold></para>
+<para>Many users have an issue with their chromedriver because the latest chrome browser version doesn&apos;t have a compatible chrome driver yet.</para>
+<para>To downgrade your Chrome web browser using <ulink url="https://www.slimjet.com/chrome/google-chrome-old-version.php">slimjet</ulink>, follow these steps. First, visit the website and scroll down to find the list of available older Chrome versions. Choose the version you wish to install making sure it&apos;s compatible with your operating system. Once you&apos;ve selected the desired version, click on the corresponding link to download the installer. Before proceeding with the installation, it&apos;s crucial to uninstall your current version of Chrome to avoid conflicts.</para>
+<para>It&apos;s important to check if the version you downgrade to, has a chromedriver available in the official <ulink url="https://chromedriver.chromium.org/downloads">chrome driver website</ulink></para>
+<para><bold>If none of the above work, you can <ulink url="https://app.tavily.com">try out our hosted beta</ulink></bold> </para>
+</sect2>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/troubleshooting.md"/>
+  </compounddef>
+</doxygen>

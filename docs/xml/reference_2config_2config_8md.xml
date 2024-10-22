@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="reference_2config_2config_8md" kind="file" language="Markdown">
+    <compoundname>config.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">sidebar_label:<sp/>config</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>config.config</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Configuration<sp/>class<sp/>to<sp/>store<sp/>the<sp/>state<sp/>of<sp/>bools<sp/>for<sp/>different<sp/>scripts<sp/>access.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Config<sp/>Objects</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Config(metaclass=Singleton)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Configuration<sp/>class<sp/>to<sp/>store<sp/>the<sp/>state<sp/>of<sp/>bools<sp/>for<sp/>different<sp/>scripts<sp/>access.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>\_\_init\_\_</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>__init__()<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Initialize<sp/>the<sp/>Config<sp/>class</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>set\_fast\_llm\_model</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>set_fast_llm_model(value:<sp/>str)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>the<sp/>fast<sp/>LLM<sp/>model<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>set\_smart\_llm\_model</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>set_smart_llm_model(value:<sp/>str)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>the<sp/>smart<sp/>LLM<sp/>model<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>set\_fast\_token\_limit</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>set_fast_token_limit(value:<sp/>int)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>the<sp/>fast<sp/>token<sp/>limit<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>set\_smart\_token\_limit</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>set_smart_token_limit(value:<sp/>int)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>the<sp/>smart<sp/>token<sp/>limit<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>set\_browse\_chunk\_max\_length</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>set_browse_chunk_max_length(value:<sp/>int)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>the<sp/>browse_website<sp/>command<sp/>chunk<sp/>max<sp/>length<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>set\_openai\_api\_key</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>set_openai_api_key(value:<sp/>str)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>the<sp/>OpenAI<sp/>API<sp/>key<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>set\_debug\_mode</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>set_debug_mode(value:<sp/>bool)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Set<sp/>the<sp/>debug<sp/>mode<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>APIKeyError<sp/>Objects</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>APIKeyError(Exception)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Exception<sp/>raised<sp/>when<sp/>an<sp/>API<sp/>key<sp/>is<sp/>not<sp/>set<sp/>in<sp/>config.py<sp/>or<sp/>as<sp/>an<sp/>environment<sp/>variable.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>check\_openai\_api\_key</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>check_openai_api_key(cfg)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Check<sp/>if<sp/>the<sp/>OpenAI<sp/>API<sp/>key<sp/>is<sp/>set<sp/>in<sp/>config.py<sp/>or<sp/>as<sp/>an<sp/>environment<sp/>variable.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>check\_tavily\_api\_key</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>check_tavily_api_key(cfg)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Check<sp/>if<sp/>the<sp/>Tavily<sp/>Search<sp/>API<sp/>key<sp/>is<sp/>set<sp/>in<sp/>config.py<sp/>or<sp/>as<sp/>an<sp/>environment<sp/>variable.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>check\_google\_api\_key</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>check_google_api_key(cfg)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Check<sp/>if<sp/>the<sp/>Google<sp/>API<sp/>key<sp/>is<sp/>set<sp/>in<sp/>config.py<sp/>or<sp/>as<sp/>an<sp/>environment<sp/>variable.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>check\_serp\_api\_key</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>check_serp_api_key(cfg)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Check<sp/>if<sp/>the<sp/>SERP<sp/>API<sp/>key<sp/>is<sp/>set<sp/>in<sp/>config.py<sp/>or<sp/>as<sp/>an<sp/>environment<sp/>variable.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>check\_searx\_url</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>check_searx_url(cfg)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Check<sp/>if<sp/>the<sp/>Searx<sp/>URL<sp/>is<sp/>set<sp/>in<sp/>config.py<sp/>or<sp/>as<sp/>an<sp/>environment<sp/>variable.</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/config/config.md"/>
+  </compounddef>
+</doxygen>

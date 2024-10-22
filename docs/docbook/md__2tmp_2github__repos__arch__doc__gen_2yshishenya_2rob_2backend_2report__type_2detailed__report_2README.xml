@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2report__type_2detailed__report_2README" xml:lang="en-US">
+<title>Detailed Reports</title>
+<indexterm><primary>Detailed Reports</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2report__type_2detailed__report_2README_1autotoc_md37"/> Introducing long and detailed reports, with a completely new architecture inspired by the latest <link xlink:href="https://arxiv.org/abs/2402.14207">STORM</link> paper.</para>
+
+<para>In this method we do the following:</para>
+
+<para><orderedlist>
+<listitem>
+<para>Trigger Initial GPT Researcher report based on task</para>
+</listitem><listitem>
+<para>Generate subtopics from research summary</para>
+</listitem><listitem>
+<para>For each subtopic the headers of the subtopic report are extracted and accumulated</para>
+</listitem><listitem>
+<para>For each subtopic a report is generated making sure that any information about the headers accumulated until now are not re-generated.</para>
+</listitem><listitem>
+<para>An additional introduction section is written along with a table of contents constructed from the entire report.</para>
+</listitem><listitem>
+<para>The final report is constructed by appending these : Intro + Table of contents + Subsection reports </para>
+</listitem></orderedlist>
+</para>
+</section>

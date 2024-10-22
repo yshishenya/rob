@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2example" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2example</compoundname>
+    <title>Agent Example</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2example_1autotoc_md81"/> If you&apos;re interested in using GPT Researcher as a standalone agent, you can easily import it into any existing Python project. Below, is an example of calling the agent to generate a research report:</para>
+<para><programlisting filename=".py"><codeline><highlight class="keyword">from</highlight><highlight class="normal"><sp/>gpt_researcher<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GPTResearcher</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>asyncio</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>It<sp/>is<sp/>best<sp/>to<sp/>define<sp/>global<sp/>constants<sp/>at<sp/>the<sp/>top<sp/>of<sp/>your<sp/>script</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">QUERY<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;What<sp/>happened<sp/>in<sp/>the<sp/>latest<sp/>burning<sp/>man<sp/>floods?&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">REPORT_TYPE<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;research_report&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal">fetch_report(query,<sp/>report_type):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Fetch<sp/>a<sp/>research<sp/>report<sp/>based<sp/>on<sp/>the<sp/>provided<sp/>query<sp/>and<sp/>report<sp/>type.</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(query=query,<sp/>report_type=report_type,<sp/>config_path=</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>report</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal">generate_research_report():</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>This<sp/>is<sp/>a<sp/>sample<sp/>script<sp/>that<sp/>executes<sp/>an<sp/>async<sp/>main<sp/>function<sp/>to<sp/>run<sp/>a<sp/>research<sp/>report.</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>fetch_report(QUERY,<sp/>REPORT_TYPE)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>print(report)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>asyncio.run(generate_research_report())</highlight></codeline>
+</programlisting></para>
+<para>You can further enhance this example to use the returned report as context for generating valuable content such as news article, marketing content, email templates, newsletters, etc.</para>
+<para>You can also use GPT Researcher to gather information about code documentation, business analysis, financial information and more. All of which can be used to complete much more complex tasks that require factual and high quality realtime information. </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/example.md"/>
+  </compounddef>
+</doxygen>

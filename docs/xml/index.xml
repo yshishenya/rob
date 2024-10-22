@@ -1,0 +1,1392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="classagents_1_1utils_1_1views_1_1AgentColor" kind="class"><name>agents::utils::views::AgentColor</name>
+    <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1aad82b618de5affc17c7ed241978d4d29" kind="variable"><name>RESEARCHER</name></member>
+    <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a054652ba8e8cb50221b694148a08e16c" kind="variable"><name>EDITOR</name></member>
+    <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a55c936b52836cd867677166ed7d0390b" kind="variable"><name>WRITER</name></member>
+    <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a31ef9e1a009fb8401e198482cf62af70" kind="variable"><name>PUBLISHER</name></member>
+    <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a397c2bb5e464ce713866d7f100f1ca4a" kind="variable"><name>REVIEWER</name></member>
+    <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a3d962b5a2e02afd4ff3cca70040a85e0" kind="variable"><name>REVISOR</name></member>
+    <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1af51a03e79c5086c177807e347accc8a4" kind="variable"><name>MASTER</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider" kind="class"><name>gpt_researcher::llm_provider::anthropic::anthropic::AnthropicProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a68f8555c0ce8af4a803d3796970fba70" kind="variable"><name>model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a52bf81b60a6415ef5cb2220161cd43f9" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa7ccf630e111106209d5613a68e75e74" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ab03d946eb28e42807867a05dfd285dad" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a0b98048adb58423b9770b0cadc1a30a7" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ad9e44a41aab1a6effbce43ff50a8ecbb" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a9039f5ba8d5029c59d563c9d4291dd6c" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ac3fdbde2bf2dc7800522c507f0f12fc6" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1af38dafb273b5ae2fb4983fcbcf00617c" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper" kind="class"><name>gpt_researcher::scraper::arxiv::arxiv::ArxivScraper</name>
+    <member refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a922b5f43edb32ae0c87b27686b288487" kind="variable"><name>link</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1ac4ad713f998b37322ec9b98820a86123" kind="variable"><name>session</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1adf22c45475cf9aec5779f7d204891570" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a620a3ff42dc3ef18bdb333932355a4e8" kind="function"><name>scrape</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider" kind="class"><name>gpt_researcher::llm_provider::azureopenai::azureopenai::AzureOpenAIProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ad68ec6f87fb1cb6d6ad4291da0bf828d" kind="variable"><name>deployment_name</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a89b665935c21f5273b716cc6f47ccd14" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a20e29cdd8ddf9c6ec7d88ffc73b8d3c1" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a586ae8299a91a570ec410dd0fba45152" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a01c8fd4d7a1113ba093a7eb593927644" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a6182ebc6af99249c07cbdbf94dc3b036" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a7b6cdbf89f17a3cb3e4fe99545780915" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1aa9770c8dd905291c6c3ff2c7c39b0e18" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ae188450aa1aaa71da865ec348f79508c" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1acae7065991e34f865ca1c233794095b4" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classBase" kind="class"><name>Base</name>
+  </compound>
+  <compound refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport" kind="class"><name>backend::report_type::basic_report::basic_report::BasicReport</name>
+    <member refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9f07fc9134995bd196ed12c7ea622d07" kind="variable"><name>query</name></member>
+    <member refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a2dcab2334bc9a31175873974b774b63c" kind="variable"><name>report_type</name></member>
+    <member refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9ab587878fb721a2ca400e8452236b28" kind="variable"><name>report_source</name></member>
+    <member refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a90b3c67e412be2fe90f04f399420435b" kind="variable"><name>source_urls</name></member>
+    <member refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1af52dae954af0dd59a2b4c714f0616ef0" kind="variable"><name>config_path</name></member>
+    <member refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a1d61521e8a9cc6dd46ce7dd2cabe97c1" kind="variable"><name>websocket</name></member>
+    <member refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a834f92d507ea35ac8028100e6ba0ff84" kind="function"><name>__init__</name></member>
+    <member refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1ad217eead7f0dcb7a451a8d604cff71b1" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper" kind="class"><name>gpt_researcher::scraper::beautiful_soup::beautiful_soup::BeautifulSoupScraper</name>
+    <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809" kind="variable"><name>link</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f" kind="variable"><name>session</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1ac450ca8fa42171edd01dacb27f5170b5" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" kind="function"><name>scrape</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a3b2449ad1a189f3c9ba3478b17606e06" kind="function"><name>get_content_from_url</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch" kind="class"><name>gpt_researcher::retrievers::bing::bing::BingSearch</name>
+    <member refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1a5b568dc1b8585ce11f027999f5956673" kind="variable"><name>query</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1a174821f8b19141c63d31775f5b5c6a40" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1aa5e207279cda921b6176705cec054d44" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1a97986c76242714850abd339875dfecbe" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1ae1de69ecb584e83b441481c2458b7802" kind="function"><name>search</name></member>
+  </compound>
+  <compound refid="classagents_1_1master_1_1ChiefEditorAgent" kind="class"><name>agents::master::ChiefEditorAgent</name>
+    <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a411cb91ca016fb9026559fc9a08f6e65" kind="variable"><name>task_id</name></member>
+    <member refid="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" kind="variable"><name>output_dir</name></member>
+    <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e" kind="variable"><name>task</name></member>
+    <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a6322fb0f75b6d2893ea9bcd6e789b4b2" kind="function"><name>__init__</name></member>
+    <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" kind="function"><name>init_research_team</name></member>
+    <member refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" kind="function"><name>run_research_task</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1config_1_1config_1_1Config" kind="class"><name>gpt_researcher::config::config::Config</name>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a619e730ee1d3e79c9a5ef83705960b44" kind="variable"><name>config_file</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a53639992bde1e2172bda9ebc0f7cfbb5" kind="variable"><name>retriever</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1adb393700d777caf4498151c2c722fa79" kind="variable"><name>embedding_provider</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a9b1f284f4b9439e377ca1d424ce930dc" kind="variable"><name>llm_provider</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a341a4aa452bd13d279a559f43ac9f98c" kind="variable"><name>ollama_base_url</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a42b235ed62cdcd8ea02b732459550d45" kind="variable"><name>fast_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1ac5735fdab8ae184cdbd2dab8afffef4b" kind="variable"><name>smart_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1ac3f89b71a14756864bbd9c0e44fa2f58" kind="variable"><name>fast_token_limit</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a532251efcb400e5481c52cbac6bce83d" kind="variable"><name>smart_token_limit</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5b01a8c7f54d24ebf5e1fa621b702536" kind="variable"><name>browse_chunk_max_length</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5ccd7452db16237a63080bd090b92837" kind="variable"><name>summary_token_limit</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a01c0bab04e704c5c365ce2910e6f443b" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1ad1be4ee4fc96e04351200befa9bc2a46" kind="variable"><name>user_agent</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a24434bd9a73bed299c7c28f16a2a77d4" kind="variable"><name>max_search_results_per_query</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a454ea7cbc236890ae4a19213fec36a84" kind="variable"><name>memory_backend</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a4e63a20166a0f251bb9c225aaa440b57" kind="variable"><name>total_words</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a84d8fe33898389ec3096f6a16118b879" kind="variable"><name>report_format</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5c63837c9894a5db8d335de42a8abf2d" kind="variable"><name>max_iterations</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1aa4958a87b2c92d22487725aa21563736" kind="variable"><name>agent_role</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1aba1f77d51845dfdb7544b847f07840c0" kind="variable"><name>scraper</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1acecb5291189de192737acdef946034d0" kind="variable"><name>max_subtopics</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a4d77682f7fb301859b810ce82ea77e38" kind="variable"><name>doc_path</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1af1ad5b613ef9c9d51404f428d8396ee4" kind="variable"><name>llm_kwargs</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a2806bc8c64b1154936a2967849bd8cd1" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5225566b494e714c3eb4289a2eb2c1ca" kind="function"><name>validate_doc_path</name></member>
+    <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a9e9d2319dd1e3190bd54ef54065e8837" kind="function"><name>load_config_file</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor" kind="class"><name>gpt_researcher::context::compression::ContextCompressor</name>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a9a4847e7d90a0752b7af626d64c88b60" kind="variable"><name>max_results</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a772447db72fc7fd103952671326ccb8e" kind="variable"><name>documents</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1ab8bcc20307a5321f18502b1c8c60f9e2" kind="variable"><name>kwargs</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a5b6fb2476af4c74960758ead75f2937a" kind="variable"><name>embeddings</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a8e4f6f0cb8a94968f4ea9a0f4830233f" kind="variable"><name>similarity_threshold</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1acb479b1fd77d617aee78e6533dd2ec26" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1afc0de5dcb242af032d0ecb8198f9072f" kind="function"><name>get_context</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a23fc7927bc0c0a90f8c0a4a077dc6740" kind="function"><name>__get_contextual_retriever</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1aea743e90692d7cb715716298ac2de508" kind="function"><name>__pretty_print_docs</name></member>
+  </compound>
+  <compound refid="classauth_1_1DeleteUserRequest" kind="class"><name>auth::DeleteUserRequest</name>
+    <member refid="classauth_1_1DeleteUserRequest_1a2ea3332762edec7208755cf6eeb544b1" kind="variable"><name>user_id</name></member>
+  </compound>
+  <compound refid="classauth_1_1DeleteUserResponse" kind="class"><name>auth::DeleteUserResponse</name>
+    <member refid="classauth_1_1DeleteUserResponse_1a017b75fda57dc9bb982c006b2682697f" kind="variable"><name>message</name></member>
+  </compound>
+  <compound refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport" kind="class"><name>backend::report_type::detailed_report::detailed_report::DetailedReport</name>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a78f09ae4ef42c70ddf577150db317032" kind="variable"><name>query</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a1f44e3d7a0e1bda2669f398f865e6f81" kind="variable"><name>report_type</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a75f066b7b970c3f96cf6c1c68abda99a" kind="variable"><name>report_source</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a7f9a088e282e79d553130237084ab3e0" kind="variable"><name>source_urls</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a221962d4df23d2476a24fcda876d037a" kind="variable"><name>config_path</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ac7fdf7619fee36a4feb5c8df6f712eb7" kind="variable"><name>websocket</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a4ffab41ec91be1244e3ed7eb94b40f3f" kind="variable"><name>subtopics</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a24bd934498e4ee5c27b336560bc21892" kind="variable"><name>main_task_assistant</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a243d64db7407c3effaafc4ba4055dafb" kind="variable"><name>existing_headers</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a2655bf073543019eefe8c1ae96168f73" kind="variable"><name>global_context</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ad751ada9bed4490bb6dff1157ac6885c" kind="variable"><name>global_urls</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a7281c0a7387d041d3a1592a168632a44" kind="function"><name>__init__</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a1ca617f8321dab09cda55a64ea5a289f" kind="function"><name>run</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1af6acd4a4ae8dcae11eddeb68fe1bd2f1" kind="function"><name>_initial_research</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a0535b2e1a13765f0e684d4ac0dbb306f" kind="function"><name>_get_all_subtopics</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a90f2f9d6cde4d8b8f35274937d281c94" kind="function"><name>_generate_subtopic_reports</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ab4222f0b61a14a6c08c6765f3e337d89" kind="function"><name>_get_subtopic_report</name></member>
+    <member refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a34716fb7e8580c57a47ee5230c91d567" kind="function"><name>_construct_detailed_report</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader" kind="class"><name>gpt_researcher::document::document::DocumentLoader</name>
+    <member refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1ab948ce300525652105be5e32c93553d2" kind="variable"><name>path</name></member>
+    <member refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a347ef5773bfcea24970daa28fee74c97" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a8b29c542ec0aa1012e197b24619eb9c1" kind="function"><name>load</name></member>
+    <member refid="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a651f8685c5d5ae7dc0bd85ed482cfcb5" kind="function"><name>_load_document</name></member>
+  </compound>
+  <compound refid="classmemory_1_1draft_1_1DraftState" kind="class"><name>memory::draft::DraftState</name>
+    <member refid="classmemory_1_1draft_1_1DraftState_1a250fbcc1aa37c36a6c5be184d3957048" kind="variable"><name>task</name></member>
+    <member refid="classmemory_1_1draft_1_1DraftState_1a7a1419f6463612981b61bfd42e08e1e4" kind="variable"><name>topic</name></member>
+    <member refid="classmemory_1_1draft_1_1DraftState_1a2ff087066da05f32a690858b7830b1cd" kind="variable"><name>draft</name></member>
+    <member refid="classmemory_1_1draft_1_1DraftState_1a98d9f0c97a9068937de25af7fd8400c8" kind="variable"><name>review</name></member>
+    <member refid="classmemory_1_1draft_1_1DraftState_1a84634ee06bf0565241efaff29efa71db" kind="variable"><name>revision_notes</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo" kind="class"><name>gpt_researcher::retrievers::duckduckgo::duckduckgo::Duckduckgo</name>
+    <member refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1aab65e85d83c2adb5d8b3796f3dd421fb" kind="variable"><name>ddg</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1adc8d2faf8e34e22a9332fbb1456bf607" kind="variable"><name>query</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1a4f281e7f15a5b19b874aed6ebc6255c2" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1ad0bb732b805ce6b818f85959539e0806" kind="function"><name>search</name></member>
+  </compound>
+  <compound refid="classagents_1_1editor_1_1EditorAgent" kind="class"><name>agents::editor::EditorAgent</name>
+    <member refid="classagents_1_1editor_1_1EditorAgent_1abbcf0a659b6c13adaaf544b8a4d040aa" kind="function"><name>__init__</name></member>
+    <member refid="classagents_1_1editor_1_1EditorAgent_1a42809ab012412ed959b3c32200a66b45" kind="function"><name>plan_research</name></member>
+    <member refid="classagents_1_1editor_1_1EditorAgent_1a7fdd9bbaf712433ab7552b562c5bfe61" kind="function"><name>run_parallel_research</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider" kind="class"><name>gpt_researcher::llm_provider::generic::base::GenericLLMProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a968f0ce951b3fde23ca54642d23d9da8" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a561f419d6d020300f6331f16c8978b2b" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1add53c9295a8ef854f2aeb2bd1d33b798" kind="function"><name>from_provider</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a7118a4fc7e0988004cc4c1a0e8d88c3e" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a3fb2ac1b5d289a3b4a22d083b025052e" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider" kind="class"><name>gpt_researcher::llm_provider::google::google::GoogleProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ac3df1d6d1e08797d265905b0f7d326e0" kind="variable"><name>model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a80ae147cda8983381e25d2e3c10d7db9" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fd8cd660e5d244998f7dcaf857a0b9b" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ada73e93b41ac24b657a020d4b6f1b95b" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a0c39cb6d2189032c7b68cbb2ea9f0f50" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1aa8e2340bd293c976a2b1fe8deafeb58b" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ac7710089e3ce8c6adf7de660710c43d9" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a931138c8a6df46e690aab09cef081823" kind="function"><name>convert_messages</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a49c7b0490a86d4f79072903680ee66bc" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fe0e930693b7b5e2ac287fed6facc35" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch" kind="class"><name>gpt_researcher::retrievers::google::google::GoogleSearch</name>
+    <member refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1aa4661bd4b11e42be596baaba2870ba46" kind="variable"><name>query</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a01e609650947ae8d5dd032098a4eee0f" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a092ef162fe4943eca7da1d402a73bce9" kind="variable"><name>cx_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a3f4be81fe04dbaf65b7958ceafc19054" kind="variable"><name>client</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a7729cbe1341fac5390241edaec952655" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a543f5f8483e9352743996621446922a1" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1ae62ed00fee5813471269d21a426271bf" kind="function"><name>get_cx_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1afe3c1937fd90c123097924197efb8b03" kind="function"><name>search</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher" kind="class"><name>gpt_researcher::master::agent::GPTResearcher</name>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1aff6f2c41bd6081bcd4ebdd4be6bcba7b" kind="variable"><name>cfg</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a7c5ac246dd17b3d5049fdae2911479fa" kind="variable"><name>retriever</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af5c3a3e200d4cb2522e132a20be4d228" kind="variable"><name>context</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a9891a342cd5b44df55fb1b55ebd2e6f5" kind="variable"><name>source_urls</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ab68f476d5962b7ebba133d1d01a42a6f" kind="variable"><name>memory</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a24933598e47970d88a094e8ef12cb61d" kind="variable"><name>websocket</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a2387ad856ea21ae5a47158ffebcead80" kind="variable"><name>parent_query</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1abdd11fac8e5129854b1b787bd5769ffc" kind="variable"><name>subtopics</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a81b78152357e8adc1f5b58807365e912" kind="variable"><name>role</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ad4f8d88633c9441a471c14d0a850f183" kind="variable"><name>agent</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1aac50051421c58d280e1a765ea84d9c9b" kind="variable"><name>report_source</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a1e6d2956a3f6b24e22c7039e5b3f9570" kind="variable"><name>report_type</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a2a34e70714ce1d367eb5d3c988a38cac" kind="variable"><name>query</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af5a1522c96e7986b69b493095f9d0e53" kind="variable"><name>visited_urls</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a1123a9ceccf591cd94ec5fe17e429767" kind="variable"><name>verbose</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ac76ef73f87fb00a47cd6c798c8626dbc" kind="variable"><name>add_costs</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ad62ffa8e08f19b5e67eb3362f55fa855" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a07ed6b2e71964970b22586029d360fe6" kind="function"><name>conduct_research</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a2c2f031da0078748778e475217771d22" kind="function"><name>write_report</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ad0a76e040142e4de5e8c5e20f9931dff" kind="function"><name>get_source_urls</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ab1db28ee006b9032e0bc6cf6dd577e98" kind="function"><name>get_research_context</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a63d8975c2f241ce238c1ab85aab320f2" kind="function"><name>get_costs</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ad22935929320058b6ec010bd11c4a648" kind="function"><name>set_verbose</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a52fbcf367ccf81e1ba03858f60acc540" kind="function"><name>add_costs</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ab58de4205648a8354754bd28604b51d1" kind="function"><name>write_introduction</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a245afde9b9be308fd5ac526d4052fede" kind="function"><name>get_subtopics</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a27db868cc7088c60d4d2b24739c204aa" kind="function"><name>__get_context_by_urls</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af18fcbb61ff491b7a18edfdd62515a80" kind="function"><name>__get_context_by_search</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a320bb9bc8ff32f0bed79a0b2e4258e00" kind="function"><name>__process_sub_query</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a20e40a9b97069e59f8a6c07600463e54" kind="function"><name>__get_new_urls</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af49a21f87ec64106a6dc34c2fbaaef35" kind="function"><name>__scrape_data_by_query</name></member>
+    <member refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a3adeedb21d32c15fbbf10a7e9ce3a3e0" kind="function"><name>__get_similar_content_by_query</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider" kind="class"><name>gpt_researcher::llm_provider::groq::groq::GroqProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aee52b0ee4c82ec48ccacc503d87a69ff" kind="variable"><name>model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a7a527e8110e477b13c391f6eb32080ae" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1acac3ce57a20d2957d07183f64a619764" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a5b8c30e4ca0e9f851fc488b9ece44a38" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a91a7c71ec87556b2f7913f20ee1a2a11" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aff1959a3ba73b314f3c3433746a84563" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aa8a29289f161bd480d4267a252b800a8" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1ab91061c617161fc62ef9475197d96fe6" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a93be9e7cc2192cb605eb4eb6f1ef3f7d" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider" kind="class"><name>gpt_researcher::llm_provider::huggingface::huggingface::HugginFaceProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1af1fb58293b0de0d5c8d74bcecf9e8aa6" kind="variable"><name>model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a744e253ed67e07d2bb6dcf988ee61ff8" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a2a1a7e7ca34c9a9dabd4f5e7bc466837" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1acac348196c0ba3de9c81e6e182d4a6fd" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a60ae17b7c8f1446988ded590efda9e4a" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1ab514806071b2a6dce4907a35c6df8274" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a9a73260eaa0b5bf18c9b67a82b3f77b9" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a13b615065860169c0406faa06d0ec627" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a29c4557a7dba4a30faf237cf98374de0" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a1cea93e5495738cf31047865f4c50448" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classauth_1_1LoginRequest" kind="class"><name>auth::LoginRequest</name>
+    <member refid="classauth_1_1LoginRequest_1a0e3f75a027dc97388ccfe3d12331a11b" kind="variable"><name>username</name></member>
+    <member refid="classauth_1_1LoginRequest_1a00b163d66ed8d5c77407465fa62b1a44" kind="variable"><name>password</name></member>
+  </compound>
+  <compound refid="classauth_1_1LoginResponse" kind="class"><name>auth::LoginResponse</name>
+    <member refid="classauth_1_1LoginResponse_1a5592f669f1add7a37fa6ac7ae20f9a5a" kind="variable"><name>access_token</name></member>
+    <member refid="classauth_1_1LoginResponse_1a8f0ebb9afaa06895f6f43136546f5144" kind="variable"><name>expires_in</name></member>
+    <member refid="classauth_1_1LoginResponse_1af5bb1bc803d0dfa5221f102b90864529" kind="variable"><name>expires_at</name></member>
+    <member refid="classauth_1_1LoginResponse_1a57f09907080088273eb5c97eb63eec5e" kind="variable"><name>refresh_token</name></member>
+    <member refid="classauth_1_1LoginResponse_1a742f540112b817b4c5814bc9ad6873aa" kind="variable"><name>refresh_expires_in</name></member>
+    <member refid="classauth_1_1LoginResponse_1a64c3eb6c643b86162df46ecf1bde5d1f" kind="variable"><name>refresh_token_expires_at</name></member>
+    <member refid="classauth_1_1LoginResponse_1a078d99d8cc7858e5e20e4f234381aa44" kind="variable"><name>is_admin</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory" kind="class"><name>gpt_researcher::memory::embeddings::Memory</name>
+    <member refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1ad6b2a0649b3d9ec7438383e48f581cdb" kind="variable"><name>_embeddings</name></member>
+    <member refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a2dfbbd19d7252848527a7be807d7aec2" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a5a51c5c0866249bb8b164cd6e12346eb" kind="function"><name>get_embeddings</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider" kind="class"><name>gpt_researcher::llm_provider::mistral::mistral::MistralProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2a5d786261b6d470fffc4758cd1acd88" kind="variable"><name>model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1ab85d58e96f26f27bf3b84e46b9fd184c" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1aab3e3cb4d5f2cb0b3217074772edccde" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1abd922b050c1302c18b04b4a459067e0b" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a24f3c3355f5ee04c048a91142f2867ff" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1af26c66bfb17195ed5c35cccfe6d1cd1a" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1af3a489c41f7e00774f48fd25b77035dd" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2fbf90be0afcd22fffc64207b310b2cc" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a61da1b8639a70293d3f60a3674ccbef7" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1ad46ecf3c0c6e62502709cdf36b783fb6" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper" kind="class"><name>gpt_researcher::scraper::newspaper::newspaper::NewspaperScraper</name>
+    <member refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1a90da5467540a10356101c4aeb2af439b" kind="variable"><name>link</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1a2772460be01c2689081d6272cd804229" kind="variable"><name>session</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1a67b8865df0b1e6406fe87daa8c68f657" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1abe43b9568308386f0f417517792c5074" kind="function"><name>scrape</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider" kind="class"><name>gpt_researcher::llm_provider::ollama::ollama::OllamaProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1ab847ab673b47eff2b2668b17d1e409b9" kind="variable"><name>model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a75ef1fe2b40db6e77bea1efe8598e738" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a27d45ca589ace704c67a3192039fe0e7" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a7adaf9267389bec080606d2a4a1bf477" kind="variable"><name>base_url</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a8c2509e16a319613e2142a5e78164e3b" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a97b824af8393105e35c94f351d9228eb" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1abaa5642f4e4df0315f8ee291cebfb338" kind="function"><name>get_base_url</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1ab60b0d1083b153b47fb6336a914edbe3" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1abca636c4eebeec620a4392555613ff9b" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1acc5ec4a2e770daf8a88b0e41ee044c04" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider" kind="class"><name>gpt_researcher::llm_provider::openai::openai::OpenAIProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afe5c6d8875b14decb465cd65967e4682" kind="variable"><name>model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a1ed0519fedb6ae1b75f5da4130223f21" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1ae049a93afa3ac3d6a84f52a330677582" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afd786ea7857266ca7849de09f8048eec" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a7568a7268934cd83ca8dca162d300e78" kind="variable"><name>base_url</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a41af2bc0067c62cb918d41a1a256ec86" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a9d66aee14a4edb30892efe70e347ea5c" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a4b697a1538e429d04128ca4db34b2899" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1ac3a3f2d9ba55c2adb87c4b3c10a89657" kind="function"><name>get_base_url</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1acf1062fad12cc7ca7b3b8605e479ab49" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a4d59b5af663196df435cac336e439c40" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classauth_1_1PasswordChangeRequest" kind="class"><name>auth::PasswordChangeRequest</name>
+    <member refid="classauth_1_1PasswordChangeRequest_1a7c159aa9496534e7ff01dd9ad6990115" kind="variable"><name>user_id</name></member>
+    <member refid="classauth_1_1PasswordChangeRequest_1af2b477dc79860feb9599c65f4b203883" kind="variable"><name>new_password</name></member>
+  </compound>
+  <compound refid="classauth_1_1PasswordChangeResponse" kind="class"><name>auth::PasswordChangeResponse</name>
+    <member refid="classauth_1_1PasswordChangeResponse_1a1b671df6ae3def36be8b605f1f0e6b67" kind="variable"><name>user_id</name></member>
+    <member refid="classauth_1_1PasswordChangeResponse_1ac11ab832f1e396de0e0a6a46c4ce68e9" kind="variable"><name>message</name></member>
+  </compound>
+  <compound refid="classagents_1_1publisher_1_1PublisherAgent" kind="class"><name>agents::publisher::PublisherAgent</name>
+    <member refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" kind="variable"><name>output_dir</name></member>
+    <member refid="classagents_1_1publisher_1_1PublisherAgent_1a7c8c6016bb253e081f2fcbd07d30551c" kind="function"><name>__init__</name></member>
+    <member refid="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" kind="function"><name>publish_research_report</name></member>
+    <member refid="classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a" kind="function"><name>generate_layout</name></member>
+    <member refid="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" kind="function"><name>write_report_by_formats</name></member>
+    <member refid="classagents_1_1publisher_1_1PublisherAgent_1a826775413630c1f1d81baeaf33070275" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper" kind="class"><name>gpt_researcher::scraper::pymupdf::pymupdf::PyMuPDFScraper</name>
+    <member refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" kind="variable"><name>link</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a6bca3d146426fab875757b8db6b7bf43" kind="variable"><name>session</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1affab7937f2a126b0559f89dff7f92741" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1aae8b9f34b019d7c97787731c254a85f5" kind="function"><name>scrape</name></member>
+  </compound>
+  <compound refid="classredis__token__storage_1_1RedisTokenStorage" kind="class"><name>redis_token_storage::RedisTokenStorage</name>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" kind="variable"><name>redis_client</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1a3d45b35c6cf8b5919ac3fe21cfa69479" kind="function"><name>__init__</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1a229c35362e7af88b6096b2b5cb3048f0" kind="function"><name>store_token</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1aae0f0d43778c74ad44f4ee381151e7d0" kind="function"><name>retrieve_token</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1aaefb2d86c8ecfcfc7b4d6fc668b0142f" kind="function"><name>delete_token</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1a025c443b1f988143a8f3624a2457a08b" kind="function"><name>delete_tokens_by_user_id</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1ad6e7f032c2664d750982ac60025c24f3" kind="function"><name>store_refresh_token</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1a03d7fa22c6b5371b7254205ae9038ca8" kind="function"><name>retrieve_user_id_by_refresh_token</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1ad4043839e9087a9580f0cdb73e61ec0b" kind="function"><name>delete_refresh_token</name></member>
+    <member refid="classredis__token__storage_1_1RedisTokenStorage_1ae8dd99f867d56a7d22cc51abe948835c" kind="function"><name>delete_all_refresh_tokens_by_user_id</name></member>
+  </compound>
+  <compound refid="classauth_1_1RefreshRequest" kind="class"><name>auth::RefreshRequest</name>
+    <member refid="classauth_1_1RefreshRequest_1a5cd2504ad4a593a894f4b91d0971e750" kind="variable"><name>refresh_token</name></member>
+  </compound>
+  <compound refid="classauth_1_1RefreshResponse" kind="class"><name>auth::RefreshResponse</name>
+    <member refid="classauth_1_1RefreshResponse_1a2e0559e6e143ba074e5d97054a3320a4" kind="variable"><name>access_token</name></member>
+    <member refid="classauth_1_1RefreshResponse_1a93052658662af67f60bb7a7b5a9a4ecf" kind="variable"><name>expires_in</name></member>
+    <member refid="classauth_1_1RefreshResponse_1a73c28d76c73a15de38a10d204c986af2" kind="variable"><name>expires_at</name></member>
+    <member refid="classauth_1_1RefreshResponse_1aefa5cac00d633a146927da0977721f0d" kind="variable"><name>refresh_token</name></member>
+    <member refid="classauth_1_1RefreshResponse_1acfcf05c744c9f1f94f2f72d0ff7bc877" kind="variable"><name>refresh_expires_in</name></member>
+    <member refid="classauth_1_1RefreshResponse_1aacfc95ed22d7373509d029288086fcd9" kind="variable"><name>refresh_expires_at</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource" kind="class"><name>gpt_researcher::utils::enum::ReportSource</name>
+    <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource_1a6da128c50580df465b9e34330783ce34" kind="variable"><name>Web</name></member>
+    <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource_1a96184ad735ec8461ac2ca3b943799038" kind="variable"><name>Local</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType" kind="class"><name>gpt_researcher::utils::enum::ReportType</name>
+    <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1abc97d8a9af5c1c3f0e36ba370f7bd084" kind="variable"><name>ResearchReport</name></member>
+    <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a7127e98d2b356dd6499b5f69938bd197" kind="variable"><name>ResourceReport</name></member>
+    <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1aac580d69ab16f89917b617b4fe255e5f" kind="variable"><name>OutlineReport</name></member>
+    <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a504d1981defb724d1b01a57c6c9bebb6" kind="variable"><name>CustomReport</name></member>
+    <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1af840c0b75b47688f7af4e19d525deffe" kind="variable"><name>DetailedReport</name></member>
+    <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a5c591d99b5639a39b86e1c723b7a1014" kind="variable"><name>SubtopicReport</name></member>
+  </compound>
+  <compound refid="classagents_1_1researcher_1_1ResearchAgent" kind="class"><name>agents::researcher::ResearchAgent</name>
+    <member refid="classagents_1_1researcher_1_1ResearchAgent_1ac21649c2369981f9a85b9502d0280ea4" kind="function"><name>__init__</name></member>
+    <member refid="classagents_1_1researcher_1_1ResearchAgent_1a573ebcc81dc8441d33467111de27673e" kind="function"><name>research</name></member>
+    <member refid="classagents_1_1researcher_1_1ResearchAgent_1ae1c64522521fdd4af4951a7cfbd6a6d4" kind="function"><name>run_subtopic_research</name></member>
+    <member refid="classagents_1_1researcher_1_1ResearchAgent_1aeb527602b750a8e7895ae1cbee59fc25" kind="function"><name>run_initial_research</name></member>
+    <member refid="classagents_1_1researcher_1_1ResearchAgent_1ae3de3a9abfe5ecb5126c89560c14fa92" kind="function"><name>run_depth_research</name></member>
+  </compound>
+  <compound refid="classbackend_1_1server_1_1ResearchRequest" kind="class"><name>backend::server::ResearchRequest</name>
+    <member refid="classbackend_1_1server_1_1ResearchRequest_1a67fa07b5bff295d8cf39866f3703e3cd" kind="variable"><name>task</name></member>
+    <member refid="classbackend_1_1server_1_1ResearchRequest_1a19cdda16ce044d65cd3d4734ff4cb7a8" kind="variable"><name>report_type</name></member>
+    <member refid="classbackend_1_1server_1_1ResearchRequest_1a312e8b781e186a3e99f6005a0b5c41ef" kind="variable"><name>agent</name></member>
+  </compound>
+  <compound refid="classmemory_1_1research_1_1ResearchState" kind="class"><name>memory::research::ResearchState</name>
+    <member refid="classmemory_1_1research_1_1ResearchState_1acedf89dea8cb3ee08bb6a27f9cd1d025" kind="variable"><name>task</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1a94e4514b47b0aa002a0b1c734f01d6c2" kind="variable"><name>initial_research</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1ac53039dd2510977fc1423f0b3e144485" kind="variable"><name>sections</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1a404b7186673b918e1cc6f6d38bfe3c3e" kind="variable"><name>research_data</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1a38e85bd09ffa6cfd92f5fcff8bef6339" kind="variable"><name>title</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1aeb458454fc0c5e18c6106d0e486efded" kind="variable"><name>headers</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1a295d210773dc95caea1e0fe3bd458025" kind="variable"><name>date</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1a80757af80d3837305c4c97d588d241a7" kind="variable"><name>table_of_contents</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1a5e83df6137888112475b2fca57f7315d" kind="variable"><name>introduction</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1aed34aa52f6a45b13953be9d50bc8c6c4" kind="variable"><name>conclusion</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1a764d40daa4a6c4e898b0f0ebb9aa0689" kind="variable"><name>sources</name></member>
+    <member refid="classmemory_1_1research_1_1ResearchState_1a743c15bd385c00ee42bb6067bd5e8327" kind="variable"><name>report</name></member>
+  </compound>
+  <compound refid="classagents_1_1reviewer_1_1ReviewerAgent" kind="class"><name>agents::reviewer::ReviewerAgent</name>
+    <member refid="classagents_1_1reviewer_1_1ReviewerAgent_1a68d89b46182c202a1ca903e69b1b8cd2" kind="function"><name>__init__</name></member>
+    <member refid="classagents_1_1reviewer_1_1ReviewerAgent_1a58d290d2d55e6162e1e2247b9ebea0f1" kind="function"><name>review_draft</name></member>
+    <member refid="classagents_1_1reviewer_1_1ReviewerAgent_1a6d961e5840925ddef49b094c79580d73" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classagents_1_1reviser_1_1ReviserAgent" kind="class"><name>agents::reviser::ReviserAgent</name>
+    <member refid="classagents_1_1reviser_1_1ReviserAgent_1a72f2e05c9172082d048e04a8d2ca951b" kind="function"><name>__init__</name></member>
+    <member refid="classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2" kind="function"><name>revise_draft</name></member>
+    <member refid="classagents_1_1reviser_1_1ReviserAgent_1a87b9ffff687ab822ae8ce05aef90e405" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper" kind="class"><name>gpt_researcher::scraper::scraper::Scraper</name>
+    <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a8a99ec6b0c69fa87a38d8edb77881515" kind="variable"><name>urls</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd" kind="variable"><name>session</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0c27f57a5be7f6d081c27b9545beb3b3" kind="variable"><name>scraper</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a85641ed66cd2c0f924dc6ce1bd148fe6" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9" kind="function"><name>run</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aba3daf5affb83d09eef0bd0b767e9e39" kind="function"><name>extract_data_from_link</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a5aca6b83012ce2098ce090add0d3ac41" kind="function"><name>get_scraper</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever" kind="class"><name>gpt_researcher::context::retriever::SearchAPIRetriever</name>
+    <member refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1a403976a777ded595557dda0b9bca2cad" kind="variable"><name>pages</name></member>
+    <member refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1ad348c38878f9d19adb17a5c7a88318a8" kind="function"><name>_get_relevant_documents</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch" kind="class"><name>gpt_researcher::retrievers::searx::searx::SearxSearch</name>
+    <member refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1ac6692ba6397af22fb1559c92d3bee003" kind="variable"><name>query</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a99e7c093235d706ca95b13b15eb5edbf" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a6181b9b1d2cca03751489821ea8bfd9b" kind="variable"><name>client</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a24953d5c57b8eca56cdadd4d125cb888" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a9e125e0c8510e52837e4cbd9cfba4c06" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a778ed2bf6f8f22252fceee56d613ec5a" kind="function"><name>search</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch" kind="class"><name>gpt_researcher::retrievers::serpapi::serpapi::SerpApiSearch</name>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1acb0735ef232f991bc148438c73e12637" kind="variable"><name>query</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a0cc82e642dd445f13c62344c4ceed176" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a4b6692bbbd29baf7b917c46448cbcfe1" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a264b7317c8eb6722477584d6cf67633e" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1adc1c93156cf9ada3cf939cc50d8e9bd7" kind="function"><name>search</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch" kind="class"><name>gpt_researcher::retrievers::serper::serper::SerperSearch</name>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1a363c7232742fcf0124645e8079c47b51" kind="variable"><name>query</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1a7e94f43d2a7fcecc2840c018274a0602" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1a02a55d736d2ee9ffa1e6a0b078ef72d9" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1ace8547e29a2210015788a20d32c71104" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1adc6d86b893e3b2e65ad8977feba7c1fd" kind="function"><name>search</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1utils_1_1validators_1_1Subtopic" kind="class"><name>gpt_researcher::utils::validators::Subtopic</name>
+    <member refid="classgpt__researcher_1_1utils_1_1validators_1_1Subtopic_1a35dd9a799352739b6b605801ae969094" kind="variable"><name>task</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1utils_1_1validators_1_1Subtopics" kind="class"><name>gpt_researcher::utils::validators::Subtopics</name>
+    <member refid="classgpt__researcher_1_1utils_1_1validators_1_1Subtopics_1a0de0c6a9997587b86c840db40535b843" kind="variable"><name>subtopics</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch" kind="class"><name>gpt_researcher::retrievers::tavily::tavily_search::TavilySearch</name>
+    <member refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1a2afaf72c349bf163ab147b4b29bfedad" kind="variable"><name>query</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1a1b30b96a97a06cba1240acfe2f03a444" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1a245d61c57d930d3e8573387ef0c9d52c" kind="variable"><name>client</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1a1887fa13e9ac59e10ae039870215db27" kind="variable"><name>topic</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1ab7298fb733332e67dea4189371a82780" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1a546d90d1830d5e282148c167799f6117" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1aaa6a16beec23316f798ba1fe987b379b" kind="function"><name>search</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider" kind="class"><name>gpt_researcher::llm_provider::together::together::TogetherProvider</name>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1af693cfba8f4dd9f2dc986c7ca1b2ef41" kind="variable"><name>model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a9439963a23a8b4e668c34a54fd20f67d" kind="variable"><name>temperature</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1ae48dd7501c5c14af4afc754d89471edb" kind="variable"><name>max_tokens</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1ab2e02cc405885217041e42771c792864" kind="variable"><name>api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1ad4ec56061e529c2534e4baa909c0987d" kind="variable"><name>llm</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a193b4b37a2569b1795c3f1266b2db5eb" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a4f27645d738933306c68f4bf0301c0d2" kind="function"><name>get_api_key</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1aa75375bd2720f0f71037e08629cbca0f" kind="function"><name>get_llm_model</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a2dc524dd2fe07ff061da1f86d474e40d" kind="function"><name>get_chat_response</name></member>
+    <member refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a8b56080c220a05856546d516e1a628c4" kind="function"><name>stream_response</name></member>
+  </compound>
+  <compound refid="classtoken__storage_1_1TokenStorage" kind="class"><name>token_storage::TokenStorage</name>
+    <member refid="classtoken__storage_1_1TokenStorage_1a358bba89fb75c5e0d351413fe35dc177" kind="function"><name>store_token</name></member>
+    <member refid="classtoken__storage_1_1TokenStorage_1a7a995049b7f1a26b9a3b9310781d6052" kind="function"><name>retrieve_token</name></member>
+    <member refid="classtoken__storage_1_1TokenStorage_1a0993266db9e1a278fb77d46fc2ab9fed" kind="function"><name>delete_token</name></member>
+  </compound>
+  <compound refid="classbackend_1_1db_1_1User" kind="class"><name>backend::db::User</name>
+    <member refid="classbackend_1_1db_1_1User_1a2a7afdccbdd98ce80ba9445eda2eddf8" kind="variable"><name>__tablename__</name></member>
+    <member refid="classbackend_1_1db_1_1User_1a0961dd5989b805b2326170f1db7ddfbb" kind="variable"><name>id</name></member>
+    <member refid="classbackend_1_1db_1_1User_1a5023fa9e4da1d4253434a7fce002ba10" kind="variable"><name>username</name></member>
+    <member refid="classbackend_1_1db_1_1User_1a8a4108d863222635a597c841ce7bedd6" kind="variable"><name>password_hash</name></member>
+    <member refid="classbackend_1_1db_1_1User_1ac9dbd0a9355fb699399f49e4854775f1" kind="variable"><name>email</name></member>
+    <member refid="classbackend_1_1db_1_1User_1a5c3f597a861c93d59cd756e5ecb214a9" kind="variable"><name>is_admin</name></member>
+    <member refid="classbackend_1_1db_1_1User_1a398a54bc53a26938573dfca506a13c5c" kind="function"><name>set_password</name></member>
+    <member refid="classbackend_1_1db_1_1User_1a2b26b10e4cef8e28529000b96380ed65" kind="function"><name>check_password</name></member>
+  </compound>
+  <compound refid="classdb__seed_1_1User" kind="class"><name>db_seed::User</name>
+    <member refid="classdb__seed_1_1User_1abcee60dd5842490186a3863073a6ec07" kind="variable"><name>__tablename__</name></member>
+    <member refid="classdb__seed_1_1User_1abeb46fb39632dc8bda94d363dd548020" kind="variable"><name>id</name></member>
+    <member refid="classdb__seed_1_1User_1a9a2abda82b590c041243e511a3b96a45" kind="variable"><name>username</name></member>
+    <member refid="classdb__seed_1_1User_1a96e4068c56e8e61afa622d936996b068" kind="variable"><name>password_hash</name></member>
+    <member refid="classdb__seed_1_1User_1a86e63e222f85c4abcc0ba35286280b7d" kind="variable"><name>email</name></member>
+    <member refid="classdb__seed_1_1User_1a6a4ee499ff49c8c5f0ae6a2bbf72e16d" kind="variable"><name>is_admin</name></member>
+  </compound>
+  <compound refid="classauth_1_1UserCreateRequest" kind="class"><name>auth::UserCreateRequest</name>
+    <member refid="classauth_1_1UserCreateRequest_1a6aef431fda013a3efd4143ffd79370cb" kind="variable"><name>username</name></member>
+    <member refid="classauth_1_1UserCreateRequest_1a4fad3c521331dc7387067300ed513426" kind="variable"><name>email</name></member>
+    <member refid="classauth_1_1UserCreateRequest_1a1bf5a4130971972b43179fddc4a8043a" kind="variable"><name>password</name></member>
+    <member refid="classauth_1_1UserCreateRequest_1a02b081786ef492c7e5c5004e629c1474" kind="variable"><name>is_admin</name></member>
+  </compound>
+  <compound refid="classauth_1_1UserResponse" kind="class"><name>auth::UserResponse</name>
+    <member refid="classauth_1_1UserResponse_1af9fd52a7408c354b99991e09b0d863e2" kind="variable"><name>id</name></member>
+    <member refid="classauth_1_1UserResponse_1a5fec159fbf046e775dcad7c04fcd94de" kind="variable"><name>username</name></member>
+    <member refid="classauth_1_1UserResponse_1a72ba5840d1b9752c57c5ff5466eae326" kind="variable"><name>email</name></member>
+    <member refid="classauth_1_1UserResponse_1a780132dbabc283770316c7c036aab878" kind="variable"><name>is_admin</name></member>
+  </compound>
+  <compound refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper" kind="class"><name>gpt_researcher::scraper::web_base_loader::web_base_loader::WebBaseLoaderScraper</name>
+    <member refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a93fb660d87d4ad9aaa185e56624b8f65" kind="variable"><name>link</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a95306fb278fea8f96720e4a5d282a87f" kind="variable"><name>session</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a75c8e0c8ea89adb5e1ccec61985f184e" kind="function"><name>__init__</name></member>
+    <member refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a6de5174548419f9a7391167a61afda89" kind="function"><name>scrape</name></member>
+  </compound>
+  <compound refid="classbackend_1_1websocket__manager_1_1WebSocketManager" kind="class"><name>backend::websocket_manager::WebSocketManager</name>
+    <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1abe026167abfef517ade843c9c7686e6b" kind="function"><name>__init__</name></member>
+    <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea" kind="function"><name>start_sender</name></member>
+    <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1af91d24f74593c8730180989c3bd3e6af" kind="function"><name>connect</name></member>
+    <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1a2e59a99e26eae2043d78dc1bbd6cb3b7" kind="function"><name>disconnect</name></member>
+    <member refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1ae59b7735cdfb361b4e5817f2539f2fc0" kind="function"><name>start_streaming</name></member>
+  </compound>
+  <compound refid="classagents_1_1writer_1_1WriterAgent" kind="class"><name>agents::writer::WriterAgent</name>
+    <member refid="classagents_1_1writer_1_1WriterAgent_1aeed8e40ea98de396d419386d28507e1b" kind="function"><name>__init__</name></member>
+    <member refid="classagents_1_1writer_1_1WriterAgent_1afe89553ca1031e9847522ea8a945f50a" kind="function"><name>get_headers</name></member>
+    <member refid="classagents_1_1writer_1_1WriterAgent_1ad090d0934f61168407dec03c5c9eae4d" kind="function"><name>write_sections</name></member>
+    <member refid="classagents_1_1writer_1_1WriterAgent_1a1fc2cc02dd6d702e2d3599086f26dc8f" kind="function"><name>revise_headers</name></member>
+    <member refid="classagents_1_1writer_1_1WriterAgent_1aeea35fc6e190669f99d20c20409fc266" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="namespaceagent" kind="namespace"><name>agent</name>
+    <member refid="namespaceagent_1a95435a4e96e81f83e8c22bbf23d72864" kind="variable"><name>chief_editor</name></member>
+    <member refid="namespaceagent_1a506a8909f4cc88c2c31135a29dadbddb" kind="variable"><name>graph</name></member>
+  </compound>
+  <compound refid="namespaceagents" kind="namespace"><name>agents</name>
+    <member refid="namespaceagents_1a81c46b0f706b9874f61e90dde4d4bf12" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespaceagents_1_1editor" kind="namespace"><name>agents::editor</name>
+  </compound>
+  <compound refid="namespaceagents_1_1master" kind="namespace"><name>agents::master</name>
+  </compound>
+  <compound refid="namespaceagents_1_1publisher" kind="namespace"><name>agents::publisher</name>
+  </compound>
+  <compound refid="namespaceagents_1_1researcher" kind="namespace"><name>agents::researcher</name>
+  </compound>
+  <compound refid="namespaceagents_1_1reviewer" kind="namespace"><name>agents::reviewer</name>
+    <member refid="namespaceagents_1_1reviewer_1abac832073d6b2b703c15ee2ea425dcee" kind="variable"><name>TEMPLATE</name></member>
+  </compound>
+  <compound refid="namespaceagents_1_1reviser" kind="namespace"><name>agents::reviser</name>
+    <member refid="namespaceagents_1_1reviser_1adced1481093055f3bbb05ed5c543d1c4" kind="variable"><name>sample_revision_notes</name></member>
+  </compound>
+  <compound refid="namespaceagents_1_1utils" kind="namespace"><name>agents::utils</name>
+  </compound>
+  <compound refid="namespaceagents_1_1utils_1_1file__formats" kind="namespace"><name>agents::utils::file_formats</name>
+    <member refid="namespaceagents_1_1utils_1_1file__formats_1ad0218eec891397e9e5fc972b4c9ce1b3" kind="function"><name>write_to_file</name></member>
+    <member refid="namespaceagents_1_1utils_1_1file__formats_1a291480dc71d67af0e177df6daefe0942" kind="function"><name>write_text_to_md</name></member>
+    <member refid="namespaceagents_1_1utils_1_1file__formats_1a381d88777ec5b123fc0c7f5b8357f96b" kind="function"><name>write_md_to_pdf</name></member>
+    <member refid="namespaceagents_1_1utils_1_1file__formats_1a418dc3a64d94136480c6a27a8050cfee" kind="function"><name>write_md_to_word</name></member>
+  </compound>
+  <compound refid="namespaceagents_1_1utils_1_1llms" kind="namespace"><name>agents::utils::llms</name>
+    <member refid="namespaceagents_1_1utils_1_1llms_1a11e6429a9b0fa8085b39b9478fb8ec6f" kind="function"><name>call_model</name></member>
+  </compound>
+  <compound refid="namespaceagents_1_1utils_1_1views" kind="namespace"><name>agents::utils::views</name>
+    <member refid="namespaceagents_1_1utils_1_1views_1aa0db7100917087f4c57e0aae1358f5a9" kind="function"><name>print_agent_output</name></member>
+  </compound>
+  <compound refid="namespaceagents_1_1writer" kind="namespace"><name>agents::writer</name>
+    <member refid="namespaceagents_1_1writer_1a4c5d07e2e9e57563dbcb39ba7feddab6" kind="variable"><name>sample_json</name></member>
+  </compound>
+  <compound refid="namespaceall-6-report-types" kind="namespace"><name>all-6-report-types</name>
+    <member refid="namespaceall-6-report-types_1aecb9c0531cfe93f14038ec0441771f16" kind="variable"><name>report_types</name></member>
+    <member refid="namespaceall-6-report-types_1a270c2acc29395cbfe0b575874b4618ac" kind="variable"><name>query</name></member>
+    <member refid="namespaceall-6-report-types_1a198e412432762cd75d1e0eb0c73f246d" kind="variable"><name>sources</name></member>
+    <member refid="namespaceall-6-report-types_1a5c73a537ae3b6ea0c356f98c9d74ae11" kind="variable"><name>output_dir</name></member>
+    <member refid="namespaceall-6-report-types_1a6abdc0949357efb3cff7dcd30cb59853" kind="function"><name>test_gpt_researcher</name></member>
+  </compound>
+  <compound refid="namespaceauth" kind="namespace"><name>auth</name>
+    <member refid="namespaceauth_1a4d6f41e6ca1555ecb54695492ed9aeab" kind="variable"><name>level</name></member>
+    <member refid="namespaceauth_1a62ab3e5094f88012c1aa974d724cd41f" kind="variable"><name>logger</name></member>
+    <member refid="namespaceauth_1af3c79770bc28a778b1b63717c336cd9f" kind="variable"><name>oauth2_scheme</name></member>
+    <member refid="namespaceauth_1ac305efe1aa5d2925562d0017531e8994" kind="variable"><name>MAX_ACTIVE_TOKENS_PER_USER</name></member>
+    <member refid="namespaceauth_1a17782a3fbe24b750bc69d23132af156d" kind="variable"><name>token_storage</name></member>
+    <member refid="namespaceauth_1ac9f9e08195c81445beb8356975041a8e" kind="variable"><name>auth_router</name></member>
+    <member refid="namespaceauth_1a70d915b763db8a2e3530d2b9287522ca" kind="function"><name>token_required</name></member>
+    <member refid="namespaceauth_1a7e51e09218962c17b300982e11efdb7c" kind="function"><name>get_current_user_admin</name></member>
+    <member refid="namespaceauth_1a52b18e20d7cd7aa87cddc90e819c293c" kind="function"><name>create_tokens</name></member>
+    <member refid="namespaceauth_1a70e6da45c7251d2296a1db1d56f5e359" kind="function"><name>login</name></member>
+    <member refid="namespaceauth_1af95c0810d88230a4edd324a6d0c1f376" kind="function"><name>logout</name></member>
+    <member refid="namespaceauth_1a71394ac4b1319dfb9517cb819f761128" kind="function"><name>refresh_token</name></member>
+    <member refid="namespaceauth_1a3a0f4542a8021c943517d9ef7f7207cb" kind="function"><name>create_user</name></member>
+    <member refid="namespaceauth_1a1255c2b2d79877783d9ac9c59b9cba0f" kind="function"><name>delete_user</name></member>
+    <member refid="namespaceauth_1a1c21095f56d293d884bf37f46582accc" kind="function"><name>change_user_password</name></member>
+    <member refid="namespaceauth_1aefa7a593395931644be08041ce109591" kind="function"><name>modify_user</name></member>
+    <member refid="namespaceauth_1a9242c3c841da8f428f532e8f827844a5" kind="function"><name>get_users</name></member>
+    <member refid="namespaceauth_1a0576ac38388513ffb14572026ff67e2a" kind="function"><name>init_app</name></member>
+  </compound>
+  <compound refid="namespacebackend" kind="namespace"><name>backend</name>
+  </compound>
+  <compound refid="namespacebackend_1_1db" kind="namespace"><name>backend::db</name>
+    <member refid="namespacebackend_1_1db_1a12e4627d89ec45bd8387dec506627a0b" kind="variable"><name>level</name></member>
+    <member refid="namespacebackend_1_1db_1a7bf12892f824b7a3da5c6cb6e4e30ce5" kind="variable"><name>logger</name></member>
+    <member refid="namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b" kind="variable"><name>POSTGRES_USER</name></member>
+    <member refid="namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c" kind="variable"><name>POSTGRES_PASSWORD</name></member>
+    <member refid="namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18" kind="variable"><name>POSTGRES_DB</name></member>
+    <member refid="namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290" kind="variable"><name>POSTGRES_HOST</name></member>
+    <member refid="namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885" kind="variable"><name>POSTGRES_PORT</name></member>
+    <member refid="namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74" kind="variable"><name>DATABASE_URL</name></member>
+    <member refid="namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5" kind="variable"><name>engine</name></member>
+    <member refid="namespacebackend_1_1db_1a0b318ee468d301d1808f4f6c49ada651" kind="variable"><name>SessionLocal</name></member>
+    <member refid="namespacebackend_1_1db_1a036b7ab6f207c3287b0668774b089dd0" kind="variable"><name>Base</name></member>
+    <member refid="namespacebackend_1_1db_1a531d50d0e97c20ce2de9118403d355c8" kind="function"><name>get_db</name></member>
+    <member refid="namespacebackend_1_1db_1aede5ea7cecfbb5e666435bbf5fad8735" kind="function"><name>init_db</name></member>
+  </compound>
+  <compound refid="namespacebackend_1_1report__type" kind="namespace"><name>backend::report_type</name>
+    <member refid="namespacebackend_1_1report__type_1a926bda12b1e020f96b84d304394bdd9f" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacebackend_1_1report__type_1_1basic__report" kind="namespace"><name>backend::report_type::basic_report</name>
+  </compound>
+  <compound refid="namespacebackend_1_1report__type_1_1basic__report_1_1basic__report" kind="namespace"><name>backend::report_type::basic_report::basic_report</name>
+  </compound>
+  <compound refid="namespacebackend_1_1report__type_1_1detailed__report" kind="namespace"><name>backend::report_type::detailed_report</name>
+  </compound>
+  <compound refid="namespacebackend_1_1report__type_1_1detailed__report_1_1detailed__report" kind="namespace"><name>backend::report_type::detailed_report::detailed_report</name>
+  </compound>
+  <compound refid="namespacebackend_1_1server" kind="namespace"><name>backend::server</name>
+    <member refid="namespacebackend_1_1server_1a791304efa6d9abc2d7224777155f4ce3" kind="variable"><name>level</name></member>
+    <member refid="namespacebackend_1_1server_1ac7ba92e1518c9942f9b2628e59284036" kind="variable"><name>logger</name></member>
+    <member refid="namespacebackend_1_1server_1a7b499ff940ba3d60a6a446047dc0e793" kind="variable"><name>app</name></member>
+    <member refid="namespacebackend_1_1server_1afd315579b9669e0ddf3c7380195c2c9f" kind="variable"><name>allow_origins</name></member>
+    <member refid="namespacebackend_1_1server_1a02a6dbac09a1e44d53dac146b4b7995e" kind="variable"><name>allow_credentials</name></member>
+    <member refid="namespacebackend_1_1server_1a31453585c4b681dd455b119aad8df27f" kind="variable"><name>allow_methods</name></member>
+    <member refid="namespacebackend_1_1server_1ac0adc8d19eae0c9e8eaa11d97e60657b" kind="variable"><name>allow_headers</name></member>
+    <member refid="namespacebackend_1_1server_1a3fb990b8f65eceb426d3046cca41f3be" kind="variable"><name>name</name></member>
+    <member refid="namespacebackend_1_1server_1a08ea44cc61f6d390978edd06e68867b2" kind="variable"><name>templates</name></member>
+    <member refid="namespacebackend_1_1server_1a967b877415aecb102a7fc379ce5041b1" kind="variable"><name>manager</name></member>
+    <member refid="namespacebackend_1_1server_1a9c30cd96e9e80accf2505265058bb685" kind="function"><name>format_filename</name></member>
+    <member refid="namespacebackend_1_1server_1aa20a85ade2f14a7b9746f098733052a9" kind="function"><name>startup_event</name></member>
+    <member refid="namespacebackend_1_1server_1aaf74caa59bfb354fc9376ff64b5b0450" kind="function"><name>read_root</name></member>
+    <member refid="namespacebackend_1_1server_1ad4dad2e900f405ce89832734ae7a4b80" kind="function"><name>save_request_to_file</name></member>
+    <member refid="namespacebackend_1_1server_1add4a342eaeb04b916c8e3ca8ee280129" kind="function"><name>websocket_endpoint</name></member>
+  </compound>
+  <compound refid="namespacebackend_1_1utils" kind="namespace"><name>backend::utils</name>
+    <member refid="namespacebackend_1_1utils_1a349c1a0272cb33e2864e3916260d1c0f" kind="function"><name>write_to_file</name></member>
+    <member refid="namespacebackend_1_1utils_1a24a9b21ed7e6901e1bbf4e58b118c952" kind="function"><name>write_text_to_md</name></member>
+    <member refid="namespacebackend_1_1utils_1a3a0c17f855bfc57a2c8ec1e62282b4f3" kind="function"><name>write_md_to_pdf</name></member>
+    <member refid="namespacebackend_1_1utils_1af7e009eb6e547b3ee1960da967dd1dac" kind="function"><name>write_md_to_word</name></member>
+  </compound>
+  <compound refid="namespacebackend_1_1websocket__manager" kind="namespace"><name>backend::websocket_manager</name>
+    <member refid="namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870" kind="function"><name>run_agent</name></member>
+  </compound>
+  <compound refid="namespacecli" kind="namespace"><name>cli</name>
+    <member refid="namespacecli_1acaca8ac2bee7e16ecd95cc31d0bb9c64" kind="variable"><name>cli</name></member>
+    <member refid="namespacecli_1a22e8d05830b557d4bad23cff231d0a3e" kind="variable"><name>type</name></member>
+    <member refid="namespacecli_1a4d57fcfd67bfdd5bf1bb5ef353ad3d04" kind="variable"><name>help</name></member>
+    <member refid="namespacecli_1a65f014f9d134c9c500c920de65e2ad02" kind="variable"><name>choices</name></member>
+    <member refid="namespacecli_1a775ffc6e10fa19dd31519ee6d29a01f3" kind="variable"><name>report_type_descriptions</name></member>
+    <member refid="namespacecli_1a83d9ca1ff34a81c6ccd03f84f79d9d53" kind="variable"><name>required</name></member>
+    <member refid="namespacecli_1aded26a9cf4c656ae51d8492a2bcea4f8" kind="variable"><name>args</name></member>
+    <member refid="namespacecli_1a1575f9306adb5b73910ad4fc9253676c" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacedb__seed" kind="namespace"><name>db_seed</name>
+    <member refid="namespacedb__seed_1a117e9500c3cfbce3c47a78dce5d3387a" kind="variable"><name>DATABASE_URL</name></member>
+    <member refid="namespacedb__seed_1a3a13123e1feae6f94734cb4ce2458a4a" kind="variable"><name>DEFAULT_DATABASE_URL</name></member>
+    <member refid="namespacedb__seed_1a0b4a141c01c3ca0e89d388886fa22e64" kind="variable"><name>engine</name></member>
+    <member refid="namespacedb__seed_1a52ec56261a6019cbf3d0a865706088e7" kind="variable"><name>default_engine</name></member>
+    <member refid="namespacedb__seed_1ae13a878e1ef07e9587b3260140e80eef" kind="variable"><name>SessionLocal</name></member>
+    <member refid="namespacedb__seed_1a0e93e718046a1c51c798a58b993e93ba" kind="variable"><name>Base</name></member>
+    <member refid="namespacedb__seed_1ab87b17b414c85510bede32dbaedd38c9" kind="variable"><name>bind</name></member>
+    <member refid="namespacedb__seed_1a70e5b0071a23a918022b1042bd19543d" kind="function"><name>execute_query</name></member>
+    <member refid="namespacedb__seed_1a6208bff4be72cd3a39474b32e919b20e" kind="function"><name>reset_database</name></member>
+    <member refid="namespacedb__seed_1a6c0a83c2690000b1ebe0151f2df7abbb" kind="function"><name>create_admin</name></member>
+  </compound>
+  <compound refid="namespacedocuments-report-source" kind="namespace"><name>documents-report-source</name>
+    <member refid="namespacedocuments-report-source_1abe193fbaff482c0f4acb6195464e2bd2" kind="variable"><name>report_types</name></member>
+    <member refid="namespacedocuments-report-source_1adde104a314af0f4c17bc4c902abf5857" kind="variable"><name>query</name></member>
+    <member refid="namespacedocuments-report-source_1af938f99fc526afa847916a04f53f20e7" kind="variable"><name>output_dir</name></member>
+    <member refid="namespacedocuments-report-source_1ad12a9b38a596a55ac62431fe1116e367" kind="function"><name>test_gpt_researcher</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher" kind="namespace"><name>gpt_researcher</name>
+    <member refid="namespacegpt__researcher_1a572df6189baa160ae552ef903c99af4f" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1config" kind="namespace"><name>gpt_researcher::config</name>
+    <member refid="namespacegpt__researcher_1_1config_1a5f9ab6471cf15d9522a761d757d13aa5" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1config_1_1config" kind="namespace"><name>gpt_researcher::config::config</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1context" kind="namespace"><name>gpt_researcher::context</name>
+    <member refid="namespacegpt__researcher_1_1context_1a4faa2b0c0c70150796b5a45732aa6dbf" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1context_1_1compression" kind="namespace"><name>gpt_researcher::context::compression</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1context_1_1retriever" kind="namespace"><name>gpt_researcher::context::retriever</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1document" kind="namespace"><name>gpt_researcher::document</name>
+    <member refid="namespacegpt__researcher_1_1document_1ad6bcf4f7e55c386b6ec05a3e19eed34d" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1document_1_1document" kind="namespace"><name>gpt_researcher::document::document</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider" kind="namespace"><name>gpt_researcher::llm_provider</name>
+    <member refid="namespacegpt__researcher_1_1llm__provider_1a91d2bd5c55978c07f716bbbaa0896684" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1anthropic" kind="namespace"><name>gpt_researcher::llm_provider::anthropic</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic" kind="namespace"><name>gpt_researcher::llm_provider::anthropic::anthropic</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1azureopenai" kind="namespace"><name>gpt_researcher::llm_provider::azureopenai</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai" kind="namespace"><name>gpt_researcher::llm_provider::azureopenai::azureopenai</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1generic" kind="namespace"><name>gpt_researcher::llm_provider::generic</name>
+    <member refid="namespacegpt__researcher_1_1llm__provider_1_1generic_1ad60a1517d10494daf1fcff5a5e092875" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base" kind="namespace"><name>gpt_researcher::llm_provider::generic::base</name>
+    <member refid="namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_1a9f6d46c37d23d8d132a407cb13f5f821" kind="variable"><name>_SUPPORTED_PROVIDERS</name></member>
+    <member refid="namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_1a35c9d5a74d44f148fdd6879bc9b82f86" kind="function"><name>_check_pkg</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1google" kind="namespace"><name>gpt_researcher::llm_provider::google</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1google_1_1google" kind="namespace"><name>gpt_researcher::llm_provider::google::google</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1groq" kind="namespace"><name>gpt_researcher::llm_provider::groq</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1groq_1_1groq" kind="namespace"><name>gpt_researcher::llm_provider::groq::groq</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1huggingface" kind="namespace"><name>gpt_researcher::llm_provider::huggingface</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface" kind="namespace"><name>gpt_researcher::llm_provider::huggingface::huggingface</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1mistral" kind="namespace"><name>gpt_researcher::llm_provider::mistral</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1mistral_1_1mistral" kind="namespace"><name>gpt_researcher::llm_provider::mistral::mistral</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1ollama" kind="namespace"><name>gpt_researcher::llm_provider::ollama</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1ollama_1_1ollama" kind="namespace"><name>gpt_researcher::llm_provider::ollama::ollama</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1openai" kind="namespace"><name>gpt_researcher::llm_provider::openai</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1openai_1_1openai" kind="namespace"><name>gpt_researcher::llm_provider::openai::openai</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1together" kind="namespace"><name>gpt_researcher::llm_provider::together</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1llm__provider_1_1together_1_1together" kind="namespace"><name>gpt_researcher::llm_provider::together::together</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1master" kind="namespace"><name>gpt_researcher::master</name>
+    <member refid="namespacegpt__researcher_1_1master_1aea6802ff29921a1c35e9f49531f99b81" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1master_1_1actions" kind="namespace"><name>gpt_researcher::master::actions</name>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1acfce0fe9e02f7246bcace8600279263f" kind="function"><name>get_retriever</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1a5d28ace9f81401032833fb86c2707d98" kind="function"><name>choose_agent</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1a5ec2fcb09935e7c20c484b43edd24cd6" kind="function"><name>get_sub_queries</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1a6df8ff25a470a78ca849b1b12bd7e043" kind="function"><name>scrape_urls</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1a28ac426e24fade0611138b18e12b07d0" kind="function"><name>summarize</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1ac98e8d537910db157298a4f600214549" kind="function"><name>summarize_url</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1a9c7b3c1544156eb008fadfb06a415c20" kind="function"><name>generate_report</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1abe8547773bf18846d57805ac145cf03e" kind="function"><name>stream_output</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1aa1ac642119ea75be5ce8a9f6ad913550" kind="function"><name>get_report_introduction</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1a68c6082998cf41e463530cb9f128c8be" kind="function"><name>extract_headers</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1a5ae5fa76d436f86a64149fe871e32515" kind="function"><name>table_of_contents</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1actions_1a630696213d37144e381817ac97f9f854" kind="function"><name>add_source_urls</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1master_1_1agent" kind="namespace"><name>gpt_researcher::master::agent</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1master_1_1prompts" kind="namespace"><name>gpt_researcher::master::prompts</name>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1aaffdcbce2b4c96cc4fc6f8bb4411bc23" kind="variable"><name>report_type_mapping</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1a1515d26ed2febbb7bb2670723e9bc3c7" kind="function"><name>generate_search_queries_prompt</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1aa1acdb319226c2434745dd28ddc12a13" kind="function"><name>generate_report_prompt</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1a076ce149c880d13d4702ff92da83d7f5" kind="function"><name>generate_resource_report_prompt</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1a32d1e3b87f76b16c6934959abc348ec0" kind="function"><name>generate_custom_report_prompt</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1a250d14916f8487c0a0a5959322e51b10" kind="function"><name>generate_outline_report_prompt</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1ab0519037b4c15adb99ff3dd89076c9e9" kind="function"><name>get_report_by_type</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1a1b8b6bf3d2fe1f56795cf36c745c9545" kind="function"><name>auto_agent_instructions</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1aa624fb10f7c23dd338e53222a0de584c" kind="function"><name>generate_summary_prompt</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1afa1a6e6fa275aa54ca3cf6f5030d5f8e" kind="function"><name>generate_subtopics_prompt</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1afe484ac6f9c1a55a54a9b2add561ff4d" kind="function"><name>generate_subtopic_report_prompt</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1a5ab2bf457ff727dc200a27395b0b05c8" kind="function"><name>generate_report_introduction</name></member>
+    <member refid="namespacegpt__researcher_1_1master_1_1prompts_1abb901630f113e1efe4c635c5f6e8229c" kind="function"><name>get_prompt_by_report_type</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1memory" kind="namespace"><name>gpt_researcher::memory</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1memory_1_1embeddings" kind="namespace"><name>gpt_researcher::memory::embeddings</name>
+    <member refid="namespacegpt__researcher_1_1memory_1_1embeddings_1acba50864a73b23ad689f762c7805e8cd" kind="variable"><name>OPENAI_EMBEDDING_MODEL</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers" kind="namespace"><name>gpt_researcher::retrievers</name>
+    <member refid="namespacegpt__researcher_1_1retrievers_1ac4ddd3b0e3276d612d70b40e8056dbc3" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1bing" kind="namespace"><name>gpt_researcher::retrievers::bing</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1bing_1_1bing" kind="namespace"><name>gpt_researcher::retrievers::bing::bing</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1duckduckgo" kind="namespace"><name>gpt_researcher::retrievers::duckduckgo</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo" kind="namespace"><name>gpt_researcher::retrievers::duckduckgo::duckduckgo</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1google" kind="namespace"><name>gpt_researcher::retrievers::google</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1google_1_1google" kind="namespace"><name>gpt_researcher::retrievers::google::google</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1searx" kind="namespace"><name>gpt_researcher::retrievers::searx</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1searx_1_1searx" kind="namespace"><name>gpt_researcher::retrievers::searx::searx</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1serpapi" kind="namespace"><name>gpt_researcher::retrievers::serpapi</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi" kind="namespace"><name>gpt_researcher::retrievers::serpapi::serpapi</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1serper" kind="namespace"><name>gpt_researcher::retrievers::serper</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1serper_1_1serper" kind="namespace"><name>gpt_researcher::retrievers::serper::serper</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1tavily" kind="namespace"><name>gpt_researcher::retrievers::tavily</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search" kind="namespace"><name>gpt_researcher::retrievers::tavily::tavily_search</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper" kind="namespace"><name>gpt_researcher::scraper</name>
+    <member refid="namespacegpt__researcher_1_1scraper_1ae65e984827c791518c9f3ba5b725d82b" kind="variable"><name>__all__</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1arxiv" kind="namespace"><name>gpt_researcher::scraper::arxiv</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1arxiv_1_1arxiv" kind="namespace"><name>gpt_researcher::scraper::arxiv::arxiv</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1beautiful__soup" kind="namespace"><name>gpt_researcher::scraper::beautiful_soup</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup" kind="namespace"><name>gpt_researcher::scraper::beautiful_soup::beautiful_soup</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1newspaper" kind="namespace"><name>gpt_researcher::scraper::newspaper</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1newspaper_1_1newspaper" kind="namespace"><name>gpt_researcher::scraper::newspaper::newspaper</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1pymupdf" kind="namespace"><name>gpt_researcher::scraper::pymupdf</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf" kind="namespace"><name>gpt_researcher::scraper::pymupdf::pymupdf</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1scraper" kind="namespace"><name>gpt_researcher::scraper::scraper</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1web__base__loader" kind="namespace"><name>gpt_researcher::scraper::web_base_loader</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader" kind="namespace"><name>gpt_researcher::scraper::web_base_loader::web_base_loader</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1utils" kind="namespace"><name>gpt_researcher::utils</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1utils_1_1costs" kind="namespace"><name>gpt_researcher::utils::costs</name>
+    <member refid="namespacegpt__researcher_1_1utils_1_1costs_1a5ded738042198cd2363d7057fcebed3a" kind="variable"><name>ENCODING_MODEL</name></member>
+    <member refid="namespacegpt__researcher_1_1utils_1_1costs_1a7001ea5a3cfcc38b054e1f61532d615a" kind="variable"><name>INPUT_COST_PER_TOKEN</name></member>
+    <member refid="namespacegpt__researcher_1_1utils_1_1costs_1a1f613faeb26205430d23505d18591801" kind="variable"><name>OUTPUT_COST_PER_TOKEN</name></member>
+    <member refid="namespacegpt__researcher_1_1utils_1_1costs_1aa6c6f6531263d9beca9c84e3c7290e57" kind="variable"><name>IMAGE_INFERENCE_COST</name></member>
+    <member refid="namespacegpt__researcher_1_1utils_1_1costs_1ac851877e589fc31f44a8b28053f69cb3" kind="variable"><name>EMBEDDING_COST</name></member>
+    <member refid="namespacegpt__researcher_1_1utils_1_1costs_1a3c3b6e46daf03a6c6eff6af6b7d581a1" kind="function"><name>estimate_llm_cost</name></member>
+    <member refid="namespacegpt__researcher_1_1utils_1_1costs_1a59fa6a66d1cc1d9a1bf6e72c6c933835" kind="function"><name>estimate_embedding_cost</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1utils_1_1enum" kind="namespace"><name>gpt_researcher::utils::enum</name>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1utils_1_1llm" kind="namespace"><name>gpt_researcher::utils::llm</name>
+    <member refid="namespacegpt__researcher_1_1utils_1_1llm_1a350bb4294397495c506426a2caad2b31" kind="function"><name>get_llm</name></member>
+    <member refid="namespacegpt__researcher_1_1utils_1_1llm_1aabaadb598e9e86c6e4a0c50627463b95" kind="function"><name>create_chat_completion</name></member>
+    <member refid="namespacegpt__researcher_1_1utils_1_1llm_1a3125e642ba0eba1562845ff7d15ecb08" kind="function"><name>construct_subtopics</name></member>
+  </compound>
+  <compound refid="namespacegpt__researcher_1_1utils_1_1validators" kind="namespace"><name>gpt_researcher::utils::validators</name>
+  </compound>
+  <compound refid="namespacemain" kind="namespace"><name>main</name>
+    <member refid="namespacemain_1a6d8cf6806b7ab4e9056a3e9a34775685" kind="variable"><name>LOGGING_CONFIG</name></member>
+    <member refid="namespacemain_1a12fac67ac230690557ab76d3faa71d8c" kind="variable"><name>port</name></member>
+    <member refid="namespacemain_1a5fa94f0581009434c7a63791944d6ff4" kind="variable"><name>app</name></member>
+    <member refid="namespacemain_1a0cf58d9b4a444874a8cf80fdf162b0fb" kind="variable"><name>host</name></member>
+    <member refid="namespacemain_1ad94cc85107ecf3be3b5ac14ee4f14532" kind="variable"><name>log_config</name></member>
+    <member refid="namespacemain_1a595b471ed5c7eee2f4d04ae83edfe8c7" kind="function"><name>open_task</name></member>
+    <member refid="namespacemain_1a3140e9a5b6a71ffbf498198cfc471b88" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacememory" kind="namespace"><name>memory</name>
+  </compound>
+  <compound refid="namespacememory_1_1draft" kind="namespace"><name>memory::draft</name>
+  </compound>
+  <compound refid="namespacememory_1_1research" kind="namespace"><name>memory::research</name>
+  </compound>
+  <compound refid="namespaceprocessing" kind="namespace"><name>processing</name>
+  </compound>
+  <compound refid="namespaceprocessing_1_1html" kind="namespace"><name>processing::html</name>
+    <member refid="namespaceprocessing_1_1html_1a8a84862c80f9f7abf29623100cdf59a1" kind="function"><name>extract_hyperlinks</name></member>
+    <member refid="namespaceprocessing_1_1html_1a1ae4a545f1c830d0cd2d9da6291ff50d" kind="function"><name>format_hyperlinks</name></member>
+  </compound>
+  <compound refid="namespaceprocessing_1_1text" kind="namespace"><name>processing::text</name>
+    <member refid="namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f" kind="function"><name>split_text</name></member>
+    <member refid="namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963" kind="function"><name>summarize_text</name></member>
+    <member refid="namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5" kind="function"><name>scroll_to_percentage</name></member>
+    <member refid="namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1" kind="function"><name>create_message</name></member>
+    <member refid="namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551" kind="function"><name>write_to_file</name></member>
+    <member refid="namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce" kind="function"><name>write_md_to_pdf</name></member>
+    <member refid="namespaceprocessing_1_1text_1aa07adc73b2ae754f349235bbdbc0e212" kind="function"><name>read_txt_files</name></member>
+    <member refid="namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5" kind="function"><name>md_to_pdf</name></member>
+  </compound>
+  <compound refid="namespaceredis__token__storage" kind="namespace"><name>redis_token_storage</name>
+    <member refid="namespaceredis__token__storage_1ae296e174099af70544544300ed12bfa3" kind="variable"><name>logger</name></member>
+  </compound>
+  <compound refid="namespacesample__report" kind="namespace"><name>sample_report</name>
+    <member refid="namespacesample__report_1ac5d0f2408113608aa029cca5c6fdab0a" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacescrape__skills" kind="namespace"><name>scrape_skills</name>
+    <member refid="namespacescrape__skills_1a1a5398a51f4da8236daecf9fe86ecf27" kind="function"><name>scrape_pdf_with_pymupdf</name></member>
+    <member refid="namespacescrape__skills_1a834d3a6a7957c6c45ea14406a6f6a754" kind="function"><name>scrape_pdf_with_arxiv</name></member>
+  </compound>
+  <compound refid="namespacesetup" kind="namespace"><name>setup</name>
+    <member refid="namespacesetup_1a443be2d01fd539bf6761aff70724d876" kind="variable"><name>encoding</name></member>
+    <member refid="namespacesetup_1a4cda9dbfb952875376a0749fe08a5bde" kind="variable"><name>long_description</name></member>
+    <member refid="namespacesetup_1a0c3c621ddfb4bf8d8bc8d7368f4e272a" kind="variable"><name>reqs</name></member>
+    <member refid="namespacesetup_1ab3a7a0638d76a01367c5bc3cc699447f" kind="variable"><name>name</name></member>
+    <member refid="namespacesetup_1a2aa722b36a933088812b50ea79b97a5c" kind="variable"><name>version</name></member>
+    <member refid="namespacesetup_1aedf461ec52a946bda975938ba0b93ec0" kind="variable"><name>description</name></member>
+    <member refid="namespacesetup_1afd7273d426fd6e1796ec17175f6521c3" kind="variable"><name>package_dir</name></member>
+    <member refid="namespacesetup_1aff2375a361fd5865c77bd9aa093be747" kind="variable"><name>packages</name></member>
+    <member refid="namespacesetup_1a3796ea10c998699d07d391414ff5d720" kind="variable"><name>long_description_content_type</name></member>
+    <member refid="namespacesetup_1afc13124aa5c0124e84e1d965e3f4b0fb" kind="variable"><name>url</name></member>
+    <member refid="namespacesetup_1a3a57a4772d418a06835249cbade0d86a" kind="variable"><name>author</name></member>
+    <member refid="namespacesetup_1a5b08034343aa2be607722a8b315f3625" kind="variable"><name>author_email</name></member>
+    <member refid="namespacesetup_1a8ed6f50a28bd6a8794f8e1153baa6de9" kind="variable"><name>license</name></member>
+    <member refid="namespacesetup_1abe96a9c38c1c61f9f0fdb002c482f785" kind="variable"><name>classifiers</name></member>
+    <member refid="namespacesetup_1abead4f26b530856f858f0d44c7cf2588" kind="variable"><name>install_requires</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespacetoken__storage" kind="namespace"><name>token_storage</name>
+  </compound>
+  <compound refid="namespaceusers" kind="namespace"><name>users</name>
+    <member refid="namespaceusers_1a9ffdadfc43420470d41e4610bebd67da" kind="variable"><name>HOST</name></member>
+    <member refid="namespaceusers_1aec5824f6ce66973e8819ca68002938dd" kind="variable"><name>APP_PORT</name></member>
+    <member refid="namespaceusers_1a3198b2c7eab49324f2d10f40c2ba7edb" kind="variable"><name>API_URL</name></member>
+    <member refid="namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c" kind="variable"><name>key</name></member>
+    <member refid="namespaceusers_1aa67a5489339ad4f831ec91109898eb53" kind="variable"><name>type</name></member>
+    <member refid="namespaceusers_1a8eb777600faec9762baa63c66a2f65d3" kind="variable"><name>on_click</name></member>
+    <member refid="namespaceusers_1afa220ad80467e63b9810fca0dc23dadb" kind="variable"><name>new_username</name></member>
+    <member refid="namespaceusers_1adb6ed530fb591bdf2dd5a09908bc97eb" kind="variable"><name>new_email</name></member>
+    <member refid="namespaceusers_1aa59caae95017910a2fbe7af45268fca7" kind="variable"><name>new_password</name></member>
+    <member refid="namespaceusers_1a53863681969ca2b2e0533e124c471496" kind="variable"><name>new_is_admin</name></member>
+    <member refid="namespaceusers_1a03fb62cfda9d9a2a6070d6abb3643788" kind="variable"><name>submit_button</name></member>
+    <member refid="namespaceusers_1a02db70f5ffcf3f872bc01e4506d3422d" kind="variable"><name>delete_user_id</name></member>
+    <member refid="namespaceusers_1a330f67af4576d3e1ee542d613d069139" kind="function"><name>login</name></member>
+    <member refid="namespaceusers_1a932657c601af16b61216fe6fe33a7c1f" kind="function"><name>refresh_access_token</name></member>
+    <member refid="namespaceusers_1a9053a1292a9bb75e476207697da5bcc6" kind="function"><name>fetch_users</name></member>
+    <member refid="namespaceusers_1a22767a039fbf019d609ba4ae7ee70199" kind="function"><name>display_users</name></member>
+    <member refid="namespaceusers_1aee9ead2895deb372a9320b932418df2c" kind="function"><name>modify_user</name></member>
+    <member refid="namespaceusers_1af946d51443a44b65f044cbd071fa4133" kind="function"><name>create_user</name></member>
+    <member refid="namespaceusers_1abe93ce193b17b4e895eab26ae2806aaa" kind="function"><name>delete_user</name></member>
+    <member refid="namespaceusers_1aa1996995f5442274830bef5c28e4e859" kind="function"><name>get_valid_access_token</name></member>
+    <member refid="namespaceusers_1a32e0f5669895a84e77af6d7d40658d6f" kind="function"><name>main</name></member>
+    <member refid="namespaceusers_1ae68a82800a1d784a4aa0d4e663382aad" kind="function"><name>on_login_clicked</name></member>
+  </compound>
+  <compound refid="namespaceweb__scrape" kind="namespace"><name>web_scrape</name>
+    <member refid="namespaceweb__scrape_1aa2ff2c1078cc7ae3378f810fdea2765a" kind="variable"><name>executor</name></member>
+    <member refid="namespaceweb__scrape_1a0117379fc90094ab4626beaca918dc49" kind="variable"><name>FILE_DIR</name></member>
+    <member refid="namespaceweb__scrape_1aae251defc7a9fb4c5b8085b5a75a7a35" kind="function"><name>async_browse</name></member>
+    <member refid="namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d" kind="function"><name>browse_website</name></member>
+    <member refid="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" kind="function"><name>scrape_text_with_selenium</name></member>
+    <member refid="namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451" kind="function"><name>get_text</name></member>
+    <member refid="namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e" kind="function"><name>scrape_links_with_selenium</name></member>
+    <member refid="namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf" kind="function"><name>close_browser</name></member>
+    <member refid="namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a" kind="function"><name>add_header</name></member>
+  </compound>
+  <compound refid="auth_8md" kind="file"><name>auth.md</name>
+  </compound>
+  <compound refid="auth_8py" kind="file"><name>auth.py</name>
+  </compound>
+  <compound refid="redis__token__storage_8py" kind="file"><name>redis_token_storage.py</name>
+  </compound>
+  <compound refid="token__storage_8py" kind="file"><name>token_storage.py</name>
+  </compound>
+  <compound refid="db_8py" kind="file"><name>db.py</name>
+  </compound>
+  <compound refid="basic__report_8py" kind="file"><name>basic_report.py</name>
+  </compound>
+  <compound refid="detailed__report_8py" kind="file"><name>detailed_report.py</name>
+  </compound>
+  <compound refid="server_8py" kind="file"><name>server.py</name>
+  </compound>
+  <compound refid="utils_8py" kind="file"><name>utils.py</name>
+  </compound>
+  <compound refid="websocket__manager_8py" kind="file"><name>websocket_manager.py</name>
+  </compound>
+  <compound refid="cli_8py" kind="file"><name>cli.py</name>
+  </compound>
+  <compound refid="CODE__OF__CONDUCT_8md" kind="file"><name>CODE_OF_CONDUCT.md</name>
+  </compound>
+  <compound refid="db__seed_8py" kind="file"><name>db_seed.py</name>
+  </compound>
+  <compound refid="2023-09-22-gpt-researcher_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="2023-11-12-openai-assistant_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="2024-05-19-gptr-langgraph_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="contribute_8md" kind="file"><name>contribute.md</name>
+  </compound>
+  <compound refid="examples_8md" kind="file"><name>examples.md</name>
+  </compound>
+  <compound refid="faq_8md" kind="file"><name>faq.md</name>
+  </compound>
+  <compound refid="gpt-researcher_2config_8md" kind="file"><name>config.md</name>
+  </compound>
+  <compound refid="reference_2config_2config_8md" kind="file"><name>config.md</name>
+  </compound>
+  <compound refid="example_8md" kind="file"><name>example.md</name>
+  </compound>
+  <compound refid="getting-started_8md" kind="file"><name>getting-started.md</name>
+  </compound>
+  <compound refid="introduction_8md" kind="file"><name>introduction.md</name>
+  </compound>
+  <compound refid="langgraph_8md" kind="file"><name>langgraph.md</name>
+  </compound>
+  <compound refid="llms_8md" kind="file"><name>llms.md</name>
+  </compound>
+  <compound refid="pip-package_8md" kind="file"><name>pip-package.md</name>
+  </compound>
+  <compound refid="roadmap_8md" kind="file"><name>roadmap.md</name>
+  </compound>
+  <compound refid="tailored-research_8md" kind="file"><name>tailored-research.md</name>
+  </compound>
+  <compound refid="troubleshooting_8md" kind="file"><name>troubleshooting.md</name>
+  </compound>
+  <compound refid="singleton_8md" kind="file"><name>singleton.md</name>
+  </compound>
+  <compound refid="html_8md" kind="file"><name>html.md</name>
+  </compound>
+  <compound refid="text_8md" kind="file"><name>text.md</name>
+  </compound>
+  <compound refid="welcome_8md" kind="file"><name>welcome.md</name>
+  </compound>
+  <compound refid="sample__report_8py" kind="file"><name>sample_report.py</name>
+  </compound>
+  <compound refid="users_8py" kind="file"><name>users.py</name>
+  </compound>
+  <compound refid="config_8py" kind="file"><name>config.py</name>
+  </compound>
+  <compound refid="compression_8py" kind="file"><name>compression.py</name>
+  </compound>
+  <compound refid="retriever_8py" kind="file"><name>retriever.py</name>
+  </compound>
+  <compound refid="document_8py" kind="file"><name>document.py</name>
+  </compound>
+  <compound refid="anthropic_8py" kind="file"><name>anthropic.py</name>
+  </compound>
+  <compound refid="azureopenai_8py" kind="file"><name>azureopenai.py</name>
+  </compound>
+  <compound refid="base_8py" kind="file"><name>base.py</name>
+  </compound>
+  <compound refid="groq_8py" kind="file"><name>groq.py</name>
+  </compound>
+  <compound refid="huggingface_8py" kind="file"><name>huggingface.py</name>
+  </compound>
+  <compound refid="mistral_8py" kind="file"><name>mistral.py</name>
+  </compound>
+  <compound refid="ollama_8py" kind="file"><name>ollama.py</name>
+  </compound>
+  <compound refid="openai_8py" kind="file"><name>openai.py</name>
+  </compound>
+  <compound refid="together_8py" kind="file"><name>together.py</name>
+  </compound>
+  <compound refid="actions_8py" kind="file"><name>actions.py</name>
+  </compound>
+  <compound refid="prompts_8py" kind="file"><name>prompts.py</name>
+  </compound>
+  <compound refid="embeddings_8py" kind="file"><name>embeddings.py</name>
+  </compound>
+  <compound refid="bing_8py" kind="file"><name>bing.py</name>
+  </compound>
+  <compound refid="duckduckgo_8py" kind="file"><name>duckduckgo.py</name>
+  </compound>
+  <compound refid="llm__provider_2google_2google_8py" kind="file"><name>google.py</name>
+  </compound>
+  <compound refid="retrievers_2google_2google_8py" kind="file"><name>google.py</name>
+  </compound>
+  <compound refid="searx_8py" kind="file"><name>searx.py</name>
+  </compound>
+  <compound refid="serpapi_8py" kind="file"><name>serpapi.py</name>
+  </compound>
+  <compound refid="serper_8py" kind="file"><name>serper.py</name>
+  </compound>
+  <compound refid="tavily__search_8py" kind="file"><name>tavily_search.py</name>
+  </compound>
+  <compound refid="arxiv_8py" kind="file"><name>arxiv.py</name>
+  </compound>
+  <compound refid="beautiful__soup_8py" kind="file"><name>beautiful_soup.py</name>
+  </compound>
+  <compound refid="newspaper_8py" kind="file"><name>newspaper.py</name>
+  </compound>
+  <compound refid="pymupdf_8py" kind="file"><name>pymupdf.py</name>
+  </compound>
+  <compound refid="scraper_8py" kind="file"><name>scraper.py</name>
+  </compound>
+  <compound refid="web__base__loader_8py" kind="file"><name>web_base_loader.py</name>
+  </compound>
+  <compound refid="costs_8py" kind="file"><name>costs.py</name>
+  </compound>
+  <compound refid="enum_8py" kind="file"><name>enum.py</name>
+  </compound>
+  <compound refid="llm_8py" kind="file"><name>llm.py</name>
+  </compound>
+  <compound refid="validators_8py" kind="file"><name>validators.py</name>
+  </compound>
+  <compound refid="main_8py" kind="file"><name>main.py</name>
+  </compound>
+  <compound refid="multi__agents_2main_8py" kind="file"><name>main.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2master_2agent_8py" kind="file"><name>agent.py</name>
+  </compound>
+  <compound refid="multi__agents_2agent_8py" kind="file"><name>agent.py</name>
+  </compound>
+  <compound refid="editor_8py" kind="file"><name>editor.py</name>
+  </compound>
+  <compound refid="master_8py" kind="file"><name>master.py</name>
+  </compound>
+  <compound refid="publisher_8py" kind="file"><name>publisher.py</name>
+  </compound>
+  <compound refid="researcher_8py" kind="file"><name>researcher.py</name>
+  </compound>
+  <compound refid="reviewer_8py" kind="file"><name>reviewer.py</name>
+  </compound>
+  <compound refid="reviser_8py" kind="file"><name>reviser.py</name>
+  </compound>
+  <compound refid="file__formats_8py" kind="file"><name>file_formats.py</name>
+  </compound>
+  <compound refid="llms_8py" kind="file"><name>llms.py</name>
+  </compound>
+  <compound refid="views_8py" kind="file"><name>views.py</name>
+  </compound>
+  <compound refid="writer_8py" kind="file"><name>writer.py</name>
+  </compound>
+  <compound refid="draft_8py" kind="file"><name>draft.py</name>
+  </compound>
+  <compound refid="research_8py" kind="file"><name>research.py</name>
+  </compound>
+  <compound refid="backend_2report__type_2detailed__report_2README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="docs_2README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="gpt__researcher_2README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="multi__agents_2README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="README-zh__CN_8md" kind="file"><name>README-zh_CN.md</name>
+  </compound>
+  <compound refid="backend_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="backend_2report__type_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="backend_2report__type_2basic__report_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="backend_2report__type_2detailed__report_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2config_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2context_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2document_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2anthropic_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2azureopenai_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2generic_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2google_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2groq_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2huggingface_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2mistral_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2ollama_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2openai_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2llm__provider_2together_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2master_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2memory_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2retrievers_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2retrievers_2bing_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2retrievers_2duckduckgo_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2retrievers_2google_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2retrievers_2searx_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2retrievers_2serpapi_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2retrievers_2serper_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2retrievers_2tavily_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2scraper_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2scraper_2arxiv_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2scraper_2beautiful__soup_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2scraper_2newspaper_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2scraper_2pymupdf_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2scraper_2web__base__loader_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="gpt__researcher_2utils_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="multi__agents_2agents_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="multi__agents_2agents_2utils_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="multi__agents_2memory_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="scraping_2processing_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="html_8py" kind="file"><name>html.py</name>
+  </compound>
+  <compound refid="text_8py" kind="file"><name>text.py</name>
+  </compound>
+  <compound refid="scrape__skills_8py" kind="file"><name>scrape_skills.py</name>
+  </compound>
+  <compound refid="web__scrape_8py" kind="file"><name>web_scrape.py</name>
+  </compound>
+  <compound refid="setup_8py" kind="file"><name>setup.py</name>
+  </compound>
+  <compound refid="all-6-report-types_8py" kind="file"><name>all-6-report-types.py</name>
+  </compound>
+  <compound refid="documents-report-source_8py" kind="file"><name>documents-report-source.py</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2report__type_2detailed__report_2README" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2report__type_2detailed__report_2README</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2CODE__OF__CONDUCT" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2CODE__OF__CONDUCT</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2contribute" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2contribute</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2examples_2examples" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2examples_2examples</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2config" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2config</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2example" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2example</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2introduction" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2introduction</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2langgraph" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2langgraph</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2roadmap" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2roadmap</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2tailored-research" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2tailored-research</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2troubleshooting" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2troubleshooting</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README-zh__CN" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README-zh__CN</name>
+  </compound>
+  <compound refid="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README" kind="page"><name>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README</name>
+  </compound>
+  <compound refid="dir_272079b82ab852f477ff6e61ff538a4b" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2023-09-22-gpt-researcher</name>
+  </compound>
+  <compound refid="dir_69c17eae910d071de5965501a80b28a0" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2023-11-12-openai-assistant</name>
+  </compound>
+  <compound refid="dir_7f010a5330323b73b54b7b0ce04f1ea3" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2024-05-19-gptr-langgraph</name>
+  </compound>
+  <compound refid="dir_434b0703019d58bbb57650e33eaa1ef4" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents</name>
+  </compound>
+  <compound refid="dir_20e11079e1b0fa73e6b27e5721e8fd41" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/anthropic</name>
+  </compound>
+  <compound refid="dir_c2322bc8ce27c479ab1e70b3921bfaa8" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/arxiv</name>
+  </compound>
+  <compound refid="dir_a9499db4338a32c38b4cdeeb0d839d88" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth</name>
+  </compound>
+  <compound refid="dir_6d3af79848e10b5bed2428cc0bb78928" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/azureopenai</name>
+  </compound>
+  <compound refid="dir_42d42088c692f23a6e766ea399ce0c27" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend</name>
+  </compound>
+  <compound refid="dir_61a4d70de5d1a3837365f5259e169906" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/basic_report</name>
+  </compound>
+  <compound refid="dir_93c3e6444ead30d4602574fa7e788534" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup</name>
+  </compound>
+  <compound refid="dir_2b8c4b896633989c005ae4873ae8da74" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/bing</name>
+  </compound>
+  <compound refid="dir_f29e94e6e5621143471d2f522ece5576" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog</name>
+  </compound>
+  <compound refid="dir_b5dacab0c5d3e7f7ed4bc35b03c1c031" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/config</name>
+  </compound>
+  <compound refid="dir_431d0ec26f526106759d5d518a79f6f3" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config</name>
+  </compound>
+  <compound refid="dir_09580389954d9e7ad63c583562062cbc" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context</name>
+  </compound>
+  <compound refid="dir_dae0667084c4390d618a3a4e85c2e33d" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/detailed_report</name>
+  </compound>
+  <compound refid="dir_b780f2b19ddfc3e3f1906bcc1d497add" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps</name>
+  </compound>
+  <compound refid="dir_753ca7b2279e134c11889b00370dfec6" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs</name>
+  </compound>
+  <compound refid="dir_2e03ff681efca84eac329044c063be4b" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs</name>
+  </compound>
+  <compound refid="dir_dec7b911a689e309b70b2bc1efd13d46" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document</name>
+  </compound>
+  <compound refid="dir_b4d8dcc72b20823dab5f467aabbd28a7" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/duckduckgo</name>
+  </compound>
+  <compound refid="dir_178332e978826bb2aabccad43ff19b9f" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/examples</name>
+  </compound>
+  <compound refid="dir_c61eb2ed5ad2de41308c088973fec624" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/examples</name>
+  </compound>
+  <compound refid="dir_bf8cfef0402550fad8853e57d92f1500" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend</name>
+  </compound>
+  <compound refid="dir_e796a5521d8af8ff4dda60fd5b075078" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic</name>
+  </compound>
+  <compound refid="dir_73aba95ff0129f7e1d8dcc5e5f831f78" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google</name>
+  </compound>
+  <compound refid="dir_4ed381fcfcff19e107262f2c806bac9b" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/google</name>
+  </compound>
+  <compound refid="dir_78f208ef8ac32d49726157fbd9dd6325" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher</name>
+  </compound>
+  <compound refid="dir_f9d4dbeed8b77d74edb7688c71320f51" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher</name>
+  </compound>
+  <compound refid="dir_6472a882810021121e0921fa0d62aaae" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/groq</name>
+  </compound>
+  <compound refid="dir_fa70a3e284ed11c7aecfabc4d07ffecb" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/huggingface</name>
+  </compound>
+  <compound refid="dir_a747e43da1c182c4993c25afd1989e8c" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider</name>
+  </compound>
+  <compound refid="dir_035a7765b0207637c8376308a0060cd0" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master</name>
+  </compound>
+  <compound refid="dir_db5414299402b161d480e272cebbbcde" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory</name>
+  </compound>
+  <compound refid="dir_c452203ab90700a398fc4225a9ca3c2e" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory</name>
+  </compound>
+  <compound refid="dir_17870a2ffaeed3872d466c7c8a08cd13" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/mistral</name>
+  </compound>
+  <compound refid="dir_278f3058075d2df0ac3aab9d51495056" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents</name>
+  </compound>
+  <compound refid="dir_6cc4a516d36966cf3b002e9417ad9c20" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/newspaper</name>
+  </compound>
+  <compound refid="dir_cd3a634799b777485adf2de054ab014d" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/ollama</name>
+  </compound>
+  <compound refid="dir_af4289b741e146665dba5feecafa62f5" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/openai</name>
+  </compound>
+  <compound refid="dir_1069adbdfaa10711bba5d33705991641" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/processing</name>
+  </compound>
+  <compound refid="dir_40524c45ed3c12b193acaf469c8649a6" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing</name>
+  </compound>
+  <compound refid="dir_f226f89b749fe429606d1d77bcfbafe2" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf</name>
+  </compound>
+  <compound refid="dir_fc42f2a65657e9505ee00a2d08840ac7" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference</name>
+  </compound>
+  <compound refid="dir_aab170fbc980b9f46c5ef36e78faa03a" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type</name>
+  </compound>
+  <compound refid="dir_ab5df70614ec1cd999b2cb5c8f079671" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers</name>
+  </compound>
+  <compound refid="dir_b95327e3450e41852b7f303025994f20" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob</name>
+  </compound>
+  <compound refid="dir_20a3dd4fa931084554e397067fac6117" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper</name>
+  </compound>
+  <compound refid="dir_7e85e62eb0f2b773953ccadfdcb5284d" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping</name>
+  </compound>
+  <compound refid="dir_0e9b43fa14fba687e189c1e7eca85762" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/searx</name>
+  </compound>
+  <compound refid="dir_bdaa6b52110c8a6d368719da479dad65" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi</name>
+  </compound>
+  <compound refid="dir_2cf63ca3acc6cf10a5231c19aecbdb86" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serper</name>
+  </compound>
+  <compound refid="dir_333920dcdfb0eb3743891e711d9017bb" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/tavily</name>
+  </compound>
+  <compound refid="dir_a9f52d2fa39e957fa11ad57c00bd6a49" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests</name>
+  </compound>
+  <compound refid="dir_beb445fafb0fdc9476d965a6735a1029" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/together</name>
+  </compound>
+  <compound refid="dir_54134b9689b94af768889731e8d46319" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users</name>
+  </compound>
+  <compound refid="dir_37b41fe1379ad84b234a5f46dea35229" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils</name>
+  </compound>
+  <compound refid="dir_a24b43acf419029ff7cae0fd96806de7" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils</name>
+  </compound>
+  <compound refid="dir_cf8b1aeaeeffac060219f334b3e4f4a5" kind="dir"><name>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/web_base_loader</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceagent" kind="namespace" language="Python">
+    <compoundname>agent</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceagent_1a95435a4e96e81f83e8c22bbf23d72864" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>agent.chief_editor</definition>
+        <argsstring></argsstring>
+        <name>chief_editor</name>
+        <qualifiedname>agent.chief_editor</qualifiedname>
+        <initializer>=  <ref refid="classagents_1_1master_1_1ChiefEditorAgent" kindref="compound">ChiefEditorAgent</ref>({
+  &quot;query&quot;: &quot;Is AI in a hype cycle?&quot;,
+  &quot;max_sections&quot;: 3,
+  &quot;follow_guidelines&quot;: False,
+  &quot;model&quot;: &quot;gpt-4o&quot;,
+  &quot;guidelines&quot;: [
+    &quot;The report MUST be written in APA format&quot;,
+    &quot;Each sub section MUST include supporting sources using hyperlinks. If none exist, erase the sub section or rewrite it to be a part of the previous section&quot;,
+    &quot;The report MUST be written in spanish&quot;
+  ],
+  &quot;verbose&quot;: False
+})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agent.py" line="3" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agent.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceagent_1a506a8909f4cc88c2c31135a29dadbddb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>agent.graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>agent.graph</qualifiedname>
+        <initializer>=  chief_editor.init_research_team()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agent.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agent.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agent.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

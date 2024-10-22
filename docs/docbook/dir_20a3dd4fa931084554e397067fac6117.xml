@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_20a3dd4fa931084554e397067fac6117" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper Directory Reference</primary></indexterm>
+Directory dependency graph for scraper:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_20a3dd4fa931084554e397067fac6117_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_c2322bc8ce27c479ab1e70b3921bfaa8">arxiv</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_93c3e6444ead30d4602574fa7e788534">beautiful_soup</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_6cc4a516d36966cf3b002e9417ad9c20">newspaper</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_f226f89b749fe429606d1d77bcfbafe2">pymupdf</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_cf8b1aeaeeffac060219f334b3e4f4a5">web_base_loader</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2scraper_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_scraper_8py">scraper.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebackend_1_1websocket__manager" xml:lang="en-US">
+<title>backend.websocket_manager Namespace Reference</title>
+<indexterm><primary>backend.websocket_manager</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager">WebSocketManager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870">run_agent</link> (task, report_type, report_source, websocket)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870"/><section>
+    <title>run_agent()</title>
+<indexterm><primary>run_agent</primary><secondary>backend.websocket_manager</secondary></indexterm>
+<indexterm><primary>backend.websocket_manager</primary><secondary>run_agent</secondary></indexterm>
+<para><computeroutput>backend.websocket_manager.run_agent ( task,  report_type,  report_source,  websocket)</computeroutput></para>
+<para><literallayout><computeroutput>Run the agent.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacebackend_1_1websocket__manager_ad5e0c8aa0f181850975a175494cab870_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

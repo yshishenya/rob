@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdb__seed_1_1User" xml:lang="en-US">
+<title>db_seed.User Class Reference</title>
+<indexterm><primary>db_seed.User</primary></indexterm>
+Inheritance diagram for db_seed.User:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdb__seed_1_1User__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for db_seed.User:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classdb__seed_1_1User__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdb__seed_1_1User_1abeb46fb39632dc8bda94d363dd548020">id</link> = Column(Integer, primary_key=True, index=True)</para>
+</listitem>
+            <listitem><para><link linkend="_classdb__seed_1_1User_1a9a2abda82b590c041243e511a3b96a45">username</link> = Column(String(50), unique=True, nullable=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classdb__seed_1_1User_1a96e4068c56e8e61afa622d936996b068">password_hash</link> = Column(String(255), nullable=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classdb__seed_1_1User_1a86e63e222f85c4abcc0ba35286280b7d">email</link> = Column(String(255), unique=True, nullable=False)</para>
+</listitem>
+            <listitem><para><link linkend="_classdb__seed_1_1User_1a6a4ee499ff49c8c5f0ae6a2bbf72e16d">is_admin</link> = Column(Boolean, default=False, nullable=False)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classdb__seed_1_1User_1abcee60dd5842490186a3863073a6ec07">__tablename__</link> = &apos;user&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Модель пользователя.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classdb__seed_1_1User_1abcee60dd5842490186a3863073a6ec07"/><section>
+    <title>__tablename__</title>
+<indexterm><primary>__tablename__</primary><secondary>db_seed.User</secondary></indexterm>
+<indexterm><primary>db_seed.User</primary><secondary>__tablename__</secondary></indexterm>
+<para><computeroutput>str db_seed.User.__tablename__ = &apos;user&apos;<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdb__seed_1_1User_1a86e63e222f85c4abcc0ba35286280b7d"/><section>
+    <title>email</title>
+<indexterm><primary>email</primary><secondary>db_seed.User</secondary></indexterm>
+<indexterm><primary>db_seed.User</primary><secondary>email</secondary></indexterm>
+<para><computeroutput>db_seed.User.email = Column(String(255), unique=True, nullable=False)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdb__seed_1_1User_1abeb46fb39632dc8bda94d363dd548020"/><section>
+    <title>id</title>
+<indexterm><primary>id</primary><secondary>db_seed.User</secondary></indexterm>
+<indexterm><primary>db_seed.User</primary><secondary>id</secondary></indexterm>
+<para><computeroutput>db_seed.User.id = Column(Integer, primary_key=True, index=True)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdb__seed_1_1User_1a6a4ee499ff49c8c5f0ae6a2bbf72e16d"/><section>
+    <title>is_admin</title>
+<indexterm><primary>is_admin</primary><secondary>db_seed.User</secondary></indexterm>
+<indexterm><primary>db_seed.User</primary><secondary>is_admin</secondary></indexterm>
+<para><computeroutput>db_seed.User.is_admin = Column(Boolean, default=False, nullable=False)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdb__seed_1_1User_1a96e4068c56e8e61afa622d936996b068"/><section>
+    <title>password_hash</title>
+<indexterm><primary>password_hash</primary><secondary>db_seed.User</secondary></indexterm>
+<indexterm><primary>db_seed.User</primary><secondary>password_hash</secondary></indexterm>
+<para><computeroutput>db_seed.User.password_hash = Column(String(255), nullable=False)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classdb__seed_1_1User_1a9a2abda82b590c041243e511a3b96a45"/><section>
+    <title>username</title>
+<indexterm><primary>username</primary><secondary>db_seed.User</secondary></indexterm>
+<indexterm><primary>db_seed.User</primary><secondary>username</secondary></indexterm>
+<para><computeroutput>db_seed.User.username = Column(String(50), unique=True, nullable=False)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/<link linkend="_db__seed_8py">db_seed.py</link></section>
+</section>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="research_8py" kind="file" language="Python">
+    <compoundname>research.py</compoundname>
+    <innerclass refid="classmemory_1_1research_1_1ResearchState" prot="public">memory::research::ResearchState</innerclass>
+    <innernamespace refid="namespacememory">memory</innernamespace>
+    <innernamespace refid="namespacememory_1_1research">memory::research</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacememory_1_1research" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TypedDict,<sp/>List,<sp/>Annotated</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>operator</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classmemory_1_1research_1_1ResearchState" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmemory_1_1research_1_1ResearchState" kindref="compound">ResearchState</ref>(TypedDict):</highlight></codeline>
+<codeline lineno="6" refid="classmemory_1_1research_1_1ResearchState_1acedf89dea8cb3ee08bb6a27f9cd1d025" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>task:<sp/>dict</highlight></codeline>
+<codeline lineno="7" refid="classmemory_1_1research_1_1ResearchState_1a94e4514b47b0aa002a0b1c734f01d6c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>initial_research:<sp/>str</highlight></codeline>
+<codeline lineno="8" refid="classmemory_1_1research_1_1ResearchState_1ac53039dd2510977fc1423f0b3e144485" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sections:<sp/>List[str]</highlight></codeline>
+<codeline lineno="9" refid="classmemory_1_1research_1_1ResearchState_1a404b7186673b918e1cc6f6d38bfe3c3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>research_data:<sp/>List[dict]</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Report<sp/>layout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classmemory_1_1research_1_1ResearchState_1a38e85bd09ffa6cfd92f5fcff8bef6339" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>title:<sp/>str</highlight></codeline>
+<codeline lineno="12" refid="classmemory_1_1research_1_1ResearchState_1aeb458454fc0c5e18c6106d0e486efded" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>headers:<sp/>dict</highlight></codeline>
+<codeline lineno="13" refid="classmemory_1_1research_1_1ResearchState_1a295d210773dc95caea1e0fe3bd458025" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>date:<sp/>str</highlight></codeline>
+<codeline lineno="14" refid="classmemory_1_1research_1_1ResearchState_1a80757af80d3837305c4c97d588d241a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>table_of_contents:<sp/>str</highlight></codeline>
+<codeline lineno="15" refid="classmemory_1_1research_1_1ResearchState_1a5e83df6137888112475b2fca57f7315d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>introduction:<sp/>str</highlight></codeline>
+<codeline lineno="16" refid="classmemory_1_1research_1_1ResearchState_1aed34aa52f6a45b13953be9d50bc8c6c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>conclusion:<sp/>str</highlight></codeline>
+<codeline lineno="17" refid="classmemory_1_1research_1_1ResearchState_1a764d40daa4a6c4e898b0f0ebb9aa0689" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>sources:<sp/>List[str]</highlight></codeline>
+<codeline lineno="18" refid="classmemory_1_1research_1_1ResearchState_1a743c15bd385c00ee42bb6067bd5e8327" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>report:<sp/>str</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/research.py"/>
+  </compounddef>
+</doxygen>

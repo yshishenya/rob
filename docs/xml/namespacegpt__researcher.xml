@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher" kind="namespace" language="Python">
+    <compoundname>gpt_researcher</compoundname>
+    <innernamespace refid="namespacegpt__researcher_1_1config">gpt_researcher::config</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1context">gpt_researcher::context</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1document">gpt_researcher::document</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider">gpt_researcher::llm_provider</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1master">gpt_researcher::master</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1memory">gpt_researcher::memory</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1retrievers">gpt_researcher::retrievers</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper">gpt_researcher::scraper</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1utils">gpt_researcher::utils</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegpt__researcher_1a572df6189baa160ae552ef903c99af4f" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gpt_researcher.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>gpt_researcher.__all__</qualifiedname>
+        <initializer>=  [&apos;GPTResearcher&apos;, &apos;Config&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/__init__.py" line="4" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/__init__.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

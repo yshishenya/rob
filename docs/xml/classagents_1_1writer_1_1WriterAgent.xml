@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classagents_1_1writer_1_1WriterAgent" kind="class" language="Python" prot="public">
+    <compoundname>agents::writer::WriterAgent</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagents_1_1writer_1_1WriterAgent_1aeed8e40ea98de396d419386d28507e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.writer.WriterAgent.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>agents.writer.WriterAgent.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1writer_1_1WriterAgent_1afe89553ca1031e9847522ea8a945f50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.writer.WriterAgent.get_headers</definition>
+        <argsstring>(self, dict research_state)</argsstring>
+        <name>get_headers</name>
+        <qualifiedname>agents.writer.WriterAgent.get_headers</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" bodystart="20" bodyend="29"/>
+        <referencedby refid="classagents_1_1writer_1_1WriterAgent_1aeea35fc6e190669f99d20c20409fc266" compoundref="writer_8py" startline="81" endline="94">agents.writer.WriterAgent.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1writer_1_1WriterAgent_1ad090d0934f61168407dec03c5c9eae4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.writer.WriterAgent.write_sections</definition>
+        <argsstring>(self, dict research_state)</argsstring>
+        <name>write_sections</name>
+        <qualifiedname>agents.writer.WriterAgent.write_sections</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" line="30" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" bodystart="30" bodyend="61"/>
+        <referencedby refid="classagents_1_1writer_1_1WriterAgent_1aeea35fc6e190669f99d20c20409fc266" compoundref="writer_8py" startline="81" endline="94">agents.writer.WriterAgent.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1writer_1_1WriterAgent_1a1fc2cc02dd6d702e2d3599086f26dc8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.writer.WriterAgent.revise_headers</definition>
+        <argsstring>(self, dict task, dict headers)</argsstring>
+        <name>revise_headers</name>
+        <qualifiedname>agents.writer.WriterAgent.revise_headers</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>headers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" line="62" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" bodystart="62" bodyend="80"/>
+        <referencedby refid="classagents_1_1writer_1_1WriterAgent_1aeea35fc6e190669f99d20c20409fc266" compoundref="writer_8py" startline="81" endline="94">agents.writer.WriterAgent.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1writer_1_1WriterAgent_1aeea35fc6e190669f99d20c20409fc266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.writer.WriterAgent.run</definition>
+        <argsstring>(self, dict research_state)</argsstring>
+        <name>run</name>
+        <qualifiedname>agents.writer.WriterAgent.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" line="81" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" bodystart="81" bodyend="94"/>
+        <references refid="classagents_1_1writer_1_1WriterAgent_1afe89553ca1031e9847522ea8a945f50a" compoundref="writer_8py" startline="20" endline="29">agents.writer.WriterAgent.get_headers</references>
+        <references refid="classagents_1_1writer_1_1WriterAgent_1a1fc2cc02dd6d702e2d3599086f26dc8f" compoundref="writer_8py" startline="62" endline="80">agents.writer.WriterAgent.revise_headers</references>
+        <references refid="classagents_1_1writer_1_1WriterAgent_1ad090d0934f61168407dec03c5c9eae4d" compoundref="writer_8py" startline="30" endline="61">agents.writer.WriterAgent.write_sections</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>agents.writer.WriterAgent</label>
+        <link refid="classagents_1_1writer_1_1WriterAgent"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" bodystart="16" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classagents_1_1writer_1_1WriterAgent_1aeed8e40ea98de396d419386d28507e1b" prot="public" virt="non-virtual"><scope>agents::writer::WriterAgent</scope><name>__init__</name></member>
+      <member refid="classagents_1_1writer_1_1WriterAgent_1afe89553ca1031e9847522ea8a945f50a" prot="public" virt="non-virtual"><scope>agents::writer::WriterAgent</scope><name>get_headers</name></member>
+      <member refid="classagents_1_1writer_1_1WriterAgent_1a1fc2cc02dd6d702e2d3599086f26dc8f" prot="public" virt="non-virtual"><scope>agents::writer::WriterAgent</scope><name>revise_headers</name></member>
+      <member refid="classagents_1_1writer_1_1WriterAgent_1aeea35fc6e190669f99d20c20409fc266" prot="public" virt="non-virtual"><scope>agents::writer::WriterAgent</scope><name>run</name></member>
+      <member refid="classagents_1_1writer_1_1WriterAgent_1ad090d0934f61168407dec03c5c9eae4d" prot="public" virt="non-virtual"><scope>agents::writer::WriterAgent</scope><name>write_sections</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

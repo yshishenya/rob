@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_file__formats_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceagents">agents</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1utils">agents.utils</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1utils_1_1file__formats">agents.utils.file_formats</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_namespaceagents_1_1utils_1_1file__formats_1ad0218eec891397e9e5fc972b4c9ce1b3">agents.utils.file_formats.write_to_file</link> (str filename, str text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceagents_1_1utils_1_1file__formats_1a291480dc71d67af0e177df6daefe0942">agents.utils.file_formats.write_text_to_md</link> (str text, str path)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceagents_1_1utils_1_1file__formats_1a381d88777ec5b123fc0c7f5b8357f96b">agents.utils.file_formats.write_md_to_pdf</link> (str text, str path)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceagents_1_1utils_1_1file__formats_1a418dc3a64d94136480c6a27a8050cfee">agents.utils.file_formats.write_md_to_word</link> (str text, str path)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

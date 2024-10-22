@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider" xml:lang="en-US">
+<title>gpt_researcher.llm_provider.openai.openai.OpenAIProvider Class Reference</title>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary></indexterm>
+Collaboration diagram for gpt_researcher.llm_provider.openai.openai.OpenAIProvider:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a9d66aee14a4edb30892efe70e347ea5c">__init__</link> (self, <link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afe5c6d8875b14decb465cd65967e4682">model</link>, <link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a1ed0519fedb6ae1b75f5da4130223f21">temperature</link>, <link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1ae049a93afa3ac3d6a84f52a330677582">max_tokens</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a4b697a1538e429d04128ca4db34b2899">get_api_key</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1ac3a3f2d9ba55c2adb87c4b3c10a89657">get_base_url</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3">get_llm_model</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1acf1062fad12cc7ca7b3b8605e479ab49">get_chat_response</link> (self, messages, stream, websocket=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a4d59b5af663196df435cac336e439c40">stream_response</link> (self, messages, websocket=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afe5c6d8875b14decb465cd65967e4682">model</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a1ed0519fedb6ae1b75f5da4130223f21">temperature</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1ae049a93afa3ac3d6a84f52a330677582">max_tokens</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afd786ea7857266ca7849de09f8048eec">api_key</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a7568a7268934cd83ca8dca162d300e78">base_url</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a41af2bc0067c62cb918d41a1a256ec86">llm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a9d66aee14a4edb30892efe70e347ea5c"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.__init__ ( self,  model,  temperature,  max_tokens)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a4b697a1538e429d04128ca4db34b2899"/><section>
+    <title>get_api_key()</title>
+<indexterm><primary>get_api_key</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>get_api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_api_key ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the OpenAI API key
+Returns:</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1ac3a3f2d9ba55c2adb87c4b3c10a89657"/><section>
+    <title>get_base_url()</title>
+<indexterm><primary>get_base_url</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>get_base_url</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_base_url ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the OpenAI Base URL from the environment variable if defined otherwise use the default one
+Returns:</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1acf1062fad12cc7ca7b3b8605e479ab49"/><section>
+    <title>get_chat_response()</title>
+<indexterm><primary>get_chat_response</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>get_chat_response</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_chat_response ( self,  messages,  stream,  websocket = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_acf1062fad12cc7ca7b3b8605e479ab49_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3"/><section>
+    <title>get_llm_model()</title>
+<indexterm><primary>get_llm_model</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>get_llm_model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_llm_model ( self)</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a4d59b5af663196df435cac336e439c40"/><section>
+    <title>stream_response()</title>
+<indexterm><primary>stream_response</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>stream_response</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.stream_response ( self,  messages,  websocket = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_a4d59b5af663196df435cac336e439c40_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afd786ea7857266ca7849de09f8048eec"/><section>
+    <title>api_key</title>
+<indexterm><primary>api_key</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.api_key</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a7568a7268934cd83ca8dca162d300e78"/><section>
+    <title>base_url</title>
+<indexterm><primary>base_url</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>base_url</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.base_url</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a41af2bc0067c62cb918d41a1a256ec86"/><section>
+    <title>llm</title>
+<indexterm><primary>llm</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>llm</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.llm</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1ae049a93afa3ac3d6a84f52a330677582"/><section>
+    <title>max_tokens</title>
+<indexterm><primary>max_tokens</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>max_tokens</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.max_tokens</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afe5c6d8875b14decb465cd65967e4682"/><section>
+    <title>model</title>
+<indexterm><primary>model</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.model</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a1ed0519fedb6ae1b75f5da4130223f21"/><section>
+    <title>temperature</title>
+<indexterm><primary>temperature</primary><secondary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.openai.openai.OpenAIProvider</primary><secondary>temperature</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.openai.openai.OpenAIProvider.temperature</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/openai/<link linkend="_openai_8py">openai.py</link></section>
+</section>

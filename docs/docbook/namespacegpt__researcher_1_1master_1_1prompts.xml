@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher_1_1master_1_1prompts" xml:lang="en-US">
+<title>gpt_researcher.master.prompts Namespace Reference</title>
+<indexterm><primary>gpt_researcher.master.prompts</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a1515d26ed2febbb7bb2670723e9bc3c7">generate_search_queries_prompt</link> (str question, str parent_query, str report_type, int max_iterations=3)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1aa1acdb319226c2434745dd28ddc12a13">generate_report_prompt</link> (str question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a076ce149c880d13d4702ff92da83d7f5">generate_resource_report_prompt</link> (question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a32d1e3b87f76b16c6934959abc348ec0">generate_custom_report_prompt</link> (query_prompt, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a250d14916f8487c0a0a5959322e51b10">generate_outline_report_prompt</link> (question, context, str report_source, report_format=&quot;apa&quot;, total_words=1000)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1ab0519037b4c15adb99ff3dd89076c9e9">get_report_by_type</link> (str report_type)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a1b8b6bf3d2fe1f56795cf36c745c9545">auto_agent_instructions</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1aa624fb10f7c23dd338e53222a0de584c">generate_summary_prompt</link> (query, data)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1afa1a6e6fa275aa54ca3cf6f5030d5f8e">generate_subtopics_prompt</link> ()</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1afe484ac6f9c1a55a54a9b2add561ff4d">generate_subtopic_report_prompt</link> (current_subtopic, list existing_headers, str main_topic, context, str report_format=&quot;apa&quot;, max_subsections=5, total_words=800)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1a5ab2bf457ff727dc200a27395b0b05c8">generate_report_introduction</link> (str question, str research_summary=&quot;&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1abb901630f113e1efe4c635c5f6e8229c">get_prompt_by_report_type</link> (report_type)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_namespacegpt__researcher_1_1master_1_1prompts_1aaffdcbce2b4c96cc4fc6f8bb4411bc23">report_type_mapping</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1a1b8b6bf3d2fe1f56795cf36c745c9545"/><section>
+    <title>auto_agent_instructions()</title>
+<indexterm><primary>auto_agent_instructions</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>auto_agent_instructions</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.auto_agent_instructions ( )</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1a32d1e3b87f76b16c6934959abc348ec0"/><section>
+    <title>generate_custom_report_prompt()</title>
+<indexterm><primary>generate_custom_report_prompt</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_custom_report_prompt</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.generate_custom_report_prompt ( query_prompt,  context, str report_source,  report_format = <computeroutput>&quot;apa&quot;</computeroutput>
+,  total_words = <computeroutput>1000</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1a250d14916f8487c0a0a5959322e51b10"/><section>
+    <title>generate_outline_report_prompt()</title>
+<indexterm><primary>generate_outline_report_prompt</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_outline_report_prompt</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.generate_outline_report_prompt ( question,  context, str report_source,  report_format = <computeroutput>&quot;apa&quot;</computeroutput>
+,  total_words = <computeroutput>1000</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput> Generates the outline report prompt for the given question and research summary.
+Args: question (str): The question to generate the outline report prompt for
+        research_summary (str): The research summary to generate the outline report prompt for
+Returns: str: The outline report prompt for the given question and research summary
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1a5ab2bf457ff727dc200a27395b0b05c8"/><section>
+    <title>generate_report_introduction()</title>
+<indexterm><primary>generate_report_introduction</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_report_introduction</secondary></indexterm>
+<para><computeroutput> str gpt_researcher.master.prompts.generate_report_introduction (str question, str  research_summary = <computeroutput>&quot;&quot;</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1prompts_a5ab2bf457ff727dc200a27395b0b05c8_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1aa1acdb319226c2434745dd28ddc12a13"/><section>
+    <title>generate_report_prompt()</title>
+<indexterm><primary>generate_report_prompt</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_report_prompt</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.generate_report_prompt (str question,  context, str report_source,  report_format = <computeroutput>&quot;apa&quot;</computeroutput>
+,  total_words = <computeroutput>1000</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput> Generates the report prompt for the given question and research summary.
+Args: question (str): The question to generate the report prompt for
+        research_summary (str): The research summary to generate the report prompt for
+Returns: str: The report prompt for the given question and research summary
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1a076ce149c880d13d4702ff92da83d7f5"/><section>
+    <title>generate_resource_report_prompt()</title>
+<indexterm><primary>generate_resource_report_prompt</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_resource_report_prompt</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.generate_resource_report_prompt ( question,  context, str report_source,  report_format = <computeroutput>&quot;apa&quot;</computeroutput>
+,  total_words = <computeroutput>1000</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Generates the resource report prompt for the given question and research summary.
+
+Args:
+    question (str): The question to generate the resource report prompt for.
+    context (str): The research summary to generate the resource report prompt for.
+
+Returns:
+    str: The resource report prompt for the given question and research summary.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1a1515d26ed2febbb7bb2670723e9bc3c7"/><section>
+    <title>generate_search_queries_prompt()</title>
+<indexterm><primary>generate_search_queries_prompt</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_search_queries_prompt</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.generate_search_queries_prompt (str question, str parent_query, str report_type, int max_iterations = <computeroutput>3</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput> Generates the search queries prompt for the given question.
+Args:
+    question (str): The question to generate the search queries prompt for
+    parent_query (str): The main question (only relevant for detailed reports)
+    report_type (str): The report type
+    max_iterations (int): The maximum number of search queries to generate
+
+Returns: str: The search queries prompt for the given question
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1prompts_a1515d26ed2febbb7bb2670723e9bc3c7_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1afe484ac6f9c1a55a54a9b2add561ff4d"/><section>
+    <title>generate_subtopic_report_prompt()</title>
+<indexterm><primary>generate_subtopic_report_prompt</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_subtopic_report_prompt</secondary></indexterm>
+<para><computeroutput> str gpt_researcher.master.prompts.generate_subtopic_report_prompt ( current_subtopic, list existing_headers, str main_topic,  context, str  report_format = <computeroutput>&quot;apa&quot;</computeroutput>
+,  max_subsections = <computeroutput>5</computeroutput>
+,  total_words = <computeroutput>800</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1afa1a6e6fa275aa54ca3cf6f5030d5f8e"/><section>
+    <title>generate_subtopics_prompt()</title>
+<indexterm><primary>generate_subtopics_prompt</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_subtopics_prompt</secondary></indexterm>
+<para><computeroutput> str gpt_researcher.master.prompts.generate_subtopics_prompt ( )</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1aa624fb10f7c23dd338e53222a0de584c"/><section>
+    <title>generate_summary_prompt()</title>
+<indexterm><primary>generate_summary_prompt</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>generate_summary_prompt</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.generate_summary_prompt ( query,  data)</computeroutput></para>
+<para><literallayout><computeroutput> Generates the summary prompt for the given question and text.
+Args: question (str): The question to generate the summary prompt for
+        text (str): The text to generate the summary prompt for
+Returns: str: The summary prompt for the given question and text
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1abb901630f113e1efe4c635c5f6e8229c"/><section>
+    <title>get_prompt_by_report_type()</title>
+<indexterm><primary>get_prompt_by_report_type</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>get_prompt_by_report_type</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.get_prompt_by_report_type ( report_type)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1prompts_abb901630f113e1efe4c635c5f6e8229c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1ab0519037b4c15adb99ff3dd89076c9e9"/><section>
+    <title>get_report_by_type()</title>
+<indexterm><primary>get_report_by_type</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>get_report_by_type</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.prompts.get_report_by_type (str report_type)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1prompts_1aaffdcbce2b4c96cc4fc6f8bb4411bc23"/><section>
+    <title>report_type_mapping</title>
+<indexterm><primary>report_type_mapping</primary><secondary>gpt_researcher.master.prompts</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.prompts</primary><secondary>report_type_mapping</secondary></indexterm>
+<para><computeroutput>dict gpt_researcher.master.prompts.report_type_mapping</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;{
+2 &#32;&#32;&#32;&#32;ReportType.ResearchReport.value:&#32;generate_report_prompt,
+3 &#32;&#32;&#32;&#32;ReportType.ResourceReport.value:&#32;generate_resource_report_prompt,
+4 &#32;&#32;&#32;&#32;ReportType.OutlineReport.value:&#32;generate_outline_report_prompt,
+5 &#32;&#32;&#32;&#32;ReportType.CustomReport.value:&#32;generate_custom_report_prompt,
+6 &#32;&#32;&#32;&#32;ReportType.SubtopicReport.value:&#32;generate_subtopic_report_prompt
+7 }
+</programlisting></section>
+</section>
+</section>

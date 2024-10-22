@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_20e11079e1b0fa73e6b27e5721e8fd41" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/anthropic</compoundname>
+    <innerfile refid="gpt__researcher_2llm__provider_2anthropic_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="anthropic_8py">anthropic.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/anthropic/"/>
+  </compounddef>
+</doxygen>

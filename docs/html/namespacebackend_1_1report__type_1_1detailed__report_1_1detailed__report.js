@@ -1,0 +1,4 @@
+var namespacebackend_1_1report__type_1_1detailed__report_1_1detailed__report =
+[
+    [ "DetailedReport", "classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport.html", "classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport" ]
+];

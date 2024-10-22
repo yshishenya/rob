@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::context::retriever::SearchAPIRetriever</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseRetriever</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1a403976a777ded595557dda0b9bca2cad" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list gpt_researcher.context.retriever.SearchAPIRetriever::pages</definition>
+        <argsstring></argsstring>
+        <name>pages</name>
+        <qualifiedname>gpt_researcher.context.retriever.SearchAPIRetriever.pages</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/retriever.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/retriever.py" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1ad348c38878f9d19adb17a5c7a88318a8" compoundref="retriever_8py" startline="16" endline="30">gpt_researcher.context.retriever.SearchAPIRetriever._get_relevant_documents</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1ad348c38878f9d19adb17a5c7a88318a8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[Document]</type>
+        <definition> List[Document] gpt_researcher.context.retriever.SearchAPIRetriever._get_relevant_documents</definition>
+        <argsstring>(self, str query, *CallbackManagerForRetrieverRun run_manager)</argsstring>
+        <name>_get_relevant_documents</name>
+        <qualifiedname>gpt_researcher.context.retriever.SearchAPIRetriever._get_relevant_documents</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>*CallbackManagerForRetrieverRun</type>
+          <declname>run_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/retriever.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/retriever.py" bodystart="16" bodyend="30"/>
+        <references refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1a403976a777ded595557dda0b9bca2cad" compoundref="retriever_8py" startline="12">gpt_researcher.context.retriever.SearchAPIRetriever.pages</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Search API retriever.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gpt_researcher.context.retriever.SearchAPIRetriever</label>
+        <link refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseRetriever</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.context.retriever.SearchAPIRetriever</label>
+        <link refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+pages</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseRetriever</label>
+      </node>
+      <node id="3">
+        <label>list</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/retriever.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/retriever.py" bodystart="10" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1ad348c38878f9d19adb17a5c7a88318a8" prot="protected" virt="non-virtual"><scope>gpt_researcher::context::retriever::SearchAPIRetriever</scope><name>_get_relevant_documents</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1a403976a777ded595557dda0b9bca2cad" prot="public" virt="non-virtual"><scope>gpt_researcher::context::retriever::SearchAPIRetriever</scope><name>pages</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

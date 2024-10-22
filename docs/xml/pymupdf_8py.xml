@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="pymupdf_8py" kind="file" language="Python">
+    <compoundname>pymupdf.py</compoundname>
+    <innerclass refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper" prot="public">gpt_researcher::scraper::pymupdf::pymupdf::PyMuPDFScraper</innerclass>
+    <innernamespace refid="namespacegpt__researcher">gpt_researcher</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper">gpt_researcher::scraper</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1pymupdf">gpt_researcher::scraper::pymupdf</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf">gpt_researcher::scraper::pymupdf::pymupdf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegpt__researcher_1_1scraper_1_1pymupdf" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>langchain_community.document_loaders<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PyMuPDFLoader</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper" kindref="compound">PyMuPDFScraper</ref>:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1affab7937f2a126b0559f89dff7f92741" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1affab7937f2a126b0559f89dff7f92741" kindref="member">__init__</ref>(self,<sp/>link,<sp/>session=None):</highlight></codeline>
+<codeline lineno="7" refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" kindref="member">link</ref><sp/>=<sp/>link</highlight></codeline>
+<codeline lineno="8" refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a6bca3d146426fab875757b8db6b7bf43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a6bca3d146426fab875757b8db6b7bf43" kindref="member">session</ref><sp/>=<sp/>session</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1aae8b9f34b019d7c97787731c254a85f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1aae8b9f34b019d7c97787731c254a85f5" kindref="member">scrape</ref>(self)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>`scrape`<sp/>function<sp/>uses<sp/>PyMuPDFLoader<sp/>to<sp/>load<sp/>a<sp/>document<sp/>from<sp/>a<sp/>given<sp/>link<sp/>and<sp/>returns<sp/>it<sp/>as</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>string.</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Returns:</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>`scrape`<sp/>method<sp/>is<sp/>returning<sp/>a<sp/>string<sp/>representation<sp/>of<sp/>the<sp/>`doc`<sp/>object,<sp/>which<sp/>is<sp/>loaded</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>using<sp/>PyMuPDFLoader<sp/>from<sp/>the<sp/>provided<sp/>link.</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loader<sp/>=<sp/>PyMuPDFLoader(self.<ref refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" kindref="member">link</ref>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc<sp/>=<sp/>loader.load()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>str(doc)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_web__scrape_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceweb__scrape">web_scrape</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespaceweb__scrape_1aae251defc7a9fb4c5b8085b5a75a7a35">web_scrape.async_browse</link> (str selenium_web_browser, str user_agent, str fast_llm_model, str summary_token_limit, str llm_provider, str url, str question, WebSocket websocket)</para>
+</listitem>
+            <listitem><para>tuple[str, WebDriver] <link linkend="_namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d">web_scrape.browse_website</link> (str url, str question)</para>
+</listitem>
+            <listitem><para>tuple[WebDriver, str] <link linkend="_namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5">web_scrape.scrape_text_with_selenium</link> (str selenium_web_browser, str user_agent, str url)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451">web_scrape.get_text</link> (soup)</para>
+</listitem>
+            <listitem><para>list[str] <link linkend="_namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e">web_scrape.scrape_links_with_selenium</link> (WebDriver driver, str url)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf">web_scrape.close_browser</link> (WebDriver driver)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a">web_scrape.add_header</link> (WebDriver driver)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceweb__scrape_1aa2ff2c1078cc7ae3378f810fdea2765a">web_scrape.executor</link> = ThreadPoolExecutor()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceweb__scrape_1a0117379fc90094ab4626beaca918dc49">web_scrape.FILE_DIR</link> = Path(__file__).parent.parent</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

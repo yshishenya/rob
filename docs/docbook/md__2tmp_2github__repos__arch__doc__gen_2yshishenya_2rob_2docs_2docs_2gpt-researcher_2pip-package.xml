@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package" xml:lang="en-US">
+<title>PIP Package</title>
+<indexterm><primary>PIP Package</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md124"/><link xlink:href="https://badge.fury.io/py/gpt-researcher"></link> <link xlink:href="https://colab.research.google.com/github/assafelovic/gpt-researcher/blob/master/examples/pip-run.ipynb"></link></para>
+
+<para>🌟 <emphasis role="bold">Exciting News!</emphasis> Now, you can integrate <computeroutput>gpt-researcher</computeroutput> with your apps seamlessly!</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md125">
+<title><title>Steps to Install GPT Researcher 🛠️</title></title>
+
+<para>Follow these easy steps to get started:</para>
+
+<para>0. <emphasis role="bold">Pre-requisite</emphasis>: Ensure Python 3.10+ is installed on your machine 💻<orderedlist>
+<listitem>
+<para><emphasis role="bold">Install gpt-researcher</emphasis>: Grab the official package from <link xlink:href="https://pypi.org/project/gpt-researcher/">PyPi</link>.</para>
+</listitem></orderedlist>
+</para>
+
+<para><literallayout><computeroutput>pip&#32;install&#32;gpt-researcher
+</computeroutput></literallayout></para>
+
+<para><orderedlist>
+<listitem>
+<para><emphasis role="bold">Environment Variables:</emphasis> Create a .env file with your OpenAI API key or simply export it</para>
+</listitem></orderedlist>
+</para>
+
+<para><literallayout><computeroutput>export&#32;OPENAI_API_KEY={Your&#32;OpenAI&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout></para>
+
+<para><literallayout><computeroutput>export&#32;TAVILY_API_KEY={Your&#32;Tavily&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout></para>
+
+<para><orderedlist>
+<listitem>
+<para><emphasis role="bold">Start using GPT Researcher in your own codebase</emphasis></para>
+</listitem></orderedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md126">
+<title><title>Example Usage 📝</title></title>
+
+<para><literallayout><computeroutput>from&#32;gpt_researcher&#32;import&#32;GPTResearcher
+import&#32;asyncio
+
+
+from&#32;gpt_researcher&#32;import&#32;GPTResearcher
+import&#32;asyncio
+
+
+async&#32;def&#32;get_report(query:&#32;str,&#32;report_type:&#32;str)&#32;-&gt;&#32;str:
+&#32;&#32;&#32;&#32;researcher&#32;=&#32;GPTResearcher(query,&#32;report_type)
+&#32;&#32;&#32;&#32;research_result&#32;=&#32;await&#32;researcher.conduct_research()
+&#32;&#32;&#32;&#32;report&#32;=&#32;await&#32;researcher.write_report()
+&#32;&#32;&#32;&#32;return&#32;report
+
+if&#32;__name__&#32;==&#32;&quot;__main__&quot;:
+&#32;&#32;&#32;&#32;query&#32;=&#32;&quot;what&#32;team&#32;may&#32;win&#32;the&#32;NBA&#32;finals?&quot;
+&#32;&#32;&#32;&#32;report_type&#32;=&#32;&quot;research_report&quot;
+
+&#32;&#32;&#32;&#32;report&#32;=&#32;asyncio.run(get_report(query,&#32;report_type))
+&#32;&#32;&#32;&#32;print(report)
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md127">
+<title><title>Specific Examples 🌐</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md128">
+<title><title>Example 1: Research Report 📚</title></title>
+
+<para><literallayout><computeroutput>query&#32;=&#32;&quot;Latest&#32;developments&#32;in&#32;renewable&#32;energy&#32;technologies&quot;
+report_type&#32;=&#32;&quot;research_report&quot;
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md129">
+<title><title>Example 2: Resource Report 📋</title></title>
+
+<para><literallayout><computeroutput>query&#32;=&#32;&quot;List&#32;of&#32;top&#32;AI&#32;conferences&#32;in&#32;2023&quot;
+report_type&#32;=&#32;&quot;resource_report&quot;
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md130">
+<title><title>Example 3: Outline Report 📝</title></title>
+
+<para><literallayout><computeroutput>query&#32;=&#32;&quot;Outline&#32;for&#32;an&#32;article&#32;on&#32;the&#32;impact&#32;of&#32;AI&#32;in&#32;education&quot;
+report_type&#32;=&#32;&quot;outline_report&quot;
+</computeroutput></literallayout></para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md131">
+<title><title>Integration with Web Frameworks 🌍</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md132">
+<title><title>FastAPI Example</title></title>
+
+<para><literallayout><computeroutput>from&#32;fastapi&#32;import&#32;FastAPI
+from&#32;gpt_researcher&#32;import&#32;GPTResearcher
+import&#32;asyncio
+
+app&#32;=&#32;FastAPI()
+
+@app.get(&quot;/report/{report_type}&quot;)
+async&#32;def&#32;get_report(query:&#32;str,&#32;report_type:&#32;str)&#32;-&gt;&#32;dict:
+&#32;&#32;&#32;&#32;researcher&#32;=&#32;GPTResearcher(query,&#32;report_type)
+&#32;&#32;&#32;&#32;research_result&#32;=&#32;await&#32;researcher.conduct_research()
+&#32;&#32;&#32;&#32;report&#32;=&#32;await&#32;researcher.write_report()
+&#32;&#32;&#32;&#32;return&#32;{&quot;report&quot;:&#32;report}
+
+#&#32;Run&#32;the&#32;server
+#&#32;uvicorn&#32;main:app&#32;--reload
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package_1autotoc_md133">
+<title><title>Flask Example</title></title>
+
+<para><emphasis role="bold">Pre-requisite</emphasis>: Install flask with the async extra.</para>
+
+<para><literallayout><computeroutput>pip&#32;install&#32;&apos;flask[async]&apos;
+</computeroutput></literallayout></para>
+
+<para><literallayout><computeroutput>from&#32;flask&#32;import&#32;Flask,&#32;request
+from&#32;gpt_researcher&#32;import&#32;GPTResearcher
+
+app&#32;=&#32;Flask(__name__)
+
+@app.route(&apos;/report/&lt;report_type&gt;&apos;,&#32;methods=[&apos;GET&apos;])
+async&#32;def&#32;get_report(report_type):
+&#32;&#32;&#32;&#32;query&#32;=&#32;request.args.get(&apos;query&apos;)
+&#32;&#32;&#32;&#32;researcher&#32;=&#32;GPTResearcher(query,&#32;report_type)
+&#32;&#32;&#32;&#32;research_result&#32;=&#32;await&#32;researcher.conduct_research()
+&#32;&#32;&#32;&#32;report&#32;=&#32;await&#32;researcher.write_report()
+&#32;&#32;&#32;&#32;return&#32;report
+
+#&#32;Run&#32;the&#32;server
+#&#32;flask&#32;run
+</computeroutput></literallayout> <emphasis role="bold">Run the server</emphasis></para>
+
+<para><literallayout><computeroutput>flask&#32;run
+</computeroutput></literallayout></para>
+
+<para><emphasis role="bold">Example Request</emphasis></para>
+
+<para><literallayout><computeroutput>curl&#32;-X&#32;GET&#32;&quot;http://localhost:5000/report/research_report?query=what&#32;team&#32;may&#32;win&#32;the&#32;nba&#32;finals?&quot;
+</computeroutput></literallayout></para>
+
+<para><emphasis role="bold">Note</emphasis>: The above code snippets are just examples. You can customize them as per your requirements. </para>
+</section>
+</section>
+</section>

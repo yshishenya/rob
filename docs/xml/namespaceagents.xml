@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceagents" kind="namespace" language="Python">
+    <compoundname>agents</compoundname>
+    <innernamespace refid="namespaceagents_1_1editor">agents::editor</innernamespace>
+    <innernamespace refid="namespaceagents_1_1master">agents::master</innernamespace>
+    <innernamespace refid="namespaceagents_1_1publisher">agents::publisher</innernamespace>
+    <innernamespace refid="namespaceagents_1_1researcher">agents::researcher</innernamespace>
+    <innernamespace refid="namespaceagents_1_1reviewer">agents::reviewer</innernamespace>
+    <innernamespace refid="namespaceagents_1_1reviser">agents::reviser</innernamespace>
+    <innernamespace refid="namespaceagents_1_1utils">agents::utils</innernamespace>
+    <innernamespace refid="namespaceagents_1_1writer">agents::writer</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceagents_1a81c46b0f706b9874f61e90dde4d4bf12" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list agents.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>agents.__all__</qualifiedname>
+        <initializer>=  [
+    &quot;ChiefEditorAgent&quot;,
+    &quot;ResearchAgent&quot;,
+    &quot;WriterAgent&quot;,
+    &quot;EditorAgent&quot;,
+    &quot;PublisherAgent&quot;,
+    &quot;ReviserAgent&quot;,
+    &quot;ReviewerAgent&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/__init__.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/__init__.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

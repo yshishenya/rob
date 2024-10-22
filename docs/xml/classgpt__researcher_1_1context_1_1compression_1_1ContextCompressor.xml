@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::context::compression::ContextCompressor</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a9a4847e7d90a0752b7af626d64c88b60" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor::max_results</definition>
+        <argsstring></argsstring>
+        <name>max_results</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.max_results</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a772447db72fc7fd103952671326ccb8e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor::documents</definition>
+        <argsstring></argsstring>
+        <name>documents</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.documents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a23fc7927bc0c0a90f8c0a4a077dc6740" compoundref="compression_8py" startline="23" endline="37">gpt_researcher.context.compression.ContextCompressor.__get_contextual_retriever</referencedby>
+        <referencedby refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1afc0de5dcb242af032d0ecb8198f9072f" compoundref="compression_8py" startline="44" endline="50">gpt_researcher.context.compression.ContextCompressor.get_context</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1ab8bcc20307a5321f18502b1c8c60f9e2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor::kwargs</definition>
+        <argsstring></argsstring>
+        <name>kwargs</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.kwargs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a5b6fb2476af4c74960758ead75f2937a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor::embeddings</definition>
+        <argsstring></argsstring>
+        <name>embeddings</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.embeddings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a23fc7927bc0c0a90f8c0a4a077dc6740" compoundref="compression_8py" startline="23" endline="37">gpt_researcher.context.compression.ContextCompressor.__get_contextual_retriever</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a8e4f6f0cb8a94968f4ea9a0f4830233f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor::similarity_threshold</definition>
+        <argsstring></argsstring>
+        <name>similarity_threshold</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.similarity_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a23fc7927bc0c0a90f8c0a4a077dc6740" compoundref="compression_8py" startline="23" endline="37">gpt_researcher.context.compression.ContextCompressor.__get_contextual_retriever</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1acb479b1fd77d617aee78e6533dd2ec26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor.__init__</definition>
+        <argsstring>(self, documents, embeddings, max_results=5, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a772447db72fc7fd103952671326ccb8e" kindref="member">documents</ref></type>
+          <defname>documents</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a5b6fb2476af4c74960758ead75f2937a" kindref="member">embeddings</ref></type>
+          <defname>embeddings</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a9a4847e7d90a0752b7af626d64c88b60" kindref="member">max_results</ref></type>
+          <defname>max_results</defname>
+          <defval>5</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1afc0de5dcb242af032d0ecb8198f9072f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor.get_context</definition>
+        <argsstring>(self, query, max_results=5, cost_callback=None)</argsstring>
+        <name>get_context</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.get_context</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>query</type>
+          <defname>query</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a9a4847e7d90a0752b7af626d64c88b60" kindref="member">max_results</ref></type>
+          <defname>max_results</defname>
+          <defval>5</defval>
+        </param>
+        <param>
+          <type>cost_callback</type>
+          <defname>cost_callback</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="44" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="44" bodyend="50"/>
+        <references refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a23fc7927bc0c0a90f8c0a4a077dc6740" compoundref="compression_8py" startline="23" endline="37">gpt_researcher.context.compression.ContextCompressor.__get_contextual_retriever</references>
+        <references refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1aea743e90692d7cb715716298ac2de508" compoundref="compression_8py" startline="38" endline="43">gpt_researcher.context.compression.ContextCompressor.__pretty_print_docs</references>
+        <references refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a772447db72fc7fd103952671326ccb8e" compoundref="compression_8py" startline="18">gpt_researcher.context.compression.ContextCompressor.documents</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a23fc7927bc0c0a90f8c0a4a077dc6740" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor.__get_contextual_retriever</definition>
+        <argsstring>(self)</argsstring>
+        <name>__get_contextual_retriever</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.__get_contextual_retriever</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="23" bodyend="37"/>
+        <references refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a772447db72fc7fd103952671326ccb8e" compoundref="compression_8py" startline="18">gpt_researcher.context.compression.ContextCompressor.documents</references>
+        <references refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a5b6fb2476af4c74960758ead75f2937a" compoundref="compression_8py" startline="20">gpt_researcher.context.compression.ContextCompressor.embeddings</references>
+        <references refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a8e4f6f0cb8a94968f4ea9a0f4830233f" compoundref="compression_8py" startline="21">gpt_researcher.context.compression.ContextCompressor.similarity_threshold</references>
+        <referencedby refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1afc0de5dcb242af032d0ecb8198f9072f" compoundref="compression_8py" startline="44" endline="50">gpt_researcher.context.compression.ContextCompressor.get_context</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1aea743e90692d7cb715716298ac2de508" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.context.compression.ContextCompressor.__pretty_print_docs</definition>
+        <argsstring>(self, docs, top_n)</argsstring>
+        <name>__pretty_print_docs</name>
+        <qualifiedname>gpt_researcher.context.compression.ContextCompressor.__pretty_print_docs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>docs</type>
+          <defname>docs</defname>
+        </param>
+        <param>
+          <type>top_n</type>
+          <defname>top_n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="38" bodyend="43"/>
+        <referencedby refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1afc0de5dcb242af032d0ecb8198f9072f" compoundref="compression_8py" startline="44" endline="50">gpt_researcher.context.compression.ContextCompressor.get_context</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.context.compression.ContextCompressor</label>
+        <link refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/compression.py" bodystart="15" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a23fc7927bc0c0a90f8c0a4a077dc6740" prot="private" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>__get_contextual_retriever</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1acb479b1fd77d617aee78e6533dd2ec26" prot="public" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1aea743e90692d7cb715716298ac2de508" prot="private" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>__pretty_print_docs</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a772447db72fc7fd103952671326ccb8e" prot="public" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>documents</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a5b6fb2476af4c74960758ead75f2937a" prot="public" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>embeddings</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1afc0de5dcb242af032d0ecb8198f9072f" prot="public" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>get_context</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1ab8bcc20307a5321f18502b1c8c60f9e2" prot="public" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>kwargs</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a9a4847e7d90a0752b7af626d64c88b60" prot="public" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>max_results</name></member>
+      <member refid="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor_1a8e4f6f0cb8a94968f4ea9a0f4830233f" prot="public" virt="non-virtual"><scope>gpt_researcher::context::compression::ContextCompressor</scope><name>similarity_threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1utils_1_1enum_1_1ReportType" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::utils::enum::ReportType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1abc97d8a9af5c1c3f0e36ba370f7bd084" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher.utils.enum.ReportType::ResearchReport</definition>
+        <argsstring></argsstring>
+        <name>ResearchReport</name>
+        <qualifiedname>gpt_researcher.utils.enum.ReportType.ResearchReport</qualifiedname>
+        <initializer>=  &apos;research_report&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="3" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a7127e98d2b356dd6499b5f69938bd197" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher.utils.enum.ReportType::ResourceReport</definition>
+        <argsstring></argsstring>
+        <name>ResourceReport</name>
+        <qualifiedname>gpt_researcher.utils.enum.ReportType.ResourceReport</qualifiedname>
+        <initializer>=  &apos;resource_report&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="4" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1aac580d69ab16f89917b617b4fe255e5f" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher.utils.enum.ReportType::OutlineReport</definition>
+        <argsstring></argsstring>
+        <name>OutlineReport</name>
+        <qualifiedname>gpt_researcher.utils.enum.ReportType.OutlineReport</qualifiedname>
+        <initializer>=  &apos;outline_report&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a504d1981defb724d1b01a57c6c9bebb6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher.utils.enum.ReportType::CustomReport</definition>
+        <argsstring></argsstring>
+        <name>CustomReport</name>
+        <qualifiedname>gpt_researcher.utils.enum.ReportType.CustomReport</qualifiedname>
+        <initializer>=  &apos;custom_report&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1af840c0b75b47688f7af4e19d525deffe" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher.utils.enum.ReportType::DetailedReport</definition>
+        <argsstring></argsstring>
+        <name>DetailedReport</name>
+        <qualifiedname>gpt_researcher.utils.enum.ReportType.DetailedReport</qualifiedname>
+        <initializer>=  &apos;detailed_report&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a5c591d99b5639a39b86e1c723b7a1014" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher.utils.enum.ReportType::SubtopicReport</definition>
+        <argsstring></argsstring>
+        <name>SubtopicReport</name>
+        <qualifiedname>gpt_researcher.utils.enum.ReportType.SubtopicReport</qualifiedname>
+        <initializer>=  &apos;subtopic_report&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+      <node id="1">
+        <label>gpt_researcher.utils.enum.ReportType</label>
+        <link refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+      <node id="1">
+        <label>gpt_researcher.utils.enum.ReportType</label>
+        <link refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+CustomReport</edgelabel>
+          <edgelabel>+DetailedReport</edgelabel>
+          <edgelabel>+OutlineReport</edgelabel>
+          <edgelabel>+ResearchReport</edgelabel>
+          <edgelabel>+ResourceReport</edgelabel>
+          <edgelabel>+SubtopicReport</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="2" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" bodystart="2" bodyend="9"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a504d1981defb724d1b01a57c6c9bebb6" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::enum::ReportType</scope><name>CustomReport</name></member>
+      <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1af840c0b75b47688f7af4e19d525deffe" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::enum::ReportType</scope><name>DetailedReport</name></member>
+      <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1aac580d69ab16f89917b617b4fe255e5f" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::enum::ReportType</scope><name>OutlineReport</name></member>
+      <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1abc97d8a9af5c1c3f0e36ba370f7bd084" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::enum::ReportType</scope><name>ResearchReport</name></member>
+      <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a7127e98d2b356dd6499b5f69938bd197" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::enum::ReportType</scope><name>ResourceReport</name></member>
+      <member refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a5c591d99b5639a39b86e1c723b7a1014" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::enum::ReportType</scope><name>SubtopicReport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::memory::embeddings::Memory</compoundname>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1ad6b2a0649b3d9ec7438383e48f581cdb" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.memory.embeddings.Memory::_embeddings</definition>
+        <argsstring></argsstring>
+        <name>_embeddings</name>
+        <qualifiedname>gpt_researcher.memory.embeddings.Memory._embeddings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a5a51c5c0866249bb8b164cd6e12346eb" compoundref="embeddings_8py" startline="34" endline="36">gpt_researcher.memory.embeddings.Memory.get_embeddings</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a2dfbbd19d7252848527a7be807d7aec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.memory.embeddings.Memory.__init__</definition>
+        <argsstring>(self, embedding_provider, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.memory.embeddings.Memory.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>embedding_provider</type>
+          <defname>embedding_provider</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" bodystart="6" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a5a51c5c0866249bb8b164cd6e12346eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.memory.embeddings.Memory.get_embeddings</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_embeddings</name>
+        <qualifiedname>gpt_researcher.memory.embeddings.Memory.get_embeddings</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" line="34" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" bodystart="34" bodyend="36"/>
+        <references refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1ad6b2a0649b3d9ec7438383e48f581cdb" compoundref="embeddings_8py" startline="32">gpt_researcher.memory.embeddings.Memory._embeddings</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.memory.embeddings.Memory</label>
+        <link refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" bodystart="5" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a2dfbbd19d7252848527a7be807d7aec2" prot="public" virt="non-virtual"><scope>gpt_researcher::memory::embeddings::Memory</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1ad6b2a0649b3d9ec7438383e48f581cdb" prot="protected" virt="non-virtual"><scope>gpt_researcher::memory::embeddings::Memory</scope><name>_embeddings</name></member>
+      <member refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a5a51c5c0866249bb8b164cd6e12346eb" prot="public" virt="non-virtual"><scope>gpt_researcher::memory::embeddings::Memory</scope><name>get_embeddings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
