@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceprocessing_1_1html" xml:lang="en-US">
+<title>processing.html Namespace Reference</title>
+<indexterm><primary>processing.html</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>list[tuple[str, str]] <link linkend="_namespaceprocessing_1_1html_1a8a84862c80f9f7abf29623100cdf59a1">extract_hyperlinks</link> (BeautifulSoup soup, str base_url)</para>
+</listitem>
+            <listitem><para>list[str] <link linkend="_namespaceprocessing_1_1html_1a1ae4a545f1c830d0cd2d9da6291ff50d">format_hyperlinks</link> (list[tuple[str, str]] hyperlinks)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>HTML processing functions</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceprocessing_1_1html_1a8a84862c80f9f7abf29623100cdf59a1"/><section>
+    <title>extract_hyperlinks()</title>
+<indexterm><primary>extract_hyperlinks</primary><secondary>processing.html</secondary></indexterm>
+<indexterm><primary>processing.html</primary><secondary>extract_hyperlinks</secondary></indexterm>
+<para><computeroutput> list[tuple[str, str]] processing.html.extract_hyperlinks (BeautifulSoup soup, str base_url)</computeroutput></para>
+<para><literallayout><computeroutput>Extract hyperlinks from a BeautifulSoup object
+
+Args:
+    soup (BeautifulSoup): The BeautifulSoup object
+    base_url (str): The base URL
+
+Returns:
+    List[Tuple[str, str]]: The extracted hyperlinks
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceprocessing_1_1html_1a1ae4a545f1c830d0cd2d9da6291ff50d"/><section>
+    <title>format_hyperlinks()</title>
+<indexterm><primary>format_hyperlinks</primary><secondary>processing.html</secondary></indexterm>
+<indexterm><primary>processing.html</primary><secondary>format_hyperlinks</secondary></indexterm>
+<para><computeroutput> list[str] processing.html.format_hyperlinks (list[tuple[str, str]] hyperlinks)</computeroutput></para>
+<para><literallayout><computeroutput>Format hyperlinks to be displayed to the user
+
+Args:
+    hyperlinks (List[Tuple[str, str]]): The hyperlinks to format
+
+Returns:
+    List[str]: The formatted hyperlinks
+</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

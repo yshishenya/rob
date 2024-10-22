@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classagents_1_1utils_1_1views_1_1AgentColor" kind="class" language="Python" prot="public">
+    <compoundname>agents::utils::views::AgentColor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classagents_1_1utils_1_1views_1_1AgentColor_1aad82b618de5affc17c7ed241978d4d29" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>agents.utils.views.AgentColor::RESEARCHER</definition>
+        <argsstring></argsstring>
+        <name>RESEARCHER</name>
+        <qualifiedname>agents.utils.views.AgentColor.RESEARCHER</qualifiedname>
+        <initializer>=  Fore.LIGHTBLUE_EX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagents_1_1utils_1_1views_1_1AgentColor_1a054652ba8e8cb50221b694148a08e16c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>agents.utils.views.AgentColor::EDITOR</definition>
+        <argsstring></argsstring>
+        <name>EDITOR</name>
+        <qualifiedname>agents.utils.views.AgentColor.EDITOR</qualifiedname>
+        <initializer>=  Fore.YELLOW</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagents_1_1utils_1_1views_1_1AgentColor_1a55c936b52836cd867677166ed7d0390b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>agents.utils.views.AgentColor::WRITER</definition>
+        <argsstring></argsstring>
+        <name>WRITER</name>
+        <qualifiedname>agents.utils.views.AgentColor.WRITER</qualifiedname>
+        <initializer>=  Fore.LIGHTGREEN_EX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagents_1_1utils_1_1views_1_1AgentColor_1a31ef9e1a009fb8401e198482cf62af70" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>agents.utils.views.AgentColor::PUBLISHER</definition>
+        <argsstring></argsstring>
+        <name>PUBLISHER</name>
+        <qualifiedname>agents.utils.views.AgentColor.PUBLISHER</qualifiedname>
+        <initializer>=  Fore.MAGENTA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagents_1_1utils_1_1views_1_1AgentColor_1a397c2bb5e464ce713866d7f100f1ca4a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>agents.utils.views.AgentColor::REVIEWER</definition>
+        <argsstring></argsstring>
+        <name>REVIEWER</name>
+        <qualifiedname>agents.utils.views.AgentColor.REVIEWER</qualifiedname>
+        <initializer>=  Fore.CYAN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagents_1_1utils_1_1views_1_1AgentColor_1a3d962b5a2e02afd4ff3cca70040a85e0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>agents.utils.views.AgentColor::REVISOR</definition>
+        <argsstring></argsstring>
+        <name>REVISOR</name>
+        <qualifiedname>agents.utils.views.AgentColor.REVISOR</qualifiedname>
+        <initializer>=  Fore.LIGHTWHITE_EX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagents_1_1utils_1_1views_1_1AgentColor_1af51a03e79c5086c177807e347accc8a4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>agents.utils.views.AgentColor::MASTER</definition>
+        <argsstring></argsstring>
+        <name>MASTER</name>
+        <qualifiedname>agents.utils.views.AgentColor.MASTER</qualifiedname>
+        <initializer>=  Fore.LIGHTYELLOW_EX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>agents.utils.views.AgentColor</label>
+        <link refid="classagents_1_1utils_1_1views_1_1AgentColor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>agents.utils.views.AgentColor</label>
+        <link refid="classagents_1_1utils_1_1views_1_1AgentColor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py" bodystart="5" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a054652ba8e8cb50221b694148a08e16c" prot="public" virt="non-virtual"><scope>agents::utils::views::AgentColor</scope><name>EDITOR</name></member>
+      <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1af51a03e79c5086c177807e347accc8a4" prot="public" virt="non-virtual"><scope>agents::utils::views::AgentColor</scope><name>MASTER</name></member>
+      <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a31ef9e1a009fb8401e198482cf62af70" prot="public" virt="non-virtual"><scope>agents::utils::views::AgentColor</scope><name>PUBLISHER</name></member>
+      <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1aad82b618de5affc17c7ed241978d4d29" prot="public" virt="non-virtual"><scope>agents::utils::views::AgentColor</scope><name>RESEARCHER</name></member>
+      <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a397c2bb5e464ce713866d7f100f1ca4a" prot="public" virt="non-virtual"><scope>agents::utils::views::AgentColor</scope><name>REVIEWER</name></member>
+      <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a3d962b5a2e02afd4ff3cca70040a85e0" prot="public" virt="non-virtual"><scope>agents::utils::views::AgentColor</scope><name>REVISOR</name></member>
+      <member refid="classagents_1_1utils_1_1views_1_1AgentColor_1a55c936b52836cd867677166ed7d0390b" prot="public" virt="non-virtual"><scope>agents::utils::views::AgentColor</scope><name>WRITER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

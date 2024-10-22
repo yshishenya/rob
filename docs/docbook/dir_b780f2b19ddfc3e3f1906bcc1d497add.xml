@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_b780f2b19ddfc3e3f1906bcc1d497add" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps Directory Reference</primary></indexterm>
+Directory dependency graph for DevOps:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_b780f2b19ddfc3e3f1906bcc1d497add_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_db__seed_8py">db_seed.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

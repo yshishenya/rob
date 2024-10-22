@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_b95327e3450e41852b7f303025994f20" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob</compoundname>
+    <innerdir refid="dir_42d42088c692f23a6e766ea399ce0c27">/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend</innerdir>
+    <innerdir refid="dir_b780f2b19ddfc3e3f1906bcc1d497add">/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps</innerdir>
+    <innerdir refid="dir_753ca7b2279e134c11889b00370dfec6">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs</innerdir>
+    <innerdir refid="dir_c61eb2ed5ad2de41308c088973fec624">/tmp/github_repos_arch_doc_gen/yshishenya/rob/examples</innerdir>
+    <innerdir refid="dir_bf8cfef0402550fad8853e57d92f1500">/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend</innerdir>
+    <innerdir refid="dir_f9d4dbeed8b77d74edb7688c71320f51">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher</innerdir>
+    <innerdir refid="dir_278f3058075d2df0ac3aab9d51495056">/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents</innerdir>
+    <innerdir refid="dir_7e85e62eb0f2b773953ccadfdcb5284d">/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping</innerdir>
+    <innerdir refid="dir_a9f52d2fa39e957fa11ad57c00bd6a49">/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests</innerdir>
+    <innerfile refid="cli_8py">cli.py</innerfile>
+    <innerfile refid="main_8py">main.py</innerfile>
+    <innerfile refid="setup_8py">setup.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/"/>
+  </compounddef>
+</doxygen>

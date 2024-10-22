@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_backend_2report__type_2____init_____8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/__init__.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/__init__.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebackend">backend</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1report__type">backend.report_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacebackend_1_1report__type_1a926bda12b1e020f96b84d304394bdd9f">backend.report_type.__all__</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

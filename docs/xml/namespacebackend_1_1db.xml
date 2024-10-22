@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacebackend_1_1db" kind="namespace" language="Python">
+    <compoundname>backend::db</compoundname>
+    <innerclass refid="classbackend_1_1db_1_1User" prot="public">backend::db::User</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a12e4627d89ec45bd8387dec506627a0b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>backend.db.level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a7bf12892f824b7a3da5c6cb6e4e30ce5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>backend.db.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.POSTGRES_USER</definition>
+        <argsstring></argsstring>
+        <name>POSTGRES_USER</name>
+        <qualifiedname>backend.db.POSTGRES_USER</qualifiedname>
+        <initializer>=  os.getenv(&quot;POSTGRES_USER&quot;, &quot;default_user&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.POSTGRES_PASSWORD</definition>
+        <argsstring></argsstring>
+        <name>POSTGRES_PASSWORD</name>
+        <qualifiedname>backend.db.POSTGRES_PASSWORD</qualifiedname>
+        <initializer>=  os.getenv(&quot;POSTGRES_PASSWORD&quot;, &quot;default_password&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.POSTGRES_DB</definition>
+        <argsstring></argsstring>
+        <name>POSTGRES_DB</name>
+        <qualifiedname>backend.db.POSTGRES_DB</qualifiedname>
+        <initializer>=  os.getenv(&quot;POSTGRES_DB&quot;, &quot;default_db&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.POSTGRES_HOST</definition>
+        <argsstring></argsstring>
+        <name>POSTGRES_HOST</name>
+        <qualifiedname>backend.db.POSTGRES_HOST</qualifiedname>
+        <initializer>=  os.getenv(&quot;POSTGRES_HOST&quot;, &quot;localhost&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.POSTGRES_PORT</definition>
+        <argsstring></argsstring>
+        <name>POSTGRES_PORT</name>
+        <qualifiedname>backend.db.POSTGRES_PORT</qualifiedname>
+        <initializer>=  os.getenv(&quot;POSTGRES_PORT&quot;, &quot;5432&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str backend::db.DATABASE_URL</definition>
+        <argsstring></argsstring>
+        <name>DATABASE_URL</name>
+        <qualifiedname>backend.db.DATABASE_URL</qualifiedname>
+        <initializer>=  f&quot;postgresql://{os.getenv(&apos;<ref refid="namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b" kindref="member">POSTGRES_USER</ref>&apos;)}:{os.getenv(&apos;<ref refid="namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c" kindref="member">POSTGRES_PASSWORD</ref>&apos;)}@{os.getenv(&apos;<ref refid="namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290" kindref="member">POSTGRES_HOST</ref>&apos;)}:{os.getenv(&apos;<ref refid="namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885" kindref="member">POSTGRES_PORT</ref>&apos;)}/{os.getenv(&apos;<ref refid="namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18" kindref="member">POSTGRES_DB</ref>&apos;)}&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <qualifiedname>backend.db.engine</qualifiedname>
+        <initializer>=  create_engine(<ref refid="namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74" kindref="member">DATABASE_URL</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a0b318ee468d301d1808f4f6c49ada651" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.SessionLocal</definition>
+        <argsstring></argsstring>
+        <name>SessionLocal</name>
+        <qualifiedname>backend.db.SessionLocal</qualifiedname>
+        <initializer>=  sessionmaker(autocommit=False, autoflush=False, bind=<ref refid="namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5" kindref="member">engine</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="28" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="28" bodyend="-1"/>
+        <referencedby refid="namespacebackend_1_1db_1a531d50d0e97c20ce2de9118403d355c8" compoundref="db_8py" startline="61" endline="67">backend.db.get_db</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacebackend_1_1db_1a036b7ab6f207c3287b0668774b089dd0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>backend::db.Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>backend.db.Base</qualifiedname>
+        <initializer>=  declarative_base()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebackend_1_1db_1a531d50d0e97c20ce2de9118403d355c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.db.get_db</definition>
+        <argsstring>()</argsstring>
+        <name>get_db</name>
+        <qualifiedname>backend.db.get_db</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="61" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="61" bodyend="67"/>
+        <references refid="namespacebackend_1_1db_1a0b318ee468d301d1808f4f6c49ada651" compoundref="db_8py" startline="28">backend.db.SessionLocal</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacebackend_1_1db_1aede5ea7cecfbb5e666435bbf5fad8735" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.db.init_db</definition>
+        <argsstring>()</argsstring>
+        <name>init_db</name>
+        <qualifiedname>backend.db.init_db</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="68" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" bodystart="68" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

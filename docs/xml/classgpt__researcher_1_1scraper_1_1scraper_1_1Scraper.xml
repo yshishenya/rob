@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::scraper::scraper::Scraper</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a8a99ec6b0c69fa87a38d8edb77881515" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.scraper.scraper.Scraper::urls</definition>
+        <argsstring></argsstring>
+        <name>urls</name>
+        <qualifiedname>gpt_researcher.scraper.scraper.Scraper.urls</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9" compoundref="scraper_8py" startline="31" endline="40">gpt_researcher.scraper.scraper.Scraper.run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.scraper.scraper.Scraper::session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <qualifiedname>gpt_researcher.scraper.scraper.Scraper.session</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9" compoundref="scraper_8py" startline="31" endline="40">gpt_researcher.scraper.scraper.Scraper.run</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" compoundref="beautiful__soup_8py" startline="10" endline="39">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0c27f57a5be7f6d081c27b9545beb3b3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.scraper.scraper.Scraper::scraper</definition>
+        <argsstring></argsstring>
+        <name>scraper</name>
+        <qualifiedname>gpt_researcher.scraper.scraper.Scraper.scraper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a5aca6b83012ce2098ce090add0d3ac41" compoundref="scraper_8py" startline="57" endline="96">gpt_researcher.scraper.scraper.Scraper.get_scraper</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a85641ed66cd2c0f924dc6ce1bd148fe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.scraper.scraper.Scraper.__init__</definition>
+        <argsstring>(self, urls, user_agent, scraper)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.scraper.scraper.Scraper.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a8a99ec6b0c69fa87a38d8edb77881515" kindref="member">urls</ref></type>
+          <defname>urls</defname>
+        </param>
+        <param>
+          <type>user_agent</type>
+          <defname>user_agent</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0c27f57a5be7f6d081c27b9545beb3b3" kindref="member">scraper</ref></type>
+          <defname>scraper</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize the Scraper class.
+Args:
+    urls:
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" bodystart="20" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.scraper.scraper.Scraper.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <qualifiedname>gpt_researcher.scraper.scraper.Scraper.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extracts the content from the links
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" bodystart="31" bodyend="40"/>
+        <references refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aba3daf5affb83d09eef0bd0b767e9e39" compoundref="scraper_8py" startline="41" endline="56">gpt_researcher.scraper.scraper.Scraper.extract_data_from_link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1ac4ad713f998b37322ec9b98820a86123" compoundref="arxiv_8py" startline="8">gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f" compoundref="beautiful__soup_8py" startline="8">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1a2772460be01c2689081d6272cd804229" compoundref="newspaper_8py" startline="8">gpt_researcher.scraper.newspaper.newspaper.NewspaperScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a6bca3d146426fab875757b8db6b7bf43" compoundref="pymupdf_8py" startline="8">gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd" compoundref="scraper_8py" startline="27">gpt_researcher.scraper.scraper.Scraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a95306fb278fea8f96720e4a5d282a87f" compoundref="web__base__loader_8py" startline="8">gpt_researcher.scraper.web_base_loader.web_base_loader.WebBaseLoaderScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a8a99ec6b0c69fa87a38d8edb77881515" compoundref="scraper_8py" startline="26">gpt_researcher.scraper.scraper.Scraper.urls</references>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aba3daf5affb83d09eef0bd0b767e9e39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.scraper.scraper.Scraper.extract_data_from_link</definition>
+        <argsstring>(self, link, session)</argsstring>
+        <name>extract_data_from_link</name>
+        <qualifiedname>gpt_researcher.scraper.scraper.Scraper.extract_data_from_link</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>link</type>
+          <defname>link</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd" kindref="member">session</ref></type>
+          <defname>session</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extracts the data from the link
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" bodystart="41" bodyend="56"/>
+        <references refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a5aca6b83012ce2098ce090add0d3ac41" compoundref="scraper_8py" startline="57" endline="96">gpt_researcher.scraper.scraper.Scraper.get_scraper</references>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9" compoundref="scraper_8py" startline="31" endline="40">gpt_researcher.scraper.scraper.Scraper.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a5aca6b83012ce2098ce090add0d3ac41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.scraper.scraper.Scraper.get_scraper</definition>
+        <argsstring>(self, link)</argsstring>
+        <name>get_scraper</name>
+        <qualifiedname>gpt_researcher.scraper.scraper.Scraper.get_scraper</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>link</type>
+          <defname>link</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The function `get_scraper` determines the appropriate scraper class based on the provided link
+or a default scraper if none matches.
+
+Args:
+  link: The `get_scraper` method takes a `link` parameter which is a URL link to a webpage or a
+PDF file. Based on the type of content the link points to, the method determines the appropriate
+scraper class to use for extracting data from that content.
+
+Returns:
+  The `get_scraper` method returns the scraper class based on the provided link. The method
+checks the link to determine the appropriate scraper class to use based on predefined mappings
+in the `SCRAPER_CLASSES` dictionary. If the link ends with &quot;.pdf&quot;, it selects the
+`PyMuPDFScraper` class. If the link contains &quot;arxiv.org&quot;, it selects the `ArxivScraper
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" line="57" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" bodystart="57" bodyend="96"/>
+        <references refid="classgpt__researcher_1_1config_1_1config_1_1Config_1aba1f77d51845dfdb7544b847f07840c0" compoundref="config_8py" startline="32">gpt_researcher.config.config.Config.scraper</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0c27f57a5be7f6d081c27b9545beb3b3" compoundref="scraper_8py" startline="29">gpt_researcher.scraper.scraper.Scraper.scraper</references>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aba3daf5affb83d09eef0bd0b767e9e39" compoundref="scraper_8py" startline="41" endline="56">gpt_researcher.scraper.scraper.Scraper.extract_data_from_link</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Scraper class to extract the content from the links
+</verbatim> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.scraper.scraper.Scraper</label>
+        <link refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/scraper.py" bodystart="15" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a85641ed66cd2c0f924dc6ce1bd148fe6" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::scraper::Scraper</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aba3daf5affb83d09eef0bd0b767e9e39" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::scraper::Scraper</scope><name>extract_data_from_link</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a5aca6b83012ce2098ce090add0d3ac41" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::scraper::Scraper</scope><name>get_scraper</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::scraper::Scraper</scope><name>run</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0c27f57a5be7f6d081c27b9545beb3b3" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::scraper::Scraper</scope><name>scraper</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::scraper::Scraper</scope><name>session</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a8a99ec6b0c69fa87a38d8edb77881515" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::scraper::Scraper</scope><name>urls</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

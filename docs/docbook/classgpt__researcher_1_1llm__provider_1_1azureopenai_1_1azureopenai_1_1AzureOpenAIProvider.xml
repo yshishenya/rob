@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider" xml:lang="en-US">
+<title>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider Class Reference</title>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary></indexterm>
+Collaboration diagram for gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a6182ebc6af99249c07cbdbf94dc3b036">__init__</link> (self, <link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ad68ec6f87fb1cb6d6ad4291da0bf828d">deployment_name</link>, <link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a89b665935c21f5273b716cc6f47ccd14">temperature</link>, <link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a20e29cdd8ddf9c6ec7d88ffc73b8d3c1">max_tokens</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a7b6cdbf89f17a3cb3e4fe99545780915">get_api_key</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1aa9770c8dd905291c6c3ff2c7c39b0e18">get_llm_model</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ae188450aa1aaa71da865ec348f79508c">get_chat_response</link> (self, messages, stream, websocket=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1acae7065991e34f865ca1c233794095b4">stream_response</link> (self, messages, websocket=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ad68ec6f87fb1cb6d6ad4291da0bf828d">deployment_name</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a89b665935c21f5273b716cc6f47ccd14">temperature</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a20e29cdd8ddf9c6ec7d88ffc73b8d3c1">max_tokens</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a586ae8299a91a570ec410dd0fba45152">api_key</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a01c8fd4d7a1113ba093a7eb593927644">llm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a6182ebc6af99249c07cbdbf94dc3b036"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.__init__ ( self,  deployment_name,  temperature,  max_tokens)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a7b6cdbf89f17a3cb3e4fe99545780915"/><section>
+    <title>get_api_key()</title>
+<indexterm><primary>get_api_key</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>get_api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_api_key ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the OpenAI API key
+Returns:</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ae188450aa1aaa71da865ec348f79508c"/><section>
+    <title>get_chat_response()</title>
+<indexterm><primary>get_chat_response</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>get_chat_response</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_chat_response ( self,  messages,  stream,  websocket = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_ae188450aa1aaa71da865ec348f79508c_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1aa9770c8dd905291c6c3ff2c7c39b0e18"/><section>
+    <title>get_llm_model()</title>
+<indexterm><primary>get_llm_model</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>get_llm_model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_llm_model ( self)</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1acae7065991e34f865ca1c233794095b4"/><section>
+    <title>stream_response()</title>
+<indexterm><primary>stream_response</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>stream_response</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.stream_response ( self,  messages,  websocket = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_acae7065991e34f865ca1c233794095b4_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a586ae8299a91a570ec410dd0fba45152"/><section>
+    <title>api_key</title>
+<indexterm><primary>api_key</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.api_key</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ad68ec6f87fb1cb6d6ad4291da0bf828d"/><section>
+    <title>deployment_name</title>
+<indexterm><primary>deployment_name</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>deployment_name</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.deployment_name</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a01c8fd4d7a1113ba093a7eb593927644"/><section>
+    <title>llm</title>
+<indexterm><primary>llm</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>llm</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.llm</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a20e29cdd8ddf9c6ec7d88ffc73b8d3c1"/><section>
+    <title>max_tokens</title>
+<indexterm><primary>max_tokens</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>max_tokens</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.max_tokens</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a89b665935c21f5273b716cc6f47ccd14"/><section>
+    <title>temperature</title>
+<indexterm><primary>temperature</primary><secondary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider</primary><secondary>temperature</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.temperature</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/azureopenai/<link linkend="_azureopenai_8py">azureopenai.py</link></section>
+</section>

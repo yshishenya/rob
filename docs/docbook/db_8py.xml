@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_db_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/db.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbackend_1_1db_1_1User">backend.db.User</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebackend">backend</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1db">backend.db</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a531d50d0e97c20ce2de9118403d355c8">backend.db.get_db</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1aede5ea7cecfbb5e666435bbf5fad8735">backend.db.init_db</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a12e4627d89ec45bd8387dec506627a0b">backend.db.level</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a7bf12892f824b7a3da5c6cb6e4e30ce5">backend.db.logger</link> = logging.getLogger(__name__)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b">backend.db.POSTGRES_USER</link> = os.getenv(&quot;POSTGRES_USER&quot;, &quot;default_user&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c">backend.db.POSTGRES_PASSWORD</link> = os.getenv(&quot;POSTGRES_PASSWORD&quot;, &quot;default_password&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18">backend.db.POSTGRES_DB</link> = os.getenv(&quot;POSTGRES_DB&quot;, &quot;default_db&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290">backend.db.POSTGRES_HOST</link> = os.getenv(&quot;POSTGRES_HOST&quot;, &quot;localhost&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885">backend.db.POSTGRES_PORT</link> = os.getenv(&quot;POSTGRES_PORT&quot;, &quot;5432&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74">backend.db.DATABASE_URL</link> = f&quot;postgresql://{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a2c81f46a6c0833e0e7d1b21bd816234b">POSTGRES_USER</link>&apos;)}:{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a2328c07abd416fb91dbfb10c33b98b3c">POSTGRES_PASSWORD</link>&apos;)}@{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a3f77cd852989af7c147aebe846e4d290">POSTGRES_HOST</link>&apos;)}:{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a03c2448ae52310081c8c2299c5a68885">POSTGRES_PORT</link>&apos;)}/{os.getenv(&apos;<link linkend="_namespacebackend_1_1db_1a10c4e3657b51825bdb57f8b8e4f51f18">POSTGRES_DB</link>&apos;)}&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5">backend.db.engine</link> = create_engine(<link linkend="_namespacebackend_1_1db_1a2712f6a35719e12a41eb5c87bffcea74">DATABASE_URL</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a0b318ee468d301d1808f4f6c49ada651">backend.db.SessionLocal</link> = sessionmaker(autocommit=False, autoflush=False, bind=<link linkend="_namespacebackend_1_1db_1a33e6267c091c7fc29397fa9666cd25b5">engine</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1db_1a036b7ab6f207c3287b0668774b089dd0">backend.db.Base</link> = declarative_base()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

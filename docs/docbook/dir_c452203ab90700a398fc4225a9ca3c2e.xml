@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_c452203ab90700a398fc4225a9ca3c2e" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory Directory Reference</primary></indexterm>
+Directory dependency graph for memory:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_c452203ab90700a398fc4225a9ca3c2e_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_multi__agents_2memory_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_draft_8py">draft.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_research_8py">research.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

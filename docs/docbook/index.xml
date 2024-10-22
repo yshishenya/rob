@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>rob</title>
+    </info>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2report__type_2detailed__report_2README.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2CODE__OF__CONDUCT.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2contribute.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2examples_2examples.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2faq.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2config.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2example.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2langgraph.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2pip-package.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2roadmap.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2tailored-research.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2troubleshooting.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2welcome.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2gpt__researcher_2README.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README-zh__CN.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2README.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespaceagent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1editor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1master.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1publisher.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1researcher.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1reviewer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1reviser.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1utils.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1utils_1_1file__formats.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1utils_1_1llms.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1utils_1_1views.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceagents_1_1writer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceall-6-report-types.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceauth.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1db.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1report__type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1report__type_1_1basic__report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1report__type_1_1basic__report_1_1basic__report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1report__type_1_1detailed__report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1report__type_1_1detailed__report_1_1detailed__report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1server.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1utils.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacebackend_1_1websocket__manager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacecli.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacedb__seed.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacedocuments-report-source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1config.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1config_1_1config.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1context.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1context_1_1compression.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1context_1_1retriever.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1document.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1document_1_1document.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1anthropic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1azureopenai.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1generic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1google.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1google_1_1google.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1groq.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1groq_1_1groq.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1huggingface.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1mistral.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1mistral_1_1mistral.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1ollama.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1ollama_1_1ollama.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1openai.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1openai_1_1openai.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1together.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1llm__provider_1_1together_1_1together.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1master.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1master_1_1actions.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1master_1_1agent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1master_1_1prompts.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1memory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1memory_1_1embeddings.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1bing.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1bing_1_1bing.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1duckduckgo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1google.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1google_1_1google.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1searx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1searx_1_1searx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1serpapi.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1serper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1serper_1_1serper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1tavily.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1arxiv.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1arxiv_1_1arxiv.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1beautiful__soup.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1newspaper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1newspaper_1_1newspaper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1pymupdf.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1scraper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1web__base__loader.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1utils.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1utils_1_1costs.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1utils_1_1enum.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1utils_1_1llm.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacegpt__researcher_1_1utils_1_1validators.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacemain.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacememory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacememory_1_1draft.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacememory_1_1research.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceprocessing.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceprocessing_1_1html.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceprocessing_1_1text.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceredis__token__storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesample__report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacescrape__skills.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesetup.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacetoken__storage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceusers.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceweb__scrape.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="classagents_1_1utils_1_1views_1_1AgentColor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classBase.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classagents_1_1master_1_1ChiefEditorAgent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1config_1_1config_1_1Config.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1DeleteUserRequest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1DeleteUserResponse.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmemory_1_1draft_1_1DraftState.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classagents_1_1editor_1_1EditorAgent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1LoginRequest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1LoginResponse.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1PasswordChangeRequest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1PasswordChangeResponse.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classagents_1_1publisher_1_1PublisherAgent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classredis__token__storage_1_1RedisTokenStorage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1RefreshRequest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1RefreshResponse.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1utils_1_1enum_1_1ReportType.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classagents_1_1researcher_1_1ResearchAgent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbackend_1_1server_1_1ResearchRequest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classmemory_1_1research_1_1ResearchState.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classagents_1_1reviewer_1_1ReviewerAgent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classagents_1_1reviser_1_1ReviserAgent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1utils_1_1validators_1_1Subtopic.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1utils_1_1validators_1_1Subtopics.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classtoken__storage_1_1TokenStorage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbackend_1_1db_1_1User.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classdb__seed_1_1User.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1UserCreateRequest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classauth_1_1UserResponse.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classbackend_1_1websocket__manager_1_1WebSocketManager.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classagents_1_1writer_1_1WriterAgent.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="auth_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="auth_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="redis__token__storage_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="token__storage_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="basic__report_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="detailed__report_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="server_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="utils_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="websocket__manager_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="cli_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="CODE__OF__CONDUCT_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db__seed_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="2023-09-22-gpt-researcher_2index_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="2023-11-12-openai-assistant_2index_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="2024-05-19-gptr-langgraph_2index_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="contribute_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="examples_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="faq_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt-researcher_2config_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="reference_2config_2config_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="example_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="getting-started_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="introduction_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="langgraph_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="llms_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="pip-package_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="roadmap_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="tailored-research_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="troubleshooting_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="singleton_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="html_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="text_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="welcome_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="sample__report_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="users_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="config_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="compression_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="retriever_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="document_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="anthropic_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="azureopenai_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="base_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="groq_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="huggingface_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="mistral_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="ollama_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="openai_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="together_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="actions_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="prompts_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="embeddings_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bing_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="duckduckgo_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="llm__provider_2google_2google_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="retrievers_2google_2google_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="searx_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="serpapi_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="serper_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="tavily__search_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="arxiv_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="beautiful__soup_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="newspaper_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="pymupdf_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="scraper_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="web__base__loader_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="costs_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="enum_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="llm_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="validators_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="main_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="multi__agents_2main_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2master_2agent_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="multi__agents_2agent_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="editor_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="master_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="publisher_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="researcher_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="reviewer_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="reviser_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="file__formats_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="llms_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="views_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="writer_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="draft_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="research_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="backend_2report__type_2detailed__report_2README_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="docs_2README_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2README_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="multi__agents_2README_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="README_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="README-zh__CN_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="backend_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="backend_2report__type_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="backend_2report__type_2basic__report_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="backend_2report__type_2detailed__report_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2config_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2context_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2document_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2anthropic_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2azureopenai_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2generic_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2google_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2groq_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2huggingface_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2mistral_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2ollama_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2openai_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2llm__provider_2together_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2master_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2memory_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2retrievers_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2retrievers_2bing_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2retrievers_2duckduckgo_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2retrievers_2google_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2retrievers_2searx_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2retrievers_2serpapi_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2retrievers_2serper_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2retrievers_2tavily_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2scraper_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2scraper_2arxiv_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2scraper_2beautiful__soup_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2scraper_2newspaper_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2scraper_2pymupdf_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2scraper_2web__base__loader_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gpt__researcher_2utils_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="multi__agents_2agents_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="multi__agents_2agents_2utils_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="multi__agents_2memory_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="scraping_2processing_2____init_____8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="html_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="text_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="scrape__skills_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="web__scrape_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="setup_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="all-6-report-types_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="documents-report-source_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport" xml:lang="en-US">
+<title>backend.report_type.basic_report.basic_report.BasicReport Class Reference</title>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary></indexterm>
+Collaboration diagram for backend.report_type.basic_report.basic_report.BasicReport:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a834f92d507ea35ac8028100e6ba0ff84">__init__</link> (self, str <link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9f07fc9134995bd196ed12c7ea622d07">query</link>, str <link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a2dcab2334bc9a31175873974b774b63c">report_type</link>, str <link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9ab587878fb721a2ca400e8452236b28">report_source</link>, <link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a90b3c67e412be2fe90f04f399420435b">source_urls</link>, str <link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1af52dae954af0dd59a2b4c714f0616ef0">config_path</link>, WebSocket <link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a1d61521e8a9cc6dd46ce7dd2cabe97c1">websocket</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1ad217eead7f0dcb7a451a8d604cff71b1">run</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9f07fc9134995bd196ed12c7ea622d07">query</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a2dcab2334bc9a31175873974b774b63c">report_type</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9ab587878fb721a2ca400e8452236b28">report_source</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a90b3c67e412be2fe90f04f399420435b">source_urls</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1af52dae954af0dd59a2b4c714f0616ef0">config_path</link></para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a1d61521e8a9cc6dd46ce7dd2cabe97c1">websocket</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a834f92d507ea35ac8028100e6ba0ff84"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>backend.report_type.basic_report.basic_report.BasicReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>backend.report_type.basic_report.basic_report.BasicReport.__init__ ( self, str query, str report_type, str report_source,  source_urls, str config_path, WebSocket websocket)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1ad217eead7f0dcb7a451a8d604cff71b1"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>backend.report_type.basic_report.basic_report.BasicReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>backend.report_type.basic_report.basic_report.BasicReport.run ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1af52dae954af0dd59a2b4c714f0616ef0"/><section>
+    <title>config_path</title>
+<indexterm><primary>config_path</primary><secondary>backend.report_type.basic_report.basic_report.BasicReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary><secondary>config_path</secondary></indexterm>
+<para><computeroutput>backend.report_type.basic_report.basic_report.BasicReport.config_path</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9f07fc9134995bd196ed12c7ea622d07"/><section>
+    <title>query</title>
+<indexterm><primary>query</primary><secondary>backend.report_type.basic_report.basic_report.BasicReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary><secondary>query</secondary></indexterm>
+<para><computeroutput>backend.report_type.basic_report.basic_report.BasicReport.query</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9ab587878fb721a2ca400e8452236b28"/><section>
+    <title>report_source</title>
+<indexterm><primary>report_source</primary><secondary>backend.report_type.basic_report.basic_report.BasicReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary><secondary>report_source</secondary></indexterm>
+<para><computeroutput>backend.report_type.basic_report.basic_report.BasicReport.report_source</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a2dcab2334bc9a31175873974b774b63c"/><section>
+    <title>report_type</title>
+<indexterm><primary>report_type</primary><secondary>backend.report_type.basic_report.basic_report.BasicReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary><secondary>report_type</secondary></indexterm>
+<para><computeroutput>backend.report_type.basic_report.basic_report.BasicReport.report_type</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a90b3c67e412be2fe90f04f399420435b"/><section>
+    <title>source_urls</title>
+<indexterm><primary>source_urls</primary><secondary>backend.report_type.basic_report.basic_report.BasicReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary><secondary>source_urls</secondary></indexterm>
+<para><computeroutput>backend.report_type.basic_report.basic_report.BasicReport.source_urls</computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a1d61521e8a9cc6dd46ce7dd2cabe97c1"/><section>
+    <title>websocket</title>
+<indexterm><primary>websocket</primary><secondary>backend.report_type.basic_report.basic_report.BasicReport</secondary></indexterm>
+<indexterm><primary>backend.report_type.basic_report.basic_report.BasicReport</primary><secondary>websocket</secondary></indexterm>
+<para><computeroutput>backend.report_type.basic_report.basic_report.BasicReport.websocket</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/basic_report/<link linkend="_basic__report_8py">basic_report.py</link></section>
+</section>

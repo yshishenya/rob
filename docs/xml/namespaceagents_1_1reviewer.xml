@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceagents_1_1reviewer" kind="namespace" language="Python">
+    <compoundname>agents::reviewer</compoundname>
+    <innerclass refid="classagents_1_1reviewer_1_1ReviewerAgent" prot="public">agents::reviewer::ReviewerAgent</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceagents_1_1reviewer_1abac832073d6b2b703c15ee2ea425dcee" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str agents::reviewer.TEMPLATE</definition>
+        <argsstring></argsstring>
+        <name>TEMPLATE</name>
+        <qualifiedname>agents.reviewer.TEMPLATE</qualifiedname>
+        <initializer>=  &quot;&quot;&quot;You are an expert research article reviewer. \
+Your goal is to review research drafts and provide feedback to the reviser only based on specific guidelines. \
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" line="4" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceauth" kind="namespace" language="Python">
+    <compoundname>auth</compoundname>
+    <innerclass refid="classauth_1_1DeleteUserRequest" prot="public">auth::DeleteUserRequest</innerclass>
+    <innerclass refid="classauth_1_1DeleteUserResponse" prot="public">auth::DeleteUserResponse</innerclass>
+    <innerclass refid="classauth_1_1LoginRequest" prot="public">auth::LoginRequest</innerclass>
+    <innerclass refid="classauth_1_1LoginResponse" prot="public">auth::LoginResponse</innerclass>
+    <innerclass refid="classauth_1_1PasswordChangeRequest" prot="public">auth::PasswordChangeRequest</innerclass>
+    <innerclass refid="classauth_1_1PasswordChangeResponse" prot="public">auth::PasswordChangeResponse</innerclass>
+    <innerclass refid="classauth_1_1RefreshRequest" prot="public">auth::RefreshRequest</innerclass>
+    <innerclass refid="classauth_1_1RefreshResponse" prot="public">auth::RefreshResponse</innerclass>
+    <innerclass refid="classauth_1_1UserCreateRequest" prot="public">auth::UserCreateRequest</innerclass>
+    <innerclass refid="classauth_1_1UserResponse" prot="public">auth::UserResponse</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceauth_1a4d6f41e6ca1555ecb54695492ed9aeab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>auth.level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>auth.level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceauth_1a62ab3e5094f88012c1aa974d724cd41f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>auth.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>auth.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceauth_1af3c79770bc28a778b1b63717c336cd9f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>auth.oauth2_scheme</definition>
+        <argsstring></argsstring>
+        <name>oauth2_scheme</name>
+        <qualifiedname>auth.oauth2_scheme</qualifiedname>
+        <initializer>=  OAuth2PasswordBearer(tokenUrl=&quot;/login&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="98" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceauth_1ac305efe1aa5d2925562d0017531e8994" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int auth.MAX_ACTIVE_TOKENS_PER_USER</definition>
+        <argsstring></argsstring>
+        <name>MAX_ACTIVE_TOKENS_PER_USER</name>
+        <qualifiedname>auth.MAX_ACTIVE_TOKENS_PER_USER</qualifiedname>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="100" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceauth_1a17782a3fbe24b750bc69d23132af156d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>auth.token_storage</definition>
+        <argsstring></argsstring>
+        <name>token_storage</name>
+        <qualifiedname>auth.token_storage</qualifiedname>
+        <initializer>=  <ref refid="classredis__token__storage_1_1RedisTokenStorage" kindref="compound">RedisTokenStorage</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="103" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceauth_1ac9f9e08195c81445beb8356975041a8e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>auth.auth_router</definition>
+        <argsstring></argsstring>
+        <name>auth_router</name>
+        <qualifiedname>auth.auth_router</qualifiedname>
+        <initializer>=  APIRouter()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="106" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceauth_1a70d915b763db8a2e3530d2b9287522ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.token_required</definition>
+        <argsstring>(WebSocket websocket, Session db=Depends(get_db))</argsstring>
+        <name>token_required</name>
+        <qualifiedname>auth.token_required</qualifiedname>
+        <param>
+          <type>WebSocket</type>
+          <declname>websocket</declname>
+        </param>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="109" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="109" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a7e51e09218962c17b300982e11efdb7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.get_current_user_admin</definition>
+        <argsstring>(str token=Depends(oauth2_scheme), Session db=Depends(get_db))</argsstring>
+        <name>get_current_user_admin</name>
+        <qualifiedname>auth.get_current_user_admin</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>token</declname>
+          <defval>Depends(<ref refid="namespaceauth_1af3c79770bc28a778b1b63717c336cd9f" kindref="member">oauth2_scheme</ref>)</defval>
+        </param>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="127" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="127" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a52b18e20d7cd7aa87cddc90e819c293c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.create_tokens</definition>
+        <argsstring>(user_id)</argsstring>
+        <name>create_tokens</name>
+        <qualifiedname>auth.create_tokens</qualifiedname>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="162" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="162" bodyend="191"/>
+        <referencedby refid="namespaceauth_1a70e6da45c7251d2296a1db1d56f5e359" compoundref="auth_8py" startline="192" endline="222">login</referencedby>
+        <referencedby refid="namespaceauth_1a71394ac4b1319dfb9517cb819f761128" compoundref="auth_8py" startline="243" endline="296">refresh_token</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a70e6da45c7251d2296a1db1d56f5e359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.login</definition>
+        <argsstring>(OAuth2PasswordRequestForm form_data=Depends(), Session db=Depends(get_db))</argsstring>
+        <name>login</name>
+        <qualifiedname>auth.login</qualifiedname>
+        <param>
+          <type>OAuth2PasswordRequestForm</type>
+          <declname>form_data</declname>
+          <defval>Depends()</defval>
+        </param>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="192" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="192" bodyend="222"/>
+        <references refid="namespaceauth_1a52b18e20d7cd7aa87cddc90e819c293c" compoundref="auth_8py" startline="162" endline="191">create_tokens</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1af95c0810d88230a4edd324a6d0c1f376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.logout</definition>
+        <argsstring>(RefreshRequest request)</argsstring>
+        <name>logout</name>
+        <qualifiedname>auth.logout</qualifiedname>
+        <param>
+          <type><ref refid="classauth_1_1RefreshRequest" kindref="compound">RefreshRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="223" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="223" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a71394ac4b1319dfb9517cb819f761128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.refresh_token</definition>
+        <argsstring>(RefreshRequest request, Session db=Depends(get_db))</argsstring>
+        <name>refresh_token</name>
+        <qualifiedname>auth.refresh_token</qualifiedname>
+        <param>
+          <type><ref refid="classauth_1_1RefreshRequest" kindref="compound">RefreshRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="243" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="243" bodyend="296"/>
+        <references refid="namespaceauth_1a52b18e20d7cd7aa87cddc90e819c293c" compoundref="auth_8py" startline="162" endline="191">create_tokens</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a3a0f4542a8021c943517d9ef7f7207cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.create_user</definition>
+        <argsstring>(UserCreateRequest user_request, Session db=Depends(get_db), User admin=Depends(get_current_user_admin))</argsstring>
+        <name>create_user</name>
+        <qualifiedname>auth.create_user</qualifiedname>
+        <param>
+          <type><ref refid="classauth_1_1UserCreateRequest" kindref="compound">UserCreateRequest</ref></type>
+          <declname>user_request</declname>
+        </param>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <param>
+          <type>User</type>
+          <declname>admin</declname>
+          <defval>Depends(<ref refid="namespaceauth_1a7e51e09218962c17b300982e11efdb7c" kindref="member">get_current_user_admin</ref>)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="297" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="297" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a1255c2b2d79877783d9ac9c59b9cba0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.delete_user</definition>
+        <argsstring>(DeleteUserRequest user_request, Session db=Depends(get_db), User admin=Depends(get_current_user_admin))</argsstring>
+        <name>delete_user</name>
+        <qualifiedname>auth.delete_user</qualifiedname>
+        <param>
+          <type><ref refid="classauth_1_1DeleteUserRequest" kindref="compound">DeleteUserRequest</ref></type>
+          <declname>user_request</declname>
+        </param>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <param>
+          <type>User</type>
+          <declname>admin</declname>
+          <defval>Depends(<ref refid="namespaceauth_1a7e51e09218962c17b300982e11efdb7c" kindref="member">get_current_user_admin</ref>)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="313" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="313" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a1c21095f56d293d884bf37f46582accc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.change_user_password</definition>
+        <argsstring>(PasswordChangeRequest password_request, Session db=Depends(get_db), User admin=Depends(get_current_user_admin))</argsstring>
+        <name>change_user_password</name>
+        <qualifiedname>auth.change_user_password</qualifiedname>
+        <param>
+          <type><ref refid="classauth_1_1PasswordChangeRequest" kindref="compound">PasswordChangeRequest</ref></type>
+          <declname>password_request</declname>
+        </param>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <param>
+          <type>User</type>
+          <declname>admin</declname>
+          <defval>Depends(<ref refid="namespaceauth_1a7e51e09218962c17b300982e11efdb7c" kindref="member">get_current_user_admin</ref>)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="336" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="336" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1aefa7a593395931644be08041ce109591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.modify_user</definition>
+        <argsstring>(UserCreateRequest user_request, Session db=Depends(get_db), User admin=Depends(get_current_user_admin))</argsstring>
+        <name>modify_user</name>
+        <qualifiedname>auth.modify_user</qualifiedname>
+        <param>
+          <type><ref refid="classauth_1_1UserCreateRequest" kindref="compound">UserCreateRequest</ref></type>
+          <declname>user_request</declname>
+        </param>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <param>
+          <type>User</type>
+          <declname>admin</declname>
+          <defval>Depends(<ref refid="namespaceauth_1a7e51e09218962c17b300982e11efdb7c" kindref="member">get_current_user_admin</ref>)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="353" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="353" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a9242c3c841da8f428f532e8f827844a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.get_users</definition>
+        <argsstring>(Session db=Depends(get_db), User admin=Depends(get_current_user_admin))</argsstring>
+        <name>get_users</name>
+        <qualifiedname>auth.get_users</qualifiedname>
+        <param>
+          <type>Session</type>
+          <declname>db</declname>
+          <defval>Depends(get_db)</defval>
+        </param>
+        <param>
+          <type>User</type>
+          <declname>admin</declname>
+          <defval>Depends(<ref refid="namespaceauth_1a7e51e09218962c17b300982e11efdb7c" kindref="member">get_current_user_admin</ref>)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="375" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="375" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceauth_1a0576ac38388513ffb14572026ff67e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>auth.init_app</definition>
+        <argsstring>(app)</argsstring>
+        <name>init_app</name>
+        <qualifiedname>auth.init_app</qualifiedname>
+        <param>
+          <type>app</type>
+          <defname>app</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="381" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="381" bodyend="385"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

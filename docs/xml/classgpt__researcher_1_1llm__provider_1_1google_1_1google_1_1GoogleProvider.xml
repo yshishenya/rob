@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::llm_provider::google::google::GoogleProvider</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ac3df1d6d1e08797d265905b0f7d326e0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a" compoundref="anthropic_8py" startline="34" endline="44">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" compoundref="llm__provider_2google_2google_8py" startline="35" endline="45">gpt_researcher.llm_provider.google.google.GoogleProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef" compoundref="groq_8py" startline="35" endline="45">gpt_researcher.llm_provider.groq.groq.GroqProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a13b615065860169c0406faa06d0ec627" compoundref="huggingface_8py" startline="34" endline="44">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2fbf90be0afcd22fffc64207b310b2cc" compoundref="mistral_8py" startline="34" endline="44">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1ab60b0d1083b153b47fb6336a914edbe3" compoundref="ollama_8py" startline="30" endline="41">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3" compoundref="openai_8py" startline="45" endline="57">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1aa75375bd2720f0f71037e08629cbca0f" compoundref="together_8py" startline="34" endline="44">gpt_researcher.llm_provider.together.together.TogetherProvider.get_llm_model</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a80ae147cda8983381e25d2e3c10d7db9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.temperature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a" compoundref="anthropic_8py" startline="34" endline="44">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1aa9770c8dd905291c6c3ff2c7c39b0e18" compoundref="azureopenai_8py" startline="47" endline="57">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" compoundref="llm__provider_2google_2google_8py" startline="35" endline="45">gpt_researcher.llm_provider.google.google.GoogleProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef" compoundref="groq_8py" startline="35" endline="45">gpt_researcher.llm_provider.groq.groq.GroqProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a13b615065860169c0406faa06d0ec627" compoundref="huggingface_8py" startline="34" endline="44">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2fbf90be0afcd22fffc64207b310b2cc" compoundref="mistral_8py" startline="34" endline="44">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1ab60b0d1083b153b47fb6336a914edbe3" compoundref="ollama_8py" startline="30" endline="41">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3" compoundref="openai_8py" startline="45" endline="57">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1aa75375bd2720f0f71037e08629cbca0f" compoundref="together_8py" startline="34" endline="44">gpt_researcher.llm_provider.together.together.TogetherProvider.get_llm_model</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fd8cd660e5d244998f7dcaf857a0b9b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider::max_tokens</definition>
+        <argsstring></argsstring>
+        <name>max_tokens</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.max_tokens</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a" compoundref="anthropic_8py" startline="34" endline="44">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1aa9770c8dd905291c6c3ff2c7c39b0e18" compoundref="azureopenai_8py" startline="47" endline="57">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" compoundref="llm__provider_2google_2google_8py" startline="35" endline="45">gpt_researcher.llm_provider.google.google.GoogleProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef" compoundref="groq_8py" startline="35" endline="45">gpt_researcher.llm_provider.groq.groq.GroqProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a13b615065860169c0406faa06d0ec627" compoundref="huggingface_8py" startline="34" endline="44">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2fbf90be0afcd22fffc64207b310b2cc" compoundref="mistral_8py" startline="34" endline="44">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3" compoundref="openai_8py" startline="45" endline="57">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1aa75375bd2720f0f71037e08629cbca0f" compoundref="together_8py" startline="34" endline="44">gpt_researcher.llm_provider.together.together.TogetherProvider.get_llm_model</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ada73e93b41ac24b657a020d4b6f1b95b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider::api_key</definition>
+        <argsstring></argsstring>
+        <name>api_key</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.api_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a" compoundref="anthropic_8py" startline="34" endline="44">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1aa9770c8dd905291c6c3ff2c7c39b0e18" compoundref="azureopenai_8py" startline="47" endline="57">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" compoundref="llm__provider_2google_2google_8py" startline="35" endline="45">gpt_researcher.llm_provider.google.google.GoogleProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef" compoundref="groq_8py" startline="35" endline="45">gpt_researcher.llm_provider.groq.groq.GroqProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a13b615065860169c0406faa06d0ec627" compoundref="huggingface_8py" startline="34" endline="44">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2fbf90be0afcd22fffc64207b310b2cc" compoundref="mistral_8py" startline="34" endline="44">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3" compoundref="openai_8py" startline="45" endline="57">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1aa75375bd2720f0f71037e08629cbca0f" compoundref="together_8py" startline="34" endline="44">gpt_researcher.llm_provider.together.together.TogetherProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1ae1de69ecb584e83b441481c2458b7802" compoundref="bing_8py" startline="34" endline="89">gpt_researcher.retrievers.bing.bing.BingSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1adc1c93156cf9ada3cf939cc50d8e9bd7" compoundref="serpapi_8py" startline="36" endline="78">gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1adc6d86b893e3b2e65ad8977feba7c1fd" compoundref="serper_8py" startline="35" endline="82">gpt_researcher.retrievers.serper.serper.SerperSearch.search</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a0c39cb6d2189032c7b68cbb2ea9f0f50" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider::llm</definition>
+        <argsstring></argsstring>
+        <name>llm</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.llm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ac3fdbde2bf2dc7800522c507f0f12fc6" compoundref="anthropic_8py" startline="45" endline="53">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ae188450aa1aaa71da865ec348f79508c" compoundref="azureopenai_8py" startline="58" endline="67">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a7118a4fc7e0988004cc4c1a0e8d88c3e" compoundref="base_8py" startline="94" endline="103">gpt_researcher.llm_provider.generic.base.GenericLLMProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a49c7b0490a86d4f79072903680ee66bc" compoundref="llm__provider_2google_2google_8py" startline="73" endline="83">gpt_researcher.llm_provider.google.google.GoogleProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1ab91061c617161fc62ef9475197d96fe6" compoundref="groq_8py" startline="46" endline="54">gpt_researcher.llm_provider.groq.groq.GroqProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a29c4557a7dba4a30faf237cf98374de0" compoundref="huggingface_8py" startline="45" endline="53">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a61da1b8639a70293d3f60a3674ccbef7" compoundref="mistral_8py" startline="45" endline="53">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1abca636c4eebeec620a4392555613ff9b" compoundref="ollama_8py" startline="42" endline="51">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1acf1062fad12cc7ca7b3b8605e479ab49" compoundref="openai_8py" startline="58" endline="67">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a2dc524dd2fe07ff061da1f86d474e40d" compoundref="together_8py" startline="45" endline="53">gpt_researcher.llm_provider.together.together.TogetherProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1af38dafb273b5ae2fb4983fcbcf00617c" compoundref="anthropic_8py" startline="54" endline="72">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1acae7065991e34f865ca1c233794095b4" compoundref="azureopenai_8py" startline="68" endline="86">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a3fb2ac1b5d289a3b4a22d083b025052e" compoundref="base_8py" startline="104" endline="124">gpt_researcher.llm_provider.generic.base.GenericLLMProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fe0e930693b7b5e2ac287fed6facc35" compoundref="llm__provider_2google_2google_8py" startline="84" endline="102">gpt_researcher.llm_provider.google.google.GoogleProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a93be9e7cc2192cb605eb4eb6f1ef3f7d" compoundref="groq_8py" startline="55" endline="73">gpt_researcher.llm_provider.groq.groq.GroqProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a1cea93e5495738cf31047865f4c50448" compoundref="huggingface_8py" startline="54" endline="72">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1ad46ecf3c0c6e62502709cdf36b783fb6" compoundref="mistral_8py" startline="54" endline="72">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1acc5ec4a2e770daf8a88b0e41ee044c04" compoundref="ollama_8py" startline="52" endline="70">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a4d59b5af663196df435cac336e439c40" compoundref="openai_8py" startline="68" endline="86">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.stream_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a8b56080c220a05856546d516e1a628c4" compoundref="together_8py" startline="54" endline="72">gpt_researcher.llm_provider.together.together.TogetherProvider.stream_response</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1aa8e2340bd293c976a2b1fe8deafeb58b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider.__init__</definition>
+        <argsstring>(self, model, temperature, max_tokens)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ac3df1d6d1e08797d265905b0f7d326e0" kindref="member">model</ref></type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a80ae147cda8983381e25d2e3c10d7db9" kindref="member">temperature</ref></type>
+          <defname>temperature</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fd8cd660e5d244998f7dcaf857a0b9b" kindref="member">max_tokens</ref></type>
+          <defname>max_tokens</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ac7710089e3ce8c6adf7de660710c43d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider.get_api_key</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_api_key</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.get_api_key</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Gets the GEMINI_API_KEY
+Returns:</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="22" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider.get_llm_model</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_llm_model</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.get_llm_model</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="35" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="35" bodyend="45"/>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ab03d946eb28e42807867a05dfd285dad" compoundref="anthropic_8py" startline="18">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a586ae8299a91a570ec410dd0fba45152" compoundref="azureopenai_8py" startline="31">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ada73e93b41ac24b657a020d4b6f1b95b" compoundref="llm__provider_2google_2google_8py" startline="19">gpt_researcher.llm_provider.google.google.GoogleProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a5b8c30e4ca0e9f851fc488b9ece44a38" compoundref="groq_8py" startline="18">gpt_researcher.llm_provider.groq.groq.GroqProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1acac348196c0ba3de9c81e6e182d4a6fd" compoundref="huggingface_8py" startline="18">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1abd922b050c1302c18b04b4a459067e0b" compoundref="mistral_8py" startline="18">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afd786ea7857266ca7849de09f8048eec" compoundref="openai_8py" startline="18">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1ab2e02cc405885217041e42771c792864" compoundref="together_8py" startline="18">gpt_researcher.llm_provider.together.together.TogetherProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1a174821f8b19141c63d31775f5b5c6a40" compoundref="bing_8py" startline="20">gpt_researcher.retrievers.bing.bing.BingSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a01e609650947ae8d5dd032098a4eee0f" compoundref="retrievers_2google_2google_8py" startline="21">gpt_researcher.retrievers.google.google.GoogleSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a99e7c093235d706ca95b13b15eb5edbf" compoundref="searx_8py" startline="20">gpt_researcher.retrievers.searx.searx.SearxSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a0cc82e642dd445f13c62344c4ceed176" compoundref="serpapi_8py" startline="21">gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1a7e94f43d2a7fcecc2840c018274a0602" compoundref="serper_8py" startline="20">gpt_researcher.retrievers.serper.serper.SerperSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1a1b30b96a97a06cba1240acfe2f03a444" compoundref="tavily__search_8py" startline="20">gpt_researcher.retrievers.tavily.tavily_search.TavilySearch.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa7ccf630e111106209d5613a68e75e74" compoundref="anthropic_8py" startline="17">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a20e29cdd8ddf9c6ec7d88ffc73b8d3c1" compoundref="azureopenai_8py" startline="30">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fd8cd660e5d244998f7dcaf857a0b9b" compoundref="llm__provider_2google_2google_8py" startline="18">gpt_researcher.llm_provider.google.google.GoogleProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1acac3ce57a20d2957d07183f64a619764" compoundref="groq_8py" startline="17">gpt_researcher.llm_provider.groq.groq.GroqProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a2a1a7e7ca34c9a9dabd4f5e7bc466837" compoundref="huggingface_8py" startline="17">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1aab3e3cb4d5f2cb0b3217074772edccde" compoundref="mistral_8py" startline="17">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a27d45ca589ace704c67a3192039fe0e7" compoundref="ollama_8py" startline="16">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1ae049a93afa3ac3d6a84f52a330677582" compoundref="openai_8py" startline="17">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1ae48dd7501c5c14af4afc754d89471edb" compoundref="together_8py" startline="17">gpt_researcher.llm_provider.together.together.TogetherProvider.max_tokens</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a68f8555c0ce8af4a803d3796970fba70" compoundref="anthropic_8py" startline="15">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.model</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ac3df1d6d1e08797d265905b0f7d326e0" compoundref="llm__provider_2google_2google_8py" startline="16">gpt_researcher.llm_provider.google.google.GoogleProvider.model</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aee52b0ee4c82ec48ccacc503d87a69ff" compoundref="groq_8py" startline="15">gpt_researcher.llm_provider.groq.groq.GroqProvider.model</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1af1fb58293b0de0d5c8d74bcecf9e8aa6" compoundref="huggingface_8py" startline="15">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.model</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2a5d786261b6d470fffc4758cd1acd88" compoundref="mistral_8py" startline="15">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.model</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1ab847ab673b47eff2b2668b17d1e409b9" compoundref="ollama_8py" startline="14">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.model</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afe5c6d8875b14decb465cd65967e4682" compoundref="openai_8py" startline="15">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.model</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1af693cfba8f4dd9f2dc986c7ca1b2ef41" compoundref="together_8py" startline="15">gpt_researcher.llm_provider.together.together.TogetherProvider.model</references>
+        <references refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a01c0bab04e704c5c365ce2910e6f443b" compoundref="config_8py" startline="23">gpt_researcher.config.config.Config.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a52bf81b60a6415ef5cb2220161cd43f9" compoundref="anthropic_8py" startline="16">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a89b665935c21f5273b716cc6f47ccd14" compoundref="azureopenai_8py" startline="29">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a80ae147cda8983381e25d2e3c10d7db9" compoundref="llm__provider_2google_2google_8py" startline="17">gpt_researcher.llm_provider.google.google.GoogleProvider.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a7a527e8110e477b13c391f6eb32080ae" compoundref="groq_8py" startline="16">gpt_researcher.llm_provider.groq.groq.GroqProvider.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a744e253ed67e07d2bb6dcf988ee61ff8" compoundref="huggingface_8py" startline="16">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1ab85d58e96f26f27bf3b84e46b9fd184c" compoundref="mistral_8py" startline="16">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a75ef1fe2b40db6e77bea1efe8598e738" compoundref="ollama_8py" startline="15">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a1ed0519fedb6ae1b75f5da4130223f21" compoundref="openai_8py" startline="16">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.temperature</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a9439963a23a8b4e668c34a54fd20f67d" compoundref="together_8py" startline="16">gpt_researcher.llm_provider.together.together.TogetherProvider.temperature</references>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a931138c8a6df46e690aab09cef081823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider.convert_messages</definition>
+        <argsstring>(self, messages)</argsstring>
+        <name>convert_messages</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.convert_messages</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>messages</type>
+          <defname>messages</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The function `convert_messages` converts messages based on their role into either SystemMessage
+or HumanMessage objects.
+
+Args:
+  messages: It looks like the code snippet you provided is a function called `convert_messages`
+that takes a list of messages as input and converts each message based on its role into either a
+`SystemMessage` or a `HumanMessage`.
+
+Returns:
+  The `convert_messages` function is returning a list of converted messages based on the input
+`messages`. The function checks the role of each message in the input list and creates a new
+`SystemMessage` object if the role is &quot;system&quot; or a new `HumanMessage` object if the role is
+&quot;user&quot;. The function then returns a list of these converted messages.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="46" bodyend="72"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a49c7b0490a86d4f79072903680ee66bc" compoundref="llm__provider_2google_2google_8py" startline="73" endline="83">gpt_researcher.llm_provider.google.google.GoogleProvider.get_chat_response</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a49c7b0490a86d4f79072903680ee66bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider.get_chat_response</definition>
+        <argsstring>(self, messages, stream, websocket=None)</argsstring>
+        <name>get_chat_response</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.get_chat_response</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>messages</type>
+          <defname>messages</defname>
+        </param>
+        <param>
+          <type>stream</type>
+          <defname>stream</defname>
+        </param>
+        <param>
+          <type>websocket</type>
+          <defname>websocket</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="73" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="73" bodyend="83"/>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a931138c8a6df46e690aab09cef081823" compoundref="llm__provider_2google_2google_8py" startline="46" endline="72">gpt_researcher.llm_provider.google.google.GoogleProvider.convert_messages</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a0b98048adb58423b9770b0cadc1a30a7" compoundref="anthropic_8py" startline="19">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a01c8fd4d7a1113ba093a7eb593927644" compoundref="azureopenai_8py" startline="32">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a968f0ce951b3fde23ca54642d23d9da8" compoundref="base_8py" startline="10">gpt_researcher.llm_provider.generic.base.GenericLLMProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a0c39cb6d2189032c7b68cbb2ea9f0f50" compoundref="llm__provider_2google_2google_8py" startline="20">gpt_researcher.llm_provider.google.google.GoogleProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a91a7c71ec87556b2f7913f20ee1a2a11" compoundref="groq_8py" startline="19">gpt_researcher.llm_provider.groq.groq.GroqProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a60ae17b7c8f1446988ded590efda9e4a" compoundref="huggingface_8py" startline="19">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a24f3c3355f5ee04c048a91142f2867ff" compoundref="mistral_8py" startline="19">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a8c2509e16a319613e2142a5e78164e3b" compoundref="ollama_8py" startline="18">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a41af2bc0067c62cb918d41a1a256ec86" compoundref="openai_8py" startline="20">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1ad4ec56061e529c2534e4baa909c0987d" compoundref="together_8py" startline="19">gpt_researcher.llm_provider.together.together.TogetherProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1af38dafb273b5ae2fb4983fcbcf00617c" compoundref="anthropic_8py" startline="54" endline="72">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1acae7065991e34f865ca1c233794095b4" compoundref="azureopenai_8py" startline="68" endline="86">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a3fb2ac1b5d289a3b4a22d083b025052e" compoundref="base_8py" startline="104" endline="124">gpt_researcher.llm_provider.generic.base.GenericLLMProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fe0e930693b7b5e2ac287fed6facc35" compoundref="llm__provider_2google_2google_8py" startline="84" endline="102">gpt_researcher.llm_provider.google.google.GoogleProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a93be9e7cc2192cb605eb4eb6f1ef3f7d" compoundref="groq_8py" startline="55" endline="73">gpt_researcher.llm_provider.groq.groq.GroqProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a1cea93e5495738cf31047865f4c50448" compoundref="huggingface_8py" startline="54" endline="72">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1ad46ecf3c0c6e62502709cdf36b783fb6" compoundref="mistral_8py" startline="54" endline="72">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1acc5ec4a2e770daf8a88b0e41ee044c04" compoundref="ollama_8py" startline="52" endline="70">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a4d59b5af663196df435cac336e439c40" compoundref="openai_8py" startline="68" endline="86">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.stream_response</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a8b56080c220a05856546d516e1a628c4" compoundref="together_8py" startline="54" endline="72">gpt_researcher.llm_provider.together.together.TogetherProvider.stream_response</references>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fe0e930693b7b5e2ac287fed6facc35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.llm_provider.google.google.GoogleProvider.stream_response</definition>
+        <argsstring>(self, messages, websocket=None)</argsstring>
+        <name>stream_response</name>
+        <qualifiedname>gpt_researcher.llm_provider.google.google.GoogleProvider.stream_response</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>messages</type>
+          <defname>messages</defname>
+        </param>
+        <param>
+          <type>websocket</type>
+          <defname>websocket</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="84" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="84" bodyend="102"/>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a0b98048adb58423b9770b0cadc1a30a7" compoundref="anthropic_8py" startline="19">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a01c8fd4d7a1113ba093a7eb593927644" compoundref="azureopenai_8py" startline="32">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a968f0ce951b3fde23ca54642d23d9da8" compoundref="base_8py" startline="10">gpt_researcher.llm_provider.generic.base.GenericLLMProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a0c39cb6d2189032c7b68cbb2ea9f0f50" compoundref="llm__provider_2google_2google_8py" startline="20">gpt_researcher.llm_provider.google.google.GoogleProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a91a7c71ec87556b2f7913f20ee1a2a11" compoundref="groq_8py" startline="19">gpt_researcher.llm_provider.groq.groq.GroqProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a60ae17b7c8f1446988ded590efda9e4a" compoundref="huggingface_8py" startline="19">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a24f3c3355f5ee04c048a91142f2867ff" compoundref="mistral_8py" startline="19">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1a8c2509e16a319613e2142a5e78164e3b" compoundref="ollama_8py" startline="18">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a41af2bc0067c62cb918d41a1a256ec86" compoundref="openai_8py" startline="20">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.llm</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1ad4ec56061e529c2534e4baa909c0987d" compoundref="together_8py" startline="19">gpt_researcher.llm_provider.together.together.TogetherProvider.llm</references>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ac3fdbde2bf2dc7800522c507f0f12fc6" compoundref="anthropic_8py" startline="45" endline="53">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1ae188450aa1aaa71da865ec348f79508c" compoundref="azureopenai_8py" startline="58" endline="67">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1a7118a4fc7e0988004cc4c1a0e8d88c3e" compoundref="base_8py" startline="94" endline="103">gpt_researcher.llm_provider.generic.base.GenericLLMProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a49c7b0490a86d4f79072903680ee66bc" compoundref="llm__provider_2google_2google_8py" startline="73" endline="83">gpt_researcher.llm_provider.google.google.GoogleProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1ab91061c617161fc62ef9475197d96fe6" compoundref="groq_8py" startline="46" endline="54">gpt_researcher.llm_provider.groq.groq.GroqProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a29c4557a7dba4a30faf237cf98374de0" compoundref="huggingface_8py" startline="45" endline="53">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a61da1b8639a70293d3f60a3674ccbef7" compoundref="mistral_8py" startline="45" endline="53">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1abca636c4eebeec620a4392555613ff9b" compoundref="ollama_8py" startline="42" endline="51">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1acf1062fad12cc7ca7b3b8605e479ab49" compoundref="openai_8py" startline="58" endline="67">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_chat_response</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1a2dc524dd2fe07ff061da1f86d474e40d" compoundref="together_8py" startline="45" endline="53">gpt_researcher.llm_provider.together.together.TogetherProvider.get_chat_response</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.llm_provider.google.google.GoogleProvider</label>
+        <link refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/google/google.py" bodystart="8" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1aa8e2340bd293c976a2b1fe8deafeb58b" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ada73e93b41ac24b657a020d4b6f1b95b" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>api_key</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a931138c8a6df46e690aab09cef081823" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>convert_messages</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ac7710089e3ce8c6adf7de660710c43d9" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>get_api_key</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a49c7b0490a86d4f79072903680ee66bc" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>get_chat_response</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>get_llm_model</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a0c39cb6d2189032c7b68cbb2ea9f0f50" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>llm</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fd8cd660e5d244998f7dcaf857a0b9b" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>max_tokens</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ac3df1d6d1e08797d265905b0f7d326e0" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>model</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a8fe0e930693b7b5e2ac287fed6facc35" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>stream_response</name></member>
+      <member refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1a80ae147cda8983381e25d2e3c10d7db9" prot="public" virt="non-virtual"><scope>gpt_researcher::llm_provider::google::google::GoogleProvider</scope><name>temperature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

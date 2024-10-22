@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever" xml:lang="en-US">
+<title>gpt_researcher.context.retriever.SearchAPIRetriever Class Reference</title>
+<indexterm><primary>gpt_researcher.context.retriever.SearchAPIRetriever</primary></indexterm>
+Inheritance diagram for gpt_researcher.context.retriever.SearchAPIRetriever:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for gpt_researcher.context.retriever.SearchAPIRetriever:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1a403976a777ded595557dda0b9bca2cad">pages</link> = []</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>List[Document] <link linkend="_classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1ad348c38878f9d19adb17a5c7a88318a8">_get_relevant_documents</link> (self, str query, *CallbackManagerForRetrieverRun run_manager)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Search API retriever.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1ad348c38878f9d19adb17a5c7a88318a8"/><section>
+    <title>_get_relevant_documents()</title>
+<indexterm><primary>_get_relevant_documents</primary><secondary>gpt_researcher.context.retriever.SearchAPIRetriever</secondary></indexterm>
+<indexterm><primary>gpt_researcher.context.retriever.SearchAPIRetriever</primary><secondary>_get_relevant_documents</secondary></indexterm>
+<para><computeroutput> List[Document] gpt_researcher.context.retriever.SearchAPIRetriever._get_relevant_documents ( self, str query, *CallbackManagerForRetrieverRun
+     run_manager)<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever_1a403976a777ded595557dda0b9bca2cad"/><section>
+    <title>pages</title>
+<indexterm><primary>pages</primary><secondary>gpt_researcher.context.retriever.SearchAPIRetriever</secondary></indexterm>
+<indexterm><primary>gpt_researcher.context.retriever.SearchAPIRetriever</primary><secondary>pages</secondary></indexterm>
+<para><computeroutput>list gpt_researcher.context.retriever.SearchAPIRetriever.pages = []<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/<link linkend="_retriever_8py">retriever.py</link></section>
+</section>

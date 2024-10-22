@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceagents_1_1utils_1_1file__formats" xml:lang="en-US">
+<title>agents.utils.file_formats Namespace Reference</title>
+<indexterm><primary>agents.utils.file_formats</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_namespaceagents_1_1utils_1_1file__formats_1ad0218eec891397e9e5fc972b4c9ce1b3">write_to_file</link> (str filename, str text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceagents_1_1utils_1_1file__formats_1a291480dc71d67af0e177df6daefe0942">write_text_to_md</link> (str text, str path)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceagents_1_1utils_1_1file__formats_1a381d88777ec5b123fc0c7f5b8357f96b">write_md_to_pdf</link> (str text, str path)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceagents_1_1utils_1_1file__formats_1a418dc3a64d94136480c6a27a8050cfee">write_md_to_word</link> (str text, str path)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceagents_1_1utils_1_1file__formats_1a381d88777ec5b123fc0c7f5b8357f96b"/><section>
+    <title>write_md_to_pdf()</title>
+<indexterm><primary>write_md_to_pdf</primary><secondary>agents.utils.file_formats</secondary></indexterm>
+<indexterm><primary>agents.utils.file_formats</primary><secondary>write_md_to_pdf</secondary></indexterm>
+<para><computeroutput> str agents.utils.file_formats.write_md_to_pdf (str text, str path)</computeroutput></para>
+<para><literallayout><computeroutput>Converts Markdown text to a PDF file and returns the file path.
+
+Args:
+    text (str): Markdown text to convert.
+
+Returns:
+    str: The encoded file path of the generated PDF.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceagents_1_1utils_1_1file__formats_1a418dc3a64d94136480c6a27a8050cfee"/><section>
+    <title>write_md_to_word()</title>
+<indexterm><primary>write_md_to_word</primary><secondary>agents.utils.file_formats</secondary></indexterm>
+<indexterm><primary>agents.utils.file_formats</primary><secondary>write_md_to_word</secondary></indexterm>
+<para><computeroutput> str agents.utils.file_formats.write_md_to_word (str text, str path)</computeroutput></para>
+<para><literallayout><computeroutput>Converts Markdown text to a DOCX file and returns the file path.
+
+Args:
+    text (str): Markdown text to convert.
+
+Returns:
+    str: The encoded file path of the generated DOCX.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceagents_1_1utils_1_1file__formats_1a291480dc71d67af0e177df6daefe0942"/><section>
+    <title>write_text_to_md()</title>
+<indexterm><primary>write_text_to_md</primary><secondary>agents.utils.file_formats</secondary></indexterm>
+<indexterm><primary>agents.utils.file_formats</primary><secondary>write_text_to_md</secondary></indexterm>
+<para><computeroutput> str agents.utils.file_formats.write_text_to_md (str text, str path)</computeroutput></para>
+<para><literallayout><computeroutput>Writes text to a Markdown file and returns the file path.
+
+Args:
+    text (str): Text to write to the Markdown file.
+
+Returns:
+    str: The file path of the generated Markdown file.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceagents_1_1utils_1_1file__formats_a291480dc71d67af0e177df6daefe0942_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceagents_1_1utils_1_1file__formats_1ad0218eec891397e9e5fc972b4c9ce1b3"/><section>
+    <title>write_to_file()</title>
+<indexterm><primary>write_to_file</primary><secondary>agents.utils.file_formats</secondary></indexterm>
+<indexterm><primary>agents.utils.file_formats</primary><secondary>write_to_file</secondary></indexterm>
+<para><computeroutput> None agents.utils.file_formats.write_to_file (str filename, str text)</computeroutput></para>
+<para><literallayout><computeroutput>Asynchronously write text to a file in UTF-8 encoding.
+
+Args:
+    filename (str): The filename to write to.
+    text (str): The text to write.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceagents_1_1utils_1_1file__formats_ad0218eec891397e9e5fc972b4c9ce1b3_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

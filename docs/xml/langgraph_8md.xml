@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="langgraph_8md" kind="file" language="Markdown">
+    <compoundname>langgraph.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>LangGraph</highlight></codeline>
+<codeline><highlight class="normal">[LangGraph](https://python.langchain.com/docs/langgraph)<sp/>is<sp/>a<sp/>library<sp/>for<sp/>building<sp/>stateful,<sp/>multi-actor<sp/>applications<sp/>with<sp/>LLMs.<sp/></highlight></codeline>
+<codeline><highlight class="normal">This<sp/>example<sp/>uses<sp/>Langgraph<sp/>to<sp/>automate<sp/>the<sp/>process<sp/>of<sp/>an<sp/>in<sp/>depth<sp/>research<sp/>on<sp/>any<sp/>given<sp/>topic.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Use<sp/>case</highlight></codeline>
+<codeline><highlight class="normal">By<sp/>using<sp/>Langgraph,<sp/>the<sp/>research<sp/>process<sp/>can<sp/>be<sp/>significantly<sp/>improved<sp/>in<sp/>depth<sp/>and<sp/>quality<sp/>by<sp/>leveraging<sp/>multiple<sp/>agents<sp/>with<sp/>specialized<sp/>skills.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Inspired<sp/>by<sp/>the<sp/>recent<sp/>[STORM](https://arxiv.org/abs/2402.14207)<sp/>paper,<sp/>this<sp/>example<sp/>showcases<sp/>how<sp/>a<sp/>team<sp/>of<sp/>AI<sp/>agents<sp/>can<sp/>work<sp/>together<sp/>to<sp/>conduct<sp/>research<sp/>on<sp/>a<sp/>given<sp/>topic,<sp/>from<sp/>planning<sp/>to<sp/>publication.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">An<sp/>average<sp/>run<sp/>generates<sp/>a<sp/>5-6<sp/>page<sp/>research<sp/>report<sp/>in<sp/>multiple<sp/>formats<sp/>such<sp/>as<sp/>PDF,<sp/>Docx<sp/>and<sp/>Markdown.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>The<sp/>Multi<sp/>Agent<sp/>Team</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>research<sp/>team<sp/>is<sp/>made<sp/>up<sp/>of<sp/>7<sp/>AI<sp/>agents:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Chief<sp/>Editor**<sp/>-<sp/>Oversees<sp/>the<sp/>research<sp/>process<sp/>and<sp/>manages<sp/>the<sp/>team.<sp/>This<sp/>is<sp/>the<sp/>&quot;master&quot;<sp/>agent<sp/>that<sp/>coordinates<sp/>the<sp/>other<sp/>agents<sp/>using<sp/>Langgraph.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Researcher**<sp/>(gpt-researcher)<sp/>-<sp/>A<sp/>specialized<sp/>autonomous<sp/>agent<sp/>that<sp/>conducts<sp/>in<sp/>depth<sp/>research<sp/>on<sp/>a<sp/>given<sp/>topic.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Editor**<sp/>-<sp/>Responsible<sp/>for<sp/>planning<sp/>the<sp/>research<sp/>outline<sp/>and<sp/>structure.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Reviewer**<sp/>-<sp/>Validates<sp/>the<sp/>correctness<sp/>of<sp/>the<sp/>research<sp/>results<sp/>given<sp/>a<sp/>set<sp/>of<sp/>criteria.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Revisor**<sp/>-<sp/>Revises<sp/>the<sp/>research<sp/>results<sp/>based<sp/>on<sp/>the<sp/>feedback<sp/>from<sp/>the<sp/>reviewer.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Writer**<sp/>-<sp/>Responsible<sp/>for<sp/>compiling<sp/>and<sp/>writing<sp/>the<sp/>final<sp/>report.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Publisher**<sp/>-<sp/>Responsible<sp/>for<sp/>publishing<sp/>the<sp/>final<sp/>report<sp/>in<sp/>various<sp/>formats.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>How<sp/>it<sp/>works</highlight></codeline>
+<codeline><highlight class="normal">Generally,<sp/>the<sp/>process<sp/>is<sp/>based<sp/>on<sp/>the<sp/>following<sp/>stages:<sp/></highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Planning<sp/>stage</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Data<sp/>collection<sp/>and<sp/>analysis</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Review<sp/>and<sp/>revision</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Writing<sp/>and<sp/>submission</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>Publication</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Architecture</highlight></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>align=&quot;center&quot;<sp/>height=&quot;600&quot;<sp/>src=&quot;https://cowriter-images.s3.amazonaws.com/gptr-langgraph-architecture.png&quot;&gt;&lt;/img&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/div&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;br<sp/>clear=&quot;all&quot;/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Steps</highlight></codeline>
+<codeline><highlight class="normal">More<sp/>specifically<sp/>(as<sp/>seen<sp/>in<sp/>the<sp/>architecture<sp/>diagram)<sp/>the<sp/>process<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Browser<sp/>(gpt-researcher)<sp/>-<sp/>Browses<sp/>the<sp/>internet<sp/>for<sp/>initial<sp/>research<sp/>based<sp/>on<sp/>the<sp/>given<sp/>research<sp/>task.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Editor<sp/>-<sp/>Plans<sp/>the<sp/>report<sp/>outline<sp/>and<sp/>structure<sp/>based<sp/>on<sp/>the<sp/>initial<sp/>research.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>For<sp/>each<sp/>outline<sp/>topic<sp/>(in<sp/>parallel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>Researcher<sp/>(gpt-researcher)<sp/>-<sp/>Runs<sp/>an<sp/>in<sp/>depth<sp/>research<sp/>on<sp/>the<sp/>subtopics<sp/>and<sp/>writes<sp/>a<sp/>draft.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>Reviewer<sp/>-<sp/>Validates<sp/>the<sp/>correctness<sp/>of<sp/>the<sp/>draft<sp/>given<sp/>a<sp/>set<sp/>of<sp/>criteria<sp/>and<sp/>provides<sp/>feedback.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>Revisor<sp/>-<sp/>Revises<sp/>the<sp/>draft<sp/>until<sp/>it<sp/>is<sp/>satisfactory<sp/>based<sp/>on<sp/>the<sp/>reviewer<sp/>feedback.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Writer<sp/>-<sp/>Compiles<sp/>and<sp/>writes<sp/>the<sp/>final<sp/>report<sp/>including<sp/>an<sp/>introduction,<sp/>conclusion<sp/>and<sp/>references<sp/>section<sp/>from<sp/>the<sp/>given<sp/>research<sp/>findings.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Publisher<sp/>-<sp/>Publishes<sp/>the<sp/>final<sp/>report<sp/>to<sp/>multi<sp/>formats<sp/>such<sp/>as<sp/>PDF,<sp/>Docx,<sp/>Markdown,<sp/>etc.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>How<sp/>to<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Install<sp/>required<sp/>packages:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```bash</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pip<sp/>install<sp/>-r<sp/>requirements.txt</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Update<sp/>env<sp/>variables</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>```bash</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>export<sp/>OPENAI_API_KEY={Your<sp/>OpenAI<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>export<sp/>TAVILY_API_KEY={Your<sp/>Tavily<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>```</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Run<sp/>the<sp/>application:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```bash</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>python<sp/>main.py</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Usage</highlight></codeline>
+<codeline><highlight class="normal">To<sp/>change<sp/>the<sp/>research<sp/>query<sp/>and<sp/>customize<sp/>the<sp/>report,<sp/>edit<sp/>the<sp/>`task.json`<sp/>file<sp/>in<sp/>the<sp/>main<sp/>directory.</highlight></codeline>
+<codeline><highlight class="normal">####<sp/>Task.json<sp/>contains<sp/>the<sp/>following<sp/>fields:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`query`<sp/>-<sp/>The<sp/>research<sp/>query<sp/>or<sp/>task.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`model`<sp/>-<sp/>The<sp/>OpenAI<sp/>LLM<sp/>to<sp/>use<sp/>for<sp/>the<sp/>agents.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`max_sections`<sp/>-<sp/>The<sp/>maximum<sp/>number<sp/>of<sp/>sections<sp/>in<sp/>the<sp/>report.<sp/>Each<sp/>section<sp/>is<sp/>a<sp/>subtopic<sp/>of<sp/>the<sp/>research<sp/>query.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`publish_formats`<sp/>-<sp/>The<sp/>formats<sp/>to<sp/>publish<sp/>the<sp/>report<sp/>in.<sp/>The<sp/>reports<sp/>will<sp/>be<sp/>written<sp/>in<sp/>the<sp/>`output`<sp/>directory.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`source`<sp/>-<sp/>The<sp/>location<sp/>from<sp/>which<sp/>to<sp/>conduct<sp/>the<sp/>research.<sp/>Options:<sp/>`web`<sp/>or<sp/>`local`.<sp/>For<sp/>local,<sp/>please<sp/>add<sp/>`DOC_PATH`<sp/>env<sp/>var.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`follow_guidelines`<sp/>-<sp/>If<sp/>true,<sp/>the<sp/>research<sp/>report<sp/>will<sp/>follow<sp/>the<sp/>guidelines<sp/>below.<sp/>It<sp/>will<sp/>take<sp/>longer<sp/>to<sp/>complete.<sp/>If<sp/>false,<sp/>the<sp/>report<sp/>will<sp/>be<sp/>generated<sp/>faster<sp/>but<sp/>may<sp/>not<sp/>follow<sp/>the<sp/>guidelines.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`guidelines`<sp/>-<sp/>A<sp/>list<sp/>of<sp/>guidelines<sp/>that<sp/>the<sp/>report<sp/>must<sp/>follow.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`verbose`<sp/>-<sp/>If<sp/>true,<sp/>the<sp/>application<sp/>will<sp/>print<sp/>detailed<sp/>logs<sp/>to<sp/>the<sp/>console.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>For<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```json</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;query&quot;:<sp/>&quot;Is<sp/>AI<sp/>in<sp/>a<sp/>hype<sp/>cycle?&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;model&quot;:<sp/>&quot;gpt-4o&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;max_sections&quot;:<sp/>3,<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;publish_formats&quot;:<sp/>{<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;markdown&quot;:<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;pdf&quot;:<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;docx&quot;:<sp/>true</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;source&quot;:<sp/>&quot;web&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;follow_guidelines&quot;:<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;guidelines&quot;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;The<sp/>report<sp/>MUST<sp/>fully<sp/>answer<sp/>the<sp/>original<sp/>question&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;The<sp/>report<sp/>MUST<sp/>be<sp/>written<sp/>in<sp/>apa<sp/>format&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;The<sp/>report<sp/>MUST<sp/>be<sp/>written<sp/>in<sp/>english&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;verbose&quot;:<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>To<sp/>Deploy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```shell</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>langgraph-cli</highlight></codeline>
+<codeline><highlight class="normal">langgraph<sp/>up</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">From<sp/>there,<sp/>see<sp/>documentation<sp/>[here](https://github.com/langchain-ai/langgraph-example)<sp/>on<sp/>how<sp/>to<sp/>use<sp/>the<sp/>streaming<sp/>and<sp/>async<sp/>endpoints,<sp/>as<sp/>well<sp/>as<sp/>the<sp/>playground.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/langgraph.md"/>
+  </compounddef>
+</doxygen>

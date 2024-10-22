@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceprocessing_1_1text" kind="namespace" language="Python">
+    <compoundname>processing::text</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Generator[str, None, None]</type>
+        <definition> Generator[str, None, None] processing.text.split_text</definition>
+        <argsstring>(str text, int max_length=8192)</argsstring>
+        <name>split_text</name>
+        <qualifiedname>processing.text.split_text</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_length</declname>
+          <defval>8192</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Split text into chunks of a maximum length
+
+Args:
+    text (str): The text to split
+    max_length (int, optional): The maximum length of each chunk. Defaults to 8192.
+
+Yields:
+    str: The next chunk of text
+
+Raises:
+    ValueError: If the text is longer than the maximum length
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" bodystart="13" bodyend="42"/>
+        <referencedby refid="namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963" compoundref="text_8py" startline="45" endline="103">processing.text.summarize_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str processing.text.summarize_text</definition>
+        <argsstring>(str fast_llm_model, int summary_token_limit, str llm_provider, str url, str text, str question, Optional[WebDriver] driver=None)</argsstring>
+        <name>summarize_text</name>
+        <qualifiedname>processing.text.summarize_text</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>fast_llm_model</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>summary_token_limit</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>llm_provider</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>question</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>driver</declname>
+          <array>[WebDriver]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Summarize text using the OpenAI API
+
+Args:
+    fast_llm_model (str): The fast LLM model e.g gpt3.5-turbo-16k
+    summary_token_limit (int): The summary token limit
+    llm_provider (str): The llm provider
+    url (str): The url of the text
+    text (str): The text to summarize
+    question (str): The question to ask the model
+    driver (WebDriver): The webdriver to use to scroll the page
+
+Returns:
+    str: The summary of the text
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="43" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" bodystart="45" bodyend="103"/>
+        <references refid="namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1" compoundref="text_8py" startline="119" endline="137">processing.text.create_message</references>
+        <references refid="namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5" compoundref="text_8py" startline="104" endline="118">processing.text.scroll_to_percentage</references>
+        <references refid="namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f" compoundref="text_8py" startline="13" endline="42">processing.text.split_text</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None processing.text.scroll_to_percentage</definition>
+        <argsstring>(WebDriver driver, float ratio)</argsstring>
+        <name>scroll_to_percentage</name>
+        <qualifiedname>processing.text.scroll_to_percentage</qualifiedname>
+        <param>
+          <type>WebDriver</type>
+          <declname>driver</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scroll to a percentage of the page
+
+Args:
+    driver (WebDriver): The webdriver to use
+    ratio (float): The percentage to scroll to
+
+Raises:
+    ValueError: If the ratio is not between 0 and 1
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="104" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" bodystart="104" bodyend="118"/>
+        <referencedby refid="namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963" compoundref="text_8py" startline="45" endline="103">processing.text.summarize_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Dict[str, str]</type>
+        <definition> Dict[str, str] processing.text.create_message</definition>
+        <argsstring>(str chunk, str question)</argsstring>
+        <name>create_message</name>
+        <qualifiedname>processing.text.create_message</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>chunk</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>question</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a message for the chat completion
+
+Args:
+    chunk (str): The chunk of text to summarize
+    question (str): The question to answer
+
+Returns:
+    Dict[str, str]: The message to send to the chat completion
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="119" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" bodystart="119" bodyend="137"/>
+        <referencedby refid="namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963" compoundref="text_8py" startline="45" endline="103">processing.text.summarize_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None processing.text.write_to_file</definition>
+        <argsstring>(str filename, str text)</argsstring>
+        <name>write_to_file</name>
+        <qualifiedname>processing.text.write_to_file</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Write text to a file
+
+Args:
+    text (str): The text to write
+    filename (str): The filename to write to
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="138" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" bodystart="138" bodyend="147"/>
+        <referencedby refid="namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce" compoundref="text_8py" startline="148" endline="157">processing.text.write_md_to_pdf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None processing.text.write_md_to_pdf</definition>
+        <argsstring>(str task, str path, str text)</argsstring>
+        <name>write_md_to_pdf</name>
+        <qualifiedname>processing.text.write_md_to_pdf</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="148" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" bodystart="148" bodyend="157"/>
+        <references refid="namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5" compoundref="text_8py" startline="169" endline="175">processing.text.md_to_pdf</references>
+        <references refid="namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551" compoundref="text_8py" startline="138" endline="147">processing.text.write_to_file</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprocessing_1_1text_1aa07adc73b2ae754f349235bbdbc0e212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>processing.text.read_txt_files</definition>
+        <argsstring>(directory)</argsstring>
+        <name>read_txt_files</name>
+        <qualifiedname>processing.text.read_txt_files</qualifiedname>
+        <param>
+          <type>directory</type>
+          <defname>directory</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="158" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" bodystart="158" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>processing.text.md_to_pdf</definition>
+        <argsstring>(input_file, output_file)</argsstring>
+        <name>md_to_pdf</name>
+        <qualifiedname>processing.text.md_to_pdf</qualifiedname>
+        <param>
+          <type>input_file</type>
+          <defname>input_file</defname>
+        </param>
+        <param>
+          <type>output_file</type>
+          <defname>output_file</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="169" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" bodystart="169" bodyend="175"/>
+        <referencedby refid="namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce" compoundref="text_8py" startline="148" endline="157">processing.text.write_md_to_pdf</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Text processing functions</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

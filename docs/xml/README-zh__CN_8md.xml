@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="README-zh__CN_8md" kind="file" language="Markdown">
+    <compoundname>README-zh_CN.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>🔎<sp/>GPT<sp/>Researcher</highlight></codeline>
+<codeline><highlight class="normal">[![Official<sp/>Website](https://img.shields.io/badge/Official%20Website-gptr.dev-blue?style=for-the-badge&amp;logo=world&amp;logoColor=white)](https://gptr.dev)</highlight></codeline>
+<codeline><highlight class="normal">[![Discord<sp/>Follow](https://dcbadge.vercel.app/api/server/MN9M86kb?style=for-the-badge)](https://discord.gg/MN9M86kb)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![GitHub<sp/>Repo<sp/>stars](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=social)](https://github.com/assafelovic/gpt-researcher)</highlight></codeline>
+<codeline><highlight class="normal">[![Twitter<sp/>Follow](https://img.shields.io/twitter/follow/assaf_elovic?style=social)](https://twitter.com/assaf_elovic)</highlight></codeline>
+<codeline><highlight class="normal">[![PyPI<sp/>version](https://badge.fury.io/py/gpt-researcher.svg)](https://badge.fury.io/py/gpt-researcher)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/><sp/>[English](README.md)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/><sp/>[中文](README-zh_CN.md)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**GPT<sp/>Researcher<sp/>是一个智能体代理，专为各种任务的综合在线研究而设计。**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">代理可以生成详细、正式且客观的研究报告，并提供自定义选项，专注于相关资源、结构框架和经验报告。受最近发表的[Plan-and-Solve](https://arxiv.org/abs/2305.04091)<sp/>和[RAG](https://arxiv.org/abs/2005.11401)<sp/>论文的启发，GPT<sp/>Researcher<sp/>解决了速度、确定性和可靠性等问题，通过并行化的代理运行，而不是同步操作，提供了更稳定的性能和更高的速度。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**我们的使命是利用人工智能的力量，为个人和组织提供准确、客观和事实的信息。**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>为什么选择GPT<sp/>Researcher?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>因为人工研究任务形成客观结论可能需要时间和经历，有时甚至需要数周才能找到正确的资源和信息。</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>目前的LLM是根据历史和过时的信息进行训练的，存在严重的幻觉风险，因此几乎无法胜任研究任务。</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>网络搜索的解决方案（例如<sp/>ChatGPT<sp/>+<sp/>Web<sp/>插件）仅考虑有限的资源和内容，在某些情况下会导致肤浅的结论或不客观的答案。</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>只使用部分资源可能会在确定研究问题或任务的正确结论时产生偏差。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>架构</highlight></codeline>
+<codeline><highlight class="normal">主要思想是运行“**计划者**”和“**执行**”代理，而**计划者**生成问题进行研究，“**执行**”代理根据每个生成的研究问题寻找最相关的信息。最后，“**计划者**”过滤和聚合所有相关信息并创建研究报告。&lt;br<sp/>/&gt;<sp/>&lt;br<sp/>/&gt;<sp/></highlight></codeline>
+<codeline><highlight class="normal">代理同时利用<sp/>gpt3.5-turbo<sp/>和<sp/>gpt-4o（128K<sp/>上下文）来完成一项研究任务。我们仅在必要时使用这两种方法对成本进行优化。**研究任务平均耗时约<sp/>3<sp/>分钟，成本约为<sp/>~0.1<sp/>美元**。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>align=&quot;center&quot;<sp/>height=&quot;500&quot;<sp/>src=&quot;https://cowriter-images.s3.amazonaws.com/architecture.png&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">详细说明:</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>根据研究搜索或任务创建特定领域的代理。</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>生成一组研究问题，这些问题共同形成答案对任何给定任务的客观意见。</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>针对每个研究问题，触发一个爬虫代理，从在线资源中搜索与给定任务相关的信息。</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>对于每一个抓取的资源，根据相关信息进行汇总，并跟踪其来源。</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>最后，对所有汇总的资料来源进行过滤和汇总，并生成最终研究报告。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>演示</highlight></codeline>
+<codeline><highlight class="normal">https://github.com/assafelovic/gpt-researcher/assets/13554167/a00c89a6-a295-4dd0-b58d-098a31c40fda</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>教程</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[运行原理](https://docs.gptr.dev/blog/building-gpt-researcher)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[如何安装](https://www.loom.com/share/04ebffb6ed2a4520a27c3e3addcdde20?sid=da1848e8-b1f1-42d1-93c3-5b0b9c3b24ea)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[现场演示](https://www.loom.com/share/6a3385db4e8747a1913dd85a7834846f?sid=a740fd5b-2aa3-457e-8fb7-86976f59f9b8)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>特性</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>📝<sp/>生成研究问题、大纲、资源和课题报告</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>🌐<sp/>每项研究汇总超过20个网络资源，形成客观和真实的结论</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>🖥️<sp/>包括易于使用的web界面<sp/>(HTML/CSS/JS)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>🔍<sp/>支持JavaScript网络资源抓取功能</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>📂<sp/>追踪访问过和使用过的网络资源和来源</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>📄<sp/>将研究报告导出为PDF或其他格式...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>📖<sp/>文档</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">请参阅[此处](https://docs.gptr.dev/docs/gpt-researcher/getting-started)，了解完整文档：</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>入门（安装、设置环境、简单示例）</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>操作示例（演示、集成、docker<sp/>支持）</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>参考资料（API完整文档）</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Tavily<sp/>应用程序接口集成（核心概念的高级解释）</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>快速开始</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>**步骤<sp/>0**<sp/>-<sp/>安装<sp/>Python<sp/>3.11<sp/>或更高版本。[参见此处](https://www.tutorialsteacher.com/python/install-python)<sp/>获取详细指南。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;br<sp/>/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>**步骤<sp/>1**<sp/>-<sp/>下载项目</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>git<sp/>clone<sp/>https://github.com/assafelovic/gpt-researcher.git</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>cd<sp/>gpt-researcher</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;br<sp/>/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>**步骤2**<sp/>-安装依赖项</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>pip<sp/>install<sp/>-r<sp/>requirements.txt</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">&lt;br<sp/>/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>**第<sp/>3<sp/>步**<sp/>-<sp/>使用<sp/>OpenAI<sp/>密钥和<sp/>Tavily<sp/>API<sp/>密钥创建<sp/>.env<sp/>文件，或直接导出该文件</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>export<sp/>OPENAI_API_KEY={Your<sp/>OpenAI<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>export<sp/>TAVILY_API_KEY={Your<sp/>Tavily<sp/>API<sp/>Key<sp/>here}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**LLM，我们推荐使用<sp/>[OpenAI<sp/>GPT](https://platform.openai.com/docs/guides/gpt)**，但您也可以使用<sp/>[Langchain<sp/>Adapter](https://python.langchain.com/docs/guides/adapters/openai)<sp/>支持的任何其他<sp/>LLM<sp/>模型（包括开源），只需在<sp/>config/config.py<sp/>中更改<sp/>llm<sp/>模型和提供者即可。请按照<sp/>[这份指南](https://python.langchain.com/docs/integrations/llms/)<sp/>学习如何将<sp/>LLM<sp/>与<sp/>Langchain<sp/>集成。</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**对于搜索引擎，我们推荐使用<sp/>[Tavily<sp/>Search<sp/>API](https://app.tavily.com)（已针对<sp/>LLM<sp/>进行优化）**，但您也可以选择其他搜索引擎，只需将<sp/>config/config.py<sp/>中的搜索提供程序更改为<sp/>&quot;duckduckgo&quot;、&quot;googleAPI&quot;、&quot;googleSerp<sp/>&quot;或<sp/>&quot;searx<sp/>&quot;即可。然后在<sp/>config.py<sp/>文件中添加相应的<sp/>env<sp/>API<sp/>密钥。</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**我们强烈建议使用<sp/>[OpenAI<sp/>GPT](https://platform.openai.com/docs/guides/gpt)<sp/>模型和<sp/>[Tavily<sp/>Search<sp/>API](https://app.tavily.com)<sp/>以获得最佳性能。**</highlight></codeline>
+<codeline><highlight class="normal">&lt;br<sp/>/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>**第<sp/>4<sp/>步**<sp/>-<sp/>使用<sp/>FastAPI<sp/>运行代理</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>uvicorn<sp/>main:app<sp/>--reload</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">&lt;br<sp/>/&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&gt;<sp/>**第<sp/>5<sp/>步**<sp/>-<sp/>在任何浏览器上访问<sp/>http://localhost:8000，享受研究乐趣！</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">要了解如何开始使用<sp/>Docker<sp/>或了解有关功能和服务的更多信息，请访问<sp/>[documentation](https://docs.gptr.dev)<sp/>页面。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🚀<sp/>贡献</highlight></codeline>
+<codeline><highlight class="normal">我们非常欢迎您的贡献！如果您感兴趣，请查看<sp/>[contributing](CONTRIBUTING.md)。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">如果您有兴趣加入我们的任务，请查看我们的<sp/>[路线图](https://trello.com/b/3O7KBePw/gpt-researcher-roadmap)<sp/>页面，并通过我们的<sp/>[Discord<sp/>社区](https://discord.gg/2pFkc83fRq)<sp/>联系我们。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>✉️<sp/>支持<sp/>/<sp/>联系我们</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[社区讨论区](https://discord.gg/spBgZmm3Xe)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>我们的邮箱:<sp/>support@tavily.com</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>🛡<sp/>免责声明</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">本项目<sp/>&quot;GPT<sp/>Researcher<sp/>&quot;是一个实验性应用程序，按<sp/>&quot;现状<sp/>&quot;提供，不做任何明示或暗示的保证。我们根据<sp/>MIT<sp/>许可分享用于学术目的的代码。本文不提供任何学术建议，也不建议在学术或研究论文中使用。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">我们对客观研究主张的看法：</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/><sp/>我们抓取系统的全部目的是减少不正确的事实。如何解决？我们抓取的网站越多，错误数据的可能性就越小。我们每项研究都会收集20条信息，它们全部错误的可能性极低。</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>我们的目标不是消除偏见，而是尽可能减少偏见。**作为一个社区，我们在这里探索最有效的人机互动**。</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>在研究过程中，人们也容易产生偏见，因为大多数人对自己研究的课题都有自己的看法。这个工具可以搜罗到许多观点，并均匀地解释各种不同的观点，而有偏见的人是绝对读不到这些观点的。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**请注意，使用<sp/>GPT-4<sp/>语言模型可能会因使用令牌而产生高昂费用**。使用本项目即表示您承认有责任监控和管理自己的令牌使用情况及相关费用。强烈建议您定期检查<sp/>OpenAI<sp/>API<sp/>的使用情况，并设置任何必要的限制或警报，以防止发生意外费用。</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;p<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://star-history.com/#assafelovic/gpt-researcher&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;picture&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;source<sp/>media=&quot;(prefers-color-scheme:<sp/>dark)&quot;<sp/>srcset=&quot;https://api.star-history.com/svg?repos=assafelovic/gpt-researcher&amp;type=Date&amp;theme=dark&quot;<sp/>/&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;source<sp/>media=&quot;(prefers-color-scheme:<sp/>light)&quot;<sp/>srcset=&quot;https://api.star-history.com/svg?repos=assafelovic/gpt-researcher&amp;type=Date&quot;<sp/>/&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;img<sp/>alt=&quot;Star<sp/>History<sp/>Chart&quot;<sp/>src=&quot;https://api.star-history.com/svg?repos=assafelovic/gpt-researcher&amp;type=Date&quot;<sp/>/&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;/picture&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/README-zh_CN.md"/>
+  </compounddef>
+</doxygen>

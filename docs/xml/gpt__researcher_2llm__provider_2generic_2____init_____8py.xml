@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="gpt__researcher_2llm__provider_2generic_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacegpt__researcher">gpt_researcher</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider">gpt_researcher::llm_provider</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1generic">gpt_researcher::llm_provider::generic</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegpt__researcher_1_1llm__provider_1_1generic" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.base<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>GenericLLMProvider</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespacegpt__researcher_1_1llm__provider_1_1generic_1ad60a1517d10494daf1fcff5a5e092875" refkind="member"><highlight class="normal">__all__<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;GenericLLMProvider&quot;</highlight><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic/__init__.py"/>
+  </compounddef>
+</doxygen>

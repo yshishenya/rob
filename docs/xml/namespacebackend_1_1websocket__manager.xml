@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacebackend_1_1websocket__manager" kind="namespace" language="Python">
+    <compoundname>backend::websocket_manager</compoundname>
+    <innerclass refid="classbackend_1_1websocket__manager_1_1WebSocketManager" prot="public">backend::websocket_manager::WebSocketManager</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>backend.websocket_manager.run_agent</definition>
+        <argsstring>(task, report_type, report_source, websocket)</argsstring>
+        <name>run_agent</name>
+        <qualifiedname>backend.websocket_manager.run_agent</qualifiedname>
+        <param>
+          <type>task</type>
+          <defname>task</defname>
+        </param>
+        <param>
+          <type>report_type</type>
+          <defname>report_type</defname>
+        </param>
+        <param>
+          <type>report_source</type>
+          <defname>report_source</defname>
+        </param>
+        <param>
+          <type>websocket</type>
+          <defname>websocket</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Run the agent.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" line="61" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" bodystart="61" bodyend="81"/>
+        <referencedby refid="classbackend_1_1websocket__manager_1_1WebSocketManager_1ae59b7735cdfb361b4e5817f2539f2fc0" compoundref="websocket__manager_8py" startline="55" endline="60">backend.websocket_manager.WebSocketManager.start_streaming</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1llm__provider" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::llm_provider</compoundname>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1anthropic">gpt_researcher::llm_provider::anthropic</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1azureopenai">gpt_researcher::llm_provider::azureopenai</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1generic">gpt_researcher::llm_provider::generic</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1google">gpt_researcher::llm_provider::google</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1groq">gpt_researcher::llm_provider::groq</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1huggingface">gpt_researcher::llm_provider::huggingface</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1mistral">gpt_researcher::llm_provider::mistral</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1ollama">gpt_researcher::llm_provider::ollama</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1openai">gpt_researcher::llm_provider::openai</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1llm__provider_1_1together">gpt_researcher::llm_provider::together</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1llm__provider_1a91d2bd5c55978c07f716bbbaa0896684" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gpt_researcher::llm_provider.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>gpt_researcher.llm_provider.__all__</qualifiedname>
+        <initializer>=  [
+    &quot;GoogleProvider&quot;,
+    &quot;OpenAIProvider&quot;,
+    &quot;AzureOpenAIProvider&quot;,
+    &quot;OllamaProvider&quot;,
+    &quot;GroqProvider&quot;,
+    &quot;TogetherProvider&quot;,
+    &quot;AnthropicProvider&quot;,
+    &quot;MistralProvider&quot;,
+    &quot;HugginFaceProvider&quot;,
+    &quot;GenericLLMProvider&quot;,
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/__init__.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/__init__.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

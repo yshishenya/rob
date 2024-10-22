@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceprocessing_1_1text" xml:lang="en-US">
+<title>processing.text Namespace Reference</title>
+<indexterm><primary>processing.text</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>Generator[str, None, None] <link linkend="_namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f">split_text</link> (str text, int max_length=8192)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963">summarize_text</link> (str fast_llm_model, int summary_token_limit, str llm_provider, str url, str text, str question, Optional[WebDriver] driver=None)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5">scroll_to_percentage</link> (WebDriver driver, float ratio)</para>
+</listitem>
+            <listitem><para>Dict[str, str] <link linkend="_namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1">create_message</link> (str chunk, str question)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551">write_to_file</link> (str filename, str text)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce">write_md_to_pdf</link> (str task, str path, str text)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceprocessing_1_1text_1aa07adc73b2ae754f349235bbdbc0e212">read_txt_files</link> (directory)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5">md_to_pdf</link> (input_file, output_file)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Text processing functions</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1"/><section>
+    <title>create_message()</title>
+<indexterm><primary>create_message</primary><secondary>processing.text</secondary></indexterm>
+<indexterm><primary>processing.text</primary><secondary>create_message</secondary></indexterm>
+<para><computeroutput> Dict[str, str] processing.text.create_message (str chunk, str question)</computeroutput></para>
+<para><literallayout><computeroutput>Create a message for the chat completion
+
+Args:
+    chunk (str): The chunk of text to summarize
+    question (str): The question to answer
+
+Returns:
+    Dict[str, str]: The message to send to the chat completion
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceprocessing_1_1text_aa7d92fd28b771aab747840808fba73a1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5"/><section>
+    <title>md_to_pdf()</title>
+<indexterm><primary>md_to_pdf</primary><secondary>processing.text</secondary></indexterm>
+<indexterm><primary>processing.text</primary><secondary>md_to_pdf</secondary></indexterm>
+<para><computeroutput>processing.text.md_to_pdf ( input_file,  output_file)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceprocessing_1_1text_a3816e917df5701dcc6e5950b294dc0b5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceprocessing_1_1text_1aa07adc73b2ae754f349235bbdbc0e212"/><section>
+    <title>read_txt_files()</title>
+<indexterm><primary>read_txt_files</primary><secondary>processing.text</secondary></indexterm>
+<indexterm><primary>processing.text</primary><secondary>read_txt_files</secondary></indexterm>
+<para><computeroutput>processing.text.read_txt_files ( directory)</computeroutput></para></section>
+<anchor xml:id="_namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5"/><section>
+    <title>scroll_to_percentage()</title>
+<indexterm><primary>scroll_to_percentage</primary><secondary>processing.text</secondary></indexterm>
+<indexterm><primary>processing.text</primary><secondary>scroll_to_percentage</secondary></indexterm>
+<para><computeroutput> None processing.text.scroll_to_percentage (WebDriver driver, float ratio)</computeroutput></para>
+<para><literallayout><computeroutput>Scroll to a percentage of the page
+
+Args:
+    driver (WebDriver): The webdriver to use
+    ratio (float): The percentage to scroll to
+
+Raises:
+    ValueError: If the ratio is not between 0 and 1
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceprocessing_1_1text_a966f81211115765374e907b2ec2e7ea5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f"/><section>
+    <title>split_text()</title>
+<indexterm><primary>split_text</primary><secondary>processing.text</secondary></indexterm>
+<indexterm><primary>processing.text</primary><secondary>split_text</secondary></indexterm>
+<para><computeroutput> Generator[str, None, None] processing.text.split_text (str text, int  max_length = <computeroutput>8192</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Split text into chunks of a maximum length
+
+Args:
+    text (str): The text to split
+    max_length (int, optional): The maximum length of each chunk. Defaults to 8192.
+
+Yields:
+    str: The next chunk of text
+
+Raises:
+    ValueError: If the text is longer than the maximum length
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceprocessing_1_1text_aeb2b6f707ac167eb3f6a24edd853734f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963"/><section>
+    <title>summarize_text()</title>
+<indexterm><primary>summarize_text</primary><secondary>processing.text</secondary></indexterm>
+<indexterm><primary>processing.text</primary><secondary>summarize_text</secondary></indexterm>
+<para><computeroutput> str processing.text.summarize_text (str fast_llm_model, int summary_token_limit, str llm_provider, str url, str text, str question, Optional[WebDriver]  driver = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Summarize text using the OpenAI API
+
+Args:
+    fast_llm_model (str): The fast LLM model e.g gpt3.5-turbo-16k
+    summary_token_limit (int): The summary token limit
+    llm_provider (str): The llm provider
+    url (str): The url of the text
+    text (str): The text to summarize
+    question (str): The question to ask the model
+    driver (WebDriver): The webdriver to use to scroll the page
+
+Returns:
+    str: The summary of the text
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceprocessing_1_1text_a7f12588ab5cde117def169575efa6963_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce"/><section>
+    <title>write_md_to_pdf()</title>
+<indexterm><primary>write_md_to_pdf</primary><secondary>processing.text</secondary></indexterm>
+<indexterm><primary>processing.text</primary><secondary>write_md_to_pdf</secondary></indexterm>
+<para><computeroutput> None processing.text.write_md_to_pdf (str task, str path, str text)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceprocessing_1_1text_a61b878c9df5447d0ec868eda8d7208ce_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551"/><section>
+    <title>write_to_file()</title>
+<indexterm><primary>write_to_file</primary><secondary>processing.text</secondary></indexterm>
+<indexterm><primary>processing.text</primary><secondary>write_to_file</secondary></indexterm>
+<para><computeroutput> None processing.text.write_to_file (str filename, str text)</computeroutput></para>
+<para><literallayout><computeroutput>Write text to a file
+
+Args:
+    text (str): The text to write
+    filename (str): The filename to write to
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceprocessing_1_1text_aeb3785068ddada10ff90776da71e4551_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="2024-05-19-gptr-langgraph_2index_8md" kind="file" language="Markdown">
+    <compoundname>index.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">slug:<sp/>gptr-langgraph</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>How<sp/>to<sp/>Build<sp/>the<sp/>Ultimate<sp/>Research<sp/>Multi-Agent<sp/>Assistant</highlight></codeline>
+<codeline><highlight class="normal">authors:<sp/>[assafe]</highlight></codeline>
+<codeline><highlight class="normal">tags:<sp/>[multi-agents,<sp/>gpt-researcher,<sp/>langchain,<sp/>langgraph]</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">![Header](./blog-langgraph.jpeg)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Introducing<sp/>the<sp/>GPT<sp/>Researcher<sp/>Multi-Agent<sp/>Assistant</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Learn<sp/>how<sp/>to<sp/>build<sp/>an<sp/>autonomous<sp/>research<sp/>assistant<sp/>using<sp/>LangGraph<sp/>with<sp/>a<sp/>team<sp/>of<sp/>specialized<sp/>AI<sp/>agents</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>has<sp/>only<sp/>been<sp/>a<sp/>year<sp/>since<sp/>the<sp/>initial<sp/>release<sp/>of<sp/>GPT<sp/>Researcher,<sp/>but<sp/>methods<sp/>for<sp/>building,<sp/>testing,<sp/>and<sp/>deploying<sp/>AI<sp/>agents<sp/>have<sp/>already<sp/>evolved<sp/>significantly.<sp/>That’s<sp/>just<sp/>the<sp/>nature<sp/>and<sp/>speed<sp/>of<sp/>the<sp/>current<sp/>AI<sp/>progress.<sp/>What<sp/>started<sp/>as<sp/>simple<sp/>zero-shot<sp/>or<sp/>few-shot<sp/>prompting,<sp/>has<sp/>quickly<sp/>evolved<sp/>to<sp/>agent<sp/>function<sp/>calling,<sp/>RAG<sp/>and<sp/>now<sp/>finally<sp/>agentic<sp/>workflows<sp/>(aka<sp/>“flow<sp/>engineering”).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Andrew<sp/>Ng<sp/>has<sp/>[recently<sp/>stated](https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/),<sp/>“I<sp/>think<sp/>AI<sp/>agent<sp/>workflows<sp/>will<sp/>drive<sp/>massive<sp/>AI<sp/>progress<sp/>this<sp/>year<sp/>—<sp/>perhaps<sp/>even<sp/>more<sp/>than<sp/>the<sp/>next<sp/>generation<sp/>of<sp/>foundation<sp/>models.<sp/>This<sp/>is<sp/>an<sp/>important<sp/>trend,<sp/>and<sp/>I<sp/>urge<sp/>everyone<sp/>who<sp/>works<sp/>in<sp/>AI<sp/>to<sp/>pay<sp/>attention<sp/>to<sp/>it.”</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>article<sp/>you<sp/>will<sp/>learn<sp/>why<sp/>multi-agent<sp/>workflows<sp/>are<sp/>the<sp/>current<sp/>best<sp/>standard<sp/>and<sp/>how<sp/>to<sp/>build<sp/>the<sp/>optimal<sp/>autonomous<sp/>research<sp/>multi-agent<sp/>assistant<sp/>using<sp/>LangGraph.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>skip<sp/>this<sp/>tutorial,<sp/>feel<sp/>free<sp/>to<sp/>check<sp/>out<sp/>the<sp/>Github<sp/>repo<sp/>of<sp/>[GPT<sp/>Researcher<sp/>x<sp/>LangGraph](https://github.com/assafelovic/gpt-researcher/tree/master/multi_agents).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Introducing<sp/>LangGraph</highlight></codeline>
+<codeline><highlight class="normal">LangGraph<sp/>is<sp/>an<sp/>extension<sp/>of<sp/>LangChain<sp/>aimed<sp/>at<sp/>creating<sp/>agent<sp/>and<sp/>multi-agent<sp/>flows.<sp/>It<sp/>adds<sp/>in<sp/>the<sp/>ability<sp/>to<sp/>create<sp/>cyclical<sp/>flows<sp/>and<sp/>comes<sp/>with<sp/>memory<sp/>built<sp/>in<sp/>—<sp/>both<sp/>important<sp/>attributes<sp/>for<sp/>creating<sp/>agents.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LangGraph<sp/>provides<sp/>developers<sp/>with<sp/>a<sp/>high<sp/>degree<sp/>of<sp/>controllability<sp/>and<sp/>is<sp/>important<sp/>for<sp/>creating<sp/>custom<sp/>agents<sp/>and<sp/>flows.<sp/>Nearly<sp/>all<sp/>agents<sp/>in<sp/>production<sp/>are<sp/>customized<sp/>towards<sp/>the<sp/>specific<sp/>use<sp/>case<sp/>they<sp/>are<sp/>trying<sp/>solve.<sp/>LangGraph<sp/>gives<sp/>you<sp/>the<sp/>flexibility<sp/>to<sp/>create<sp/>arbitrary<sp/>customized<sp/>agents,<sp/>while<sp/>providing<sp/>an<sp/>intuitive<sp/>developer<sp/>experience<sp/>for<sp/>doing<sp/>so.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Enough<sp/>with<sp/>the<sp/>smalltalk,<sp/>let’s<sp/>start<sp/>building!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Building<sp/>the<sp/>Ultimate<sp/>Autonomous<sp/>Research<sp/>Agent</highlight></codeline>
+<codeline><highlight class="normal">By<sp/>leveraging<sp/>LangGraph,<sp/>the<sp/>research<sp/>process<sp/>can<sp/>be<sp/>significantly<sp/>improved<sp/>in<sp/>depth<sp/>and<sp/>quality<sp/>by<sp/>leveraging<sp/>multiple<sp/>agents<sp/>with<sp/>specialized<sp/>skills.<sp/>Having<sp/>every<sp/>agent<sp/>focus<sp/>and<sp/>specialize<sp/>only<sp/>a<sp/>specific<sp/>skill,<sp/>allows<sp/>for<sp/>better<sp/>separation<sp/>of<sp/>concerns,<sp/>customizability,<sp/>and<sp/>further<sp/>development<sp/>at<sp/>scale<sp/>as<sp/>the<sp/>project<sp/>grows.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Inspired<sp/>by<sp/>the<sp/>recent<sp/>STORM<sp/>paper,<sp/>this<sp/>example<sp/>showcases<sp/>how<sp/>a<sp/>team<sp/>of<sp/>AI<sp/>agents<sp/>can<sp/>work<sp/>together<sp/>to<sp/>conduct<sp/>research<sp/>on<sp/>a<sp/>given<sp/>topic,<sp/>from<sp/>planning<sp/>to<sp/>publication.<sp/>This<sp/>example<sp/>will<sp/>also<sp/>leverage<sp/>the<sp/>leading<sp/>autonomous<sp/>research<sp/>agent<sp/>GPT<sp/>Researcher.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>The<sp/>Research<sp/>Agent<sp/>Team</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>research<sp/>team<sp/>consists<sp/>of<sp/>seven<sp/>LLM<sp/>agents:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Chief<sp/>Editor**<sp/>—<sp/>Oversees<sp/>the<sp/>research<sp/>process<sp/>and<sp/>manages<sp/>the<sp/>team.<sp/>This<sp/>is<sp/>the<sp/>“master”<sp/>agent<sp/>that<sp/>coordinates<sp/>the<sp/>other<sp/>agents<sp/>using<sp/>LangGraph.<sp/>This<sp/>agent<sp/>acts<sp/>as<sp/>the<sp/>main<sp/>LangGraph<sp/>interface.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**GPT<sp/>Researcher**<sp/>—<sp/>A<sp/>specialized<sp/>autonomous<sp/>agent<sp/>that<sp/>conducts<sp/>in<sp/>depth<sp/>research<sp/>on<sp/>a<sp/>given<sp/>topic.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Editor**<sp/>—<sp/>Responsible<sp/>for<sp/>planning<sp/>the<sp/>research<sp/>outline<sp/>and<sp/>structure.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Reviewer**<sp/>—<sp/>Validates<sp/>the<sp/>correctness<sp/>of<sp/>the<sp/>research<sp/>results<sp/>given<sp/>a<sp/>set<sp/>of<sp/>criteria.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Reviser**<sp/>—<sp/>Revises<sp/>the<sp/>research<sp/>results<sp/>based<sp/>on<sp/>the<sp/>feedback<sp/>from<sp/>the<sp/>reviewer.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Writer**<sp/>—<sp/>Responsible<sp/>for<sp/>compiling<sp/>and<sp/>writing<sp/>the<sp/>final<sp/>report.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Publisher**<sp/>—<sp/>Responsible<sp/>for<sp/>publishing<sp/>the<sp/>final<sp/>report<sp/>in<sp/>various<sp/>formats.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Architecture</highlight></codeline>
+<codeline><highlight class="normal">As<sp/>seen<sp/>below,<sp/>the<sp/>automation<sp/>process<sp/>is<sp/>based<sp/>on<sp/>the<sp/>following<sp/>stages:<sp/>Planning<sp/>the<sp/>research,<sp/>data<sp/>collection<sp/>and<sp/>analysis,<sp/>review<sp/>and<sp/>revision,<sp/>writing<sp/>the<sp/>report<sp/>and<sp/>finally<sp/>publication:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Architecture](./architecture.jpeg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">More<sp/>specifically<sp/>the<sp/>process<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**Browser<sp/>(gpt-researcher)**<sp/>—<sp/>Browses<sp/>the<sp/>internet<sp/>for<sp/>initial<sp/>research<sp/>based<sp/>on<sp/>the<sp/>given<sp/>research<sp/>task.<sp/>This<sp/>step<sp/>is<sp/>crucial<sp/>for<sp/>LLMs<sp/>to<sp/>plan<sp/>the<sp/>research<sp/>process<sp/>based<sp/>on<sp/>up<sp/>to<sp/>date<sp/>and<sp/>relevant<sp/>information,<sp/>and<sp/>not<sp/>rely<sp/>solely<sp/>on<sp/>pre-trained<sp/>data<sp/>for<sp/>a<sp/>given<sp/>task<sp/>or<sp/>topic.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Editor**<sp/>—<sp/>Plans<sp/>the<sp/>report<sp/>outline<sp/>and<sp/>structure<sp/>based<sp/>on<sp/>the<sp/>initial<sp/>research.<sp/>The<sp/>Editor<sp/>is<sp/>also<sp/>responsible<sp/>for<sp/>triggering<sp/>the<sp/>parallel<sp/>research<sp/>tasks<sp/>based<sp/>on<sp/>the<sp/>planned<sp/>outline.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>For<sp/>each<sp/>outline<sp/>topic<sp/>(in<sp/>parallel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Researcher<sp/>(gpt-researcher)**<sp/>—<sp/>Runs<sp/>an<sp/>in<sp/>depth<sp/>research<sp/>on<sp/>the<sp/>subtopics<sp/>and<sp/>writes<sp/>a<sp/>draft.<sp/>This<sp/>agent<sp/>leverages<sp/>the<sp/>GPT<sp/>Researcher<sp/>Python<sp/>package<sp/>under<sp/>the<sp/>hood,<sp/>for<sp/>optimized,<sp/>in<sp/>depth<sp/>and<sp/>factual<sp/>research<sp/>report.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Reviewer**<sp/>—<sp/>Validates<sp/>the<sp/>correctness<sp/>of<sp/>the<sp/>draft<sp/>given<sp/>a<sp/>set<sp/>of<sp/>guidelines<sp/>and<sp/>provides<sp/>feedback<sp/>to<sp/>the<sp/>reviser<sp/>(if<sp/>any).</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**Reviser**<sp/>—<sp/>Revises<sp/>the<sp/>draft<sp/>until<sp/>it<sp/>is<sp/>satisfactory<sp/>based<sp/>on<sp/>the<sp/>reviewer<sp/>feedback.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Writer**<sp/>—<sp/>Compiles<sp/>and<sp/>writes<sp/>the<sp/>final<sp/>report<sp/>including<sp/>an<sp/>introduction,<sp/>conclusion<sp/>and<sp/>references<sp/>section<sp/>from<sp/>the<sp/>given<sp/>research<sp/>findings.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**Publisher**<sp/>—<sp/>Publishes<sp/>the<sp/>final<sp/>report<sp/>to<sp/>multi<sp/>formats<sp/>such<sp/>as<sp/>PDF,<sp/>Docx,<sp/>Markdown,<sp/>etc.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>We<sp/>will<sp/>not<sp/>dive<sp/>into<sp/>all<sp/>the<sp/>code<sp/>since<sp/>there’s<sp/>a<sp/>lot<sp/>of<sp/>it,<sp/>but<sp/>focus<sp/>mostly<sp/>on<sp/>the<sp/>interesting<sp/>parts<sp/>I’ve<sp/>found<sp/>valuable<sp/>to<sp/>share.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Define<sp/>the<sp/>Graph<sp/>State</highlight></codeline>
+<codeline><highlight class="normal">One<sp/>of<sp/>my<sp/>favorite<sp/>features<sp/>with<sp/>LangGraph<sp/>is<sp/>state<sp/>management.<sp/>States<sp/>in<sp/>LangGraph<sp/>are<sp/>facilitated<sp/>through<sp/>a<sp/>structured<sp/>approach<sp/>where<sp/>developers<sp/>define<sp/>a<sp/>GraphState<sp/>that<sp/>encapsulates<sp/>the<sp/>entire<sp/>state<sp/>of<sp/>the<sp/>application.<sp/>Each<sp/>node<sp/>in<sp/>the<sp/>graph<sp/>can<sp/>modify<sp/>this<sp/>state,<sp/>allowing<sp/>for<sp/>dynamic<sp/>responses<sp/>based<sp/>on<sp/>the<sp/>evolving<sp/>context<sp/>of<sp/>the<sp/>interaction.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Like<sp/>in<sp/>every<sp/>start<sp/>of<sp/>a<sp/>technical<sp/>design,<sp/>considering<sp/>the<sp/>data<sp/>schema<sp/>throughout<sp/>the<sp/>application<sp/>is<sp/>key.<sp/>In<sp/>this<sp/>case<sp/>we’ll<sp/>define<sp/>a<sp/>ResearchState<sp/>like<sp/>so:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>ResearchState(TypedDict):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>task:<sp/>dict</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>initial_research:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sections:<sp/>List[str]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>research_data:<sp/>List[dict]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Report<sp/>layout</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>title:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>headers:<sp/>dict</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>date:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>table_of_contents:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>introduction:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>conclusion:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sources:<sp/>List[str]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>report:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>seen<sp/>above,<sp/>the<sp/>state<sp/>is<sp/>divided<sp/>into<sp/>two<sp/>main<sp/>areas:<sp/>the<sp/>research<sp/>task<sp/>and<sp/>the<sp/>report<sp/>layout<sp/>content.<sp/>As<sp/>data<sp/>circulates<sp/>through<sp/>the<sp/>graph<sp/>agents,<sp/>each<sp/>agent<sp/>will,<sp/>in<sp/>turn,<sp/>generate<sp/>new<sp/>data<sp/>based<sp/>on<sp/>the<sp/>existing<sp/>state<sp/>and<sp/>update<sp/>it<sp/>for<sp/>subsequent<sp/>processing<sp/>further<sp/>down<sp/>the<sp/>graph<sp/>with<sp/>other<sp/>agents.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>can<sp/>then<sp/>initialize<sp/>the<sp/>graph<sp/>with<sp/>the<sp/>following:</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>langgraph.graph<sp/>import<sp/>StateGraph</highlight></codeline>
+<codeline><highlight class="normal">workflow<sp/>=<sp/>StateGraph(ResearchState)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Initializing<sp/>the<sp/>graph<sp/>with<sp/>LangGraph</highlight></codeline>
+<codeline><highlight class="normal">As<sp/>stated<sp/>above,<sp/>one<sp/>of<sp/>the<sp/>great<sp/>things<sp/>about<sp/>multi-agent<sp/>development<sp/>is<sp/>building<sp/>each<sp/>agent<sp/>to<sp/>have<sp/>specialized<sp/>and<sp/>scoped<sp/>skills.<sp/>Let’s<sp/>take<sp/>an<sp/>example<sp/>of<sp/>the<sp/>Researcher<sp/>agent<sp/>using<sp/>GPT<sp/>Researcher<sp/>python<sp/>package:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>gpt_researcher<sp/>import<sp/>GPTResearcher</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>ResearchAgent:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>def<sp/>__init__(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>async<sp/>def<sp/>research(self,<sp/>query:<sp/>str):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Initialize<sp/>the<sp/>researcher</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>researcher<sp/>=<sp/>GPTResearcher(parent_query=parent_query,<sp/>query=query,<sp/>report_type=research_report,<sp/>config_path=None)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Conduct<sp/>research<sp/>on<sp/>the<sp/>given<sp/>query</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>researcher.conduct_research()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Write<sp/>the<sp/>report</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>report<sp/>=<sp/>await<sp/>researcher.write_report()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>report</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>you<sp/>can<sp/>see<sp/>above,<sp/>we’ve<sp/>created<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>Research<sp/>agent.<sp/>Now<sp/>let’s<sp/>assume<sp/>we’ve<sp/>done<sp/>the<sp/>same<sp/>for<sp/>each<sp/>of<sp/>the<sp/>team’s<sp/>agent.<sp/>After<sp/>creating<sp/>all<sp/>of<sp/>the<sp/>agents,<sp/>we’d<sp/>initialize<sp/>the<sp/>graph<sp/>with<sp/>LangGraph:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>init_research_team(self):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Initialize<sp/>agents</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>editor_agent<sp/>=<sp/>EditorAgent(self.task)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>research_agent<sp/>=<sp/>ResearchAgent()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>writer_agent<sp/>=<sp/>WriterAgent()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>publisher_agent<sp/>=<sp/>PublisherAgent(self.output_dir)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Define<sp/>a<sp/>Langchain<sp/>StateGraph<sp/>with<sp/>the<sp/>ResearchState</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow<sp/>=<sp/>StateGraph(ResearchState)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Add<sp/>nodes<sp/>for<sp/>each<sp/>agent</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_node(&quot;browser&quot;,<sp/>research_agent.run_initial_research)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_node(&quot;planner&quot;,<sp/>editor_agent.plan_research)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_node(&quot;researcher&quot;,<sp/>editor_agent.run_parallel_research)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_node(&quot;writer&quot;,<sp/>writer_agent.run)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_node(&quot;publisher&quot;,<sp/>publisher_agent.run)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_edge(&apos;browser&apos;,<sp/>&apos;planner&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_edge(&apos;planner&apos;,<sp/>&apos;researcher&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_edge(&apos;researcher&apos;,<sp/>&apos;writer&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_edge(&apos;writer&apos;,<sp/>&apos;publisher&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>set<sp/>up<sp/>start<sp/>and<sp/>end<sp/>nodes</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.set_entry_point(&quot;browser&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_edge(&apos;publisher&apos;,<sp/>END)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>workflow</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>seen<sp/>above,<sp/>creating<sp/>the<sp/>LangGraph<sp/>graph<sp/>is<sp/>very<sp/>straight<sp/>forward<sp/>and<sp/>consists<sp/>of<sp/>three<sp/>main<sp/>functions:<sp/>add_node,<sp/>add_edge<sp/>and<sp/>set_entry_point.<sp/>With<sp/>these<sp/>main<sp/>functions<sp/>you<sp/>can<sp/>first<sp/>add<sp/>the<sp/>nodes<sp/>to<sp/>the<sp/>graph,<sp/>connect<sp/>the<sp/>edges<sp/>and<sp/>finally<sp/>set<sp/>the<sp/>starting<sp/>point.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Focus<sp/>check:<sp/>If<sp/>you’ve<sp/>been<sp/>following<sp/>the<sp/>code<sp/>and<sp/>architecture<sp/>properly,<sp/>you’ll<sp/>notice<sp/>that<sp/>the<sp/>Reviewer<sp/>and<sp/>Reviser<sp/>agents<sp/>are<sp/>missing<sp/>in<sp/>the<sp/>initialization<sp/>above.<sp/>Let’s<sp/>dive<sp/>into<sp/>it!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>A<sp/>Graph<sp/>within<sp/>a<sp/>Graph<sp/>to<sp/>support<sp/>stateful<sp/>Parallelization</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>was<sp/>the<sp/>most<sp/>exciting<sp/>part<sp/>of<sp/>my<sp/>experience<sp/>working<sp/>with<sp/>LangGraph!<sp/>One<sp/>exciting<sp/>feature<sp/>of<sp/>this<sp/>autonomous<sp/>assistant<sp/>is<sp/>having<sp/>a<sp/>parallel<sp/>run<sp/>for<sp/>each<sp/>research<sp/>task,<sp/>that<sp/>would<sp/>be<sp/>reviewed<sp/>and<sp/>revised<sp/>based<sp/>on<sp/>a<sp/>set<sp/>of<sp/>predefined<sp/>guidelines.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Knowing<sp/>how<sp/>to<sp/>leverage<sp/>parallel<sp/>work<sp/>within<sp/>a<sp/>process<sp/>is<sp/>key<sp/>for<sp/>optimizing<sp/>speed.<sp/>But<sp/>how<sp/>would<sp/>you<sp/>trigger<sp/>parallel<sp/>agent<sp/>work<sp/>if<sp/>all<sp/>agents<sp/>report<sp/>to<sp/>the<sp/>same<sp/>state?<sp/>This<sp/>can<sp/>cause<sp/>race<sp/>conditions<sp/>and<sp/>inconsistencies<sp/>in<sp/>the<sp/>final<sp/>data<sp/>report.<sp/>To<sp/>solve<sp/>this,<sp/>you<sp/>can<sp/>create<sp/>a<sp/>sub<sp/>graph,<sp/>that<sp/>would<sp/>be<sp/>triggered<sp/>from<sp/>the<sp/>main<sp/>LangGraph<sp/>instance.<sp/>This<sp/>sub<sp/>graph<sp/>would<sp/>hold<sp/>its<sp/>own<sp/>state<sp/>for<sp/>each<sp/>parallel<sp/>run,<sp/>and<sp/>that<sp/>would<sp/>solve<sp/>the<sp/>issues<sp/>that<sp/>were<sp/>raised.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>we’ve<sp/>done<sp/>before,<sp/>let’s<sp/>define<sp/>the<sp/>LangGraph<sp/>state<sp/>and<sp/>its<sp/>agents.<sp/>Since<sp/>this<sp/>sub<sp/>graph<sp/>basically<sp/>reviews<sp/>and<sp/>revises<sp/>a<sp/>research<sp/>draft,<sp/>we’ll<sp/>define<sp/>the<sp/>state<sp/>with<sp/>draft<sp/>information:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>DraftState(TypedDict):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>task:<sp/>dict</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>topic:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>draft:<sp/>dict</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>review:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>revision_notes:<sp/>str</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>seen<sp/>in<sp/>the<sp/>DraftState,<sp/>we<sp/>mostly<sp/>care<sp/>about<sp/>the<sp/>topic<sp/>discussed,<sp/>and<sp/>the<sp/>reviewer<sp/>and<sp/>revision<sp/>notes<sp/>as<sp/>they<sp/>communicate<sp/>between<sp/>each<sp/>other<sp/>to<sp/>finalize<sp/>the<sp/>subtopic<sp/>research<sp/>report.<sp/>To<sp/>create<sp/>the<sp/>circular<sp/>condition<sp/>we’ll<sp/>take<sp/>advantage<sp/>of<sp/>the<sp/>last<sp/>important<sp/>piece<sp/>of<sp/>LangGraph<sp/>which<sp/>is<sp/>conditional<sp/>edges:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>run_parallel_research(self,<sp/>research_state:<sp/>dict):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow<sp/>=<sp/>StateGraph(DraftState)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_node(&quot;researcher&quot;,<sp/>research_agent.run_depth_research)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_node(&quot;reviewer&quot;,<sp/>reviewer_agent.run)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_node(&quot;reviser&quot;,<sp/>reviser_agent.run)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>set<sp/>up<sp/>edges<sp/>researcher-&gt;reviewer-&gt;reviser-&gt;reviewer...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.set_entry_point(&quot;researcher&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_edge(&apos;researcher&apos;,<sp/>&apos;reviewer&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_edge(&apos;reviser&apos;,<sp/>&apos;reviewer&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>workflow.add_conditional_edges(&apos;reviewer&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(lambda<sp/>draft:<sp/>&quot;accept&quot;<sp/>if<sp/>draft[&apos;review&apos;]<sp/>is<sp/>None<sp/>else<sp/>&quot;revise&quot;),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{&quot;accept&quot;:<sp/>END,<sp/>&quot;revise&quot;:<sp/>&quot;reviser&quot;})</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">By<sp/>defining<sp/>the<sp/>conditional<sp/>edges,<sp/>the<sp/>graph<sp/>would<sp/>direct<sp/>to<sp/>reviser<sp/>if<sp/>there<sp/>exists<sp/>review<sp/>notes<sp/>by<sp/>the<sp/>reviewer,<sp/>or<sp/>the<sp/>cycle<sp/>would<sp/>end<sp/>with<sp/>the<sp/>final<sp/>draft.<sp/>If<sp/>you<sp/>go<sp/>back<sp/>to<sp/>the<sp/>main<sp/>graph<sp/>we’ve<sp/>built,<sp/>you’ll<sp/>see<sp/>that<sp/>this<sp/>parallel<sp/>work<sp/>is<sp/>under<sp/>a<sp/>node<sp/>named<sp/>“researcher”<sp/>called<sp/>by<sp/>ChiefEditor<sp/>agent.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Running<sp/>the<sp/>Research<sp/>Assistant</highlight></codeline>
+<codeline><highlight class="normal">After<sp/>finalizing<sp/>the<sp/>agents,<sp/>states<sp/>and<sp/>graphs,<sp/>it’s<sp/>time<sp/>to<sp/>run<sp/>our<sp/>research<sp/>assistant!<sp/>To<sp/>make<sp/>it<sp/>easier<sp/>to<sp/>customize,<sp/>the<sp/>assistant<sp/>runs<sp/>with<sp/>a<sp/>given<sp/>task.json<sp/>file:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```json</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;query&quot;:<sp/>&quot;Is<sp/>AI<sp/>in<sp/>a<sp/>hype<sp/>cycle?&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;max_sections&quot;:<sp/>3,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;publish_formats&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;markdown&quot;:<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;pdf&quot;:<sp/>true,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;docx&quot;:<sp/>true</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;follow_guidelines&quot;:<sp/>false,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;model&quot;:<sp/>&quot;gpt-4-turbo&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;guidelines&quot;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;The<sp/>report<sp/>MUST<sp/>be<sp/>written<sp/>in<sp/>APA<sp/>format&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;Each<sp/>sub<sp/>section<sp/>MUST<sp/>include<sp/>supporting<sp/>sources<sp/>using<sp/>hyperlinks.<sp/>If<sp/>none<sp/>exist,<sp/>erase<sp/>the<sp/>sub<sp/>section<sp/>or<sp/>rewrite<sp/>it<sp/>to<sp/>be<sp/>a<sp/>part<sp/>of<sp/>the<sp/>previous<sp/>section&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;The<sp/>report<sp/>MUST<sp/>be<sp/>written<sp/>in<sp/>spanish&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>task<sp/>object<sp/>is<sp/>pretty<sp/>self<sp/>explanatory,<sp/>however<sp/>please<sp/>notice<sp/>that<sp/>follow_guidelines<sp/>if<sp/>false<sp/>would<sp/>cause<sp/>the<sp/>graph<sp/>to<sp/>ignore<sp/>the<sp/>revision<sp/>step<sp/>and<sp/>defined<sp/>guidelines.<sp/>Also,<sp/>the<sp/>max_sections<sp/>field<sp/>defines<sp/>how<sp/>many<sp/>subheaders<sp/>to<sp/>research<sp/>for.<sp/>Having<sp/>less<sp/>will<sp/>generate<sp/>a<sp/>shorter<sp/>report.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Running<sp/>the<sp/>assistant<sp/>will<sp/>result<sp/>in<sp/>a<sp/>final<sp/>research<sp/>report<sp/>in<sp/>formats<sp/>such<sp/>as<sp/>Markdown,<sp/>PDF<sp/>and<sp/>Docx.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>download<sp/>and<sp/>run<sp/>the<sp/>example<sp/>check<sp/>out<sp/>the<sp/>GPT<sp/>Researcher<sp/>x<sp/>LangGraph<sp/>[open<sp/>source<sp/>page](https://github.com/assafelovic/gpt-researcher/tree/master/multi_agents).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>What’s<sp/>Next?</highlight></codeline>
+<codeline><highlight class="normal">Going<sp/>forward,<sp/>there<sp/>are<sp/>super<sp/>exciting<sp/>things<sp/>to<sp/>think<sp/>about.<sp/>Human<sp/>in<sp/>the<sp/>loop<sp/>is<sp/>key<sp/>for<sp/>optimized<sp/>AI<sp/>experiences.<sp/>Having<sp/>a<sp/>human<sp/>help<sp/>the<sp/>assistant<sp/>revise<sp/>and<sp/>focus<sp/>on<sp/>just<sp/>the<sp/>right<sp/>research<sp/>plan,<sp/>topics<sp/>and<sp/>outline,<sp/>would<sp/>enhance<sp/>the<sp/>overall<sp/>quality<sp/>and<sp/>experience.<sp/>Also<sp/>generally,<sp/>aiming<sp/>for<sp/>relying<sp/>on<sp/>human<sp/>intervention<sp/>throughout<sp/>the<sp/>AI<sp/>flow<sp/>ensures<sp/>correctness,<sp/>sense<sp/>of<sp/>control<sp/>and<sp/>deterministic<sp/>results.<sp/>Happy<sp/>to<sp/>see<sp/>that<sp/>LangGraph<sp/>already<sp/>supports<sp/>this<sp/>out<sp/>of<sp/>the<sp/>box<sp/>as<sp/>seen<sp/>here.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>addition,<sp/>having<sp/>support<sp/>for<sp/>research<sp/>about<sp/>both<sp/>web<sp/>and<sp/>local<sp/>data<sp/>would<sp/>be<sp/>key<sp/>for<sp/>many<sp/>types<sp/>of<sp/>business<sp/>and<sp/>personal<sp/>use<sp/>cases.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Lastly,<sp/>more<sp/>efforts<sp/>can<sp/>be<sp/>done<sp/>to<sp/>improve<sp/>the<sp/>quality<sp/>of<sp/>retrieved<sp/>sources<sp/>and<sp/>making<sp/>sure<sp/>the<sp/>final<sp/>report<sp/>is<sp/>built<sp/>in<sp/>the<sp/>optimal<sp/>storyline.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>step<sp/>forward<sp/>in<sp/>LangGraph<sp/>and<sp/>multi-agent<sp/>collaboration<sp/>in<sp/>a<sp/>whole<sp/>would<sp/>be<sp/>where<sp/>assistants<sp/>can<sp/>plan<sp/>and<sp/>generate<sp/>graphs<sp/>dynamically<sp/>based<sp/>on<sp/>given<sp/>tasks.<sp/>This<sp/>vision<sp/>would<sp/>allow<sp/>assistants<sp/>to<sp/>choose<sp/>only<sp/>a<sp/>subset<sp/>of<sp/>agents<sp/>for<sp/>a<sp/>given<sp/>task<sp/>and<sp/>plan<sp/>their<sp/>strategy<sp/>based<sp/>on<sp/>the<sp/>graph<sp/>fundamentals<sp/>as<sp/>presented<sp/>in<sp/>this<sp/>article<sp/>and<sp/>open<sp/>a<sp/>whole<sp/>new<sp/>world<sp/>of<sp/>possibilities.<sp/>Given<sp/>the<sp/>pace<sp/>of<sp/>innovation<sp/>in<sp/>the<sp/>AI<sp/>space,<sp/>it<sp/>won’t<sp/>be<sp/>long<sp/>before<sp/>a<sp/>new<sp/>disruptive<sp/>version<sp/>of<sp/>GPT<sp/>Researcher<sp/>is<sp/>launched.<sp/>Looking<sp/>forward<sp/>to<sp/>what<sp/>the<sp/>future<sp/>brings!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>keep<sp/>track<sp/>of<sp/>this<sp/>project’s<sp/>ongoing<sp/>progress<sp/>and<sp/>updates<sp/>please<sp/>join<sp/>our<sp/>Discord<sp/>community.<sp/>And<sp/>as<sp/>always,<sp/>if<sp/>you<sp/>have<sp/>any<sp/>feedback<sp/>or<sp/>further<sp/>questions,<sp/>please<sp/>comment<sp/>below!</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2024-05-19-gptr-langgraph/index.md"/>
+  </compounddef>
+</doxygen>

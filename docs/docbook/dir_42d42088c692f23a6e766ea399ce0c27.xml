@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_42d42088c692f23a6e766ea399ce0c27" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend Directory Reference</primary></indexterm>
+Directory dependency graph for backend:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_42d42088c692f23a6e766ea399ce0c27_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_a9499db4338a32c38b4cdeeb0d839d88">auth</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_aab170fbc980b9f46c5ef36e78faa03a">report_type</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_backend_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_db_8py">db.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_server_8py">server.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_utils_8py">utils.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_websocket__manager_8py">websocket_manager.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

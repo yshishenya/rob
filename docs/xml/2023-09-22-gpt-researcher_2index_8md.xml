@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="2023-09-22-gpt-researcher_2index_8md" kind="file" language="Markdown">
+    <compoundname>index.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">slug:<sp/>building-gpt-researcher</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>How<sp/>we<sp/>built<sp/>GPT<sp/>Researcher</highlight></codeline>
+<codeline><highlight class="normal">authors:<sp/>[assafe]</highlight></codeline>
+<codeline><highlight class="normal">tags:<sp/>[gpt-researcher,<sp/>autonomous-agent,<sp/>opensource,<sp/>github]</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">After<sp/>[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)<sp/>was<sp/>published,<sp/>we<sp/>immediately<sp/>took<sp/>it<sp/>for<sp/>a<sp/>spin.<sp/>The<sp/>first<sp/>use<sp/>case<sp/>that<sp/>came<sp/>to<sp/>mind<sp/>was<sp/>autonomous<sp/>online<sp/>research.<sp/>Forming<sp/>objective<sp/>conclusions<sp/>for<sp/>manual<sp/>research<sp/>tasks<sp/>can<sp/>take<sp/>time,<sp/>sometimes<sp/>weeks,<sp/>to<sp/>find<sp/>the<sp/>right<sp/>resources<sp/>and<sp/>information.<sp/>Seeing<sp/>how<sp/>well<sp/>AutoGPT<sp/>created<sp/>tasks<sp/>and<sp/>executed<sp/>them<sp/>got<sp/>me<sp/>thinking<sp/>about<sp/>the<sp/>great<sp/>potential<sp/>of<sp/>using<sp/>AI<sp/>to<sp/>conduct<sp/>comprehensive<sp/>research<sp/>and<sp/>what<sp/>it<sp/>meant<sp/>for<sp/>the<sp/>future<sp/>of<sp/>online<sp/>research.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">But<sp/>the<sp/>problem<sp/>with<sp/>AutoGPT<sp/>was<sp/>that<sp/>it<sp/>usually<sp/>ran<sp/>into<sp/>never-ending<sp/>loops,<sp/>required<sp/>human<sp/>interference<sp/>for<sp/>almost<sp/>every<sp/>step,<sp/>constantly<sp/>lost<sp/>track<sp/>of<sp/>its<sp/>progress,<sp/>and<sp/>almost<sp/>never<sp/>actually<sp/>completed<sp/>the<sp/>task.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Nonetheless,<sp/>the<sp/>information<sp/>and<sp/>context<sp/>gathered<sp/>during<sp/>the<sp/>research<sp/>task<sp/>were<sp/>lost<sp/>(such<sp/>as<sp/>keeping<sp/>track<sp/>of<sp/>sources),<sp/>and<sp/>sometimes<sp/>hallucinated.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>passion<sp/>for<sp/>leveraging<sp/>AI<sp/>for<sp/>online<sp/>research<sp/>and<sp/>the<sp/>limitations<sp/>I<sp/>found<sp/>put<sp/>me<sp/>on<sp/>a<sp/>mission<sp/>to<sp/>try<sp/>and<sp/>solve<sp/>it<sp/>while<sp/>sharing<sp/>my<sp/>work<sp/>with<sp/>the<sp/>world.<sp/>This<sp/>is<sp/>when<sp/>I<sp/>created<sp/>[GPT<sp/>Researcher](https://github.com/assafelovic/gpt-researcher)<sp/>—<sp/>an<sp/>open<sp/>source<sp/>autonomous<sp/>agent<sp/>for<sp/>online<sp/>comprehensive<sp/>research.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>article,<sp/>we<sp/>will<sp/>share<sp/>the<sp/>steps<sp/>that<sp/>guided<sp/>me<sp/>toward<sp/>the<sp/>proposed<sp/>solution.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Moving<sp/>from<sp/>infinite<sp/>loops<sp/>to<sp/>deterministic<sp/>results</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>first<sp/>step<sp/>in<sp/>solving<sp/>these<sp/>issues<sp/>was<sp/>to<sp/>seek<sp/>a<sp/>more<sp/>deterministic<sp/>solution<sp/>that<sp/>could<sp/>ultimately<sp/>guarantee<sp/>completing<sp/>any<sp/>research<sp/>task<sp/>within<sp/>a<sp/>fixed<sp/>time<sp/>frame,<sp/>without<sp/>human<sp/>interference.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>when<sp/>we<sp/>stumbled<sp/>upon<sp/>the<sp/>recent<sp/>paper<sp/>[Plan<sp/>and<sp/>Solve](https://arxiv.org/abs/2305.04091).<sp/>The<sp/>paper<sp/>aims<sp/>to<sp/>provide<sp/>a<sp/>better<sp/>solution<sp/>for<sp/>the<sp/>challenges<sp/>stated<sp/>above.<sp/>The<sp/>idea<sp/>is<sp/>quite<sp/>simple<sp/>and<sp/>consists<sp/>of<sp/>two<sp/>components:<sp/>first,<sp/>devising<sp/>a<sp/>plan<sp/>to<sp/>divide<sp/>the<sp/>entire<sp/>task<sp/>into<sp/>smaller<sp/>subtasks<sp/>and<sp/>then<sp/>carrying<sp/>out<sp/>the<sp/>subtasks<sp/>according<sp/>to<sp/>the<sp/>plan.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Planner-Excutor-Model](./planner.jpeg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>it<sp/>relates<sp/>to<sp/>research,<sp/>first<sp/>create<sp/>an<sp/>outline<sp/>of<sp/>questions<sp/>to<sp/>research<sp/>related<sp/>to<sp/>the<sp/>task,<sp/>and<sp/>then<sp/>deterministically<sp/>execute<sp/>an<sp/>agent<sp/>for<sp/>every<sp/>outline<sp/>item.<sp/>This<sp/>approach<sp/>eliminates<sp/>the<sp/>uncertainty<sp/>in<sp/>task<sp/>completion<sp/>by<sp/>breaking<sp/>the<sp/>agent<sp/>steps<sp/>into<sp/>a<sp/>deterministic<sp/>finite<sp/>set<sp/>of<sp/>tasks.<sp/>Once<sp/>all<sp/>tasks<sp/>are<sp/>completed,<sp/>the<sp/>agent<sp/>concludes<sp/>the<sp/>research.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Following<sp/>this<sp/>strategy<sp/>has<sp/>improved<sp/>the<sp/>reliability<sp/>of<sp/>completing<sp/>research<sp/>tasks<sp/>to<sp/>100%.<sp/>Now<sp/>the<sp/>challenge<sp/>is,<sp/>how<sp/>to<sp/>improve<sp/>quality<sp/>and<sp/>speed?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Aiming<sp/>for<sp/>objective<sp/>and<sp/>unbiased<sp/>results</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>biggest<sp/>challenge<sp/>with<sp/>LLMs<sp/>is<sp/>the<sp/>lack<sp/>of<sp/>factuality<sp/>and<sp/>unbiased<sp/>responses<sp/>caused<sp/>by<sp/>hallucinations<sp/>and<sp/>out-of-date<sp/>training<sp/>sets<sp/>(GPT<sp/>is<sp/>currently<sp/>trained<sp/>on<sp/>datasets<sp/>from<sp/>2021).<sp/>But<sp/>the<sp/>irony<sp/>is<sp/>that<sp/>for<sp/>research<sp/>tasks,<sp/>it<sp/>is<sp/>crucial<sp/>to<sp/>optimize<sp/>for<sp/>these<sp/>exact<sp/>two<sp/>criteria:<sp/>factuality<sp/>and<sp/>bias.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>tackle<sp/>this<sp/>challenges,<sp/>we<sp/>assumed<sp/>the<sp/>following:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Law<sp/>of<sp/>large<sp/>numbers<sp/>—<sp/>More<sp/>content<sp/>will<sp/>lead<sp/>to<sp/>less<sp/>biased<sp/>results.<sp/>Especially<sp/>if<sp/>gathered<sp/>properly.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Leveraging<sp/>LLMs<sp/>for<sp/>the<sp/>summarization<sp/>of<sp/>factual<sp/>information<sp/>can<sp/>significantly<sp/>improve<sp/>the<sp/>overall<sp/>better<sp/>factuality<sp/>of<sp/>results.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">After<sp/>experimenting<sp/>with<sp/>LLMs<sp/>for<sp/>quite<sp/>some<sp/>time,<sp/>we<sp/>can<sp/>say<sp/>that<sp/>the<sp/>areas<sp/>where<sp/>foundation<sp/>models<sp/>excel<sp/>are<sp/>in<sp/>the<sp/>summarization<sp/>and<sp/>rewriting<sp/>of<sp/>given<sp/>content.<sp/>So,<sp/>in<sp/>theory,<sp/>if<sp/>LLMs<sp/>only<sp/>review<sp/>given<sp/>content<sp/>and<sp/>summarize<sp/>and<sp/>rewrite<sp/>it,<sp/>potentially<sp/>it<sp/>would<sp/>reduce<sp/>hallucinations<sp/>significantly.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>addition,<sp/>assuming<sp/>the<sp/>given<sp/>content<sp/>is<sp/>unbiased,<sp/>or<sp/>at<sp/>least<sp/>holds<sp/>opinions<sp/>and<sp/>information<sp/>from<sp/>all<sp/>sides<sp/>of<sp/>a<sp/>topic,<sp/>the<sp/>rewritten<sp/>result<sp/>would<sp/>also<sp/>be<sp/>unbiased.<sp/>So<sp/>how<sp/>can<sp/>content<sp/>be<sp/>unbiased?<sp/>The<sp/>[law<sp/>of<sp/>large<sp/>numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers).<sp/>In<sp/>other<sp/>words,<sp/>if<sp/>enough<sp/>sites<sp/>that<sp/>hold<sp/>relevant<sp/>information<sp/>are<sp/>scraped,<sp/>the<sp/>possibility<sp/>of<sp/>biased<sp/>information<sp/>reduces<sp/>greatly.<sp/>So<sp/>the<sp/>idea<sp/>would<sp/>be<sp/>to<sp/>scrape<sp/>just<sp/>enough<sp/>sites<sp/>together<sp/>to<sp/>form<sp/>an<sp/>objective<sp/>opinion<sp/>on<sp/>any<sp/>topic.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Great!<sp/>Sounds<sp/>like,<sp/>for<sp/>now,<sp/>we<sp/>have<sp/>an<sp/>idea<sp/>for<sp/>how<sp/>to<sp/>create<sp/>both<sp/>deterministic,<sp/>factual,<sp/>and<sp/>unbiased<sp/>results.<sp/>But<sp/>what<sp/>about<sp/>the<sp/>speed<sp/>problem?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Speeding<sp/>up<sp/>the<sp/>research<sp/>process</highlight></codeline>
+<codeline><highlight class="normal">Another<sp/>issue<sp/>with<sp/>AutoGPT<sp/>is<sp/>that<sp/>it<sp/>works<sp/>synchronously.<sp/>The<sp/>main<sp/>idea<sp/>of<sp/>it<sp/>is<sp/>to<sp/>create<sp/>a<sp/>list<sp/>of<sp/>tasks<sp/>and<sp/>then<sp/>execute<sp/>them<sp/>one<sp/>by<sp/>one.<sp/>So<sp/>if,<sp/>let’s<sp/>say,<sp/>a<sp/>research<sp/>task<sp/>requires<sp/>visiting<sp/>20<sp/>sites,<sp/>and<sp/>each<sp/>site<sp/>takes<sp/>around<sp/>one<sp/>minute<sp/>to<sp/>scrape<sp/>and<sp/>summarize,<sp/>the<sp/>overall<sp/>research<sp/>task<sp/>would<sp/>take<sp/>a<sp/>minimum<sp/>of<sp/>+20<sp/>minutes.<sp/>That’s<sp/>assuming<sp/>it<sp/>ever<sp/>stops.<sp/>But<sp/>what<sp/>if<sp/>we<sp/>could<sp/>parallelize<sp/>agent<sp/>work?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">By<sp/>levering<sp/>Python<sp/>libraries<sp/>such<sp/>as<sp/>asyncio,<sp/>the<sp/>agent<sp/>tasks<sp/>have<sp/>been<sp/>optimized<sp/>to<sp/>work<sp/>in<sp/>parallel,<sp/>thus<sp/>significantly<sp/>reducing<sp/>the<sp/>time<sp/>to<sp/>research.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Create<sp/>a<sp/>list<sp/>to<sp/>hold<sp/>the<sp/>coroutine<sp/>agent<sp/>tasks</highlight></codeline>
+<codeline><highlight class="normal">tasks<sp/>=<sp/>[async_browse(url,<sp/>query,<sp/>self.websocket)<sp/>for<sp/>url<sp/>in<sp/>await<sp/>new_search_urls]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Gather<sp/>the<sp/>results<sp/>as<sp/>they<sp/>become<sp/>available</highlight></codeline>
+<codeline><highlight class="normal">responses<sp/>=<sp/>await<sp/>asyncio.gather(*tasks,<sp/>return_exceptions=True)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>the<sp/>example<sp/>above,<sp/>we<sp/>trigger<sp/>scraping<sp/>for<sp/>all<sp/>URLs<sp/>in<sp/>parallel,<sp/>and<sp/>only<sp/>once<sp/>all<sp/>is<sp/>done,<sp/>continue<sp/>with<sp/>the<sp/>task.<sp/>Based<sp/>on<sp/>many<sp/>tests,<sp/>an<sp/>average<sp/>research<sp/>task<sp/>takes<sp/>around<sp/>three<sp/>minutes<sp/>(!!).<sp/>That’s<sp/>85%<sp/>faster<sp/>than<sp/>AutoGPT.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Finalizing<sp/>the<sp/>research<sp/>report</highlight></codeline>
+<codeline><highlight class="normal">Finally,<sp/>after<sp/>aggregating<sp/>as<sp/>much<sp/>information<sp/>as<sp/>possible<sp/>about<sp/>a<sp/>given<sp/>research<sp/>task,<sp/>the<sp/>challenge<sp/>is<sp/>to<sp/>write<sp/>a<sp/>comprehensive<sp/>report<sp/>about<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">After<sp/>experimenting<sp/>with<sp/>several<sp/>OpenAI<sp/>models<sp/>and<sp/>even<sp/>open<sp/>source,<sp/>I’ve<sp/>concluded<sp/>that<sp/>the<sp/>best<sp/>results<sp/>are<sp/>currently<sp/>achieved<sp/>with<sp/>GPT-4.<sp/>The<sp/>task<sp/>is<sp/>straightforward<sp/>—<sp/>provide<sp/>GPT-4<sp/>as<sp/>context<sp/>with<sp/>all<sp/>the<sp/>aggregated<sp/>information,<sp/>and<sp/>ask<sp/>it<sp/>to<sp/>write<sp/>a<sp/>detailed<sp/>report<sp/>about<sp/>it<sp/>given<sp/>the<sp/>original<sp/>research<sp/>task.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>prompt<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="normal">```commandline</highlight></codeline>
+<codeline><highlight class="normal">&quot;{research_summary}&quot;<sp/>Using<sp/>the<sp/>above<sp/>information,<sp/>answer<sp/>the<sp/>following<sp/>question<sp/>or<sp/>topic:<sp/>&quot;{question}&quot;<sp/>in<sp/>a<sp/>detailed<sp/>report<sp/>—<sp/>The<sp/>report<sp/>should<sp/>focus<sp/>on<sp/>the<sp/>answer<sp/>to<sp/>the<sp/>question,<sp/>should<sp/>be<sp/>well<sp/>structured,<sp/>informative,<sp/>in<sp/>depth,<sp/>with<sp/>facts<sp/>and<sp/>numbers<sp/>if<sp/>available,<sp/>a<sp/>minimum<sp/>of<sp/>1,200<sp/>words<sp/>and<sp/>with<sp/>markdown<sp/>syntax<sp/>and<sp/>apa<sp/>format.<sp/>Write<sp/>all<sp/>source<sp/>urls<sp/>at<sp/>the<sp/>end<sp/>of<sp/>the<sp/>report<sp/>in<sp/>apa<sp/>format.<sp/>You<sp/>should<sp/>write<sp/>your<sp/>report<sp/>only<sp/>based<sp/>on<sp/>the<sp/>given<sp/>information<sp/>and<sp/>nothing<sp/>else.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>results<sp/>are<sp/>quite<sp/>impressive,<sp/>with<sp/>some<sp/>minor<sp/>hallucinations<sp/>in<sp/>very<sp/>few<sp/>samples,<sp/>but<sp/>it’s<sp/>fair<sp/>to<sp/>assume<sp/>that<sp/>as<sp/>GPT<sp/>improves<sp/>over<sp/>time,<sp/>results<sp/>will<sp/>only<sp/>get<sp/>better.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>The<sp/>final<sp/>architecture</highlight></codeline>
+<codeline><highlight class="normal">Now<sp/>that<sp/>we’ve<sp/>reviewed<sp/>the<sp/>necessary<sp/>steps<sp/>of<sp/>GPT<sp/>Researcher,<sp/>let’s<sp/>break<sp/>down<sp/>the<sp/>final<sp/>architecture,<sp/>as<sp/>shown<sp/>below:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;div<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;img<sp/>align=&quot;center&quot;<sp/>height=&quot;500&quot;<sp/>src=&quot;https://cowriter-images.s3.amazonaws.com/architecture.png&quot;/&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/div&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">More<sp/>specifically:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Generate<sp/>an<sp/>outline<sp/>of<sp/>research<sp/>questions<sp/>that<sp/>form<sp/>an<sp/>objective<sp/>opinion<sp/>on<sp/>any<sp/>given<sp/>task.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>For<sp/>each<sp/>research<sp/>question,<sp/>trigger<sp/>a<sp/>crawler<sp/>agent<sp/>that<sp/>scrapes<sp/>online<sp/>resources<sp/>for<sp/>information<sp/>relevant<sp/>to<sp/>the<sp/>given<sp/>task.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>For<sp/>each<sp/>scraped<sp/>resource,<sp/>keep<sp/>track,<sp/>filter,<sp/>and<sp/>summarize<sp/>only<sp/>if<sp/>it<sp/>includes<sp/>relevant<sp/>information.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Finally,<sp/>aggregate<sp/>all<sp/>summarized<sp/>sources<sp/>and<sp/>generate<sp/>a<sp/>final<sp/>research<sp/>report.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Going<sp/>forward</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>future<sp/>of<sp/>online<sp/>research<sp/>automation<sp/>is<sp/>heading<sp/>toward<sp/>a<sp/>major<sp/>disruption.<sp/>As<sp/>AI<sp/>continues<sp/>to<sp/>improve,<sp/>it<sp/>is<sp/>only<sp/>a<sp/>matter<sp/>of<sp/>time<sp/>before<sp/>AI<sp/>agents<sp/>can<sp/>perform<sp/>comprehensive<sp/>research<sp/>tasks<sp/>for<sp/>any<sp/>of<sp/>our<sp/>day-to-day<sp/>needs.<sp/>AI<sp/>research<sp/>can<sp/>disrupt<sp/>areas<sp/>of<sp/>finance,<sp/>legal,<sp/>academia,<sp/>health,<sp/>and<sp/>retail,<sp/>reducing<sp/>our<sp/>time<sp/>for<sp/>each<sp/>research<sp/>by<sp/>95%<sp/>while<sp/>optimizing<sp/>for<sp/>factual<sp/>and<sp/>unbiased<sp/>reports<sp/>within<sp/>an<sp/>influx<sp/>and<sp/>overload<sp/>of<sp/>ever-growing<sp/>online<sp/>information.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Imagine<sp/>if<sp/>an<sp/>AI<sp/>can<sp/>eventually<sp/>understand<sp/>and<sp/>analyze<sp/>any<sp/>form<sp/>of<sp/>online<sp/>content<sp/>—<sp/>videos,<sp/>images,<sp/>graphs,<sp/>tables,<sp/>reviews,<sp/>text,<sp/>audio.<sp/>And<sp/>imagine<sp/>if<sp/>it<sp/>could<sp/>support<sp/>and<sp/>analyze<sp/>hundreds<sp/>of<sp/>thousands<sp/>of<sp/>words<sp/>of<sp/>aggregated<sp/>information<sp/>within<sp/>a<sp/>single<sp/>prompt.<sp/>Even<sp/>imagine<sp/>that<sp/>AI<sp/>can<sp/>eventually<sp/>improve<sp/>in<sp/>reasoning<sp/>and<sp/>analysis,<sp/>making<sp/>it<sp/>much<sp/>more<sp/>suitable<sp/>for<sp/>reaching<sp/>new<sp/>and<sp/>innovative<sp/>research<sp/>conclusions.<sp/>And<sp/>that<sp/>it<sp/>can<sp/>do<sp/>all<sp/>that<sp/>in<sp/>minutes,<sp/>if<sp/>not<sp/>seconds.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It’s<sp/>all<sp/>a<sp/>matter<sp/>of<sp/>time<sp/>and<sp/>what<sp/>[GPT<sp/>Researcher](https://github.com/assafelovic/gpt-researcher)<sp/>is<sp/>all<sp/>about.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2023-09-22-gpt-researcher/index.md"/>
+  </compounddef>
+</doxygen>

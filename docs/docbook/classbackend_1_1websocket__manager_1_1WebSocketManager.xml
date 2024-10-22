@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbackend_1_1websocket__manager_1_1WebSocketManager" xml:lang="en-US">
+<title>backend.websocket_manager.WebSocketManager Class Reference</title>
+<indexterm><primary>backend.websocket_manager.WebSocketManager</primary></indexterm>
+Collaboration diagram for backend.websocket_manager.WebSocketManager:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1websocket__manager_1_1WebSocketManager__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager_1abe026167abfef517ade843c9c7686e6b">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea">start_sender</link> (self, WebSocket websocket)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager_1af91d24f74593c8730180989c3bd3e6af">connect</link> (self, WebSocket websocket)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager_1a2e59a99e26eae2043d78dc1bbd6cb3b7">disconnect</link> (self, WebSocket websocket)</para>
+</listitem>
+            <listitem><para><link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager_1ae59b7735cdfb361b4e5817f2539f2fc0">start_streaming</link> (self, task, report_type, report_source, websocket)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Manage websockets</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classbackend_1_1websocket__manager_1_1WebSocketManager_1abe026167abfef517ade843c9c7686e6b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>backend.websocket_manager.WebSocketManager</secondary></indexterm>
+<indexterm><primary>backend.websocket_manager.WebSocketManager</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>backend.websocket_manager.WebSocketManager.__init__ ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Initialize the WebSocketManager class.</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classbackend_1_1websocket__manager_1_1WebSocketManager_1af91d24f74593c8730180989c3bd3e6af"/><section>
+    <title>connect()</title>
+<indexterm><primary>connect</primary><secondary>backend.websocket_manager.WebSocketManager</secondary></indexterm>
+<indexterm><primary>backend.websocket_manager.WebSocketManager</primary><secondary>connect</secondary></indexterm>
+<para><computeroutput>backend.websocket_manager.WebSocketManager.connect ( self, WebSocket websocket)</computeroutput></para>
+<para><literallayout><computeroutput>Connect a websocket.</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1websocket__manager_1_1WebSocketManager_af91d24f74593c8730180989c3bd3e6af_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbackend_1_1websocket__manager_1_1WebSocketManager_1a2e59a99e26eae2043d78dc1bbd6cb3b7"/><section>
+    <title>disconnect()</title>
+<indexterm><primary>disconnect</primary><secondary>backend.websocket_manager.WebSocketManager</secondary></indexterm>
+<indexterm><primary>backend.websocket_manager.WebSocketManager</primary><secondary>disconnect</secondary></indexterm>
+<para><computeroutput>backend.websocket_manager.WebSocketManager.disconnect ( self, WebSocket websocket)</computeroutput></para>
+<para><literallayout><computeroutput>Disconnect a websocket.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classbackend_1_1websocket__manager_1_1WebSocketManager_1afaeae18d60b4255b1f3bfcbcd8124cea"/><section>
+    <title>start_sender()</title>
+<indexterm><primary>start_sender</primary><secondary>backend.websocket_manager.WebSocketManager</secondary></indexterm>
+<indexterm><primary>backend.websocket_manager.WebSocketManager</primary><secondary>start_sender</secondary></indexterm>
+<para><computeroutput>backend.websocket_manager.WebSocketManager.start_sender ( self, WebSocket websocket)</computeroutput></para>
+<para><literallayout><computeroutput>Start the sender task.</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1websocket__manager_1_1WebSocketManager_afaeae18d60b4255b1f3bfcbcd8124cea_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classbackend_1_1websocket__manager_1_1WebSocketManager_1ae59b7735cdfb361b4e5817f2539f2fc0"/><section>
+    <title>start_streaming()</title>
+<indexterm><primary>start_streaming</primary><secondary>backend.websocket_manager.WebSocketManager</secondary></indexterm>
+<indexterm><primary>backend.websocket_manager.WebSocketManager</primary><secondary>start_streaming</secondary></indexterm>
+<para><computeroutput>backend.websocket_manager.WebSocketManager.start_streaming ( self,  task,  report_type,  report_source,  websocket)</computeroutput></para>
+<para><literallayout><computeroutput>Start streaming the output.</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1websocket__manager_1_1WebSocketManager_ae59b7735cdfb361b4e5817f2539f2fc0_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/<link linkend="_websocket__manager_8py">websocket_manager.py</link></section>
+</section>

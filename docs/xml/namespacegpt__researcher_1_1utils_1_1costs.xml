@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1utils_1_1costs" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::utils::costs</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1utils_1_1costs_1a5ded738042198cd2363d7057fcebed3a" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher::utils::costs.ENCODING_MODEL</definition>
+        <argsstring></argsstring>
+        <name>ENCODING_MODEL</name>
+        <qualifiedname>gpt_researcher.utils.costs.ENCODING_MODEL</qualifiedname>
+        <initializer>=  &quot;o200k_base&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" line="4" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1utils_1_1costs_1a7001ea5a3cfcc38b054e1f61532d615a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gpt_researcher::utils::costs.INPUT_COST_PER_TOKEN</definition>
+        <argsstring></argsstring>
+        <name>INPUT_COST_PER_TOKEN</name>
+        <qualifiedname>gpt_researcher.utils.costs.INPUT_COST_PER_TOKEN</qualifiedname>
+        <initializer>=  0.000005</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1utils_1_1costs_1a1f613faeb26205430d23505d18591801" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gpt_researcher::utils::costs.OUTPUT_COST_PER_TOKEN</definition>
+        <argsstring></argsstring>
+        <name>OUTPUT_COST_PER_TOKEN</name>
+        <qualifiedname>gpt_researcher.utils.costs.OUTPUT_COST_PER_TOKEN</qualifiedname>
+        <initializer>=  0.000015</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1utils_1_1costs_1aa6c6f6531263d9beca9c84e3c7290e57" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gpt_researcher::utils::costs.IMAGE_INFERENCE_COST</definition>
+        <argsstring></argsstring>
+        <name>IMAGE_INFERENCE_COST</name>
+        <qualifiedname>gpt_researcher.utils.costs.IMAGE_INFERENCE_COST</qualifiedname>
+        <initializer>=  0.003825</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1utils_1_1costs_1ac851877e589fc31f44a8b28053f69cb3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gpt_researcher::utils::costs.EMBEDDING_COST</definition>
+        <argsstring></argsstring>
+        <name>EMBEDDING_COST</name>
+        <qualifiedname>gpt_researcher.utils.costs.EMBEDDING_COST</qualifiedname>
+        <initializer>=  0.13  / 1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegpt__researcher_1_1utils_1_1costs_1a3c3b6e46daf03a6c6eff6af6b7d581a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float gpt_researcher.utils.costs.estimate_llm_cost</definition>
+        <argsstring>(str input_content, str output_content)</argsstring>
+        <name>estimate_llm_cost</name>
+        <qualifiedname>gpt_researcher.utils.costs.estimate_llm_cost</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>input_content</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>output_content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" bodystart="12" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegpt__researcher_1_1utils_1_1costs_1a59fa6a66d1cc1d9a1bf6e72c6c933835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.utils.costs.estimate_embedding_cost</definition>
+        <argsstring>(model, docs)</argsstring>
+        <name>estimate_embedding_cost</name>
+        <qualifiedname>gpt_researcher.utils.costs.estimate_embedding_cost</qualifiedname>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>docs</type>
+          <defname>docs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" bodystart="21" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

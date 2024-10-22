@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classbackend_1_1server_1_1ResearchRequest" xml:lang="en-US">
+<title>backend.server.ResearchRequest Class Reference</title>
+<indexterm><primary>backend.server.ResearchRequest</primary></indexterm>
+Inheritance diagram for backend.server.ResearchRequest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1server_1_1ResearchRequest__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for backend.server.ResearchRequest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classbackend_1_1server_1_1ResearchRequest__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classbackend_1_1server_1_1ResearchRequest_1a67fa07b5bff295d8cf39866f3703e3cd">task</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classbackend_1_1server_1_1ResearchRequest_1a19cdda16ce044d65cd3d4734ff4cb7a8">report_type</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_classbackend_1_1server_1_1ResearchRequest_1a312e8b781e186a3e99f6005a0b5c41ef">agent</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classbackend_1_1server_1_1ResearchRequest_1a312e8b781e186a3e99f6005a0b5c41ef"/><section>
+    <title>agent</title>
+<indexterm><primary>agent</primary><secondary>backend.server.ResearchRequest</secondary></indexterm>
+<indexterm><primary>backend.server.ResearchRequest</primary><secondary>agent</secondary></indexterm>
+<para><computeroutput>str backend.server.ResearchRequest.agent<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1server_1_1ResearchRequest_1a19cdda16ce044d65cd3d4734ff4cb7a8"/><section>
+    <title>report_type</title>
+<indexterm><primary>report_type</primary><secondary>backend.server.ResearchRequest</secondary></indexterm>
+<indexterm><primary>backend.server.ResearchRequest</primary><secondary>report_type</secondary></indexterm>
+<para><computeroutput>str backend.server.ResearchRequest.report_type<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classbackend_1_1server_1_1ResearchRequest_1a67fa07b5bff295d8cf39866f3703e3cd"/><section>
+    <title>task</title>
+<indexterm><primary>task</primary><secondary>backend.server.ResearchRequest</secondary></indexterm>
+<indexterm><primary>backend.server.ResearchRequest</primary><secondary>task</secondary></indexterm>
+<para><computeroutput>str backend.server.ResearchRequest.task<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/<link linkend="_server_8py">server.py</link></section>
+</section>

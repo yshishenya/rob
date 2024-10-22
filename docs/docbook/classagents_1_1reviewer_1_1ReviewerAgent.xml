@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagents_1_1reviewer_1_1ReviewerAgent" xml:lang="en-US">
+<title>agents.reviewer.ReviewerAgent Class Reference</title>
+<indexterm><primary>agents.reviewer.ReviewerAgent</primary></indexterm>
+Collaboration diagram for agents.reviewer.ReviewerAgent:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1reviewer_1_1ReviewerAgent__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1reviewer_1_1ReviewerAgent_1a68d89b46182c202a1ca903e69b1b8cd2">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1reviewer_1_1ReviewerAgent_1a58d290d2d55e6162e1e2247b9ebea0f1">review_draft</link> (self, dict draft_state)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1reviewer_1_1ReviewerAgent_1a6d961e5840925ddef49b094c79580d73">run</link> (self, dict draft_state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classagents_1_1reviewer_1_1ReviewerAgent_1a68d89b46182c202a1ca903e69b1b8cd2"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>agents.reviewer.ReviewerAgent</secondary></indexterm>
+<indexterm><primary>agents.reviewer.ReviewerAgent</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>agents.reviewer.ReviewerAgent.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classagents_1_1reviewer_1_1ReviewerAgent_1a58d290d2d55e6162e1e2247b9ebea0f1"/><section>
+    <title>review_draft()</title>
+<indexterm><primary>review_draft</primary><secondary>agents.reviewer.ReviewerAgent</secondary></indexterm>
+<indexterm><primary>agents.reviewer.ReviewerAgent</primary><secondary>review_draft</secondary></indexterm>
+<para><computeroutput>agents.reviewer.ReviewerAgent.review_draft ( self, dict draft_state)</computeroutput></para>
+<para><literallayout><computeroutput>Review a draft article
+:param draft_state:
+:return:
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1reviewer_1_1ReviewerAgent_a58d290d2d55e6162e1e2247b9ebea0f1_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1reviewer_1_1ReviewerAgent_1a6d961e5840925ddef49b094c79580d73"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>agents.reviewer.ReviewerAgent</secondary></indexterm>
+<indexterm><primary>agents.reviewer.ReviewerAgent</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>agents.reviewer.ReviewerAgent.run ( self, dict draft_state)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1reviewer_1_1ReviewerAgent_a6d961e5840925ddef49b094c79580d73_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/<link linkend="_reviewer_8py">reviewer.py</link></section>
+</section>

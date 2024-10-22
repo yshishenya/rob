@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classredis__token__storage_1_1RedisTokenStorage" kind="class" language="Python" prot="public">
+    <compoundname>redis_token_storage::RedisTokenStorage</compoundname>
+    <basecompoundref refid="classtoken__storage_1_1TokenStorage" prot="public" virt="non-virtual">token_storage.TokenStorage</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage::redis_client</definition>
+        <argsstring></argsstring>
+        <name>redis_client</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.redis_client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classredis__token__storage_1_1RedisTokenStorage_1ae8dd99f867d56a7d22cc51abe948835c" compoundref="redis__token__storage_8py" startline="89" endline="103">redis_token_storage.RedisTokenStorage.delete_all_refresh_tokens_by_user_id</referencedby>
+        <referencedby refid="classredis__token__storage_1_1RedisTokenStorage_1ad4043839e9087a9580f0cdb73e61ec0b" compoundref="redis__token__storage_8py" startline="82" endline="88">redis_token_storage.RedisTokenStorage.delete_refresh_token</referencedby>
+        <referencedby refid="classredis__token__storage_1_1RedisTokenStorage_1aaefb2d86c8ecfcfc7b4d6fc668b0142f" compoundref="redis__token__storage_8py" startline="41" endline="53">redis_token_storage.RedisTokenStorage.delete_token</referencedby>
+        <referencedby refid="classredis__token__storage_1_1RedisTokenStorage_1a025c443b1f988143a8f3624a2457a08b" compoundref="redis__token__storage_8py" startline="54" endline="67">redis_token_storage.RedisTokenStorage.delete_tokens_by_user_id</referencedby>
+        <referencedby refid="classredis__token__storage_1_1RedisTokenStorage_1aae0f0d43778c74ad44f4ee381151e7d0" compoundref="redis__token__storage_8py" startline="34" endline="40">redis_token_storage.RedisTokenStorage.retrieve_token</referencedby>
+        <referencedby refid="classredis__token__storage_1_1RedisTokenStorage_1a03d7fa22c6b5371b7254205ae9038ca8" compoundref="redis__token__storage_8py" startline="75" endline="81">redis_token_storage.RedisTokenStorage.retrieve_user_id_by_refresh_token</referencedby>
+        <referencedby refid="classredis__token__storage_1_1RedisTokenStorage_1ad6e7f032c2664d750982ac60025c24f3" compoundref="redis__token__storage_8py" startline="68" endline="74">redis_token_storage.RedisTokenStorage.store_refresh_token</referencedby>
+        <referencedby refid="classredis__token__storage_1_1RedisTokenStorage_1a229c35362e7af88b6096b2b5cb3048f0" compoundref="redis__token__storage_8py" startline="23" endline="33">redis_token_storage.RedisTokenStorage.store_token</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1a3d45b35c6cf8b5919ac3fe21cfa69479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="10" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1a229c35362e7af88b6096b2b5cb3048f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.store_token</definition>
+        <argsstring>(self, token, user_id, expires_in)</argsstring>
+        <name>store_token</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.store_token</qualifiedname>
+        <reimplements refid="classtoken__storage_1_1TokenStorage_1a358bba89fb75c5e0d351413fe35dc177">store_token</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <param>
+          <type>expires_in</type>
+          <defname>expires_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="23" bodyend="33"/>
+        <references refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" compoundref="redis__token__storage_8py" startline="15">redis_token_storage.RedisTokenStorage.redis_client</references>
+      </memberdef>
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1aae0f0d43778c74ad44f4ee381151e7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.retrieve_token</definition>
+        <argsstring>(self, token)</argsstring>
+        <name>retrieve_token</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.retrieve_token</qualifiedname>
+        <reimplements refid="classtoken__storage_1_1TokenStorage_1a7a995049b7f1a26b9a3b9310781d6052">retrieve_token</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="34" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="34" bodyend="40"/>
+        <references refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" compoundref="redis__token__storage_8py" startline="15">redis_token_storage.RedisTokenStorage.redis_client</references>
+      </memberdef>
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1aaefb2d86c8ecfcfc7b4d6fc668b0142f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.delete_token</definition>
+        <argsstring>(self, token)</argsstring>
+        <name>delete_token</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.delete_token</qualifiedname>
+        <reimplements refid="classtoken__storage_1_1TokenStorage_1a0993266db9e1a278fb77d46fc2ab9fed">delete_token</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="41" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="41" bodyend="53"/>
+        <references refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" compoundref="redis__token__storage_8py" startline="15">redis_token_storage.RedisTokenStorage.redis_client</references>
+      </memberdef>
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1a025c443b1f988143a8f3624a2457a08b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.delete_tokens_by_user_id</definition>
+        <argsstring>(self, user_id)</argsstring>
+        <name>delete_tokens_by_user_id</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.delete_tokens_by_user_id</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="54" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="54" bodyend="67"/>
+        <references refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" compoundref="redis__token__storage_8py" startline="15">redis_token_storage.RedisTokenStorage.redis_client</references>
+      </memberdef>
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1ad6e7f032c2664d750982ac60025c24f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.store_refresh_token</definition>
+        <argsstring>(self, refresh_token, user_id, expires_in)</argsstring>
+        <name>store_refresh_token</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.store_refresh_token</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>refresh_token</type>
+          <defname>refresh_token</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <param>
+          <type>expires_in</type>
+          <defname>expires_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="68" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="68" bodyend="74"/>
+        <references refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" compoundref="redis__token__storage_8py" startline="15">redis_token_storage.RedisTokenStorage.redis_client</references>
+      </memberdef>
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1a03d7fa22c6b5371b7254205ae9038ca8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.retrieve_user_id_by_refresh_token</definition>
+        <argsstring>(self, refresh_token)</argsstring>
+        <name>retrieve_user_id_by_refresh_token</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.retrieve_user_id_by_refresh_token</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>refresh_token</type>
+          <defname>refresh_token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="75" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="75" bodyend="81"/>
+        <references refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" compoundref="redis__token__storage_8py" startline="15">redis_token_storage.RedisTokenStorage.redis_client</references>
+      </memberdef>
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1ad4043839e9087a9580f0cdb73e61ec0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.delete_refresh_token</definition>
+        <argsstring>(self, refresh_token)</argsstring>
+        <name>delete_refresh_token</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.delete_refresh_token</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>refresh_token</type>
+          <defname>refresh_token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="82" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="82" bodyend="88"/>
+        <references refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" compoundref="redis__token__storage_8py" startline="15">redis_token_storage.RedisTokenStorage.redis_client</references>
+      </memberdef>
+      <memberdef kind="function" id="classredis__token__storage_1_1RedisTokenStorage_1ae8dd99f867d56a7d22cc51abe948835c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>redis_token_storage.RedisTokenStorage.delete_all_refresh_tokens_by_user_id</definition>
+        <argsstring>(self, user_id)</argsstring>
+        <name>delete_all_refresh_tokens_by_user_id</name>
+        <qualifiedname>redis_token_storage.RedisTokenStorage.delete_all_refresh_tokens_by_user_id</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="89" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="89" bodyend="103"/>
+        <references refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" compoundref="redis__token__storage_8py" startline="15">redis_token_storage.RedisTokenStorage.redis_client</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>redis_token_storage.RedisTokenStorage</label>
+        <link refid="classredis__token__storage_1_1RedisTokenStorage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>token_storage.TokenStorage</label>
+        <link refid="classtoken__storage_1_1TokenStorage"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>redis_token_storage.RedisTokenStorage</label>
+        <link refid="classredis__token__storage_1_1RedisTokenStorage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>token_storage.TokenStorage</label>
+        <link refid="classtoken__storage_1_1TokenStorage"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/redis_token_storage.py" bodystart="9" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1a3d45b35c6cf8b5919ac3fe21cfa69479" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>__init__</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1ae8dd99f867d56a7d22cc51abe948835c" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>delete_all_refresh_tokens_by_user_id</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1ad4043839e9087a9580f0cdb73e61ec0b" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>delete_refresh_token</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1aaefb2d86c8ecfcfc7b4d6fc668b0142f" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>delete_token</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1a025c443b1f988143a8f3624a2457a08b" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>delete_tokens_by_user_id</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1a0a2f119e8aa413a742b8b2a6705ab049" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>redis_client</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1aae0f0d43778c74ad44f4ee381151e7d0" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>retrieve_token</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1a03d7fa22c6b5371b7254205ae9038ca8" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>retrieve_user_id_by_refresh_token</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1ad6e7f032c2664d750982ac60025c24f3" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>store_refresh_token</name></member>
+      <member refid="classredis__token__storage_1_1RedisTokenStorage_1a229c35362e7af88b6096b2b5cb3048f0" prot="public" virt="non-virtual"><scope>redis_token_storage::RedisTokenStorage</scope><name>store_token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

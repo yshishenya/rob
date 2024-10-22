@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher_1_1llm__provider" xml:lang="en-US">
+<title>gpt_researcher.llm_provider Namespace Reference</title>
+<indexterm><primary>gpt_researcher.llm_provider</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1anthropic">anthropic</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1azureopenai">azureopenai</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1generic">generic</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1google">google</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1groq">groq</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1huggingface">huggingface</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1mistral">mistral</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1ollama">ollama</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1openai">openai</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1together">together</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacegpt__researcher_1_1llm__provider_1a91d2bd5c55978c07f716bbbaa0896684">__all__</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1llm__provider_1a91d2bd5c55978c07f716bbbaa0896684"/><section>
+    <title>__all__</title>
+<indexterm><primary>__all__</primary><secondary>gpt_researcher.llm_provider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider</primary><secondary>__all__</secondary></indexterm>
+<para><computeroutput>list gpt_researcher.llm_provider.__all__<computeroutput>[private]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;[
+2 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;GoogleProvider&quot;</emphasis>,
+3 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;OpenAIProvider&quot;</emphasis>,
+4 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;AzureOpenAIProvider&quot;</emphasis>,
+5 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;OllamaProvider&quot;</emphasis>,
+6 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;GroqProvider&quot;</emphasis>,
+7 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;TogetherProvider&quot;</emphasis>,
+8 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;AnthropicProvider&quot;</emphasis>,
+9 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;MistralProvider&quot;</emphasis>,
+10 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;HugginFaceProvider&quot;</emphasis>,
+11 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;GenericLLMProvider&quot;</emphasis>,
+12 ]
+</programlisting></section>
+</section>
+</section>

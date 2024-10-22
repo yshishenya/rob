@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1retrievers_1_1google" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::retrievers::google</compoundname>
+    <innernamespace refid="namespacegpt__researcher_1_1retrievers_1_1google_1_1google">gpt_researcher::retrievers::google::google</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/google/google.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

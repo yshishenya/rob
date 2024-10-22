@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacebackend_1_1utils" kind="namespace" language="Python">
+    <compoundname>backend::utils</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacebackend_1_1utils_1a349c1a0272cb33e2864e3916260d1c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None backend.utils.write_to_file</definition>
+        <argsstring>(str filename, str text)</argsstring>
+        <name>write_to_file</name>
+        <qualifiedname>backend.utils.write_to_file</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Asynchronously write text to a file in UTF-8 encoding.
+
+Args:
+    filename (str): The filename to write to.
+    text (str): The text to write.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" bodystart="6" bodyend="19"/>
+        <referencedby refid="namespacebackend_1_1utils_1a24a9b21ed7e6901e1bbf4e58b118c952" compoundref="utils_8py" startline="20" endline="39">backend.utils.write_text_to_md</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacebackend_1_1utils_1a24a9b21ed7e6901e1bbf4e58b118c952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str backend.utils.write_text_to_md</definition>
+        <argsstring>(str text, str filename=&quot;&quot;)</argsstring>
+        <name>write_text_to_md</name>
+        <qualifiedname>backend.utils.write_text_to_md</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Writes text to a Markdown file and returns the file path.
+
+Args:
+    text (str): Text to write to the Markdown file.
+
+Returns:
+    str: The file path of the generated Markdown file.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" bodystart="20" bodyend="39"/>
+        <references refid="namespacebackend_1_1utils_1a349c1a0272cb33e2864e3916260d1c0f" compoundref="utils_8py" startline="6" endline="19">backend.utils.write_to_file</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacebackend_1_1utils_1a3a0c17f855bfc57a2c8ec1e62282b4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str backend.utils.write_md_to_pdf</definition>
+        <argsstring>(str text, str filename=&quot;&quot;)</argsstring>
+        <name>write_md_to_pdf</name>
+        <qualifiedname>backend.utils.write_md_to_pdf</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Converts Markdown text to a PDF file and returns the file path.
+
+Args:
+    text (str): Markdown text to convert.
+
+Returns:
+    str: The encoded file path of the generated PDF.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" line="40" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" bodystart="40" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacebackend_1_1utils_1af7e009eb6e547b3ee1960da967dd1dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str backend.utils.write_md_to_word</definition>
+        <argsstring>(str text, str filename=&quot;&quot;)</argsstring>
+        <name>write_md_to_word</name>
+        <qualifiedname>backend.utils.write_md_to_word</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Converts Markdown text to a DOCX file and returns the file path.
+
+Args:
+    text (str): Markdown text to convert.
+
+Returns:
+    str: The encoded file path of the generated DOCX.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" line="71" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" bodystart="71" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

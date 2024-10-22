@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacecli" kind="namespace" language="Python">
+    <compoundname>cli</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecli_1acaca8ac2bee7e16ecd95cc31d0bb9c64" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cli.cli</definition>
+        <argsstring></argsstring>
+        <name>cli</name>
+        <qualifiedname>cli.cli</qualifiedname>
+        <initializer>=  argparse.ArgumentParser(
+    description=&quot;Generate a research report.&quot;,
+    # Enables the use of newlines in the <ref refid="namespacecli_1a4d57fcfd67bfdd5bf1bb5ef353ad3d04" kindref="member">help</ref> message
+    formatter_class=RawTextHelpFormatter)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="25" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecli_1a22e8d05830b557d4bad23cff231d0a3e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cli.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>cli.type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="37" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecli_1a4d57fcfd67bfdd5bf1bb5ef353ad3d04" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cli.help</definition>
+        <argsstring></argsstring>
+        <name>help</name>
+        <qualifiedname>cli.help</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecli_1a65f014f9d134c9c500c920de65e2ad02" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>cli.choices</definition>
+        <argsstring></argsstring>
+        <name>choices</name>
+        <qualifiedname>cli.choices</qualifiedname>
+        <initializer>=  [report_type.value for report_type in <ref refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType" kindref="compound">ReportType</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="44" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecli_1a775ffc6e10fa19dd31519ee6d29a01f3" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict cli.report_type_descriptions</definition>
+        <argsstring></argsstring>
+        <name>report_type_descriptions</name>
+        <qualifiedname>cli.report_type_descriptions</qualifiedname>
+        <initializer>=  {
+    ReportType.ResearchReport.value: &quot;Summary - Short and fast (~2 min)&quot;,
+    ReportType.DetailedReport.value: &quot;Detailed - In depth and longer (~5 min)&quot;,
+    ReportType.ResourceReport.value: &quot;&quot;,
+    ReportType.OutlineReport.value: &quot;&quot;,
+    ReportType.CustomReport.value: &quot;&quot;,
+    ReportType.SubtopicReport.value: &quot;&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="46" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecli_1a83d9ca1ff34a81c6ccd03f84f79d9d53" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cli.required</definition>
+        <argsstring></argsstring>
+        <name>required</name>
+        <qualifiedname>cli.required</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="63" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecli_1aded26a9cf4c656ae51d8492a2bcea4f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>cli.args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <qualifiedname>cli.args</qualifiedname>
+        <initializer>=  cli.parse_args()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="92" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecli_1a1575f9306adb5b73910ad4fc9253676c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cli.main</definition>
+        <argsstring>(args)</argsstring>
+        <name>main</name>
+        <qualifiedname>cli.main</qualifiedname>
+        <param>
+          <type><ref refid="namespacecli_1aded26a9cf4c656ae51d8492a2bcea4f8" kindref="member">args</ref></type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Conduct research on the given query, generate the report, and write
+it as a markdown file to the output directory.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="70" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" bodystart="70" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Provides a command line interface for the GPTResearcher class.
+
+Usage:
+
+```shell
+python cli.py &quot;&lt;query&gt;&quot; --report_type &lt;report_type&gt;
+```</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/cli.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

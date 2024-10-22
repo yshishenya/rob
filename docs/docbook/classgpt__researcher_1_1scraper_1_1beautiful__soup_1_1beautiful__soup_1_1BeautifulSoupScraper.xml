@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper" xml:lang="en-US">
+<title>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper Class Reference</title>
+<indexterm><primary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</primary></indexterm>
+Collaboration diagram for gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1ac450ca8fa42171edd01dacb27f5170b5">__init__</link> (self, <link linkend="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809">link</link>, <link linkend="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f">session</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317">scrape</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a3b2449ad1a189f3c9ba3478b17606e06">get_content_from_url</link> (self, soup)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809">link</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f">session</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1ac450ca8fa42171edd01dacb27f5170b5"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.__init__ ( self,  link,  session = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a3b2449ad1a189f3c9ba3478b17606e06"/><section>
+    <title>get_content_from_url()</title>
+<indexterm><primary>get_content_from_url</primary><secondary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</primary><secondary>get_content_from_url</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.get_content_from_url ( self,  soup)</computeroutput></para>
+<para><literallayout><computeroutput>Get the text from the soup
+
+Args:
+    soup (BeautifulSoup): The soup to get the text from
+
+Returns:
+    str: The text from the soup
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_a3b2449ad1a189f3c9ba3478b17606e06_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317"/><section>
+    <title>scrape()</title>
+<indexterm><primary>scrape</primary><secondary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</primary><secondary>scrape</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape ( self)</computeroutput></para>
+<para><literallayout><computeroutput>This function scrapes content from a webpage by making a GET request, parsing the HTML using
+BeautifulSoup, and extracting script and style elements before returning the cleaned content.
+
+Returns:
+  The `scrape` method is returning the cleaned and extracted content from the webpage specified
+by the `self.link` attribute. The method fetches the webpage content, removes script and style
+tags, extracts the text content, and returns the cleaned content as a string. If any exception
+occurs during the process, an error message is printed and an empty string is returned.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_acd9ba904bd299207cb541307b79d4317_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809"/><section>
+    <title>link</title>
+<indexterm><primary>link</primary><secondary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</primary><secondary>link</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.link</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f"/><section>
+    <title>session</title>
+<indexterm><primary>session</primary><secondary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</primary><secondary>session</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.session</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/<link linkend="_beautiful__soup_8py">beautiful_soup.py</link></section>
+</section>

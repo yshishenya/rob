@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacebackend_1_1report__type_1_1basic__report_1_1basic__report" kind="namespace" language="Python">
+    <compoundname>backend::report_type::basic_report::basic_report</compoundname>
+    <innerclass refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport" prot="public">backend::report_type::basic_report::basic_report::BasicReport</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/basic_report/basic_report.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacedocuments-report-source" xml:lang="en-US">
+<title>documents-report-source Namespace Reference</title>
+<indexterm><primary>documents-report-source</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacedocuments-report-source_1ad12a9b38a596a55ac62431fe1116e367">test_gpt_researcher</link> (report_type)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacedocuments-report-source_1abe193fbaff482c0f4acb6195464e2bd2">report_types</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedocuments-report-source_1adde104a314af0f4c17bc4c902abf5857">query</link> = &quot;What can you tell me about myself based on my documents?&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedocuments-report-source_1af938f99fc526afa847916a04f53f20e7">output_dir</link> = &quot;./outputs&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacedocuments-report-source_1ad12a9b38a596a55ac62431fe1116e367"/><section>
+    <title>test_gpt_researcher()</title>
+<indexterm><primary>test_gpt_researcher</primary><secondary>documents-report-source</secondary></indexterm>
+<indexterm><primary>documents-report-source</primary><secondary>test_gpt_researcher</secondary></indexterm>
+<para><computeroutput>documents-report-source.test_gpt_researcher ( report_type)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacedocuments-report-source_1af938f99fc526afa847916a04f53f20e7"/><section>
+    <title>output_dir</title>
+<indexterm><primary>output_dir</primary><secondary>documents-report-source</secondary></indexterm>
+<indexterm><primary>documents-report-source</primary><secondary>output_dir</secondary></indexterm>
+<para><computeroutput>str documents-report-source.output_dir = &quot;./outputs&quot;</computeroutput></para></section>
+<anchor xml:id="_namespacedocuments-report-source_1adde104a314af0f4c17bc4c902abf5857"/><section>
+    <title>query</title>
+<indexterm><primary>query</primary><secondary>documents-report-source</secondary></indexterm>
+<indexterm><primary>documents-report-source</primary><secondary>query</secondary></indexterm>
+<para><computeroutput>str documents-report-source.query = &quot;What can you tell me about myself based on my documents?&quot;</computeroutput></para></section>
+<anchor xml:id="_namespacedocuments-report-source_1abe193fbaff482c0f4acb6195464e2bd2"/><section>
+    <title>report_types</title>
+<indexterm><primary>report_types</primary><secondary>documents-report-source</secondary></indexterm>
+<indexterm><primary>documents-report-source</primary><secondary>report_types</secondary></indexterm>
+<para><computeroutput>list documents-report-source.report_types</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;[
+2 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;research_report&quot;</emphasis>,
+3 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;custom_report&quot;</emphasis>,
+4 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;subtopic_report&quot;</emphasis>,
+5 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;summary_report&quot;</emphasis>,
+6 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;detailed_report&quot;</emphasis>,
+7 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;quick_report&quot;</emphasis>
+8 ]
+</programlisting></section>
+</section>
+</section>

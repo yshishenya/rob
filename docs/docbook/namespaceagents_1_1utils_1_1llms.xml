@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceagents_1_1utils_1_1llms" xml:lang="en-US">
+<title>agents.utils.llms Namespace Reference</title>
+<indexterm><primary>agents.utils.llms</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespaceagents_1_1utils_1_1llms_1a11e6429a9b0fa8085b39b9478fb8ec6f">call_model</link> (list prompt, str model, int max_retries=2, str response_format=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceagents_1_1utils_1_1llms_1a11e6429a9b0fa8085b39b9478fb8ec6f"/><section>
+    <title>call_model()</title>
+<indexterm><primary>call_model</primary><secondary>agents.utils.llms</secondary></indexterm>
+<indexterm><primary>agents.utils.llms</primary><secondary>call_model</secondary></indexterm>
+<para><computeroutput> str agents.utils.llms.call_model (list prompt, str model, int  max_retries = <computeroutput>2</computeroutput>
+, str  response_format = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+</section>
+</section>

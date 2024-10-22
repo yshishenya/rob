@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_f29e94e6e5621143471d2f522ece5576" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog</compoundname>
+    <innerdir refid="dir_272079b82ab852f477ff6e61ff538a4b">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2023-09-22-gpt-researcher</innerdir>
+    <innerdir refid="dir_69c17eae910d071de5965501a80b28a0">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2023-11-12-openai-assistant</innerdir>
+    <innerdir refid="dir_7f010a5330323b73b54b7b0ce04f1ea3">/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/2024-05-19-gptr-langgraph</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/blog/"/>
+  </compounddef>
+</doxygen>

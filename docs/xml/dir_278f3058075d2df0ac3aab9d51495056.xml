@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_278f3058075d2df0ac3aab9d51495056" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents</compoundname>
+    <innerdir refid="dir_434b0703019d58bbb57650e33eaa1ef4">/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents</innerdir>
+    <innerdir refid="dir_c452203ab90700a398fc4225a9ca3c2e">/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory</innerdir>
+    <innerfile refid="multi__agents_2agent_8py">agent.py</innerfile>
+    <innerfile refid="multi__agents_2main_8py">main.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/"/>
+  </compounddef>
+</doxygen>

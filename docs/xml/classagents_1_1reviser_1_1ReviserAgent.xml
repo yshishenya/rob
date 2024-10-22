@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classagents_1_1reviser_1_1ReviserAgent" kind="class" language="Python" prot="public">
+    <compoundname>agents::reviser::ReviserAgent</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagents_1_1reviser_1_1ReviserAgent_1a72f2e05c9172082d048e04a8d2ca951b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.reviser.ReviserAgent.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>agents.reviser.ReviserAgent.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.reviser.ReviserAgent.revise_draft</definition>
+        <argsstring>(self, dict draft_state)</argsstring>
+        <name>revise_draft</name>
+        <qualifiedname>agents.reviser.ReviserAgent.revise_draft</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>draft_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Review a draft article
+:param draft_state:
+:return:
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py" bodystart="18" bodyend="43"/>
+        <referencedby refid="classagents_1_1reviser_1_1ReviserAgent_1a87b9ffff687ab822ae8ce05aef90e405" compoundref="reviser_8py" startline="44" endline="53">agents.reviser.ReviserAgent.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1reviser_1_1ReviserAgent_1a87b9ffff687ab822ae8ce05aef90e405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.reviser.ReviserAgent.run</definition>
+        <argsstring>(self, dict draft_state)</argsstring>
+        <name>run</name>
+        <qualifiedname>agents.reviser.ReviserAgent.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>draft_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py" line="44" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py" bodystart="44" bodyend="53"/>
+        <references refid="classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2" compoundref="reviser_8py" startline="18" endline="43">agents.reviser.ReviserAgent.revise_draft</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>agents.reviser.ReviserAgent</label>
+        <link refid="classagents_1_1reviser_1_1ReviserAgent"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviser.py" bodystart="14" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classagents_1_1reviser_1_1ReviserAgent_1a72f2e05c9172082d048e04a8d2ca951b" prot="public" virt="non-virtual"><scope>agents::reviser::ReviserAgent</scope><name>__init__</name></member>
+      <member refid="classagents_1_1reviser_1_1ReviserAgent_1af952df9d9a6b49f5483663a069e8d6e2" prot="public" virt="non-virtual"><scope>agents::reviser::ReviserAgent</scope><name>revise_draft</name></member>
+      <member refid="classagents_1_1reviser_1_1ReviserAgent_1a87b9ffff687ab822ae8ce05aef90e405" prot="public" virt="non-virtual"><scope>agents::reviser::ReviserAgent</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

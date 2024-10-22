@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacesample__report" xml:lang="en-US">
+<title>sample_report Namespace Reference</title>
+<indexterm><primary>sample_report</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacesample__report_1ac5d0f2408113608aa029cca5c6fdab0a">main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacesample__report_1ac5d0f2408113608aa029cca5c6fdab0a"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>sample_report</secondary></indexterm>
+<indexterm><primary>sample_report</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>sample_report.main ( )</computeroutput></para>
+<para><literallayout><computeroutput>This is a sample script that shows how to run a research report.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+</section>

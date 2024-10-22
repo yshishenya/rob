@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1utils_1_1enum" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::utils::enum</compoundname>
+    <innerclass refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource" prot="public">gpt_researcher::utils::enum::ReportSource</innerclass>
+    <innerclass refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType" prot="public">gpt_researcher::utils::enum::ReportType</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

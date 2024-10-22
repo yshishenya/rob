@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="views_8py" kind="file" language="Python">
+    <compoundname>views.py</compoundname>
+    <innerclass refid="classagents_1_1utils_1_1views_1_1AgentColor" prot="public">agents::utils::views::AgentColor</innerclass>
+    <innernamespace refid="namespaceagents">agents</innernamespace>
+    <innernamespace refid="namespaceagents_1_1utils">agents::utils</innernamespace>
+    <innernamespace refid="namespaceagents_1_1utils_1_1views">agents::utils::views</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceagents_1_1utils_1_1views" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>colorama<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Fore,<sp/>Style</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>enum<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Enum</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classagents_1_1utils_1_1views_1_1AgentColor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1utils_1_1views_1_1AgentColor" kindref="compound">AgentColor</ref>(Enum):</highlight></codeline>
+<codeline lineno="6" refid="classagents_1_1utils_1_1views_1_1AgentColor_1aad82b618de5affc17c7ed241978d4d29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>RESEARCHER<sp/>=<sp/>Fore.LIGHTBLUE_EX</highlight></codeline>
+<codeline lineno="7" refid="classagents_1_1utils_1_1views_1_1AgentColor_1a054652ba8e8cb50221b694148a08e16c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>EDITOR<sp/>=<sp/>Fore.YELLOW</highlight></codeline>
+<codeline lineno="8" refid="classagents_1_1utils_1_1views_1_1AgentColor_1a55c936b52836cd867677166ed7d0390b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>WRITER<sp/>=<sp/>Fore.LIGHTGREEN_EX</highlight></codeline>
+<codeline lineno="9" refid="classagents_1_1utils_1_1views_1_1AgentColor_1a31ef9e1a009fb8401e198482cf62af70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>PUBLISHER<sp/>=<sp/>Fore.MAGENTA</highlight></codeline>
+<codeline lineno="10" refid="classagents_1_1utils_1_1views_1_1AgentColor_1a397c2bb5e464ce713866d7f100f1ca4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>REVIEWER<sp/>=<sp/>Fore.CYAN</highlight></codeline>
+<codeline lineno="11" refid="classagents_1_1utils_1_1views_1_1AgentColor_1a3d962b5a2e02afd4ff3cca70040a85e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>REVISOR<sp/>=<sp/>Fore.LIGHTWHITE_EX</highlight></codeline>
+<codeline lineno="12" refid="classagents_1_1utils_1_1views_1_1AgentColor_1af51a03e79c5086c177807e347accc8a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>MASTER<sp/>=<sp/>Fore.LIGHTYELLOW_EX</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespaceagents_1_1utils_1_1views_1aa0db7100917087f4c57e0aae1358f5a9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespaceagents_1_1utils_1_1views_1aa0db7100917087f4c57e0aae1358f5a9" kindref="member">print_agent_output</ref>(output:str,<sp/>agent:<sp/>str=</highlight><highlight class="stringliteral">&quot;RESEARCHER&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;{AgentColor[agent].value}{agent}:<sp/>{output}{Style.RESET_ALL}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/views.py"/>
+  </compounddef>
+</doxygen>

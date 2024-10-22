@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmemory_1_1draft_1_1DraftState" kind="class" language="Python" prot="public">
+    <compoundname>memory::draft::DraftState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TypedDict</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmemory_1_1draft_1_1DraftState_1a250fbcc1aa37c36a6c5be184d3957048" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict memory.draft.DraftState::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <qualifiedname>memory.draft.DraftState.task</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" bodystart="6" bodyend="-1"/>
+        <referencedby refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" compoundref="master_8py" startline="50" endline="60">agents.master.ChiefEditorAgent.run_research_task</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1draft_1_1DraftState_1a7a1419f6463612981b61bfd42e08e1e4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.draft.DraftState::topic</definition>
+        <argsstring></argsstring>
+        <name>topic</name>
+        <qualifiedname>memory.draft.DraftState.topic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1aaa6a16beec23316f798ba1fe987b379b" compoundref="tavily__search_8py" startline="38" endline="61">gpt_researcher.retrievers.tavily.tavily_search.TavilySearch.search</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1draft_1_1DraftState_1a2ff087066da05f32a690858b7830b1cd" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict memory.draft.DraftState::draft</definition>
+        <argsstring></argsstring>
+        <name>draft</name>
+        <qualifiedname>memory.draft.DraftState.draft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1draft_1_1DraftState_1a98d9f0c97a9068937de25af7fd8400c8" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.draft.DraftState::review</definition>
+        <argsstring></argsstring>
+        <name>review</name>
+        <qualifiedname>memory.draft.DraftState.review</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory_1_1draft_1_1DraftState_1a84634ee06bf0565241efaff29efa71db" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str memory.draft.DraftState::revision_notes</definition>
+        <argsstring></argsstring>
+        <name>revision_notes</name>
+        <qualifiedname>memory.draft.DraftState.revision_notes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>memory.draft.DraftState</label>
+        <link refid="classmemory_1_1draft_1_1DraftState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TypedDict</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>dict</label>
+      </node>
+      <node id="1">
+        <label>memory.draft.DraftState</label>
+        <link refid="classmemory_1_1draft_1_1DraftState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+draft</edgelabel>
+          <edgelabel>+task</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+review</edgelabel>
+          <edgelabel>+revision_notes</edgelabel>
+          <edgelabel>+topic</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+      <node id="2">
+        <label>TypedDict</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" line="5" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" bodystart="5" bodyend="11"/>
+    <listofallmembers>
+      <member refid="classmemory_1_1draft_1_1DraftState_1a2ff087066da05f32a690858b7830b1cd" prot="public" virt="non-virtual"><scope>memory::draft::DraftState</scope><name>draft</name></member>
+      <member refid="classmemory_1_1draft_1_1DraftState_1a98d9f0c97a9068937de25af7fd8400c8" prot="public" virt="non-virtual"><scope>memory::draft::DraftState</scope><name>review</name></member>
+      <member refid="classmemory_1_1draft_1_1DraftState_1a84634ee06bf0565241efaff29efa71db" prot="public" virt="non-virtual"><scope>memory::draft::DraftState</scope><name>revision_notes</name></member>
+      <member refid="classmemory_1_1draft_1_1DraftState_1a250fbcc1aa37c36a6c5be184d3957048" prot="public" virt="non-virtual"><scope>memory::draft::DraftState</scope><name>task</name></member>
+      <member refid="classmemory_1_1draft_1_1DraftState_1a7a1419f6463612981b61bfd42e08e1e4" prot="public" virt="non-virtual"><scope>memory::draft::DraftState</scope><name>topic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

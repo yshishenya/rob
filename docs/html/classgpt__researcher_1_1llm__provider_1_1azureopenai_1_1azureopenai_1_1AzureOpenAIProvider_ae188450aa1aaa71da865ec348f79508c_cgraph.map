@@ -1,0 +1,23 @@
+<map id="gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_chat_response" name="gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_chat_response">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,353,260,422"/>
+<area shape="rect" id="Node000002" href="$classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider.html#af38dafb273b5ae2fb4983fcbcf00617c" title=" " alt="" coords="325,5,578,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,352,161,290,195,214,217,174,243,136,273,100,306,69,312,65,315,69,310,73,276,104,247,139,222,177,200,216,166,292,146,353"/>
+<area shape="rect" id="Node000003" href="$classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider.html#acae7065991e34f865ca1c233794095b4" title=" " alt="" coords="314,84,589,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,351,172,305,208,250,253,195,306,148,314,143,317,147,310,152,257,198,212,253,177,308,152,354"/>
+<area shape="rect" id="Node000004" href="$classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider.html#a3fb2ac1b5d289a3b4a22d083b025052e" title=" " alt="" coords="340,163,563,217"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,351,224,287,264,254,307,226,326,217,328,222,309,231,267,259,227,291,165,354"/>
+<area shape="rect" id="Node000005" href="$classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider.html#a8fe0e930693b7b5e2ac287fed6facc35" title=" " alt="" coords="337,241,565,296"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="202,350,307,305,328,298,330,303,309,310,204,355"/>
+<area shape="rect" id="Node000006" href="$classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider.html#a93be9e7cc2192cb605eb4eb6f1ef3f7d" title=" " alt="" coords="308,320,595,375"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="260,369,294,364,295,370,261,374"/>
+<area shape="rect" id="Node000007" href="$classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider.html#a1cea93e5495738cf31047865f4c50448" title=" " alt="" coords="318,399,585,453"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="261,400,305,406,304,411,260,405"/>
+<area shape="rect" id="Node000008" href="$classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider.html#ad46ecf3c0c6e62502709cdf36b783fb6" title=" " alt="" coords="333,477,569,532"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="207,420,309,462,334,471,333,476,307,467,205,425"/>
+<area shape="rect" id="Node000009" href="$classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider.html#acc5ec4a2e770daf8a88b0e41ee044c04" title=" " alt="" coords="336,556,567,611"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="166,420,228,482,267,514,309,541,324,549,322,553,307,546,264,518,225,486,162,424"/>
+<area shape="rect" id="Node000010" href="$classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider.html#a4d59b5af663196df435cac336e439c40" title=" " alt="" coords="343,635,559,689"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="153,421,178,466,213,520,257,574,310,620,332,632,329,637,306,624,253,578,208,523,173,469,148,423"/>
+<area shape="rect" id="Node000011" href="$classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider.html#a8b56080c220a05856546d516e1a628c4" title=" " alt="" coords="328,713,575,768"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="146,422,167,482,200,557,222,596,248,633,277,668,310,699,318,705,315,709,306,703,273,672,243,637,218,599,196,559,162,484,141,423"/>
+</map>

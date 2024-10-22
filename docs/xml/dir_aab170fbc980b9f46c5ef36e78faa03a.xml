@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_aab170fbc980b9f46c5ef36e78faa03a" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type</compoundname>
+    <innerdir refid="dir_61a4d70de5d1a3837365f5259e169906">/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/basic_report</innerdir>
+    <innerdir refid="dir_dae0667084c4390d618a3a4e85c2e33d">/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/detailed_report</innerdir>
+    <innerfile refid="backend_2report__type_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="auth_8md" kind="file" language="Markdown">
+    <compoundname>auth.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">Давайте<sp/>дополним<sp/>руководство,<sp/>добавив<sp/>недостающую<sp/>информацию<sp/>из<sp/>предоставленных<sp/>вами<sp/>фрагментов<sp/>кода<sp/>и<sp/>моделей.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Руководство<sp/>по<sp/>использованию<sp/>API</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Введение</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Данное<sp/>руководство<sp/>предназначено<sp/>для<sp/>фронтенд-<sp/>и<sp/>бэкенд-разработчиков.<sp/>Оно<sp/>описывает<sp/>основные<sp/>маршруты<sp/>для<sp/>взаимодействия<sp/>с<sp/>бэкендом<sp/>через<sp/>API,<sp/>а<sp/>также<sp/>детали<sp/>авторизации<sp/>и<sp/>управления<sp/>пользователями.<sp/>Все<sp/>запросы<sp/>к<sp/>API<sp/>должны<sp/>быть<sp/>авторизованы<sp/>с<sp/>использованием<sp/>токена<sp/>доступа.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Аутентификация</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Получение<sp/>токенов</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Для<sp/>выполнения<sp/>аутентификации<sp/>и<sp/>получения<sp/>токенов<sp/>доступа<sp/>и<sp/>обновления,<sp/>отправьте<sp/>POST-запрос<sp/>на<sp/>`/login`,<sp/>указав<sp/>имя<sp/>пользователя<sp/>и<sp/>пароль<sp/>в<sp/>теле<sp/>запроса<sp/>в<sp/>формате<sp/>`application/x-www-form-urlencoded`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>https://dev.rob.pro-4.ru/login<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-H<sp/>&quot;Content-Type:<sp/>application/json&quot;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-d<sp/>&apos;{&quot;username&quot;:&quot;user&quot;,<sp/>&quot;password&quot;:&quot;password&quot;}&apos;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Пример<sp/>успешного<sp/>ответа</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">В<sp/>ответе<sp/>вы<sp/>получите<sp/>два<sp/>токена:<sp/>`access_token`<sp/>для<sp/>доступа<sp/>к<sp/>защищенным<sp/>маршрутам<sp/>и<sp/>`refresh_token`<sp/>для<sp/>обновления<sp/>`access_token`<sp/>по<sp/>его<sp/>истечении.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```json</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;access_token&quot;:<sp/>&quot;25ac806aba456abac04dade950f754592f3763ff1a3fa564&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;expires_in&quot;:<sp/>3600,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;expires_at&quot;:<sp/>&quot;2024-05-18T09:39:27.487986&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;refresh_token&quot;:<sp/>&quot;14c23f5e6c412cdadfc3e71fbff240d8d7bf7edd582e6153&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;refresh_expires_in&quot;:<sp/>2592000,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;refresh_token_expires_at&quot;:<sp/>&quot;2024-06-17T08:39:27.487995&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;is_admin&quot;:<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Описание<sp/>полей<sp/>ответа</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**access_token**:<sp/>Токен<sp/>доступа,<sp/>который<sp/>используется<sp/>для<sp/>аутентификации<sp/>пользователя<sp/>в<sp/>системе.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**expires_in**:<sp/>Время<sp/>жизни<sp/>токена<sp/>доступа<sp/>в<sp/>секундах<sp/>(3600<sp/>секунд<sp/>=<sp/>1<sp/>час).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**expires_at**:<sp/>Точная<sp/>дата<sp/>и<sp/>время<sp/>истечения<sp/>токена<sp/>доступа<sp/>в<sp/>формате<sp/>ISO<sp/>8601.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**refresh_token**:<sp/>Токен<sp/>для<sp/>обновления<sp/>доступа,<sp/>который<sp/>можно<sp/>использовать<sp/>для<sp/>получения<sp/>нового<sp/>токена<sp/>доступа<sp/>после<sp/>истечения<sp/>текущего.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**refresh_expires_in**:<sp/>Время<sp/>жизни<sp/>токена<sp/>для<sp/>обновления<sp/>в<sp/>секундах<sp/>(2592000<sp/>секунд<sp/>=<sp/>30<sp/>дней).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**refresh_token_expires_at**:<sp/>Точная<sp/>дата<sp/>и<sp/>время<sp/>истечения<sp/>токена<sp/>обновления<sp/>в<sp/>формате<sp/>ISO<sp/>8601.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**is_admin**:<sp/>Флаг,<sp/>указывающий,<sp/>является<sp/>ли<sp/>пользователь<sp/>администратором.<sp/>`true`,<sp/>если<sp/>пользователь<sp/>имеет<sp/>права<sp/>администратора.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Использование<sp/>access_token</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Для<sp/>доступа<sp/>к<sp/>защищенным<sp/>маршрутам<sp/>включайте<sp/>полученный<sp/>`access_token`<sp/>в<sp/>запросы.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Пример<sp/>подключения<sp/>к<sp/>WebSocket</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```javascript</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>listenToSockEvents<sp/>=<sp/>()<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>{<sp/>protocol,<sp/>host,<sp/>pathname<sp/>}<sp/>=<sp/>window.location;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>token<sp/>=<sp/>&quot;токен&quot;;<sp/>//<sp/>вставьте<sp/>свой<sp/>токен</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>ws_uri<sp/>=<sp/>`${</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>protocol<sp/>===<sp/>&quot;https:&quot;<sp/>?<sp/>&quot;wss:&quot;<sp/>:<sp/>&quot;ws:&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}//${host}${pathname}ws?token=${encodeURIComponent(token)}`;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>converter<sp/>=<sp/>new<sp/>showdown.Converter();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>socket<sp/>=<sp/>new<sp/>WebSocket(ws_uri);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>socket.onmessage<sp/>=<sp/>(event)<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>const<sp/>data<sp/>=<sp/>JSON.parse(event.data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(data.type<sp/>===<sp/>&quot;logs&quot;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addAgentResponse(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(data.type<sp/>===<sp/>&quot;report&quot;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>writeReport(data,<sp/>converter);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(data.type<sp/>===<sp/>&quot;path&quot;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>updateState(&quot;finished&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>updateDownloadLink(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Пример<sp/>использования<sp/>WebSocket<sp/>на<sp/>Python</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>asyncio</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>websockets</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>connect():</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>uri<sp/>=<sp/>&quot;ws://localhost:8000/ws?token=&lt;access_token&gt;&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>async<sp/>with<sp/>websockets.connect(uri)<sp/>as<sp/>websocket:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>websocket.send(json.dumps({</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;task&quot;:<sp/>&quot;Example<sp/>task&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;report_type&quot;:<sp/>&quot;pdf&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>response<sp/>=<sp/>await<sp/>websocket.recv()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(response)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">asyncio.get_event_loop().run_until_complete(connect())</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Обновление<sp/>токена<sp/>доступа</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Использование<sp/>refresh_token</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Когда<sp/>срок<sp/>действия<sp/>`access_token`<sp/>подходит<sp/>к<sp/>концу,<sp/>вы<sp/>можете<sp/>использовать<sp/>`refresh_token`<sp/>для<sp/>получения<sp/>нового<sp/>токена<sp/>доступа.<sp/>Для<sp/>этого<sp/>отправьте<sp/>POST-запрос<sp/>на<sp/>`/api/refresh`,<sp/>передав<sp/>`refresh_token`<sp/>в<sp/>теле<sp/>запроса.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>https://dev.volter.pro-4.ru/api/refresh<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-H<sp/>&quot;Content-Type:<sp/>application/json&quot;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-d<sp/>&apos;{&quot;refresh_token&quot;:&quot;&lt;ваш_refresh_token&gt;&quot;}&apos;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Пример<sp/>успешного<sp/>ответа</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">После<sp/>успешного<sp/>выполнения<sp/>запроса<sp/>на<sp/>обновление<sp/>токена<sp/>доступа,<sp/>вы<sp/>получите<sp/>JSON<sp/>с<sp/>новым<sp/>`access_token`<sp/>и<sp/>`refresh_token`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```json</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;access_token&quot;:<sp/>&quot;2dc01915898f60c9f378074e62b677285281c6338fdcb787&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;expires_in&quot;:<sp/>3600,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;expires_at&quot;:<sp/>&quot;2024-05-18T09:49:04.334472&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;refresh_token&quot;:<sp/>&quot;cb96f0025f869215a047f354c95b8145c17949be16b9391c&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;refresh_expires_in&quot;:<sp/>2592000,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;refresh_expires_at&quot;:<sp/>&quot;2024-06-17T08:49:04.334500&quot;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Описание<sp/>ошибок</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**1.<sp/>401<sp/>Unauthorized:**<sp/>Ошибка<sp/>аутентификации.<sp/>Возникает,<sp/>если<sp/>предоставленный<sp/>токен<sp/>недействителен<sp/>или<sp/>истек.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Причины**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Неверный<sp/>`access_token`<sp/>или<sp/>`refresh_token`.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Токен<sp/>истек.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Пример<sp/>ответа:**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```json</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;detail&quot;:<sp/>&quot;Could<sp/>not<sp/>validate<sp/>credentials&quot;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Описание<sp/>системы<sp/>авторизации</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Общая<sp/>структура</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Система<sp/>авторизации<sp/>состоит<sp/>из<sp/>нескольких<sp/>модулей,<sp/>которые<sp/>взаимодействуют<sp/>друг<sp/>с<sp/>другом<sp/>для<sp/>обеспечения<sp/>безопасности<sp/>и<sp/>управления<sp/>доступом<sp/>пользователей.<sp/>Основные<sp/>компоненты<sp/>включают:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>**auth.py**<sp/>-<sp/>Основной<sp/>модуль,<sp/>содержащий<sp/>маршруты<sp/>и<sp/>логику<sp/>авторизации.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>**redis_token_storage.py**<sp/>-<sp/>Реализация<sp/>хранилища<sp/>токенов<sp/>на<sp/>основе<sp/>Redis.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>**token_storage.py**<sp/>-<sp/>Абстрактный<sp/>класс<sp/>для<sp/>хранилища<sp/>токенов.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>**db.py**<sp/>-<sp/>Модуль<sp/>для<sp/>работы<sp/>с<sp/>базой<sp/>данных.</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>**server.py**<sp/>-<sp/>Основной<sp/>серверный<sp/>модуль,<sp/>который<sp/>включает<sp/>маршруты<sp/>и<sp/>инициализирует<sp/>приложение.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Модуль<sp/>auth.py</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Этот<sp/>модуль<sp/>содержит<sp/>маршруты<sp/>и<sp/>логику<sp/>для<sp/>авторизации<sp/>пользователей.<sp/>Основные<sp/>функции<sp/>включают:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**/login**:<sp/>Позволяет<sp/>пользователю<sp/>войти<sp/>в<sp/>систему,<sp/>используя<sp/>имя<sp/>пользователя<sp/>и<sp/>пароль.<sp/>Возвращает<sp/>токены<sp/>доступа<sp/>и<sp/>обновления.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**/logout**:<sp/>Позволяет<sp/>пользователю<sp/>выйти<sp/>из<sp/>системы,<sp/>используя<sp/>refresh_token.<sp/>Очищает<sp/>токены<sp/>доступа<sp/>и<sp/>обновления.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**/refresh**:<sp/>Обновляет<sp/>токен<sp/>доступа,<sp/>используя<sp/>токен<sp/>обновления.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**/users/create**:<sp/>Создает<sp/>нового<sp/>пользователя<sp/>(только<sp/>для<sp/>администраторов).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**/users/delete**:<sp/>Удаляет<sp/>пользователя<sp/>по<sp/>идентификатору<sp/>(только<sp/>для<sp/>администраторов).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**/users/password**:<sp/>Изменяет<sp/>пароль<sp/>пользователя<sp/>(только<sp/>для<sp/>администраторов).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**/users/modify**:<sp/>Изменяет<sp/>данные<sp/>пользователя<sp/>(только<sp/>для<sp/>администраторов).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**/users**:<sp/>Возвращает<sp/>список<sp/>всех<sp/>пользователей<sp/>(только<sp/>для<sp/>администраторов).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Модели<sp/>Pydantic</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Для<sp/>валидации<sp/>данных<sp/>используются<sp/>Pydantic-модели.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>LoginRequest(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>username:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Имя<sp/>пользователя<sp/>для<sp/>входа<sp/>в<sp/>систему.<sp/>Должно<sp/>быть<sp/>уникальным<sp/>и<sp/>не<sp/>повторяться<sp/>с<sp/>другими<sp/>пользователями.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>password:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Пароль<sp/>пользователя.<sp/>Должен<sp/>быть<sp/>надежным<sp/>и<sp/>содержать<sp/>минимум<sp/>6<sp/>символов<sp/>для<sp/>обеспечения<sp/>безопасности.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>LoginResponse(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>access_token:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Токен<sp/>доступа,<sp/>который<sp/>используется<sp/>для<sp/>аутентификации<sp/>пользователя<sp/>в<sp/>системе.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>expires_in:<sp/>int<sp/>=<sp/>Field(...,<sp/>description=&quot;Время<sp/>жизни<sp/>токена<sp/>доступа<sp/>в<sp/>секундах,<sp/>после<sp/>которого<sp/>токен<sp/>становится<sp/>недействительным.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>expires_at:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Точная<sp/>дата<sp/>и<sp/>время<sp/>истечения<sp/>токена<sp/>доступа<sp/>в<sp/>формате<sp/>ISO<sp/>8601.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_token:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Токен<sp/>для<sp/>обновления<sp/>доступа,<sp/>который<sp/>можно<sp/>использовать<sp/>для<sp/>получения<sp/>нового<sp/>токена<sp/>доступа<sp/>после<sp/>истечения<sp/>текущего.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_expires_in:<sp/>int<sp/>=<sp/>Field(...,<sp/>description=&quot;Время<sp/>жизни<sp/>токена<sp/>для<sp/>обновления<sp/>в<sp/>секундах,<sp/>после<sp/>которого<sp/>токен<sp/>становится<sp/>недействительным.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_token_expires_at:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Точная<sp/>дата<sp/>и<sp/>время<sp/>истечения<sp/>токена<sp/>обновления<sp/>в<sp/>формате<sp/>ISO<sp/>8601.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>is_admin:<sp/>bool<sp/>=<sp/>Field(...,<sp/>description=&quot;Флаг,<sp/>указывающий,<sp/>является<sp/>ли<sp/>пользователь<sp/>администратором.<sp/>True,<sp/>если<sp/>пользователь<sp/>имеет<sp/>права<sp/>администратора.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>RefreshRequest(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_token:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Токен<sp/>обновления,<sp/>который<sp/>нужно<sp/>использовать<sp/>для<sp/>получения<sp/>нового<sp/>токена<sp/>доступа.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>RefreshResponse(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>access_token:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Новый<sp/>токен<sp/>доступа,<sp/>выданный<sp/>пользователю.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>expires_in:<sp/>int<sp/>=<sp/>Field(...,<sp/>description=&quot;Время<sp/>жизни<sp/>нового<sp/>токена<sp/>доступа<sp/>в<sp/>секундах.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>expires_at:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Время<sp/>истечения<sp/>нового<sp/>токена<sp/>доступа<sp/>в<sp/>формате<sp/>ISO<sp/>8601.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_token:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Новый<sp/>токен<sp/>обновления,<sp/>выданный<sp/>пользователю.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_expires_in:<sp/>int<sp/>=<sp/>Field(...,<sp/>description=&quot;Время<sp/>жизни<sp/>нового<sp/>токена<sp/>обновления<sp/>в<sp/>секундах.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_expires_at:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Время<sp/>истечения<sp/>нового<sp/>токена<sp/>обновления<sp/>в<sp/>формате<sp/>ISO<sp/>8601.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>UserCreateRequest(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>username:<sp/>constr(min_length=3,<sp/>max_length=50)<sp/>=<sp/>Field(...,<sp/>description=&quot;Имя<sp/>пользователя.<sp/>Должно<sp/>быть<sp/>уникальным<sp/>и<sp/>содержать<sp/>от<sp/>3<sp/>до<sp/>50<sp/>символов.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>email:<sp/>EmailStr<sp/>=<sp/>Field(...,<sp/>description=&quot;Электронная<sp/>почта<sp/>пользователя.<sp/>Должна<sp/>быть<sp/>действительной<sp/>и<sp/>уникальной.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>password:<sp/>constr(min_length=6,<sp/>max_length=50)<sp/>=<sp/>Field(...,<sp/>description=&quot;Пароль<sp/>пользователя.<sp/>Должен<sp/>быть<sp/>надежным<sp/>и<sp/>содержать<sp/>от<sp/>6<sp/>до<sp/>50<sp/>символов.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>is_admin:<sp/>bool<sp/>=<sp/>Field(...,<sp/>description=&quot;Является<sp/>ли<sp/>пользователь<sp/>администратором.<sp/>True,<sp/>если<sp/>пользователь<sp/>имеет<sp/>права<sp/>администратора.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>UserResponse(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>id:<sp/>int<sp/>=<sp/>Field(...,<sp/>description=&quot;Уникальный<sp/>идентификатор<sp/>пользователя<sp/>в<sp/>системе.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>username:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Имя<sp/>пользователя.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>email:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Электронная<sp/>почта<sp/>пользователя.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>is_admin:<sp/>bool<sp/>=<sp/>Field(...,<sp/>description=&quot;Признак<sp/>того,<sp/>является<sp/>ли<sp/>пользователь<sp/>администратором.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>PasswordChangeRequest(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>user_id:<sp/>int<sp/>=<sp/>Field(...,<sp/>description=&quot;Идентификатор<sp/>пользователя,<sp/>для<sp/>которого<sp/>нужно<sp/>изменить<sp/>пароль.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>new_password:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Новый<sp/>пароль<sp/>пользователя.<sp/>Должен<sp/>быть<sp/>надежным<sp/>и<sp/>содержать<sp/>минимум<sp/>6<sp/>символов.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>PasswordChangeResponse(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>user_id:<sp/>int<sp/>=<sp/>Field(...,<sp/>description=&quot;Идентификатор<sp/>пользователя,<sp/>для<sp/>которого<sp/>был<sp/>изменен<sp/>пароль.&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>message:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Сообщение<sp/>об<sp/>успешной<sp/>смене<sp/>пароля.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>DeleteUserRequest(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>user_id:<sp/>int<sp/>=<sp/>Field(...,<sp/>description=&quot;Идентификатор<sp/>пользователя,<sp/>которого<sp/>нужно<sp/>удалить.&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>DeleteUserResponse(BaseModel):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>message:<sp/>str<sp/>=<sp/>Field(...,<sp/>description=&quot;Сообщение<sp/>об<sp/>успешном<sp/>удалении<sp/>пользователя.&quot;)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Функции<sp/>для<sp/>работы<sp/>с<sp/>токенами</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Использование<sp/>функций<sp/>для<sp/>создания<sp/>и<sp/>проверки<sp/>токенов:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">async<sp/>def<sp/>create_tokens(user_id):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>access_token<sp/>=<sp/>binascii.hexlify(os.urandom(24)).decode()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>access_token_expires_in<sp/>=<sp/>3600<sp/><sp/>#<sp/>1<sp/>час<sp/>в<sp/>секундах</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>access_token_expires_at<sp/>=<sp/>datetime.utcnow()<sp/>+<sp/>timedelta(seconds=access_token_expires_in)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_token<sp/>=<sp/>binascii.hexlify(os.urandom(24)).decode()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_token_expires_in<sp/>=<sp/>2592000<sp/><sp/>#<sp/>30<sp/>дней<sp/>в<sp/>секундах</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refresh_token_expires_at<sp/>=<sp/>datetime.utcnow()<sp/>+<sp/>timedelta(seconds=refresh_token_expires_in)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>token_storage.store_token(access_token,<sp/>user_id,<sp/>access_token_expires_in)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>token_storage.store_refresh_token(refresh_token,<sp/>user_id,<sp/>refresh_token_expires_in)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;token&apos;:<sp/>access_token,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;expires_in&apos;:<sp/>access_token_expires_in,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;expires_at&apos;:<sp/>access_token_expires_at.isoformat()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;token&apos;:<sp/>refresh_token,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;expires_in&apos;:<sp/>refresh_token_expires_in,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&apos;expires_at&apos;:<sp/>refresh_token_expires_at.isoformat()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>API<sp/>Маршруты</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Авторизация<sp/>пользователя</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```http</highlight></codeline>
+<codeline><highlight class="normal">POST<sp/>/login</highlight></codeline>
+<codeline><highlight class="normal">Content-Type:<sp/>application/x-www-form-urlencoded</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">username=&lt;username&gt;&amp;password=&lt;password&gt;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Обновление<sp/>токена<sp/>доступа</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```http</highlight></codeline>
+<codeline><highlight class="normal">POST<sp/>/refresh</highlight></codeline>
+<codeline><highlight class="normal">Content-Type:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;refresh_token&quot;:<sp/>&quot;&lt;refresh_token&gt;&quot;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Создание<sp/>нового<sp/>пользователя<sp/>(только<sp/>для<sp/>администраторов)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```http</highlight></codeline>
+<codeline><highlight class="normal">POST<sp/>/users/create</highlight></codeline>
+<codeline><highlight class="normal">Content-Type:<sp/>application/json</highlight></codeline>
+<codeline><highlight class="normal">Authorization:<sp/>Bearer<sp/>&lt;admin_access_token&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;username&quot;:<sp/>&quot;&lt;username&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;email&quot;:<sp/>&quot;&lt;email&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;password&quot;:<sp/>&quot;&lt;password&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;is_admin&quot;:<sp/>&lt;true|false&gt;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Удаление<sp/>пользователя<sp/>(только<sp/>для<sp/>администраторов)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```http</highlight></codeline>
+<codeline><highlight class="normal">DELETE<sp/>/users/delete</highlight></codeline>
+<codeline><highlight class="normal">Content-Type:<sp/>application/json</highlight></codeline>
+<codeline><highlight class="normal">Authorization:<sp/>Bearer<sp/>&lt;admin_access_token&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;user_id&quot;:<sp/>&lt;user_id&gt;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Смена<sp/>пароля<sp/>пользователя<sp/>(только<sp/>для<sp/>администраторов)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```http</highlight></codeline>
+<codeline><highlight class="normal">PUT<sp/>/users/password</highlight></codeline>
+<codeline><highlight class="normal">Content-Type:<sp/>application/json</highlight></codeline>
+<codeline><highlight class="normal">Authorization:<sp/>Bearer<sp/>&lt;admin_access_token&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;user_id&quot;:<sp/>&lt;user_id&gt;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;new_password&quot;:<sp/>&quot;&lt;new_password&gt;&quot;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Изменение<sp/>данных<sp/>пользователя<sp/>(только<sp/>для<sp/>администраторов)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```http</highlight></codeline>
+<codeline><highlight class="normal">PUT<sp/>/users/modify</highlight></codeline>
+<codeline><highlight class="normal">Content-Type:<sp/>application/json</highlight></codeline>
+<codeline><highlight class="normal">Authorization:<sp/>Bearer<sp/>&lt;admin_access_token&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;user_id&quot;:<sp/>&lt;user_id&gt;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;username&quot;:<sp/>&quot;&lt;new_username&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;email&quot;:<sp/>&quot;&lt;new_email&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;password&quot;:<sp/>&quot;&lt;new_password&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;is_admin&quot;:<sp/>&lt;true|false&gt;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Получение<sp/>списка<sp/>пользователей<sp/>(только<sp/>для<sp/>администраторов)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```http</highlight></codeline>
+<codeline><highlight class="normal">GET<sp/>/users</highlight></codeline>
+<codeline><highlight class="normal">Authorization:<sp/>Bearer<sp/>&lt;admin_access_token&gt;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Инициализация<sp/>приложения</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Модуль<sp/>server.py</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Инициализация<sp/>приложения<sp/>происходит<sp/>следующим<sp/>образом:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>fastapi<sp/>import<sp/>FastAPI</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>backend.auth.auth<sp/>import<sp/>init_app</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">app<sp/>=<sp/>FastAPI()</highlight></codeline>
+<codeline><highlight class="normal">init_app(app)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###Инструкция<sp/>по<sp/>реализации<sp/>логаута</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Отправка<sp/>запроса<sp/>на<sp/>логаут</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Когда<sp/>пользователь<sp/>нажимает<sp/>кнопку<sp/>&quot;Выйти&quot;<sp/>(Logout),<sp/>фронтенд<sp/>должен<sp/>отправить<sp/>POST-запрос<sp/>на<sp/>эндпоинт<sp/>/logout.<sp/>В<sp/>запросе<sp/>необходимо<sp/>передать<sp/>access_token<sp/>в<sp/>заголовке<sp/>авторизации.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Пример<sp/>запроса<sp/>с<sp/>использованием<sp/>curl:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>https://dev.rob.pro-4.ru/logout<sp/>\</highlight></codeline>
+<codeline><highlight class="normal">-H<sp/>&quot;accept:<sp/>application/json&quot;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal">-H<sp/>&quot;Authorization:<sp/>Bearer<sp/>&lt;access_token&gt;&quot;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal">-d<sp/>&apos;&apos;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.<sp/>Очистка<sp/>токенов</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>После<sp/>успешного<sp/>ответа<sp/>от<sp/>сервера,<sp/>необходимо<sp/>выполнить<sp/>следующие<sp/>действия<sp/>на<sp/>фронтенде:</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Удалить<sp/>access_token<sp/>и<sp/>refresh_token<sp/>из<sp/>локального<sp/>хранилища<sp/>(например,<sp/>localStorage).</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Перенаправить<sp/>пользователя<sp/>на<sp/>страницу<sp/>входа<sp/>или<sp/>главную<sp/>страницу.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Пример<sp/>кода<sp/>на<sp/>JavaScript:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```javascript</highlight></codeline>
+<codeline><highlight class="normal">fetch(&quot;https://dev.rob.pro-4.ru/logout&quot;,<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>method:<sp/>&quot;POST&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>headers:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>accept:<sp/>&quot;application/json&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Authorization:<sp/>`Bearer<sp/>${localStorage.getItem(&quot;access_token&quot;)}`,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal">})</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.then((response)<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(response.ok)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Удаляем<sp/>токены<sp/>из<sp/>локального<sp/>хранилища</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>localStorage.removeItem(&quot;access_token&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>localStorage.removeItem(&quot;refresh_token&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Перенаправляем<sp/>пользователя<sp/>на<sp/>страницу<sp/>входа</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>window.location.href<sp/>=<sp/>&quot;/login&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Обработка<sp/>ошибок</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>console.error(&quot;Ошибка<sp/>при<sp/>логауте:&quot;,<sp/>response.statusText);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>})</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>.catch((error)<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>console.error(&quot;Ошибка<sp/>сети:&quot;,<sp/>error);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">3.<sp/>Обработка<sp/>ошибок</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Если<sp/>сервер<sp/>вернул<sp/>ошибку<sp/>(например,<sp/>токен<sp/>недействителен<sp/>или<sp/>истек),<sp/>необходимо<sp/>запросить<sp/>новый<sp/>токен<sp/>с<sp/>использованием<sp/>refresh_token<sp/>и<sp/>повторить<sp/>логаут.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Пример<sp/>кода<sp/>на<sp/>JavaScript:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```javascript</highlight></codeline>
+<codeline><highlight class="normal">function<sp/>logout()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>fetch(&quot;https://dev.rob.pro-4.ru/logout&quot;,<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>method:<sp/>&quot;POST&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>headers:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>accept:<sp/>&quot;application/json&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Authorization:<sp/>`Bearer<sp/>${localStorage.getItem(&quot;access_token&quot;)}`,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>})</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.then((response)<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(response.ok)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>localStorage.removeItem(&quot;access_token&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>localStorage.removeItem(&quot;refresh_token&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window.location.href<sp/>=<sp/>&quot;/login&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(response.status<sp/>===<sp/>401)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Токен<sp/>недействителен<sp/>или<sp/>истек,<sp/>обновляем<sp/>токен</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refreshTokenAndRetryLogout();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>console.error(&quot;Ошибка<sp/>при<sp/>логауте:&quot;,<sp/>response.statusText);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>})</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.catch((error)<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>console.error(&quot;Ошибка<sp/>сети:&quot;,<sp/>error);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">function<sp/>refreshTokenAndRetryLogout()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>fetch(&quot;https://dev.rob.pro-4.ru/api/refresh&quot;,<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>method:<sp/>&quot;POST&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>headers:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Content-Type&quot;:<sp/>&quot;application/json&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>body:<sp/>JSON.stringify({</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>refresh_token:<sp/>localStorage.getItem(&quot;refresh_token&quot;),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>})</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.then((response)<sp/>=&gt;<sp/>response.json())</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.then((data)<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>localStorage.setItem(&quot;access_token&quot;,<sp/>data.access_token);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>localStorage.setItem(&quot;refresh_token&quot;,<sp/>data.refresh_token);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Повторяем<sp/>логаут</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>logout();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>})</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>.catch((error)<sp/>=&gt;<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>console.error(&quot;Ошибка<sp/>при<sp/>обновлении<sp/>токена:&quot;,<sp/>error);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Вызов<sp/>функции<sp/>логаута</highlight></codeline>
+<codeline><highlight class="normal">logout();</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Заключение</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Эта<sp/>система<sp/>авторизации<sp/>обеспечивает<sp/>безопасное<sp/>управление<sp/>пользователями<sp/>и<sp/>токенами,<sp/>используя<sp/>FastAPI,<sp/>SQLAlchemy<sp/>и<sp/>Redis.<sp/>Для<sp/>добавления<sp/>новых<sp/>функций<sp/>или<sp/>изменения<sp/>существующих,<sp/>следуйте<sp/>структуре<sp/>и<sp/>принципам,<sp/>описанным<sp/>выше.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![Еще<sp/>одна<sp/>иструкция](auth_man.png)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacemain">main</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_namespacemain_1a6d8cf6806b7ab4e9056a3e9a34775685">main.LOGGING_CONFIG</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1a12fac67ac230690557ab76d3faa71d8c">main.port</link> = int(os.getenv(&apos;APP_PORT&apos;, 8034))</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1a5fa94f0581009434c7a63791944d6ff4">main.app</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1a0cf58d9b4a444874a8cf80fdf162b0fb">main.host</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1ad94cc85107ecf3be3b5ac14ee4f14532">main.log_config</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

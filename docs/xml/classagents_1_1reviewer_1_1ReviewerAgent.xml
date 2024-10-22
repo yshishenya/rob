@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classagents_1_1reviewer_1_1ReviewerAgent" kind="class" language="Python" prot="public">
+    <compoundname>agents::reviewer::ReviewerAgent</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagents_1_1reviewer_1_1ReviewerAgent_1a68d89b46182c202a1ca903e69b1b8cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.reviewer.ReviewerAgent.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>agents.reviewer.ReviewerAgent.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1reviewer_1_1ReviewerAgent_1a58d290d2d55e6162e1e2247b9ebea0f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.reviewer.ReviewerAgent.review_draft</definition>
+        <argsstring>(self, dict draft_state)</argsstring>
+        <name>review_draft</name>
+        <qualifiedname>agents.reviewer.ReviewerAgent.review_draft</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>draft_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Review a draft article
+:param draft_state:
+:return:
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" bodystart="12" bodyend="53"/>
+        <referencedby refid="classagents_1_1reviewer_1_1ReviewerAgent_1a6d961e5840925ddef49b094c79580d73" compoundref="reviewer_8py" startline="54" endline="69">agents.reviewer.ReviewerAgent.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1reviewer_1_1ReviewerAgent_1a6d961e5840925ddef49b094c79580d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.reviewer.ReviewerAgent.run</definition>
+        <argsstring>(self, dict draft_state)</argsstring>
+        <name>run</name>
+        <qualifiedname>agents.reviewer.ReviewerAgent.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>draft_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" line="54" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" bodystart="54" bodyend="69"/>
+        <references refid="classagents_1_1reviewer_1_1ReviewerAgent_1a58d290d2d55e6162e1e2247b9ebea0f1" compoundref="reviewer_8py" startline="12" endline="53">agents.reviewer.ReviewerAgent.review_draft</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>agents.reviewer.ReviewerAgent</label>
+        <link refid="classagents_1_1reviewer_1_1ReviewerAgent"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/reviewer.py" bodystart="8" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classagents_1_1reviewer_1_1ReviewerAgent_1a68d89b46182c202a1ca903e69b1b8cd2" prot="public" virt="non-virtual"><scope>agents::reviewer::ReviewerAgent</scope><name>__init__</name></member>
+      <member refid="classagents_1_1reviewer_1_1ReviewerAgent_1a58d290d2d55e6162e1e2247b9ebea0f1" prot="public" virt="non-virtual"><scope>agents::reviewer::ReviewerAgent</scope><name>review_draft</name></member>
+      <member refid="classagents_1_1reviewer_1_1ReviewerAgent_1a6d961e5840925ddef49b094c79580d73" prot="public" virt="non-virtual"><scope>agents::reviewer::ReviewerAgent</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_websocket__manager_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/websocket_manager.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager">backend.websocket_manager.WebSocketManager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebackend">backend</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1websocket__manager">backend.websocket_manager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1websocket__manager_1ad5e0c8aa0f181850975a175494cab870">backend.websocket_manager.run_agent</link> (task, report_type, report_source, websocket)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

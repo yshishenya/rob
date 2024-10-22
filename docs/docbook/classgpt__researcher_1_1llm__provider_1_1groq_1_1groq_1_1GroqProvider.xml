@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider" xml:lang="en-US">
+<title>gpt_researcher.llm_provider.groq.groq.GroqProvider Class Reference</title>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary></indexterm>
+Collaboration diagram for gpt_researcher.llm_provider.groq.groq.GroqProvider:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aff1959a3ba73b314f3c3433746a84563">__init__</link> (self, <link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aee52b0ee4c82ec48ccacc503d87a69ff">model</link>, <link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a7a527e8110e477b13c391f6eb32080ae">temperature</link>, <link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1acac3ce57a20d2957d07183f64a619764">max_tokens</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aa8a29289f161bd480d4267a252b800a8">get_api_key</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef">get_llm_model</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1ab91061c617161fc62ef9475197d96fe6">get_chat_response</link> (self, messages, stream, websocket=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a93be9e7cc2192cb605eb4eb6f1ef3f7d">stream_response</link> (self, messages, websocket=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aee52b0ee4c82ec48ccacc503d87a69ff">model</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a7a527e8110e477b13c391f6eb32080ae">temperature</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1acac3ce57a20d2957d07183f64a619764">max_tokens</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a5b8c30e4ca0e9f851fc488b9ece44a38">api_key</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a91a7c71ec87556b2f7913f20ee1a2a11">llm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aff1959a3ba73b314f3c3433746a84563"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.__init__ ( self,  model,  temperature,  max_tokens)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aa8a29289f161bd480d4267a252b800a8"/><section>
+    <title>get_api_key()</title>
+<indexterm><primary>get_api_key</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>get_api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.get_api_key ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the OpenAI API key
+Returns:</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1ab91061c617161fc62ef9475197d96fe6"/><section>
+    <title>get_chat_response()</title>
+<indexterm><primary>get_chat_response</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>get_chat_response</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.get_chat_response ( self,  messages,  stream,  websocket = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_ab91061c617161fc62ef9475197d96fe6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef"/><section>
+    <title>get_llm_model()</title>
+<indexterm><primary>get_llm_model</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>get_llm_model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.get_llm_model ( self)</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a93be9e7cc2192cb605eb4eb6f1ef3f7d"/><section>
+    <title>stream_response()</title>
+<indexterm><primary>stream_response</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>stream_response</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.stream_response ( self,  messages,  websocket = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_a93be9e7cc2192cb605eb4eb6f1ef3f7d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a5b8c30e4ca0e9f851fc488b9ece44a38"/><section>
+    <title>api_key</title>
+<indexterm><primary>api_key</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.api_key</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a91a7c71ec87556b2f7913f20ee1a2a11"/><section>
+    <title>llm</title>
+<indexterm><primary>llm</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>llm</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.llm</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1acac3ce57a20d2957d07183f64a619764"/><section>
+    <title>max_tokens</title>
+<indexterm><primary>max_tokens</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>max_tokens</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.max_tokens</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1aee52b0ee4c82ec48ccacc503d87a69ff"/><section>
+    <title>model</title>
+<indexterm><primary>model</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.model</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a7a527e8110e477b13c391f6eb32080ae"/><section>
+    <title>temperature</title>
+<indexterm><primary>temperature</primary><secondary>gpt_researcher.llm_provider.groq.groq.GroqProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.groq.groq.GroqProvider</primary><secondary>temperature</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.groq.groq.GroqProvider.temperature</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/groq/<link linkend="_groq_8py">groq.py</link></section>
+</section>

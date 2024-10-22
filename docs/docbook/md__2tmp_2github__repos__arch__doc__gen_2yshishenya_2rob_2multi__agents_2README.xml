@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README" xml:lang="en-US">
+<title>LangGraph x GPT Researcher</title>
+<indexterm><primary>LangGraph x GPT Researcher</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md183"/><link xlink:href="https://python.langchain.com/docs/langgraph">LangGraph</link> is a library for building stateful, multi-actor applications with LLMs. This example uses Langgraph to automate the process of an in depth research on any given topic.</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md184">
+<title><title>Use case</title></title>
+
+<para>By using Langgraph, the research process can be significantly improved in depth and quality by leveraging multiple agents with specialized skills. Inspired by the recent <link xlink:href="https://arxiv.org/abs/2402.14207">STORM</link> paper, this example showcases how a team of AI agents can work together to conduct research on a given topic, from planning to publication.</para>
+
+<para>An average run generates a 5-6 page research report in multiple formats such as PDF, Docx and Markdown.</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md185">
+<title><title>The Multi Agent Team</title></title>
+
+<para>The research team is made up of 7 AI agents:<itemizedlist>
+<listitem>
+<para><emphasis role="bold">Chief Editor</emphasis> - Oversees the research process and manages the team. This is the &quot;master&quot; agent that coordinates the other agents using Langgraph.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Researcher</emphasis> (gpt-researcher) - A specialized autonomous agent that conducts in depth research on a given topic.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Editor</emphasis> - Responsible for planning the research outline and structure.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Reviewer</emphasis> - Validates the correctness of the research results given a set of criteria.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Revisor</emphasis> - Revises the research results based on the feedback from the reviewer.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Writer</emphasis> - Responsible for compiling and writing the final report.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Publisher</emphasis> - Responsible for publishing the final report in various formats.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md186">
+<title><title>How it works</title></title>
+
+<para>Generally, the process is based on the following stages:<orderedlist>
+<listitem>
+<para>Planning stage</para>
+</listitem><listitem>
+<para>Data collection and analysis</para>
+</listitem><listitem>
+<para>Review and revision</para>
+</listitem><listitem>
+<para>Writing and submission</para>
+</listitem><listitem>
+<para>Publication</para>
+</listitem></orderedlist>
+</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md187">
+<title><title>Architecture</title></title>
+
+<para>   <?linebreak?></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md188">
+<title><title>Steps</title></title>
+
+<para>More specifically (as seen in the architecture diagram) the process is as follows:<itemizedlist>
+<listitem>
+<para>Browser (gpt-researcher) - Browses the internet for initial research based on the given research task.</para>
+</listitem><listitem>
+<para>Editor - Plans the report outline and structure based on the initial research.</para>
+</listitem><listitem>
+<para>For each outline topic (in parallel):<itemizedlist>
+<listitem>
+<para>Researcher (gpt-researcher) - Runs an in depth research on the subtopics and writes a draft.</para>
+</listitem><listitem>
+<para>Reviewer - Validates the correctness of the draft given a set of criteria and provides feedback.</para>
+</listitem><listitem>
+<para>Revisor - Revises the draft until it is satisfactory based on the reviewer feedback.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem>
+<para>Writer - Compiles and writes the final report including an introduction, conclusion and references section from the given research findings.</para>
+</listitem><listitem>
+<para>Publisher - Publishes the final report to multi formats such as PDF, Docx, Markdown, etc.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md189">
+<title><title>How to run</title></title>
+
+<para><orderedlist>
+<listitem>
+<para>Install required packages: <literallayout><computeroutput>pip&#32;install&#32;-r&#32;requirements.txt
+</computeroutput></literallayout></para>
+</listitem><listitem>
+<para>Update env variables <literallayout><computeroutput>export&#32;OPENAI_API_KEY={Your&#32;OpenAI&#32;API&#32;Key&#32;here}
+export&#32;TAVILY_API_KEY={Your&#32;Tavily&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem>
+<para>Run the application: <literallayout><computeroutput>python&#32;main.py
+</computeroutput></literallayout></para>
+</listitem></orderedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md190">
+<title><title>Usage</title></title>
+
+<para>To change the research query and customize the report, edit the <computeroutput>task.json</computeroutput> file in the main directory. </para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md191">
+<title><title>Task.json contains the following fields:</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><computeroutput>query</computeroutput> - The research query or task.</para>
+</listitem><listitem>
+<para><computeroutput>model</computeroutput> - The OpenAI LLM to use for the agents.</para>
+</listitem><listitem>
+<para><computeroutput>max_sections</computeroutput> - The maximum number of sections in the report. Each section is a subtopic of the research query.</para>
+</listitem><listitem>
+<para><computeroutput>publish_formats</computeroutput> - The formats to publish the report in. The reports will be written in the <computeroutput>output</computeroutput> directory.</para>
+</listitem><listitem>
+<para><computeroutput>source</computeroutput> - The location from which to conduct the research. Options: <computeroutput>web</computeroutput> or <computeroutput>local</computeroutput>. For local, please add <computeroutput>DOC_PATH</computeroutput> env var.</para>
+</listitem><listitem>
+<para><computeroutput>follow_guidelines</computeroutput> - If true, the research report will follow the guidelines below. It will take longer to complete. If false, the report will be generated faster but may not follow the guidelines.</para>
+</listitem><listitem>
+<para><computeroutput>guidelines</computeroutput> - A list of guidelines that the report must follow.</para>
+</listitem><listitem>
+<para><computeroutput>verbose</computeroutput> - If true, the application will print detailed logs to the console.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md192">
+<title><title>For example:</title></title>
+
+<para><literallayout><computeroutput>{
+&#32;&#32;&quot;query&quot;:&#32;&quot;Is&#32;AI&#32;in&#32;a&#32;hype&#32;cycle?&quot;,
+&#32;&#32;&quot;model&quot;:&#32;&quot;gpt-4o&quot;,
+&#32;&#32;&quot;max_sections&quot;:&#32;3,&#32;
+&#32;&#32;&quot;publish_formats&quot;:&#32;{&#32;
+&#32;&#32;&#32;&#32;&quot;markdown&quot;:&#32;true,
+&#32;&#32;&#32;&#32;&quot;pdf&quot;:&#32;true,
+&#32;&#32;&#32;&#32;&quot;docx&quot;:&#32;true
+&#32;&#32;},
+&#32;&#32;&quot;source&quot;:&#32;&quot;web&quot;,
+&#32;&#32;&quot;follow_guidelines&quot;:&#32;true,
+&#32;&#32;&quot;guidelines&quot;:&#32;[
+&#32;&#32;&#32;&#32;&quot;The&#32;report&#32;MUST&#32;fully&#32;answer&#32;the&#32;original&#32;question&quot;,
+&#32;&#32;&#32;&#32;&quot;The&#32;report&#32;MUST&#32;be&#32;written&#32;in&#32;apa&#32;format&quot;,
+&#32;&#32;&#32;&#32;&quot;The&#32;report&#32;MUST&#32;be&#32;written&#32;in&#32;english&quot;
+&#32;&#32;],
+&#32;&#32;&quot;verbose&quot;:&#32;true
+}
+</computeroutput></literallayout></para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2multi__agents_2README_1autotoc_md193">
+<title><title>To Deploy</title></title>
+
+<para><literallayout><computeroutput>pip&#32;install&#32;langgraph-cli
+langgraph&#32;up
+</computeroutput></literallayout></para>
+
+<para>From there, see documentation <link xlink:href="https://github.com/langchain-ai/langgraph-example">here</link> on how to use the streaming and async endpoints, as well as the playground. </para>
+</section>
+</section>

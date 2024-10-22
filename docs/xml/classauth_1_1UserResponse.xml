@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classauth_1_1UserResponse" kind="class" language="Python" prot="public">
+    <compoundname>auth::UserResponse</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classauth_1_1UserResponse_1af9fd52a7408c354b99991e09b0d863e2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int auth.UserResponse::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>auth.UserResponse.id</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Уникальный идентификатор пользователя в системе.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="72" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1UserResponse_1a5fec159fbf046e775dcad7c04fcd94de" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str auth.UserResponse::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>auth.UserResponse.username</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Имя пользователя.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="73" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1UserResponse_1a72ba5840d1b9752c57c5ff5466eae326" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str auth.UserResponse::email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <qualifiedname>auth.UserResponse.email</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Электронная почта пользователя.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="74" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1UserResponse_1a780132dbabc283770316c7c036aab878" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool auth.UserResponse::is_admin</definition>
+        <argsstring></argsstring>
+        <name>is_admin</name>
+        <qualifiedname>auth.UserResponse.is_admin</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Признак того, является ли пользователь администратором.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="75" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>auth.UserResponse</label>
+        <link refid="classauth_1_1UserResponse"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>auth.UserResponse</label>
+        <link refid="classauth_1_1UserResponse"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+id</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+email</edgelabel>
+          <edgelabel>+username</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+is_admin</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>bool</label>
+      </node>
+      <node id="3">
+        <label>int</label>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="4">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="71" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="71" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classauth_1_1UserResponse_1a72ba5840d1b9752c57c5ff5466eae326" prot="public" virt="non-virtual"><scope>auth::UserResponse</scope><name>email</name></member>
+      <member refid="classauth_1_1UserResponse_1af9fd52a7408c354b99991e09b0d863e2" prot="public" virt="non-virtual"><scope>auth::UserResponse</scope><name>id</name></member>
+      <member refid="classauth_1_1UserResponse_1a780132dbabc283770316c7c036aab878" prot="public" virt="non-virtual"><scope>auth::UserResponse</scope><name>is_admin</name></member>
+      <member refid="classauth_1_1UserResponse_1a5fec159fbf046e775dcad7c04fcd94de" prot="public" virt="non-virtual"><scope>auth::UserResponse</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

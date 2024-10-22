@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceagent" xml:lang="en-US">
+<title>agent Namespace Reference</title>
+<indexterm><primary>agent</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceagent_1a95435a4e96e81f83e8c22bbf23d72864">chief_editor</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceagent_1a506a8909f4cc88c2c31135a29dadbddb">graph</link> = chief_editor.init_research_team()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceagent_1a95435a4e96e81f83e8c22bbf23d72864"/><section>
+    <title>chief_editor</title>
+<indexterm><primary>chief_editor</primary><secondary>agent</secondary></indexterm>
+<indexterm><primary>agent</primary><secondary>chief_editor</secondary></indexterm>
+<para><computeroutput>agent.chief_editor</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;ChiefEditorAgent({
+2 &#32;&#32;<emphasis role="stringliteral">&quot;query&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;Is&#32;AI&#32;in&#32;a&#32;hype&#32;cycle?&quot;</emphasis>,
+3 &#32;&#32;<emphasis role="stringliteral">&quot;max_sections&quot;</emphasis>:&#32;3,
+4 &#32;&#32;<emphasis role="stringliteral">&quot;follow_guidelines&quot;</emphasis>:&#32;<emphasis role="keyword">False</emphasis>,
+5 &#32;&#32;<emphasis role="stringliteral">&quot;model&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;gpt-4o&quot;</emphasis>,
+6 &#32;&#32;<emphasis role="stringliteral">&quot;guidelines&quot;</emphasis>:&#32;[
+7 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;The&#32;report&#32;MUST&#32;be&#32;written&#32;in&#32;APA&#32;format&quot;</emphasis>,
+8 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Each&#32;sub&#32;section&#32;MUST&#32;include&#32;supporting&#32;sources&#32;using&#32;hyperlinks.&#32;If&#32;none&#32;exist,&#32;erase&#32;the&#32;sub&#32;section&#32;or&#32;rewrite&#32;it&#32;to&#32;be&#32;a&#32;part&#32;of&#32;the&#32;previous&#32;section&quot;</emphasis>,
+9 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;The&#32;report&#32;MUST&#32;be&#32;written&#32;in&#32;spanish&quot;</emphasis>
+10 &#32;&#32;],
+11 &#32;&#32;<emphasis role="stringliteral">&quot;verbose&quot;</emphasis>:&#32;<emphasis role="keyword">False</emphasis>
+12 })
+</programlisting></section>
+<anchor xml:id="_namespaceagent_1a506a8909f4cc88c2c31135a29dadbddb"/><section>
+    <title>graph</title>
+<indexterm><primary>graph</primary><secondary>agent</secondary></indexterm>
+<indexterm><primary>agent</primary><secondary>graph</secondary></indexterm>
+<para><computeroutput>agent.graph = chief_editor.init_research_team()</computeroutput></para></section>
+</section>
+</section>

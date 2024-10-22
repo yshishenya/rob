@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_f9d4dbeed8b77d74edb7688c71320f51" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher Directory Reference</primary></indexterm>
+Directory dependency graph for gpt_researcher:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_f9d4dbeed8b77d74edb7688c71320f51_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_431d0ec26f526106759d5d518a79f6f3">config</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_09580389954d9e7ad63c583562062cbc">context</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_dec7b911a689e309b70b2bc1efd13d46">document</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_a747e43da1c182c4993c25afd1989e8c">llm_provider</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_035a7765b0207637c8376308a0060cd0">master</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_db5414299402b161d480e272cebbbcde">memory</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_ab5df70614ec1cd999b2cb5c8f079671">retrievers</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_20a3dd4fa931084554e397067fac6117">scraper</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_37b41fe1379ad84b234a5f46dea35229">utils</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2____init_____8py">__init__.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

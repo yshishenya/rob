@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_f226f89b749fe429606d1d77bcfbafe2" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf Directory Reference</primary></indexterm>
+Directory dependency graph for pymupdf:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_f226f89b749fe429606d1d77bcfbafe2_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2scraper_2pymupdf_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_pymupdf_8py">pymupdf.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

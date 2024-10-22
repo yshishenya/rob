@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classauth_1_1UserCreateRequest" kind="class" language="Python" prot="public">
+    <compoundname>auth::UserCreateRequest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classauth_1_1UserCreateRequest_1a6aef431fda013a3efd4143ffd79370cb" prot="public" static="yes" mutable="no">
+        <type>constr</type>
+        <definition>constr auth.UserCreateRequest::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <qualifiedname>auth.UserCreateRequest.username</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Имя пользователя. Должно быть уникальным и содержать от 3 до 50 символов.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="66" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1UserCreateRequest_1a4fad3c521331dc7387067300ed513426" prot="public" static="yes" mutable="no">
+        <type>EmailStr</type>
+        <definition>EmailStr auth.UserCreateRequest::email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <qualifiedname>auth.UserCreateRequest.email</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Электронная почта пользователя. Должна быть действительной и уникальной.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="67" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1UserCreateRequest_1a1bf5a4130971972b43179fddc4a8043a" prot="public" static="yes" mutable="no">
+        <type>constr</type>
+        <definition>constr auth.UserCreateRequest::password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <qualifiedname>auth.UserCreateRequest.password</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Пароль пользователя. Должен быть надежным и содержать от 6 до 50 символов.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="68" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classauth_1_1UserCreateRequest_1a02b081786ef492c7e5c5004e629c1474" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool auth.UserCreateRequest::is_admin</definition>
+        <argsstring></argsstring>
+        <name>is_admin</name>
+        <qualifiedname>auth.UserCreateRequest.is_admin</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Является ли пользователь администратором. True, если пользователь имеет права администратора.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="69" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>auth.UserCreateRequest</label>
+        <link refid="classauth_1_1UserCreateRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>auth.UserCreateRequest</label>
+        <link refid="classauth_1_1UserCreateRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+password</edgelabel>
+          <edgelabel>+username</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+email</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+is_admin</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>bool</label>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="4">
+        <label>EmailStr</label>
+      </node>
+      <node id="3">
+        <label>constr</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="65" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="65" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classauth_1_1UserCreateRequest_1a4fad3c521331dc7387067300ed513426" prot="public" virt="non-virtual"><scope>auth::UserCreateRequest</scope><name>email</name></member>
+      <member refid="classauth_1_1UserCreateRequest_1a02b081786ef492c7e5c5004e629c1474" prot="public" virt="non-virtual"><scope>auth::UserCreateRequest</scope><name>is_admin</name></member>
+      <member refid="classauth_1_1UserCreateRequest_1a1bf5a4130971972b43179fddc4a8043a" prot="public" virt="non-virtual"><scope>auth::UserCreateRequest</scope><name>password</name></member>
+      <member refid="classauth_1_1UserCreateRequest_1a6aef431fda013a3efd4143ffd79370cb" prot="public" virt="non-virtual"><scope>auth::UserCreateRequest</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceagents_1_1utils" kind="namespace" language="Python">
+    <compoundname>agents::utils</compoundname>
+    <innernamespace refid="namespaceagents_1_1utils_1_1file__formats">agents::utils::file_formats</innernamespace>
+    <innernamespace refid="namespaceagents_1_1utils_1_1llms">agents::utils::llms</innernamespace>
+    <innernamespace refid="namespaceagents_1_1utils_1_1views">agents::utils::views</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

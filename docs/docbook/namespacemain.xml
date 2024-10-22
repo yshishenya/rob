@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacemain" xml:lang="en-US">
+<title>main Namespace Reference</title>
+<indexterm><primary>main</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacemain_1a595b471ed5c7eee2f4d04ae83edfe8c7">open_task</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1a3140e9a5b6a71ffbf498198cfc471b88">main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_namespacemain_1a6d8cf6806b7ab4e9056a3e9a34775685">LOGGING_CONFIG</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1a12fac67ac230690557ab76d3faa71d8c">port</link> = int(os.getenv(&apos;APP_PORT&apos;, 8034))</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1a5fa94f0581009434c7a63791944d6ff4">app</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1a0cf58d9b4a444874a8cf80fdf162b0fb">host</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacemain_1ad94cc85107ecf3be3b5ac14ee4f14532">log_config</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacemain_1a3140e9a5b6a71ffbf498198cfc471b88"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>main</secondary></indexterm>
+<indexterm><primary>main</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>main.main ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacemain_a3140e9a5b6a71ffbf498198cfc471b88_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacemain_1a595b471ed5c7eee2f4d04ae83edfe8c7"/><section>
+    <title>open_task()</title>
+<indexterm><primary>open_task</primary><secondary>main</secondary></indexterm>
+<indexterm><primary>main</primary><secondary>open_task</secondary></indexterm>
+<para><computeroutput>main.open_task ( )</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacemain_a595b471ed5c7eee2f4d04ae83edfe8c7_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacemain_1a5fa94f0581009434c7a63791944d6ff4"/><section>
+    <title>app</title>
+<indexterm><primary>app</primary><secondary>main</secondary></indexterm>
+<indexterm><primary>main</primary><secondary>app</secondary></indexterm>
+<para><computeroutput>main.app</computeroutput></para></section>
+<anchor xml:id="_namespacemain_1a0cf58d9b4a444874a8cf80fdf162b0fb"/><section>
+    <title>host</title>
+<indexterm><primary>host</primary><secondary>main</secondary></indexterm>
+<indexterm><primary>main</primary><secondary>host</secondary></indexterm>
+<para><computeroutput>main.host</computeroutput></para></section>
+<anchor xml:id="_namespacemain_1ad94cc85107ecf3be3b5ac14ee4f14532"/><section>
+    <title>log_config</title>
+<indexterm><primary>log_config</primary><secondary>main</secondary></indexterm>
+<indexterm><primary>main</primary><secondary>log_config</secondary></indexterm>
+<para><computeroutput>main.log_config</computeroutput></para></section>
+<anchor xml:id="_namespacemain_1a6d8cf6806b7ab4e9056a3e9a34775685"/><section>
+    <title>LOGGING_CONFIG</title>
+<indexterm><primary>LOGGING_CONFIG</primary><secondary>main</secondary></indexterm>
+<indexterm><primary>main</primary><secondary>LOGGING_CONFIG</secondary></indexterm>
+<para><computeroutput>dict main.LOGGING_CONFIG</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;{
+2 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;version&quot;</emphasis>:&#32;1,
+3 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;disable_existing_loggers&quot;</emphasis>:&#32;<emphasis role="keyword">False</emphasis>,
+4 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;handlers&quot;</emphasis>:&#32;{
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;default&quot;</emphasis>:&#32;{
+6 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;class&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;logging.StreamHandler&quot;</emphasis>,
+7 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;formatter&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;default&quot;</emphasis>,
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;stream&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;ext://sys.stdout&quot;</emphasis>&#32;&#32;<emphasis role="comment">#&#32;Use&#32;standard&#32;output</emphasis>
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+10 &#32;&#32;&#32;&#32;},
+11 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;formatters&quot;</emphasis>:&#32;{
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;default&quot;</emphasis>:&#32;{
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;()&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;logging.Formatter&quot;</emphasis>,
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;fmt&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;%(levelname)s&#32;%(name)s@%(lineno)d&#32;%(message)s&quot;</emphasis>,
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;},
+16 &#32;&#32;&#32;&#32;},
+17 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;loggers&quot;</emphasis>:&#32;{
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>:&#32;{&#32;&#32;<emphasis role="comment">#&#32;root&#32;logger</emphasis>
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;handlers&quot;</emphasis>:&#32;[<emphasis role="stringliteral">&quot;default&quot;</emphasis>],
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;level&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;DEBUG&quot;</emphasis>
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+22 &#32;&#32;&#32;&#32;}
+23 }
+</programlisting></section>
+<anchor xml:id="_namespacemain_1a12fac67ac230690557ab76d3faa71d8c"/><section>
+    <title>port</title>
+<indexterm><primary>port</primary><secondary>main</secondary></indexterm>
+<indexterm><primary>main</primary><secondary>port</secondary></indexterm>
+<para><computeroutput>main.port = int(os.getenv(&apos;APP_PORT&apos;, 8034))</computeroutput></para></section>
+</section>
+</section>

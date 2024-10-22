@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base" xml:lang="en-US">
+<title>gpt_researcher.llm_provider.generic.base Namespace Reference</title>
+<indexterm><primary>gpt_researcher.llm_provider.generic.base</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider">GenericLLMProvider</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_1a35c9d5a74d44f148fdd6879bc9b82f86">_check_pkg</link> (str pkg)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>dict <link linkend="_namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_1a9f6d46c37d23d8d132a407cb13f5f821">_SUPPORTED_PROVIDERS</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_1a35c9d5a74d44f148fdd6879bc9b82f86"/><section>
+    <title>_check_pkg()</title>
+<indexterm><primary>_check_pkg</primary><secondary>gpt_researcher.llm_provider.generic.base</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.generic.base</primary><secondary>_check_pkg</secondary></indexterm>
+<para><computeroutput> None gpt_researcher.llm_provider.generic.base._check_pkg (str pkg)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_a35c9d5a74d44f148fdd6879bc9b82f86_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_1a9f6d46c37d23d8d132a407cb13f5f821"/><section>
+    <title>_SUPPORTED_PROVIDERS</title>
+<indexterm><primary>_SUPPORTED_PROVIDERS</primary><secondary>gpt_researcher.llm_provider.generic.base</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.generic.base</primary><secondary>_SUPPORTED_PROVIDERS</secondary></indexterm>
+<para><computeroutput>dict gpt_researcher.llm_provider.generic.base._SUPPORTED_PROVIDERS<computeroutput>[protected]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;{
+2 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;openai&quot;</emphasis>,
+3 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;anthropic&quot;</emphasis>,
+4 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;azure_openai&quot;</emphasis>,
+5 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;cohere&quot;</emphasis>,
+6 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;google_vertexai&quot;</emphasis>,
+7 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;google_genai&quot;</emphasis>,
+8 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;fireworks&quot;</emphasis>,
+9 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;ollama&quot;</emphasis>,
+10 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;together&quot;</emphasis>,
+11 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;mistralai&quot;</emphasis>,
+12 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;huggingface&quot;</emphasis>,
+13 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;groq&quot;</emphasis>,
+14 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;bedrock&quot;</emphasis>,
+15 }
+</programlisting></section>
+</section>
+</section>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="html_8md" kind="file" language="Markdown">
+    <compoundname>html.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">sidebar_label:<sp/>html</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>processing.html</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML<sp/>processing<sp/>functions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>extract\_hyperlinks</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>extract_hyperlinks(soup:<sp/>BeautifulSoup,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_url:<sp/>str)<sp/>-&gt;<sp/>list[tuple[str,<sp/>str]]</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Extract<sp/>hyperlinks<sp/>from<sp/>a<sp/>BeautifulSoup<sp/>object</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Arguments**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`soup`<sp/>_BeautifulSoup_<sp/>-<sp/>The<sp/>BeautifulSoup<sp/>object</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`base_url`<sp/>_str_<sp/>-<sp/>The<sp/>base<sp/>URL</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Returns**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>List[Tuple[str,<sp/>str]]:<sp/>The<sp/>extracted<sp/>hyperlinks</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>format\_hyperlinks</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>format_hyperlinks(hyperlinks:<sp/>list[tuple[str,<sp/>str]])<sp/>-&gt;<sp/>list[str]</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Format<sp/>hyperlinks<sp/>to<sp/>be<sp/>displayed<sp/>to<sp/>the<sp/>user</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Arguments**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`hyperlinks`<sp/>_List[Tuple[str,<sp/>str]]_<sp/>-<sp/>The<sp/>hyperlinks<sp/>to<sp/>format</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Returns**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`List[str]`<sp/>-<sp/>The<sp/>formatted<sp/>hyperlinks</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/processing/html.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebackend_1_1utils" xml:lang="en-US">
+<title>backend.utils Namespace Reference</title>
+<indexterm><primary>backend.utils</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>None <link linkend="_namespacebackend_1_1utils_1a349c1a0272cb33e2864e3916260d1c0f">write_to_file</link> (str filename, str text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacebackend_1_1utils_1a24a9b21ed7e6901e1bbf4e58b118c952">write_text_to_md</link> (str text, str filename=&quot;&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacebackend_1_1utils_1a3a0c17f855bfc57a2c8ec1e62282b4f3">write_md_to_pdf</link> (str text, str filename=&quot;&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacebackend_1_1utils_1af7e009eb6e547b3ee1960da967dd1dac">write_md_to_word</link> (str text, str filename=&quot;&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacebackend_1_1utils_1a3a0c17f855bfc57a2c8ec1e62282b4f3"/><section>
+    <title>write_md_to_pdf()</title>
+<indexterm><primary>write_md_to_pdf</primary><secondary>backend.utils</secondary></indexterm>
+<indexterm><primary>backend.utils</primary><secondary>write_md_to_pdf</secondary></indexterm>
+<para><computeroutput> str backend.utils.write_md_to_pdf (str text, str  filename = <computeroutput>&quot;&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Converts Markdown text to a PDF file and returns the file path.
+
+Args:
+    text (str): Markdown text to convert.
+
+Returns:
+    str: The encoded file path of the generated PDF.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacebackend_1_1utils_1af7e009eb6e547b3ee1960da967dd1dac"/><section>
+    <title>write_md_to_word()</title>
+<indexterm><primary>write_md_to_word</primary><secondary>backend.utils</secondary></indexterm>
+<indexterm><primary>backend.utils</primary><secondary>write_md_to_word</secondary></indexterm>
+<para><computeroutput> str backend.utils.write_md_to_word (str text, str  filename = <computeroutput>&quot;&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Converts Markdown text to a DOCX file and returns the file path.
+
+Args:
+    text (str): Markdown text to convert.
+
+Returns:
+    str: The encoded file path of the generated DOCX.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacebackend_1_1utils_1a24a9b21ed7e6901e1bbf4e58b118c952"/><section>
+    <title>write_text_to_md()</title>
+<indexterm><primary>write_text_to_md</primary><secondary>backend.utils</secondary></indexterm>
+<indexterm><primary>backend.utils</primary><secondary>write_text_to_md</secondary></indexterm>
+<para><computeroutput> str backend.utils.write_text_to_md (str text, str  filename = <computeroutput>&quot;&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Writes text to a Markdown file and returns the file path.
+
+Args:
+    text (str): Text to write to the Markdown file.
+
+Returns:
+    str: The file path of the generated Markdown file.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacebackend_1_1utils_a24a9b21ed7e6901e1bbf4e58b118c952_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacebackend_1_1utils_1a349c1a0272cb33e2864e3916260d1c0f"/><section>
+    <title>write_to_file()</title>
+<indexterm><primary>write_to_file</primary><secondary>backend.utils</secondary></indexterm>
+<indexterm><primary>backend.utils</primary><secondary>write_to_file</secondary></indexterm>
+<para><computeroutput> None backend.utils.write_to_file (str filename, str text)</computeroutput></para>
+<para><literallayout><computeroutput>Asynchronously write text to a file in UTF-8 encoding.
+
+Args:
+    filename (str): The filename to write to.
+    text (str): The text to write.
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacebackend_1_1utils_a349c1a0272cb33e2864e3916260d1c0f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

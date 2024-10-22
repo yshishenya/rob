@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::scraper::pymupdf::pymupdf</compoundname>
+    <innerclass refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper" prot="public">gpt_researcher::scraper::pymupdf::pymupdf::PyMuPDFScraper</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

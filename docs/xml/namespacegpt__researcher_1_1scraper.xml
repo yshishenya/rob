@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1scraper" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::scraper</compoundname>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1arxiv">gpt_researcher::scraper::arxiv</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1beautiful__soup">gpt_researcher::scraper::beautiful_soup</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1newspaper">gpt_researcher::scraper::newspaper</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1pymupdf">gpt_researcher::scraper::pymupdf</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1scraper">gpt_researcher::scraper::scraper</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1scraper_1_1web__base__loader">gpt_researcher::scraper::web_base_loader</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1scraper_1ae65e984827c791518c9f3ba5b725d82b" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list gpt_researcher::scraper.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>gpt_researcher.scraper.__all__</qualifiedname>
+        <initializer>=  [
+    &quot;BeautifulSoupScraper&quot;,
+    &quot;NewspaperScraper&quot;,
+    &quot;WebBaseLoaderScraper&quot;,
+    &quot;ArxivScraper&quot;,
+    &quot;PyMuPDFScraper&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/__init__.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/__init__.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceprocessing_1_1html" kind="namespace" language="Python">
+    <compoundname>processing::html</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceprocessing_1_1html_1a8a84862c80f9f7abf29623100cdf59a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list[tuple[str, str]]</type>
+        <definition> list[tuple[str, str]] processing.html.extract_hyperlinks</definition>
+        <argsstring>(BeautifulSoup soup, str base_url)</argsstring>
+        <name>extract_hyperlinks</name>
+        <qualifiedname>processing.html.extract_hyperlinks</qualifiedname>
+        <param>
+          <type>BeautifulSoup</type>
+          <declname>soup</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>base_url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extract hyperlinks from a BeautifulSoup object
+
+Args:
+    soup (BeautifulSoup): The BeautifulSoup object
+    base_url (str): The base URL
+
+Returns:
+    List[Tuple[str, str]]: The extracted hyperlinks
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/html.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/html.py" bodystart="8" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceprocessing_1_1html_1a1ae4a545f1c830d0cd2d9da6291ff50d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list[str]</type>
+        <definition> list[str] processing.html.format_hyperlinks</definition>
+        <argsstring>(list[tuple[str, str]] hyperlinks)</argsstring>
+        <name>format_hyperlinks</name>
+        <qualifiedname>processing.html.format_hyperlinks</qualifiedname>
+        <param>
+          <type>list]</type>
+          <declname>hyperlinks</declname>
+          <array>[tuple[str, str]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Format hyperlinks to be displayed to the user
+
+Args:
+    hyperlinks (List[Tuple[str, str]]): The hyperlinks to format
+
+Returns:
+    List[str]: The formatted hyperlinks
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/html.py" line="24" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/html.py" bodystart="24" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>HTML processing functions</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/html.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

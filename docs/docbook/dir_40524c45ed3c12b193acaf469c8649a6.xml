@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_40524c45ed3c12b193acaf469c8649a6" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing Directory Reference</primary></indexterm>
+Directory dependency graph for processing:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_40524c45ed3c12b193acaf469c8649a6_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_scraping_2processing_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_html_8py">html.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_text_8py">text.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

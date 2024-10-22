@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceagents" xml:lang="en-US">
+<title>agents Namespace Reference</title>
+<indexterm><primary>agents</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1editor">editor</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1master">master</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1publisher">publisher</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1researcher">researcher</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1reviewer">reviewer</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1reviser">reviser</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1utils">utils</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1writer">writer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespaceagents_1a81c46b0f706b9874f61e90dde4d4bf12">__all__</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceagents_1a81c46b0f706b9874f61e90dde4d4bf12"/><section>
+    <title>__all__</title>
+<indexterm><primary>__all__</primary><secondary>agents</secondary></indexterm>
+<indexterm><primary>agents</primary><secondary>__all__</secondary></indexterm>
+<para><computeroutput>list agents.__all__<computeroutput>[private]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;[
+2 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;ChiefEditorAgent&quot;</emphasis>,
+3 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;ResearchAgent&quot;</emphasis>,
+4 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;WriterAgent&quot;</emphasis>,
+5 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;EditorAgent&quot;</emphasis>,
+6 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;PublisherAgent&quot;</emphasis>,
+7 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;ReviserAgent&quot;</emphasis>,
+8 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;ReviewerAgent&quot;</emphasis>
+9 ]
+</programlisting></section>
+</section>
+</section>

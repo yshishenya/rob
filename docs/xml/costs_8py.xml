@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="costs_8py" kind="file" language="Python">
+    <compoundname>costs.py</compoundname>
+    <innernamespace refid="namespacegpt__researcher">gpt_researcher</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1utils">gpt_researcher::utils</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1utils_1_1costs">gpt_researcher::utils::costs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegpt__researcher_1_1utils" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>tiktoken</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Per<sp/>OpenAI<sp/>Pricing<sp/>Page:<sp/>https://openai.com/api/pricing/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespacegpt__researcher_1_1utils_1_1costs_1a5ded738042198cd2363d7057fcebed3a" refkind="member"><highlight class="normal">ENCODING_MODEL<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;o200k_base&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespacegpt__researcher_1_1utils_1_1costs_1a7001ea5a3cfcc38b054e1f61532d615a" refkind="member"><highlight class="normal">INPUT_COST_PER_TOKEN<sp/>=<sp/>0.000005</highlight></codeline>
+<codeline lineno="6" refid="namespacegpt__researcher_1_1utils_1_1costs_1a1f613faeb26205430d23505d18591801" refkind="member"><highlight class="normal">OUTPUT_COST_PER_TOKEN<sp/>=<sp/>0.000015</highlight></codeline>
+<codeline lineno="7" refid="namespacegpt__researcher_1_1utils_1_1costs_1aa6c6f6531263d9beca9c84e3c7290e57" refkind="member"><highlight class="normal">IMAGE_INFERENCE_COST<sp/>=<sp/>0.003825</highlight></codeline>
+<codeline lineno="8" refid="namespacegpt__researcher_1_1utils_1_1costs_1ac851877e589fc31f44a8b28053f69cb3" refkind="member"><highlight class="normal">EMBEDDING_COST<sp/>=<sp/>0.13<sp/><sp/>/<sp/>1000000<sp/></highlight><highlight class="comment">#<sp/>Assumes<sp/>new<sp/>ada-3-small</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Cost<sp/>estimation<sp/>is<sp/>via<sp/>OpenAI<sp/>libraries<sp/>and<sp/>models.<sp/>May<sp/>vary<sp/>for<sp/>other<sp/>models</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespacegpt__researcher_1_1utils_1_1costs_1a3c3b6e46daf03a6c6eff6af6b7d581a1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegpt__researcher_1_1utils_1_1costs_1a3c3b6e46daf03a6c6eff6af6b7d581a1" kindref="member">estimate_llm_cost</ref>(input_content:<sp/>str,<sp/>output_content:<sp/>str)<sp/>-&gt;<sp/>float:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>encoding<sp/>=<sp/>tiktoken.get_encoding(ENCODING_MODEL)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>input_tokens<sp/>=<sp/>encoding.encode(input_content)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>output_tokens<sp/>=<sp/>encoding.encode(output_content)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>input_costs<sp/>=<sp/>len(input_tokens)<sp/>*<sp/>INPUT_COST_PER_TOKEN</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>output_costs<sp/>=<sp/>len(output_tokens)<sp/>*<sp/>OUTPUT_COST_PER_TOKEN</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>input_costs<sp/>+<sp/>output_costs</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespacegpt__researcher_1_1utils_1_1costs_1a59fa6a66d1cc1d9a1bf6e72c6c933835" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacegpt__researcher_1_1utils_1_1costs_1a59fa6a66d1cc1d9a1bf6e72c6c933835" kindref="member">estimate_embedding_cost</ref>(model,<sp/>docs):</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>encoding<sp/>=<sp/>tiktoken.encoding_for_model(model)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>total_tokens<sp/>=<sp/>sum(len(encoding.encode(str(doc)))<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>doc<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>docs)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>total_tokens<sp/>*<sp/>EMBEDDING_COST</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/costs.py"/>
+  </compounddef>
+</doxygen>

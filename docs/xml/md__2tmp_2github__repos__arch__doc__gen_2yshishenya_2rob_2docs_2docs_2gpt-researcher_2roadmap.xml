@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2roadmap" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2roadmap</compoundname>
+    <title>Roadmap</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2roadmap_1autotoc_md134"/> We&apos;re constantly working on additional features and improvements to our products and services. We&apos;re also working on new products and services to help you build better AI applications using <ulink url="https://gptr.dev">GPT Researcher</ulink>.</para>
+<para>Our vision is to build the #1 autonomous research agent for AI developers and researchers, and we&apos;re excited to have you join us on this journey!</para>
+<para>The roadmap is prioritized based on the following goals: Performance, Quality, Modularity and Conversational flexibility. The roadmap is public and can be found <ulink url="https://trello.com/b/3O7KBePw/gpt-researcher-roadmap">here</ulink>.</para>
+<para>Interested in collaborating or contributing? Check out our <ulink url="/docs/contribute">contributing page</ulink> for more information. </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/roadmap.md"/>
+  </compounddef>
+</doxygen>

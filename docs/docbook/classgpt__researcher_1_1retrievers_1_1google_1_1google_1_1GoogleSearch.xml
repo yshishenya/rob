@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch" xml:lang="en-US">
+<title>gpt_researcher.retrievers.google.google.GoogleSearch Class Reference</title>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary></indexterm>
+Collaboration diagram for gpt_researcher.retrievers.google.google.GoogleSearch:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a7729cbe1341fac5390241edaec952655">__init__</link> (self, <link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1aa4661bd4b11e42be596baaba2870ba46">query</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a543f5f8483e9352743996621446922a1">get_api_key</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1ae62ed00fee5813471269d21a426271bf">get_cx_key</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1afe3c1937fd90c123097924197efb8b03">search</link> (self, max_results=7)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1aa4661bd4b11e42be596baaba2870ba46">query</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a01e609650947ae8d5dd032098a4eee0f">api_key</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a092ef162fe4943eca7da1d402a73bce9">cx_key</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a3f4be81fe04dbaf65b7958ceafc19054">client</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Tavily API Retriever
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a7729cbe1341fac5390241edaec952655"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.retrievers.google.google.GoogleSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.google.google.GoogleSearch.__init__ ( self,  query)</computeroutput></para>
+<para><literallayout><computeroutput>Initializes the TavilySearch object
+Args:
+    query:
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a543f5f8483e9352743996621446922a1"/><section>
+    <title>get_api_key()</title>
+<indexterm><primary>get_api_key</primary><secondary>gpt_researcher.retrievers.google.google.GoogleSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary><secondary>get_api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.google.google.GoogleSearch.get_api_key ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the Tavily API key
+Returns:</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1ae62ed00fee5813471269d21a426271bf"/><section>
+    <title>get_cx_key()</title>
+<indexterm><primary>get_cx_key</primary><secondary>gpt_researcher.retrievers.google.google.GoogleSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary><secondary>get_cx_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.google.google.GoogleSearch.get_cx_key ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the Tavily API key
+Returns:</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1afe3c1937fd90c123097924197efb8b03"/><section>
+    <title>search()</title>
+<indexterm><primary>search</primary><secondary>gpt_researcher.retrievers.google.google.GoogleSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary><secondary>search</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.google.google.GoogleSearch.search ( self,  max_results = <computeroutput>7</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Searches the query
+Returns:</computeroutput></literallayout></para>
+
+<para><literallayout><computeroutput>Useful for general internet search queries using the Google API.</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a01e609650947ae8d5dd032098a4eee0f"/><section>
+    <title>api_key</title>
+<indexterm><primary>api_key</primary><secondary>gpt_researcher.retrievers.google.google.GoogleSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary><secondary>api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.google.google.GoogleSearch.api_key</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a3f4be81fe04dbaf65b7958ceafc19054"/><section>
+    <title>client</title>
+<indexterm><primary>client</primary><secondary>gpt_researcher.retrievers.google.google.GoogleSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary><secondary>client</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.google.google.GoogleSearch.client</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a092ef162fe4943eca7da1d402a73bce9"/><section>
+    <title>cx_key</title>
+<indexterm><primary>cx_key</primary><secondary>gpt_researcher.retrievers.google.google.GoogleSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary><secondary>cx_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.google.google.GoogleSearch.cx_key</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1aa4661bd4b11e42be596baaba2870ba46"/><section>
+    <title>query</title>
+<indexterm><primary>query</primary><secondary>gpt_researcher.retrievers.google.google.GoogleSearch</secondary></indexterm>
+<indexterm><primary>gpt_researcher.retrievers.google.google.GoogleSearch</primary><secondary>query</secondary></indexterm>
+<para><computeroutput>gpt_researcher.retrievers.google.google.GoogleSearch.query</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/google/<link linkend="_retrievers_2google_2google_8py">google.py</link></section>
+</section>

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="text_8md" kind="file" language="Markdown">
+    <compoundname>text.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">sidebar_label:<sp/>text</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>processing.text</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Text<sp/>processing<sp/>functions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>split\_text</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>split_text(text:<sp/>str,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_length:<sp/>int<sp/>=<sp/>8192)<sp/>-&gt;<sp/>Generator[str,<sp/>None,<sp/>None]</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Split<sp/>text<sp/>into<sp/>chunks<sp/>of<sp/>a<sp/>maximum<sp/>length</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Arguments**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`text`<sp/>_str_<sp/>-<sp/>The<sp/>text<sp/>to<sp/>split</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`max_length`<sp/>_int,<sp/>optional_<sp/>-<sp/>The<sp/>maximum<sp/>length<sp/>of<sp/>each<sp/>chunk.<sp/>Defaults<sp/>to<sp/>8192.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Yields**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`str`<sp/>-<sp/>The<sp/>next<sp/>chunk<sp/>of<sp/>text</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Raises**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`ValueError`<sp/>-<sp/>If<sp/>the<sp/>text<sp/>is<sp/>longer<sp/>than<sp/>the<sp/>maximum<sp/>length</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>summarize\_text</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>summarize_text(url:<sp/>str,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text:<sp/>str,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>question:<sp/>str,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>driver:<sp/>Optional[WebDriver]<sp/>=<sp/>None)<sp/>-&gt;<sp/>str</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Summarize<sp/>text<sp/>using<sp/>the<sp/>OpenAI<sp/>API</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Arguments**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`url`<sp/>_str_<sp/>-<sp/>The<sp/>url<sp/>of<sp/>the<sp/>text</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`text`<sp/>_str_<sp/>-<sp/>The<sp/>text<sp/>to<sp/>summarize</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`question`<sp/>_str_<sp/>-<sp/>The<sp/>question<sp/>to<sp/>ask<sp/>the<sp/>model</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`driver`<sp/>_WebDriver_<sp/>-<sp/>The<sp/>webdriver<sp/>to<sp/>use<sp/>to<sp/>scroll<sp/>the<sp/>page</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Returns**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`str`<sp/>-<sp/>The<sp/>summary<sp/>of<sp/>the<sp/>text</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>scroll\_to\_percentage</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>scroll_to_percentage(driver:<sp/>WebDriver,<sp/>ratio:<sp/>float)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Scroll<sp/>to<sp/>a<sp/>percentage<sp/>of<sp/>the<sp/>page</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Arguments**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`driver`<sp/>_WebDriver_<sp/>-<sp/>The<sp/>webdriver<sp/>to<sp/>use</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`ratio`<sp/>_float_<sp/>-<sp/>The<sp/>percentage<sp/>to<sp/>scroll<sp/>to</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Raises**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`ValueError`<sp/>-<sp/>If<sp/>the<sp/>ratio<sp/>is<sp/>not<sp/>between<sp/>0<sp/>and<sp/>1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>create\_message</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>create_message(chunk:<sp/>str,<sp/>question:<sp/>str)<sp/>-&gt;<sp/>Dict[str,<sp/>str]</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Create<sp/>a<sp/>message<sp/>for<sp/>the<sp/>chat<sp/>completion</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Arguments**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`chunk`<sp/>_str_<sp/>-<sp/>The<sp/>chunk<sp/>of<sp/>text<sp/>to<sp/>summarize</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`question`<sp/>_str_<sp/>-<sp/>The<sp/>question<sp/>to<sp/>answer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Returns**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Dict[str,<sp/>str]:<sp/>The<sp/>message<sp/>to<sp/>send<sp/>to<sp/>the<sp/>chat<sp/>completion</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>write\_to\_file</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>write_to_file(filename:<sp/>str,<sp/>text:<sp/>str)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Write<sp/>text<sp/>to<sp/>a<sp/>file</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Arguments**:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`text`<sp/>_str_<sp/>-<sp/>The<sp/>text<sp/>to<sp/>write</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`filename`<sp/>_str_<sp/>-<sp/>The<sp/>filename<sp/>to<sp/>write<sp/>to</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/processing/text.md"/>
+  </compounddef>
+</doxygen>

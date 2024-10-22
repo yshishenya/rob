@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher_1_1utils_1_1llm" xml:lang="en-US">
+<title>gpt_researcher.utils.llm Namespace Reference</title>
+<indexterm><primary>gpt_researcher.utils.llm</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1utils_1_1llm_1a350bb4294397495c506426a2caad2b31">get_llm</link> (llm_provider, **kwargs)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacegpt__researcher_1_1utils_1_1llm_1aabaadb598e9e86c6e4a0c50627463b95">create_chat_completion</link> (list messages, Optional[str] model=None, float temperature=1.0, Optional[int] max_tokens=None, Optional[str] llm_provider=None, Optional[bool] stream=False, WebSocket|None websocket=None, Dict[str, Any]|None llm_kwargs=None, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacegpt__researcher_1_1utils_1_1llm_1a3125e642ba0eba1562845ff7d15ecb08">construct_subtopics</link> (str task, str data, config, list subtopics=[])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1llm_1a3125e642ba0eba1562845ff7d15ecb08"/><section>
+    <title>construct_subtopics()</title>
+<indexterm><primary>construct_subtopics</primary><secondary>gpt_researcher.utils.llm</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.llm</primary><secondary>construct_subtopics</secondary></indexterm>
+<para><computeroutput> list gpt_researcher.utils.llm.construct_subtopics (str task, str data,  config, list  subtopics = <computeroutput>[]</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1utils_1_1llm_a3125e642ba0eba1562845ff7d15ecb08_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1utils_1_1llm_a3125e642ba0eba1562845ff7d15ecb08_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1llm_1aabaadb598e9e86c6e4a0c50627463b95"/><section>
+    <title>create_chat_completion()</title>
+<indexterm><primary>create_chat_completion</primary><secondary>gpt_researcher.utils.llm</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.llm</primary><secondary>create_chat_completion</secondary></indexterm>
+<para><computeroutput> str gpt_researcher.utils.llm.create_chat_completion (list messages, Optional[str]  model = <computeroutput>None</computeroutput>
+, float  temperature = <computeroutput>1.0</computeroutput>
+, Optional[int]  max_tokens = <computeroutput>None</computeroutput>
+, Optional[str]  llm_provider = <computeroutput>None</computeroutput>
+, Optional[bool]  stream = <computeroutput>False</computeroutput>
+, WebSocket | None  websocket = <computeroutput>None</computeroutput>
+, Dict[str, Any] | None  llm_kwargs = <computeroutput>None</computeroutput>
+, callable  cost_callback = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Create a chat completion using the OpenAI API
+Args:
+    messages (list[dict[str, str]]): The messages to send to the chat completion
+    model (str, optional): The model to use. Defaults to None.
+    temperature (float, optional): The temperature to use. Defaults to 0.9.
+    max_tokens (int, optional): The max tokens to use. Defaults to None.
+    stream (bool, optional): Whether to stream the response. Defaults to False.
+    llm_provider (str, optional): The LLM Provider to use.
+    webocket (WebSocket): The websocket used in the currect request,
+    cost_callback: Callback function for updating cost
+Returns:
+    str: The response from the chat completion
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1utils_1_1llm_aabaadb598e9e86c6e4a0c50627463b95_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1utils_1_1llm_1a350bb4294397495c506426a2caad2b31"/><section>
+    <title>get_llm()</title>
+<indexterm><primary>get_llm</primary><secondary>gpt_researcher.utils.llm</secondary></indexterm>
+<indexterm><primary>gpt_researcher.utils.llm</primary><secondary>get_llm</secondary></indexterm>
+<para><computeroutput>gpt_researcher.utils.llm.get_llm ( llm_provider, ** kwargs)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1utils_1_1llm_a350bb4294397495c506426a2caad2b31_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

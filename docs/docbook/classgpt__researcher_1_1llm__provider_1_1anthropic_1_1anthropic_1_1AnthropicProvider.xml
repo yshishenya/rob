@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider" xml:lang="en-US">
+<title>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider Class Reference</title>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary></indexterm>
+Collaboration diagram for gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ad9e44a41aab1a6effbce43ff50a8ecbb">__init__</link> (self, <link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a68f8555c0ce8af4a803d3796970fba70">model</link>, <link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a52bf81b60a6415ef5cb2220161cd43f9">temperature</link>, <link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa7ccf630e111106209d5613a68e75e74">max_tokens</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a9039f5ba8d5029c59d563c9d4291dd6c">get_api_key</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a">get_llm_model</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ac3fdbde2bf2dc7800522c507f0f12fc6">get_chat_response</link> (self, messages, stream, websocket=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1af38dafb273b5ae2fb4983fcbcf00617c">stream_response</link> (self, messages, websocket=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a68f8555c0ce8af4a803d3796970fba70">model</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a52bf81b60a6415ef5cb2220161cd43f9">temperature</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa7ccf630e111106209d5613a68e75e74">max_tokens</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ab03d946eb28e42807867a05dfd285dad">api_key</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a0b98048adb58423b9770b0cadc1a30a7">llm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ad9e44a41aab1a6effbce43ff50a8ecbb"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.__init__ ( self,  model,  temperature,  max_tokens)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a9039f5ba8d5029c59d563c9d4291dd6c"/><section>
+    <title>get_api_key()</title>
+<indexterm><primary>get_api_key</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>get_api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_api_key ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the OpenAI API key
+Returns:</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ac3fdbde2bf2dc7800522c507f0f12fc6"/><section>
+    <title>get_chat_response()</title>
+<indexterm><primary>get_chat_response</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>get_chat_response</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_chat_response ( self,  messages,  stream,  websocket = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_ac3fdbde2bf2dc7800522c507f0f12fc6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a"/><section>
+    <title>get_llm_model()</title>
+<indexterm><primary>get_llm_model</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>get_llm_model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_llm_model ( self)</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1af38dafb273b5ae2fb4983fcbcf00617c"/><section>
+    <title>stream_response()</title>
+<indexterm><primary>stream_response</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>stream_response</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.stream_response ( self,  messages,  websocket = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_af38dafb273b5ae2fb4983fcbcf00617c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ab03d946eb28e42807867a05dfd285dad"/><section>
+    <title>api_key</title>
+<indexterm><primary>api_key</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>api_key</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.api_key</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a0b98048adb58423b9770b0cadc1a30a7"/><section>
+    <title>llm</title>
+<indexterm><primary>llm</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>llm</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.llm</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa7ccf630e111106209d5613a68e75e74"/><section>
+    <title>max_tokens</title>
+<indexterm><primary>max_tokens</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>max_tokens</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.max_tokens</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a68f8555c0ce8af4a803d3796970fba70"/><section>
+    <title>model</title>
+<indexterm><primary>model</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.model</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1a52bf81b60a6415ef5cb2220161cd43f9"/><section>
+    <title>temperature</title>
+<indexterm><primary>temperature</primary><secondary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</secondary></indexterm>
+<indexterm><primary>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider</primary><secondary>temperature</secondary></indexterm>
+<para><computeroutput>gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.temperature</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/anthropic/<link linkend="_anthropic_8py">anthropic.py</link></section>
+</section>

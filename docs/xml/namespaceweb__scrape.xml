@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceweb__scrape" kind="namespace" language="Python">
+    <compoundname>web_scrape</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceweb__scrape_1aa2ff2c1078cc7ae3378f810fdea2765a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>web_scrape.executor</definition>
+        <argsstring></argsstring>
+        <name>executor</name>
+        <qualifiedname>web_scrape.executor</qualifiedname>
+        <initializer>=  ThreadPoolExecutor()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceweb__scrape_1a0117379fc90094ab4626beaca918dc49" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>web_scrape.FILE_DIR</definition>
+        <argsstring></argsstring>
+        <name>FILE_DIR</name>
+        <qualifiedname>web_scrape.FILE_DIR</qualifiedname>
+        <initializer>=  Path(__file__).parent.parent</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceweb__scrape_1aae251defc7a9fb4c5b8085b5a75a7a35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str web_scrape.async_browse</definition>
+        <argsstring>(str selenium_web_browser, str user_agent, str fast_llm_model, str summary_token_limit, str llm_provider, str url, str question, WebSocket websocket)</argsstring>
+        <name>async_browse</name>
+        <qualifiedname>web_scrape.async_browse</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>selenium_web_browser</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>user_agent</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>fast_llm_model</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>summary_token_limit</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>llm_provider</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>question</declname>
+        </param>
+        <param>
+          <type>WebSocket</type>
+          <declname>websocket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Browse a website and return the answer and links to the user
+
+Args:
+    selenium_web_browser (str): The web browser used for scraping
+    user_agent (str): The user agent used when scraping
+    url (str): The url of the website to browse
+    question (str): The question asked by the user
+    websocket (WebSocketManager): The websocket manager
+
+Returns:
+    str: The answer and links to the user
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="40" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tuple[str, WebDriver]</type>
+        <definition> tuple[str, WebDriver] web_scrape.browse_website</definition>
+        <argsstring>(str url, str question)</argsstring>
+        <name>browse_website</name>
+        <qualifiedname>web_scrape.browse_website</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>question</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Browse a website and return the answer and links to the user
+
+Args:
+    url (str): The url of the website to browse
+    question (str): The question asked by the user
+
+Returns:
+    Tuple[str, WebDriver]: The answer and links to the user and the webdriver
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="91" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="91" bodyend="120"/>
+        <references refid="namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a" compoundref="web__scrape_8py" startline="238" endline="248">add_header</references>
+        <references refid="namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf" compoundref="web__scrape_8py" startline="226" endline="237">close_browser</references>
+        <references refid="namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e" compoundref="web__scrape_8py" startline="206" endline="225">scrape_links_with_selenium</references>
+        <references refid="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" compoundref="web__scrape_8py" startline="121" endline="189">scrape_text_with_selenium</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tuple[WebDriver, str]</type>
+        <definition> tuple[WebDriver, str] web_scrape.scrape_text_with_selenium</definition>
+        <argsstring>(str selenium_web_browser, str user_agent, str url)</argsstring>
+        <name>scrape_text_with_selenium</name>
+        <qualifiedname>web_scrape.scrape_text_with_selenium</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>selenium_web_browser</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>user_agent</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scrape text from a website using selenium
+
+Args:
+    url (str): The url of the website to scrape
+    selenium_web_browser (str): The web browser used to scrape
+    user_agent (str): The user agent used when scraping
+
+Returns:
+    Tuple[WebDriver, str]: The webdriver and the text scraped from the website
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="121" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="121" bodyend="189"/>
+        <references refid="namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451" compoundref="web__scrape_8py" startline="190" endline="205">get_text</references>
+        <references refid="namespacescrape__skills_1a834d3a6a7957c6c45ea14406a6f6a754" compoundref="scrape__skills_8py" startline="19" endline="32">scrape_skills.scrape_pdf_with_arxiv</references>
+        <references refid="namespacescrape__skills_1a1a5398a51f4da8236daecf9fe86ecf27" compoundref="scrape__skills_8py" startline="5" endline="18">scrape_skills.scrape_pdf_with_pymupdf</references>
+        <referencedby refid="namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d" compoundref="web__scrape_8py" startline="91" endline="120">browse_website</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb__scrape_1af8e21857763f45f8dd875e3a80c1b451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>web_scrape.get_text</definition>
+        <argsstring>(soup)</argsstring>
+        <name>get_text</name>
+        <qualifiedname>web_scrape.get_text</qualifiedname>
+        <param>
+          <type>soup</type>
+          <defname>soup</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the text from the soup
+
+Args:
+    soup (BeautifulSoup): The soup to get the text from
+
+Returns:
+    str: The text from the soup
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="190" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="190" bodyend="205"/>
+        <referencedby refid="namespaceweb__scrape_1a14d5ccdaf877accf6ecc7030486728e5" compoundref="web__scrape_8py" startline="121" endline="189">scrape_text_with_selenium</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb__scrape_1a5866c2091ff9973cf334835bf009981e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list[str]</type>
+        <definition> list[str] web_scrape.scrape_links_with_selenium</definition>
+        <argsstring>(WebDriver driver, str url)</argsstring>
+        <name>scrape_links_with_selenium</name>
+        <qualifiedname>web_scrape.scrape_links_with_selenium</qualifiedname>
+        <param>
+          <type>WebDriver</type>
+          <declname>driver</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scrape links from a website using selenium
+
+Args:
+    driver (WebDriver): The webdriver to use to scrape the links
+
+Returns:
+    List[str]: The links scraped from the website
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="206" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="206" bodyend="225"/>
+        <referencedby refid="namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d" compoundref="web__scrape_8py" startline="91" endline="120">browse_website</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb__scrape_1aa1548c065f8f535d2422353c35a0f8bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None web_scrape.close_browser</definition>
+        <argsstring>(WebDriver driver)</argsstring>
+        <name>close_browser</name>
+        <qualifiedname>web_scrape.close_browser</qualifiedname>
+        <param>
+          <type>WebDriver</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Close the browser
+
+Args:
+    driver (WebDriver): The webdriver to close
+
+Returns:
+    None
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="226" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="226" bodyend="237"/>
+        <referencedby refid="namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d" compoundref="web__scrape_8py" startline="91" endline="120">browse_website</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb__scrape_1a4ca49a63b7463a7b860ea919a026a80a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None web_scrape.add_header</definition>
+        <argsstring>(WebDriver driver)</argsstring>
+        <name>add_header</name>
+        <qualifiedname>web_scrape.add_header</qualifiedname>
+        <param>
+          <type>WebDriver</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add a header to the website
+
+Args:
+    driver (WebDriver): The webdriver to use to add the header
+
+Returns:
+    None
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="238" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" bodystart="238" bodyend="248"/>
+        <referencedby refid="namespaceweb__scrape_1a11e568eae6f4fcc57b34729e906cfe1d" compoundref="web__scrape_8py" startline="91" endline="120">browse_website</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Selenium web scraping module.</verbatim> </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/web_scrape.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_b4d8dcc72b20823dab5f467aabbd28a7" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/duckduckgo</compoundname>
+    <innerfile refid="gpt__researcher_2retrievers_2duckduckgo_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="duckduckgo_8py">duckduckgo.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/duckduckgo/"/>
+  </compounddef>
+</doxygen>

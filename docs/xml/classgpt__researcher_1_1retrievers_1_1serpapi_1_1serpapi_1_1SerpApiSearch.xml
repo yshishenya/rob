@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::retrievers::serpapi::serpapi::SerpApiSearch</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1acb0735ef232f991bc148438c73e12637" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch::query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <qualifiedname>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.query</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ad62ffa8e08f19b5e67eb3362f55fa855" compoundref="gpt__researcher_2master_2agent_8py" startline="32" endline="71">gpt_researcher.master.agent.GPTResearcher.__init__</referencedby>
+        <referencedby refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ab4222f0b61a14a6c08c6765f3e337d89" compoundref="detailed__report_8py" startline="99" endline="137">backend.report_type.detailed_report.detailed_report.DetailedReport._get_subtopic_report</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a245afde9b9be308fd5ac526d4052fede" compoundref="gpt__researcher_2master_2agent_8py" startline="301" endline="324">gpt_researcher.master.agent.GPTResearcher.get_subtopics</referencedby>
+        <referencedby refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1ad217eead7f0dcb7a451a8d604cff71b1" compoundref="basic__report_8py" startline="13" endline="24">backend.report_type.basic_report.basic_report.BasicReport.run</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1ad0bb732b805ce6b818f85959539e0806" compoundref="duckduckgo_8py" startline="13" endline="22">gpt_researcher.retrievers.duckduckgo.duckduckgo.Duckduckgo.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1ae1de69ecb584e83b441481c2458b7802" compoundref="bing_8py" startline="34" endline="89">gpt_researcher.retrievers.bing.bing.BingSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1afe3c1937fd90c123097924197efb8b03" compoundref="retrievers_2google_2google_8py" startline="53" endline="89">gpt_researcher.retrievers.google.google.GoogleSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a778ed2bf6f8f22252fceee56d613ec5a" compoundref="searx_8py" startline="37" endline="48">gpt_researcher.retrievers.searx.searx.SearxSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1adc1c93156cf9ada3cf939cc50d8e9bd7" compoundref="serpapi_8py" startline="36" endline="78">gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1adc6d86b893e3b2e65ad8977feba7c1fd" compoundref="serper_8py" startline="35" endline="82">gpt_researcher.retrievers.serper.serper.SerperSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1aaa6a16beec23316f798ba1fe987b379b" compoundref="tavily__search_8py" startline="38" endline="61">gpt_researcher.retrievers.tavily.tavily_search.TavilySearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ab58de4205648a8354754bd28604b51d1" compoundref="gpt__researcher_2master_2agent_8py" startline="294" endline="300">gpt_researcher.master.agent.GPTResearcher.write_introduction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a0cc82e642dd445f13c62344c4ceed176" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch::api_key</definition>
+        <argsstring></argsstring>
+        <name>api_key</name>
+        <qualifiedname>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.api_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a" compoundref="anthropic_8py" startline="34" endline="44">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1aa9770c8dd905291c6c3ff2c7c39b0e18" compoundref="azureopenai_8py" startline="47" endline="57">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" compoundref="llm__provider_2google_2google_8py" startline="35" endline="45">gpt_researcher.llm_provider.google.google.GoogleProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef" compoundref="groq_8py" startline="35" endline="45">gpt_researcher.llm_provider.groq.groq.GroqProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a13b615065860169c0406faa06d0ec627" compoundref="huggingface_8py" startline="34" endline="44">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2fbf90be0afcd22fffc64207b310b2cc" compoundref="mistral_8py" startline="34" endline="44">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3" compoundref="openai_8py" startline="45" endline="57">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1aa75375bd2720f0f71037e08629cbca0f" compoundref="together_8py" startline="34" endline="44">gpt_researcher.llm_provider.together.together.TogetherProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1ae1de69ecb584e83b441481c2458b7802" compoundref="bing_8py" startline="34" endline="89">gpt_researcher.retrievers.bing.bing.BingSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1adc1c93156cf9ada3cf939cc50d8e9bd7" compoundref="serpapi_8py" startline="36" endline="78">gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1adc6d86b893e3b2e65ad8977feba7c1fd" compoundref="serper_8py" startline="35" endline="82">gpt_researcher.retrievers.serper.serper.SerperSearch.search</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a4b6692bbbd29baf7b917c46448cbcfe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.__init__</definition>
+        <argsstring>(self, query)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1acb0735ef232f991bc148438c73e12637" kindref="member">query</ref></type>
+          <defname>query</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initializes the SerpApiSearch object
+Args:
+    query:
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" bodystart="14" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a264b7317c8eb6722477584d6cf67633e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.get_api_key</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_api_key</name>
+        <qualifiedname>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.get_api_key</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Gets the SerpApi API key
+Returns:</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" bodystart="23" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1adc1c93156cf9ada3cf939cc50d8e9bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.search</definition>
+        <argsstring>(self, max_results=7)</argsstring>
+        <name>search</name>
+        <qualifiedname>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.search</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>max_results</type>
+          <defname>max_results</defname>
+          <defval>7</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Searches the query
+Returns:</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" bodystart="36" bodyend="78"/>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1ab03d946eb28e42807867a05dfd285dad" compoundref="anthropic_8py" startline="18">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1a586ae8299a91a570ec410dd0fba45152" compoundref="azureopenai_8py" startline="31">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1ada73e93b41ac24b657a020d4b6f1b95b" compoundref="llm__provider_2google_2google_8py" startline="19">gpt_researcher.llm_provider.google.google.GoogleProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a5b8c30e4ca0e9f851fc488b9ece44a38" compoundref="groq_8py" startline="18">gpt_researcher.llm_provider.groq.groq.GroqProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1acac348196c0ba3de9c81e6e182d4a6fd" compoundref="huggingface_8py" startline="18">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1abd922b050c1302c18b04b4a459067e0b" compoundref="mistral_8py" startline="18">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1afd786ea7857266ca7849de09f8048eec" compoundref="openai_8py" startline="18">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1ab2e02cc405885217041e42771c792864" compoundref="together_8py" startline="18">gpt_researcher.llm_provider.together.together.TogetherProvider.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1a174821f8b19141c63d31775f5b5c6a40" compoundref="bing_8py" startline="20">gpt_researcher.retrievers.bing.bing.BingSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1a01e609650947ae8d5dd032098a4eee0f" compoundref="retrievers_2google_2google_8py" startline="21">gpt_researcher.retrievers.google.google.GoogleSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1a99e7c093235d706ca95b13b15eb5edbf" compoundref="searx_8py" startline="20">gpt_researcher.retrievers.searx.searx.SearxSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a0cc82e642dd445f13c62344c4ceed176" compoundref="serpapi_8py" startline="21">gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1a7e94f43d2a7fcecc2840c018274a0602" compoundref="serper_8py" startline="20">gpt_researcher.retrievers.serper.serper.SerperSearch.api_key</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1a1b30b96a97a06cba1240acfe2f03a444" compoundref="tavily__search_8py" startline="20">gpt_researcher.retrievers.tavily.tavily_search.TavilySearch.api_key</references>
+        <references refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1a9f07fc9134995bd196ed12c7ea622d07" compoundref="basic__report_8py" startline="6">backend.report_type.basic_report.basic_report.BasicReport.query</references>
+        <references refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1a78f09ae4ef42c70ddf577150db317032" compoundref="detailed__report_8py" startline="12">backend.report_type.detailed_report.detailed_report.DetailedReport.query</references>
+        <references refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a2a34e70714ce1d367eb5d3c988a38cac" compoundref="gpt__researcher_2master_2agent_8py" startline="166">gpt_researcher.master.agent.GPTResearcher.query</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1bing_1_1bing_1_1BingSearch_1a5b568dc1b8585ce11f027999f5956673" compoundref="bing_8py" startline="19">gpt_researcher.retrievers.bing.bing.BingSearch.query</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1duckduckgo_1_1duckduckgo_1_1Duckduckgo_1adc8d2faf8e34e22a9332fbb1456bf607" compoundref="duckduckgo_8py" startline="11">gpt_researcher.retrievers.duckduckgo.duckduckgo.Duckduckgo.query</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1google_1_1google_1_1GoogleSearch_1aa4661bd4b11e42be596baaba2870ba46" compoundref="retrievers_2google_2google_8py" startline="20">gpt_researcher.retrievers.google.google.GoogleSearch.query</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1searx_1_1searx_1_1SearxSearch_1ac6692ba6397af22fb1559c92d3bee003" compoundref="searx_8py" startline="19">gpt_researcher.retrievers.searx.searx.SearxSearch.query</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1acb0735ef232f991bc148438c73e12637" compoundref="serpapi_8py" startline="20">gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch.query</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1serper_1_1serper_1_1SerperSearch_1a363c7232742fcf0124645e8079c47b51" compoundref="serper_8py" startline="19">gpt_researcher.retrievers.serper.serper.SerperSearch.query</references>
+        <references refid="classgpt__researcher_1_1retrievers_1_1tavily_1_1tavily__search_1_1TavilySearch_1a2afaf72c349bf163ab147b4b29bfedad" compoundref="tavily__search_8py" startline="19">gpt_researcher.retrievers.tavily.tavily_search.TavilySearch.query</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>SerpApi Retriever
+</verbatim> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.retrievers.serpapi.serpapi.SerpApiSearch</label>
+        <link refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi/serpapi.py" bodystart="10" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a4b6692bbbd29baf7b917c46448cbcfe1" prot="public" virt="non-virtual"><scope>gpt_researcher::retrievers::serpapi::serpapi::SerpApiSearch</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a0cc82e642dd445f13c62344c4ceed176" prot="public" virt="non-virtual"><scope>gpt_researcher::retrievers::serpapi::serpapi::SerpApiSearch</scope><name>api_key</name></member>
+      <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1a264b7317c8eb6722477584d6cf67633e" prot="public" virt="non-virtual"><scope>gpt_researcher::retrievers::serpapi::serpapi::SerpApiSearch</scope><name>get_api_key</name></member>
+      <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1acb0735ef232f991bc148438c73e12637" prot="public" virt="non-virtual"><scope>gpt_researcher::retrievers::serpapi::serpapi::SerpApiSearch</scope><name>query</name></member>
+      <member refid="classgpt__researcher_1_1retrievers_1_1serpapi_1_1serpapi_1_1SerpApiSearch_1adc1c93156cf9ada3cf939cc50d8e9bd7" prot="public" virt="non-virtual"><scope>gpt_researcher::retrievers::serpapi::serpapi::SerpApiSearch</scope><name>search</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

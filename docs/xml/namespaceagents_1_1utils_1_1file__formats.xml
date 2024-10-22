@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceagents_1_1utils_1_1file__formats" kind="namespace" language="Python">
+    <compoundname>agents::utils::file_formats</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceagents_1_1utils_1_1file__formats_1ad0218eec891397e9e5fc972b4c9ce1b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None agents.utils.file_formats.write_to_file</definition>
+        <argsstring>(str filename, str text)</argsstring>
+        <name>write_to_file</name>
+        <qualifiedname>agents.utils.file_formats.write_to_file</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Asynchronously write text to a file in UTF-8 encoding.
+
+Args:
+    filename (str): The filename to write to.
+    text (str): The text to write.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" bodystart="7" bodyend="20"/>
+        <referencedby refid="namespaceagents_1_1utils_1_1file__formats_1a291480dc71d67af0e177df6daefe0942" compoundref="file__formats_8py" startline="21" endline="36">agents.utils.file_formats.write_text_to_md</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceagents_1_1utils_1_1file__formats_1a291480dc71d67af0e177df6daefe0942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str agents.utils.file_formats.write_text_to_md</definition>
+        <argsstring>(str text, str path)</argsstring>
+        <name>write_text_to_md</name>
+        <qualifiedname>agents.utils.file_formats.write_text_to_md</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Writes text to a Markdown file and returns the file path.
+
+Args:
+    text (str): Text to write to the Markdown file.
+
+Returns:
+    str: The file path of the generated Markdown file.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" bodystart="21" bodyend="36"/>
+        <references refid="namespaceagents_1_1utils_1_1file__formats_1ad0218eec891397e9e5fc972b4c9ce1b3" compoundref="file__formats_8py" startline="7" endline="20">agents.utils.file_formats.write_to_file</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceagents_1_1utils_1_1file__formats_1a381d88777ec5b123fc0c7f5b8357f96b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str agents.utils.file_formats.write_md_to_pdf</definition>
+        <argsstring>(str text, str path)</argsstring>
+        <name>write_md_to_pdf</name>
+        <qualifiedname>agents.utils.file_formats.write_md_to_pdf</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Converts Markdown text to a PDF file and returns the file path.
+
+Args:
+    text (str): Markdown text to convert.
+
+Returns:
+    str: The encoded file path of the generated PDF.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" line="37" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" bodystart="37" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceagents_1_1utils_1_1file__formats_1a418dc3a64d94136480c6a27a8050cfee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str agents.utils.file_formats.write_md_to_word</definition>
+        <argsstring>(str text, str path)</argsstring>
+        <name>write_md_to_word</name>
+        <qualifiedname>agents.utils.file_formats.write_md_to_word</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Converts Markdown text to a DOCX file and returns the file path.
+
+Args:
+    text (str): Markdown text to convert.
+
+Returns:
+    str: The encoded file path of the generated DOCX.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" line="66" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" bodystart="66" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/file_formats.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

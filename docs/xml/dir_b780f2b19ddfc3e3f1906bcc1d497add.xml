@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_b780f2b19ddfc3e3f1906bcc1d497add" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps</compoundname>
+    <innerfile refid="db__seed_8py">db_seed.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/"/>
+  </compounddef>
+</doxygen>

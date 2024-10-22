@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceagents_1_1writer" xml:lang="en-US">
+<title>agents.writer Namespace Reference</title>
+<indexterm><primary>agents.writer</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classagents_1_1writer_1_1WriterAgent">WriterAgent</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespaceagents_1_1writer_1a4c5d07e2e9e57563dbcb39ba7feddab6">sample_json</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceagents_1_1writer_1a4c5d07e2e9e57563dbcb39ba7feddab6"/><section>
+    <title>sample_json</title>
+<indexterm><primary>sample_json</primary><secondary>agents.writer</secondary></indexterm>
+<indexterm><primary>agents.writer</primary><secondary>sample_json</secondary></indexterm>
+<para><computeroutput>str agents.writer.sample_json</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;<emphasis role="stringliteral">&quot;&quot;&quot;</emphasis>
+2 <emphasis role="stringliteral">{</emphasis>
+3 <emphasis role="stringliteral">&#32;&#32;&quot;Содержание&quot;:&#32;A&#32;table&#32;of&#32;contents&#32;in&#32;markdown&#32;syntax&#32;(using&#32;&apos;-&apos;)&#32;based&#32;on&#32;the&#32;research&#32;headers&#32;and&#32;subheaders,</emphasis>
+4 <emphasis role="stringliteral">&#32;&#32;&quot;Введение&quot;:&#32;An&#32;indepth&#32;introduction&#32;to&#32;the&#32;topic&#32;in&#32;markdown&#32;syntax&#32;and&#32;hyperlink&#32;references&#32;to&#32;relevant&#32;sources,</emphasis>
+5 <emphasis role="stringliteral">&#32;&#32;&quot;Заключение&quot;:&#32;A&#32;conclusion&#32;to&#32;the&#32;entire&#32;research&#32;based&#32;on&#32;all&#32;research&#32;data&#32;in&#32;markdown&#32;syntax&#32;and&#32;hyperlink&#32;references&#32;to&#32;relevant&#32;sources,</emphasis>
+6 <emphasis role="stringliteral">&#32;&#32;&quot;Источники&quot;:&#32;A&#32;list&#32;with&#32;strings&#32;of&#32;all&#32;used&#32;source&#32;links&#32;in&#32;the&#32;entire&#32;research&#32;data&#32;in&#32;markdown&#32;syntax&#32;and&#32;apa&#32;citation&#32;format.&#32;For&#32;example:&#32;[&apos;-&#32;&#32;Title,&#32;year,&#32;Author&#32;[source&#32;url](source)&apos;,&#32;...]</emphasis>
+7 <emphasis role="stringliteral">}</emphasis>
+8 <emphasis role="stringliteral">&quot;&quot;&quot;</emphasis>
+</programlisting></section>
+</section>
+</section>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_documents-report-source_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/documents-report-source.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacedocuments-report-source">documents-report-source</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacedocuments-report-source_1ad12a9b38a596a55ac62431fe1116e367">documents-report-source.test_gpt_researcher</link> (report_type)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacedocuments-report-source_1abe193fbaff482c0f4acb6195464e2bd2">documents-report-source.report_types</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedocuments-report-source_1adde104a314af0f4c17bc4c902abf5857">documents-report-source.query</link> = &quot;What can you tell me about myself based on my documents?&quot;</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacedocuments-report-source_1af938f99fc526afa847916a04f53f20e7">documents-report-source.output_dir</link> = &quot;./outputs&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

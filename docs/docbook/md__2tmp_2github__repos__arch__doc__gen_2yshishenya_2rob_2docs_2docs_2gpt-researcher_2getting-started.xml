@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started" xml:lang="en-US">
+<title>Getting Started</title>
+<indexterm><primary>Getting Started</primary></indexterm>
+
+<para><anchor xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md82"/> <blockquote>
+<para>&#8205;<emphasis role="bold">Step 0</emphasis> - Install Python 3.11 or later. <link xlink:href="https://www.tutorialsteacher.com/python/install-python">See here</link> for a step-by-step guide. </para>
+</blockquote><blockquote>
+<para>&#8205;<emphasis role="bold">Step 1</emphasis> - Download the project and navigate to its directory </para>
+</blockquote><literallayout><computeroutput>$&#32;git&#32;clone&#32;https://github.com/assafelovic/gpt-researcher.git
+$&#32;cd&#32;gpt-researcher
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 3</emphasis> - Set up API keys using two methods: exporting them directly or storing them in a <computeroutput>.env</computeroutput> file. </para>
+</blockquote>For Linux/Temporary Windows Setup, use the export method:</para>
+
+<para><literallayout><computeroutput>export&#32;OPENAI_API_KEY={Your&#32;OpenAI&#32;API&#32;Key&#32;here}
+export&#32;TAVILY_API_KEY={Your&#32;Tavily&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout></para>
+
+<para>For a more permanent setup, create a <computeroutput>.env</computeroutput> file in the current <computeroutput>gpt-researcher</computeroutput> folder and input the keys as follows:</para>
+
+<para><literallayout><computeroutput>OPENAI_API_KEY={Your&#32;OpenAI&#32;API&#32;Key&#32;here}
+TAVILY_API_KEY={Your&#32;Tavily&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout></para>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">For LLM, we recommend <link xlink:href="https://platform.openai.com/docs/guides/gpt">OpenAI GPT</link></emphasis>, but you can use any other LLM model (including open sources) supported by <link xlink:href="https://python.langchain.com/docs/guides/adapters/openai">Langchain Adapter</link>, simply change the llm model and provider in <link linkend="_config_8py">config/config.py</link>.</para>
+</listitem><listitem>
+<para><emphasis role="bold">For search engine, we recommend <link xlink:href="https://app.tavily.com">Tavily Search API</link></emphasis>, but you can also refer to other search engines of your choice by changing the search provider in <link linkend="_config_8py">config/config.py</link> to <computeroutput>&quot;duckduckgo&quot;</computeroutput>, <computeroutput>&quot;googleAPI&quot;</computeroutput>, <computeroutput>&quot;bing&quot;</computeroutput>, <computeroutput>&quot;googleSerp&quot;</computeroutput>, or <computeroutput>&quot;searx&quot;</computeroutput>. Then add the corresponding env API key as seen in the <link linkend="_config_8py">config.py</link> file.</para>
+</listitem></itemizedlist>
+</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md83">
+<title><title>Quickstart</title></title>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 1</emphasis> - Install dependencies </para>
+</blockquote><literallayout><computeroutput>$&#32;pip&#32;install&#32;-r&#32;requirements.txt
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 2</emphasis> - Run the agent with FastAPI </para>
+</blockquote><literallayout><computeroutput>$&#32;uvicorn&#32;main:app&#32;--reload
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 3</emphasis> - Go to <link xlink:href="http://localhost:8000">http://localhost:8000</link> on any browser and enjoy researching! </para>
+</blockquote></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md84">
+<title><title>Using Virtual Environment or Poetry</title></title>
+
+<para>Select either based on your familiarity with each:</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md85">
+<title><title>Virtual Environment</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md86">
+<title><title><emphasis>Establishing the Virtual Environment with Activate/Deactivate configuration</emphasis></title></title>
+
+<para>Create a virtual environment using the <computeroutput>venv</computeroutput> package with the environment name <computeroutput>&lt;your_name&gt;</computeroutput>, for example, <computeroutput>env</computeroutput>. Execute the following command in the PowerShell/CMD terminal:</para>
+
+<para><literallayout><computeroutput>python&#32;-m&#32;venv&#32;env
+</computeroutput></literallayout></para>
+
+<para>To activate the virtual environment, use the following activation script in PowerShell/CMD terminal:</para>
+
+<para><literallayout><computeroutput>.\env\Scripts\activate
+</computeroutput></literallayout></para>
+
+<para>To deactivate the virtual environment, run the following deactivation script in PowerShell/CMD terminal:</para>
+
+<para><literallayout><computeroutput>deactivate
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md87">
+<title><title><emphasis>Install the dependencies for a Virtual environment</emphasis></title></title>
+
+<para>After activating the <computeroutput>env</computeroutput> environment, install dependencies using the <computeroutput>requirements.txt</computeroutput> file with the following command:</para>
+
+<para><literallayout><computeroutput>python&#32;-m&#32;pip&#32;install&#32;-r&#32;requirements.txt
+</computeroutput></literallayout></para>
+
+<para><?linebreak?></para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md88">
+<title><title>Poetry</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md89">
+<title><title><emphasis>Establishing the Poetry dependencies and virtual environment with Poetry version <computeroutput>~1.7.1</computeroutput></emphasis></title></title>
+
+<para>Install project dependencies and simultaneously create a virtual environment for the specified project. By executing this command, Poetry reads the project&apos;s &quot;pyproject.toml&quot; file to determine the required dependencies and their versions, ensuring a consistent and isolated development environment. The virtual environment allows for a clean separation of project-specific dependencies, preventing conflicts with system-wide packages and enabling more straightforward dependency management throughout the project&apos;s lifecycle.</para>
+
+<para><literallayout><computeroutput>poetry&#32;install
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md90">
+<title><title><emphasis>Activate the virtual environment associated with a Poetry project</emphasis></title></title>
+
+<para>By running this command, the user enters a shell session within the isolated environment associated with the project, providing a dedicated space for development and execution. This virtual environment ensures that the project dependencies are encapsulated, avoiding conflicts with system-wide packages. Activating the Poetry shell is essential for seamlessly working on a project, as it ensures that the correct versions of dependencies are used and provides a controlled environment conducive to efficient development and testing.</para>
+
+<para><literallayout><computeroutput>poetry&#32;shell
+</computeroutput></literallayout></para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md91">
+<title><title><emphasis>Run the app</emphasis></title></title>
+
+<para><blockquote>
+<para>&#8205;Launch the FastAPI application agent on a <emphasis>Virtual Environment or Poetry</emphasis> setup by executing the following command: </para>
+</blockquote><literallayout><computeroutput>python&#32;-m&#32;uvicorn&#32;main:app&#32;--reload
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;Visit <link xlink:href="http://localhost:8000">http://localhost:8000</link> in any web browser and explore your research! </para>
+</blockquote><?linebreak?></para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2getting-started_1autotoc_md92">
+<title><title>Try it with Docker</title></title>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 1</emphasis> - Install Docker </para>
+</blockquote>Follow instructions at <link xlink:href="https://docs.docker.com/engine/install/">https://docs.docker.com/engine/install/</link></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 2</emphasis> - Create .env file with your OpenAI Key or simply export it </para>
+</blockquote><literallayout><computeroutput>$&#32;export&#32;OPENAI_API_KEY={Your&#32;API&#32;Key&#32;here}
+$&#32;export&#32;TAVILY_API_KEY={Your&#32;Tavily&#32;API&#32;Key&#32;here}
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 3</emphasis> - Run the application </para>
+</blockquote><literallayout><computeroutput>$&#32;docker-compose&#32;up
+</computeroutput></literallayout></para>
+
+<para><blockquote>
+<para>&#8205;<emphasis role="bold">Step 4</emphasis> - Go to <link xlink:href="http://localhost:8000">http://localhost:8000</link> on any browser and enjoy researching! </para>
+</blockquote></para>
+</section>
+</section>

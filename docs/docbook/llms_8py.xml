@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_llms_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/llms.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/utils/llms.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceagents">agents</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1utils">agents.utils</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceagents_1_1utils_1_1llms">agents.utils.llms</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespaceagents_1_1utils_1_1llms_1a11e6429a9b0fa8085b39b9478fb8ec6f">agents.utils.llms.call_model</link> (list prompt, str model, int max_retries=2, str response_format=None)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

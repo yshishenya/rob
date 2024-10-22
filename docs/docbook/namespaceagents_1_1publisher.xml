@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceagents_1_1publisher" xml:lang="en-US">
+<title>agents.publisher Namespace Reference</title>
+<indexterm><primary>agents.publisher</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classagents_1_1publisher_1_1PublisherAgent">PublisherAgent</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

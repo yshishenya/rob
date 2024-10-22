@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1utils_1_1validators_1_1Subtopics" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::utils::validators::Subtopics</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1utils_1_1validators_1_1Subtopics_1a0de0c6a9997587b86c840db40535b843" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list gpt_researcher.utils.validators.Subtopics::subtopics</definition>
+        <argsstring></argsstring>
+        <name>subtopics</name>
+        <qualifiedname>gpt_researcher.utils.validators.Subtopics.subtopics</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/validators.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/validators.py" bodystart="9" bodyend="-1"/>
+        <referencedby refid="classbackend_1_1report__type_1_1detailed__report_1_1detailed__report_1_1DetailedReport_1ab4222f0b61a14a6c08c6765f3e337d89" compoundref="detailed__report_8py" startline="99" endline="137">backend.report_type.detailed_report.detailed_report.DetailedReport._get_subtopic_report</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1a245afde9b9be308fd5ac526d4052fede" compoundref="gpt__researcher_2master_2agent_8py" startline="301" endline="324">gpt_researcher.master.agent.GPTResearcher.get_subtopics</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gpt_researcher.utils.validators.Subtopics</label>
+        <link refid="classgpt__researcher_1_1utils_1_1validators_1_1Subtopics"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.utils.validators.Subtopics</label>
+        <link refid="classgpt__researcher_1_1utils_1_1validators_1_1Subtopics"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+subtopics</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>list</label>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/validators.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/validators.py" bodystart="8" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1utils_1_1validators_1_1Subtopics_1a0de0c6a9997587b86c840db40535b843" prot="public" virt="non-virtual"><scope>gpt_researcher::utils::validators::Subtopics</scope><name>subtopics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

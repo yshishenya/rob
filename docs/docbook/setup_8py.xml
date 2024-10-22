@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_setup_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/setup.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/setup.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacesetup">setup</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacesetup_1a443be2d01fd539bf6761aff70724d876">setup.encoding</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1a4cda9dbfb952875376a0749fe08a5bde">setup.long_description</link> = f.read()</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacesetup_1a0c3c621ddfb4bf8d8bc8d7368f4e272a">setup.reqs</link> = [line.strip() for line in f if (&apos;selenium&apos; not in line and &apos;webdriver&apos; not in line)]</para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1ab3a7a0638d76a01367c5bc3cc699447f">setup.name</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1a2aa722b36a933088812b50ea79b97a5c">setup.version</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1aedf461ec52a946bda975938ba0b93ec0">setup.description</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1afd7273d426fd6e1796ec17175f6521c3">setup.package_dir</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1aff2375a361fd5865c77bd9aa093be747">setup.packages</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1a3796ea10c998699d07d391414ff5d720">setup.long_description_content_type</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1afc13124aa5c0124e84e1d965e3f4b0fb">setup.url</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1a3a57a4772d418a06835249cbade0d86a">setup.author</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1a5b08034343aa2be607722a8b315f3625">setup.author_email</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1a8ed6f50a28bd6a8794f8e1153baa6de9">setup.license</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1abe96a9c38c1c61f9f0fdb002c482f785">setup.classifiers</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacesetup_1abead4f26b530856f858f0d44c7cf2588">setup.install_requires</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

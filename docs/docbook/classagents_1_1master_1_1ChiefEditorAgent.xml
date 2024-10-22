@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagents_1_1master_1_1ChiefEditorAgent" xml:lang="en-US">
+<title>agents.master.ChiefEditorAgent Class Reference</title>
+<indexterm><primary>agents.master.ChiefEditorAgent</primary></indexterm>
+Collaboration diagram for agents.master.ChiefEditorAgent:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1master_1_1ChiefEditorAgent__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1master_1_1ChiefEditorAgent_1a6322fb0f75b6d2893ea9bcd6e789b4b2">__init__</link> (self, dict <link linkend="_classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e">task</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623">init_research_team</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa">run_research_task</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1master_1_1ChiefEditorAgent_1a411cb91ca016fb9026559fc9a08f6e65">task_id</link></para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33">output_dir</link></para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e">task</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classagents_1_1master_1_1ChiefEditorAgent_1a6322fb0f75b6d2893ea9bcd6e789b4b2"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>agents.master.ChiefEditorAgent</secondary></indexterm>
+<indexterm><primary>agents.master.ChiefEditorAgent</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>agents.master.ChiefEditorAgent.__init__ ( self, dict task)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623"/><section>
+    <title>init_research_team()</title>
+<indexterm><primary>init_research_team</primary><secondary>agents.master.ChiefEditorAgent</secondary></indexterm>
+<indexterm><primary>agents.master.ChiefEditorAgent</primary><secondary>init_research_team</secondary></indexterm>
+<para><computeroutput>agents.master.ChiefEditorAgent.init_research_team ( self)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1master_1_1ChiefEditorAgent_a208d36c007aa6f97cb6e13ed39cd2623_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa"/><section>
+    <title>run_research_task()</title>
+<indexterm><primary>run_research_task</primary><secondary>agents.master.ChiefEditorAgent</secondary></indexterm>
+<indexterm><primary>agents.master.ChiefEditorAgent</primary><secondary>run_research_task</secondary></indexterm>
+<para><computeroutput>agents.master.ChiefEditorAgent.run_research_task ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1master_1_1ChiefEditorAgent_a072faa56cada6c2a2f581c007d7f38fa_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33"/><section>
+    <title>output_dir</title>
+<indexterm><primary>output_dir</primary><secondary>agents.master.ChiefEditorAgent</secondary></indexterm>
+<indexterm><primary>agents.master.ChiefEditorAgent</primary><secondary>output_dir</secondary></indexterm>
+<para><computeroutput>agents.master.ChiefEditorAgent.output_dir</computeroutput></para></section>
+<anchor xml:id="_classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e"/><section>
+    <title>task</title>
+<indexterm><primary>task</primary><secondary>agents.master.ChiefEditorAgent</secondary></indexterm>
+<indexterm><primary>agents.master.ChiefEditorAgent</primary><secondary>task</secondary></indexterm>
+<para><computeroutput>agents.master.ChiefEditorAgent.task</computeroutput></para></section>
+<anchor xml:id="_classagents_1_1master_1_1ChiefEditorAgent_1a411cb91ca016fb9026559fc9a08f6e65"/><section>
+    <title>task_id</title>
+<indexterm><primary>task_id</primary><secondary>agents.master.ChiefEditorAgent</secondary></indexterm>
+<indexterm><primary>agents.master.ChiefEditorAgent</primary><secondary>task_id</secondary></indexterm>
+<para><computeroutput>agents.master.ChiefEditorAgent.task_id</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/<link linkend="_master_8py">master.py</link></section>
+</section>

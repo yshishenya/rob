@@ -1,0 +1,9 @@
+<map id="gpt_researcher.utils.llm.get_llm" name="gpt_researcher.utils.llm.get_llm">
+<area shape="rect" id="Node000001" title=" " alt="" coords="555,45,783,70"/>
+<area shape="rect" id="Node000002" href="$namespacegpt__researcher_1_1utils_1_1llm.html#a3125e642ba0eba1562845ff7d15ecb08" title=" " alt="" coords="268,5,507,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="543,46,507,42,507,36,544,40"/>
+<area shape="rect" id="Node000004" href="$namespacegpt__researcher_1_1utils_1_1llm.html#aabaadb598e9e86c6e4a0c50627463b95" title=" " alt="" coords="277,69,497,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="544,74,498,79,497,74,543,69"/>
+<area shape="rect" id="Node000003" href="$classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher.html#a245afde9b9be308fd5ac526d4052fede" title=" " alt="" coords="5,5,220,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="254,28,220,28,220,23,254,23"/>
+</map>

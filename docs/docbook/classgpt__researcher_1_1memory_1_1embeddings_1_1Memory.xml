@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1memory_1_1embeddings_1_1Memory" xml:lang="en-US">
+<title>gpt_researcher.memory.embeddings.Memory Class Reference</title>
+<indexterm><primary>gpt_researcher.memory.embeddings.Memory</primary></indexterm>
+Collaboration diagram for gpt_researcher.memory.embeddings.Memory:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a2dfbbd19d7252848527a7be807d7aec2">__init__</link> (self, embedding_provider, **kwargs)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a5a51c5c0866249bb8b164cd6e12346eb">get_embeddings</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1ad6b2a0649b3d9ec7438383e48f581cdb">_embeddings</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a2dfbbd19d7252848527a7be807d7aec2"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.memory.embeddings.Memory</secondary></indexterm>
+<indexterm><primary>gpt_researcher.memory.embeddings.Memory</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.memory.embeddings.Memory.__init__ ( self,  embedding_provider, ** kwargs)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1a5a51c5c0866249bb8b164cd6e12346eb"/><section>
+    <title>get_embeddings()</title>
+<indexterm><primary>get_embeddings</primary><secondary>gpt_researcher.memory.embeddings.Memory</secondary></indexterm>
+<indexterm><primary>gpt_researcher.memory.embeddings.Memory</primary><secondary>get_embeddings</secondary></indexterm>
+<para><computeroutput>gpt_researcher.memory.embeddings.Memory.get_embeddings ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1memory_1_1embeddings_1_1Memory_1ad6b2a0649b3d9ec7438383e48f581cdb"/><section>
+    <title>_embeddings</title>
+<indexterm><primary>_embeddings</primary><secondary>gpt_researcher.memory.embeddings.Memory</secondary></indexterm>
+<indexterm><primary>gpt_researcher.memory.embeddings.Memory</primary><secondary>_embeddings</secondary></indexterm>
+<para><computeroutput>gpt_researcher.memory.embeddings.Memory._embeddings<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/<link linkend="_embeddings_8py">embeddings.py</link></section>
+</section>

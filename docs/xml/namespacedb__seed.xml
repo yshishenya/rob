@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacedb__seed" kind="namespace" language="Python">
+    <compoundname>db_seed</compoundname>
+    <innerclass refid="classdb__seed_1_1User" prot="public">db_seed::User</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacedb__seed_1a117e9500c3cfbce3c47a78dce5d3387a" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str db_seed.DATABASE_URL</definition>
+        <argsstring></argsstring>
+        <name>DATABASE_URL</name>
+        <qualifiedname>db_seed.DATABASE_URL</qualifiedname>
+        <initializer>=  f&quot;postgresql://{os.getenv(&apos;POSTGRES_USER&apos;)}:&quot; \
+               f&quot;{os.getenv(&apos;POSTGRES_PASSWORD&apos;)}@localhost:&quot; \
+               f&quot;{os.getenv(&apos;POSTGRES_PORT&apos;)}/{os.getenv(&apos;POSTGRES_DB&apos;)}&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="12" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__seed_1a3a13123e1feae6f94734cb4ce2458a4a" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str db_seed.DEFAULT_DATABASE_URL</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_DATABASE_URL</name>
+        <qualifiedname>db_seed.DEFAULT_DATABASE_URL</qualifiedname>
+        <initializer>=  f&quot;postgresql://{os.getenv(&apos;POSTGRES_USER&apos;)}:&quot; \
+                       f&quot;{os.getenv(&apos;POSTGRES_PASSWORD&apos;)}@localhost:&quot; \
+                       f&quot;{os.getenv(&apos;POSTGRES_PORT&apos;)}/postgres&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__seed_1a0b4a141c01c3ca0e89d388886fa22e64" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_seed.engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <qualifiedname>db_seed.engine</qualifiedname>
+        <initializer>=  create_engine(<ref refid="namespacedb__seed_1a117e9500c3cfbce3c47a78dce5d3387a" kindref="member">DATABASE_URL</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__seed_1a52ec56261a6019cbf3d0a865706088e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_seed.default_engine</definition>
+        <argsstring></argsstring>
+        <name>default_engine</name>
+        <qualifiedname>db_seed.default_engine</qualifiedname>
+        <initializer>=  create_engine(<ref refid="namespacedb__seed_1a3a13123e1feae6f94734cb4ce2458a4a" kindref="member">DEFAULT_DATABASE_URL</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__seed_1ae13a878e1ef07e9587b3260140e80eef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_seed.SessionLocal</definition>
+        <argsstring></argsstring>
+        <name>SessionLocal</name>
+        <qualifiedname>db_seed.SessionLocal</qualifiedname>
+        <initializer>=  sessionmaker(autocommit=False, autoflush=False, <ref refid="namespacedb__seed_1ab87b17b414c85510bede32dbaedd38c9" kindref="member">bind</ref>=<ref refid="namespacedb__seed_1a0b4a141c01c3ca0e89d388886fa22e64" kindref="member">engine</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="namespacedb__seed_1a6c0a83c2690000b1ebe0151f2df7abbb" compoundref="db__seed_8py" startline="64" endline="80">create_admin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__seed_1a0e93e718046a1c51c798a58b993e93ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_seed.Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <qualifiedname>db_seed.Base</qualifiedname>
+        <initializer>=  declarative_base()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacedb__seed_1ab87b17b414c85510bede32dbaedd38c9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db_seed.bind</definition>
+        <argsstring></argsstring>
+        <name>bind</name>
+        <qualifiedname>db_seed.bind</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="86" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacedb__seed_1a70e5b0071a23a918022b1042bd19543d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>db_seed.execute_query</definition>
+        <argsstring>(query, params=None, autocommit=False, use_default_db=False)</argsstring>
+        <name>execute_query</name>
+        <qualifiedname>db_seed.execute_query</qualifiedname>
+        <param>
+          <type>query</type>
+          <defname>query</defname>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>autocommit</type>
+          <defname>autocommit</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>use_default_db</type>
+          <defname>use_default_db</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Функция для выполнения SQL запроса с параметрами.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="25" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="25" bodyend="32"/>
+        <referencedby refid="namespacedb__seed_1a6208bff4be72cd3a39474b32e919b20e" compoundref="db__seed_8py" startline="33" endline="53">reset_database</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacedb__seed_1a6208bff4be72cd3a39474b32e919b20e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>db_seed.reset_database</definition>
+        <argsstring>()</argsstring>
+        <name>reset_database</name>
+        <qualifiedname>db_seed.reset_database</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Функция для удаления и создания базе данных.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="33" bodyend="53"/>
+        <references refid="namespacedb__seed_1a70e5b0071a23a918022b1042bd19543d" compoundref="db__seed_8py" startline="25" endline="32">execute_query</references>
+        <referencedby refid="namespacedb__seed_1a6c0a83c2690000b1ebe0151f2df7abbb" compoundref="db__seed_8py" startline="64" endline="80">create_admin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacedb__seed_1a6c0a83c2690000b1ebe0151f2df7abbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>db_seed.create_admin</definition>
+        <argsstring>()</argsstring>
+        <name>create_admin</name>
+        <qualifiedname>db_seed.create_admin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Функция для создания администратора, если он не существует.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="64" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" bodystart="64" bodyend="80"/>
+        <references refid="namespacedb__seed_1a6208bff4be72cd3a39474b32e919b20e" compoundref="db__seed_8py" startline="33" endline="53">reset_database</references>
+        <references refid="namespacedb__seed_1ae13a878e1ef07e9587b3260140e80eef" compoundref="db__seed_8py" startline="22">SessionLocal</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/DevOps/db_seed.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

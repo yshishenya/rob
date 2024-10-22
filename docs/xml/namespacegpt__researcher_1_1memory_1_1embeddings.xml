@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1memory_1_1embeddings" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::memory::embeddings</compoundname>
+    <innerclass refid="classgpt__researcher_1_1memory_1_1embeddings_1_1Memory" prot="public">gpt_researcher::memory::embeddings::Memory</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1memory_1_1embeddings_1acba50864a73b23ad689f762c7805e8cd" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str gpt_researcher::memory::embeddings.OPENAI_EMBEDDING_MODEL</definition>
+        <argsstring></argsstring>
+        <name>OPENAI_EMBEDDING_MODEL</name>
+        <qualifiedname>gpt_researcher.memory.embeddings.OPENAI_EMBEDDING_MODEL</qualifiedname>
+        <initializer>=  &quot;text-embedding-3-large&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" line="3" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/memory/embeddings.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

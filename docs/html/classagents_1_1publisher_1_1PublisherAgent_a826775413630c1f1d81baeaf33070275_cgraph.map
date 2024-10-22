@@ -1,0 +1,9 @@
+<map id="agents.publisher.PublisherAgent.run" name="agents.publisher.PublisherAgent.run">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,199,77"/>
+<area shape="rect" id="Node000002" href="$classagents_1_1publisher_1_1PublisherAgent.html#ac889c123c6786081aa4be0ca19fc6e85" title=" " alt="" coords="247,37,467,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,55,233,55,233,60,199,60"/>
+<area shape="rect" id="Node000003" href="$classagents_1_1publisher_1_1PublisherAgent.html#a6bb256166cbaaaad93c78e5800cebf2a" title=" " alt="" coords="530,5,723,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="466,42,516,36,517,41,467,47"/>
+<area shape="rect" id="Node000004" href="$classagents_1_1publisher_1_1PublisherAgent.html#a492f1dd9a97d310bb9bc5b72919f8b58" title=" " alt="" coords="515,69,739,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="467,68,501,72,501,77,466,73"/>
+</map>

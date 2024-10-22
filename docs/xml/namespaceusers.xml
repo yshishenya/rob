@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceusers" kind="namespace" language="Python">
+    <compoundname>users</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceusers_1a9ffdadfc43420470d41e4610bebd67da" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.HOST</definition>
+        <argsstring></argsstring>
+        <name>HOST</name>
+        <qualifiedname>users.HOST</qualifiedname>
+        <initializer>=  os.getenv(&quot;HOST&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1aec5824f6ce66973e8819ca68002938dd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.APP_PORT</definition>
+        <argsstring></argsstring>
+        <name>APP_PORT</name>
+        <qualifiedname>users.APP_PORT</qualifiedname>
+        <initializer>=  os.getenv(&quot;APP_PORT&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1a3198b2c7eab49324f2d10f40c2ba7edb" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str users.API_URL</definition>
+        <argsstring></argsstring>
+        <name>API_URL</name>
+        <qualifiedname>users.API_URL</qualifiedname>
+        <initializer>=  f&quot;http://{<ref refid="namespaceusers_1a9ffdadfc43420470d41e4610bebd67da" kindref="member">HOST</ref>}:{<ref refid="namespaceusers_1aec5824f6ce66973e8819ca68002938dd" kindref="member">APP_PORT</ref>}&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>users.key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="188" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1aa67a5489339ad4f831ec91109898eb53" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>users.type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="189" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1a8eb777600faec9762baa63c66a2f65d3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.on_click</definition>
+        <argsstring></argsstring>
+        <name>on_click</name>
+        <qualifiedname>users.on_click</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="190" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1afa220ad80467e63b9810fca0dc23dadb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.new_username</definition>
+        <argsstring></argsstring>
+        <name>new_username</name>
+        <qualifiedname>users.new_username</qualifiedname>
+        <initializer>=  st.text_input(&quot;Имя пользователя&quot;, <ref refid="namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c" kindref="member">key</ref>=&apos;new_username&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="199" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1adb6ed530fb591bdf2dd5a09908bc97eb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.new_email</definition>
+        <argsstring></argsstring>
+        <name>new_email</name>
+        <qualifiedname>users.new_email</qualifiedname>
+        <initializer>=  st.text_input(&quot;Email&quot;, <ref refid="namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c" kindref="member">key</ref>=&apos;new_email&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="200" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1aa59caae95017910a2fbe7af45268fca7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.new_password</definition>
+        <argsstring></argsstring>
+        <name>new_password</name>
+        <qualifiedname>users.new_password</qualifiedname>
+        <initializer>=  st.text_input(&quot;Пароль&quot;, <ref refid="namespaceusers_1aa67a5489339ad4f831ec91109898eb53" kindref="member">type</ref>=&quot;password&quot;, <ref refid="namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c" kindref="member">key</ref>=&apos;new_password&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="201" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1a53863681969ca2b2e0533e124c471496" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.new_is_admin</definition>
+        <argsstring></argsstring>
+        <name>new_is_admin</name>
+        <qualifiedname>users.new_is_admin</qualifiedname>
+        <initializer>=  st.checkbox(&quot;Администратор&quot;, <ref refid="namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c" kindref="member">key</ref>=&apos;new_is_admin&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="202" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1a03fb62cfda9d9a2a6070d6abb3643788" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.submit_button</definition>
+        <argsstring></argsstring>
+        <name>submit_button</name>
+        <qualifiedname>users.submit_button</qualifiedname>
+        <initializer>=  st.form_submit_button(&quot;Создать пользователя&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="203" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceusers_1a02db70f5ffcf3f872bc01e4506d3422d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>users.delete_user_id</definition>
+        <argsstring></argsstring>
+        <name>delete_user_id</name>
+        <qualifiedname>users.delete_user_id</qualifiedname>
+        <initializer>=  st.text_input(&quot;ID пользователя для удаления&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="209" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="209" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceusers_1a330f67af4576d3e1ee542d613d069139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.login</definition>
+        <argsstring>(username, password)</argsstring>
+        <name>login</name>
+        <qualifiedname>users.login</qualifiedname>
+        <param>
+          <type>username</type>
+          <defname>username</defname>
+        </param>
+        <param>
+          <type>password</type>
+          <defname>password</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Авторизация пользователя и получение токена </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="16" bodyend="31"/>
+        <referencedby refid="namespaceusers_1ae68a82800a1d784a4aa0d4e663382aad" compoundref="users_8py" startline="172" endline="185">on_login_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1a932657c601af16b61216fe6fe33a7c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.refresh_access_token</definition>
+        <argsstring>(refresh_token)</argsstring>
+        <name>refresh_access_token</name>
+        <qualifiedname>users.refresh_access_token</qualifiedname>
+        <param>
+          <type>refresh_token</type>
+          <defname>refresh_token</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Обновление токена доступа </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="32" bodyend="44"/>
+        <referencedby refid="namespaceusers_1aa1996995f5442274830bef5c28e4e859" compoundref="users_8py" startline="152" endline="168">get_valid_access_token</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1a9053a1292a9bb75e476207697da5bcc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.fetch_users</definition>
+        <argsstring>()</argsstring>
+        <name>fetch_users</name>
+        <qualifiedname>users.fetch_users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Получение списка пользователей </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="45" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="45" bodyend="57"/>
+        <references refid="namespaceusers_1aa1996995f5442274830bef5c28e4e859" compoundref="users_8py" startline="152" endline="168">get_valid_access_token</references>
+        <referencedby refid="namespaceusers_1a22767a039fbf019d609ba4ae7ee70199" compoundref="users_8py" startline="58" endline="89">display_users</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1a22767a039fbf019d609ba4ae7ee70199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.display_users</definition>
+        <argsstring>()</argsstring>
+        <name>display_users</name>
+        <qualifiedname>users.display_users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="58" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="58" bodyend="89"/>
+        <references refid="namespaceusers_1abe93ce193b17b4e895eab26ae2806aaa" compoundref="users_8py" startline="142" endline="151">delete_user</references>
+        <references refid="namespaceusers_1a9053a1292a9bb75e476207697da5bcc6" compoundref="users_8py" startline="45" endline="57">fetch_users</references>
+        <references refid="namespaceusers_1aee9ead2895deb372a9320b932418df2c" compoundref="users_8py" startline="90" endline="130">modify_user</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1aee9ead2895deb372a9320b932418df2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.modify_user</definition>
+        <argsstring>(token, user_data)</argsstring>
+        <name>modify_user</name>
+        <qualifiedname>users.modify_user</qualifiedname>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <param>
+          <type>user_data</type>
+          <defname>user_data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="90" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="90" bodyend="130"/>
+        <referencedby refid="namespaceusers_1a22767a039fbf019d609ba4ae7ee70199" compoundref="users_8py" startline="58" endline="89">display_users</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1af946d51443a44b65f044cbd071fa4133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.create_user</definition>
+        <argsstring>(token, username, email, password, is_admin)</argsstring>
+        <name>create_user</name>
+        <qualifiedname>users.create_user</qualifiedname>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <param>
+          <type>username</type>
+          <defname>username</defname>
+        </param>
+        <param>
+          <type>email</type>
+          <defname>email</defname>
+        </param>
+        <param>
+          <type>password</type>
+          <defname>password</defname>
+        </param>
+        <param>
+          <type>is_admin</type>
+          <defname>is_admin</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Создание нового пользователя </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="131" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="131" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1abe93ce193b17b4e895eab26ae2806aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.delete_user</definition>
+        <argsstring>(token, user_id)</argsstring>
+        <name>delete_user</name>
+        <qualifiedname>users.delete_user</qualifiedname>
+        <param>
+          <type>token</type>
+          <defname>token</defname>
+        </param>
+        <param>
+          <type>user_id</type>
+          <defname>user_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Удаление пользователя </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="142" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="142" bodyend="151"/>
+        <referencedby refid="namespaceusers_1a22767a039fbf019d609ba4ae7ee70199" compoundref="users_8py" startline="58" endline="89">display_users</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1aa1996995f5442274830bef5c28e4e859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.get_valid_access_token</definition>
+        <argsstring>()</argsstring>
+        <name>get_valid_access_token</name>
+        <qualifiedname>users.get_valid_access_token</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="152" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="152" bodyend="168"/>
+        <references refid="namespaceusers_1a932657c601af16b61216fe6fe33a7c1f" compoundref="users_8py" startline="32" endline="44">refresh_access_token</references>
+        <referencedby refid="namespaceusers_1a9053a1292a9bb75e476207697da5bcc6" compoundref="users_8py" startline="45" endline="57">fetch_users</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1a32e0f5669895a84e77af6d7d40658d6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <qualifiedname>users.main</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="169" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceusers_1ae68a82800a1d784a4aa0d4e663382aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>users.on_login_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_login_clicked</name>
+        <qualifiedname>users.on_login_clicked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="172" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" bodystart="172" bodyend="185"/>
+        <references refid="namespaceusers_1a330f67af4576d3e1ee542d613d069139" compoundref="users_8py" startline="16" endline="31">login</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/frontend/users/users.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

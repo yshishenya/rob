@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="contribute_8md" kind="file" language="Markdown">
+    <compoundname>contribute.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Contribute</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>highly<sp/>welcome<sp/>contributions!<sp/>Please<sp/>check<sp/>out<sp/>[contributing](https://github.com/assafelovic/gpt-researcher/blob/master/CONTRIBUTING.md)<sp/>if<sp/>you&apos;re<sp/>interested.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>check<sp/>out<sp/>our<sp/>[roadmap](https://trello.com/b/3O7KBePw/gpt-researcher-roadmap)<sp/>page<sp/>and<sp/>reach<sp/>out<sp/>to<sp/>us<sp/>via<sp/>our<sp/>[Discord<sp/>community](https://discord.gg/2pFkc83fRq)<sp/>if<sp/>you&apos;re<sp/>interested<sp/>in<sp/>joining<sp/>our<sp/>mission.</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/contribute.md"/>
+  </compounddef>
+</doxygen>

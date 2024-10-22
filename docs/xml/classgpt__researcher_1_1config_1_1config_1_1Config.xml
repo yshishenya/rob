@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1config_1_1config_1_1Config" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::config::config::Config</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a619e730ee1d3e79c9a5ef83705960b44" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::config_file</definition>
+        <argsstring></argsstring>
+        <name>config_file</name>
+        <qualifiedname>gpt_researcher.config.config.Config.config_file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a9e9d2319dd1e3190bd54ef54065e8837" compoundref="config_8py" startline="47" endline="55">gpt_researcher.config.config.Config.load_config_file</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a53639992bde1e2172bda9ebc0f7cfbb5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::retriever</definition>
+        <argsstring></argsstring>
+        <name>retriever</name>
+        <qualifiedname>gpt_researcher.config.config.Config.retriever</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af49a21f87ec64106a6dc34c2fbaaef35" compoundref="gpt__researcher_2master_2agent_8py" startline="233" endline="255">gpt_researcher.master.agent.GPTResearcher.__scrape_data_by_query</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1adb393700d777caf4498151c2c722fa79" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::embedding_provider</definition>
+        <argsstring></argsstring>
+        <name>embedding_provider</name>
+        <qualifiedname>gpt_researcher.config.config.Config.embedding_provider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a9b1f284f4b9439e377ca1d424ce930dc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::llm_provider</definition>
+        <argsstring></argsstring>
+        <name>llm_provider</name>
+        <qualifiedname>gpt_researcher.config.config.Config.llm_provider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a341a4aa452bd13d279a559f43ac9f98c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::ollama_base_url</definition>
+        <argsstring></argsstring>
+        <name>ollama_base_url</name>
+        <qualifiedname>gpt_researcher.config.config.Config.ollama_base_url</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a42b235ed62cdcd8ea02b732459550d45" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::fast_llm_model</definition>
+        <argsstring></argsstring>
+        <name>fast_llm_model</name>
+        <qualifiedname>gpt_researcher.config.config.Config.fast_llm_model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1ac5735fdab8ae184cdbd2dab8afffef4b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::smart_llm_model</definition>
+        <argsstring></argsstring>
+        <name>smart_llm_model</name>
+        <qualifiedname>gpt_researcher.config.config.Config.smart_llm_model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1ac3f89b71a14756864bbd9c0e44fa2f58" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::fast_token_limit</definition>
+        <argsstring></argsstring>
+        <name>fast_token_limit</name>
+        <qualifiedname>gpt_researcher.config.config.Config.fast_token_limit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a532251efcb400e5481c52cbac6bce83d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::smart_token_limit</definition>
+        <argsstring></argsstring>
+        <name>smart_token_limit</name>
+        <qualifiedname>gpt_researcher.config.config.Config.smart_token_limit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="20" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a5b01a8c7f54d24ebf5e1fa621b702536" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::browse_chunk_max_length</definition>
+        <argsstring></argsstring>
+        <name>browse_chunk_max_length</name>
+        <qualifiedname>gpt_researcher.config.config.Config.browse_chunk_max_length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a5ccd7452db16237a63080bd090b92837" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::summary_token_limit</definition>
+        <argsstring></argsstring>
+        <name>summary_token_limit</name>
+        <qualifiedname>gpt_researcher.config.config.Config.summary_token_limit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="22" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a01c0bab04e704c5c365ce2910e6f443b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <qualifiedname>gpt_researcher.config.config.Config.temperature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="23" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1anthropic_1_1anthropic_1_1AnthropicProvider_1aa13bdf5002b957ed5a7aaa13fee8f75a" compoundref="anthropic_8py" startline="34" endline="44">gpt_researcher.llm_provider.anthropic.anthropic.AnthropicProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1azureopenai_1_1azureopenai_1_1AzureOpenAIProvider_1aa9770c8dd905291c6c3ff2c7c39b0e18" compoundref="azureopenai_8py" startline="47" endline="57">gpt_researcher.llm_provider.azureopenai.azureopenai.AzureOpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1google_1_1google_1_1GoogleProvider_1acb035027a41330ec8458647401e89e67" compoundref="llm__provider_2google_2google_8py" startline="35" endline="45">gpt_researcher.llm_provider.google.google.GoogleProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1groq_1_1groq_1_1GroqProvider_1a0336e0a6fe5b465a441668cc5107a0ef" compoundref="groq_8py" startline="35" endline="45">gpt_researcher.llm_provider.groq.groq.GroqProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1huggingface_1_1huggingface_1_1HugginFaceProvider_1a13b615065860169c0406faa06d0ec627" compoundref="huggingface_8py" startline="34" endline="44">gpt_researcher.llm_provider.huggingface.huggingface.HugginFaceProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1mistral_1_1mistral_1_1MistralProvider_1a2fbf90be0afcd22fffc64207b310b2cc" compoundref="mistral_8py" startline="34" endline="44">gpt_researcher.llm_provider.mistral.mistral.MistralProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1ollama_1_1ollama_1_1OllamaProvider_1ab60b0d1083b153b47fb6336a914edbe3" compoundref="ollama_8py" startline="30" endline="41">gpt_researcher.llm_provider.ollama.ollama.OllamaProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1openai_1_1openai_1_1OpenAIProvider_1a50ed3ee7a18506fb069aed7128c856d3" compoundref="openai_8py" startline="45" endline="57">gpt_researcher.llm_provider.openai.openai.OpenAIProvider.get_llm_model</referencedby>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1together_1_1together_1_1TogetherProvider_1aa75375bd2720f0f71037e08629cbca0f" compoundref="together_8py" startline="34" endline="44">gpt_researcher.llm_provider.together.together.TogetherProvider.get_llm_model</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1ad1be4ee4fc96e04351200befa9bc2a46" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::user_agent</definition>
+        <argsstring></argsstring>
+        <name>user_agent</name>
+        <qualifiedname>gpt_researcher.config.config.Config.user_agent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="24" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a24434bd9a73bed299c7c28f16a2a77d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::max_search_results_per_query</definition>
+        <argsstring></argsstring>
+        <name>max_search_results_per_query</name>
+        <qualifiedname>gpt_researcher.config.config.Config.max_search_results_per_query</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="26" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a454ea7cbc236890ae4a19213fec36a84" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::memory_backend</definition>
+        <argsstring></argsstring>
+        <name>memory_backend</name>
+        <qualifiedname>gpt_researcher.config.config.Config.memory_backend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="27" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a4e63a20166a0f251bb9c225aaa440b57" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::total_words</definition>
+        <argsstring></argsstring>
+        <name>total_words</name>
+        <qualifiedname>gpt_researcher.config.config.Config.total_words</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="28" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a84d8fe33898389ec3096f6a16118b879" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::report_format</definition>
+        <argsstring></argsstring>
+        <name>report_format</name>
+        <qualifiedname>gpt_researcher.config.config.Config.report_format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="29" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a5c63837c9894a5db8d335de42a8abf2d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::max_iterations</definition>
+        <argsstring></argsstring>
+        <name>max_iterations</name>
+        <qualifiedname>gpt_researcher.config.config.Config.max_iterations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="30" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1aa4958a87b2c92d22487725aa21563736" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::agent_role</definition>
+        <argsstring></argsstring>
+        <name>agent_role</name>
+        <qualifiedname>gpt_researcher.config.config.Config.agent_role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="31" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1aba1f77d51845dfdb7544b847f07840c0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::scraper</definition>
+        <argsstring></argsstring>
+        <name>scraper</name>
+        <qualifiedname>gpt_researcher.config.config.Config.scraper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="32" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a5aca6b83012ce2098ce090add0d3ac41" compoundref="scraper_8py" startline="57" endline="96">gpt_researcher.scraper.scraper.Scraper.get_scraper</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1acecb5291189de192737acdef946034d0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::max_subtopics</definition>
+        <argsstring></argsstring>
+        <name>max_subtopics</name>
+        <qualifiedname>gpt_researcher.config.config.Config.max_subtopics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a4d77682f7fb301859b810ce82ea77e38" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::doc_path</definition>
+        <argsstring></argsstring>
+        <name>doc_path</name>
+        <qualifiedname>gpt_researcher.config.config.Config.doc_path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="34" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5225566b494e714c3eb4289a2eb2c1ca" compoundref="config_8py" startline="43" endline="46">gpt_researcher.config.config.Config.validate_doc_path</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1config_1_1config_1_1Config_1af1ad5b613ef9c9d51404f428d8396ee4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config::llm_kwargs</definition>
+        <argsstring></argsstring>
+        <name>llm_kwargs</name>
+        <qualifiedname>gpt_researcher.config.config.Config.llm_kwargs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a2806bc8c64b1154936a2967849bd8cd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config.__init__</definition>
+        <argsstring>(self, str config_file=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.config.config.Config.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>config_file</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize the config class.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="9" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a5225566b494e714c3eb4289a2eb2c1ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.config.config.Config.validate_doc_path</definition>
+        <argsstring>(self)</argsstring>
+        <name>validate_doc_path</name>
+        <qualifiedname>gpt_researcher.config.config.Config.validate_doc_path</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Ensure that the folder exists at the doc path</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="43" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="43" bodyend="46"/>
+        <references refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a4d77682f7fb301859b810ce82ea77e38" compoundref="config_8py" startline="34">gpt_researcher.config.config.Config.doc_path</references>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1config_1_1config_1_1Config_1a9e9d2319dd1e3190bd54ef54065e8837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gpt_researcher.config.config.Config.load_config_file</definition>
+        <argsstring>(self)</argsstring>
+        <name>load_config_file</name>
+        <qualifiedname>gpt_researcher.config.config.Config.load_config_file</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Load the config file.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="47" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="47" bodyend="55"/>
+        <references refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a619e730ee1d3e79c9a5ef83705960b44" compoundref="config_8py" startline="11">gpt_researcher.config.config.Config.config_file</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Config class for GPT Researcher.</verbatim> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.config.config.Config</label>
+        <link refid="classgpt__researcher_1_1config_1_1config_1_1Config"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/config.py" bodystart="6" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a2806bc8c64b1154936a2967849bd8cd1" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1aa4958a87b2c92d22487725aa21563736" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>agent_role</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5b01a8c7f54d24ebf5e1fa621b702536" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>browse_chunk_max_length</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a619e730ee1d3e79c9a5ef83705960b44" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>config_file</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a4d77682f7fb301859b810ce82ea77e38" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>doc_path</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1adb393700d777caf4498151c2c722fa79" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>embedding_provider</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a42b235ed62cdcd8ea02b732459550d45" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>fast_llm_model</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1ac3f89b71a14756864bbd9c0e44fa2f58" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>fast_token_limit</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1af1ad5b613ef9c9d51404f428d8396ee4" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>llm_kwargs</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a9b1f284f4b9439e377ca1d424ce930dc" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>llm_provider</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a9e9d2319dd1e3190bd54ef54065e8837" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>load_config_file</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5c63837c9894a5db8d335de42a8abf2d" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>max_iterations</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a24434bd9a73bed299c7c28f16a2a77d4" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>max_search_results_per_query</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1acecb5291189de192737acdef946034d0" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>max_subtopics</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a454ea7cbc236890ae4a19213fec36a84" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>memory_backend</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a341a4aa452bd13d279a559f43ac9f98c" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>ollama_base_url</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a84d8fe33898389ec3096f6a16118b879" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>report_format</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a53639992bde1e2172bda9ebc0f7cfbb5" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>retriever</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1aba1f77d51845dfdb7544b847f07840c0" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>scraper</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1ac5735fdab8ae184cdbd2dab8afffef4b" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>smart_llm_model</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a532251efcb400e5481c52cbac6bce83d" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>smart_token_limit</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5ccd7452db16237a63080bd090b92837" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>summary_token_limit</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a01c0bab04e704c5c365ce2910e6f443b" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>temperature</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a4e63a20166a0f251bb9c225aaa440b57" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>total_words</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1ad1be4ee4fc96e04351200befa9bc2a46" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>user_agent</name></member>
+      <member refid="classgpt__researcher_1_1config_1_1config_1_1Config_1a5225566b494e714c3eb4289a2eb2c1ca" prot="public" virt="non-virtual"><scope>gpt_researcher::config::config::Config</scope><name>validate_doc_path</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

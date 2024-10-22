@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::scraper::pymupdf::pymupdf::PyMuPDFScraper</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper::link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <qualifiedname>gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.link</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a620a3ff42dc3ef18bdb333932355a4e8" compoundref="arxiv_8py" startline="10" endline="23">gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.scrape</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" compoundref="beautiful__soup_8py" startline="10" endline="39">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1abe43b9568308386f0f417517792c5074" compoundref="newspaper_8py" startline="10" endline="43">gpt_researcher.scraper.newspaper.newspaper.NewspaperScraper.scrape</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1aae8b9f34b019d7c97787731c254a85f5" compoundref="pymupdf_8py" startline="10" endline="22">gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.scrape</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a6de5174548419f9a7391167a61afda89" compoundref="web__base__loader_8py" startline="10" endline="34">gpt_researcher.scraper.web_base_loader.web_base_loader.WebBaseLoaderScraper.scrape</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a6bca3d146426fab875757b8db6b7bf43" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper::session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <qualifiedname>gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.session</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9" compoundref="scraper_8py" startline="31" endline="40">gpt_researcher.scraper.scraper.Scraper.run</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" compoundref="beautiful__soup_8py" startline="10" endline="39">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1affab7937f2a126b0559f89dff7f92741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.__init__</definition>
+        <argsstring>(self, link, session=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" kindref="member">link</ref></type>
+          <defname>link</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a6bca3d146426fab875757b8db6b7bf43" kindref="member">session</ref></type>
+          <defname>session</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1aae8b9f34b019d7c97787731c254a85f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.scrape</definition>
+        <argsstring>(self)</argsstring>
+        <name>scrape</name>
+        <qualifiedname>gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.scrape</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The `scrape` function uses PyMuPDFLoader to load a document from a given link and returns it as
+a string.
+
+Returns:
+  The `scrape` method is returning a string representation of the `doc` object, which is loaded
+using PyMuPDFLoader from the provided link.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" bodystart="10" bodyend="22"/>
+        <references refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a922b5f43edb32ae0c87b27686b288487" compoundref="arxiv_8py" startline="7">gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809" compoundref="beautiful__soup_8py" startline="7">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1a90da5467540a10356101c4aeb2af439b" compoundref="newspaper_8py" startline="7">gpt_researcher.scraper.newspaper.newspaper.NewspaperScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" compoundref="pymupdf_8py" startline="7">gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a93fb660d87d4ad9aaa185e56624b8f65" compoundref="web__base__loader_8py" startline="7">gpt_researcher.scraper.web_base_loader.web_base_loader.WebBaseLoaderScraper.link</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper</label>
+        <link refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" line="4" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/pymupdf/pymupdf.py" bodystart="4" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1affab7937f2a126b0559f89dff7f92741" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::pymupdf::pymupdf::PyMuPDFScraper</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::pymupdf::pymupdf::PyMuPDFScraper</scope><name>link</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1aae8b9f34b019d7c97787731c254a85f5" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::pymupdf::pymupdf::PyMuPDFScraper</scope><name>scrape</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a6bca3d146426fab875757b8db6b7bf43" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::pymupdf::pymupdf::PyMuPDFScraper</scope><name>session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

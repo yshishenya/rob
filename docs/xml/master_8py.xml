@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="master_8py" kind="file" language="Python">
+    <compoundname>master.py</compoundname>
+    <innerclass refid="classagents_1_1master_1_1ChiefEditorAgent" prot="public">agents::master::ChiefEditorAgent</innerclass>
+    <innernamespace refid="namespaceagents">agents</innernamespace>
+    <innernamespace refid="namespaceagents_1_1master">agents::master</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceagents_1_1master" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>time</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>langgraph.graph<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>StateGraph,<sp/>END</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.utils.views<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_agent_output</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacememory_1_1research" kindref="compound">memory.research</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ResearchState</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Import<sp/>agent<sp/>classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>WriterAgent,<sp/>\</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>EditorAgent,<sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>PublisherAgent,<sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>ResearchAgent</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classagents_1_1master_1_1ChiefEditorAgent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1master_1_1ChiefEditorAgent" kindref="compound">ChiefEditorAgent</ref>:</highlight></codeline>
+<codeline lineno="16" refid="classagents_1_1master_1_1ChiefEditorAgent_1a6322fb0f75b6d2893ea9bcd6e789b4b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1master_1_1ChiefEditorAgent_1a6322fb0f75b6d2893ea9bcd6e789b4b2" kindref="member">__init__</ref>(self,<sp/>task:<sp/>dict):</highlight></codeline>
+<codeline lineno="17" refid="classagents_1_1master_1_1ChiefEditorAgent_1a411cb91ca016fb9026559fc9a08f6e65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classagents_1_1master_1_1ChiefEditorAgent_1a411cb91ca016fb9026559fc9a08f6e65" kindref="member">task_id</ref><sp/>=<sp/>int(time.time())<sp/></highlight><highlight class="comment">#<sp/>Currently<sp/>time<sp/>based,<sp/>but<sp/>can<sp/>be<sp/>any<sp/>unique<sp/>identifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" kindref="member">output_dir</ref><sp/>=<sp/>f</highlight><highlight class="stringliteral">&quot;./outputs/run_{self.task_id}_{task.get(&apos;query&apos;)[0:40]}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e" kindref="member">task</ref><sp/>=<sp/>task</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os.makedirs(self.<ref refid="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" kindref="member">output_dir</ref>,<sp/>exist_ok=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" kindref="member">init_research_team</ref>(self):</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Initialize<sp/>agents</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer_agent<sp/>=<sp/>WriterAgent()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>editor_agent<sp/>=<sp/>EditorAgent()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>research_agent<sp/>=<sp/>ResearchAgent()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>publisher_agent<sp/>=<sp/>PublisherAgent(self.<ref refid="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" kindref="member">output_dir</ref>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Define<sp/>a<sp/>Langchain<sp/>StateGraph<sp/>with<sp/>the<sp/>ResearchState</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow<sp/>=<sp/>StateGraph(ResearchState)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Add<sp/>nodes<sp/>for<sp/>each<sp/>agent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_node(</highlight><highlight class="stringliteral">&quot;browser&quot;</highlight><highlight class="normal">,<sp/>research_agent.run_initial_research)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_node(</highlight><highlight class="stringliteral">&quot;planner&quot;</highlight><highlight class="normal">,<sp/>editor_agent.plan_research)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_node(</highlight><highlight class="stringliteral">&quot;researcher&quot;</highlight><highlight class="normal">,<sp/>editor_agent.run_parallel_research)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_node(</highlight><highlight class="stringliteral">&quot;writer&quot;</highlight><highlight class="normal">,<sp/>writer_agent.run)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_node(</highlight><highlight class="stringliteral">&quot;publisher&quot;</highlight><highlight class="normal">,<sp/>publisher_agent.run)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_edge(</highlight><highlight class="stringliteral">&apos;browser&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;planner&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_edge(</highlight><highlight class="stringliteral">&apos;planner&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;researcher&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_edge(</highlight><highlight class="stringliteral">&apos;researcher&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;writer&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_edge(</highlight><highlight class="stringliteral">&apos;writer&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;publisher&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>set<sp/>up<sp/>start<sp/>and<sp/>end<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.set_entry_point(</highlight><highlight class="stringliteral">&quot;browser&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>workflow.add_edge(</highlight><highlight class="stringliteral">&apos;publisher&apos;</highlight><highlight class="normal">,<sp/>END)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>workflow</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" kindref="member">run_research_task</ref>(self):</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>research_team<sp/>=<sp/>self.<ref refid="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" kindref="member">init_research_team</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>compile<sp/>the<sp/>graph</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chain<sp/>=<sp/>research_team.compile()</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_agent_output(f</highlight><highlight class="stringliteral">&quot;Starting<sp/>the<sp/>research<sp/>process<sp/>for<sp/>query<sp/>&apos;{self.task.get(&apos;query&apos;)}&apos;...&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MASTER&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>await<sp/>chain.ainvoke({</highlight><highlight class="stringliteral">&quot;task&quot;</highlight><highlight class="normal">:<sp/>self.<ref refid="classagents_1_1master_1_1ChiefEditorAgent_1a84a7c8147ee18dff01ffd6432e3e0c7e" kindref="member">task</ref>})</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/master.py"/>
+  </compounddef>
+</doxygen>

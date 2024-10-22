@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagents_1_1editor_1_1EditorAgent" xml:lang="en-US">
+<title>agents.editor.EditorAgent Class Reference</title>
+<indexterm><primary>agents.editor.EditorAgent</primary></indexterm>
+Collaboration diagram for agents.editor.EditorAgent:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1editor_1_1EditorAgent__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1editor_1_1EditorAgent_1abbcf0a659b6c13adaaf544b8a4d040aa">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1editor_1_1EditorAgent_1a42809ab012412ed959b3c32200a66b45">plan_research</link> (self, dict research_state)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1editor_1_1EditorAgent_1a7fdd9bbaf712433ab7552b562c5bfe61">run_parallel_research</link> (self, dict research_state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classagents_1_1editor_1_1EditorAgent_1abbcf0a659b6c13adaaf544b8a4d040aa"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>agents.editor.EditorAgent</secondary></indexterm>
+<indexterm><primary>agents.editor.EditorAgent</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>agents.editor.EditorAgent.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classagents_1_1editor_1_1EditorAgent_1a42809ab012412ed959b3c32200a66b45"/><section>
+    <title>plan_research()</title>
+<indexterm><primary>plan_research</primary><secondary>agents.editor.EditorAgent</secondary></indexterm>
+<indexterm><primary>agents.editor.EditorAgent</primary><secondary>plan_research</secondary></indexterm>
+<para><computeroutput>agents.editor.EditorAgent.plan_research ( self, dict research_state)</computeroutput></para>
+<para><literallayout><computeroutput>Curate relevant sources for a query
+:param summary_report:
+:return:
+:param total_sub_headers:
+:return:
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classagents_1_1editor_1_1EditorAgent_1a7fdd9bbaf712433ab7552b562c5bfe61"/><section>
+    <title>run_parallel_research()</title>
+<indexterm><primary>run_parallel_research</primary><secondary>agents.editor.EditorAgent</secondary></indexterm>
+<indexterm><primary>agents.editor.EditorAgent</primary><secondary>run_parallel_research</secondary></indexterm>
+<para><computeroutput>agents.editor.EditorAgent.run_parallel_research ( self, dict research_state)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/<link linkend="_editor_8py">editor.py</link></section>
+</section>

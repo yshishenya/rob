@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classauth_1_1RefreshRequest" kind="class" language="Python" prot="public">
+    <compoundname>auth::RefreshRequest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classauth_1_1RefreshRequest_1a5cd2504ad4a593a894f4b91d0971e750" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str auth.RefreshRequest::refresh_token</definition>
+        <argsstring></argsstring>
+        <name>refresh_token</name>
+        <qualifiedname>auth.RefreshRequest.refresh_token</qualifiedname>
+        <initializer>=  Field(..., description=&quot;Токен обновления, который нужно использовать для получения нового токена доступа.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="55" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>auth.RefreshRequest</label>
+        <link refid="classauth_1_1RefreshRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>auth.RefreshRequest</label>
+        <link refid="classauth_1_1RefreshRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+refresh_token</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" line="54" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py" bodystart="54" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classauth_1_1RefreshRequest_1a5cd2504ad4a593a894f4b91d0971e750" prot="public" virt="non-virtual"><scope>auth::RefreshRequest</scope><name>refresh_token</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

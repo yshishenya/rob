@@ -1,0 +1,4 @@
+var namespacegpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader =
+[
+    [ "WebBaseLoaderScraper", "classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper.html", "classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper" ]
+];

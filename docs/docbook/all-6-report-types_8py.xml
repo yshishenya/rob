@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_all-6-report-types_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceall-6-report-types">all-6-report-types</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceall-6-report-types_1a6abdc0949357efb3cff7dcd30cb59853">all-6-report-types.test_gpt_researcher</link> (report_type)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespaceall-6-report-types_1aecb9c0531cfe93f14038ec0441771f16">all-6-report-types.report_types</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceall-6-report-types_1a270c2acc29395cbfe0b575874b4618ac">all-6-report-types.query</link> = &quot;What are the latest advancements in AI?&quot;</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespaceall-6-report-types_1a198e412432762cd75d1e0eb0c73f246d">all-6-report-types.sources</link> = [&quot;https://en.wikipedia.org/wiki/Artificial_intelligence&quot;, &quot;https://www.ibm.com/watson/ai&quot;]</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceall-6-report-types_1a5c73a537ae3b6ea0c356f98c9d74ae11">all-6-report-types.output_dir</link> = &quot;./outputs&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

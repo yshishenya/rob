@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="publisher_8py" kind="file" language="Python">
+    <compoundname>publisher.py</compoundname>
+    <innerclass refid="classagents_1_1publisher_1_1PublisherAgent" prot="public">agents::publisher::PublisherAgent</innerclass>
+    <innernamespace refid="namespaceagents">agents</innernamespace>
+    <innernamespace refid="namespaceagents_1_1publisher">agents::publisher</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceagents_1_1publisher" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.utils.file_formats<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>write_md_to_pdf,<sp/>\</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>write_md_to_word,<sp/>\</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>write_text_to_md</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.utils.views<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_agent_output</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classagents_1_1publisher_1_1PublisherAgent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1publisher_1_1PublisherAgent" kindref="compound">PublisherAgent</ref>:</highlight></codeline>
+<codeline lineno="10" refid="classagents_1_1publisher_1_1PublisherAgent_1a7c8c6016bb253e081f2fcbd07d30551c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1publisher_1_1PublisherAgent_1a7c8c6016bb253e081f2fcbd07d30551c" kindref="member">__init__</ref>(self,<sp/>output_dir:<sp/>str):</highlight></codeline>
+<codeline lineno="11" refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" kindref="member">output_dir</ref><sp/>=<sp/>output_dir</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" kindref="member">publish_research_report</ref>(self,<sp/>research_state:<sp/>dict,<sp/>publish_formats:<sp/>dict):</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout<sp/>=<sp/>self.<ref refid="classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a" kindref="member">generate_layout</ref>(research_state)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>self.<ref refid="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" kindref="member">write_report_by_formats</ref>(layout,<sp/>publish_formats)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>layout</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a" kindref="member">generate_layout</ref>(self,<sp/>research_state:<sp/>dict):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sections<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;\n\n&apos;</highlight><highlight class="normal">.join(f</highlight><highlight class="stringliteral">&quot;{value}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>subheader<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>research_state.get(</highlight><highlight class="stringliteral">&quot;research_data&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>key,<sp/>value<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>subheader.items())</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>references<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">.join(f</highlight><highlight class="stringliteral">&quot;{reference}&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>reference<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>research_state.get(</highlight><highlight class="stringliteral">&quot;sources&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>headers<sp/>=<sp/>research_state.get(</highlight><highlight class="stringliteral">&quot;headers&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout<sp/>=<sp/>f</highlight><highlight class="stringliteral">&quot;&quot;&quot;#<sp/>{headers.get(&apos;title&apos;)}</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral">####<sp/>{headers.get(&quot;date&quot;)}:<sp/>{research_state.get(&apos;date&apos;)}</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral">##<sp/>{headers.get(&quot;introduction&quot;)}</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral">{research_state.get(&apos;introduction&apos;)}</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral">##<sp/>{headers.get(&quot;table_of_contents&quot;)}</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral">{research_state.get(&apos;table_of_contents&apos;)}</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral">{sections}</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral">##<sp/>{headers.get(&quot;conclusion&quot;)}</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral">{research_state.get(&apos;conclusion&apos;)}</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral">##<sp/>{headers.get(&quot;references&quot;)}</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral">{references}</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>layout</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" kindref="member">write_report_by_formats</ref>(self,<sp/>layout:str,<sp/>publish_formats:<sp/>dict):</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>publish_formats.get(</highlight><highlight class="stringliteral">&quot;pdf&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>write_md_to_pdf(layout,<sp/>self.<ref refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" kindref="member">output_dir</ref>)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>publish_formats.get(</highlight><highlight class="stringliteral">&quot;docx&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>write_md_to_word(layout,<sp/>self.<ref refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" kindref="member">output_dir</ref>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>publish_formats.get(</highlight><highlight class="stringliteral">&quot;markdown&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>write_text_to_md(layout,<sp/>self.<ref refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" kindref="member">output_dir</ref>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classagents_1_1publisher_1_1PublisherAgent_1a826775413630c1f1d81baeaf33070275" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">async<sp/>def<sp/></highlight><highlight class="normal"><ref refid="classagents_1_1publisher_1_1PublisherAgent_1a826775413630c1f1d81baeaf33070275" kindref="member">run</ref>(self,<sp/>research_state:<sp/>dict):</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>task<sp/>=<sp/>research_state.get(</highlight><highlight class="stringliteral">&quot;task&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>publish_formats<sp/>=<sp/>task.get(</highlight><highlight class="stringliteral">&quot;publish_formats&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_agent_output(output=</highlight><highlight class="stringliteral">&quot;Publishing<sp/>final<sp/>research<sp/>report<sp/>based<sp/>on<sp/>retrieved<sp/>data...&quot;</highlight><highlight class="normal">,<sp/>agent=</highlight><highlight class="stringliteral">&quot;PUBLISHER&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>final_research_report<sp/>=<sp/>await<sp/>self.<ref refid="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" kindref="member">publish_research_report</ref>(research_state,<sp/>publish_formats)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight><highlight class="stringliteral">&quot;report&quot;</highlight><highlight class="normal">:<sp/>final_research_report}</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py"/>
+  </compounddef>
+</doxygen>

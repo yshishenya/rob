@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base" kind="namespace" language="Python">
+    <compoundname>gpt_researcher::llm_provider::generic::base</compoundname>
+    <innerclass refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider" prot="public">gpt_researcher::llm_provider::generic::base::GenericLLMProvider</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_1a9f6d46c37d23d8d132a407cb13f5f821" prot="protected" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict gpt_researcher::llm_provider::generic::base._SUPPORTED_PROVIDERS</definition>
+        <argsstring></argsstring>
+        <name>_SUPPORTED_PROVIDERS</name>
+        <qualifiedname>gpt_researcher.llm_provider.generic.base._SUPPORTED_PROVIDERS</qualifiedname>
+        <initializer>=  {
+    &quot;openai&quot;,
+    &quot;anthropic&quot;,
+    &quot;azure_openai&quot;,
+    &quot;cohere&quot;,
+    &quot;google_vertexai&quot;,
+    &quot;google_genai&quot;,
+    &quot;fireworks&quot;,
+    &quot;ollama&quot;,
+    &quot;together&quot;,
+    &quot;mistralai&quot;,
+    &quot;huggingface&quot;,
+    &quot;groq&quot;,
+    &quot;bedrock&quot;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic/base.py" line="125" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic/base.py" bodystart="125" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegpt__researcher_1_1llm__provider_1_1generic_1_1base_1a35c9d5a74d44f148fdd6879bc9b82f86" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None gpt_researcher.llm_provider.generic.base._check_pkg</definition>
+        <argsstring>(str pkg)</argsstring>
+        <name>_check_pkg</name>
+        <qualifiedname>gpt_researcher.llm_provider.generic.base._check_pkg</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>pkg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic/base.py" line="141" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic/base.py" bodystart="141" bodyend="148"/>
+        <referencedby refid="classgpt__researcher_1_1llm__provider_1_1generic_1_1base_1_1GenericLLMProvider_1add53c9295a8ef854f2aeb2bd1d33b798" compoundref="base_8py" startline="13" endline="93">gpt_researcher.llm_provider.generic.base.GenericLLMProvider.from_provider</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/llm_provider/generic/base.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

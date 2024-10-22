@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher_1_1master_1_1actions" xml:lang="en-US">
+<title>gpt_researcher.master.actions Namespace Reference</title>
+<indexterm><primary>gpt_researcher.master.actions</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1acfce0fe9e02f7246bcace8600279263f">get_retriever</link> (retriever)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a5d28ace9f81401032833fb86c2707d98">choose_agent</link> (query, cfg, parent_query=None, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a5ec2fcb09935e7c20c484b43edd24cd6">get_sub_queries</link> (str query, str agent_role_prompt, cfg, str parent_query, str report_type, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a6df8ff25a470a78ca849b1b12bd7e043">scrape_urls</link> (urls, cfg=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a28ac426e24fade0611138b18e12b07d0">summarize</link> (query, content, agent_role_prompt, cfg, websocket=None, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1ac98e8d537910db157298a4f600214549">summarize_url</link> (query, raw_data, agent_role_prompt, cfg, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a9c7b3c1544156eb008fadfb06a415c20">generate_report</link> (str query, context, str agent_role_prompt, str report_type, str report_source, websocket, cfg, str main_topic=&quot;&quot;, list existing_headers=[], callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1abe8547773bf18846d57805ac145cf03e">stream_output</link> (type, output, websocket=None, logging=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1aa1ac642119ea75be5ce8a9f6ad913550">get_report_introduction</link> (query, context, role, config, websocket=None, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a68c6082998cf41e463530cb9f128c8be">extract_headers</link> (str markdown_text)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a5ae5fa76d436f86a64149fe871e32515">table_of_contents</link> (str markdown_text)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a630696213d37144e381817ac97f9f854">add_source_urls</link> (str report_markdown, set visited_urls)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1a630696213d37144e381817ac97f9f854"/><section>
+    <title>add_source_urls()</title>
+<indexterm><primary>add_source_urls</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>add_source_urls</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.add_source_urls (str report_markdown, set visited_urls)</computeroutput></para>
+<para><literallayout><computeroutput>This function takes a Markdown report and a set of visited URLs as input parameters.
+
+Args:
+  report_markdown (str): The `add_source_urls` function takes in two parameters:
+  visited_urls (set): Visited_urls is a set that contains URLs that have already been visited. This
+parameter is used to keep track of which URLs have already been included in the report_markdown to
+avoid duplication.
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1a5d28ace9f81401032833fb86c2707d98"/><section>
+    <title>choose_agent()</title>
+<indexterm><primary>choose_agent</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>choose_agent</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.choose_agent ( query,  cfg,  parent_query = <computeroutput>None</computeroutput>
+, callable  cost_callback = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Chooses the agent automatically
+Args:
+    parent_query: In some cases the research is conducted on a subtopic from the main query.
+    The parent query allows the agent to know the main context for better reasoning.
+    query: original query
+    cfg: Config
+    cost_callback: callback for calculating llm costs
+
+Returns:
+    agent: Agent name
+    agent_role_prompt: Agent role prompt
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1a68c6082998cf41e463530cb9f128c8be"/><section>
+    <title>extract_headers()</title>
+<indexterm><primary>extract_headers</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>extract_headers</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.extract_headers (str markdown_text)</computeroutput></para></section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1a9c7b3c1544156eb008fadfb06a415c20"/><section>
+    <title>generate_report()</title>
+<indexterm><primary>generate_report</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>generate_report</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.generate_report (str query,  context, str agent_role_prompt, str report_type, str report_source,  websocket,  cfg, str  main_topic = <computeroutput>&quot;&quot;</computeroutput>
+, list  existing_headers = <computeroutput>[]</computeroutput>
+, callable  cost_callback = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>generates the final report
+Args:
+    query:
+    context:
+    agent_role_prompt:
+    report_type:
+    websocket:
+    cfg:
+    main_topic:
+    existing_headers:
+    cost_callback:
+
+Returns:
+    report:</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_a9c7b3c1544156eb008fadfb06a415c20_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1aa1ac642119ea75be5ce8a9f6ad913550"/><section>
+    <title>get_report_introduction()</title>
+<indexterm><primary>get_report_introduction</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>get_report_introduction</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.get_report_introduction ( query,  context,  role,  config,  websocket = <computeroutput>None</computeroutput>
+, callable  cost_callback = <computeroutput>None</computeroutput>
+)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_aa1ac642119ea75be5ce8a9f6ad913550_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_aa1ac642119ea75be5ce8a9f6ad913550_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1acfce0fe9e02f7246bcace8600279263f"/><section>
+    <title>get_retriever()</title>
+<indexterm><primary>get_retriever</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>get_retriever</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.get_retriever ( retriever)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the retriever
+Args:
+    retriever: retriever name
+
+Returns:
+    retriever: Retriever class</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1a5ec2fcb09935e7c20c484b43edd24cd6"/><section>
+    <title>get_sub_queries()</title>
+<indexterm><primary>get_sub_queries</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>get_sub_queries</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.get_sub_queries (str query, str agent_role_prompt,  cfg, str parent_query, str report_type, callable  cost_callback = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Gets the sub queries
+Args:
+    query: original query
+    agent_role_prompt: agent role prompt
+    cfg: Config
+    parent_query:
+    report_type:
+    cost_callback:
+
+Returns:
+    sub_queries: List of sub queries</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_a5ec2fcb09935e7c20c484b43edd24cd6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_a5ec2fcb09935e7c20c484b43edd24cd6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1a6df8ff25a470a78ca849b1b12bd7e043"/><section>
+    <title>scrape_urls()</title>
+<indexterm><primary>scrape_urls</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>scrape_urls</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.scrape_urls ( urls,  cfg = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Scrapes the urls
+Args:
+    urls: List of urls
+    cfg: Config (optional)
+
+Returns:
+    text: str</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_a6df8ff25a470a78ca849b1b12bd7e043_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1abe8547773bf18846d57805ac145cf03e"/><section>
+    <title>stream_output()</title>
+<indexterm><primary>stream_output</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>stream_output</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.stream_output ( type,  output,  websocket = <computeroutput>None</computeroutput>
+,  logging = <computeroutput>True</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Streams output to the websocket
+Args:
+    type:
+    output:
+
+Returns:
+    None
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_abe8547773bf18846d57805ac145cf03e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1a28ac426e24fade0611138b18e12b07d0"/><section>
+    <title>summarize()</title>
+<indexterm><primary>summarize</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>summarize</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.summarize ( query,  content,  agent_role_prompt,  cfg,  websocket = <computeroutput>None</computeroutput>
+, callable  cost_callback = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Asynchronously summarizes a list of URLs.
+
+Args:
+    query (str): The search query.
+    content (list): List of dictionaries with &apos;url&apos; and &apos;raw_content&apos;.
+    agent_role_prompt (str): The role prompt for the agent.
+    cfg (object): Configuration object.
+
+Returns:
+    list: A list of dictionaries with &apos;url&apos; and &apos;summary&apos;.
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_a28ac426e24fade0611138b18e12b07d0_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1ac98e8d537910db157298a4f600214549"/><section>
+    <title>summarize_url()</title>
+<indexterm><primary>summarize_url</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>summarize_url</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.summarize_url ( query,  raw_data,  agent_role_prompt,  cfg, callable  cost_callback = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Summarizes the text
+Args:
+    query:
+    raw_data:
+    agent_role_prompt:
+    cfg:
+    cost_callback
+
+Returns:
+    summary: str</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacegpt__researcher_1_1master_1_1actions_ac98e8d537910db157298a4f600214549_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacegpt__researcher_1_1master_1_1actions_1a5ae5fa76d436f86a64149fe871e32515"/><section>
+    <title>table_of_contents()</title>
+<indexterm><primary>table_of_contents</primary><secondary>gpt_researcher.master.actions</secondary></indexterm>
+<indexterm><primary>gpt_researcher.master.actions</primary><secondary>table_of_contents</secondary></indexterm>
+<para><computeroutput>gpt_researcher.master.actions.table_of_contents (str markdown_text)</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="singleton_8md" kind="file" language="Markdown">
+    <compoundname>singleton.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">sidebar_label:<sp/>singleton</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>config.singleton</highlight></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>singleton<sp/>metaclass<sp/>for<sp/>ensuring<sp/>only<sp/>one<sp/>instance<sp/>of<sp/>a<sp/>class.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Singleton<sp/>Objects</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>Singleton(abc.ABCMeta,<sp/>type)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Singleton<sp/>metaclass<sp/>for<sp/>ensuring<sp/>only<sp/>one<sp/>instance<sp/>of<sp/>a<sp/>class.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>\_\_call\_\_</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">def<sp/>__call__(cls,<sp/>*args,<sp/>**kwargs)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Call<sp/>method<sp/>for<sp/>the<sp/>singleton<sp/>metaclass.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>AbstractSingleton<sp/>Objects</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>AbstractSingleton(abc.ABC,<sp/>metaclass=Singleton)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Abstract<sp/>singleton<sp/>class<sp/>for<sp/>ensuring<sp/>only<sp/>one<sp/>instance<sp/>of<sp/>a<sp/>class.</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/reference/config/singleton.md"/>
+  </compounddef>
+</doxygen>

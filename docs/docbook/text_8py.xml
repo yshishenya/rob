@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_text_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/text.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceprocessing">processing</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespaceprocessing_1_1text">processing.text</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>Generator[str, None, None] <link linkend="_namespaceprocessing_1_1text_1aeb2b6f707ac167eb3f6a24edd853734f">processing.text.split_text</link> (str text, int max_length=8192)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceprocessing_1_1text_1a7f12588ab5cde117def169575efa6963">processing.text.summarize_text</link> (str fast_llm_model, int summary_token_limit, str llm_provider, str url, str text, str question, Optional[WebDriver] driver=None)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceprocessing_1_1text_1a966f81211115765374e907b2ec2e7ea5">processing.text.scroll_to_percentage</link> (WebDriver driver, float ratio)</para>
+</listitem>
+            <listitem><para>Dict[str, str] <link linkend="_namespaceprocessing_1_1text_1aa7d92fd28b771aab747840808fba73a1">processing.text.create_message</link> (str chunk, str question)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceprocessing_1_1text_1aeb3785068ddada10ff90776da71e4551">processing.text.write_to_file</link> (str filename, str text)</para>
+</listitem>
+            <listitem><para>None <link linkend="_namespaceprocessing_1_1text_1a61b878c9df5447d0ec868eda8d7208ce">processing.text.write_md_to_pdf</link> (str task, str path, str text)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceprocessing_1_1text_1aa07adc73b2ae754f349235bbdbc0e212">processing.text.read_txt_files</link> (directory)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceprocessing_1_1text_1a3816e917df5701dcc6e5950b294dc0b5">processing.text.md_to_pdf</link> (input_file, output_file)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_c2322bc8ce27c479ab1e70b3921bfaa8" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/arxiv Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/arxiv Directory Reference</primary></indexterm>
+Directory dependency graph for arxiv:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_c2322bc8ce27c479ab1e70b3921bfaa8_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2scraper_2arxiv_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_arxiv_8py">arxiv.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

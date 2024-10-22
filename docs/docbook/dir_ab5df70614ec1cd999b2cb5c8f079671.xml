@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_ab5df70614ec1cd999b2cb5c8f079671" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers Directory Reference</primary></indexterm>
+Directory dependency graph for retrievers:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_ab5df70614ec1cd999b2cb5c8f079671_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_2b8c4b896633989c005ae4873ae8da74">bing</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_b4d8dcc72b20823dab5f467aabbd28a7">duckduckgo</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_4ed381fcfcff19e107262f2c806bac9b">google</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_0e9b43fa14fba687e189c1e7eca85762">searx</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_bdaa6b52110c8a6d368719da479dad65">serpapi</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_2cf63ca3acc6cf10a5231c19aecbdb86">serper</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_333920dcdfb0eb3743891e711d9017bb">tavily</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gpt__researcher_2retrievers_2____init_____8py">__init__.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceusers" xml:lang="en-US">
+<title>users Namespace Reference</title>
+<indexterm><primary>users</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceusers_1a330f67af4576d3e1ee542d613d069139">login</link> (username, password)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a932657c601af16b61216fe6fe33a7c1f">refresh_access_token</link> (refresh_token)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a9053a1292a9bb75e476207697da5bcc6">fetch_users</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a22767a039fbf019d609ba4ae7ee70199">display_users</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aee9ead2895deb372a9320b932418df2c">modify_user</link> (token, user_data)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1af946d51443a44b65f044cbd071fa4133">create_user</link> (token, username, email, password, is_admin)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1abe93ce193b17b4e895eab26ae2806aaa">delete_user</link> (token, user_id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aa1996995f5442274830bef5c28e4e859">get_valid_access_token</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a32e0f5669895a84e77af6d7d40658d6f">main</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1ae68a82800a1d784a4aa0d4e663382aad">on_login_clicked</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceusers_1a9ffdadfc43420470d41e4610bebd67da">HOST</link> = os.getenv(&quot;HOST&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aec5824f6ce66973e8819ca68002938dd">APP_PORT</link> = os.getenv(&quot;APP_PORT&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceusers_1a3198b2c7eab49324f2d10f40c2ba7edb">API_URL</link> = f&quot;http://{<link linkend="_namespaceusers_1a9ffdadfc43420470d41e4610bebd67da">HOST</link>}:{<link linkend="_namespaceusers_1aec5824f6ce66973e8819ca68002938dd">APP_PORT</link>}&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aa67a5489339ad4f831ec91109898eb53">type</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a8eb777600faec9762baa63c66a2f65d3">on_click</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1afa220ad80467e63b9810fca0dc23dadb">new_username</link> = st.text_input(&quot;Имя пользователя&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_username&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1adb6ed530fb591bdf2dd5a09908bc97eb">new_email</link> = st.text_input(&quot;Email&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_email&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1aa59caae95017910a2fbe7af45268fca7">new_password</link> = st.text_input(&quot;Пароль&quot;, <link linkend="_namespaceusers_1aa67a5489339ad4f831ec91109898eb53">type</link>=&quot;password&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_password&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a53863681969ca2b2e0533e124c471496">new_is_admin</link> = st.checkbox(&quot;Администратор&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_is_admin&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a03fb62cfda9d9a2a6070d6abb3643788">submit_button</link> = st.form_submit_button(&quot;Создать пользователя&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceusers_1a02db70f5ffcf3f872bc01e4506d3422d">delete_user_id</link> = st.text_input(&quot;ID пользователя для удаления&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceusers_1af946d51443a44b65f044cbd071fa4133"/><section>
+    <title>create_user()</title>
+<indexterm><primary>create_user</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>create_user</secondary></indexterm>
+<para><computeroutput>users.create_user ( token,  username,  email,  password,  is_admin)</computeroutput></para>
+<para><literallayout><computeroutput> Создание нового пользователя </computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_namespaceusers_1abe93ce193b17b4e895eab26ae2806aaa"/><section>
+    <title>delete_user()</title>
+<indexterm><primary>delete_user</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>delete_user</secondary></indexterm>
+<para><computeroutput>users.delete_user ( token,  user_id)</computeroutput></para>
+<para><literallayout><computeroutput> Удаление пользователя </computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_abe93ce193b17b4e895eab26ae2806aaa_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceusers_1a22767a039fbf019d609ba4ae7ee70199"/><section>
+    <title>display_users()</title>
+<indexterm><primary>display_users</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>display_users</secondary></indexterm>
+<para><computeroutput>users.display_users ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_a22767a039fbf019d609ba4ae7ee70199_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceusers_1a9053a1292a9bb75e476207697da5bcc6"/><section>
+    <title>fetch_users()</title>
+<indexterm><primary>fetch_users</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>fetch_users</secondary></indexterm>
+<para><computeroutput>users.fetch_users ( )</computeroutput></para>
+<para><literallayout><computeroutput> Получение списка пользователей </computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_a9053a1292a9bb75e476207697da5bcc6_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_a9053a1292a9bb75e476207697da5bcc6_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceusers_1aa1996995f5442274830bef5c28e4e859"/><section>
+    <title>get_valid_access_token()</title>
+<indexterm><primary>get_valid_access_token</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>get_valid_access_token</secondary></indexterm>
+<para><computeroutput>users.get_valid_access_token ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_aa1996995f5442274830bef5c28e4e859_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_aa1996995f5442274830bef5c28e4e859_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceusers_1a330f67af4576d3e1ee542d613d069139"/><section>
+    <title>login()</title>
+<indexterm><primary>login</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>login</secondary></indexterm>
+<para><computeroutput>users.login ( username,  password)</computeroutput></para>
+<para><literallayout><computeroutput> Авторизация пользователя и получение токена </computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_a330f67af4576d3e1ee542d613d069139_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceusers_1a32e0f5669895a84e77af6d7d40658d6f"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>users.main ( )</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1aee9ead2895deb372a9320b932418df2c"/><section>
+    <title>modify_user()</title>
+<indexterm><primary>modify_user</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>modify_user</secondary></indexterm>
+<para><computeroutput>users.modify_user ( token,  user_data)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_aee9ead2895deb372a9320b932418df2c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceusers_1ae68a82800a1d784a4aa0d4e663382aad"/><section>
+    <title>on_login_clicked()</title>
+<indexterm><primary>on_login_clicked</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>on_login_clicked</secondary></indexterm>
+<para><computeroutput>users.on_login_clicked ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_ae68a82800a1d784a4aa0d4e663382aad_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespaceusers_1a932657c601af16b61216fe6fe33a7c1f"/><section>
+    <title>refresh_access_token()</title>
+<indexterm><primary>refresh_access_token</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>refresh_access_token</secondary></indexterm>
+<para><computeroutput>users.refresh_access_token ( refresh_token)</computeroutput></para>
+<para><literallayout><computeroutput> Обновление токена доступа </computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespaceusers_a932657c601af16b61216fe6fe33a7c1f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceusers_1a3198b2c7eab49324f2d10f40c2ba7edb"/><section>
+    <title>API_URL</title>
+<indexterm><primary>API_URL</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>API_URL</secondary></indexterm>
+<para><computeroutput>str users.API_URL = f&quot;http://{<link linkend="_namespaceusers_1a9ffdadfc43420470d41e4610bebd67da">HOST</link>}:{<link linkend="_namespaceusers_1aec5824f6ce66973e8819ca68002938dd">APP_PORT</link>}&quot;</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1aec5824f6ce66973e8819ca68002938dd"/><section>
+    <title>APP_PORT</title>
+<indexterm><primary>APP_PORT</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>APP_PORT</secondary></indexterm>
+<para><computeroutput>users.APP_PORT = os.getenv(&quot;APP_PORT&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1a02db70f5ffcf3f872bc01e4506d3422d"/><section>
+    <title>delete_user_id</title>
+<indexterm><primary>delete_user_id</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>delete_user_id</secondary></indexterm>
+<para><computeroutput>users.delete_user_id = st.text_input(&quot;ID пользователя для удаления&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1a9ffdadfc43420470d41e4610bebd67da"/><section>
+    <title>HOST</title>
+<indexterm><primary>HOST</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>HOST</secondary></indexterm>
+<para><computeroutput>users.HOST = os.getenv(&quot;HOST&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c"/><section>
+    <title>key</title>
+<indexterm><primary>key</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>key</secondary></indexterm>
+<para><computeroutput>users.key</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1adb6ed530fb591bdf2dd5a09908bc97eb"/><section>
+    <title>new_email</title>
+<indexterm><primary>new_email</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>new_email</secondary></indexterm>
+<para><computeroutput>users.new_email = st.text_input(&quot;Email&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_email&apos;)</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1a53863681969ca2b2e0533e124c471496"/><section>
+    <title>new_is_admin</title>
+<indexterm><primary>new_is_admin</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>new_is_admin</secondary></indexterm>
+<para><computeroutput>users.new_is_admin = st.checkbox(&quot;Администратор&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_is_admin&apos;)</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1aa59caae95017910a2fbe7af45268fca7"/><section>
+    <title>new_password</title>
+<indexterm><primary>new_password</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>new_password</secondary></indexterm>
+<para><computeroutput>users.new_password = st.text_input(&quot;Пароль&quot;, <link linkend="_namespaceusers_1aa67a5489339ad4f831ec91109898eb53">type</link>=&quot;password&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_password&apos;)</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1afa220ad80467e63b9810fca0dc23dadb"/><section>
+    <title>new_username</title>
+<indexterm><primary>new_username</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>new_username</secondary></indexterm>
+<para><computeroutput>users.new_username = st.text_input(&quot;Имя пользователя&quot;, <link linkend="_namespaceusers_1a0892fa7aa00b79f967d99cb3fcee680c">key</link>=&apos;new_username&apos;)</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1a8eb777600faec9762baa63c66a2f65d3"/><section>
+    <title>on_click</title>
+<indexterm><primary>on_click</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>on_click</secondary></indexterm>
+<para><computeroutput>users.on_click</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1a03fb62cfda9d9a2a6070d6abb3643788"/><section>
+    <title>submit_button</title>
+<indexterm><primary>submit_button</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>submit_button</secondary></indexterm>
+<para><computeroutput>users.submit_button = st.form_submit_button(&quot;Создать пользователя&quot;)</computeroutput></para></section>
+<anchor xml:id="_namespaceusers_1aa67a5489339ad4f831ec91109898eb53"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>users</secondary></indexterm>
+<indexterm><primary>users</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>users.type</computeroutput></para></section>
+</section>
+</section>

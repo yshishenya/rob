@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classagents_1_1editor_1_1EditorAgent" kind="class" language="Python" prot="public">
+    <compoundname>agents::editor::EditorAgent</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagents_1_1editor_1_1EditorAgent_1abbcf0a659b6c13adaaf544b8a4d040aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.editor.EditorAgent.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>agents.editor.EditorAgent.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/editor.py" line="16" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/editor.py" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1editor_1_1EditorAgent_1a42809ab012412ed959b3c32200a66b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.editor.EditorAgent.plan_research</definition>
+        <argsstring>(self, dict research_state)</argsstring>
+        <name>plan_research</name>
+        <qualifiedname>agents.editor.EditorAgent.plan_research</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Curate relevant sources for a query
+:param summary_report:
+:return:
+:param total_sub_headers:
+:return:
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/editor.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/editor.py" bodystart="19" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1editor_1_1EditorAgent_1a7fdd9bbaf712433ab7552b562c5bfe61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.editor.EditorAgent.run_parallel_research</definition>
+        <argsstring>(self, dict research_state)</argsstring>
+        <name>run_parallel_research</name>
+        <qualifiedname>agents.editor.EditorAgent.run_parallel_research</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/editor.py" line="60" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/editor.py" bodystart="60" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>agents.editor.EditorAgent</label>
+        <link refid="classagents_1_1editor_1_1EditorAgent"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/editor.py" line="15" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/editor.py" bodystart="15" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classagents_1_1editor_1_1EditorAgent_1abbcf0a659b6c13adaaf544b8a4d040aa" prot="public" virt="non-virtual"><scope>agents::editor::EditorAgent</scope><name>__init__</name></member>
+      <member refid="classagents_1_1editor_1_1EditorAgent_1a42809ab012412ed959b3c32200a66b45" prot="public" virt="non-virtual"><scope>agents::editor::EditorAgent</scope><name>plan_research</name></member>
+      <member refid="classagents_1_1editor_1_1EditorAgent_1a7fdd9bbaf712433ab7552b562c5bfe61" prot="public" virt="non-virtual"><scope>agents::editor::EditorAgent</scope><name>run_parallel_research</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

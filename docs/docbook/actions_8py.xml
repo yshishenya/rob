@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_actions_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/master/actions.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher">gpt_researcher</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1master">gpt_researcher.master</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1master_1_1actions">gpt_researcher.master.actions</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1acfce0fe9e02f7246bcace8600279263f">gpt_researcher.master.actions.get_retriever</link> (retriever)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a5d28ace9f81401032833fb86c2707d98">gpt_researcher.master.actions.choose_agent</link> (query, cfg, parent_query=None, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a5ec2fcb09935e7c20c484b43edd24cd6">gpt_researcher.master.actions.get_sub_queries</link> (str query, str agent_role_prompt, cfg, str parent_query, str report_type, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a6df8ff25a470a78ca849b1b12bd7e043">gpt_researcher.master.actions.scrape_urls</link> (urls, cfg=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a28ac426e24fade0611138b18e12b07d0">gpt_researcher.master.actions.summarize</link> (query, content, agent_role_prompt, cfg, websocket=None, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1ac98e8d537910db157298a4f600214549">gpt_researcher.master.actions.summarize_url</link> (query, raw_data, agent_role_prompt, cfg, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a9c7b3c1544156eb008fadfb06a415c20">gpt_researcher.master.actions.generate_report</link> (str query, context, str agent_role_prompt, str report_type, str report_source, websocket, cfg, str main_topic=&quot;&quot;, list existing_headers=[], callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1abe8547773bf18846d57805ac145cf03e">gpt_researcher.master.actions.stream_output</link> (type, output, websocket=None, logging=True)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1aa1ac642119ea75be5ce8a9f6ad913550">gpt_researcher.master.actions.get_report_introduction</link> (query, context, role, config, websocket=None, callable cost_callback=None)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a68c6082998cf41e463530cb9f128c8be">gpt_researcher.master.actions.extract_headers</link> (str markdown_text)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a5ae5fa76d436f86a64149fe871e32515">gpt_researcher.master.actions.table_of_contents</link> (str markdown_text)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacegpt__researcher_1_1master_1_1actions_1a630696213d37144e381817ac97f9f854">gpt_researcher.master.actions.add_source_urls</link> (str report_markdown, set visited_urls)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

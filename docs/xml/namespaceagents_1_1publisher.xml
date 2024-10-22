@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceagents_1_1publisher" kind="namespace" language="Python">
+    <compoundname>agents::publisher</compoundname>
+    <innerclass refid="classagents_1_1publisher_1_1PublisherAgent" prot="public">agents::publisher::PublisherAgent</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="enum_8py" kind="file" language="Python">
+    <compoundname>enum.py</compoundname>
+    <innerclass refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType" prot="public">gpt_researcher::utils::enum::ReportType</innerclass>
+    <innerclass refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource" prot="public">gpt_researcher::utils::enum::ReportSource</innerclass>
+    <innernamespace refid="namespacegpt__researcher">gpt_researcher</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1utils">gpt_researcher::utils</innernamespace>
+    <innernamespace refid="namespacegpt__researcher_1_1utils_1_1enum">gpt_researcher::utils::enum</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegpt__researcher_1_1utils_1_1enum" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>enum<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Enum</highlight></codeline>
+<codeline lineno="2" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType" kindref="compound">ReportType</ref>(Enum):</highlight></codeline>
+<codeline lineno="3" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1abc97d8a9af5c1c3f0e36ba370f7bd084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ResearchReport<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;research_report&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a7127e98d2b356dd6499b5f69938bd197" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ResourceReport<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;resource_report&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1aac580d69ab16f89917b617b4fe255e5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OutlineReport<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;outline_report&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a504d1981defb724d1b01a57c6c9bebb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CustomReport<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;custom_report&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1af840c0b75b47688f7af4e19d525deffe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DetailedReport<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;detailed_report&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportType_1a5c591d99b5639a39b86e1c723b7a1014" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SubtopicReport<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;subtopic_report&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource" kindref="compound">ReportSource</ref>(Enum):</highlight></codeline>
+<codeline lineno="11" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource_1a6da128c50580df465b9e34330783ce34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Web<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;web&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classgpt__researcher_1_1utils_1_1enum_1_1ReportSource_1a96184ad735ec8461ac2ca3b943799038" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Local<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;local&apos;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/utils/enum.py"/>
+  </compounddef>
+</doxygen>

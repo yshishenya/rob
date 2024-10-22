@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms</compoundname>
+    <title>Configure LLM</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md110"/>As described in the <ulink url="/docs/gpt-researcher/config">introduction</ulink>, the default LLM is OpenAI due to its superior performance and speed. With that said, GPT Researcher supports various open/closed source LLMs, and you can easily switch between them by adding the <computeroutput>LLM_PROVIDER</computeroutput> env variable and corresponding configuration params. Current supported LLMs are <computeroutput>openai</computeroutput>, <computeroutput>google</computeroutput> (gemini), <computeroutput>azureopenai</computeroutput>, <computeroutput>ollama</computeroutput>, <computeroutput>anthropic</computeroutput>, <computeroutput>mistral</computeroutput>, <computeroutput>huggingface</computeroutput> and <computeroutput>groq</computeroutput>.</para>
+<para>Using any model will require at least updating the <computeroutput>LLM_PROVIDER</computeroutput> param and passing the LLM provider API Key. You might also need to update the <computeroutput>SMART_LLM_MODEL</computeroutput> and <computeroutput>FAST_LLM_MODEL</computeroutput> env vars. To learn more about support customization options see <ulink url="/gpt-researcher/config">here</ulink>.</para>
+<para><bold>Please note</bold>: GPT Researcher is optimized and heavily tested on GPT models. Some other models might run intro context limit errors, and unexpected responses. Please provide any feedback in our <ulink url="https://discord.gg/DUmbTebB">Discord community</ulink> channel, so we can better improve the experience and performance.</para>
+<para>Below you can find examples for how to configure the various supported LLMs.</para>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md111">
+<title>Custom OpenAI</title><para>Create a local OpenAI API using <ulink url="https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md#quick-start">llama.cpp Server</ulink>.</para>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md112">
+<title>Custom OpenAI API LLM</title><para><programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>use<sp/>a<sp/>custom<sp/>OpenAI<sp/>API<sp/>LLM<sp/>provider</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=&quot;openai&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>url</highlight></codeline>
+<codeline><highlight class="normal">OPENAI_BASE_URL=&quot;http://localhost:1234/v1&quot;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>key</highlight></codeline>
+<codeline><highlight class="normal">OPENAI_API_KEY=&quot;Your<sp/>Key&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>specify<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>llm<sp/>model<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=&quot;gpt-3.5-turbo-16k&quot;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>specify<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>llm<sp/>model<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=&quot;gpt-4o&quot;</highlight></codeline>
+</programlisting> </para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md113">
+<title>Custom OpenAI API Embedding</title><para><programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>use<sp/>a<sp/>custom<sp/>OpenAI<sp/>API<sp/>EMBEDDING<sp/>provider</highlight></codeline>
+<codeline><highlight class="normal">EMBEDDING_PROVIDER=&quot;custom&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>url</highlight></codeline>
+<codeline><highlight class="normal">OPENAI_BASE_URL=&quot;http://localhost:1234/v1&quot;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>key</highlight></codeline>
+<codeline><highlight class="normal">OPENAI_API_KEY=&quot;Your<sp/>Key&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>specify<sp/>the<sp/>custom<sp/>OpenAI<sp/>API<sp/>embedding<sp/>model<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">OPENAI_EMBEDDING_MODEL=&quot;custom_model&quot;</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md114">
+<title>Azure OpenAI</title><para><programlisting filename=".bash"><codeline><highlight class="normal">EMBEDDING_PROVIDER=&quot;azureopenai&quot;</highlight></codeline>
+<codeline><highlight class="normal">AZURE_OPENAI_API_KEY=&quot;Your<sp/>key&quot;</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md115">
+<title>Ollama</title><para>GPT Researcher supports both Ollama LLMs and embeddings. You can choose each or both. To use <ulink url="http://www.ollama.com">Ollama</ulink> you can set the following environment variables</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>Use<sp/>ollama<sp/>for<sp/>both,<sp/>LLM<sp/>and<sp/>EMBEDDING<sp/>provider</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=ollama</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Ollama<sp/>endpoint<sp/>to<sp/>use</highlight></codeline>
+<codeline><highlight class="normal">OLLAMA_BASE_URL=http://localhost:11434</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Specify<sp/>one<sp/>of<sp/>the<sp/>LLM<sp/>models<sp/>supported<sp/>by<sp/>Ollama</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=llama3</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Specify<sp/>one<sp/>of<sp/>the<sp/>LLM<sp/>models<sp/>supported<sp/>by<sp/>Ollama<sp/></highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=llama3<sp/></highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>temperature<sp/>to<sp/>use,<sp/>defaults<sp/>to<sp/>0.55</highlight></codeline>
+<codeline><highlight class="normal">TEMPERATURE=0.55</highlight></codeline>
+</programlisting></para>
+<para><bold>Optional</bold> - You can also use ollama for embeddings <programlisting filename=".bash"><codeline><highlight class="normal">EMBEDDING_PROVIDER=ollama</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Specify<sp/>one<sp/>of<sp/>the<sp/>embedding<sp/>models<sp/>supported<sp/>by<sp/>Ollama<sp/></highlight></codeline>
+<codeline><highlight class="normal">OLLAMA_EMBEDDING_MODEL=nomic-embed-text</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md116">
+<title>Groq</title><para>GroqCloud provides advanced AI hardware and software solutions designed to deliver amazingly fast AI inference performance. To leverage Groq in GPT-Researcher, you will need a GroqCloud account and an API Key. (<bold>NOTE:</bold> Groq has a very <emphasis>generous free tier</emphasis>.)</para>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md117">
+<title>Sign up</title><para><itemizedlist>
+<listitem><para>You can signup here: <ulink url="https://console.groq.com/login">https://console.groq.com/login</ulink></para>
+</listitem><listitem><para>Once you are logged in, you can get an API Key here: <ulink url="https://console.groq.com/keys">https://console.groq.com/keys</ulink></para>
+</listitem><listitem><para>Once you have an API key, you will need to add it to your <computeroutput>systems environment</computeroutput> using the variable name: <computeroutput>GROQ_API_KEY=&quot;*********************&quot;</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md118">
+<title>Update env vars</title><para>And finally, you will need to configure the GPT-Researcher Provider and Model variables:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>To<sp/>use<sp/>Groq<sp/>set<sp/>the<sp/>llm<sp/>provider<sp/>to<sp/>groq</highlight></codeline>
+<codeline><highlight class="normal">LLM_PROVIDER=groq</highlight></codeline>
+<codeline><highlight class="normal">GROQ_API_KEY=[Your<sp/>Key]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>one<sp/>of<sp/>the<sp/>LLM<sp/>models<sp/>supported<sp/>by<sp/>Groq</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=Mixtral-8x7b-32768</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>one<sp/>of<sp/>the<sp/>LLM<sp/>models<sp/>supported<sp/>by<sp/>Groq</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=Mixtral-8x7b-32768<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>temperature<sp/>to<sp/>use<sp/>defaults<sp/>to<sp/>0.55</highlight></codeline>
+<codeline><highlight class="normal">TEMPERATURE=0.55</highlight></codeline>
+</programlisting></para>
+<para><bold>NOTE:</bold> As of the writing of this Doc (May 2024), the available Language Models from Groq are:</para>
+<para><itemizedlist>
+<listitem><para>Llama3-70b-8192</para>
+</listitem><listitem><para>Llama3-8b-8192</para>
+</listitem><listitem><para>Mixtral-8x7b-32768</para>
+</listitem><listitem><para>Gemma-7b-it</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md119">
+<title>Anthropic</title><para><ulink url="https://www.anthropic.com/">Anthropic</ulink> is an AI safety and research company, and is the creator of Claude. This page covers all integrations between Anthropic models and LangChain.</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">LLM_PROVIDER=anthropic</highlight></codeline>
+<codeline><highlight class="normal">ANTHROPIC_API_KEY=[Your<sp/>key]</highlight></codeline>
+</programlisting></para>
+<para>You can then define the fast and smart LLM models for example: <programlisting filename=".bash"><codeline><highlight class="normal">FAST_LLM_MODEL=claude-2.1</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=claude-3-opus-20240229</highlight></codeline>
+</programlisting></para>
+<para>You can then define the fast and smart LLM models for example: <programlisting filename=".bash"><codeline><highlight class="normal">FAST_LLM_MODEL=claude-2.1</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=claude-3-opus-20240229</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md120">
+<title>Mistral</title><para>Sign up for a <ulink url="https://console.mistral.ai/users/api-keys/">Mistral API key</ulink>. Then update the corresponding env vars, for example: <programlisting filename=".bash"><codeline><highlight class="normal">LLM_PROVIDER=mistral</highlight></codeline>
+<codeline><highlight class="normal">ANTHROPIC_API_KEY=[Your<sp/>key]</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=open-mistral-7b</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=mistral-large-latest</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md121">
+<title>Together AI</title><para><ulink url="https://www.together.ai/">Together AI</ulink> offers an API to query <ulink url="https://docs.together.ai/docs/inference-models">50+ leading open-source models</ulink> in a couple lines of code. Then update corresponding env vars, for example: <programlisting filename=".bash"><codeline><highlight class="normal">LLM_PROVIDER=together</highlight></codeline>
+<codeline><highlight class="normal">TOGETHER_API_KEY=[Your<sp/>key]</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=meta-llama/Llama-3-8b-chat-hf</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=meta-llama/Llama-3-70b-chat-hf</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md122">
+<title>HuggingFace</title><para>This integration requires a bit of extra work. Follow <ulink url="https://python.langchain.com/v0.1/docs/integrations/chat/huggingface/">this guide</ulink> to learn more. After you&apos;ve followed the tutorial above, update the env vars:</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">LLM_PROVIDER=huggingface</highlight></codeline>
+<codeline><highlight class="normal">HUGGINGFACE_API_KEY=[Your<sp/>key]</highlight></codeline>
+<codeline><highlight class="normal">FAST_LLM_MODEL=HuggingFaceH4/zephyr-7b-beta</highlight></codeline>
+<codeline><highlight class="normal">SMART_LLM_MODEL=HuggingFaceH4/zephyr-7b-beta</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2gpt-researcher_2llms_1autotoc_md123">
+<title>Google Gemini</title><para>Sign up <ulink url="https://ai.google.dev/gemini-api/docs/api-key">here</ulink> for obtaining a Google Gemini API Key and update the following env vars:</para>
+<para>Please make sure to update fast and smart models to corresponding valid Gemini models. <programlisting filename=".bash"><codeline><highlight class="normal">LLM_PROVIDER=google</highlight></codeline>
+<codeline><highlight class="normal">GEMINI_API_KEY=[Your<sp/>key]</highlight></codeline>
+</programlisting> </para>
+</sect1>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/gpt-researcher/llms.md"/>
+  </compounddef>
+</doxygen>

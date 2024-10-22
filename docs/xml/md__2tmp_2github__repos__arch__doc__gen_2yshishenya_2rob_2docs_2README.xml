@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README</compoundname>
+    <title>Website</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README_1autotoc_md177"/> This website is built using <ulink url="https://docusaurus.io/">Docusaurus 2</ulink>, a modern static website generator.</para>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README_1autotoc_md178">
+<title>Prerequisites</title><para>To build and test documentation locally, begin by downloading and installing <ulink url="https://nodejs.org/en/download/">Node.js</ulink>, and then installing <ulink url="https://classic.yarnpkg.com/en/">Yarn</ulink>. On Windows, you can install via the npm package manager (npm) which comes bundled with Node.js:</para>
+<para><programlisting filename=".console"><codeline><highlight class="normal">npm<sp/>install<sp/>--global<sp/>yarn</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README_1autotoc_md179">
+<title>Installation</title><para><programlisting filename=".console"><codeline><highlight class="normal">pip<sp/>install<sp/>pydoc-markdown</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>website</highlight></codeline>
+<codeline><highlight class="normal">yarn<sp/>install</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2README_1autotoc_md180">
+<title>Local Development</title><para>Navigate to the website folder and run:</para>
+<para><programlisting filename=".console"><codeline><highlight class="normal">pydoc-markdown</highlight></codeline>
+<codeline><highlight class="normal">yarn<sp/>start</highlight></codeline>
+</programlisting></para>
+<para>This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. </para>
+</sect1>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/README.md"/>
+  </compounddef>
+</doxygen>

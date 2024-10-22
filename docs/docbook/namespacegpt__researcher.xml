@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacegpt__researcher" xml:lang="en-US">
+<title>gpt_researcher Namespace Reference</title>
+<indexterm><primary>gpt_researcher</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1config">config</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1context">context</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1document">document</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1llm__provider">llm_provider</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1master">master</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1memory">memory</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1retrievers">retrievers</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1scraper">scraper</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1utils">utils</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacegpt__researcher_1a572df6189baa160ae552ef903c99af4f">__all__</link> = [&apos;GPTResearcher&apos;, &apos;Config&apos;]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacegpt__researcher_1a572df6189baa160ae552ef903c99af4f"/><section>
+    <title>__all__</title>
+<indexterm><primary>__all__</primary><secondary>gpt_researcher</secondary></indexterm>
+<indexterm><primary>gpt_researcher</primary><secondary>__all__</secondary></indexterm>
+<para><computeroutput>list gpt_researcher.__all__ = [&apos;GPTResearcher&apos;, &apos;Config&apos;]<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_61a4d70de5d1a3837365f5259e169906" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/basic_report Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/report_type/basic_report Directory Reference</primary></indexterm>
+Directory dependency graph for basic_report:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_61a4d70de5d1a3837365f5259e169906_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_backend_2report__type_2basic__report_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_basic__report_8py">basic_report.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

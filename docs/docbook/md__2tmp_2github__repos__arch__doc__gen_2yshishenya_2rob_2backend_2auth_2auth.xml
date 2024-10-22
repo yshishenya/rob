@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth" xml:lang="en-US">
+<title>auth</title>
+<indexterm><primary>auth</primary></indexterm>
+
+<para>Давайте дополним руководство, добавив недостающую информацию из предоставленных вами фрагментов кода и моделей.</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md1">
+<title><title>Руководство по использованию API</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md2">
+<title><title>Введение</title></title>
+
+<para>Данное руководство предназначено для фронтенд- и бэкенд-разработчиков. Оно описывает основные маршруты для взаимодействия с бэкендом через API, а также детали авторизации и управления пользователями. Все запросы к API должны быть авторизованы с использованием токена доступа.</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md4">
+<title><title>Аутентификация</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md5">
+<title><title>Получение токенов</title></title>
+
+<para>Для выполнения аутентификации и получения токенов доступа и обновления, отправьте POST-запрос на <computeroutput>/login</computeroutput>, указав имя пользователя и пароль в теле запроса в формате <computeroutput>application/x-www-form-urlencoded</computeroutput>.</para>
+
+<para><literallayout><computeroutput>curl&#32;-X&#32;POST&#32;https://dev.rob.pro-4.ru/login&#32;\
+&#32;-H&#32;&quot;Content-Type:&#32;application/json&quot;&#32;\
+&#32;-d&#32;&apos;{&quot;username&quot;:&quot;user&quot;,&#32;&quot;password&quot;:&quot;password&quot;}&apos;
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md6">
+<title><title>Пример успешного ответа</title></title>
+
+<para>В ответе вы получите два токена: <computeroutput>access_token</computeroutput> для доступа к защищенным маршрутам и <computeroutput>refresh_token</computeroutput> для обновления <computeroutput>access_token</computeroutput> по его истечении.</para>
+
+<para><literallayout><computeroutput>{
+&#32;&#32;&quot;access_token&quot;:&#32;&quot;25ac806aba456abac04dade950f754592f3763ff1a3fa564&quot;,
+&#32;&#32;&quot;expires_in&quot;:&#32;3600,
+&#32;&#32;&quot;expires_at&quot;:&#32;&quot;2024-05-18T09:39:27.487986&quot;,
+&#32;&#32;&quot;refresh_token&quot;:&#32;&quot;14c23f5e6c412cdadfc3e71fbff240d8d7bf7edd582e6153&quot;,
+&#32;&#32;&quot;refresh_expires_in&quot;:&#32;2592000,
+&#32;&#32;&quot;refresh_token_expires_at&quot;:&#32;&quot;2024-06-17T08:39:27.487995&quot;,
+&#32;&#32;&quot;is_admin&quot;:&#32;true
+}
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md7">
+<title><title>Описание полей ответа</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">access_token</emphasis>: Токен доступа, который используется для аутентификации пользователя в системе.</para>
+</listitem><listitem>
+<para><emphasis role="bold">expires_in</emphasis>: Время жизни токена доступа в секундах (3600 секунд = 1 час).</para>
+</listitem><listitem>
+<para><emphasis role="bold">expires_at</emphasis>: Точная дата и время истечения токена доступа в формате ISO 8601.</para>
+</listitem><listitem>
+<para><emphasis role="bold">refresh_token</emphasis>: Токен для обновления доступа, который можно использовать для получения нового токена доступа после истечения текущего.</para>
+</listitem><listitem>
+<para><emphasis role="bold">refresh_expires_in</emphasis>: Время жизни токена для обновления в секундах (2592000 секунд = 30 дней).</para>
+</listitem><listitem>
+<para><emphasis role="bold">refresh_token_expires_at</emphasis>: Точная дата и время истечения токена обновления в формате ISO 8601.</para>
+</listitem><listitem>
+<para><emphasis role="bold">is_admin</emphasis>: Флаг, указывающий, является ли пользователь администратором. <computeroutput>true</computeroutput>, если пользователь имеет права администратора.</para>
+</listitem></itemizedlist>
+</para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md9">
+<title><title>Использование access_token</title></title>
+
+<para>Для доступа к защищенным маршрутам включайте полученный <computeroutput>access_token</computeroutput> в запросы.</para>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md10">
+<title><title>Пример подключения к WebSocket</title></title>
+
+<para><literallayout><computeroutput>const&#32;listenToSockEvents&#32;=&#32;()&#32;=&gt;&#32;{
+&#32;&#32;const&#32;{&#32;protocol,&#32;host,&#32;pathname&#32;}&#32;=&#32;window.location;
+&#32;&#32;const&#32;token&#32;=&#32;&quot;токен&quot;;&#32;//&#32;вставьте&#32;свой&#32;токен
+&#32;&#32;const&#32;ws_uri&#32;=&#32;`${
+&#32;&#32;&#32;&#32;protocol&#32;===&#32;&quot;https:&quot;&#32;?&#32;&quot;wss:&quot;&#32;:&#32;&quot;ws:&quot;
+&#32;&#32;}//${host}${pathname}ws?token=${encodeURIComponent(token)}`;
+&#32;&#32;const&#32;converter&#32;=&#32;new&#32;showdown.Converter();
+&#32;&#32;const&#32;socket&#32;=&#32;new&#32;WebSocket(ws_uri);
+
+&#32;&#32;socket.onmessage&#32;=&#32;(event)&#32;=&gt;&#32;{
+&#32;&#32;&#32;&#32;const&#32;data&#32;=&#32;JSON.parse(event.data);
+&#32;&#32;&#32;&#32;if&#32;(data.type&#32;===&#32;&quot;logs&quot;)&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;addAgentResponse(data);
+&#32;&#32;&#32;&#32;}&#32;else&#32;if&#32;(data.type&#32;===&#32;&quot;report&quot;)&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;writeReport(data,&#32;converter);
+&#32;&#32;&#32;&#32;}&#32;else&#32;if&#32;(data.type&#32;===&#32;&quot;path&quot;)&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;updateState(&quot;finished&quot;);
+&#32;&#32;&#32;&#32;&#32;&#32;updateDownloadLink(data);
+&#32;&#32;&#32;&#32;}
+&#32;&#32;};
+};
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md11">
+<title><title>Пример использования WebSocket на Python</title></title>
+
+<para><literallayout><computeroutput>import&#32;asyncio
+import&#32;websockets
+import&#32;json
+
+async&#32;def&#32;connect():
+&#32;&#32;&#32;&#32;uri&#32;=&#32;&quot;ws://localhost:8000/ws?token=&lt;access_token&gt;&quot;
+&#32;&#32;&#32;&#32;async&#32;with&#32;websockets.connect(uri)&#32;as&#32;websocket:
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;await&#32;websocket.send(json.dumps({
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;task&quot;:&#32;&quot;Example&#32;task&quot;,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&quot;report_type&quot;:&#32;&quot;pdf&quot;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}))
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;response&#32;=&#32;await&#32;websocket.recv()
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;print(response)
+
+asyncio.get_event_loop().run_until_complete(connect())
+</computeroutput></literallayout></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md13">
+<title><title>Обновление токена доступа</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md14">
+<title><title>Использование refresh_token</title></title>
+
+<para>Когда срок действия <computeroutput>access_token</computeroutput> подходит к концу, вы можете использовать <computeroutput>refresh_token</computeroutput> для получения нового токена доступа. Для этого отправьте POST-запрос на <computeroutput>/api/refresh</computeroutput>, передав <computeroutput>refresh_token</computeroutput> в теле запроса.</para>
+
+<para><literallayout><computeroutput>curl&#32;-X&#32;POST&#32;https://dev.volter.pro-4.ru/api/refresh&#32;\
+&#32;-H&#32;&quot;Content-Type:&#32;application/json&quot;&#32;\
+&#32;-d&#32;&apos;{&quot;refresh_token&quot;:&quot;&lt;ваш_refresh_token&gt;&quot;}&apos;
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md15">
+<title><title>Пример успешного ответа</title></title>
+
+<para>После успешного выполнения запроса на обновление токена доступа, вы получите JSON с новым <computeroutput>access_token</computeroutput> и <computeroutput>refresh_token</computeroutput>.</para>
+
+<para><literallayout><computeroutput>{
+&#32;&#32;&quot;access_token&quot;:&#32;&quot;2dc01915898f60c9f378074e62b677285281c6338fdcb787&quot;,
+&#32;&#32;&quot;expires_in&quot;:&#32;3600,
+&#32;&#32;&quot;expires_at&quot;:&#32;&quot;2024-05-18T09:49:04.334472&quot;,
+&#32;&#32;&quot;refresh_token&quot;:&#32;&quot;cb96f0025f869215a047f354c95b8145c17949be16b9391c&quot;,
+&#32;&#32;&quot;refresh_expires_in&quot;:&#32;2592000,
+&#32;&#32;&quot;refresh_expires_at&quot;:&#32;&quot;2024-06-17T08:49:04.334500&quot;
+}
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md16">
+<title><title>Описание ошибок</title></title>
+
+<para><emphasis role="bold">1. 401 Unauthorized:</emphasis> Ошибка аутентификации. Возникает, если предоставленный токен недействителен или истек.</para>
+
+<para><emphasis role="bold">Причины</emphasis>:</para>
+
+<para><itemizedlist>
+<listitem>
+<para>Неверный <computeroutput>access_token</computeroutput> или <computeroutput>refresh_token</computeroutput>.</para>
+</listitem><listitem>
+<para>Токен истек.</para>
+</listitem></itemizedlist>
+</para>
+
+<para><emphasis role="bold">Пример ответа:</emphasis></para>
+
+<para><literallayout><computeroutput>{
+&#32;&#32;&quot;detail&quot;:&#32;&quot;Could&#32;not&#32;validate&#32;credentials&quot;
+}
+</computeroutput></literallayout></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md18">
+<title><title>Описание системы авторизации</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md19">
+<title><title>Общая структура</title></title>
+
+<para>Система авторизации состоит из нескольких модулей, которые взаимодействуют друг с другом для обеспечения безопасности и управления доступом пользователей. Основные компоненты включают:</para>
+
+<para><orderedlist>
+<listitem>
+<para><emphasis role="bold"><link linkend="_auth_8py">auth.py</link></emphasis> - Основной модуль, содержащий маршруты и логику авторизации.</para>
+</listitem><listitem>
+<para><emphasis role="bold"><link linkend="_redis__token__storage_8py">redis_token_storage.py</link></emphasis> - Реализация хранилища токенов на основе Redis.</para>
+</listitem><listitem>
+<para><emphasis role="bold"><link linkend="_token__storage_8py">token_storage.py</link></emphasis> - Абстрактный класс для хранилища токенов.</para>
+</listitem><listitem>
+<para><emphasis role="bold"><link linkend="_db_8py">db.py</link></emphasis> - Модуль для работы с базой данных.</para>
+</listitem><listitem>
+<para><emphasis role="bold"><link linkend="_server_8py">server.py</link></emphasis> - Основной серверный модуль, который включает маршруты и инициализирует приложение.</para>
+</listitem></orderedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md20">
+<title><title>Модуль auth.py</title></title>
+
+<para>Этот модуль содержит маршруты и логику для авторизации пользователей. Основные функции включают:</para>
+
+<para><itemizedlist>
+<listitem>
+<para>**/login**: Позволяет пользователю войти в систему, используя имя пользователя и пароль. Возвращает токены доступа и обновления.</para>
+</listitem><listitem>
+<para>**/logout**: Позволяет пользователю выйти из системы, используя refresh_token. Очищает токены доступа и обновления.</para>
+</listitem><listitem>
+<para>**/refresh**: Обновляет токен доступа, используя токен обновления.</para>
+</listitem><listitem>
+<para>**/users/create**: Создает нового пользователя (только для администраторов).</para>
+</listitem><listitem>
+<para>**/users/delete**: Удаляет пользователя по идентификатору (только для администраторов).</para>
+</listitem><listitem>
+<para>**/users/password**: Изменяет пароль пользователя (только для администраторов).</para>
+</listitem><listitem>
+<para>**/users/modify**: Изменяет данные пользователя (только для администраторов).</para>
+</listitem><listitem>
+<para>**/users**: Возвращает список всех пользователей (только для администраторов).</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md21">
+<title><title>Модели Pydantic</title></title>
+
+<para>Для валидации данных используются Pydantic-модели.</para>
+
+<para><literallayout><computeroutput>class&#32;LoginRequest(BaseModel):
+&#32;&#32;&#32;&#32;username:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Имя&#32;пользователя&#32;для&#32;входа&#32;в&#32;систему.&#32;Должно&#32;быть&#32;уникальным&#32;и&#32;не&#32;повторяться&#32;с&#32;другими&#32;пользователями.&quot;)
+&#32;&#32;&#32;&#32;password:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Пароль&#32;пользователя.&#32;Должен&#32;быть&#32;надежным&#32;и&#32;содержать&#32;минимум&#32;6&#32;символов&#32;для&#32;обеспечения&#32;безопасности.&quot;)
+
+class&#32;LoginResponse(BaseModel):
+&#32;&#32;&#32;&#32;access_token:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Токен&#32;доступа,&#32;который&#32;используется&#32;для&#32;аутентификации&#32;пользователя&#32;в&#32;системе.&quot;)
+&#32;&#32;&#32;&#32;expires_in:&#32;int&#32;=&#32;Field(...,&#32;description=&quot;Время&#32;жизни&#32;токена&#32;доступа&#32;в&#32;секундах,&#32;после&#32;которого&#32;токен&#32;становится&#32;недействительным.&quot;)
+&#32;&#32;&#32;&#32;expires_at:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Точная&#32;дата&#32;и&#32;время&#32;истечения&#32;токена&#32;доступа&#32;в&#32;формате&#32;ISO&#32;8601.&quot;)
+&#32;&#32;&#32;&#32;refresh_token:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Токен&#32;для&#32;обновления&#32;доступа,&#32;который&#32;можно&#32;использовать&#32;для&#32;получения&#32;нового&#32;токена&#32;доступа&#32;после&#32;истечения&#32;текущего.&quot;)
+&#32;&#32;&#32;&#32;refresh_expires_in:&#32;int&#32;=&#32;Field(...,&#32;description=&quot;Время&#32;жизни&#32;токена&#32;для&#32;обновления&#32;в&#32;секундах,&#32;после&#32;которого&#32;токен&#32;становится&#32;недействительным.&quot;)
+&#32;&#32;&#32;&#32;refresh_token_expires_at:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Точная&#32;дата&#32;и&#32;время&#32;истечения&#32;токена&#32;обновления&#32;в&#32;формате&#32;ISO&#32;8601.&quot;)
+&#32;&#32;&#32;&#32;is_admin:&#32;bool&#32;=&#32;Field(...,&#32;description=&quot;Флаг,&#32;указывающий,&#32;является&#32;ли&#32;пользователь&#32;администратором.&#32;True,&#32;если&#32;пользователь&#32;имеет&#32;права&#32;администратора.&quot;)
+
+class&#32;RefreshRequest(BaseModel):
+&#32;&#32;&#32;&#32;refresh_token:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Токен&#32;обновления,&#32;который&#32;нужно&#32;использовать&#32;для&#32;получения&#32;нового&#32;токена&#32;доступа.&quot;)
+
+class&#32;RefreshResponse(BaseModel):
+&#32;&#32;&#32;&#32;access_token:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Новый&#32;токен&#32;доступа,&#32;выданный&#32;пользователю.&quot;)
+&#32;&#32;&#32;&#32;expires_in:&#32;int&#32;=&#32;Field(...,&#32;description=&quot;Время&#32;жизни&#32;нового&#32;токена&#32;доступа&#32;в&#32;секундах.&quot;)
+&#32;&#32;&#32;&#32;expires_at:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Время&#32;истечения&#32;нового&#32;токена&#32;доступа&#32;в&#32;формате&#32;ISO&#32;8601.&quot;)
+&#32;&#32;&#32;&#32;refresh_token:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Новый&#32;токен&#32;обновления,&#32;выданный&#32;пользователю.&quot;)
+&#32;&#32;&#32;&#32;refresh_expires_in:&#32;int&#32;=&#32;Field(...,&#32;description=&quot;Время&#32;жизни&#32;нового&#32;токена&#32;обновления&#32;в&#32;секундах.&quot;)
+&#32;&#32;&#32;&#32;refresh_expires_at:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Время&#32;истечения&#32;нового&#32;токена&#32;обновления&#32;в&#32;формате&#32;ISO&#32;8601.&quot;)
+
+class&#32;UserCreateRequest(BaseModel):
+&#32;&#32;&#32;&#32;username:&#32;constr(min_length=3,&#32;max_length=50)&#32;=&#32;Field(...,&#32;description=&quot;Имя&#32;пользователя.&#32;Должно&#32;быть&#32;уникальным&#32;и&#32;содержать&#32;от&#32;3&#32;до&#32;50&#32;символов.&quot;)
+&#32;&#32;&#32;&#32;email:&#32;EmailStr&#32;=&#32;Field(...,&#32;description=&quot;Электронная&#32;почта&#32;пользователя.&#32;Должна&#32;быть&#32;действительной&#32;и&#32;уникальной.&quot;)
+&#32;&#32;&#32;&#32;password:&#32;constr(min_length=6,&#32;max_length=50)&#32;=&#32;Field(...,&#32;description=&quot;Пароль&#32;пользователя.&#32;Должен&#32;быть&#32;надежным&#32;и&#32;содержать&#32;от&#32;6&#32;до&#32;50&#32;символов.&quot;)
+&#32;&#32;&#32;&#32;is_admin:&#32;bool&#32;=&#32;Field(...,&#32;description=&quot;Является&#32;ли&#32;пользователь&#32;администратором.&#32;True,&#32;если&#32;пользователь&#32;имеет&#32;права&#32;администратора.&quot;)
+
+class&#32;UserResponse(BaseModel):
+&#32;&#32;&#32;&#32;id:&#32;int&#32;=&#32;Field(...,&#32;description=&quot;Уникальный&#32;идентификатор&#32;пользователя&#32;в&#32;системе.&quot;)
+&#32;&#32;&#32;&#32;username:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Имя&#32;пользователя.&quot;)
+&#32;&#32;&#32;&#32;email:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Электронная&#32;почта&#32;пользователя.&quot;)
+&#32;&#32;&#32;&#32;is_admin:&#32;bool&#32;=&#32;Field(...,&#32;description=&quot;Признак&#32;того,&#32;является&#32;ли&#32;пользователь&#32;администратором.&quot;)
+
+class&#32;PasswordChangeRequest(BaseModel):
+&#32;&#32;&#32;&#32;user_id:&#32;int&#32;=&#32;Field(...,&#32;description=&quot;Идентификатор&#32;пользователя,&#32;для&#32;которого&#32;нужно&#32;изменить&#32;пароль.&quot;)
+&#32;&#32;&#32;&#32;new_password:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Новый&#32;пароль&#32;пользователя.&#32;Должен&#32;быть&#32;надежным&#32;и&#32;содержать&#32;минимум&#32;6&#32;символов.&quot;)
+
+class&#32;PasswordChangeResponse(BaseModel):
+&#32;&#32;&#32;&#32;user_id:&#32;int&#32;=&#32;Field(...,&#32;description=&quot;Идентификатор&#32;пользователя,&#32;для&#32;которого&#32;был&#32;изменен&#32;пароль.&quot;)
+&#32;&#32;&#32;&#32;message:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Сообщение&#32;об&#32;успешной&#32;смене&#32;пароля.&quot;)
+
+class&#32;DeleteUserRequest(BaseModel):
+&#32;&#32;&#32;&#32;user_id:&#32;int&#32;=&#32;Field(...,&#32;description=&quot;Идентификатор&#32;пользователя,&#32;которого&#32;нужно&#32;удалить.&quot;)
+
+class&#32;DeleteUserResponse(BaseModel):
+&#32;&#32;&#32;&#32;message:&#32;str&#32;=&#32;Field(...,&#32;description=&quot;Сообщение&#32;об&#32;успешном&#32;удалении&#32;пользователя.&quot;)
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md22">
+<title><title>Функции для работы с токенами</title></title>
+
+<para>Использование функций для создания и проверки токенов:</para>
+
+<para><literallayout><computeroutput>async&#32;def&#32;create_tokens(user_id):
+&#32;&#32;&#32;&#32;access_token&#32;=&#32;binascii.hexlify(os.urandom(24)).decode()
+&#32;&#32;&#32;&#32;access_token_expires_in&#32;=&#32;3600&#32;&#32;#&#32;1&#32;час&#32;в&#32;секундах
+&#32;&#32;&#32;&#32;access_token_expires_at&#32;=&#32;datetime.utcnow()&#32;+&#32;timedelta(seconds=access_token_expires_in)
+&#32;&#32;&#32;&#32;refresh_token&#32;=&#32;binascii.hexlify(os.urandom(24)).decode()
+&#32;&#32;&#32;&#32;refresh_token_expires_in&#32;=&#32;2592000&#32;&#32;#&#32;30&#32;дней&#32;в&#32;секундах
+&#32;&#32;&#32;&#32;refresh_token_expires_at&#32;=&#32;datetime.utcnow()&#32;+&#32;timedelta(seconds=refresh_token_expires_in)
+
+&#32;&#32;&#32;&#32;token_storage.store_token(access_token,&#32;user_id,&#32;access_token_expires_in)
+&#32;&#32;&#32;&#32;token_storage.store_refresh_token(refresh_token,&#32;user_id,&#32;refresh_token_expires_in)
+
+&#32;&#32;&#32;&#32;return&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&apos;token&apos;:&#32;access_token,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&apos;expires_in&apos;:&#32;access_token_expires_in,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&apos;expires_at&apos;:&#32;access_token_expires_at.isoformat()
+&#32;&#32;&#32;&#32;},&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&apos;token&apos;:&#32;refresh_token,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&apos;expires_in&apos;:&#32;refresh_token_expires_in,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&apos;expires_at&apos;:&#32;refresh_token_expires_at.isoformat()
+&#32;&#32;&#32;&#32;}
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md23">
+<title><title>API Маршруты</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md24">
+<title><title>Авторизация пользователя</title></title>
+
+<para><literallayout><computeroutput>POST&#32;/login
+Content-Type:&#32;application/x-www-form-urlencoded
+
+username=&lt;username&gt;&amp;password=&lt;password&gt;
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md25">
+<title><title>Обновление токена доступа</title></title>
+
+<para><literallayout><computeroutput>POST&#32;/refresh
+Content-Type:&#32;application/json
+
+{
+&#32;&#32;&quot;refresh_token&quot;:&#32;&quot;&lt;refresh_token&gt;&quot;
+}
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md26">
+<title><title>Создание нового пользователя (только для администраторов)</title></title>
+
+<para><literallayout><computeroutput>POST&#32;/users/create
+Content-Type:&#32;application/json
+Authorization:&#32;Bearer&#32;&lt;admin_access_token&gt;
+
+{
+&#32;&#32;&quot;username&quot;:&#32;&quot;&lt;username&gt;&quot;,
+&#32;&#32;&quot;email&quot;:&#32;&quot;&lt;email&gt;&quot;,
+&#32;&#32;&quot;password&quot;:&#32;&quot;&lt;password&gt;&quot;,
+&#32;&#32;&quot;is_admin&quot;:&#32;&lt;true|false&gt;
+}
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md27">
+<title><title>Удаление пользователя (только для администраторов)</title></title>
+
+<para><literallayout><computeroutput>DELETE&#32;/users/delete
+Content-Type:&#32;application/json
+Authorization:&#32;Bearer&#32;&lt;admin_access_token&gt;
+
+{
+&#32;&#32;&quot;user_id&quot;:&#32;&lt;user_id&gt;
+}
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md28">
+<title><title>Смена пароля пользователя (только для администраторов)</title></title>
+
+<para><literallayout><computeroutput>PUT&#32;/users/password
+Content-Type:&#32;application/json
+Authorization:&#32;Bearer&#32;&lt;admin_access_token&gt;
+
+{
+&#32;&#32;&quot;user_id&quot;:&#32;&lt;user_id&gt;,
+&#32;&#32;&quot;new_password&quot;:&#32;&quot;&lt;new_password&gt;&quot;
+}
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md29">
+<title><title>Изменение данных пользователя (только для администраторов)</title></title>
+
+<para><literallayout><computeroutput>PUT&#32;/users/modify
+Content-Type:&#32;application/json
+Authorization:&#32;Bearer&#32;&lt;admin_access_token&gt;
+
+{
+&#32;&#32;&quot;user_id&quot;:&#32;&lt;user_id&gt;,
+&#32;&#32;&quot;username&quot;:&#32;&quot;&lt;new_username&gt;&quot;,
+&#32;&#32;&quot;email&quot;:&#32;&quot;&lt;new_email&gt;&quot;,
+&#32;&#32;&quot;password&quot;:&#32;&quot;&lt;new_password&gt;&quot;,
+&#32;&#32;&quot;is_admin&quot;:&#32;&lt;true|false&gt;
+}
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md30">
+<title><title>Получение списка пользователей (только для администраторов)</title></title>
+
+<para><literallayout><computeroutput>GET&#32;/users
+Authorization:&#32;Bearer&#32;&lt;admin_access_token&gt;
+</computeroutput></literallayout></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md32">
+<title><title>Инициализация приложения</title></title>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md33">
+<title><title>Модуль server.py</title></title>
+
+<para>Инициализация приложения происходит следующим образом:</para>
+
+<para><literallayout><computeroutput>from&#32;fastapi&#32;import&#32;FastAPI
+from&#32;backend.auth.auth&#32;import&#32;init_app
+
+app&#32;=&#32;FastAPI()
+init_app(app)
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md34">
+<title><title>Инструкция по реализации логаута</title></title>
+
+<para><orderedlist>
+<listitem>
+<para>Отправка запроса на логаут Когда пользователь нажимает кнопку &quot;Выйти&quot; (Logout), фронтенд должен отправить POST-запрос на эндпоинт /logout. В запросе необходимо передать access_token в заголовке авторизации. Пример запроса с использованием curl:</para>
+</listitem></orderedlist>
+</para>
+
+<para><literallayout><computeroutput>curl&#32;-X&#32;POST&#32;https://dev.rob.pro-4.ru/logout&#32;\
+-H&#32;&quot;accept:&#32;application/json&quot;&#32;\
+-H&#32;&quot;Authorization:&#32;Bearer&#32;&lt;access_token&gt;&quot;&#32;\
+-d&#32;&apos;&apos;
+</computeroutput></literallayout></para>
+
+<para><orderedlist>
+<listitem>
+<para>Очистка токенов После успешного ответа от сервера, необходимо выполнить следующие действия на фронтенде:</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem>
+<para>Удалить access_token и refresh_token из локального хранилища (например, localStorage).</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem>
+<para>Перенаправить пользователя на страницу входа или главную страницу. Пример кода на JavaScript:</para>
+</listitem></orderedlist>
+</para>
+
+<para><literallayout><computeroutput>fetch(&quot;https://dev.rob.pro-4.ru/logout&quot;,&#32;{
+&#32;&#32;method:&#32;&quot;POST&quot;,
+&#32;&#32;headers:&#32;{
+&#32;&#32;&#32;&#32;accept:&#32;&quot;application/json&quot;,
+&#32;&#32;&#32;&#32;Authorization:&#32;`Bearer&#32;${localStorage.getItem(&quot;access_token&quot;)}`,
+&#32;&#32;},
+})
+&#32;&#32;.then((response)&#32;=&gt;&#32;{
+&#32;&#32;&#32;&#32;if&#32;(response.ok)&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Удаляем&#32;токены&#32;из&#32;локального&#32;хранилища
+&#32;&#32;&#32;&#32;&#32;&#32;localStorage.removeItem(&quot;access_token&quot;);
+&#32;&#32;&#32;&#32;&#32;&#32;localStorage.removeItem(&quot;refresh_token&quot;);
+&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Перенаправляем&#32;пользователя&#32;на&#32;страницу&#32;входа
+&#32;&#32;&#32;&#32;&#32;&#32;window.location.href&#32;=&#32;&quot;/login&quot;;
+&#32;&#32;&#32;&#32;}&#32;else&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Обработка&#32;ошибок
+&#32;&#32;&#32;&#32;&#32;&#32;console.error(&quot;Ошибка&#32;при&#32;логауте:&quot;,&#32;response.statusText);
+&#32;&#32;&#32;&#32;}
+&#32;&#32;})
+&#32;&#32;.catch((error)&#32;=&gt;&#32;{
+&#32;&#32;&#32;&#32;console.error(&quot;Ошибка&#32;сети:&quot;,&#32;error);
+&#32;&#32;});
+</computeroutput></literallayout></para>
+
+<para><orderedlist>
+<listitem>
+<para>Обработка ошибок Если сервер вернул ошибку (например, токен недействителен или истек), необходимо запросить новый токен с использованием refresh_token и повторить логаут. Пример кода на JavaScript:</para>
+</listitem></orderedlist>
+</para>
+
+<para><literallayout><computeroutput>function&#32;logout()&#32;{
+&#32;&#32;fetch(&quot;https://dev.rob.pro-4.ru/logout&quot;,&#32;{
+&#32;&#32;&#32;&#32;method:&#32;&quot;POST&quot;,
+&#32;&#32;&#32;&#32;headers:&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;accept:&#32;&quot;application/json&quot;,
+&#32;&#32;&#32;&#32;&#32;&#32;Authorization:&#32;`Bearer&#32;${localStorage.getItem(&quot;access_token&quot;)}`,
+&#32;&#32;&#32;&#32;},
+&#32;&#32;})
+&#32;&#32;&#32;&#32;.then((response)&#32;=&gt;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(response.ok)&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;localStorage.removeItem(&quot;access_token&quot;);
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;localStorage.removeItem(&quot;refresh_token&quot;);
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;window.location.href&#32;=&#32;&quot;/login&quot;;
+&#32;&#32;&#32;&#32;&#32;&#32;}&#32;else&#32;if&#32;(response.status&#32;===&#32;401)&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Токен&#32;недействителен&#32;или&#32;истек,&#32;обновляем&#32;токен
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;refreshTokenAndRetryLogout();
+&#32;&#32;&#32;&#32;&#32;&#32;}&#32;else&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;console.error(&quot;Ошибка&#32;при&#32;логауте:&quot;,&#32;response.statusText);
+&#32;&#32;&#32;&#32;&#32;&#32;}
+&#32;&#32;&#32;&#32;})
+&#32;&#32;&#32;&#32;.catch((error)&#32;=&gt;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;console.error(&quot;Ошибка&#32;сети:&quot;,&#32;error);
+&#32;&#32;&#32;&#32;});
+}
+
+function&#32;refreshTokenAndRetryLogout()&#32;{
+&#32;&#32;fetch(&quot;https://dev.rob.pro-4.ru/api/refresh&quot;,&#32;{
+&#32;&#32;&#32;&#32;method:&#32;&quot;POST&quot;,
+&#32;&#32;&#32;&#32;headers:&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&quot;Content-Type&quot;:&#32;&quot;application/json&quot;,
+&#32;&#32;&#32;&#32;},
+&#32;&#32;&#32;&#32;body:&#32;JSON.stringify({
+&#32;&#32;&#32;&#32;&#32;&#32;refresh_token:&#32;localStorage.getItem(&quot;refresh_token&quot;),
+&#32;&#32;&#32;&#32;}),
+&#32;&#32;})
+&#32;&#32;&#32;&#32;.then((response)&#32;=&gt;&#32;response.json())
+&#32;&#32;&#32;&#32;.then((data)&#32;=&gt;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;localStorage.setItem(&quot;access_token&quot;,&#32;data.access_token);
+&#32;&#32;&#32;&#32;&#32;&#32;localStorage.setItem(&quot;refresh_token&quot;,&#32;data.refresh_token);
+&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Повторяем&#32;логаут
+&#32;&#32;&#32;&#32;&#32;&#32;logout();
+&#32;&#32;&#32;&#32;})
+&#32;&#32;&#32;&#32;.catch((error)&#32;=&gt;&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;console.error(&quot;Ошибка&#32;при&#32;обновлении&#32;токена:&quot;,&#32;error);
+&#32;&#32;&#32;&#32;});
+}
+
+//&#32;Вызов&#32;функции&#32;логаута
+logout();
+</computeroutput></literallayout></para>
+
+<para><informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+</section>
+</section>
+<section xml:id="_md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2backend_2auth_2auth_1autotoc_md36">
+<title><title>Заключение</title></title>
+
+<para>Эта система авторизации обеспечивает безопасное управление пользователями и токенами, используя FastAPI, SQLAlchemy и Redis. Для добавления новых функций или изменения существующих, следуйте структуре и принципам, описанным выше.</para>
+
+<para> </para>
+</section>
+</section>
+</section>

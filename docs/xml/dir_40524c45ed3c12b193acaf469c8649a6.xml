@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_40524c45ed3c12b193acaf469c8649a6" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing</compoundname>
+    <innerfile refid="scraping_2processing_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="html_8py">html.py</innerfile>
+    <innerfile refid="text_8py">text.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/scraping/processing/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceagents_1_1reviser" xml:lang="en-US">
+<title>agents.reviser Namespace Reference</title>
+<indexterm><primary>agents.reviser</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classagents_1_1reviser_1_1ReviserAgent">ReviserAgent</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_namespaceagents_1_1reviser_1adced1481093055f3bbb05ed5c543d1c4">sample_revision_notes</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceagents_1_1reviser_1adced1481093055f3bbb05ed5c543d1c4"/><section>
+    <title>sample_revision_notes</title>
+<indexterm><primary>sample_revision_notes</primary><secondary>agents.reviser</secondary></indexterm>
+<indexterm><primary>agents.reviser</primary><secondary>sample_revision_notes</secondary></indexterm>
+<para><computeroutput>str agents.reviser.sample_revision_notes</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;<emphasis role="stringliteral">&quot;&quot;&quot;</emphasis>
+2 <emphasis role="stringliteral">{</emphasis>
+3 <emphasis role="stringliteral">&#32;&#32;&quot;draft&quot;:&#32;{</emphasis>
+4 <emphasis role="stringliteral">&#32;&#32;&#32;&#32;draft&#32;title:&#32;The&#32;revised&#32;draft&#32;that&#32;you&#32;are&#32;submitting&#32;for&#32;review</emphasis>
+5 <emphasis role="stringliteral">&#32;&#32;},</emphasis>
+6 <emphasis role="stringliteral">&#32;&#32;&quot;revision_notes&quot;:&#32;Your&#32;message&#32;to&#32;the&#32;reviewer&#32;about&#32;the&#32;changes&#32;you&#32;made&#32;to&#32;the&#32;draft&#32;based&#32;on&#32;their&#32;feedback</emphasis>
+7 <emphasis role="stringliteral">}</emphasis>
+8 <emphasis role="stringliteral">&quot;&quot;&quot;</emphasis>
+</programlisting></section>
+</section>
+</section>

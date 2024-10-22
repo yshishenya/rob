@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classbackend_1_1server_1_1ResearchRequest" kind="class" language="Python" prot="public">
+    <compoundname>backend::server::ResearchRequest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classbackend_1_1server_1_1ResearchRequest_1a67fa07b5bff295d8cf39866f3703e3cd" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str backend.server.ResearchRequest::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <qualifiedname>backend.server.ResearchRequest.task</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="34" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classagents_1_1master_1_1ChiefEditorAgent_1a072faa56cada6c2a2f581c007d7f38fa" compoundref="master_8py" startline="50" endline="60">agents.master.ChiefEditorAgent.run_research_task</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbackend_1_1server_1_1ResearchRequest_1a19cdda16ce044d65cd3d4734ff4cb7a8" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str backend.server.ResearchRequest::report_type</definition>
+        <argsstring></argsstring>
+        <name>report_type</name>
+        <qualifiedname>backend.server.ResearchRequest.report_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="35" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1af18fcbb61ff491b7a18edfdd62515a80" compoundref="gpt__researcher_2master_2agent_8py" startline="168" endline="192">gpt_researcher.master.agent.GPTResearcher.__get_context_by_search</referencedby>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ad62ffa8e08f19b5e67eb3362f55fa855" compoundref="gpt__researcher_2master_2agent_8py" startline="32" endline="71">gpt_researcher.master.agent.GPTResearcher.__init__</referencedby>
+        <referencedby refid="classbackend_1_1report__type_1_1basic__report_1_1basic__report_1_1BasicReport_1ad217eead7f0dcb7a451a8d604cff71b1" compoundref="basic__report_8py" startline="13" endline="24">backend.report_type.basic_report.basic_report.BasicReport.run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classbackend_1_1server_1_1ResearchRequest_1a312e8b781e186a3e99f6005a0b5c41ef" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str backend.server.ResearchRequest::agent</definition>
+        <argsstring></argsstring>
+        <name>agent</name>
+        <qualifiedname>backend.server.ResearchRequest.agent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="36" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1master_1_1agent_1_1GPTResearcher_1ad62ffa8e08f19b5e67eb3362f55fa855" compoundref="gpt__researcher_2master_2agent_8py" startline="32" endline="71">gpt_researcher.master.agent.GPTResearcher.__init__</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>backend.server.ResearchRequest</label>
+        <link refid="classbackend_1_1server_1_1ResearchRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>backend.server.ResearchRequest</label>
+        <link refid="classbackend_1_1server_1_1ResearchRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+agent</edgelabel>
+          <edgelabel>+report_type</edgelabel>
+          <edgelabel>+task</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="3">
+        <label>str</label>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" line="33" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py" bodystart="33" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classbackend_1_1server_1_1ResearchRequest_1a312e8b781e186a3e99f6005a0b5c41ef" prot="public" virt="non-virtual"><scope>backend::server::ResearchRequest</scope><name>agent</name></member>
+      <member refid="classbackend_1_1server_1_1ResearchRequest_1a19cdda16ce044d65cd3d4734ff4cb7a8" prot="public" virt="non-virtual"><scope>backend::server::ResearchRequest</scope><name>report_type</name></member>
+      <member refid="classbackend_1_1server_1_1ResearchRequest_1a67fa07b5bff295d8cf39866f3703e3cd" prot="public" virt="non-virtual"><scope>backend::server::ResearchRequest</scope><name>task</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

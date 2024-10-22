@@ -1,0 +1,4 @@
+var namespacegpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup =
+[
+    [ "BeautifulSoupScraper", "classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper.html", "classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper" ]
+];

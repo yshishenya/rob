@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_434b0703019d58bbb57650e33eaa1ef4" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents Directory Reference</primary></indexterm>
+Directory dependency graph for agents:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_434b0703019d58bbb57650e33eaa1ef4_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_a24b43acf419029ff7cae0fd96806de7">utils</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_multi__agents_2agents_2____init_____8py">__init__.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_editor_8py">editor.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_master_8py">master.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_publisher_8py">publisher.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_researcher_8py">researcher.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_reviewer_8py">reviewer.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_reviser_8py">reviser.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_writer_8py">writer.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

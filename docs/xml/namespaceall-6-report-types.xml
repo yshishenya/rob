@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceall-6-report-types" kind="namespace" language="Python">
+    <compoundname>all-6-report-types</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceall-6-report-types_1aecb9c0531cfe93f14038ec0441771f16" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list all-6-report-types.report_types</definition>
+        <argsstring></argsstring>
+        <name>report_types</name>
+        <qualifiedname>all-6-report-types.report_types</qualifiedname>
+        <initializer>=  [
+    &quot;research_report&quot;,
+    &quot;custom_report&quot;,
+    &quot;subtopic_report&quot;,
+    &quot;summary_report&quot;,
+    &quot;detailed_report&quot;,
+    &quot;quick_report&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceall-6-report-types_1a270c2acc29395cbfe0b575874b4618ac" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str all-6-report-types.query</definition>
+        <argsstring></argsstring>
+        <name>query</name>
+        <qualifiedname>all-6-report-types.query</qualifiedname>
+        <initializer>=  &quot;What are the latest advancements in AI?&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" line="17" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceall-6-report-types_1a198e412432762cd75d1e0eb0c73f246d" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list all-6-report-types.sources</definition>
+        <argsstring></argsstring>
+        <name>sources</name>
+        <qualifiedname>all-6-report-types.sources</qualifiedname>
+        <initializer>=  [&quot;https://en.wikipedia.org/wiki/Artificial_intelligence&quot;, &quot;https://www.ibm.com/watson/ai&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" line="18" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceall-6-report-types_1a5c73a537ae3b6ea0c356f98c9d74ae11" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str all-6-report-types.output_dir</definition>
+        <argsstring></argsstring>
+        <name>output_dir</name>
+        <qualifiedname>all-6-report-types.output_dir</qualifiedname>
+        <initializer>=  &quot;./outputs&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" line="21" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceall-6-report-types_1a6abdc0949357efb3cff7dcd30cb59853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>all-6-report-types.test_gpt_researcher</definition>
+        <argsstring>(report_type)</argsstring>
+        <name>test_gpt_researcher</name>
+        <qualifiedname>all-6-report-types.test_gpt_researcher</qualifiedname>
+        <param>
+          <type>report_type</type>
+          <defname>report_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" line="25" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" bodystart="25" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/tests/all-6-report-types.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

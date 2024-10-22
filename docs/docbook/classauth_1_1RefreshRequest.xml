@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classauth_1_1RefreshRequest" xml:lang="en-US">
+<title>auth.RefreshRequest Class Reference</title>
+<indexterm><primary>auth.RefreshRequest</primary></indexterm>
+Inheritance diagram for auth.RefreshRequest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1RefreshRequest__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for auth.RefreshRequest:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1RefreshRequest__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classauth_1_1RefreshRequest_1a5cd2504ad4a593a894f4b91d0971e750">refresh_token</link> = Field(..., description=&quot;Токен обновления, который нужно использовать для получения нового токена доступа.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classauth_1_1RefreshRequest_1a5cd2504ad4a593a894f4b91d0971e750"/><section>
+    <title>refresh_token</title>
+<indexterm><primary>refresh_token</primary><secondary>auth.RefreshRequest</secondary></indexterm>
+<indexterm><primary>auth.RefreshRequest</primary><secondary>refresh_token</secondary></indexterm>
+<para><computeroutput>str auth.RefreshRequest.refresh_token = Field(..., description=&quot;Токен обновления, который нужно использовать для получения нового токена доступа.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_auth_8py">auth.py</link></section>
+</section>

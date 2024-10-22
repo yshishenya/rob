@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_auth_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/auth.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classauth_1_1LoginRequest">auth.LoginRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1LoginResponse">auth.LoginResponse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1RefreshRequest">auth.RefreshRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1RefreshResponse">auth.RefreshResponse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1UserCreateRequest">auth.UserCreateRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1UserResponse">auth.UserResponse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1PasswordChangeRequest">auth.PasswordChangeRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1PasswordChangeResponse">auth.PasswordChangeResponse</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1DeleteUserRequest">auth.DeleteUserRequest</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classauth_1_1DeleteUserResponse">auth.DeleteUserResponse</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceauth">auth</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceauth_1a70d915b763db8a2e3530d2b9287522ca">auth.token_required</link> (WebSocket websocket, Session db=Depends(get_db))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">auth.get_current_user_admin</link> (str token=Depends(<link linkend="_namespaceauth_1af3c79770bc28a778b1b63717c336cd9f">oauth2_scheme</link>), Session db=Depends(get_db))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a52b18e20d7cd7aa87cddc90e819c293c">auth.create_tokens</link> (user_id)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a70e6da45c7251d2296a1db1d56f5e359">auth.login</link> (OAuth2PasswordRequestForm form_data=Depends(), Session db=Depends(get_db))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1af95c0810d88230a4edd324a6d0c1f376">auth.logout</link> (<link linkend="_classauth_1_1RefreshRequest">RefreshRequest</link> request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a71394ac4b1319dfb9517cb819f761128">auth.refresh_token</link> (<link linkend="_classauth_1_1RefreshRequest">RefreshRequest</link> request, Session db=Depends(get_db))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a3a0f4542a8021c943517d9ef7f7207cb">auth.create_user</link> (<link linkend="_classauth_1_1UserCreateRequest">UserCreateRequest</link> user_request, Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a1255c2b2d79877783d9ac9c59b9cba0f">auth.delete_user</link> (<link linkend="_classauth_1_1DeleteUserRequest">DeleteUserRequest</link> user_request, Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a1c21095f56d293d884bf37f46582accc">auth.change_user_password</link> (<link linkend="_classauth_1_1PasswordChangeRequest">PasswordChangeRequest</link> password_request, Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1aefa7a593395931644be08041ce109591">auth.modify_user</link> (<link linkend="_classauth_1_1UserCreateRequest">UserCreateRequest</link> user_request, Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a9242c3c841da8f428f532e8f827844a5">auth.get_users</link> (Session db=Depends(get_db), User admin=Depends(<link linkend="_namespaceauth_1a7e51e09218962c17b300982e11efdb7c">get_current_user_admin</link>))</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a0576ac38388513ffb14572026ff67e2a">auth.init_app</link> (app)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceauth_1a4d6f41e6ca1555ecb54695492ed9aeab">auth.level</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a62ab3e5094f88012c1aa974d724cd41f">auth.logger</link> = logging.getLogger(__name__)</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1af3c79770bc28a778b1b63717c336cd9f">auth.oauth2_scheme</link> = OAuth2PasswordBearer(tokenUrl=&quot;/login&quot;)</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespaceauth_1ac305efe1aa5d2925562d0017531e8994">auth.MAX_ACTIVE_TOKENS_PER_USER</link> = 5</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1a17782a3fbe24b750bc69d23132af156d">auth.token_storage</link> = <link linkend="_classredis__token__storage_1_1RedisTokenStorage">RedisTokenStorage</link>()</para>
+</listitem>
+            <listitem><para><link linkend="_namespaceauth_1ac9f9e08195c81445beb8356975041a8e">auth.auth_router</link> = APIRouter()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

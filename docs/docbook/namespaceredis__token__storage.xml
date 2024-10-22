@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceredis__token__storage" xml:lang="en-US">
+<title>redis_token_storage Namespace Reference</title>
+<indexterm><primary>redis_token_storage</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classredis__token__storage_1_1RedisTokenStorage">RedisTokenStorage</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceredis__token__storage_1ae296e174099af70544544300ed12bfa3">logger</link> = logging.getLogger(__name__)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceredis__token__storage_1ae296e174099af70544544300ed12bfa3"/><section>
+    <title>logger</title>
+<indexterm><primary>logger</primary><secondary>redis_token_storage</secondary></indexterm>
+<indexterm><primary>redis_token_storage</primary><secondary>logger</secondary></indexterm>
+<para><computeroutput>redis_token_storage.logger = logging.getLogger(__name__)</computeroutput></para></section>
+</section>
+</section>

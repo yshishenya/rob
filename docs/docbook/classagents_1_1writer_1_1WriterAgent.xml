@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagents_1_1writer_1_1WriterAgent" xml:lang="en-US">
+<title>agents.writer.WriterAgent Class Reference</title>
+<indexterm><primary>agents.writer.WriterAgent</primary></indexterm>
+Collaboration diagram for agents.writer.WriterAgent:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1writer_1_1WriterAgent__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classagents_1_1writer_1_1WriterAgent_1aeed8e40ea98de396d419386d28507e1b">__init__</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1writer_1_1WriterAgent_1afe89553ca1031e9847522ea8a945f50a">get_headers</link> (self, dict research_state)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1writer_1_1WriterAgent_1ad090d0934f61168407dec03c5c9eae4d">write_sections</link> (self, dict research_state)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1writer_1_1WriterAgent_1a1fc2cc02dd6d702e2d3599086f26dc8f">revise_headers</link> (self, dict task, dict headers)</para>
+</listitem>
+            <listitem><para><link linkend="_classagents_1_1writer_1_1WriterAgent_1aeea35fc6e190669f99d20c20409fc266">run</link> (self, dict research_state)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classagents_1_1writer_1_1WriterAgent_1aeed8e40ea98de396d419386d28507e1b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>agents.writer.WriterAgent</secondary></indexterm>
+<indexterm><primary>agents.writer.WriterAgent</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>agents.writer.WriterAgent.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classagents_1_1writer_1_1WriterAgent_1afe89553ca1031e9847522ea8a945f50a"/><section>
+    <title>get_headers()</title>
+<indexterm><primary>get_headers</primary><secondary>agents.writer.WriterAgent</secondary></indexterm>
+<indexterm><primary>agents.writer.WriterAgent</primary><secondary>get_headers</secondary></indexterm>
+<para><computeroutput>agents.writer.WriterAgent.get_headers ( self, dict research_state)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1writer_1_1WriterAgent_afe89553ca1031e9847522ea8a945f50a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1writer_1_1WriterAgent_1a1fc2cc02dd6d702e2d3599086f26dc8f"/><section>
+    <title>revise_headers()</title>
+<indexterm><primary>revise_headers</primary><secondary>agents.writer.WriterAgent</secondary></indexterm>
+<indexterm><primary>agents.writer.WriterAgent</primary><secondary>revise_headers</secondary></indexterm>
+<para><computeroutput>agents.writer.WriterAgent.revise_headers ( self, dict task, dict headers)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1writer_1_1WriterAgent_a1fc2cc02dd6d702e2d3599086f26dc8f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1writer_1_1WriterAgent_1aeea35fc6e190669f99d20c20409fc266"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>agents.writer.WriterAgent</secondary></indexterm>
+<indexterm><primary>agents.writer.WriterAgent</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>agents.writer.WriterAgent.run ( self, dict research_state)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1writer_1_1WriterAgent_aeea35fc6e190669f99d20c20409fc266_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classagents_1_1writer_1_1WriterAgent_1ad090d0934f61168407dec03c5c9eae4d"/><section>
+    <title>write_sections()</title>
+<indexterm><primary>write_sections</primary><secondary>agents.writer.WriterAgent</secondary></indexterm>
+<indexterm><primary>agents.writer.WriterAgent</primary><secondary>write_sections</secondary></indexterm>
+<para><computeroutput>agents.writer.WriterAgent.write_sections ( self, dict research_state)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classagents_1_1writer_1_1WriterAgent_ad090d0934f61168407dec03c5c9eae4d_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/<link linkend="_writer_8py">writer.py</link></section>
+</section>

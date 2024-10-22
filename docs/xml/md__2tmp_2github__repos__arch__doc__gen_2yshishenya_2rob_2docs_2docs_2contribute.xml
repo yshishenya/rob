@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2contribute" kind="page">
+    <compoundname>md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2contribute</compoundname>
+    <title>Contribute</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__2tmp_2github__repos__arch__doc__gen_2yshishenya_2rob_2docs_2docs_2contribute_1autotoc_md71"/> We highly welcome contributions! Please check out <ulink url="https://github.com/assafelovic/gpt-researcher/blob/master/CONTRIBUTING.md">contributing</ulink> if you&apos;re interested.</para>
+<para>Please check out our <ulink url="https://trello.com/b/3O7KBePw/gpt-researcher-roadmap">roadmap</ulink> page and reach out to us via our <ulink url="https://discord.gg/2pFkc83fRq">Discord community</ulink> if you&apos;re interested in joining our mission. </para>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/contribute.md"/>
+  </compounddef>
+</doxygen>

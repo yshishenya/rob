@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_ab5df70614ec1cd999b2cb5c8f079671" kind="dir">
+    <compoundname>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers</compoundname>
+    <innerdir refid="dir_2b8c4b896633989c005ae4873ae8da74">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/bing</innerdir>
+    <innerdir refid="dir_b4d8dcc72b20823dab5f467aabbd28a7">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/duckduckgo</innerdir>
+    <innerdir refid="dir_4ed381fcfcff19e107262f2c806bac9b">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/google</innerdir>
+    <innerdir refid="dir_0e9b43fa14fba687e189c1e7eca85762">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/searx</innerdir>
+    <innerdir refid="dir_bdaa6b52110c8a6d368719da479dad65">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serpapi</innerdir>
+    <innerdir refid="dir_2cf63ca3acc6cf10a5231c19aecbdb86">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/serper</innerdir>
+    <innerdir refid="dir_333920dcdfb0eb3743891e711d9017bb">/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/tavily</innerdir>
+    <innerfile refid="gpt__researcher_2retrievers_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/retrievers/"/>
+  </compounddef>
+</doxygen>

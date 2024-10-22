@@ -1,0 +1,17 @@
+<map id="web_scrape.browse_website" name="web_scrape.browse_website">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,213,109"/>
+<area shape="rect" id="Node000002" href="$namespaceweb__scrape.html#a4ca49a63b7463a7b860ea919a026a80a" title=" " alt="" coords="270,5,449,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,81,261,39,288,32,290,37,262,45,144,86"/>
+<area shape="rect" id="Node000003" href="$namespaceweb__scrape.html#aa1548c065f8f535d2422353c35a0f8bf" title=" " alt="" coords="261,55,457,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,82,247,78,248,83,214,87"/>
+<area shape="rect" id="Node000004" href="$namespaceweb__scrape.html#a5866c2091ff9973cf334835bf009981e" title=" " alt="" coords="267,105,451,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,106,254,110,253,115,213,111"/>
+<area shape="rect" id="Node000005" href="$namespaceweb__scrape.html#a14d5ccdaf877accf6ecc7030486728e5" title=" " alt="" coords="270,169,449,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="142,107,262,154,283,162,282,167,260,159,140,112"/>
+<area shape="rect" id="Node000006" href="$namespaceweb__scrape.html#af8e21857763f45f8dd875e3a80c1b451" title=" " alt="" coords="505,119,663,144"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="438,166,519,145,521,150,439,171"/>
+<area shape="rect" id="Node000007" href="$namespacescrape__skills.html#a834d3a6a7957c6c45ea14406a6f6a754" title=" " alt="" coords="507,169,661,209"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="449,186,494,186,494,191,449,191"/>
+<area shape="rect" id="Node000008" href="$namespacescrape__skills.html#a1a5398a51f4da8236daecf9fe86ecf27" title=" " alt="" coords="507,233,661,273"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="431,206,501,226,499,231,430,211"/>
+</map>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacemain" kind="namespace" language="Python">
+    <compoundname>main</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemain_1a6d8cf6806b7ab4e9056a3e9a34775685" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict main.LOGGING_CONFIG</definition>
+        <argsstring></argsstring>
+        <name>LOGGING_CONFIG</name>
+        <qualifiedname>main.LOGGING_CONFIG</qualifiedname>
+        <initializer>=  {
+    &quot;version&quot;: 1,
+    &quot;disable_existing_loggers&quot;: False,
+    &quot;handlers&quot;: {
+        &quot;default&quot;: {
+            &quot;class&quot;: &quot;logging.StreamHandler&quot;,
+            &quot;formatter&quot;: &quot;default&quot;,
+            &quot;stream&quot;: &quot;ext://sys.stdout&quot;  # Use standard output
+        }
+    },
+    &quot;formatters&quot;: {
+        &quot;default&quot;: {
+            &quot;()&quot;: &quot;logging.Formatter&quot;,
+            &quot;fmt&quot;: &quot;%(levelname)s %(name)s@%(lineno)d %(message)s&quot;,
+        },
+    },
+    &quot;loggers&quot;: {
+        &quot;&quot;: {  # root logger
+            &quot;handlers&quot;: [&quot;default&quot;],
+            &quot;level&quot;: &quot;DEBUG&quot;
+        }
+    }
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a12fac67ac230690557ab76d3faa71d8c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <qualifiedname>main.port</qualifiedname>
+        <initializer>=  int(os.getenv(&apos;APP_PORT&apos;, 8034))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" line="37" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a5fa94f0581009434c7a63791944d6ff4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <qualifiedname>main.app</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1a0cf58d9b4a444874a8cf80fdf162b0fb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <qualifiedname>main.host</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemain_1ad94cc85107ecf3be3b5ac14ee4f14532" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.log_config</definition>
+        <argsstring></argsstring>
+        <name>log_config</name>
+        <qualifiedname>main.log_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" line="38" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemain_1a595b471ed5c7eee2f4d04ae83edfe8c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>main.open_task</definition>
+        <argsstring>()</argsstring>
+        <name>open_task</name>
+        <qualifiedname>main.open_task</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/main.py" line="14" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/main.py" bodystart="14" bodyend="23"/>
+        <referencedby refid="namespacemain_1a3140e9a5b6a71ffbf498198cfc471b88" compoundref="multi__agents_2main_8py" startline="24" endline="31">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemain_1a3140e9a5b6a71ffbf498198cfc471b88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>main.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <qualifiedname>main.main</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/main.py" line="24" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/main.py" bodystart="24" bodyend="31"/>
+        <references refid="namespacemain_1a595b471ed5c7eee2f4d04ae83edfe8c7" compoundref="multi__agents_2main_8py" startline="14" endline="23">open_task</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

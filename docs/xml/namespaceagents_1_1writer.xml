@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceagents_1_1writer" kind="namespace" language="Python">
+    <compoundname>agents::writer</compoundname>
+    <innerclass refid="classagents_1_1writer_1_1WriterAgent" prot="public">agents::writer::WriterAgent</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceagents_1_1writer_1a4c5d07e2e9e57563dbcb39ba7feddab6" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str agents::writer.sample_json</definition>
+        <argsstring></argsstring>
+        <name>sample_json</name>
+        <qualifiedname>agents.writer.sample_json</qualifiedname>
+        <initializer>=  &quot;&quot;&quot;
+{
+  &quot;Содержание&quot;: A table of contents in markdown syntax (using &apos;-&apos;) based on the research headers and subheaders,
+  &quot;Введение&quot;: An indepth introduction to the topic in markdown syntax and hyperlink references to relevant sources,
+  &quot;Заключение&quot;: A conclusion to the entire research based on all research data in markdown syntax and hyperlink references to relevant sources,
+  &quot;Источники&quot;: A list with strings of all used source links in the entire research data in markdown syntax and apa citation format. For example: [&apos;-  Title, year, Author [source url](source)&apos;, ...]
+}
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/writer.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

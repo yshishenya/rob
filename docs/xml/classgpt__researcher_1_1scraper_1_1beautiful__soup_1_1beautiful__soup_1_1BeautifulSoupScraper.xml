@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper" kind="class" language="Python" prot="public">
+    <compoundname>gpt_researcher::scraper::beautiful_soup::beautiful_soup::BeautifulSoupScraper</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper::link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <qualifiedname>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.link</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" line="7" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a620a3ff42dc3ef18bdb333932355a4e8" compoundref="arxiv_8py" startline="10" endline="23">gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.scrape</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" compoundref="beautiful__soup_8py" startline="10" endline="39">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1abe43b9568308386f0f417517792c5074" compoundref="newspaper_8py" startline="10" endline="43">gpt_researcher.scraper.newspaper.newspaper.NewspaperScraper.scrape</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1aae8b9f34b019d7c97787731c254a85f5" compoundref="pymupdf_8py" startline="10" endline="22">gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.scrape</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a6de5174548419f9a7391167a61afda89" compoundref="web__base__loader_8py" startline="10" endline="34">gpt_researcher.scraper.web_base_loader.web_base_loader.WebBaseLoaderScraper.scrape</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper::session</definition>
+        <argsstring></argsstring>
+        <name>session</name>
+        <qualifiedname>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.session</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" line="8" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9" compoundref="scraper_8py" startline="31" endline="40">gpt_researcher.scraper.scraper.Scraper.run</referencedby>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" compoundref="beautiful__soup_8py" startline="10" endline="39">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1ac450ca8fa42171edd01dacb27f5170b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.__init__</definition>
+        <argsstring>(self, link, session=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809" kindref="member">link</ref></type>
+          <defname>link</defname>
+        </param>
+        <param>
+          <type><ref refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f" kindref="member">session</ref></type>
+          <defname>session</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" line="6" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape</definition>
+        <argsstring>(self)</argsstring>
+        <name>scrape</name>
+        <qualifiedname>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function scrapes content from a webpage by making a GET request, parsing the HTML using
+BeautifulSoup, and extracting script and style elements before returning the cleaned content.
+
+Returns:
+  The `scrape` method is returning the cleaned and extracted content from the webpage specified
+by the `self.link` attribute. The method fetches the webpage content, removes script and style
+tags, extracts the text content, and returns the cleaned content as a string. If any exception
+occurs during the process, an error message is printed and an empty string is returned.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" bodystart="10" bodyend="39"/>
+        <references refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a3b2449ad1a189f3c9ba3478b17606e06" compoundref="beautiful__soup_8py" startline="40" endline="54">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.get_content_from_url</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a922b5f43edb32ae0c87b27686b288487" compoundref="arxiv_8py" startline="7">gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809" compoundref="beautiful__soup_8py" startline="7">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1a90da5467540a10356101c4aeb2af439b" compoundref="newspaper_8py" startline="7">gpt_researcher.scraper.newspaper.newspaper.NewspaperScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a312c1ab0f0e75792a83ee3ed157b76a1" compoundref="pymupdf_8py" startline="7">gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a93fb660d87d4ad9aaa185e56624b8f65" compoundref="web__base__loader_8py" startline="7">gpt_researcher.scraper.web_base_loader.web_base_loader.WebBaseLoaderScraper.link</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1ac4ad713f998b37322ec9b98820a86123" compoundref="arxiv_8py" startline="8">gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f" compoundref="beautiful__soup_8py" startline="8">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1newspaper_1_1newspaper_1_1NewspaperScraper_1a2772460be01c2689081d6272cd804229" compoundref="newspaper_8py" startline="8">gpt_researcher.scraper.newspaper.newspaper.NewspaperScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1pymupdf_1_1pymupdf_1_1PyMuPDFScraper_1a6bca3d146426fab875757b8db6b7bf43" compoundref="pymupdf_8py" startline="8">gpt_researcher.scraper.pymupdf.pymupdf.PyMuPDFScraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd" compoundref="scraper_8py" startline="27">gpt_researcher.scraper.scraper.Scraper.session</references>
+        <references refid="classgpt__researcher_1_1scraper_1_1web__base__loader_1_1web__base__loader_1_1WebBaseLoaderScraper_1a95306fb278fea8f96720e4a5d282a87f" compoundref="web__base__loader_8py" startline="8">gpt_researcher.scraper.web_base_loader.web_base_loader.WebBaseLoaderScraper.session</references>
+      </memberdef>
+      <memberdef kind="function" id="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a3b2449ad1a189f3c9ba3478b17606e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.get_content_from_url</definition>
+        <argsstring>(self, soup)</argsstring>
+        <name>get_content_from_url</name>
+        <qualifiedname>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.get_content_from_url</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>soup</type>
+          <defname>soup</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the text from the soup
+
+Args:
+    soup (BeautifulSoup): The soup to get the text from
+
+Returns:
+    str: The text from the soup
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" line="40" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" bodystart="40" bodyend="54"/>
+        <referencedby refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" compoundref="beautiful__soup_8py" startline="10" endline="39">gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper.scrape</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gpt_researcher.scraper.beautiful_soup.beautiful_soup.BeautifulSoupScraper</label>
+        <link refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" line="4" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/beautiful_soup/beautiful_soup.py" bodystart="4" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1ac450ca8fa42171edd01dacb27f5170b5" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::beautiful_soup::beautiful_soup::BeautifulSoupScraper</scope><name>__init__</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a3b2449ad1a189f3c9ba3478b17606e06" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::beautiful_soup::beautiful_soup::BeautifulSoupScraper</scope><name>get_content_from_url</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a16dd7a4c15f29fac9092b708afed0809" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::beautiful_soup::beautiful_soup::BeautifulSoupScraper</scope><name>link</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1acd9ba904bd299207cb541307b79d4317" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::beautiful_soup::beautiful_soup::BeautifulSoupScraper</scope><name>scrape</name></member>
+      <member refid="classgpt__researcher_1_1scraper_1_1beautiful__soup_1_1beautiful__soup_1_1BeautifulSoupScraper_1a5bf3bae85f6b3dcccf4fbed0f2105b5f" prot="public" virt="non-virtual"><scope>gpt_researcher::scraper::beautiful_soup::beautiful_soup::BeautifulSoupScraper</scope><name>session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

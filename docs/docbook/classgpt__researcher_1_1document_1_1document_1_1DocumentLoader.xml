@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader" xml:lang="en-US">
+<title>gpt_researcher.document.document.DocumentLoader Class Reference</title>
+<indexterm><primary>gpt_researcher.document.document.DocumentLoader</primary></indexterm>
+Collaboration diagram for gpt_researcher.document.document.DocumentLoader:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a347ef5773bfcea24970daa28fee74c97">__init__</link> (self, <link linkend="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1ab948ce300525652105be5e32c93553d2">path</link>)</para>
+</listitem>
+            <listitem><para>list <link linkend="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a8b29c542ec0aa1012e197b24619eb9c1">load</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1ab948ce300525652105be5e32c93553d2">path</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a651f8685c5d5ae7dc0bd85ed482cfcb5">_load_document</link> (self, str file_path, str file_extension)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a347ef5773bfcea24970daa28fee74c97"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.document.document.DocumentLoader</secondary></indexterm>
+<indexterm><primary>gpt_researcher.document.document.DocumentLoader</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.document.document.DocumentLoader.__init__ ( self,  path)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a651f8685c5d5ae7dc0bd85ed482cfcb5"/><section>
+    <title>_load_document()</title>
+<indexterm><primary>_load_document</primary><secondary>gpt_researcher.document.document.DocumentLoader</secondary></indexterm>
+<indexterm><primary>gpt_researcher.document.document.DocumentLoader</primary><secondary>_load_document</secondary></indexterm>
+<para><computeroutput> list gpt_researcher.document.document.DocumentLoader._load_document ( self, str file_path, str file_extension)<computeroutput>[protected]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_a651f8685c5d5ae7dc0bd85ed482cfcb5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1a8b29c542ec0aa1012e197b24619eb9c1"/><section>
+    <title>load()</title>
+<indexterm><primary>load</primary><secondary>gpt_researcher.document.document.DocumentLoader</secondary></indexterm>
+<indexterm><primary>gpt_researcher.document.document.DocumentLoader</primary><secondary>load</secondary></indexterm>
+<para><computeroutput> list gpt_researcher.document.document.DocumentLoader.load ( self)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_a8b29c542ec0aa1012e197b24619eb9c1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1document_1_1document_1_1DocumentLoader_1ab948ce300525652105be5e32c93553d2"/><section>
+    <title>path</title>
+<indexterm><primary>path</primary><secondary>gpt_researcher.document.document.DocumentLoader</secondary></indexterm>
+<indexterm><primary>gpt_researcher.document.document.DocumentLoader</primary><secondary>path</secondary></indexterm>
+<para><computeroutput>gpt_researcher.document.document.DocumentLoader.path</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/document/<link linkend="_document_8py">document.py</link></section>
+</section>

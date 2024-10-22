@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_b95327e3450e41852b7f303025994f20" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob Directory Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_42d42088c692f23a6e766ea399ce0c27">backend</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_b780f2b19ddfc3e3f1906bcc1d497add">DevOps</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_753ca7b2279e134c11889b00370dfec6">docs</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_c61eb2ed5ad2de41308c088973fec624">examples</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_bf8cfef0402550fad8853e57d92f1500">frontend</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_f9d4dbeed8b77d74edb7688c71320f51">gpt_researcher</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_278f3058075d2df0ac3aab9d51495056">multi_agents</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_7e85e62eb0f2b773953ccadfdcb5284d">scraping</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_a9f52d2fa39e957fa11ad57c00bd6a49">tests</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_cli_8py">cli.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_main_8py">main.py</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_setup_8py">setup.py</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

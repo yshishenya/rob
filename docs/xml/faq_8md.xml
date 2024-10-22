@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="faq_8md" kind="file" language="Markdown">
+    <compoundname>faq.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Frequently<sp/>Asked<sp/>Questions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>How<sp/>do<sp/>I<sp/>get<sp/>started?</highlight></codeline>
+<codeline><highlight class="normal">It<sp/>really<sp/>depends<sp/>on<sp/>what<sp/>you&apos;re<sp/>aiming<sp/>for.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you&apos;re<sp/>looking<sp/>to<sp/>connect<sp/>your<sp/>AI<sp/>application<sp/>to<sp/>the<sp/>internet<sp/>with<sp/>Tavily<sp/>tailored<sp/>API,<sp/>check<sp/>out<sp/>the<sp/>[Tavily<sp/>API](https://docs.tavily.com/docs/tavily-api/introductionn)<sp/>documentation.<sp/></highlight></codeline>
+<codeline><highlight class="normal">If<sp/>you&apos;re<sp/>looking<sp/>to<sp/>build<sp/>and<sp/>deploy<sp/>our<sp/>open<sp/>source<sp/>autonomous<sp/>research<sp/>agent<sp/>GPT<sp/>Researcher,<sp/>please<sp/>see<sp/>[GPT<sp/>Researcher](/docs/gpt-researcher/introduction)<sp/>documentation.</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>also<sp/>check<sp/>out<sp/>demos<sp/>and<sp/>examples<sp/>for<sp/>inspiration<sp/>[here](/docs/examples/examples).</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>What<sp/>is<sp/>GPT<sp/>Researcher?</highlight></codeline>
+<codeline><highlight class="normal">GPT<sp/>Researcher<sp/>is<sp/>a<sp/>popular<sp/>open<sp/>source<sp/>autonomous<sp/>research<sp/>agent<sp/>that<sp/>takes<sp/>care<sp/>of<sp/>the<sp/>tedious<sp/>task<sp/>of<sp/>research<sp/>for<sp/>you,<sp/>by<sp/>scraping,<sp/>filtering<sp/>and<sp/>aggregating<sp/>over<sp/>20+<sp/>web<sp/>sources<sp/>per<sp/>a<sp/>single<sp/>research<sp/>task.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GPT<sp/>Researcher<sp/>is<sp/>built<sp/>with<sp/>best<sp/>practices<sp/>for<sp/>leveraging<sp/>LLMs<sp/>(prompt<sp/>engineering,<sp/>RAG,<sp/>chains,<sp/>embeddings,<sp/>etc),<sp/>and<sp/>is<sp/>optimized<sp/>for<sp/>quick<sp/>and<sp/>efficient<sp/>research.<sp/>It<sp/>is<sp/>also<sp/>fully<sp/>customizable<sp/>and<sp/>can<sp/>be<sp/>tailored<sp/>to<sp/>your<sp/>specific<sp/>needs.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>learn<sp/>more<sp/>about<sp/>GPT<sp/>Researcher,<sp/>check<sp/>out<sp/>the<sp/>[documentation<sp/>page](/docs/gpt-researcher/introduction).</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>How<sp/>much<sp/>does<sp/>each<sp/>research<sp/>run<sp/>cost?</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>research<sp/>task<sp/>using<sp/>GPT<sp/>Researcher<sp/>costs<sp/>around<sp/>$0.01<sp/>per<sp/>a<sp/>single<sp/>run<sp/>(for<sp/>GPT-4<sp/>usage).<sp/>We&apos;re<sp/>constantly<sp/>optimizing<sp/>LLM<sp/>calls<sp/>to<sp/>reduce<sp/>costs<sp/>and<sp/>improve<sp/>performance.<sp/></highlight></codeline>
+<codeline><highlight class="normal">###<sp/>How<sp/>do<sp/>you<sp/>ensure<sp/>the<sp/>report<sp/>is<sp/>factual<sp/>and<sp/>accurate?</highlight></codeline>
+<codeline><highlight class="normal">we<sp/>do<sp/>our<sp/>best<sp/>to<sp/>ensure<sp/>that<sp/>the<sp/>information<sp/>we<sp/>provide<sp/>is<sp/>factual<sp/>and<sp/>accurate.<sp/>We<sp/>do<sp/>this<sp/>by<sp/>using<sp/>multiple<sp/>sources,<sp/>and<sp/>by<sp/>using<sp/>proprietary<sp/>AI<sp/>to<sp/>score<sp/>and<sp/>rank<sp/>the<sp/>most<sp/>relevant<sp/>and<sp/>accurate<sp/>information.<sp/>We<sp/>also<sp/>use<sp/>proprietary<sp/>AI<sp/>to<sp/>filter<sp/>out<sp/>irrelevant<sp/>information<sp/>and<sp/>sources.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Lastly,<sp/>by<sp/>using<sp/>RAG<sp/>and<sp/>other<sp/>techniques,<sp/>we<sp/>ensure<sp/>that<sp/>the<sp/>information<sp/>is<sp/>relevant<sp/>to<sp/>the<sp/>context<sp/>of<sp/>the<sp/>research<sp/>task,<sp/>leading<sp/>to<sp/>more<sp/>accurate<sp/>generative<sp/>AI<sp/>content<sp/>and<sp/>reduced<sp/>hallucinations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>What<sp/>are<sp/>your<sp/>plans<sp/>for<sp/>the<sp/>future?</highlight></codeline>
+<codeline><highlight class="normal">We&apos;re<sp/>constantly<sp/>working<sp/>on<sp/>improving<sp/>our<sp/>products<sp/>and<sp/>services.<sp/>We&apos;re<sp/>currently<sp/>working<sp/>on<sp/>improving<sp/>our<sp/>search<sp/>API<sp/>together<sp/>with<sp/>design<sp/>partners,<sp/>and<sp/>adding<sp/>more<sp/>data<sp/>sources<sp/>to<sp/>our<sp/>search<sp/>engine.<sp/>We&apos;re<sp/>also<sp/>working<sp/>on<sp/>improving<sp/>our<sp/>research<sp/>agent<sp/>GPT<sp/>Researcher,<sp/>and<sp/>adding<sp/>more<sp/>features<sp/>to<sp/>it<sp/>while<sp/>growing<sp/>our<sp/>amazing<sp/>open<sp/>source<sp/>community.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you&apos;re<sp/>interested<sp/>in<sp/>our<sp/>roadmap<sp/>or<sp/>looking<sp/>to<sp/>collaborate,<sp/>check<sp/>out<sp/>our<sp/>[roadmap<sp/>page](https://trello.com/b/3O7KBePw/gpt-researcher-roadmap).<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Feel<sp/>free<sp/>to<sp/>[contact<sp/>us](mailto:assafelovic@gmail.com)<sp/>if<sp/>you<sp/>have<sp/>any<sp/>further<sp/>questions<sp/>or<sp/>suggestions!</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/docs/docs/faq.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classagents_1_1publisher_1_1PublisherAgent" kind="class" language="Python" prot="public">
+    <compoundname>agents::publisher::PublisherAgent</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>agents.publisher.PublisherAgent::output_dir</definition>
+        <argsstring></argsstring>
+        <name>output_dir</name>
+        <qualifiedname>agents.publisher.PublisherAgent.output_dir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" line="11" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classagents_1_1master_1_1ChiefEditorAgent_1a208d36c007aa6f97cb6e13ed39cd2623" compoundref="master_8py" startline="22" endline="49">agents.master.ChiefEditorAgent.init_research_team</referencedby>
+        <referencedby refid="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" compoundref="publisher_8py" startline="44" endline="51">agents.publisher.PublisherAgent.write_report_by_formats</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagents_1_1publisher_1_1PublisherAgent_1a7c8c6016bb253e081f2fcbd07d30551c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.publisher.PublisherAgent.__init__</definition>
+        <argsstring>(self, str output_dir)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>agents.publisher.PublisherAgent.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>output_dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" line="10" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.publisher.PublisherAgent.publish_research_report</definition>
+        <argsstring>(self, dict research_state, dict publish_formats)</argsstring>
+        <name>publish_research_report</name>
+        <qualifiedname>agents.publisher.PublisherAgent.publish_research_report</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>publish_formats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" line="13" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" bodystart="13" bodyend="18"/>
+        <references refid="classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a" compoundref="publisher_8py" startline="19" endline="43">agents.publisher.PublisherAgent.generate_layout</references>
+        <references refid="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" compoundref="publisher_8py" startline="44" endline="51">agents.publisher.PublisherAgent.write_report_by_formats</references>
+        <referencedby refid="classagents_1_1publisher_1_1PublisherAgent_1a826775413630c1f1d81baeaf33070275" compoundref="publisher_8py" startline="52" endline="58">agents.publisher.PublisherAgent.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.publisher.PublisherAgent.generate_layout</definition>
+        <argsstring>(self, dict research_state)</argsstring>
+        <name>generate_layout</name>
+        <qualifiedname>agents.publisher.PublisherAgent.generate_layout</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" line="19" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" bodystart="19" bodyend="43"/>
+        <referencedby refid="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" compoundref="publisher_8py" startline="13" endline="18">agents.publisher.PublisherAgent.publish_research_report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.publisher.PublisherAgent.write_report_by_formats</definition>
+        <argsstring>(self, str layout, dict publish_formats)</argsstring>
+        <name>write_report_by_formats</name>
+        <qualifiedname>agents.publisher.PublisherAgent.write_report_by_formats</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>publish_formats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" line="44" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" bodystart="44" bodyend="51"/>
+        <references refid="classagents_1_1master_1_1ChiefEditorAgent_1aea219d46a6757781dd1da622a35d2f33" compoundref="master_8py" startline="18">agents.master.ChiefEditorAgent.output_dir</references>
+        <references refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" compoundref="publisher_8py" startline="11">agents.publisher.PublisherAgent.output_dir</references>
+        <referencedby refid="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" compoundref="publisher_8py" startline="13" endline="18">agents.publisher.PublisherAgent.publish_research_report</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classagents_1_1publisher_1_1PublisherAgent_1a826775413630c1f1d81baeaf33070275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>agents.publisher.PublisherAgent.run</definition>
+        <argsstring>(self, dict research_state)</argsstring>
+        <name>run</name>
+        <qualifiedname>agents.publisher.PublisherAgent.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>research_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" line="52" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" bodystart="52" bodyend="58"/>
+        <references refid="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" compoundref="publisher_8py" startline="13" endline="18">agents.publisher.PublisherAgent.publish_research_report</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>agents.publisher.PublisherAgent</label>
+        <link refid="classagents_1_1publisher_1_1PublisherAgent"/>
+      </node>
+    </collaborationgraph>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" line="9" column="1" bodyfile="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/agents/publisher.py" bodystart="9" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classagents_1_1publisher_1_1PublisherAgent_1a7c8c6016bb253e081f2fcbd07d30551c" prot="public" virt="non-virtual"><scope>agents::publisher::PublisherAgent</scope><name>__init__</name></member>
+      <member refid="classagents_1_1publisher_1_1PublisherAgent_1a6bb256166cbaaaad93c78e5800cebf2a" prot="public" virt="non-virtual"><scope>agents::publisher::PublisherAgent</scope><name>generate_layout</name></member>
+      <member refid="classagents_1_1publisher_1_1PublisherAgent_1ae0ac227f7156e9fa922e302c35a200d4" prot="public" virt="non-virtual"><scope>agents::publisher::PublisherAgent</scope><name>output_dir</name></member>
+      <member refid="classagents_1_1publisher_1_1PublisherAgent_1ac889c123c6786081aa4be0ca19fc6e85" prot="public" virt="non-virtual"><scope>agents::publisher::PublisherAgent</scope><name>publish_research_report</name></member>
+      <member refid="classagents_1_1publisher_1_1PublisherAgent_1a826775413630c1f1d81baeaf33070275" prot="public" virt="non-virtual"><scope>agents::publisher::PublisherAgent</scope><name>run</name></member>
+      <member refid="classagents_1_1publisher_1_1PublisherAgent_1a492f1dd9a97d310bb9bc5b72919f8b58" prot="public" virt="non-virtual"><scope>agents::publisher::PublisherAgent</scope><name>write_report_by_formats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

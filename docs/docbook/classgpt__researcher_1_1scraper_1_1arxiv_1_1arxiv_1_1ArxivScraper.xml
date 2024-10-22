@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper" xml:lang="en-US">
+<title>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper Class Reference</title>
+<indexterm><primary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</primary></indexterm>
+Collaboration diagram for gpt_researcher.scraper.arxiv.arxiv.ArxivScraper:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1adf22c45475cf9aec5779f7d204891570">__init__</link> (self, <link linkend="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a922b5f43edb32ae0c87b27686b288487">link</link>, <link linkend="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1ac4ad713f998b37322ec9b98820a86123">session</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a620a3ff42dc3ef18bdb333932355a4e8">scrape</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a922b5f43edb32ae0c87b27686b288487">link</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1ac4ad713f998b37322ec9b98820a86123">session</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1adf22c45475cf9aec5779f7d204891570"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.__init__ ( self,  link,  session = <computeroutput>None</computeroutput>
+)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a620a3ff42dc3ef18bdb333932355a4e8"/><section>
+    <title>scrape()</title>
+<indexterm><primary>scrape</primary><secondary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</primary><secondary>scrape</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.scrape ( self)</computeroutput></para>
+<para><literallayout><computeroutput>The function scrapes relevant documents from Arxiv based on a given link and returns the content
+of the first document.
+
+Returns:
+  The code is returning the page content of the first document retrieved by the ArxivRetriever
+for a given query extracted from the link.
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1a922b5f43edb32ae0c87b27686b288487"/><section>
+    <title>link</title>
+<indexterm><primary>link</primary><secondary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</primary><secondary>link</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.link</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1arxiv_1_1arxiv_1_1ArxivScraper_1ac4ad713f998b37322ec9b98820a86123"/><section>
+    <title>session</title>
+<indexterm><primary>session</primary><secondary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper</primary><secondary>session</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.arxiv.arxiv.ArxivScraper.session</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/arxiv/<link linkend="_arxiv_8py">arxiv.py</link></section>
+</section>

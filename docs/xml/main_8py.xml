@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="main_8py" kind="file" language="Python">
+    <compoundname>main.py</compoundname>
+    <innernamespace refid="namespacemain">main</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacemain" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacebackend_1_1server" kindref="compound">backend.server</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>app</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>dotenv<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>load_dotenv</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>uvicorn</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">load_dotenv()<sp/><sp/></highlight><highlight class="comment">#<sp/>Loads<sp/>environment<sp/>variables<sp/>from<sp/>.env<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#временныое<sp/>включение<sp/>логов</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespacemain_1a6d8cf6806b7ab4e9056a3e9a34775685" refkind="member"><highlight class="normal">LOGGING_CONFIG<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;version&quot;</highlight><highlight class="normal">:<sp/>1,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;disable_existing_loggers&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;handlers&quot;</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;class&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;logging.StreamHandler&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;formatter&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;stream&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;ext://sys.stdout&quot;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>Use<sp/>standard<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;formatters&quot;</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;()&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;logging.Formatter&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;fmt&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;%(levelname)s<sp/>%(name)s@%(lineno)d<sp/>%(message)s&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;loggers&quot;</highlight><highlight class="normal">:<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">:<sp/>{<sp/><sp/></highlight><highlight class="comment">#<sp/>root<sp/>logger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;handlers&quot;</highlight><highlight class="normal">:<sp/>[</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;level&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;DEBUG&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespacemain_1a12fac67ac230690557ab76d3faa71d8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>port<sp/>=<sp/>int(os.getenv(</highlight><highlight class="stringliteral">&apos;APP_PORT&apos;</highlight><highlight class="normal">,<sp/>8034))<sp/><sp/></highlight><highlight class="comment">#<sp/>Gets<sp/>the<sp/>port<sp/>from<sp/>the<sp/>environment<sp/>variable<sp/>or<sp/>uses<sp/>8034<sp/>as<sp/>default</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="namespacemain_1a5fa94f0581009434c7a63791944d6ff4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uvicorn.run(app,<sp/>host=</highlight><highlight class="stringliteral">&quot;0.0.0.0&quot;</highlight><highlight class="normal">,<sp/>port=port,<sp/>log_config=LOGGING_CONFIG)</highlight></codeline>
+    </programlisting>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/main.py"/>
+  </compounddef>
+</doxygen>

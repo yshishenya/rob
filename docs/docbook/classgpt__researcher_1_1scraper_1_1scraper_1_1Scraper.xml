@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper" xml:lang="en-US">
+<title>gpt_researcher.scraper.scraper.Scraper Class Reference</title>
+<indexterm><primary>gpt_researcher.scraper.scraper.Scraper</primary></indexterm>
+Collaboration diagram for gpt_researcher.scraper.scraper.Scraper:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a85641ed66cd2c0f924dc6ce1bd148fe6">__init__</link> (self, <link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a8a99ec6b0c69fa87a38d8edb77881515">urls</link>, user_agent, <link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0c27f57a5be7f6d081c27b9545beb3b3">scraper</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9">run</link> (self)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aba3daf5affb83d09eef0bd0b767e9e39">extract_data_from_link</link> (self, link, <link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd">session</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a5aca6b83012ce2098ce090add0d3ac41">get_scraper</link> (self, link)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a8a99ec6b0c69fa87a38d8edb77881515">urls</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd">session</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0c27f57a5be7f6d081c27b9545beb3b3">scraper</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Scraper class to extract the content from the links
+</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a85641ed66cd2c0f924dc6ce1bd148fe6"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.scraper.scraper.Scraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.scraper.Scraper</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.scraper.Scraper.__init__ ( self,  urls,  user_agent,  scraper)</computeroutput></para>
+<para><literallayout><computeroutput>Initialize the Scraper class.
+Args:
+    urls:
+</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aba3daf5affb83d09eef0bd0b767e9e39"/><section>
+    <title>extract_data_from_link()</title>
+<indexterm><primary>extract_data_from_link</primary><secondary>gpt_researcher.scraper.scraper.Scraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.scraper.Scraper</primary><secondary>extract_data_from_link</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.scraper.Scraper.extract_data_from_link ( self,  link,  session)</computeroutput></para>
+<para><literallayout><computeroutput>Extracts the data from the link
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_aba3daf5affb83d09eef0bd0b767e9e39_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_aba3daf5affb83d09eef0bd0b767e9e39_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a5aca6b83012ce2098ce090add0d3ac41"/><section>
+    <title>get_scraper()</title>
+<indexterm><primary>get_scraper</primary><secondary>gpt_researcher.scraper.scraper.Scraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.scraper.Scraper</primary><secondary>get_scraper</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.scraper.Scraper.get_scraper ( self,  link)</computeroutput></para>
+<para><literallayout><computeroutput>The function `get_scraper` determines the appropriate scraper class based on the provided link
+or a default scraper if none matches.
+
+Args:
+  link: The `get_scraper` method takes a `link` parameter which is a URL link to a webpage or a
+PDF file. Based on the type of content the link points to, the method determines the appropriate
+scraper class to use for extracting data from that content.
+
+Returns:
+  The `get_scraper` method returns the scraper class based on the provided link. The method
+checks the link to determine the appropriate scraper class to use based on predefined mappings
+in the `SCRAPER_CLASSES` dictionary. If the link ends with &quot;.pdf&quot;, it selects the
+`PyMuPDFScraper` class. If the link contains &quot;arxiv.org&quot;, it selects the `ArxivScraper
+</computeroutput></literallayout> </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_a5aca6b83012ce2098ce090add0d3ac41_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1aa0b6bee4c4cf53d2d0e5c3f4aa5678a9"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>gpt_researcher.scraper.scraper.Scraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.scraper.Scraper</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.scraper.Scraper.run ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Extracts the content from the links
+</computeroutput></literallayout> </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_aa0b6bee4c4cf53d2d0e5c3f4aa5678a9_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0c27f57a5be7f6d081c27b9545beb3b3"/><section>
+    <title>scraper</title>
+<indexterm><primary>scraper</primary><secondary>gpt_researcher.scraper.scraper.Scraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.scraper.Scraper</primary><secondary>scraper</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.scraper.Scraper.scraper</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a0388c14da1ba34383ffdd735c38195cd"/><section>
+    <title>session</title>
+<indexterm><primary>session</primary><secondary>gpt_researcher.scraper.scraper.Scraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.scraper.Scraper</primary><secondary>session</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.scraper.Scraper.session</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1scraper_1_1scraper_1_1Scraper_1a8a99ec6b0c69fa87a38d8edb77881515"/><section>
+    <title>urls</title>
+<indexterm><primary>urls</primary><secondary>gpt_researcher.scraper.scraper.Scraper</secondary></indexterm>
+<indexterm><primary>gpt_researcher.scraper.scraper.Scraper</primary><secondary>urls</secondary></indexterm>
+<para><computeroutput>gpt_researcher.scraper.scraper.Scraper.urls</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/scraper/<link linkend="_scraper_8py">scraper.py</link></section>
+</section>

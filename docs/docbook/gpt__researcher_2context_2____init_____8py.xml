@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_gpt__researcher_2context_2____init_____8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/__init__.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/context/__init__.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher">gpt_researcher</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacegpt__researcher_1_1context">gpt_researcher.context</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacegpt__researcher_1_1context_1a4faa2b0c0c70150796b5a45732aa6dbf">gpt_researcher.context.__all__</link> = [&apos;<link linkend="_classgpt__researcher_1_1context_1_1compression_1_1ContextCompressor">ContextCompressor</link>&apos;, &apos;<link linkend="_classgpt__researcher_1_1context_1_1retriever_1_1SearchAPIRetriever">SearchAPIRetriever</link>&apos;]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacebackend_1_1report__type" xml:lang="en-US">
+<title>backend.report_type Namespace Reference</title>
+<indexterm><primary>backend.report_type</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1report__type_1_1basic__report">basic_report</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1report__type_1_1detailed__report">detailed_report</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacebackend_1_1report__type_1a926bda12b1e020f96b84d304394bdd9f">__all__</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacebackend_1_1report__type_1a926bda12b1e020f96b84d304394bdd9f"/><section>
+    <title>__all__</title>
+<indexterm><primary>__all__</primary><secondary>backend.report_type</secondary></indexterm>
+<indexterm><primary>backend.report_type</primary><secondary>__all__</secondary></indexterm>
+<para><computeroutput>list backend.report_type.__all__<computeroutput>[private]</computeroutput></computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;[
+2 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;BasicReport&quot;</emphasis>,
+3 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;DetailedReport&quot;</emphasis>
+4 ]
+</programlisting></section>
+</section>
+</section>

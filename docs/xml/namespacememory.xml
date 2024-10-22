@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacememory" kind="namespace" language="Python">
+    <compoundname>memory</compoundname>
+    <innernamespace refid="namespacememory_1_1draft">memory::draft</innernamespace>
+    <innernamespace refid="namespacememory_1_1research">memory::research</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/tmp/github_repos_arch_doc_gen/yshishenya/rob/multi_agents/memory/draft.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

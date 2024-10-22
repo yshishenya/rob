@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_server_8py" xml:lang="en-US">
+<title>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py File Reference</title>
+<indexterm><primary>/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/server.py</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classbackend_1_1server_1_1ResearchRequest">backend.server.ResearchRequest</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacebackend">backend</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacebackend_1_1server">backend.server</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a9c30cd96e9e80accf2505265058bb685">backend.server.format_filename</link> (task)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1aa20a85ade2f14a7b9746f098733052a9">backend.server.startup_event</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1aaf74caa59bfb354fc9376ff64b5b0450">backend.server.read_root</link> (Request request)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1ad4dad2e900f405ce89832734ae7a4b80">backend.server.save_request_to_file</link> (data, username)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1add4a342eaeb04b916c8e3ca8ee280129">backend.server.websocket_endpoint</link> (WebSocket websocket, str username=Depends(token_required))</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a791304efa6d9abc2d7224777155f4ce3">backend.server.level</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1ac7ba92e1518c9942f9b2628e59284036">backend.server.logger</link> = logging.getLogger(__name__)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a7b499ff940ba3d60a6a446047dc0e793">backend.server.app</link> = FastAPI()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1afd315579b9669e0ddf3c7380195c2c9f">backend.server.allow_origins</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a02a6dbac09a1e44d53dac146b4b7995e">backend.server.allow_credentials</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a31453585c4b681dd455b119aad8df27f">backend.server.allow_methods</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1ac0adc8d19eae0c9e8eaa11d97e60657b">backend.server.allow_headers</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a3fb990b8f65eceb426d3046cca41f3be">backend.server.name</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a08ea44cc61f6d390978edd06e68867b2">backend.server.templates</link> = Jinja2Templates(directory=&quot;./frontend&quot;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacebackend_1_1server_1a967b877415aecb102a7fc379ce5041b1">backend.server.manager</link> = <link linkend="_classbackend_1_1websocket__manager_1_1WebSocketManager">WebSocketManager</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

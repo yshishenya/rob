@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classauth_1_1LoginResponse" xml:lang="en-US">
+<title>auth.LoginResponse Class Reference</title>
+<indexterm><primary>auth.LoginResponse</primary></indexterm>
+Inheritance diagram for auth.LoginResponse:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1LoginResponse__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for auth.LoginResponse:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classauth_1_1LoginResponse__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>str <link linkend="_classauth_1_1LoginResponse_1a5592f669f1add7a37fa6ac7ae20f9a5a">access_token</link> = Field(..., description=&quot;Токен доступа, который используется для аутентификации пользователя в системе.&quot;)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classauth_1_1LoginResponse_1a8f0ebb9afaa06895f6f43136546f5144">expires_in</link> = Field(..., description=&quot;Время жизни токена доступа в секундах, после которого токен становится недействительным.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1LoginResponse_1af5bb1bc803d0dfa5221f102b90864529">expires_at</link> = Field(..., description=&quot;Точная дата и время истечения токена доступа в формате ISO 8601.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1LoginResponse_1a57f09907080088273eb5c97eb63eec5e">refresh_token</link> = Field(..., description=&quot;Токен для обновления доступа, который можно использовать для получения нового токена доступа после истечения текущего.&quot;)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classauth_1_1LoginResponse_1a742f540112b817b4c5814bc9ad6873aa">refresh_expires_in</link> = Field(..., description=&quot;Время жизни токена для обновления в секундах, после которого токен становится недействительным.&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classauth_1_1LoginResponse_1a64c3eb6c643b86162df46ecf1bde5d1f">refresh_token_expires_at</link> = Field(..., description=&quot;Точная дата и время истечения токена обновления в формате ISO 8601.&quot;)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classauth_1_1LoginResponse_1a078d99d8cc7858e5e20e4f234381aa44">is_admin</link> = Field(..., description=&quot;Флаг, указывающий, является ли пользователь администратором. True, если пользователь имеет права администратора.&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classauth_1_1LoginResponse_1a5592f669f1add7a37fa6ac7ae20f9a5a"/><section>
+    <title>access_token</title>
+<indexterm><primary>access_token</primary><secondary>auth.LoginResponse</secondary></indexterm>
+<indexterm><primary>auth.LoginResponse</primary><secondary>access_token</secondary></indexterm>
+<para><computeroutput>str auth.LoginResponse.access_token = Field(..., description=&quot;Токен доступа, который используется для аутентификации пользователя в системе.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1LoginResponse_1af5bb1bc803d0dfa5221f102b90864529"/><section>
+    <title>expires_at</title>
+<indexterm><primary>expires_at</primary><secondary>auth.LoginResponse</secondary></indexterm>
+<indexterm><primary>auth.LoginResponse</primary><secondary>expires_at</secondary></indexterm>
+<para><computeroutput>str auth.LoginResponse.expires_at = Field(..., description=&quot;Точная дата и время истечения токена доступа в формате ISO 8601.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1LoginResponse_1a8f0ebb9afaa06895f6f43136546f5144"/><section>
+    <title>expires_in</title>
+<indexterm><primary>expires_in</primary><secondary>auth.LoginResponse</secondary></indexterm>
+<indexterm><primary>auth.LoginResponse</primary><secondary>expires_in</secondary></indexterm>
+<para><computeroutput>int auth.LoginResponse.expires_in = Field(..., description=&quot;Время жизни токена доступа в секундах, после которого токен становится недействительным.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1LoginResponse_1a078d99d8cc7858e5e20e4f234381aa44"/><section>
+    <title>is_admin</title>
+<indexterm><primary>is_admin</primary><secondary>auth.LoginResponse</secondary></indexterm>
+<indexterm><primary>auth.LoginResponse</primary><secondary>is_admin</secondary></indexterm>
+<para><computeroutput>bool auth.LoginResponse.is_admin = Field(..., description=&quot;Флаг, указывающий, является ли пользователь администратором. True, если пользователь имеет права администратора.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1LoginResponse_1a742f540112b817b4c5814bc9ad6873aa"/><section>
+    <title>refresh_expires_in</title>
+<indexterm><primary>refresh_expires_in</primary><secondary>auth.LoginResponse</secondary></indexterm>
+<indexterm><primary>auth.LoginResponse</primary><secondary>refresh_expires_in</secondary></indexterm>
+<para><computeroutput>int auth.LoginResponse.refresh_expires_in = Field(..., description=&quot;Время жизни токена для обновления в секундах, после которого токен становится недействительным.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1LoginResponse_1a57f09907080088273eb5c97eb63eec5e"/><section>
+    <title>refresh_token</title>
+<indexterm><primary>refresh_token</primary><secondary>auth.LoginResponse</secondary></indexterm>
+<indexterm><primary>auth.LoginResponse</primary><secondary>refresh_token</secondary></indexterm>
+<para><computeroutput>str auth.LoginResponse.refresh_token = Field(..., description=&quot;Токен для обновления доступа, который можно использовать для получения нового токена доступа после истечения текущего.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classauth_1_1LoginResponse_1a64c3eb6c643b86162df46ecf1bde5d1f"/><section>
+    <title>refresh_token_expires_at</title>
+<indexterm><primary>refresh_token_expires_at</primary><secondary>auth.LoginResponse</secondary></indexterm>
+<indexterm><primary>auth.LoginResponse</primary><secondary>refresh_token_expires_at</secondary></indexterm>
+<para><computeroutput>str auth.LoginResponse.refresh_token_expires_at = Field(..., description=&quot;Точная дата и время истечения токена обновления в формате ISO 8601.&quot;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/backend/auth/<link linkend="_auth_8py">auth.py</link></section>
+</section>

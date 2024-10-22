@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config" xml:lang="en-US">
+<title>gpt_researcher.config.config.Config Class Reference</title>
+<indexterm><primary>gpt_researcher.config.config.Config</primary></indexterm>
+Collaboration diagram for gpt_researcher.config.config.Config:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classgpt__researcher_1_1config_1_1config_1_1Config__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a2806bc8c64b1154936a2967849bd8cd1">__init__</link> (self, str <link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a619e730ee1d3e79c9a5ef83705960b44">config_file</link>=None)</para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a5225566b494e714c3eb4289a2eb2c1ca">validate_doc_path</link> (self)</para>
+</listitem>
+            <listitem><para>None <link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a9e9d2319dd1e3190bd54ef54065e8837">load_config_file</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a619e730ee1d3e79c9a5ef83705960b44">config_file</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a53639992bde1e2172bda9ebc0f7cfbb5">retriever</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1adb393700d777caf4498151c2c722fa79">embedding_provider</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a9b1f284f4b9439e377ca1d424ce930dc">llm_provider</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a341a4aa452bd13d279a559f43ac9f98c">ollama_base_url</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a42b235ed62cdcd8ea02b732459550d45">fast_llm_model</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1ac5735fdab8ae184cdbd2dab8afffef4b">smart_llm_model</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1ac3f89b71a14756864bbd9c0e44fa2f58">fast_token_limit</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a532251efcb400e5481c52cbac6bce83d">smart_token_limit</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a5b01a8c7f54d24ebf5e1fa621b702536">browse_chunk_max_length</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a5ccd7452db16237a63080bd090b92837">summary_token_limit</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a01c0bab04e704c5c365ce2910e6f443b">temperature</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1ad1be4ee4fc96e04351200befa9bc2a46">user_agent</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a24434bd9a73bed299c7c28f16a2a77d4">max_search_results_per_query</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a454ea7cbc236890ae4a19213fec36a84">memory_backend</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a4e63a20166a0f251bb9c225aaa440b57">total_words</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a84d8fe33898389ec3096f6a16118b879">report_format</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a5c63837c9894a5db8d335de42a8abf2d">max_iterations</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1aa4958a87b2c92d22487725aa21563736">agent_role</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1aba1f77d51845dfdb7544b847f07840c0">scraper</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1acecb5291189de192737acdef946034d0">max_subtopics</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1a4d77682f7fb301859b810ce82ea77e38">doc_path</link></para>
+</listitem>
+            <listitem><para><link linkend="_classgpt__researcher_1_1config_1_1config_1_1Config_1af1ad5b613ef9c9d51404f428d8396ee4">llm_kwargs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput>Config class for GPT Researcher.</computeroutput></literallayout> </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a2806bc8c64b1154936a2967849bd8cd1"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.__init__ ( self, str  config_file = <computeroutput>None</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput>Initialize the config class.</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a9e9d2319dd1e3190bd54ef54065e8837"/><section>
+    <title>load_config_file()</title>
+<indexterm><primary>load_config_file</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>load_config_file</secondary></indexterm>
+<para><computeroutput> None gpt_researcher.config.config.Config.load_config_file ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Load the config file.</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a5225566b494e714c3eb4289a2eb2c1ca"/><section>
+    <title>validate_doc_path()</title>
+<indexterm><primary>validate_doc_path</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>validate_doc_path</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.validate_doc_path ( self)</computeroutput></para>
+<para><literallayout><computeroutput>Ensure that the folder exists at the doc path</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1aa4958a87b2c92d22487725aa21563736"/><section>
+    <title>agent_role</title>
+<indexterm><primary>agent_role</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>agent_role</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.agent_role</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a5b01a8c7f54d24ebf5e1fa621b702536"/><section>
+    <title>browse_chunk_max_length</title>
+<indexterm><primary>browse_chunk_max_length</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>browse_chunk_max_length</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.browse_chunk_max_length</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a619e730ee1d3e79c9a5ef83705960b44"/><section>
+    <title>config_file</title>
+<indexterm><primary>config_file</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>config_file</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.config_file</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a4d77682f7fb301859b810ce82ea77e38"/><section>
+    <title>doc_path</title>
+<indexterm><primary>doc_path</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>doc_path</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.doc_path</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1adb393700d777caf4498151c2c722fa79"/><section>
+    <title>embedding_provider</title>
+<indexterm><primary>embedding_provider</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>embedding_provider</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.embedding_provider</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a42b235ed62cdcd8ea02b732459550d45"/><section>
+    <title>fast_llm_model</title>
+<indexterm><primary>fast_llm_model</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>fast_llm_model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.fast_llm_model</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1ac3f89b71a14756864bbd9c0e44fa2f58"/><section>
+    <title>fast_token_limit</title>
+<indexterm><primary>fast_token_limit</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>fast_token_limit</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.fast_token_limit</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1af1ad5b613ef9c9d51404f428d8396ee4"/><section>
+    <title>llm_kwargs</title>
+<indexterm><primary>llm_kwargs</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>llm_kwargs</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.llm_kwargs</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a9b1f284f4b9439e377ca1d424ce930dc"/><section>
+    <title>llm_provider</title>
+<indexterm><primary>llm_provider</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>llm_provider</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.llm_provider</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a5c63837c9894a5db8d335de42a8abf2d"/><section>
+    <title>max_iterations</title>
+<indexterm><primary>max_iterations</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>max_iterations</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.max_iterations</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a24434bd9a73bed299c7c28f16a2a77d4"/><section>
+    <title>max_search_results_per_query</title>
+<indexterm><primary>max_search_results_per_query</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>max_search_results_per_query</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.max_search_results_per_query</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1acecb5291189de192737acdef946034d0"/><section>
+    <title>max_subtopics</title>
+<indexterm><primary>max_subtopics</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>max_subtopics</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.max_subtopics</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a454ea7cbc236890ae4a19213fec36a84"/><section>
+    <title>memory_backend</title>
+<indexterm><primary>memory_backend</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>memory_backend</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.memory_backend</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a341a4aa452bd13d279a559f43ac9f98c"/><section>
+    <title>ollama_base_url</title>
+<indexterm><primary>ollama_base_url</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>ollama_base_url</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.ollama_base_url</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a84d8fe33898389ec3096f6a16118b879"/><section>
+    <title>report_format</title>
+<indexterm><primary>report_format</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>report_format</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.report_format</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a53639992bde1e2172bda9ebc0f7cfbb5"/><section>
+    <title>retriever</title>
+<indexterm><primary>retriever</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>retriever</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.retriever</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1aba1f77d51845dfdb7544b847f07840c0"/><section>
+    <title>scraper</title>
+<indexterm><primary>scraper</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>scraper</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.scraper</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1ac5735fdab8ae184cdbd2dab8afffef4b"/><section>
+    <title>smart_llm_model</title>
+<indexterm><primary>smart_llm_model</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>smart_llm_model</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.smart_llm_model</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a532251efcb400e5481c52cbac6bce83d"/><section>
+    <title>smart_token_limit</title>
+<indexterm><primary>smart_token_limit</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>smart_token_limit</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.smart_token_limit</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a5ccd7452db16237a63080bd090b92837"/><section>
+    <title>summary_token_limit</title>
+<indexterm><primary>summary_token_limit</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>summary_token_limit</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.summary_token_limit</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a01c0bab04e704c5c365ce2910e6f443b"/><section>
+    <title>temperature</title>
+<indexterm><primary>temperature</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>temperature</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.temperature</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1a4e63a20166a0f251bb9c225aaa440b57"/><section>
+    <title>total_words</title>
+<indexterm><primary>total_words</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>total_words</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.total_words</computeroutput></para></section>
+<anchor xml:id="_classgpt__researcher_1_1config_1_1config_1_1Config_1ad1be4ee4fc96e04351200befa9bc2a46"/><section>
+    <title>user_agent</title>
+<indexterm><primary>user_agent</primary><secondary>gpt_researcher.config.config.Config</secondary></indexterm>
+<indexterm><primary>gpt_researcher.config.config.Config</primary><secondary>user_agent</secondary></indexterm>
+<para><computeroutput>gpt_researcher.config.config.Config.user_agent</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/tmp/github_repos_arch_doc_gen/yshishenya/rob/gpt_researcher/config/<link linkend="_config_8py">config.py</link></section>
+</section>
