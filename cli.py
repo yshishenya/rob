@@ -68,9 +68,20 @@ cli.add_argument(
 
 
 async def main(args):
-    """ 
-    Conduct research on the given query, generate the report, and write
-    it as a markdown file to the output directory.
+    """Conduct research based on the provided query and generate a report.
+
+    This function initializes a GPTResearcher instance with the specified
+    query and report type. It then conducts research asynchronously and
+    generates a report, which is subsequently written to a markdown file in
+    the output directory. The file is named using a UUID to ensure
+    uniqueness.
+
+    Args:
+        args (Namespace): An object containing the query and report type
+            as attributes.
+
+    Returns:
+        None: This function does not return a value.
     """
     researcher = GPTResearcher(
         query=args.query,

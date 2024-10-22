@@ -3,8 +3,15 @@ import asyncio
 
 
 async def main():
-    """
-    This is a sample script that shows how to run a research report.
+    """Run a research report based on a specified query.
+
+    This function initializes a researcher with a predefined query and
+    report type, conducts research, and generates a report. It demonstrates
+    how to utilize the GPTResearcher class to perform research and compile
+    findings into a report.
+
+    Returns:
+        str: The generated research report based on the query.
     """
     # Query
     query = "What happened in the latest burning man floods?"
